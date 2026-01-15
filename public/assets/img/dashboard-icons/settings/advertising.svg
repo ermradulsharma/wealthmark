@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit Evaluation Version) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="60px" height="60px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 0.78 0.78"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <font id="FontID0" horiz-adv-x="714" font-variant="normal" style="fill-rule:nonzero" font-weight="700">
+	<font-face 
+		font-family="Arial">
+		<font-face-src>
+			<font-face-name name="Arial Bold"/>
+		</font-face-src>
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="A" horiz-adv-x="714" d="M710.8 0l-154.602 0 -61.2086 161.363 -284.28 0 -58.9082 -161.363 -151.801 0 275.219 708.819 151.621 0 283.96 -708.819zm-262.337 281.159l-98.5138 262.337 -95.6934 -262.337 194.207 0z"/>
+   <glyph unicode="D" horiz-adv-x="714" d="M72.2701 708.819l261.017 0c58.9082,0 103.795,-4.44062 134.639,-13.5219 41.4258,-12.2217 77.0508,-33.9848 106.595,-65.3491 29.7042,-31.1844 52.1273,-69.4497 67.6495,-114.836 15.3421,-45.2063 23.1032,-101.134 23.1032,-167.463 0,-58.4082 -7.26102,-108.575 -21.783,-150.801 -17.6625,-51.6472 -42.906,-93.3931 -75.7306,-125.238 -24.7635,-24.2634 -58.2482,-43.066 -100.334,-56.5879 -31.5044,-10.0814 -73.5703,-15.0221 -126.378,-15.0221l-268.778 0 0 708.819zm143.54 -119.777l0 -469.246 106.435 0c39.7656,0 68.4696,2.30032 86.1121,6.76095 23.2833,5.76081 42.4059,15.6622 57.5881,29.5241 15.3421,13.8619 27.7239,36.6251 37.2852,68.3096 9.74136,31.6844 14.522,75.0705 14.522,129.858 0,54.7677 -4.78067,96.6935 -14.522,126.058 -9.56134,29.3641 -23.0832,52.1273 -40.4057,68.6296 -17.3424,16.3423 -39.2855,27.5639 -66.0092,33.3447 -19.8028,4.44062 -58.9082,6.76095 -116.976,6.76095l-64.029 0z"/>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"Arial";font-variant:normal;font-weight:bold;src:url("#FontID0") format(svg)}
+    .fil1 {fill:#263674}
+    .fil2 {fill:#FEC00F}
+    .fil0 {fill:#263674;fill-rule:nonzero}
+    .fnt0 {font-weight:bold;font-size:0.46px;font-family:'Arial'}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <polygon class="fil0" points="0,0 0.78,0 0.78,0.1 0.73,0.1 0.73,0.05 0.05,0.05 0.05,0.55 0.15,0.55 0.15,0.66 0.26,0.55 0.65,0.55 0.65,0.6 0.28,0.6 0.1,0.78 0.1,0.6 0,0.6 "/>
+  <g transform="matrix(1 0 0 1 -29.858 52.6207)">
+   <text x="30" y="-52.14"  class="fil1 fnt0">AD</text>
+  </g>
+  <polygon class="fil2" points="0.14,0.48 0.24,0.24 0.05,0.05 0.05,0.55 0.15,0.55 0.15,0.66 0.26,0.55 0.55,0.55 0.46,0.46 0.47,0.48 0.4,0.48 0.37,0.4 0.24,0.4 0.21,0.48 "/>
+  <polygon class="fil2" points="0.28,0.28 0.26,0.35 0.35,0.35 "/>
+ </g>
+</svg>

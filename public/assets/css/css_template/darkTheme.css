@@ -1,0 +1,72 @@
+/*====================================================dark theme css=================================================================*/
+
+/*====================================================dark theme css=================================================================*/
+
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6,
+[data-theme="dark"] .h1,
+[data-theme="dark"] .h2,
+[data-theme="dark"] .h3,
+[data-theme="dark"] .h4,
+[data-theme="dark"] .h5,
+[data-theme="dark"] .h6{
+    color:#fdc116;
+}
+[data-theme="dark"] p{
+    color:white;
+}
+
+[data-theme="dark"] .register .nav-pills .nav-link{
+    color:white;
+}
+
+[data-theme="dark"] .register .form-control{
+    background-color:#fff0;
+    border:1px solid #ffffff;
+    color:#fff;;
+}
+[data-theme="dark"] .register .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color:#fdc116;
+}
+
+[data-theme="dark"] .copy_right{
+    background: #111111;
+    /*border-top: 1px solid black;*/
+}
+[data-theme="dark"] .nav-link{
+    color:white;
+}
+[data-theme="dark"] .iti--separate-dial-code .iti__selected-flag{
+    background:transparent !important;
+}
+[data-theme="dark"] .iti__country{
+    color:black;
+}
+
+[data-theme="dark"] .navbar .user-dropdown > .icon > .bi.bi-person-circle{
+    color:white;
+}
+
+[data-theme="dark"] .user-dropdown-li ul li:hover{
+    background:whitesmoke;
+}
+[data-theme="dark"] .cam-text{
+    color:black;
+}
+
+[data-theme="dark"] .copy_right{
+    background:black;
+}
+
+
+.sec-title {
+    z-index: 0!important;
+}
+
+
+
+/*====================================================dark theme css=================================================================*/

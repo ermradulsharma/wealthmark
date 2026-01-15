@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit Evaluation Version) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="50px" height="32px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 4.05 2.58"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:#EFB30C}
+    .fil1 {fill:white}
+    .fil2 {fill:white;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2804925531440">
+   <path class="fil0" d="M0.12 0l3.81 0c0.07,0 0.12,0.05 0.12,0.12l0 2.34c0,0.07 -0.05,0.12 -0.12,0.12l-3.81 0c-0.07,0 -0.12,-0.05 -0.12,-0.12l0 -2.34c0,-0.07 0.05,-0.12 0.12,-0.12z"/>
+   <rect class="fil1" x="0.24" y="2.2" width="3.56" height="0.26"/>
+   <g>
+    <path class="fil1" d="M0.58 1.33l0.54 0c0.18,0 0.33,0.15 0.33,0.33l0 0.34 -1.21 0 0 -0.34c0,-0.18 0.16,-0.33 0.34,-0.33z"/>
+    <path class="fil1" d="M0.85 0.58c0.17,0 0.31,0.14 0.31,0.31 0,0.17 -0.14,0.3 -0.31,0.3 -0.17,0 -0.31,-0.13 -0.31,-0.3 0,-0.17 0.14,-0.31 0.31,-0.31z"/>
+   </g>
+   <path class="fil2" d="M2 1.09c0.04,-0.04 0.1,-0.05 0.13,-0.02 0.03,0.03 0.02,0.09 -0.02,0.13l-0.33 0.32c-0.04,0.04 -0.1,0.05 -0.13,0.02 -0.03,-0.03 -0.02,-0.09 0.02,-0.13l0.33 -0.32z"/>
+   <path class="fil2" d="M2.11 1.41c0.04,0.04 0.05,0.1 0.01,0.13 -0.03,0.03 -0.08,0.02 -0.12,-0.02l-0.33 -0.32c-0.04,-0.04 -0.05,-0.1 -0.02,-0.13 0.03,-0.03 0.09,-0.02 0.13,0.02l0.33 0.32z"/>
+   <path class="fil2" d="M2.81 1.09c0.05,-0.04 0.1,-0.05 0.13,-0.02 0.03,0.03 0.03,0.09 -0.01,0.13l-0.33 0.32c-0.04,0.04 -0.1,0.05 -0.13,0.02 -0.03,-0.03 -0.02,-0.09 0.02,-0.13l0.32 -0.32z"/>
+   <path class="fil2" d="M2.93 1.41c0.04,0.04 0.04,0.1 0.01,0.13 -0.03,0.03 -0.09,0.02 -0.13,-0.02l-0.32 -0.32c-0.04,-0.04 -0.05,-0.1 -0.02,-0.13 0.03,-0.03 0.09,-0.02 0.13,0.02l0.33 0.32z"/>
+   <path class="fil2" d="M3.63 1.09c0.04,-0.04 0.1,-0.05 0.13,-0.02 0.03,0.03 0.02,0.09 -0.02,0.13l-0.32 0.32c-0.04,0.04 -0.1,0.05 -0.13,0.02 -0.03,-0.03 -0.02,-0.09 0.02,-0.13l0.32 -0.32z"/>
+   <path class="fil2" d="M3.74 1.41c0.04,0.04 0.05,0.1 0.02,0.13 -0.03,0.03 -0.09,0.02 -0.13,-0.02l-0.32 -0.32c-0.04,-0.04 -0.05,-0.1 -0.02,-0.13 0.03,-0.03 0.09,-0.02 0.13,0.02l0.32 0.32z"/>
+   <g>
+    <rect class="fil1" x="1.69" y="1.8" width="0.19" height="0.19"/>
+    <rect class="fil1" x="2.01" y="1.8" width="0.19" height="0.19"/>
+    <rect class="fil1" x="2.33" y="1.8" width="0.19" height="0.19"/>
+    <rect class="fil1" x="2.65" y="1.8" width="0.19" height="0.19"/>
+    <rect class="fil1" x="2.97" y="1.8" width="0.19" height="0.19"/>
+    <rect class="fil1" x="3.29" y="1.8" width="0.19" height="0.19"/>
+    <rect class="fil1" x="3.61" y="1.8" width="0.19" height="0.19"/>
+   </g>
+   <rect class="fil1" x="1.6" y="0.23" width="1.9" height="0.15"/>
+   <rect class="fil1" x="1.6" y="0.56" width="1.27" height="0.15"/>
+  </g>
+ </g>
+</svg>

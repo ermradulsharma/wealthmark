@@ -1,0 +1,91 @@
+.para{
+    text-align: justify;
+    font-size: 15px;
+}
+.my-2rem{
+    margin: 2rem 0rem ;
+}
+.py-2rem{
+    padding: 2rem 0rem ;
+}
+.pb-2rem{
+    padding-bottom: 2rem;
+}
+.mt-2rem{
+    margin-top: 2rem;
+}
+.mb-2rem{
+    margin-bottom: 2rem;
+}
+.small, small {
+    font-size: .8em;
+}
+.fs-12{
+    font-size: 12px  !important;
+}
+.fs-13{
+    font-size: 13px !important;
+}
+.fs-14{
+    font-size: 14px !important;
+}
+.fs-15{
+    font-size: 15px !important;
+}
+.fs-16{
+    font-size: 16px !important;
+}
+.border-white{
+   border-color:white !important; 
+}
+
+.mt-n1{
+    margin-top:-5px !important;
+}
+.mt-n2{
+    margin-top:-10px !important;
+}
+.mt-n3{
+    margin-top:-20px !important;
+}
+.mt-n4{
+    margin-top:-35px !important;
+}
+.mt-n5{
+    margin-top:-50px !important;
+}
+/*.white-border-3px{*/
+/*    border:3px solid white;*/
+/*}*/
+
+/* Gaps for rows */
+
+.gap-y-3{
+gap: 1rem 0rem;
+}
+.gap-x-3{
+gap: 0rem 1rem;
+}
+/* Gaps for rows End*/
+@media only screen and (min-width: 768px) {
+    .my-auto-md{
+        margin-top: auto!important;
+        margin-bottom: auto!important;
+    }
+  }
+@media only screen and (max-width: 600px) {
+    .para{
+        font-size: 14px;
+    }
+    .mt-sm-3{
+            margin-top: 1rem;
+    }
+    .card-body {
+        padding: 1rem 0.5rem;
+    }
+    .h6, h6 {
+        font-size: 14px;
+    }
+
+  }
+

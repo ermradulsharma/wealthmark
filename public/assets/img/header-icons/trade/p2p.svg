@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit Evaluation Version) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="30px" height="31px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 2.54 2.64"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil1 {fill:#24407C}
+    .fil0 {fill:#263674}
+    .fil2 {fill:#EFB30C}
+    .fil3 {fill:#263674;fill-rule:nonzero}
+    .fil4 {fill:#EFB30C;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2105154935232">
+   <path class="fil0" d="M0.62 0.7c0.31,0 0.57,0.23 0.61,0.54 0,0.02 0.01,0.05 0.01,0.07l-1.24 0c0,-0.1 0.03,-0.2 0.07,-0.29 0.11,-0.19 0.31,-0.32 0.55,-0.32z"/>
+   <circle class="fil1" cx="0.62" cy="0.31" r="0.31"/>
+   <g>
+    <path class="fil2" d="M1.93 1.94c0.31,0 0.57,-0.23 0.61,-0.54 0,-0.02 0,-0.05 0,-0.08l-1.23 0c0,0.11 0.02,0.21 0.07,0.29 0.1,0.2 0.31,0.33 0.55,0.33z"/>
+    <circle class="fil2" cx="1.93" cy="2.33" r="0.31"/>
+   </g>
+   <rect class="fil2" y="2.17" width="0.47" height="0.47"/>
+   <rect class="fil0" x="2.08" width="0.47" height="0.47"/>
+   <path class="fil3" d="M1.24 0.57c-0.04,0 -0.08,-0.03 -0.08,-0.08 0,-0.04 0.04,-0.08 0.08,-0.08l0.01 0c0.18,0 0.34,0.05 0.49,0.14 0.14,0.08 0.26,0.21 0.34,0.36 0.02,0.04 0.01,0.09 -0.03,0.11 -0.04,0.02 -0.09,0.01 -0.11,-0.03 -0.07,-0.13 -0.17,-0.24 -0.29,-0.31 -0.11,-0.07 -0.25,-0.11 -0.4,-0.11l-0.01 0z"/>
+   <path class="fil4" d="M1.16 2.11c0.05,0 0.08,0.04 0.08,0.09 -0.01,0.04 -0.05,0.07 -0.09,0.07 -0.19,-0.02 -0.36,-0.1 -0.5,-0.22 -0.14,-0.12 -0.24,-0.27 -0.3,-0.46 -0.01,-0.04 0.02,-0.08 0.06,-0.1 0.04,-0.01 0.09,0.02 0.1,0.06 0.04,0.15 0.13,0.28 0.24,0.38 0.12,0.1 0.26,0.16 0.41,0.18z"/>
+  </g>
+ </g>
+</svg>

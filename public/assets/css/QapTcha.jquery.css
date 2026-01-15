@@ -1,0 +1,56 @@
+/*****************/
+/** QapTcha CSS **/
+/*****************/
+.QapTcha {float:left;width:100%;}
+.QapTcha .clr{clear:both}
+/*.QapTcha .bgSlider {width:100%;float:left;background: linear-gradient(180deg, rgba(254,192,15,1) 0%, rgba(248,165,50,1) 100%);border: 1px solid transparent;border-color: rgba(254,192,15,1);border-radius: 5px;padding: 5px 5px 5px 5px;}*/
+/*.QapTcha .Slider {width:52px;height:37px;background:transparent url('../img/slider-icon (1).jpg') no-repeat;cursor:e-resize;position:relative;top:0;left:0}*/
+.QapTcha .TxtStatus {width:100%;margin-top:7px;text-align:left;color:red;font-size:14px;clear:both}
+.QapTcha .dropSuccess {color:#4e8b37}
+.QapTcha .dropError {color:red}
+
+
+
+.QapTcha .bgSlider {
+    width: 100%;
+    float: left;
+    background: rgb(234, 236, 239);
+    border: 1px solid transparent;
+    border-color: white;
+    border-radius: 5px;
+     
+}
+
+.QapTcha .Slider:before {
+   font-family: "Font Awesome 5 Free";
+    content: "\f061";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+    cursor: e-resize;
+    font-size: 18px;
+}
+
+.QapTcha .Slider {
+    width: 60px;
+    height: 100%;
+    cursor: e-resize;
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+    vertical-align: middle;
+    background: rgba(254,192,15,1);
+    padding: 10px 0px;
+    color:white;
+    border: 1px solid rgba(254,192,15,1);
+    box-shadow: 0px 0px 5px #d7cccc;
+    
+}
+
+/*.QapTcha .Slider:hover{*/
+/*    background:rgba(254,192,15,1);*/
+/*      border: 1px solid rgba(254,192,15,1);*/
+/*      color:white;*/
+/*}*/

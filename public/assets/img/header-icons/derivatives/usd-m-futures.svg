@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="200px" height="200px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 3.06 3.06"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:#999999}
+    .fil1 {fill:#F5C923}
+    .fil2 {fill:white}
+    .fil3 {fill:#999999;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0" d="M1.63 0.01l1.39 1.42c0.06,0.06 0.06,0.15 0,0.2l-1.39 1.42 -0.01 0.01 0 -3.06 0.01 0.01zm-0.18 3.05l-0.02 -0.01 -1.39 -1.42c-0.05,-0.05 -0.05,-0.14 0,-0.2l1.39 -1.42 0.02 -0.01 0 3.06z"/>
+  <path class="fil1" d="M1.62 0.32l1.1 1.12c0.05,0.05 0.05,0.13 0,0.19l-1.1 1.12 0 0 0 -2.44 0 0.01zm-0.17 2.43l-0.01 0 -1.1 -1.12c-0.05,-0.06 -0.05,-0.14 0,-0.19l1.1 -1.12 0.01 -0.01 0 2.44z"/>
+  <rect class="fil2" transform="matrix(1.1918 1.21568 -1.1918 1.21568 1.5318 0.581573)" width="0.78" height="0.78" rx="0.04" ry="0.04"/>
+  <path class="fil3" d="M1.46 2.04c-0.05,-0.01 -0.1,-0.04 -0.13,-0.09 -0.03,-0.04 -0.04,-0.1 -0.04,-0.17l0 -0.07 0.15 0 0 0.09c0,0.06 0.03,0.09 0.09,0.09 0.05,0 0.08,-0.03 0.08,-0.1 0,-0.04 -0.01,-0.07 -0.03,-0.11 -0.02,-0.03 -0.05,-0.07 -0.11,-0.11 -0.07,-0.05 -0.11,-0.1 -0.14,-0.15 -0.03,-0.05 -0.04,-0.1 -0.04,-0.16 0,-0.07 0.01,-0.12 0.04,-0.16 0.03,-0.05 0.08,-0.07 0.13,-0.09l0 -0.09 0.14 0 0 0.09c0.06,0.01 0.1,0.04 0.13,0.09 0.03,0.04 0.05,0.1 0.05,0.16l0 0.03 -0.16 0 0 -0.04c0,-0.06 -0.03,-0.09 -0.08,-0.09 -0.06,0 -0.08,0.03 -0.08,0.09 0,0.04 0,0.07 0.03,0.1 0.02,0.03 0.05,0.07 0.11,0.11 0.06,0.06 0.11,0.11 0.14,0.16 0.02,0.05 0.04,0.1 0.04,0.16 0,0.07 -0.02,0.13 -0.05,0.17 -0.03,0.05 -0.07,0.08 -0.13,0.09l0 0.11 -0.14 0 0 -0.11z"/>
+ </g>
+</svg>

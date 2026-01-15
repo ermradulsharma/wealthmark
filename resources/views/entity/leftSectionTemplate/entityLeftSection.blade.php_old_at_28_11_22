@@ -1,0 +1,62 @@
+   <div class="left-inner">
+               <div class="border-box">
+                  <div class="Main_title">
+                     <div class="p-bold">Country</div>
+                     <div class="Edit-box">
+                        <svg  viewBox="0 0 24 24" fill="none" class="Edit-icon">
+                           <path fill-rule="evenodd" clip-rule="evenodd" d="M17.879 3.293l2.828 2.828-2.12 2.121-2.83-2.828 2.122-2.121zm-3.183 3.182l2.829 2.829-4.667 4.666H10.03v-2.828l4.666-4.667zM7 4h4v3H7v10h10v-4h3v7H4V4h3z" fill="currentColor"></path>
+                        </svg>
+                     </div>
+                  </div>
+                  <div class="opt-display">
+
+
+                     <i class="bi bi-geo-alt-fill location-mark"></i>
+                     <img src="{{asset('assets/img/Flag_of_India.jpg') }}" class="flag-img appendCountryflag">
+                     <div class="border-box appendCountry"></div>
+                  </div>
+                  <div class="opt-display ">
+                     <svg  viewBox="0 0 24 24" fill="none" class="left-svg-icon" style="display:none;">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 3v18h14V7l-4-4H5zm3 6.5h8V12H8V9.5zm0 5h8V17H8v-2.5z" fill="currentColor"></path>
+                     </svg>
+                     <div class="opt-display-txt appendEntityType"></div>
+                  </div>
+                  <div class="opt-display">
+                     <svg  viewBox="0 0 24 24" fill="none" class="left-svg-icon" style="display:none;">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4 4v12l8 5 8-5V4H4zm12 7a4 4 0 11-8 0 4 4 0 018 0zm-4-2.121L9.879 11 12 13.121 14.121 11 12 8.879z" fill="currentColor"></path>
+                     </svg>
+                     <div class="opt-display-txt appendCompanyType"></div>
+                  </div>
+               </div>
+               <div class="left-footer">
+                  <div class="border-box">
+                     <div class="p-bold mb-3">FAQ</div>
+                     <div class="footer-optn">
+                        <svg  viewBox="0 0 24 24" fill="none" class="left-svg-icon">
+                           <path fill-rule="evenodd" clip-rule="evenodd" d="M5 3v18h14V7l-4-4H5zm3 6.5h8V12H8V9.5zm0 5h8V17H8v-2.5z" fill="currentColor"></path>
+                        </svg>
+                        <a  target="_blank" href="#" class="a-txt">
+                           <div class="css-1cjl26j">How to Apply for Entity Verification</div>
+                        </a>
+                     </div>
+                     <div class="checklist">
+                        <svg  viewBox="0 0 24 24" fill="none" class="left-svg-icon">
+                           <path fill-rule="evenodd" clip-rule="evenodd" d="M5 3v18h14V7l-4-4H5zm3 6.5h8V12H8V9.5zm0 5h8V17H8v-2.5z" fill="currentColor"></path>
+                        </svg>
+                        <a  target="_blank" href="#" class="a-txt">
+                           <div class="css-1cjl26j">How to Manage Sub-Account Functions and Frequently Asked Questions</div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="checklist">
+                     <div class="checklist-inner" >
+
+                        <i class="bi bi-clipboard-check-fill checklist-svg"></i>
+                        Checklist
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+
+

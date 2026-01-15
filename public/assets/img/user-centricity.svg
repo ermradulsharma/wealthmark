@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit Evaluation Version) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="40px" height="40px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 42.2 42.2"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil1 {fill:#263674}
+    .fil3 {fill:#3C4A82}
+    .fil2 {fill:#F5BE27}
+    .fil0 {fill:#EFB30C;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2439536733120">
+   <g>
+    <g>
+     <path class="fil0" d="M14.03 2.5c4.84,-3.91 11.93,-3.15 15.84,1.68 3.91,4.84 3.16,11.93 -1.68,15.84l-0.02 0.02c-4.84,3.91 -11.93,3.16 -15.84,-1.68 -3.91,-4.84 -3.16,-11.93 1.68,-15.84l0.02 -0.02z"/>
+     <path class="fil1" d="M14.16 11.77l13.88 0c-0.15,0.52 -0.23,1.08 -0.23,1.65 0,1.89 0.88,3.58 2.27,4.66 1.41,-1.85 2.18,-4.06 2.28,-6.31 0.12,-2.65 -0.69,-5.36 -2.49,-7.59 -3.91,-4.83 -11,-5.59 -15.84,-1.68l-0.02 0.02c-2.89,2.33 -4.32,5.8 -4.17,9.25 0.09,2.22 0.84,4.42 2.28,6.32 1.38,-1.09 2.27,-2.78 2.27,-4.67 0,-0.57 -0.08,-1.13 -0.23,-1.65z"/>
+    </g>
+    <path class="fil2" d="M21.1 22.54c2.49,0 4.99,-0.82 7.07,-2.5l0.02 -0.02c0.72,-0.58 1.35,-1.23 1.89,-1.94 -1.39,-1.08 -2.27,-2.77 -2.27,-4.66 0,-0.57 0.08,-1.13 0.23,-1.65l-6.94 0 0 10.77z"/>
+    <path class="fil3" d="M21.1 11.77l6.94 0c-0.15,0.52 -0.23,1.08 -0.23,1.65 0,1.89 0.88,3.58 2.27,4.66 1.41,-1.85 2.18,-4.06 2.28,-6.31 0.12,-2.66 -0.69,-5.36 -2.49,-7.59 -2.23,-2.75 -5.49,-4.18 -8.77,-4.18l0 11.77z"/>
+   </g>
+   <path class="fil1" d="M9.05 24.09l24.09 0c4.98,0 9.06,4.07 9.06,9.05l0 9.06 -42.2 0 0 -9.06c0,-4.98 4.07,-9.05 9.05,-9.05z"/>
+   <path class="fil3" d="M12.02 32.64l18.16 0c2.63,0 4.78,2.15 4.78,4.78l0 4.78 -27.72 0 0 -4.78c0,-2.63 2.15,-4.78 4.78,-4.78z"/>
+  </g>
+ </g>
+</svg>

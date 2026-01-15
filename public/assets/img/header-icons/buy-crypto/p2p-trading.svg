@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit Evaluation Version) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="30px" height="31px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 1.17 1.21"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:#263674}
+    .fil1 {fill:#EFB30C}
+    .fil2 {fill:#263674;fill-rule:nonzero}
+    .fil3 {fill:#EFB30C;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2104958059392">
+   <path class="fil0" d="M0.28 0.32c0.15,0 0.27,0.11 0.29,0.25 0,0.01 0,0.02 0,0.03l-0.57 0c0,-0.04 0.01,-0.09 0.03,-0.13 0.05,-0.09 0.15,-0.15 0.25,-0.15z"/>
+   <circle class="fil0" cx="0.28" cy="0.14" r="0.14"/>
+   <g>
+    <path class="fil1" d="M0.89 0.89c0.14,0 0.26,-0.1 0.28,-0.24 0,-0.02 0,-0.03 0,-0.04l-0.57 0c0,0.05 0.01,0.09 0.03,0.13 0.05,0.09 0.15,0.15 0.26,0.15z"/>
+    <circle class="fil1" cx="0.89" cy="1.07" r="0.14"/>
+   </g>
+   <rect class="fil1" y="1" width="0.21" height="0.21"/>
+   <rect class="fil0" x="0.96" width="0.21" height="0.21"/>
+   <path class="fil2" d="M0.57 0.26c-0.02,0 -0.04,-0.01 -0.04,-0.03 0,-0.02 0.02,-0.04 0.04,-0.04l0.01 0c0.08,0 0.15,0.02 0.22,0.06 0.07,0.04 0.12,0.1 0.16,0.17 0.01,0.02 0,0.04 -0.02,0.05 -0.02,0.01 -0.04,0 -0.05,-0.02 -0.03,-0.05 -0.07,-0.1 -0.13,-0.14 -0.05,-0.03 -0.12,-0.05 -0.18,-0.05l-0.01 0z"/>
+   <path class="fil3" d="M0.54 0.97c0.02,0 0.03,0.02 0.03,0.04 0,0.02 -0.02,0.04 -0.04,0.03 -0.09,-0.01 -0.17,-0.04 -0.23,-0.1 -0.07,-0.05 -0.11,-0.12 -0.14,-0.21 0,-0.02 0.01,-0.04 0.03,-0.04 0.02,-0.01 0.04,0 0.04,0.02 0.02,0.07 0.06,0.13 0.12,0.18 0.05,0.04 0.11,0.07 0.19,0.08z"/>
+  </g>
+ </g>
+</svg>
