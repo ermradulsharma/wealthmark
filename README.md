@@ -1,61 +1,119 @@
 # wealthMark
 
-![Laravel](https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg)
+![Laravel](https://img.shields.io/badge/Laravel-10-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-8.1-777BB4?style=for-the-badge&logo=php&logoColor=white)
 
-## Project Overview
+**wealthMark** is a comprehensive, Laravel-based wealth management platform designed to handle complex financial operations including user management, transactions, escrow services, and reporting. It is built with scalability and security in mind, utilizing industry-standard packages and best practices.
 
-wealthMark is a **Laravel-based wealth management platform** that provides features such as user management, transaction handling, escrow services, and reporting. It leverages a rich set of Laravel packages (Passport, Sanctum, Socialite, ActivityLog, etc.) to deliver a secure and extensible financial application.
+## 🚀 Key Features
 
-## Features
+-   **Robust Authentication**:
+    -   API authentication via **Laravel Passport** and **Laravel Sanctum**.
+    -   **Social Login** integration (Google, Facebook, etc.) using Laravel Socialite.
+    -   **Two-Factor Authentication (2FA)** support via Google Authenticator.
+-   **Role-Based Access Control (RBAC)**:
+    -   Granular permission management using `spatie/laravel-permission`.
+-   **Financial Operations**:
+    -   Secure **Transaction Management**.
+    -   **Escrow Services** for safe peer-to-peer transactions.
+    -   **Crypto Capabilities** (via `wisdom-diala/cryptocap-pkg`).
+-   **Security & Compliance**:
+    -   **Activity Logging** to track user actions (`spatie/laravel-activitylog` & `yungts97/laravel-user-activity-log`).
+    -   **Location Detection** for security auditing (`stevebauman/location`).
+    -   **Cookie Consent** management (`spatie/laravel-cookie-consent`).
+-   **Utilities**:
+    -   **QR Code Generation** (`bacon/bacon-qr-code`, `simplesoftwareio/simple-qrcode`).
+    -   **CSV Import/Export** (`maatwebsite/excel`).
+    -   Interactive Real-time features with **Websockets** (`cboden/ratchet`).
 
--   User authentication & API tokens (Laravel Passport & Sanctum)
--   Social login integration (Laravel Socialite)
--   Role-based permissions (spatie/laravel-permission)
--   Activity logging (spatie/laravel-activitylog)
--   Transaction & escrow management
--   CSV import/export utilities (Maatwebsite Excel)
--   Two-factor authentication (pragmarx/google2fa-laravel)
--   Location detection (stevebauman/location)
--   Customizable email notifications
+## 🛠 Technology Stack
 
-## Installation
+-   **Backend Framework**: Laravel 10.x
+-   **Language**: PHP 8.1+
+-   **Frontend**: Blade Templates, Bootstrap 5, Vite (Build Tool)
+-   **Database**: MySQL / PostgreSQL
+-   **HTTP Client**: Guzzle
+
+## ⚙️ Installation
+
+Follow these steps to set up the project locally:
+
+### Prerequisites
+
+-   PHP >= 8.1
+-   Composer
+-   Node.js & NPM
+
+### Setup
+
+1.  **Clone the Repository**
+
+    ```bash
+    git clone https://github.com/mradulsharma/wealthmark.git
+    cd wealthMark
+    ```
+
+2.  **Install PHP Dependencies**
+
+    ```bash
+    composer install
+    ```
+
+3.  **Install Frontend Dependencies**
+
+    ```bash
+    npm install
+    ```
+
+4.  **Environment Configuration**
+
+    ```bash
+    cp .env.example .env
+    php artisan key:generate
+    ```
+
+    _Configure your database credentials in the `.env` file._
+
+5.  **Database Migration & Seeding**
+
+    ```bash
+    php artisan migrate --seed
+    ```
+
+6.  **Build Assets**
+    ```bash
+    npm run build
+    ```
+
+## 🏃‍♂️ Usage
+
+**Development Server:**
 
 ```bash
-# Clone the repository
-git clone <repository-url> wealthMark
-cd wealthMark
-
-# Install PHP dependencies
-composer install
-
-# Install Node dependencies (if any front-end assets are used)
-npm install
-
-# Set up environment file
-cp .env.example .env
-php artisan key:generate
-
-# Run migrations and seed database
-php artisan migrate --seed
-
-# Serve the application
 php artisan serve
 ```
 
-## Usage
+Access the application at `http://localhost:8000`.
 
--   Access the web interface at `http://127.0.0.1:8000`.
--   API endpoints are documented in the `routes/api.php` file.
--   Use Laravel Telescope or the built-in logs for debugging.
+**Frontend Watch Mode (if needed):**
 
-## Contributing
+```bash
+npm run dev
+```
 
-Please see the [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to set up a development environment, run tests, and submit pull requests.
+## 📂 Project Structure
 
-## License
+-   `app/Models`: Eloquent models for database interaction.
+-   `app/Http/Controllers`: Handles request logic.
+-   `routes/api.php`: API endpoints documentation.
+-   `routes/web.php`: Web application routes.
+-   `database/migrations`: Database schema definitions.
 
-This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
+## 🤝 Contributing
 
-## Contact
+We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
 
-For questions or support, open an issue or contact the repository maintainer.
+## 📄 License
+
+This project is open-sourced software licensed under the [MIT license](LICENSE).

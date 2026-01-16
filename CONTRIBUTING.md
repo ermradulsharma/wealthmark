@@ -1,37 +1,52 @@
 # Contributing to wealthMark
 
-We welcome contributions! Please follow these steps to get started:
+First off, thank you for considering contributing to wealthMark! It's people like you that make wealthMark such a great tool.
 
-1. **Fork the repository** and clone your fork locally.
-2. **Create a new branch** for your feature or bug fix:
+## 🤝 Getting Started
+
+1.  **Fork the repository** on GitHub.
+2.  **Clone your fork** locally:
+    ```bash
+    git clone https://github.com/your-username/wealthmark.git
+    ```
+3.  **Create a branch** for your new feature or bug fix:
 
     ```bash
-    git checkout -b my-feature
+    git checkout -b feature/amazing-feature
     ```
 
-3. **Set up the development environment**:
+    _Prefixes like `feature/`, `fix/`, `docs/` help organize branches._
 
-    - Install PHP dependencies: `composer install`
-    - Install Node dependencies (if applicable): `npm install`
-    - Copy the example environment file and generate an app key:
+4.  **Set up the environment**:
+    -   `composer install`
+    -   `npm install`
+    -   `cp .env.example .env`
+    -   `php artisan key:generate`
+    -   `php artisan migrate --seed`
 
-        ```bash
-        cp .env.example .env
-        php artisan key:generate
-        ```
+## 🛠 Development Workflow
 
-    - Run migrations and seed the database: `php artisan migrate --seed`
+-   **Code Style**: We follow the standard [Laravel coding style](https://laravel.com/docs/contributions#coding-style) (PSR-12).
+-   **Testing**: Please ensure all new code is tested. Run tests before submitting:
+    ```bash
+    php artisan test
+    ```
+-   **Commits**: Write clear, descriptive commit messages.
 
-4. **Make your changes** and ensure the code follows the existing coding style.
-5. **Run the test suite** (if tests are present): `php artisan test`
-6. **Commit your changes** with a clear commit message.
-7. **Push to your fork** and open a Pull Request against the `main` branch.
+## 📝 Pull Request Process
 
-## Pull Request Checklist
+1.  Push your changes to your fork.
+2.  Submit a **Pull Request (PR)** to the `main` branch of the `mradulsharma/wealthmark` repository.
+3.  Provide a clear description of changes and link to any relevant issues.
+4.  Wait for a review! We'll do our best to review PRs quickly.
 
--   [ ] Code follows the project's coding standards.
--   [ ] New/updated functionality is covered by tests.
--   [ ] Documentation (README, comments) is updated as needed.
--   [ ] No sensitive information or credentials are included.
+## 🐛 Reporting Bugs
 
-Thank you for helping improve wealthMark! 🎉
+If you find a bug, please open an issue on GitHub with:
+
+-   A description of the bug.
+-   Steps to reproduce.
+-   Expected vs. actual behavior.
+-   Your environment details (OS, PHP version, etc.).
+
+Thank you for helping make wealthMark better! 🚀
