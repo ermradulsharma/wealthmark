@@ -37,7 +37,7 @@ use App\Models\change_password_history;
 use App\Models\gift_card_history;
 use App\Models\loginAttemptHistory;
 use App\Models\payment_method_list;
-use App\Models\marketWallet;
+use App\Models\MarketWallet;
 use Jenssegers\Agent\Agent;
 use App\Models\LoginDetails;
 use App\Models\Chat;
@@ -112,7 +112,7 @@ class HomeController extends Controller
         if (count($results)) {
             foreach ($results as $row) {
                 //print_r($row);
-                //echo marketWallet::where('id', $row->id)->where('user_id',Auth::User()->id)->where('coin_name','BMK')->update(['order_id' => 1,'status'=>1,'updated_at'=> date("Y-m-d H:i:s")]);
+                //echo MarketWallet::where('id', $row->id)->where('user_id',Auth::User()->id)->where('coin_name','BMK')->update(['order_id' => 1,'status'=>1,'updated_at'=> date("Y-m-d H:i:s")]);
                 $base_url = env('BMK_API_BASE_URL');
                 $BmkApiController = new BmkApiController;
                 $url = $base_url . '/buy_bmk_coin';
@@ -147,7 +147,7 @@ class HomeController extends Controller
                 );
                 $order_data = Order::insertGetId($data);
                 if ($order_data) {
-                    marketWallet::where('id', $row->id)->where('user_id', Auth::User()->id)->where('coin_name', 'BMK')->update(['new_order_id' => $order_data, 'status' => 1, 'updated_at' => date("Y-m-d H:i:s")]);
+                    MarketWallet::where('id', $row->id)->where('user_id', Auth::User()->id)->where('coin_name', 'BMK')->update(['new_order_id' => $order_data, 'status' => 1, 'updated_at' => date("Y-m-d H:i:s")]);
                 }
             }
         }
@@ -161,7 +161,7 @@ class HomeController extends Controller
             })->get();
         if (count($results)) {
             foreach ($results as $row) {
-                marketWallet::where('id', $row->id)->where('user_id', Auth::User()->id)->where('coin_name', 'BMK')->update(['status' => 1, 'updated_at' => date("Y-m-d H:i:s")]);
+                MarketWallet::where('id', $row->id)->where('user_id', Auth::User()->id)->where('coin_name', 'BMK')->update(['status' => 1, 'updated_at' => date("Y-m-d H:i:s")]);
             }
         }
     }
@@ -373,7 +373,7 @@ class HomeController extends Controller
                                             'coin_type' => '2',
                                             'coin_name' => "BMK"
                                         );
-                                        $wallet_data = marketWallet::insert($wallet_arr);
+                                        $wallet_data = MarketWallet::insert($wallet_arr);
                                     } else {
                                         $monthly_wallet_coin_val = floatval($wallet_coin_val) / 12;
                                         for ($x = 0; $x <= 11; $x++) {
@@ -403,7 +403,7 @@ class HomeController extends Controller
                                                 'coin_type' => '2',
                                                 'coin_name' => "BMK"
                                             );
-                                            $wallet_data = marketWallet::insert($wallet_arr);
+                                            $wallet_data = MarketWallet::insert($wallet_arr);
                                         }
                                     }
 
