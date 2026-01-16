@@ -1,11 +1,13 @@
+/vendor
 /node_modules
 /public/build
 /public/hot
 /public/storage
 /storage/*.key
-/vendor
+/storage/oauth-*.key
 .env
 .env.backup
+.env.production
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml
@@ -14,3 +16,24 @@ npm-debug.log
 yarn-error.log
 /.idea
 /.vscode
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+.editorconfig
+
+# Storage
+/storage/app/public
+/storage/framework/cache/*
+!/storage/framework/cache/.gitignore
+/storage/framework/sessions/*
+!/storage/framework/sessions/.gitignore
+/storage/framework/testing/*
+!/storage/framework/testing/.gitignore
+/storage/framework/views/*
+!/storage/framework/views/.gitignore
+/storage/logs/*
+!/storage/logs/.gitignore
+
+# Local SQL dumps (Large files)
+database/*.sql
