@@ -354,7 +354,7 @@ to {
                 <a href="#">Learn more</a>
             </div>
             <div class="right">
-              <img src="{{ asset('assets/img/lab/wm-photo.jpg') }}" alt="">
+              <img src="{{ asset('img/lab/wm-photo.jpg') }}" alt="">
             </div>
         </div>
     </div>
@@ -406,7 +406,7 @@ to {
 <!--            </a>-->
 <!--        </li>-->
 <!--      </ul>-->
-<!--      <img src="{{ asset('assets/img/team-dummy.jpg') }}" class="labs-team-profile" alt="">-->
+<!--      <img src="{{ asset('img/team-dummy.jpg') }}" class="labs-team-profile" alt="">-->
 <!--      <h3 class="transition title">Name here</h3>-->
 <!--      <div class="transition sub-title">Designation</div>-->
 <!--      <span class="transition">-->
@@ -424,7 +424,7 @@ to {
                     <div class="col-lg-3 col-md-4 col-sm-6">
                         <div class="labs-team">
                             <div class="img-box">
-                                <img src="{{ asset('assets/img/team-dummy.jpg') }}" class="labs-team-profile">
+                                <img src="{{ asset('img/team-dummy.jpg') }}" class="labs-team-profile">
                             </div>
                             <div class="content-box">
                                 <h3>Name Here</h3>

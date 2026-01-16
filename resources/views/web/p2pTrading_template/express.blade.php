@@ -36,7 +36,7 @@
                         </div>
                         <div class="bS-crypto-div-open-list" id="selected_crrency">
                             <div class="bS-crypto-select-coin-symbol">
-                                <img src="https://wealthmark.io/img/inr-img.png" class="bS-crypto-select-coin">
+                                <img src="{{ asset('img/inr-img.png') }}" class="bS-crypto-select-coin">
                             </div>
                             <div class="bS-crypto-select-coin-title">INR</div>
                             <svg viewBox="0 0 24 24" fill="none" class="bS-crypto-div-open-list-svg">
@@ -63,7 +63,7 @@
                               <li role="option" id="INR" title="INR" class="wm-dropdown-optn-item " onclick="express_coin(this.id)">
                                 <div class="wm-dropdown-optn-item-inner selected">
                                   <div class="wm-dropdown-optn-item-div">
-                                    <img class="wm-dropdown-optn-item-img" src="https://wealthmark.io/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                    <img class="wm-dropdown-optn-item-img" src="{{ asset('img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                     <div class="wm-dropdown-optn-item-txt">INR</div>
                                   </div>
                                 </div>
@@ -71,7 +71,7 @@
                               <li role="option" id="USD" title="USD" class="wm-dropdown-optn-item " onclick="express_coin(this.id)">
                                 <div class="wm-dropdown-optn-item-inner">
                                   <div class="wm-dropdown-optn-item-div">
-                                    <img class="wm-dropdown-optn-item-img" src="https://wealthmark.io/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                    <img class="wm-dropdown-optn-item-img" src="{{ asset('img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                     <div class="wm-dropdown-optn-item-txt">USD</div>
                                   </div>
                                 </div>
@@ -94,7 +94,7 @@
                   <div class="bS-crypto-div-open-list" id="selected_crypto">
                        <input type="hidden" class="selectedCoinPrice" name="selectedCoinPrice" value="1919.36352580">
 
-                    <img src="https://wealthmark.io/img/3a8c9fe6-2a76-4ace-aa07-415d994de6f0.png" class="bS-crypto-select-coin">
+                    <img src="{{ asset('img/3a8c9fe6-2a76-4ace-aa07-415d994de6f0.png') }}" class="bS-crypto-select-coin">
                     <div class="bS-crypto-select-coin-title">ETH</div>
                     <svg viewBox="0 0 24 24" fill="none" class="bS-crypto-div-open-list-svg">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M12.11 12.178L16 8.287l1.768 1.768-5.657 5.657-1.768-1.768-3.889-3.889 1.768-1.768 3.889 3.89z" fill="currentColor"></path>
@@ -120,7 +120,7 @@
                               <li role="option" id="BMK" title="BMK" class="wm-dropdown-optn-item " onclick="express_coin(this.id)">
                                 <div class="wm-dropdown-optn-item-inner selected">
                                   <div class="wm-dropdown-optn-item-div">
-                                    <img class="wm-dropdown-optn-item-img" src="https://wealthmark.io/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                    <img class="wm-dropdown-optn-item-img" src="{{ asset('img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                     <div class="wm-dropdown-optn-item-txt">BMK</div>
                                   </div>
                                 </div>
@@ -128,7 +128,7 @@
                               <li role="option" id="ETH" title="ETH" class="wm-dropdown-optn-item " onclick="express_coin(this.id)">
                                 <div class="wm-dropdown-optn-item-inner">
                                   <div class="wm-dropdown-optn-item-div">
-                                    <img class="wm-dropdown-optn-item-img" src="https://wealthmark.io/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                    <img class="wm-dropdown-optn-item-img" src="{{ asset('img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                     <div class="wm-dropdown-optn-item-txt">ETH</div>
                                   </div>
                                 </div>

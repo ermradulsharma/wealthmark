@@ -437,7 +437,7 @@
 
             },
             setSrc:function () {
-                     return '{{ asset('assets/img/captchaImages/') }}' +'/'+Math.round(Math.random() * 20) +'.jpg';
+                     return '{{ asset('img/captchaImages/') }}' +'/'+Math.round(Math.random() * 20) +'.jpg';
                       },
              onFail:function () {
                   $('#myform .TxtStatus').html("<span style='color:red!important'>Captcha Verification failed.</span>");
@@ -523,7 +523,7 @@
 
             },
             setSrc:function () {
-                     return '{{ asset('assets/img/captchaImages/') }}' +'/'+Math.round(Math.random() * 20) +'.jpg';
+                     return '{{ asset('img/captchaImages/') }}' +'/'+Math.round(Math.random() * 20) +'.jpg';
                       },
             onFail:function () {
                   $('#myform1 .TxtStatus').html("<span style='color:red!important'>Captcha Verification failed.</span>");

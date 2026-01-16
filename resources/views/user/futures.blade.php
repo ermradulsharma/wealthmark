@@ -8,8 +8,8 @@
     <meta content="" name="description">
     <meta content="" name="keywords">
     <meta name="theme-color" content="#287aff">
-    <link href="{{ asset('assets/img/wealthmark-logo.svg') }}" rel="icon">
-    <link href="{{ asset('assets/img/wealthmark-logo.svg') }}" rel="apple-touch-icon">
+    <link href="{{ asset('img/wealthmark-logo.svg') }}" rel="icon">
+    <link href="{{ asset('img/wealthmark-logo.svg') }}" rel="apple-touch-icon">
     <link rel="stylesheet" href="{{ asset('assets/css/dashboard.css') }}">
 
     @include('template.web_css')
@@ -347,7 +347,7 @@
                 <div class="row">
                 <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                     <div class="future-center-block max-width-600px m-auto text-center shadow-sm border p-4">
-                        <img src="https://wealthmark.io/assets/img/open-futures-account-img.svg" class="img-fluid mb-3" alt="walth mark blog">
+                        <img src="{{ asset('img/assets/img/open-futures-account-img.svg') }}" class="img-fluid mb-3" alt="walth mark blog">
                         <h3 class="mb-2">Open Future Account </h3>
                         <div class="text my-3 text-justify">
                             Futures trading is a highly risky endeavor, with
@@ -397,7 +397,7 @@
             <div class="row">
                 <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                     <div class="future-center-block">
-                        <img src="{{ asset('assets/img/open-futures-account-img.svg') }}" class="img-fluid"
+                        <img src="{{ asset('img/open-futures-account-img.svg') }}" class="img-fluid"
                             alt="walth mark blog">
                         <h3>Open Future Account </h3>
                         <div class="text my-3">

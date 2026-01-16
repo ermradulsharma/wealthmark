@@ -52,7 +52,7 @@
         <div class="container-fluid p-0 m-0">
           <div class="row">
                                 <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
-                                    <!--<img src="{{ asset('assets/img/exchange-chart.png') }}" class="img-fluid"-->
+                                    <!--<img src="{{ asset('img/exchange-chart.png') }}" class="img-fluid"-->
                                     <!--    alt="gift Card Image">-->
                                     <!-- TradingView Widget BEGIN -->
             <div class="tradingview-widget-container">

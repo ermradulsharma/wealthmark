@@ -162,7 +162,7 @@
                             html += '</div>';
                             html += '<div class="bS-crypto-div-open-list" id="selected_crypto">';
                             html += '<input type="hidden" class="selectedCoinPrice" name="selectedCoinPrice" value="">';
-                            html += '<img src="{{ asset('assets/img/inr-img.png') }}" class="bS-crypto-select-coin">';
+                            html += '<img src="{{ asset('img/inr-img.png') }}" class="bS-crypto-select-coin">';
                             html += '<div  class="bS-crypto-select-coin-title">INR</div>';
                             html += '<svg viewBox="0 0 24 24" fill="none" class="bS-crypto-div-open-list-svg">';
                             html += '<path fill-rule="evenodd" clip-rule="evenodd" d="M12.11 12.178L16 8.287l1.768 1.768-5.657 5.657-1.768-1.768-3.889-3.889 1.768-1.768 3.889 3.89z" fill="currentColor"></path>';

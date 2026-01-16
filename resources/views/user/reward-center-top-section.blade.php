@@ -5,7 +5,7 @@
         <div class="rw-card">
             <article>
                 <h2>Digital Gift rw-card</h2>
-                <div class="pic"><img src="{{ asset('assets/img/reward-center/reward-gift-card.jpg') }}"></div>
+                <div class="pic"><img src="{{ asset('img/reward-center/reward-gift-card.jpg') }}"></div>
                 <div class="title">10 USDT</div>
                 <div class="h-divider w-75 m-auto my-2"></div>
                 <div class="d-flex align-items-center flex-wrap px-5 ">
@@ -32,7 +32,7 @@
         <div class="rw-card">
             <article>
                 <h2>Cashback Voucher</h2>
-                <div class="pic"><img src="{{ asset('assets/img/reward-center/reward-gift-card.jpg') }}"></div>
+                <div class="pic"><img src="{{ asset('img/reward-center/reward-gift-card.jpg') }}"></div>
                 <div class="title">10 USDT</div>
                 <div class="h-divider w-75 m-auto my-2"></div>
                 <div class="d-flex align-items-center flex-wrap px-5 ">
@@ -59,7 +59,7 @@
         <div class="rw-card">
             <article>
                 <h2>Affiliate Gift rw-card</h2>
-                <div class="pic"><img src="{{ asset('assets/img/reward-center/reward-gift-card.jpg') }}"></div>
+                <div class="pic"><img src="{{ asset('img/reward-center/reward-gift-card.jpg') }}"></div>
                 <div class="title">10 USDT</div>
                 <div class="h-divider w-75 m-auto my-2"></div>
                 <div class="d-flex align-items-center flex-wrap px-5 ">
@@ -86,7 +86,7 @@
         <div class="rw-card">
             <article>
                 <h2>Promotional Gift rw-card</h2>
-                <div class="pic"><img src="{{ asset('assets/img/reward-center/reward-gift-card.jpg') }}"></div>
+                <div class="pic"><img src="{{ asset('img/reward-center/reward-gift-card.jpg') }}"></div>
                 <div class="title">10 USDT</div>
                 <div class="h-divider w-75 m-auto my-2"></div>
                 <div class="d-flex align-items-center flex-wrap px-5 ">

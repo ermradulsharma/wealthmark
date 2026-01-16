@@ -7,8 +7,8 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
   <meta name="theme-color" content="javascript:void(0)287aff">
-  <link href="{{ asset('assets/img/wealthmark-logo.svg') }}" rel="icon">
-  <link href="{{ asset('assets/img/wealthmark-logo.svg') }}" rel="apple-touch-icon">
+  <link href="{{ asset('img/wealthmark-logo.svg') }}" rel="icon">
+  <link href="{{ asset('img/wealthmark-logo.svg') }}" rel="apple-touch-icon">
   @include('template.web_css')
   <link rel="stylesheet" href="{{ asset('assets/css/dashboard.css') }}">
   <style>

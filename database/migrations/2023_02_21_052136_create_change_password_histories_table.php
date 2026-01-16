@@ -6,30 +6,20 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
         Schema::create('change_password_histories', function (Blueprint $table) {
-            $table->id();
+                $table->increments('id');
             $table->bigInteger('user_id')->nullable();
-            $table->string('login_type')->nullable();
-            $table->string('ip')->nullable();
-            $table->integer('record_type')->comment('0=new_user,1=old_bmk_user')->nullable();
-            $table->string('old_record')->nullable();
-            $table->string('new_record')->nullable();
-            $table->timestamps();
-        }); 
+            $table->text('login_type')->nullable();
+            $table->text('ip')->nullable();
+            $table->text('record_type')->nullable();
+            $table->text('old_record')->nullable();
+            $table->text('new_record')->nullable();
+                $table->timestamps();
+        });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::dropIfExists('change_password_histories');

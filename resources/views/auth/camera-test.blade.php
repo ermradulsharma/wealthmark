@@ -7,8 +7,8 @@
       <meta content="" name="description">
       <meta content="" name="keywords">
       <meta name="theme-color" content="#287aff">
-      <link href="{{ asset('assets/img/wealthmark-logo.svg') }}" rel="icon">
-      <link href="{{ asset('assets/img/wealthmark-logo.svg') }}" rel="apple-touch-icon">
+      <link href="{{ asset('img/wealthmark-logo.svg') }}" rel="icon">
+      <link href="{{ asset('img/wealthmark-logo.svg') }}" rel="apple-touch-icon">
       <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
       <link href="{{ asset('assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
       <link href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
@@ -980,7 +980,7 @@ video  {
                             <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1 text-center">
                              <div class="login_scan">
                                  <div class="qr_code">
-                                 <img src="https://www.wealthmark.io/assets/img/qr-code.png" class="img-responsive">
+                                 <img src="{{ asset('img/assets/img/qr-code.png') }}" class="img-responsive">
                                  </div>
                                  <div class="mob_login">
                                      <h2>You're almost there!</h2>
@@ -1088,7 +1088,7 @@ video  {
                 <div id="country_box">
                     <div class="disable_div d-flex form-control">
                         <div class="img">
-                            <img src="{{asset('assets/img/Flag_of_India.jpg') }}" class="flag">
+                            <img src="{{asset('img/Flag_of_India.jpg') }}" class="flag">
                         </div>
                         <div class="text">
                             <span>India</span>
@@ -1290,7 +1290,7 @@ video  {
                 <div class="aadhar_card">
                       <div class="modal-body">
                   <div class="img-box mt-3 mb-5">
-                    <img src="{{ asset('assets/img/card_dummy.png') }}" class="mx-auto d-block modal-card-img" />
+                    <img src="{{ asset('img/card_dummy.png') }}" class="mx-auto d-block modal-card-img" />
                   </div>
                   <div class="">
                     <p class="modal-p">You are about to upload your ID card. Please ensure that:</p>
@@ -1334,7 +1334,7 @@ video  {
                  <div class="modal-body">
 
                   <div class="img-box mt-3 mb-5">
-                    <img src="{{ asset('assets/img/card_dummy.png') }}" class="mx-auto d-block modal-card-img" />
+                    <img src="{{ asset('img/card_dummy.png') }}" class="mx-auto d-block modal-card-img" />
                   </div>
                   <div class="">
                     <p class="modal-p">You are about to upload your driving license. Please ensure that:</p>
@@ -1375,7 +1375,7 @@ video  {
                  <div class="modal-body">
 
                   <div class="img-box mt-3 mb-5">
-                    <img src="{{ asset('assets/img/card_dummy.png') }}" class="mx-auto d-block modal-card-img" />
+                    <img src="{{ asset('img/card_dummy.png') }}" class="mx-auto d-block modal-card-img" />
                   </div>
                   <div class="">
                     <p class="modal-p">You are about to upload your passport. Please ensure that:</p>
@@ -1610,7 +1610,7 @@ video  {
                 <div class="modal-body">
 
                     <div class="img-preview">
-                        <img src="{{ asset('assets/img/HTB1Alaue8WD3KVjSZFsq6AqkpXaz.jpg') }}" class="" />
+                        <img src="{{ asset('img/HTB1Alaue8WD3KVjSZFsq6AqkpXaz.jpg') }}" class="" />
                     </div>
                 <div>
                     <p class="modal-p">You are about to upload your passport. Please ensure that:</p>
@@ -1679,7 +1679,7 @@ video  {
               <div class="upld-doc-subtitle">Front side of ID Card</div>
               <div class="upld-box-inner">
 
-                    <img src="{{ asset('assets/img/HTB1Alaue8WD3KVjSZFsq6AqkpXaz.jpg') }}" class="" />
+                    <img src="{{ asset('img/HTB1Alaue8WD3KVjSZFsq6AqkpXaz.jpg') }}" class="" />
 
               </div>
             </div>
@@ -1691,7 +1691,7 @@ video  {
 
 
 
-                    <img src="{{ asset('assets/img/HTB1Alaue8WD3KVjSZFsq6AqkpXaz.jpg') }}" class="" />
+                    <img src="{{ asset('img/HTB1Alaue8WD3KVjSZFsq6AqkpXaz.jpg') }}" class="" />
 
               </div>
             </div>
@@ -1726,7 +1726,7 @@ video  {
                     <div class="modal-body">
                         <div class="demo-img mb-4 text-start">
                             <p class="mb-4"> Example</p>
-                           <img src="{{ asset('assets/img/HTB1Alaue8WD3KVjSZFsq6AqkpXaz.jpg') }}" class="demo" />
+                           <img src="{{ asset('img/HTB1Alaue8WD3KVjSZFsq6AqkpXaz.jpg') }}" class="demo" />
                         </div>
                     <ul class="modal_ul">
                           <li class="modal_li done">

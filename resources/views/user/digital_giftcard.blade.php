@@ -6,8 +6,8 @@
   <!--<meta content="" name="description">-->
   <!--<meta content="" name="keywords">-->
   <!--<meta name="theme-color" content="#287aff">-->
-  <!--<link href="{{ asset('assets/img/wealthmark-logo.svg') }}" rel="icon">-->
-  <!--<link href="{{ asset('assets/img/wealthmark-logo.svg') }}" rel="apple-touch-icon">-->
+  <!--<link href="{{ asset('img/wealthmark-logo.svg') }}" rel="icon">-->
+  <!--<link href="{{ asset('img/wealthmark-logo.svg') }}" rel="apple-touch-icon">-->
   <link rel="stylesheet" href="{{ asset('assets/css/dashboard.css') }}">
   <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">-->
   @include('template.web_css')

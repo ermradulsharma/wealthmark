@@ -6,27 +6,15 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
         Schema::create('estimatedfees', function (Blueprint $table) {
-            $table->id();
-            $table->string('estimated_fee');    
-            $table->string('fee_type'); 
-            $table->timestamps();
-            $table->softDeletes();
+                $table->id();
+                $table->string('estimated_fee');                $table->timestamps();
+                $table->softDeletes();
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::dropIfExists('estimatedfees');

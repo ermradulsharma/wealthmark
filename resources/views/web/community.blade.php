@@ -38,7 +38,7 @@
                   <p class="top-p">Wealthmark is more than a crypto ecosystem. It's a vibrant global community powered by Wealthmark users from all walks of life, who come together both in real life and online to pursue their passions and advance the crypto cause.</p>
                </div>
                <div class="col-lg-5 col-md-6 col-sm-6 hero-img text-center p-2 order-1 order-lg-2 order-md-2 order-sm-2 col-xs-1" data-aos="zoom-in" data-aos-delay="200">
-                  <img src="{{ asset('assets/img/community/cover-graphic-2.png') }}" class="img-fluid  w-100 max-width-450px" alt="Join the Wealthmark Community" title="Join the Wealthmark Community">
+                  <img src="{{ asset('img/community/cover-graphic-2.png') }}" class="img-fluid  w-100 max-width-450px" alt="Join the Wealthmark Community" title="Join the Wealthmark Community">
                </div>
             </div>
          </div>
@@ -57,12 +57,12 @@
                   </div>
                </div>
                 <div class="col-md-6 col-sm-6 col-xs-8 text-center order-1 order-lg-2 order-md-2 order-sm-1 col-xs-1">
-                  <img src="{{ asset('assets/img/meet-ups-events.png') }}" class="img-fluid  w-100 pb-4 max-width-350px" alt="Explore Meet-ups & Events" title="Explore Meet-ups & Events">
+                  <img src="{{ asset('img/meet-ups-events.png') }}" class="img-fluid  w-100 pb-4 max-width-350px" alt="Explore Meet-ups & Events" title="Explore Meet-ups & Events">
                </div>
             </div>
             <div class="row align-items-center justify-content-center">
                <div class="col-md-6 col-sm-6 text-center">
-                  <img src="{{ asset('assets/img/angel-program.png') }}" class="img-fluid animated w-100 max-width-350px" alt="Wealthmark Angel Program" title="Wealthmark Angel Program" >
+                  <img src="{{ asset('img/angel-program.png') }}" class="img-fluid animated w-100 max-width-350px" alt="Wealthmark Angel Program" title="Wealthmark Angel Program" >
                </div>
                <div class="col-md-6 col-sm-12">
                   <div class="sec-title text-left">
@@ -92,7 +92,7 @@
                   </div>
                </div>
                <div class="col-md-6 col-sm-6 text-center order-1 order-lg-2 order-md-2 order-sm-1 col-xs-1">
-                  <img src="{{ asset('assets/img/join-the-conversation.png') }}" class="img-fluid animated w-100 max-width-350px" alt="Join the Conversation" title="Join the Conversation" >
+                  <img src="{{ asset('img/join-the-conversation.png') }}" class="img-fluid animated w-100 max-width-350px" alt="Join the Conversation" title="Join the Conversation" >
                </div>
             </div>
          </div>

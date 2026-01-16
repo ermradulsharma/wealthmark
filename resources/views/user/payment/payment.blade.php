@@ -8,8 +8,8 @@
   <meta content="" name="keywords">
   <meta name="theme-color" content="#287aff">
   <meta name="csrf-token" content="{{ csrf_token() }}" />
-  <link href="{{ asset('assets/img/wealthmark-logo.svg') }}" rel="icon">
-  <link href="{{ asset('assets/img/wealthmark-logo.svg') }}" rel="apple-touch-icon">
+  <link href="{{ asset('img/wealthmark-logo.svg') }}" rel="icon">
+  <link href="{{ asset('img/wealthmark-logo.svg') }}" rel="apple-touch-icon">
   <link rel="stylesheet" href="{{ asset('assets/css/dashboard.css') }}">
   <link rel="stylesheet" href="{{ asset('assets/css/payments.css') }}">
   <link rel="stylesheet" href="{{ asset('assets/css/alert.css') }}">
@@ -340,7 +340,7 @@
                 <div class="modal-dialog">
                     <div class="modal-content pt-3 pb-3 p-3">
                         <div class="modal-header border-0">
-                            <img class="warning-img" src="https://wealthmark.io/assets/img/warning.svg">
+                            <img class="warning-img" src="{{ asset('img/assets/img/warning.svg') }}">
                         </div>
                         <h5 class="text-center text-dark">Verify your account</h5>
                         <h6 class="text-center text-dark"> Complete KYC & Verify Email & Phone</h6>
@@ -453,7 +453,7 @@
                                         @else
 
                                       <div class="col-12 mt-5 text-center">
-                                         <img src="{{ asset('assets/img/not-found-icons/no-payment-method.svg') }}" class="no-record-icon" alt="">
+                                         <img src="{{ asset('img/not-found-icons/no-payment-method.svg') }}" class="no-record-icon" alt="">
                                          <p class="mt-3 mb-2">You have not added any payment methods</p>
                                       </div>
                                         @endif
@@ -470,7 +470,7 @@
 
                                          <div class="col-12">
                                             <div class="text-center mt-5 py-5">
-                                               <img src="{{ asset('assets/img/not-found-icons/no-card.svg') }}" class="no-record-icon" alt="">
+                                               <img src="{{ asset('img/not-found-icons/no-card.svg') }}" class="no-record-icon" alt="">
                                                <p class="mt-3">You don't have any cards</p>
                                             </div>
                                          </div>
@@ -505,7 +505,7 @@
 
                                    <div class="col-12">
                                          <div class="text-center mt-5 py-5">
-                                            <img src="{{ asset('assets/img/not-found-icons/no-card.svg') }}" class="no-record-icon" alt="">
+                                            <img src="{{ asset('img/not-found-icons/no-card.svg') }}" class="no-record-icon" alt="">
                                             <p class="mt-3">You don't have any cards</p>
                                          </div>
                                    </div>
@@ -527,7 +527,7 @@
                 <div class="modal-dialog">
                     <div class="modal-content pt-3 pb-3 p-3">
                         <div class="modal-header border-0">
-                            <img class="warning-img" src="https://wealthmark.io/assets/img/warning.svg">
+                            <img class="warning-img" src="{{ asset('img/assets/img/warning.svg') }}">
                         </div>
                         <h5 class="text-center text-dark">Are you sure you want to remove Binance/Google Authenticator?</h5>
                         <div class="modal-body">

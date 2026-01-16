@@ -49,7 +49,7 @@
         #invite_frd_modal .social-share-hover a { margin: 0 5px; font-size: 23px; padding: 8px 10px; color: #ffc107; background: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; }
 
         /* Background images */
-        .ref-invite-bg { position: relative; border-radius: 8px; overflow: hidden; background: url('https://www.wealthmark.io/assets/img/share-bg.jpg') left top / cover no-repeat; width: 328px; height: 460px; padding: 24px; color: #1e2329; }
+        .ref-invite-bg { position: relative; border-radius: 8px; overflow: hidden; background: url('{{ asset('img/assets/img/share-bg.jpg') }}') left top / cover no-repeat; width: 328px; height: 460px; padding: 24px; color: #1e2329; }
     </style>
 </head>
 
@@ -429,8 +429,8 @@
                                                       <!--<button type="button" class="btn-yellow d-block w-100 border-0" id="invite_1" onClick="openInvite_Modal(this.id)">Invite Friends</button>-->
 
                                                         <div class="ref-invite-code">
-                                                              <img src="{{ asset('assets/img/referral/invitefriend.png') }} " class="ref-invite-code-img">
-                                                          <!--<img src="https://www.wealthmark.io/assets/img/referral/invitefriend.png" class="ref-invite-code-img">-->
+                                                              <img src="{{ asset('img/referral/invitefriend.png') }} " class="ref-invite-code-img">
+                                                          <!--<img src="{{ asset('img/assets/img/referral/invitefriend.png') }}" class="ref-invite-code-img">-->
                                                           <button type="button" class=" ref-invite-code-btn">
                                                             <div class="">Invite Friends</div>
                                                           </button>
@@ -481,7 +481,7 @@
                   <div class="lf-select-coin-to-active-value lf-select-coin-to-active-div">
 
                       <div class="wm-dropdown-optn-item-div">
-                        <img id="select_coin_img" class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">
+                        <img id="select_coin_img" class="wm-dropdown-optn-item-img" src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                         <div id="select_coin_text" class="wm-dropdown-optn-item-txt">USDT/BNB</div>
                       </div>
                     </div>
@@ -507,7 +507,7 @@
                           <div class="wm-dropdown-optn-item-inner">
 
                                 <div class="wm-dropdown-optn-item-div">
-                                  <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                  <img class="wm-dropdown-optn-item-img" src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
 
                                   <div class="wm-dropdown-optn-item-txt">BTC/USD</div>
 
@@ -519,7 +519,7 @@
 
 
                                 <div class="wm-dropdown-optn-item-div">
-                                    <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                    <img class="wm-dropdown-optn-item-img" src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
 
                                     <div class="wm-dropdown-optn-item-txt">BNB/BUSD</div>
                                 </div>
@@ -532,7 +532,7 @@
 
 
                                 <div class="wm-dropdown-optn-item-div">
-                                  <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                  <img class="wm-dropdown-optn-item-img" src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
 
                                   <div class="wm-dropdown-optn-item-txt">ETH/DAI</div>
 
@@ -545,7 +545,7 @@
 
 
                                 <div class="wm-dropdown-optn-item-div">
-                                  <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                  <img class="wm-dropdown-optn-item-img" src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
 
                                   <div class="wm-dropdown-optn-item-txt">USDT/BNB</div>
                                 </div>
@@ -558,7 +558,7 @@
 
 
                                 <div class="wm-dropdown-optn-item-div">
-                                 <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                 <img class="wm-dropdown-optn-item-img" src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
 
                                   <div class="wm-dropdown-optn-item-txt">USDT/ETH</div>
                                 </div>
@@ -569,7 +569,7 @@
                         <li role="option" id="13" title="13" class="wm-dropdown-optn-item " onclick="changeSrc2(this.id)">
                           <div class="wm-dropdown-optn-item-inner">
                            <div class="wm-dropdown-optn-item-div">
-                                  <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                  <img class="wm-dropdown-optn-item-img" src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
 
                                   <div class="wm-dropdown-optn-item-txt">BTC/ETH</div>
                                 </div>

@@ -57,7 +57,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 under-maintance-div">
-                      <img src="{{ asset('assets/img/under-construction-2.svg') }}" class="img-fluid under-maintance" alt="">
+                      <img src="{{ asset('img/under-construction-2.svg') }}" class="img-fluid under-maintance" alt="">
                 </div>
             </div>
         </div>

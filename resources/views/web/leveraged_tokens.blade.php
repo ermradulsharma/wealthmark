@@ -204,7 +204,7 @@
                                 <tbody>
                                     <tr>
                                         <td scope="row"> <img loading="lazy" class="mx-auto d-block img-fluid pt-1"
-                                                src="{{ asset('assets/img/token-table-img-1.png') }}"
+                                                src="{{ asset('img/token-table-img-1.png') }}"
                                                 alt="Leverage Tokens Image"></td>
                                         <td>
                                             <p>ADADOWN <span
@@ -225,7 +225,7 @@
                                     </tr>
                                     <tr>
                                         <td scope="row"> <img loading="lazy" class="mx-auto d-block img-fluid pt-1"
-                                                src="{{ asset('assets/img/token-table-img-2.png') }}"
+                                                src="{{ asset('img/token-table-img-2.png') }}"
                                                 alt="Leverage Tokens Image"></td>
                                         <td>
                                             <p>ADADOWN <span
@@ -246,7 +246,7 @@
                                     </tr>
                                     <tr>
                                         <td scope="row"> <img loading="lazy" class="mx-auto d-block img-fluid pt-1"
-                                                src="{{ asset('assets/img/token-table-img-4.png') }}"
+                                                src="{{ asset('img/token-table-img-4.png') }}"
                                                 alt="Leverage Tokens Image"></td>
                                         <td>
                                             <p>ADADOWN <span
@@ -267,7 +267,7 @@
                                     </tr>
                                     <tr>
                                         <td scope="row"> <img loading="lazy" class="mx-auto d-block img-fluid pt-1"
-                                                src="{{ asset('assets/img/token-table-img-5.png') }}"
+                                                src="{{ asset('img/token-table-img-5.png') }}"
                                                 alt="Leverage Tokens Image"></td>
                                         <td>
                                             <p>ADADOWN <span
@@ -288,7 +288,7 @@
                                     </tr>
                                     <tr>
                                         <td scope="row"> <img loading="lazy" class="mx-auto d-block img-fluid pt-1"
-                                                src="{{ asset('assets/img/token-table-img-7.png') }}"
+                                                src="{{ asset('img/token-table-img-7.png') }}"
                                                 alt="Leverage Tokens Image"></td>
                                         <td>
                                             <p>ADADOWN <span
@@ -309,7 +309,7 @@
                                     </tr>
                                     <tr>
                                         <td scope="row"> <img loading="lazy" class="mx-auto d-block img-fluid pt-1"
-                                                src="{{ asset('assets/img/token-table-img-8.png') }}"
+                                                src="{{ asset('img/token-table-img-8.png') }}"
                                                 alt="Leverage Tokens Image"></td>
                                         <td>
                                             <p>ADADOWN <span
@@ -330,7 +330,7 @@
                                     </tr>
                                     <tr>
                                         <td scope="row"> <img loading="lazy" class="mx-auto d-block img-fluid pt-1"
-                                                src="{{ asset('assets/img/token-table-img-9.png') }}"
+                                                src="{{ asset('img/token-table-img-9.png') }}"
                                                 alt="Leverage Tokens Image"></td>
                                         <td>
                                             <p>ADADOWN <span
@@ -351,7 +351,7 @@
                                     </tr>
                                     <tr>
                                         <td scope="row"> <img loading="lazy" class="mx-auto d-block img-fluid pt-1"
-                                                src="{{ asset('assets/img/token-table-img-10.png') }}"
+                                                src="{{ asset('img/token-table-img-10.png') }}"
                                                 alt="Leverage Tokens Image"></td>
                                         <td>
                                             <p>ADADOWN <span
@@ -372,7 +372,7 @@
                                     </tr>
                                     <tr>
                                         <td scope="row"> <img loading="lazy" class="mx-auto d-block img-fluid pt-1"
-                                                src="{{ asset('assets/img/token-table-img-2.png') }}"
+                                                src="{{ asset('img/token-table-img-2.png') }}"
                                                 alt="Leverage Tokens Image"></td>
                                         <td>
                                             <p>ADADOWN <span
@@ -393,7 +393,7 @@
                                     </tr>
                                     <tr>
                                         <td scope="row"> <img loading="lazy" class="mx-auto d-block img-fluid pt-1"
-                                                src="{{ asset('assets/img/token-table-img-4.png') }}"
+                                                src="{{ asset('img/token-table-img-4.png') }}"
                                                 alt="Leverage Tokens Image"></td>
                                         <td>
                                             <p>ADADOWN <span
@@ -567,7 +567,7 @@
                             </div>
                             <!-- <div class="col-md-12">
                             <div class="available-gift-card" id="added-gift-card">
-                                <img src="{{ asset('assets/img/added-card-icon.jpg') }}" class="img-fluid"
+                                <img src="{{ asset('img/added-card-icon.jpg') }}" class="img-fluid"
                                     alt="Leverage Tokens Image">
                                 <h5>No records found.</h5>
                             </div>

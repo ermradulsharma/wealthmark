@@ -184,7 +184,7 @@ ul.tabs li.active {
                           <h2 class="fw-bold mb-0">Settings</h2>
                        </div>
                        <div class="col-4 text-end">
-                          <img src="{{ asset('assets/img/dashboard-icons/settings/setting.svg') }}" class="breadcrumb-icon" alt="">
+                          <img src="{{ asset('img/dashboard-icons/settings/setting.svg') }}" class="breadcrumb-icon" alt="">
                        </div>
                     </div>
 
@@ -194,7 +194,7 @@ ul.tabs li.active {
                  <div class="security-column ">
                     <div class="security-column-left">
                        <div class="security-column-icon">
-                          <img src="{{ asset('assets/img/dashboard-icons/settings/my-profile.svg') }}" alt="">
+                          <img src="{{ asset('img/dashboard-icons/settings/my-profile.svg') }}" alt="">
                        </div>
                        <div class="security-column-description">
                           <h5>Nickname</h5>
@@ -223,7 +223,7 @@ ul.tabs li.active {
                  <div class="security-column ">
                     <div class="security-column-left">
                        <div class="security-column-icon">
-                          <img src="{{ asset('assets/img/dashboard-icons/settings/avtar.svg') }}" alt="">
+                          <img src="{{ asset('img/dashboard-icons/settings/avtar.svg') }}" alt="">
                        </div>
                        <div class="security-column-description">
                           <h5>Avatar</h5>
@@ -233,11 +233,11 @@ ul.tabs li.active {
                     <div class="security-column-right">
                        <div class="d-flex align-items-center avatar_sec">
                           @if(Auth::user()->avatar === NULL)
-                           <img width="20px" src="{{ asset('assets/img/avatar/wealthmakr-avatar-default.png') }}" alt="">
+                           <img width="20px" src="{{ asset('img/avatar/wealthmakr-avatar-default.png') }}" alt="">
                           <span class="text-theme-yellow">Unset</span>
                           @else
                           <span class="bx bx-check"></span>
-                          <img width="20px" src="{{ asset('assets/img/avatar').'/'.Auth::user()->avatar }}" alt="">
+                          <img width="20px" src="{{ asset('img/avatar').'/'.Auth::user()->avatar }}" alt="">
                           @endif
 
                           <!--<span class="bx bx-check"></span>-->
@@ -252,7 +252,7 @@ ul.tabs li.active {
                  <div class="security-column ">
                     <div class="security-column-left">
                        <div class="security-column-icon">
-                          <img src="{{ asset('assets/img/dashboard-icons/settings/p2p.svg') }}" alt="">
+                          <img src="{{ asset('img/dashboard-icons/settings/p2p.svg') }}" alt="">
                        </div>
                        <div class="security-column-description">
                           <h5>P2P Profile Settings</h5>
@@ -278,7 +278,7 @@ ul.tabs li.active {
                  <div class="security-column ">
                     <div class="security-column-left">
                        <div class="security-column-icon">
-                          <img src="{{ asset('assets/img/dashboard-icons/settings/confirmation.svg') }}" alt="">
+                          <img src="{{ asset('img/dashboard-icons/settings/confirmation.svg') }}" alt="">
                        </div>
                        <div class="security-column-description">
                           <h5>Order Confirmation Reminders</h5>
@@ -298,7 +298,7 @@ ul.tabs li.active {
                  <div class="d-block pb-3 border-bottom">
                     <div class="security-column-left mt-5">
                        <div class="security-column-icon">
-                          <img src="{{ asset('assets/img/dashboard-icons/settings/notification.svg') }}" alt="">
+                          <img src="{{ asset('img/dashboard-icons/settings/notification.svg') }}" alt="">
                        </div>
                        <div class="security-column-description">
                           <h5>Notifications</h5>
@@ -307,7 +307,7 @@ ul.tabs li.active {
                     <div class="notification-column">
                         <div class="notification-column-left">
                               <div class="security-column-icon">
-                          <img src="{{ asset('assets/img/dashboard-icons/settings/notification-language.svg') }}" alt="">
+                          <img src="{{ asset('img/dashboard-icons/settings/notification-language.svg') }}" alt="">
                        </div>
                             <div class="notification-column-description" style="padding-left: 34px;">
                                 <h6 class="fw-bold">Notification Language</h6>
@@ -342,7 +342,7 @@ ul.tabs li.active {
                     <div class="notification-column">
                         <div class="notification-column-left">
                               <div class="security-column-icon">
-                          <img src="{{ asset('assets/img/dashboard-icons/settings/on-site-notification.svg') }}" alt="">
+                          <img src="{{ asset('img/dashboard-icons/settings/on-site-notification.svg') }}" alt="">
                        </div>
                         <div class="notification-column-description" style="padding-left: 34px;">
                             <h6 class="fw-bold">On-site Notifications</h6>
@@ -365,7 +365,7 @@ ul.tabs li.active {
                     <div class="notification-column mb-3">
                         <div class="notification-column-left">
                               <div class="security-column-icon">
-                          <img src="{{ asset('assets/img/dashboard-icons/settings/marketing-notification.svg') }}" alt="">
+                          <img src="{{ asset('img/dashboard-icons/settings/marketing-notification.svg') }}" alt="">
                        </div>
                         <div class="notification-column-description" style="padding-left: 34px;">
                             <h6 class="fw-bold">Marketing Emails</h6>
@@ -399,7 +399,7 @@ ul.tabs li.active {
                         <div class="security-column ">
                             <div class="security-column-left">
                                <div class="security-column-icon">
-                                  <img src="{{ asset('assets/img/dashboard-icons/settings/analytics.svg') }}" alt="">
+                                  <img src="{{ asset('img/dashboard-icons/settings/analytics.svg') }}" alt="">
                                </div>
                                <div class="security-column-description">
                                   <h5>Analytics</h5>
@@ -419,7 +419,7 @@ ul.tabs li.active {
                         <div class="security-column ">
                             <div class="security-column-left">
                                <div class="security-column-icon">
-                                  <img src="{{ asset('assets/img/dashboard-icons/settings/advertising.svg') }}" alt="">
+                                  <img src="{{ asset('img/dashboard-icons/settings/advertising.svg') }}" alt="">
                                </div>
                                <div class="security-column-description">
                                   <h5>Advertising</h5>
@@ -564,16 +564,16 @@ ul.tabs li.active {
                                 <div class="" style="text-align:left; ">
                                                              <p class="fs-14 mb-2 bg-light-blue p-2 mt-2 text-center text-dark">Select an avatar to use as your profile picture.</p>
                                                              <div class="avatar-img">
-                                                            <img src="https://www.wealthmark.io/assets/img/avatar/wealthmakr-avatar-1.png">
-                                                            <img src="https://www.wealthmark.io/assets/img/avatar/wealthmakr-avatar-2.png">
-                                                            <img src="https://www.wealthmark.io/assets/img/avatar/wealthmakr-avatar-3.png">
-                                                            <img src="https://www.wealthmark.io/assets/img/avatar/wealthmakr-avatar-4.png">
-                                                            <img src="https://www.wealthmark.io/assets/img/avatar/wealthmakr-avatar-5.png">
-                                                            <img src="https://www.wealthmark.io/assets/img/avatar/wealthmakr-avatar-6.png">
-                                                            <img src="https://www.wealthmark.io/assets/img/avatar/wealthmakr-avatar-7.png">
-                                                            <img src="https://www.wealthmark.io/assets/img/avatar/wealthmakr-avatar-8.png">
-                                                            <img src="https://www.wealthmark.io/assets/img/avatar/wealthmakr-avatar-9.png">
-                                                            <img src="https://www.wealthmark.io/assets/img/avatar/wealthmakr-avatar-10.png">
+                                                            <img src="{{ asset('img/assets/img/avatar/wealthmakr-avatar-1.png') }}">
+                                                            <img src="{{ asset('img/assets/img/avatar/wealthmakr-avatar-2.png') }}">
+                                                            <img src="{{ asset('img/assets/img/avatar/wealthmakr-avatar-3.png') }}">
+                                                            <img src="{{ asset('img/assets/img/avatar/wealthmakr-avatar-4.png') }}">
+                                                            <img src="{{ asset('img/assets/img/avatar/wealthmakr-avatar-5.png') }}">
+                                                            <img src="{{ asset('img/assets/img/avatar/wealthmakr-avatar-6.png') }}">
+                                                            <img src="{{ asset('img/assets/img/avatar/wealthmakr-avatar-7.png') }}">
+                                                            <img src="{{ asset('img/assets/img/avatar/wealthmakr-avatar-8.png') }}">
+                                                            <img src="{{ asset('img/assets/img/avatar/wealthmakr-avatar-9.png') }}">
+                                                            <img src="{{ asset('img/assets/img/avatar/wealthmakr-avatar-10.png') }}">
 
                                                  </div>
 
@@ -923,12 +923,12 @@ ul.tabs li.active {
     <!--                                                     <div class="row" style="text-align:left; ">-->
     <!--                                                         <p style="">Select an avatar to use as your profile picture.</p>-->
     <!--                                                         <div class="avatar-img">-->
-    <!--                                                         <img src="{{ asset('assets/img/avatar/wealthmakr-avatar-1.png') }}">-->
-    <!--                                                         <img src="{{ asset('assets/img/avatar/wealthmakr-avatar-2.png') }}">-->
-    <!--                                                         <img src="{{ asset('assets/img/avatar/wealthmakr-avatar-3.png') }}">-->
-    <!--                                                         <img src="{{ asset('assets/img/avatar/wealthmakr-avatar-4.png') }}">-->
-    <!--                                                         <img src="{{ asset('assets/img/avatar/wealthmakr-avatar-5.png') }}">-->
-    <!--                                                         <img src="{{ asset('assets/img/avatar/wealthmakr-avatar-6.png') }}">-->
+    <!--                                                         <img src="{{ asset('img/avatar/wealthmakr-avatar-1.png') }}">-->
+    <!--                                                         <img src="{{ asset('img/avatar/wealthmakr-avatar-2.png') }}">-->
+    <!--                                                         <img src="{{ asset('img/avatar/wealthmakr-avatar-3.png') }}">-->
+    <!--                                                         <img src="{{ asset('img/avatar/wealthmakr-avatar-4.png') }}">-->
+    <!--                                                         <img src="{{ asset('img/avatar/wealthmakr-avatar-5.png') }}">-->
+    <!--                                                         <img src="{{ asset('img/avatar/wealthmakr-avatar-6.png') }}">-->
 
     <!--                                                          </div>-->
     <!--                                                          <span class="selectedAvatar" style="display:none"></span>-->
@@ -1135,8 +1135,8 @@ $(".save-avatar").click(function(){
                     $(".avatarClose").click();
 
                     // $("#nickNameEdit").hide();
-                            $(".avatar_sec img").attr('src', '<?php echo asset('assets/img/avatar/') ?>'+'/'+data.columnValue);
-                            $(".menu_avatar img").attr('src', '<?php echo asset('assets/img/avatar/') ?>'+'/'+data.columnValue);
+                            $(".avatar_sec img").attr('src', '<?php echo asset('img/avatar/') ?>'+'/'+data.columnValue);
+                            $(".menu_avatar img").attr('src', '<?php echo asset('img/avatar/') ?>'+'/'+data.columnValue);
                             triggerAlert('Avatar set!', 'success');
                                     // $("span.avatar_msg ").text("Avatar addedd");
                                     //               $("span.avatar_msg").css({'display' : 'block'});

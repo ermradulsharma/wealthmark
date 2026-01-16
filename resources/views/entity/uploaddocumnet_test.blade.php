@@ -10,8 +10,8 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
   <meta name="theme-color" content="#287aff">
-  <link href="https://www.wealthmark.io/assets/img/wealthmark-logo.svg" rel="icon">
-  <link href="https://www.wealthmark.io/assets/img/wealthmark-logo.svg" rel="apple-touch-icon">
+  <link href="{{ asset('img/assets/img/wealthmark-logo.svg') }}" rel="icon">
+  <link href="{{ asset('img/assets/img/wealthmark-logo.svg') }}" rel="apple-touch-icon">
   <!--=================  links here =======================-->
   <link href="https://www.wealthmark.io/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://www.wealthmark.io/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -1013,7 +1013,7 @@
    <div class="opensidebar">
       <div class="sidebar-header">
          <div class="col"><a href="https://www.wealthmark.io" class="navbar-brand">
-            <img src="https://www.wealthmark.io/assets/img/wealthmark-logo.svg" alt="" class="wealthmark-logo">
+            <img src="{{ asset('img/assets/img/wealthmark-logo.svg') }}" alt="" class="wealthmark-logo">
             </a>
          </div>
          <div class="col text-right"> <i class="close-sidebar bi bi-x"></i></div>
@@ -1042,24 +1042,24 @@
          <div class="show-min-1300">
             <li class="nav-item">
                <a class="nav-link" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#currLangModal">
-               <span class="nav-img d-lg-none"><img src="https://www.wealthmark.io/assets/img/mob-nav-icon/english.svg" class="img-responsive"> </span>
+               <span class="nav-img d-lg-none"><img src="{{ asset('img/assets/img/mob-nav-icon/english.svg') }}" class="img-responsive"> </span>
                <span class="d-inline-block "> English&nbsp;(India) </span>
                </a>
             </li>
             <li class="nav-item dropdown">
                <a class="nav-link dropdown-toggle" href="javascript:void(0);" data-bs-toggle="dropdown">
-               <span class="nav-img d-lg-none"><img src="https://www.wealthmark.io/assets/img/mob-nav-icon/download.svg" class="img-responsive"> </span>
+               <span class="nav-img d-lg-none"><img src="{{ asset('img/assets/img/mob-nav-icon/download.svg') }}" class="img-responsive"> </span>
                <span class="d-inline-block ">   Download</span> </a>
                <ul class="dropdown-menu dropdown-menu-end fade-down">
                   <li> <a  href="javascript:void(0);">
-                     <img src="https://www.wealthmark.io/assets/img/qr/qrcode_wealthmark.io.png" class="header-download" alt="QR Code" />
+                     <img src="{{ asset('img/assets/img/qr/qrcode_wealthmark.io.png') }}" class="header-download" alt="QR Code" />
                      </a>
                   </li>
                </ul>
             </li>
             <i class="nav-devider d-none d-sm-block"></i>
             <li class="nav-item"><a class="nav-link ps-0" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#currLangModal">
-               <span class="nav-img d-lg-none"><img src="https://www.wealthmark.io/assets/img/mob-nav-icon/inr.svg" class="img-responsive"> </span>
+               <span class="nav-img d-lg-none"><img src="{{ asset('img/assets/img/mob-nav-icon/inr.svg') }}" class="img-responsive"> </span>
                <span class="d-inline-block ">   INR</span>
                </a>
             </li>

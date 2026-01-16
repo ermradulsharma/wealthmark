@@ -98,14 +98,14 @@
                            <!--   <path fill="#FFFFFF" d="M0,0 h41v41H0z"></path>-->
                            <!--   <path fill="#000000" d="M0 0h7v1H0zM13 0h1v1H13zM19 0h1v1H19zM21 0h3v1H21zM26 0h2v1H26zM29 0h3v1H29zM34,0 h7v1H34zM0 1h1v1H0zM6 1h1v1H6zM8 1h4v1H8zM13 1h3v1H13zM18 1h1v1H18zM20 1h1v1H20zM23 1h1v1H23zM25 1h1v1H25zM27 1h4v1H27zM32 1h1v1H32zM34 1h1v1H34zM40,1 h1v1H40zM0 2h1v1H0zM2 2h3v1H2zM6 2h1v1H6zM8 2h3v1H8zM17 2h1v1H17zM19 2h2v1H19zM23 2h1v1H23zM29 2h1v1H29zM31 2h1v1H31zM34 2h1v1H34zM36 2h3v1H36zM40,2 h1v1H40zM0 3h1v1H0zM2 3h3v1H2zM6 3h1v1H6zM10 3h2v1H10zM14 3h1v1H14zM18 3h1v1H18zM20 3h1v1H20zM22 3h3v1H22zM26 3h6v1H26zM34 3h1v1H34zM36 3h3v1H36zM40,3 h1v1H40zM0 4h1v1H0zM2 4h3v1H2zM6 4h1v1H6zM8 4h1v1H8zM10 4h1v1H10zM14 4h2v1H14zM21 4h1v1H21zM26 4h3v1H26zM34 4h1v1H34zM36 4h3v1H36zM40,4 h1v1H40zM0 5h1v1H0zM6 5h1v1H6zM8 5h1v1H8zM11 5h1v1H11zM15 5h3v1H15zM19 5h1v1H19zM21 5h2v1H21zM24 5h1v1H24zM27 5h2v1H27zM30 5h3v1H30zM34 5h1v1H34zM40,5 h1v1H40zM0 6h7v1H0zM8 6h1v1H8zM10 6h1v1H10zM12 6h1v1H12zM14 6h1v1H14zM16 6h1v1H16zM18 6h1v1H18zM20 6h1v1H20zM22 6h1v1H22zM24 6h1v1H24zM26 6h1v1H26zM28 6h1v1H28zM30 6h1v1H30zM32 6h1v1H32zM34,6 h7v1H34zM8 7h3v1H8zM12 7h1v1H12zM14 7h2v1H14zM17 7h1v1H17zM20 7h2v1H20zM23 7h2v1H23zM26 7h1v1H26zM29 7h2v1H29zM32 7h1v1H32zM0 8h2v1H0zM3 8h1v1H3zM6 8h2v1H6zM9 8h1v1H9zM11 8h1v1H11zM13 8h2v1H13zM16 8h1v1H16zM19 8h1v1H19zM25 8h4v1H25zM30 8h1v1H30zM34 8h3v1H34zM38 8h2v1H38zM4 9h2v1H4zM9 9h2v1H9zM12 9h2v1H12zM16 9h2v1H16zM20 9h3v1H20zM24 9h3v1H24zM28 9h1v1H28zM32 9h1v1H32zM34 9h1v1H34zM40,9 h1v1H40zM0 10h1v1H0zM2 10h1v1H2zM4 10h8v1H4zM14 10h1v1H14zM17 10h1v1H17zM19 10h1v1H19zM21 10h1v1H21zM28 10h2v1H28zM31 10h3v1H31zM35 10h1v1H35zM37 10h3v1H37zM5 11h1v1H5zM7 11h3v1H7zM13 11h1v1H13zM15 11h2v1H15zM18 11h2v1H18zM21 11h2v1H21zM24 11h2v1H24zM28 11h1v1H28zM30 11h1v1H30zM35 11h1v1H35zM38 11h1v1H38zM40,11 h1v1H40zM1 12h1v1H1zM3 12h4v1H3zM9 12h1v1H9zM12 12h2v1H12zM16 12h2v1H16zM19 12h1v1H19zM21 12h1v1H21zM24 12h2v1H24zM27 12h3v1H27zM31 12h1v1H31zM34 12h1v1H34zM37 12h1v1H37zM39,12 h2v1H39zM1 13h1v1H1zM3 13h1v1H3zM7 13h2v1H7zM11 13h2v1H11zM17 13h3v1H17zM22 13h1v1H22zM24 13h1v1H24zM30 13h4v1H30zM37 13h1v1H37zM0 14h1v1H0zM2 14h5v1H2zM8 14h1v1H8zM10 14h1v1H10zM12 14h2v1H12zM16 14h1v1H16zM21 14h1v1H21zM23 14h4v1H23zM32,14 h9v1H32zM1 15h2v1H1zM7 15h1v1H7zM9 15h2v1H9zM12 15h7v1H12zM20 15h10v1H20zM31 15h2v1H31zM34 15h1v1H34zM36 15h2v1H36zM39 15h1v1H39zM0 16h1v1H0zM4 16h4v1H4zM9 16h1v1H9zM11 16h2v1H11zM15 16h3v1H15zM21 16h2v1H21zM27 16h1v1H27zM29 16h1v1H29zM31 16h2v1H31zM35 16h1v1H35zM37 16h1v1H37zM39 16h1v1H39zM2 17h1v1H2zM7 17h2v1H7zM11 17h2v1H11zM14 17h1v1H14zM16 17h1v1H16zM20 17h7v1H20zM33 17h3v1H33zM37 17h2v1H37zM40,17 h1v1H40zM0 18h4v1H0zM6 18h1v1H6zM8 18h2v1H8zM13 18h1v1H13zM17 18h1v1H17zM22 18h1v1H22zM26 18h1v1H26zM28 18h3v1H28zM33 18h1v1H33zM35 18h1v1H35zM38,18 h3v1H38zM0 19h3v1H0zM4 19h2v1H4zM7 19h1v1H7zM9 19h2v1H9zM12 19h1v1H12zM14 19h2v1H14zM17 19h2v1H17zM20 19h2v1H20zM24 19h1v1H24zM26 19h1v1H26zM29 19h2v1H29zM33 19h1v1H33zM37 19h1v1H37zM0 20h1v1H0zM6 20h2v1H6zM10 20h2v1H10zM13 20h2v1H13zM16 20h1v1H16zM18 20h1v1H18zM21 20h1v1H21zM25 20h3v1H25zM32 20h4v1H32zM37,20 h4v1H37zM0 21h2v1H0zM4 21h2v1H4zM7 21h2v1H7zM11 21h1v1H11zM13 21h1v1H13zM16 21h2v1H16zM20 21h2v1H20zM24 21h1v1H24zM29 21h1v1H29zM32 21h3v1H32zM38 21h1v1H38zM40,21 h1v1H40zM1 22h1v1H1zM3 22h1v1H3zM5 22h4v1H5zM10 22h1v1H10zM13 22h2v1H13zM16 22h1v1H16zM18 22h2v1H18zM21 22h1v1H21zM28 22h8v1H28zM37 22h1v1H37zM39 22h1v1H39zM3 23h2v1H3zM10 23h1v1H10zM13 23h1v1H13zM16 23h1v1H16zM18 23h1v1H18zM21 23h2v1H21zM24 23h5v1H24zM30 23h1v1H30zM33 23h3v1H33zM38 23h2v1H38zM0 24h4v1H0zM6 24h1v1H6zM8 24h1v1H8zM10 24h1v1H10zM12 24h2v1H12zM17 24h1v1H17zM20 24h2v1H20zM25 24h1v1H25zM28 24h2v1H28zM32 24h4v1H32zM0 25h2v1H0zM7 25h2v1H7zM10 25h1v1H10zM12 25h2v1H12zM19 25h2v1H19zM22 25h1v1H22zM25 25h1v1H25zM31 25h3v1H31zM0 26h1v1H0zM3 26h1v1H3zM6 26h3v1H6zM10 26h2v1H10zM14 26h1v1H14zM16 26h1v1H16zM20 26h1v1H20zM23 26h4v1H23zM34 26h1v1H34zM37,26 h4v1H37zM0 27h1v1H0zM2 27h1v1H2zM7 27h5v1H7zM13 27h2v1H13zM16 27h2v1H16zM21 27h5v1H21zM27 27h4v1H27zM32 27h1v1H32zM34 27h1v1H34zM36 27h2v1H36zM2 28h1v1H2zM6 28h1v1H6zM8 28h1v1H8zM10 28h5v1H10zM17 28h1v1H17zM19 28h4v1H19zM29 28h1v1H29zM32 28h2v1H32zM39,28 h2v1H39zM1 29h2v1H1zM4 29h2v1H4zM7 29h2v1H7zM12 29h1v1H12zM14 29h1v1H14zM16 29h2v1H16zM22 29h3v1H22zM26 29h1v1H26zM28 29h3v1H28zM32 29h4v1H32zM38,29 h3v1H38zM0 30h1v1H0zM4 30h1v1H4zM6 30h1v1H6zM8 30h1v1H8zM11 30h2v1H11zM17 30h1v1H17zM21 30h1v1H21zM24 30h1v1H24zM29 30h1v1H29zM34 30h2v1H34zM37 30h1v1H37zM39,30 h2v1H39zM3 31h1v1H3zM9 31h1v1H9zM12 31h1v1H12zM14 31h1v1H14zM17 31h1v1H17zM21 31h1v1H21zM24 31h1v1H24zM28 31h3v1H28zM32 31h2v1H32zM36 31h2v1H36zM40,31 h1v1H40zM0 32h1v1H0zM2 32h2v1H2zM5 32h2v1H5zM8 32h1v1H8zM10 32h1v1H10zM12 32h5v1H12zM19 32h1v1H19zM21 32h1v1H21zM23 32h4v1H23zM28 32h1v1H28zM31 32h6v1H31zM38 32h1v1H38zM40,32 h1v1H40zM8 33h1v1H8zM10 33h1v1H10zM12 33h1v1H12zM14 33h1v1H14zM17 33h1v1H17zM20 33h3v1H20zM24 33h1v1H24zM28 33h2v1H28zM31 33h2v1H31zM36 33h3v1H36zM40,33 h1v1H40zM0 34h7v1H0zM8 34h3v1H8zM16 34h2v1H16zM19 34h2v1H19zM25 34h2v1H25zM28 34h1v1H28zM32 34h1v1H32zM34 34h1v1H34zM36 34h2v1H36zM0 35h1v1H0zM6 35h1v1H6zM9 35h1v1H9zM14 35h1v1H14zM18 35h1v1H18zM20 35h2v1H20zM25 35h1v1H25zM28 35h1v1H28zM30 35h1v1H30zM32 35h1v1H32zM36,35 h5v1H36zM0 36h1v1H0zM2 36h3v1H2zM6 36h1v1H6zM10 36h1v1H10zM16 36h2v1H16zM20 36h2v1H20zM24 36h2v1H24zM27 36h3v1H27zM32 36h5v1H32zM39 36h1v1H39zM0 37h1v1H0zM2 37h3v1H2zM6 37h1v1H6zM8 37h2v1H8zM11 37h1v1H11zM19 37h4v1H19zM25 37h1v1H25zM30 37h2v1H30zM34,37 h7v1H34zM0 38h1v1H0zM2 38h3v1H2zM6 38h1v1H6zM11 38h1v1H11zM17 38h2v1H17zM20 38h1v1H20zM23 38h1v1H23zM25 38h2v1H25zM28 38h2v1H28zM32 38h1v1H32zM35 38h4v1H35zM0 39h1v1H0zM6 39h1v1H6zM8 39h4v1H8zM13 39h1v1H13zM16 39h4v1H16zM21 39h2v1H21zM25 39h2v1H25zM29 39h4v1H29zM34 39h1v1H34zM36 39h1v1H36zM39 39h1v1H39zM0 40h7v1H0zM8 40h3v1H8zM12 40h1v1H12zM15 40h1v1H15zM17 40h1v1H17zM19 40h1v1H19zM21 40h2v1H21zM24 40h1v1H24zM29 40h2v1H29zM32 40h4v1H32zM37 40h1v1H37zM39 40h1v1H39z"></path>-->
                            <!--</svg>-->
-                           <img src="{{ asset('assets/img/wm-qrcode.png') }}" class="" alt="Scan to Download" title="Scan to Download">
+                           <img src="{{ asset('img/wm-qrcode.png') }}" class="" alt="Scan to Download" title="Scan to Download">
                         </div>
                         <div class="scan-text">Scan to Download</div>
                      </div>
                   </div>
                </div>
                <div class="col-md-6 col-sm-12 order-1 order-lg-2 order-md-2 order-sm-1 col-xs-1">
-                  <img src="{{ asset('assets/img/trade-anywhere.png') }}" class="img-fluid animated w-100" alt="Trade. Anywhere" title="Trade. Anywhere.">
+                  <img src="{{ asset('img/trade-anywhere.png') }}" class="img-fluid animated w-100" alt="Trade. Anywhere" title="Trade. Anywhere.">
                </div>
             </div>
          </div>
@@ -114,7 +114,7 @@
          <div class="container">
             <div class="row align-items-center">
                <div class="col-md-6 col-sm-12 order-1 order-lg-1 order-md-1 order-sm-1 col-xs-1">
-                  <img src="{{ asset('assets/img/desktop.png') }}" class="img-fluid animated w-100" alt="Desktop App" title="Desktop App">
+                  <img src="{{ asset('img/desktop.png') }}" class="img-fluid animated w-100" alt="Desktop App" title="Desktop App">
                </div>
                <div class="col-md-6 col-sm-12 order-2 order-lg-2 order-md-2 order-sm-2 col-xs-2">
                   <div class="sec-title text-left">
@@ -191,13 +191,13 @@
                         <!--<svg  viewBox="0 0 24 24" fill="none" class="api-svg">-->
                         <!--    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 5a7 7 0 000 14h3v-3h3v-3h-3v-2h3V8h-3V5h-3zm11 0h-3v14h3V5z" fill="currentColor"></path>-->
                         <!--</svg>-->
-                        <img src="{{ asset('assets/img/authentication-icon.svg') }}" class="api-svg" alt="Integration with ease" title="Integration with ease" >
+                        <img src="{{ asset('img/authentication-icon.svg') }}" class="api-svg" alt="Integration with ease" title="Integration with ease" >
                         <div class="api-text">Official Wealthmark API Documentation</div>
                      </div>
                   </a>
                </div>
                <div class="col-md-6 col-sm-12 order-1 order-lg-2 order-md-2 order-sm-1 col-xs-1">
-                  <img src="{{ asset('assets/img/integration-with-ease.png') }}" class="img-fluid w-100" alt="wealthmark Integration with ease" title="wealthmark Integration with ease">
+                  <img src="{{ asset('img/integration-with-ease.png') }}" class="img-fluid w-100" alt="wealthmark Integration with ease" title="wealthmark Integration with ease">
                </div>
             </div>
          </div>
@@ -206,7 +206,7 @@
          <div class="container">
             <div class="row align-items-center">
                <div class="col-md-6 col-sm-12">
-                  <img src="{{ asset('assets/img/authentication-graphic-s.png') }}" class="img-fluid animated w-100 max-width-350px" alt="Wealthmark Authenticator" title="Wealthmark Authenticator">
+                  <img src="{{ asset('img/authentication-graphic-s.png') }}" class="img-fluid animated w-100 max-width-350px" alt="Wealthmark Authenticator" title="Wealthmark Authenticator">
                </div>
                <div class="col-md-6 col-sm-12">
                   <div class="sec-title text-left">
@@ -266,7 +266,7 @@
                      </div>
                      <div>
                         <div class="barcode-div-download">
-                           <img src="{{ asset('assets/img/wm-qrcode.png') }}" class="" alt="Scan to Download" title="Scan to Download">
+                           <img src="{{ asset('img/wm-qrcode.png') }}" class="" alt="Scan to Download" title="Scan to Download">
                         </div>
                         <div class="scan-text">Scan to Download</div>
                      </div>

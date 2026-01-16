@@ -198,7 +198,7 @@
 
 
                         <div class="no-data bg-white text-center shadow-sm p-5">
-                             <img src="{{ asset('assets/img/no-idea-illustration.svg') }}"  class="img-fluid max-width-250px mb-2" alt="gift Card Image">
+                             <img src="{{ asset('img/no-idea-illustration.svg') }}"  class="img-fluid max-width-250px mb-2" alt="gift Card Image">
                             <h3 class="text-center mt-2">No record Found </h3>
                         </div>
 

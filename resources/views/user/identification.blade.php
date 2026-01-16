@@ -6,8 +6,8 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
   <meta name="theme-color" content="#287aff">
-  <link href="{{ asset('assets/img/wealthmark-logo.svg') }}" rel="icon">
-  <link href="{{ asset('assets/img/wealthmark-logo.svg') }}" rel="apple-touch-icon">
+  <link href="{{ asset('img/wealthmark-logo.svg') }}" rel="icon">
+  <link href="{{ asset('img/wealthmark-logo.svg') }}" rel="apple-touch-icon">
   <link rel="stylesheet" href="{{ asset('assets/css/dashboard.css') }}">
   @include('template.web_css')
      <style>
@@ -109,7 +109,7 @@
                        </div>
                        <div class="col-md-5 verification-banner-right">
                           <span>Residential country/region : </span>
-                          <button type="button" class="btn-theme " disabled=""><img id="select_coin_img" class="wm-dropdown-optn-item-img" src="{{ asset('assets/img/country-flag/'.$user_data['country_flag']) }}">&nbsp;&nbsp;&nbsp;{{$user_data['country']}}</button>
+                          <button type="button" class="btn-theme " disabled=""><img id="select_coin_img" class="wm-dropdown-optn-item-img" src="{{ asset('img/country-flag/'.$user_data['country_flag']) }}">&nbsp;&nbsp;&nbsp;{{$user_data['country']}}</button>
                        </div>
                     </div>
                  </div>
@@ -122,7 +122,7 @@
                              <!--<h3 class="fw-bold mb-0">Current Features</h3>-->
                              <!--<div class="text-center curr-feature-content">-->
                              <!--   <img src="" class="mb-4" alt="">-->
-                                <!--{{ asset('assets/img/Security-Icon.svg') }}-->
+                                <!--{{ asset('img/Security-Icon.svg') }}-->
                              <!--   <h4 class="fw-bold ">Your account is currently not verified.</h4>-->
                              <!--   <span>Complete verification to access services on WealthMark.</span>-->
                              <!--</div>                 -->

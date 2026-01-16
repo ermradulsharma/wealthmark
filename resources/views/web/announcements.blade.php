@@ -126,7 +126,7 @@
                       <a href="{{url(app()->getLocale().'/announcements-topics/'.trim(strtolower($all_announcements_with_eachCategory->slugs)))}}" >
                          <div class="bg-light-blue p-2 rounded shadow-sm h-100 hover-shadow-none">
                             <div class="m-auto my-2 text-center rounded-circle max-width-80px bg-white p-2">
-                               <!--<img src="{{ asset('assets/img/announcement/crypto-listing.png') }}" class="max-width-60px">-->
+                               <!--<img src="{{ asset('img/announcement/crypto-listing.png') }}" class="max-width-60px">-->
                                 <img src="{{ asset($all_announcements_with_eachCategory->cat_icon) }}" class="max-width-60px">
 
                             </div>

@@ -474,8 +474,8 @@
                                   <div class="wp-pool-tbl-div1">
                                     <div class="pool-wm-coin-div">
                                       <div class="pool-wm-coin-div-inner">
-                                        <img class="pool-wm-coin-div-inner-img-1" src="https://www.wealthmark.io/97fe9-1b7d-41ca-b5d4-a646baa22f47.png">
-                                        <img class="pool-wm-coin-div-inner-img-2" src="https://www.wealthmark.io/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png">
+                                        <img class="pool-wm-coin-div-inner-img-1" src="{{ asset('img/97fe9-1b7d-41ca-b5d4-a646baa22f47.png') }}">
+                                        <img class="pool-wm-coin-div-inner-img-2" src="{{ asset('img/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png') }}">
                                       </div>
                                     </div>
                                     <div class="pool-wm-coin-title-main">ARPA/USDT</div>
@@ -506,7 +506,7 @@
                                    <div class="wm-lbl-txt">Volume (24hr)</div>
                                   <div class="wp-pool-tbl-div1">
                                     <div class="wp-pool-tbl-div-img">
-                                      <img class="wp-pool-tbl-div-img--" src="https://www.wealthmark.io/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png">
+                                      <img class="wp-pool-tbl-div-img--" src="{{ asset('img/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png') }}">
                                     </div>
                                     <div class="wp-pool-tbl-reward-txt">
 
@@ -515,7 +515,7 @@
                                   </div>
                                   <div class="wp-pool-tbl-div1">
                                     <div class="wp-pool-tbl-div-img">
-                                      <img class="wp-pool-tbl-div-img--" src="https://www.wealthmark.io/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png">
+                                      <img class="wp-pool-tbl-div-img--" src="{{ asset('img/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png') }}">
                                     </div>
                                     <div class="wp-pool-tbl-reward-txt">
 
@@ -531,7 +531,7 @@
                                             <div class="css-10nf7hq">
                                               <div class="css-10nf7hq">
                                                 <div class="css-q2gesv">
-                                                  <img class="css-1o5qkvw" src="https://www.wealthmark.io/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png">
+                                                  <img class="css-1o5qkvw" src="{{ asset('img/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png') }}">
                                                 </div>
                                               </div>
                                               <div class="css-i5epbj">BNB</div>
@@ -545,7 +545,7 @@
                                             <div class="css-10nf7hq">
                                               <div class="css-10nf7hq">
                                                 <div class="css-q2gesv">
-                                                  <img class="css-1o5qkvw" src="https://www.wealthmark.io/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png">
+                                                  <img class="css-1o5qkvw" src="{{ asset('img/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png') }}">
                                                 </div>
                                               </div>
                                               <div class="css-i5epbj">BNB</div>
@@ -559,7 +559,7 @@
                                             <div class="css-10nf7hq">
                                               <div class="css-10nf7hq">
                                                 <div class="css-q2gesv">
-                                                  <img class="css-1o5qkvw" src="https://www.wealthmark.io/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png">
+                                                  <img class="css-1o5qkvw" src="{{ asset('img/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png') }}">
                                                 </div>
                                               </div>
                                               <div class="css-i5epbj">BNB</div>
@@ -586,8 +586,8 @@
                                   <div class="wp-pool-tbl-div1">
                                     <div class="pool-wm-coin-div">
                                       <div class="pool-wm-coin-div-inner">
-                                        <img class="pool-wm-coin-div-inner-img-1" src="https://www.wealthmark.io/97fe9-1b7d-41ca-b5d4-a646baa22f47.png">
-                                        <img class="pool-wm-coin-div-inner-img-2" src="https://www.wealthmark.io/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png">
+                                        <img class="pool-wm-coin-div-inner-img-1" src="{{ asset('img/97fe9-1b7d-41ca-b5d4-a646baa22f47.png') }}">
+                                        <img class="pool-wm-coin-div-inner-img-2" src="{{ asset('img/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png') }}">
                                       </div>
                                     </div>
                                     <div class="pool-wm-coin-title-main">ARPA/USDT</div>
@@ -618,7 +618,7 @@
                                    <div class="wm-lbl-txt">Volume (24hr)</div>
                                   <div class="wp-pool-tbl-div1">
                                     <div class="wp-pool-tbl-div-img">
-                                      <img class="wp-pool-tbl-div-img--" src="https://www.wealthmark.io/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png">
+                                      <img class="wp-pool-tbl-div-img--" src="{{ asset('img/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png') }}">
                                     </div>
                                     <div class="wp-pool-tbl-reward-txt">
 
@@ -627,7 +627,7 @@
                                   </div>
                                   <div class="wp-pool-tbl-div1">
                                     <div class="wp-pool-tbl-div-img">
-                                      <img class="wp-pool-tbl-div-img--" src="https://www.wealthmark.io/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png">
+                                      <img class="wp-pool-tbl-div-img--" src="{{ asset('img/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png') }}">
                                     </div>
                                     <div class="wp-pool-tbl-reward-txt">
 
@@ -643,7 +643,7 @@
                                             <div class="css-10nf7hq">
                                               <div class="css-10nf7hq">
                                                 <div class="css-q2gesv">
-                                                  <img class="css-1o5qkvw" src="https://www.wealthmark.io/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png">
+                                                  <img class="css-1o5qkvw" src="{{ asset('img/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png') }}">
                                                 </div>
                                               </div>
                                               <div class="css-i5epbj">BNB</div>
@@ -657,7 +657,7 @@
                                             <div class="css-10nf7hq">
                                               <div class="css-10nf7hq">
                                                 <div class="css-q2gesv">
-                                                  <img class="css-1o5qkvw" src="https://www.wealthmark.io/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png">
+                                                  <img class="css-1o5qkvw" src="{{ asset('img/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png') }}">
                                                 </div>
                                               </div>
                                               <div class="css-i5epbj">BNB</div>
@@ -671,7 +671,7 @@
                                             <div class="css-10nf7hq">
                                               <div class="css-10nf7hq">
                                                 <div class="css-q2gesv">
-                                                  <img class="css-1o5qkvw" src="https://www.wealthmark.io/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png">
+                                                  <img class="css-1o5qkvw" src="{{ asset('img/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png') }}">
                                                 </div>
                                               </div>
                                               <div class="css-i5epbj">BNB</div>
@@ -698,8 +698,8 @@
                                   <div class="wp-pool-tbl-div1">
                                     <div class="pool-wm-coin-div">
                                       <div class="pool-wm-coin-div-inner">
-                                        <img class="pool-wm-coin-div-inner-img-1" src="https://www.wealthmark.io/97fe9-1b7d-41ca-b5d4-a646baa22f47.png">
-                                        <img class="pool-wm-coin-div-inner-img-2" src="https://www.wealthmark.io/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png">
+                                        <img class="pool-wm-coin-div-inner-img-1" src="{{ asset('img/97fe9-1b7d-41ca-b5d4-a646baa22f47.png') }}">
+                                        <img class="pool-wm-coin-div-inner-img-2" src="{{ asset('img/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png') }}">
                                       </div>
                                     </div>
                                     <div class="pool-wm-coin-title-main">ARPA/USDT</div>
@@ -730,7 +730,7 @@
                                    <div class="wm-lbl-txt">Volume (24hr)</div>
                                   <div class="wp-pool-tbl-div1">
                                     <div class="wp-pool-tbl-div-img">
-                                      <img class="wp-pool-tbl-div-img--" src="https://www.wealthmark.io/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png">
+                                      <img class="wp-pool-tbl-div-img--" src="{{ asset('img/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png') }}">
                                     </div>
                                     <div class="wp-pool-tbl-reward-txt">
 
@@ -739,7 +739,7 @@
                                   </div>
                                   <div class="wp-pool-tbl-div1">
                                     <div class="wp-pool-tbl-div-img">
-                                      <img class="wp-pool-tbl-div-img--" src="https://www.wealthmark.io/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png">
+                                      <img class="wp-pool-tbl-div-img--" src="{{ asset('img/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png') }}">
                                     </div>
                                     <div class="wp-pool-tbl-reward-txt">
 
@@ -755,7 +755,7 @@
                                             <div class="css-10nf7hq">
                                               <div class="css-10nf7hq">
                                                 <div class="css-q2gesv">
-                                                  <img class="css-1o5qkvw" src="https://www.wealthmark.io/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png">
+                                                  <img class="css-1o5qkvw" src="{{ asset('img/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png') }}">
                                                 </div>
                                               </div>
                                               <div class="css-i5epbj">BNB</div>
@@ -769,7 +769,7 @@
                                             <div class="css-10nf7hq">
                                               <div class="css-10nf7hq">
                                                 <div class="css-q2gesv">
-                                                  <img class="css-1o5qkvw" src="https://www.wealthmark.io/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png">
+                                                  <img class="css-1o5qkvw" src="{{ asset('img/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png') }}">
                                                 </div>
                                               </div>
                                               <div class="css-i5epbj">BNB</div>
@@ -783,7 +783,7 @@
                                             <div class="css-10nf7hq">
                                               <div class="css-10nf7hq">
                                                 <div class="css-q2gesv">
-                                                  <img class="css-1o5qkvw" src="https://www.wealthmark.io/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png">
+                                                  <img class="css-1o5qkvw" src="{{ asset('img/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png') }}">
                                                 </div>
                                               </div>
                                               <div class="css-i5epbj">BNB</div>
@@ -810,8 +810,8 @@
                                   <div class="wp-pool-tbl-div1">
                                     <div class="pool-wm-coin-div">
                                       <div class="pool-wm-coin-div-inner">
-                                        <img class="pool-wm-coin-div-inner-img-1" src="https://www.wealthmark.io/97fe9-1b7d-41ca-b5d4-a646baa22f47.png">
-                                        <img class="pool-wm-coin-div-inner-img-2" src="https://www.wealthmark.io/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png">
+                                        <img class="pool-wm-coin-div-inner-img-1" src="{{ asset('img/97fe9-1b7d-41ca-b5d4-a646baa22f47.png') }}">
+                                        <img class="pool-wm-coin-div-inner-img-2" src="{{ asset('img/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png') }}">
                                       </div>
                                     </div>
                                     <div class="pool-wm-coin-title-main">ARPA/USDT</div>
@@ -842,7 +842,7 @@
                                    <div class="wm-lbl-txt">Volume (24hr)</div>
                                   <div class="wp-pool-tbl-div1">
                                     <div class="wp-pool-tbl-div-img">
-                                      <img class="wp-pool-tbl-div-img--" src="https://www.wealthmark.io/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png">
+                                      <img class="wp-pool-tbl-div-img--" src="{{ asset('img/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png') }}">
                                     </div>
                                     <div class="wp-pool-tbl-reward-txt">
 
@@ -851,7 +851,7 @@
                                   </div>
                                   <div class="wp-pool-tbl-div1">
                                     <div class="wp-pool-tbl-div-img">
-                                      <img class="wp-pool-tbl-div-img--" src="https://www.wealthmark.io/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png">
+                                      <img class="wp-pool-tbl-div-img--" src="{{ asset('img/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png') }}">
                                     </div>
                                     <div class="wp-pool-tbl-reward-txt">
 
@@ -867,7 +867,7 @@
                                             <div class="css-10nf7hq">
                                               <div class="css-10nf7hq">
                                                 <div class="css-q2gesv">
-                                                  <img class="css-1o5qkvw" src="https://www.wealthmark.io/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png">
+                                                  <img class="css-1o5qkvw" src="{{ asset('img/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png') }}">
                                                 </div>
                                               </div>
                                               <div class="css-i5epbj">BNB</div>
@@ -881,7 +881,7 @@
                                             <div class="css-10nf7hq">
                                               <div class="css-10nf7hq">
                                                 <div class="css-q2gesv">
-                                                  <img class="css-1o5qkvw" src="https://www.wealthmark.io/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png">
+                                                  <img class="css-1o5qkvw" src="{{ asset('img/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png') }}">
                                                 </div>
                                               </div>
                                               <div class="css-i5epbj">BNB</div>
@@ -895,7 +895,7 @@
                                             <div class="css-10nf7hq">
                                               <div class="css-10nf7hq">
                                                 <div class="css-q2gesv">
-                                                  <img class="css-1o5qkvw" src="https://www.wealthmark.io/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png">
+                                                  <img class="css-1o5qkvw" src="{{ asset('img/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png') }}">
                                                 </div>
                                               </div>
                                               <div class="css-i5epbj">BNB</div>
@@ -941,8 +941,8 @@
   <!--                                <div class="wp-pool-tbl-div1">-->
   <!--                                  <div class="pool-wm-coin-div">-->
   <!--                                    <div class="pool-wm-coin-div-inner">-->
-  <!--                                      <img class="pool-wm-coin-div-inner-img-1" src="https://www.wealthmark.io/97fe9-1b7d-41ca-b5d4-a646baa22f47.png">-->
-  <!--                                      <img class="pool-wm-coin-div-inner-img-2" src="https://www.wealthmark.io/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png">-->
+  <!--                                      <img class="pool-wm-coin-div-inner-img-1" src="{{ asset('img/97fe9-1b7d-41ca-b5d4-a646baa22f47.png') }}">-->
+  <!--                                      <img class="pool-wm-coin-div-inner-img-2" src="{{ asset('img/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png') }}">-->
   <!--                                    </div>-->
   <!--                                  </div>-->
   <!--                                  <div class="pool-wm-coin-title-main">demo1</div>-->
@@ -974,7 +974,7 @@
 
   <!--                                <div class="wp-pool-tbl-div1">-->
   <!--                                  <div class="wp-pool-tbl-div-img">-->
-  <!--                                    <img class="wp-pool-tbl-div-img--" src="https://www.wealthmark.io/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png">-->
+  <!--                                    <img class="wp-pool-tbl-div-img--" src="{{ asset('img/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png') }}">-->
   <!--                                  </div>-->
   <!--                                  <div class="wp-pool-tbl-reward-txt">-->
 
@@ -1195,8 +1195,8 @@ $('.wm-pool-record-exapnd').click(function(){
                         <!--          <div class="wp-pool-tbl-div1">-->
                         <!--            <div class="pool-wm-coin-div">-->
                         <!--              <div class="pool-wm-coin-div-inner">-->
-                        <!--                <img class="pool-wm-coin-div-inner-img-1" src="https://www.wealthmark.io/97fe9-1b7d-41ca-b5d4-a646baa22f47.png">-->
-                        <!--                <img class="pool-wm-coin-div-inner-img-2" src="https://www.wealthmark.io/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png">-->
+                        <!--                <img class="pool-wm-coin-div-inner-img-1" src="{{ asset('img/97fe9-1b7d-41ca-b5d4-a646baa22f47.png') }}">-->
+                        <!--                <img class="pool-wm-coin-div-inner-img-2" src="{{ asset('img/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png') }}">-->
                         <!--              </div>-->
                         <!--            </div>-->
                         <!--            <div class="pool-wm-coin-title-main">demo1</div>-->
@@ -1220,7 +1220,7 @@ $('.wm-pool-record-exapnd').click(function(){
 
                         <!--          <div class="wp-pool-tbl-div1">-->
                         <!--            <div class="wp-pool-tbl-div-img">-->
-                        <!--              <img class="wp-pool-tbl-div-img--" src="https://www.wealthmark.io/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png">-->
+                        <!--              <img class="wp-pool-tbl-div-img--" src="{{ asset('img/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png') }}">-->
                         <!--            </div>-->
                         <!--            <div class="wp-pool-tbl-reward-txt">-->
 
@@ -1259,8 +1259,8 @@ $('.wm-pool-record-exapnd').click(function(){
                         <!--          <div class="wp-pool-tbl-div1">-->
                         <!--            <div class="pool-wm-coin-div">-->
                         <!--              <div class="pool-wm-coin-div-inner">-->
-                        <!--                <img class="pool-wm-coin-div-inner-img-1" src="https://www.wealthmark.io/97fe9-1b7d-41ca-b5d4-a646baa22f47.png">-->
-                        <!--                <img class="pool-wm-coin-div-inner-img-2" src="https://www.wealthmark.io/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png">-->
+                        <!--                <img class="pool-wm-coin-div-inner-img-1" src="{{ asset('img/97fe9-1b7d-41ca-b5d4-a646baa22f47.png') }}">-->
+                        <!--                <img class="pool-wm-coin-div-inner-img-2" src="{{ asset('img/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png') }}">-->
                         <!--              </div>-->
                         <!--            </div>-->
                         <!--            <div class="pool-wm-coin-title-main">demo1</div>-->
@@ -1299,7 +1299,7 @@ $('.wm-pool-record-exapnd').click(function(){
                         <!--             <span class="wp-pool-inner-lbl mb-2">Volume (24hr)</span>-->
                         <!--          <div class="wp-pool-tbl-div1">-->
                         <!--            <div class="wp-pool-tbl-div-img">-->
-                        <!--              <img class="wp-pool-tbl-div-img--" src="https://www.wealthmark.io/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png">-->
+                        <!--              <img class="wp-pool-tbl-div-img--" src="{{ asset('img/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png') }}">-->
                         <!--            </div>-->
                         <!--            <div class="wp-pool-tbl-reward-txt">-->
 
@@ -1311,14 +1311,14 @@ $('.wm-pool-record-exapnd').click(function(){
                         <!--             <span class="wp-pool-inner-lbl mb-2">Volume (24hr)</span>-->
                         <!--             <div class="wm-pool-breakdown-inner">-->
                         <!--                  <div class="d-flex">-->
-                        <!--                     <img src="https://www.wealthmark.io/63af2-c980-42cf-a139-7b9f462a36c2.png" class="me-2">-->
+                        <!--                     <img src="{{ asset('img/63af2-c980-42cf-a139-7b9f462a36c2.png') }}" class="me-2">-->
                         <!--                     <div class="Yield_subtitle">BNB</div> -->
                         <!--                </div>-->
                         <!--                 <div class="Yield_subtitle success">0.48%</div>-->
                         <!--             </div>-->
                         <!--             <div class="wm-pool-breakdown-inner">-->
                         <!--                 <div class="d-flex">-->
-                        <!--                     <img src="https://www.wealthmark.io/63af2-c980-42cf-a139-7b9f462a36c2.png" class="me-2">-->
+                        <!--                     <img src="{{ asset('img/63af2-c980-42cf-a139-7b9f462a36c2.png') }}" class="me-2">-->
                         <!--                     <div class="Yield_subtitle">BNB</div>-->
                         <!--                </div>-->
                         <!--                 <div class="Yield_subtitle success">0.48%</div>-->
@@ -1341,8 +1341,8 @@ $('.wm-pool-record-exapnd').click(function(){
                         <!--          <div class="wp-pool-tbl-div1">-->
                         <!--            <div class="pool-wm-coin-div">-->
                         <!--              <div class="pool-wm-coin-div-inner">-->
-                        <!--                <img class="pool-wm-coin-div-inner-img-1" src="https://www.wealthmark.io/97fe9-1b7d-41ca-b5d4-a646baa22f47.png">-->
-                        <!--                <img class="pool-wm-coin-div-inner-img-2" src="https://www.wealthmark.io/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png">-->
+                        <!--                <img class="pool-wm-coin-div-inner-img-1" src="{{ asset('img/97fe9-1b7d-41ca-b5d4-a646baa22f47.png') }}">-->
+                        <!--                <img class="pool-wm-coin-div-inner-img-2" src="{{ asset('img/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png') }}">-->
                         <!--              </div>-->
                         <!--            </div>-->
                         <!--            <div class="pool-wm-coin-title-main">demo1</div>-->
@@ -1365,7 +1365,7 @@ $('.wm-pool-record-exapnd').click(function(){
 
                         <!--          <div class="wp-pool-tbl-div1">-->
                         <!--            <div class="wp-pool-tbl-div-img">-->
-                        <!--              <img class="wp-pool-tbl-div-img--" src="https://www.wealthmark.io/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png">-->
+                        <!--              <img class="wp-pool-tbl-div-img--" src="{{ asset('img/c7d80-7bcd-4cfb-8bd9-d1760a752afc.png') }}">-->
                         <!--            </div>-->
                         <!--            <div class="wp-pool-tbl-reward-txt">-->
 

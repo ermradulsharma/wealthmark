@@ -380,11 +380,11 @@
                          <div class="header" id="my-div2">
                             <div class="avatar-wrapper avatar-big">
                                 @if(!empty($seller_details))
-                                <img src="{{  asset('assets/img/country-flag/').'/'.$seller_details->country_flag }} " alt="avatar" />
+                                <img src="{{  asset('img/country-flag/').'/'.$seller_details->country_flag }} " alt="avatar" />
 
 
                                @elseif(empty($seller_details) && $get_order_data->order_status==0 )
-                               <img src="https://wealthmark.io/assets/img/avatar/wealthmakr-avatar-7.png" alt="avatar" />
+                               <img src="{{ asset('img/assets/img/avatar/wealthmakr-avatar-7.png') }}" alt="avatar" />
                                @endif
                             </div>
                             <span class="name">

@@ -115,7 +115,7 @@
 
                 <div class="col-lg-4 order-1 order-lg-2 hero-img text-center py-3" data-aos="zoom-in"
                     data-aos-delay="200">
-                    <img src="{{ asset('assets/img/home-page/home-graphic-1-01.png') }}"
+                    <img src="{{ asset('img/home-page/home-graphic-1-01.png') }}"
                         class="img-fluid animated max-width-450px" alt="Buy, trade, and hold 100+ cryptocurrencies"
                         title="Buy, trade, and hold 100+ cryptocurrencies">
                 </div>
@@ -136,7 +136,7 @@
                 <div class="col-md-4 col-sm-6 equal-height">
                     <div class="item">
                         <div class="icon">
-                            <img src="{{ asset('assets/img/home-page/create-an-account.svg') }}"
+                            <img src="{{ asset('img/home-page/create-an-account.svg') }}"
                                 alt="Sign up with your email and mobile in just 5 minutes"
                                 alt="Sign up with your email and mobile in just 5 minutes">
                         </div>
@@ -150,7 +150,7 @@
                 <div class="col-md-4 col-sm-6 equal-height">
                     <div class="item">
                         <div class="icon">
-                            <img src="{{ asset('assets/img/home-page/add-funds.svg') }}" alt="Add funds to wallet"
+                            <img src="{{ asset('img/home-page/add-funds.svg') }}" alt="Add funds to wallet"
                                 title="Add funds to wallet">
                         </div>
                         <div class="info">
@@ -163,7 +163,7 @@
                 <div class="col-md-4 col-sm-6 equal-height">
                     <div class="item">
                         <div class="icon">
-                            <img src="{{ asset('assets/img/home-page/investing-in-crypto.svg') }}"
+                            <img src="{{ asset('img/home-page/investing-in-crypto.svg') }}"
                                 alt="Investing in crypto" title="Investing in crypto">
                         </div>
                         <div class="info">
@@ -176,7 +176,7 @@
                 <div class="col-md-4 col-sm-6 equal-height border-bottom-none">
                     <div class="item">
                         <div class="icon">
-                            <img src="{{ asset('assets/img/home-page/insured-by-bitgo.svg') }}" alt="Safe & Secure"
+                            <img src="{{ asset('img/home-page/insured-by-bitgo.svg') }}" alt="Safe & Secure"
                                 title="Safe & Secure">
                         </div>
                         <div class="info">
@@ -189,7 +189,7 @@
                 <div class="col-md-4 col-sm-6 equal-height border-bottom-none">
                     <div class="item">
                         <div class="icon">
-                            <img src="{{ asset('assets/img/home-page/deep-encryption.svg') }}" title="Deep encryption"
+                            <img src="{{ asset('img/home-page/deep-encryption.svg') }}" title="Deep encryption"
                                 alt="Deep encryption">
                         </div>
                         <div class="info">
@@ -202,7 +202,7 @@
                 <div class="col-md-4 col-sm-6 equal-height border-bottom-none">
                     <div class="item">
                         <div class="icon">
-                            <img src="{{ asset('assets/img/home-page/safe-security.svg') }}"
+                            <img src="{{ asset('img/home-page/safe-security.svg') }}"
                                 title="Identity verification" alt="Identity verification">
                         </div>
                         <div class="info">
@@ -311,7 +311,7 @@
                                                                 <i class="bi-star-fill"></i>
                                                             </td>
                                                             <td class="g-text-left asset-code g-pointer">
-                                                                <img src="{{ asset('assets/img/Bitcoin-BTC-icon.png') }}"
+                                                                <img src="{{ asset('img/Bitcoin-BTC-icon.png') }}"
                                                                     class="coin-icon-img" alt="Coin Icon"
                                                                     title="Coin Icon"> SANTOS/USDT
                                                             </td>
@@ -337,7 +337,7 @@
                                                                 <i class="bi-star-fill"></i>
                                                             </td>
                                                             <td class="g-text-left asset-code g-pointer">
-                                                                <img src="{{ asset('assets/img/Bitcoin-BTC-icon.png') }}"
+                                                                <img src="{{ asset('img/Bitcoin-BTC-icon.png') }}"
                                                                     class="coin-icon-img" alt="Coin Icon"
                                                                     title="Coin Icon"> PORTO/USDT
                                                             </td>
@@ -363,7 +363,7 @@
                                                                 <i class="bi-star-fill"></i>
                                                             </td>
                                                             <td class="g-text-left asset-code g-pointer">
-                                                                <img src="{{ asset('assets/img/Bitcoin-BTC-icon.png') }}"
+                                                                <img src="{{ asset('img/Bitcoin-BTC-icon.png') }}"
                                                                     class="coin-icon-img" alt="Coin Icon"
                                                                     title="Coin Icon"> LAZIO/USDT
                                                             </td>
@@ -389,7 +389,7 @@
                                                                 <i class="bi-star-fill"></i>
                                                             </td>
                                                             <td class="g-text-left asset-code g-pointer">
-                                                                <img src="{{ asset('assets/img/Bitcoin-BTC-icon.png') }}"
+                                                                <img src="{{ asset('img/Bitcoin-BTC-icon.png') }}"
                                                                     class="coin-icon-img" alt="Coin Icon"
                                                                     title="Coin Icon"> STG/USDT
                                                             </td>
@@ -415,7 +415,7 @@
                                                                 <i class="bi-star-fill"></i>
                                                             </td>
                                                             <td class="g-text-left asset-code g-pointer">
-                                                                <img src="{{ asset('assets/img/Bitcoin-BTC-icon.png') }}"
+                                                                <img src="{{ asset('img/Bitcoin-BTC-icon.png') }}"
                                                                     class="coin-icon-img" alt="Coin Icon"
                                                                     title="Coin Icon"> INJ/USDT
                                                             </td>
@@ -441,7 +441,7 @@
                                                                 <i class="bi-star-fill"></i>
                                                             </td>
                                                             <td class="g-text-left asset-code g-pointer">
-                                                                <img src="{{ asset('assets/img/Bitcoin-BTC-icon.png') }}"
+                                                                <img src="{{ asset('img/Bitcoin-BTC-icon.png') }}"
                                                                     class="coin-icon-img" alt="Coin Icon"
                                                                     title="Coin Icon"> GM/USDT
                                                             </td>
@@ -467,7 +467,7 @@
                                                                 <i class="bi-star-fill"></i>
                                                             </td>
                                                             <td class="g-text-left asset-code g-pointer">
-                                                                <img src="{{ asset('assets/img/Bitcoin-BTC-icon.png') }}"
+                                                                <img src="{{ asset('img/Bitcoin-BTC-icon.png') }}"
                                                                     class="coin-icon-img" alt="Coin Icon"
                                                                     title="Coin Icon"> MELOS/USDT
                                                             </td>
@@ -493,7 +493,7 @@
                                                                 <i class="bi-star-fill"></i>
                                                             </td>
                                                             <td class="g-text-left asset-code g-pointer">
-                                                                <img src="{{ asset('assets/img/Bitcoin-BTC-icon.png') }}"
+                                                                <img src="{{ asset('img/Bitcoin-BTC-icon.png') }}"
                                                                     class="coin-icon-img" alt="Coin Icon"
                                                                     title="Coin Icon"> ZBC/USDT
                                                             </td>
@@ -519,7 +519,7 @@
                                                                 <i class="bi-star-fill"></i>
                                                             </td>
                                                             <td class="g-text-left asset-code g-pointer">
-                                                                <img src="{{ asset('assets/img/Bitcoin-BTC-icon.png') }}"
+                                                                <img src="{{ asset('img/Bitcoin-BTC-icon.png') }}"
                                                                     class="coin-icon-img" alt="Coin Icon"
                                                                     title="Coin Icon"> PMON/USDT
                                                             </td>
@@ -608,7 +608,7 @@
                                                                 <i class="bi-star-fill"></i>
                                                             </td>
                                                             <td class="g-text-left asset-code g-pointer">
-                                                                <img src="{{ asset('assets/img/Bitcoin-BTC-icon.png') }}"
+                                                                <img src="{{ asset('img/Bitcoin-BTC-icon.png') }}"
                                                                     class="coin-icon-img" alt="Coin Icon"
                                                                     title="Coin Icon"> SANTOS/USDT
                                                             </td>
@@ -634,7 +634,7 @@
                                                                 <i class="bi-star-fill"></i>
                                                             </td>
                                                             <td class="g-text-left asset-code g-pointer">
-                                                                <img src="{{ asset('assets/img/Bitcoin-BTC-icon.png') }}"
+                                                                <img src="{{ asset('img/Bitcoin-BTC-icon.png') }}"
                                                                     class="coin-icon-img" alt="Coin Icon"
                                                                     title="Coin Icon"> PORTO/USDT
                                                             </td>
@@ -660,7 +660,7 @@
                                                                 <i class="bi-star-fill"></i>
                                                             </td>
                                                             <td class="g-text-left asset-code g-pointer">
-                                                                <img src="{{ asset('assets/img/Bitcoin-BTC-icon.png') }}"
+                                                                <img src="{{ asset('img/Bitcoin-BTC-icon.png') }}"
                                                                     class="coin-icon-img" alt="Coin Icon"
                                                                     title="Coin Icon"> LAZIO/USDT
                                                             </td>
@@ -686,7 +686,7 @@
                                                                 <i class="bi-star-fill"></i>
                                                             </td>
                                                             <td class="g-text-left asset-code g-pointer">
-                                                                <img src="{{ asset('assets/img/Bitcoin-BTC-icon.png') }}"
+                                                                <img src="{{ asset('img/Bitcoin-BTC-icon.png') }}"
                                                                     class="coin-icon-img" alt="Coin Icon"
                                                                     title="Coin Icon"> STG/USDT
                                                             </td>
@@ -712,7 +712,7 @@
                                                                 <i class="bi-star-fill"></i>
                                                             </td>
                                                             <td class="g-text-left asset-code g-pointer">
-                                                                <img src="{{ asset('assets/img/Bitcoin-BTC-icon.png') }}"
+                                                                <img src="{{ asset('img/Bitcoin-BTC-icon.png') }}"
                                                                     class="coin-icon-img" alt="Coin Icon"
                                                                     title="Coin Icon"> INJ/USDT
                                                             </td>
@@ -738,7 +738,7 @@
                                                                 <i class="bi-star-fill"></i>
                                                             </td>
                                                             <td class="g-text-left asset-code g-pointer">
-                                                                <img src="{{ asset('assets/img/Bitcoin-BTC-icon.png') }}"
+                                                                <img src="{{ asset('img/Bitcoin-BTC-icon.png') }}"
                                                                     class="coin-icon-img" alt="Coin Icon"
                                                                     title="Coin Icon"> GM/USDT
                                                             </td>
@@ -764,7 +764,7 @@
                                                                 <i class="bi-star-fill"></i>
                                                             </td>
                                                             <td class="g-text-left asset-code g-pointer">
-                                                                <img src="{{ asset('assets/img/Bitcoin-BTC-icon.png') }}"
+                                                                <img src="{{ asset('img/Bitcoin-BTC-icon.png') }}"
                                                                     class="coin-icon-img" alt="Coin Icon"
                                                                     title="Coin Icon"> MELOS/USDT
                                                             </td>
@@ -790,7 +790,7 @@
                                                                 <i class="bi-star-fill"></i>
                                                             </td>
                                                             <td class="g-text-left asset-code g-pointer">
-                                                                <img src="{{ asset('assets/img/Bitcoin-BTC-icon.png') }}"
+                                                                <img src="{{ asset('img/Bitcoin-BTC-icon.png') }}"
                                                                     class="coin-icon-img" alt="Coin Icon"
                                                                     title="Coin Icon"> ZBC/USDT
                                                             </td>
@@ -816,7 +816,7 @@
                                                                 <i class="bi-star-fill"></i>
                                                             </td>
                                                             <td class="g-text-left asset-code g-pointer">
-                                                                <img src="{{ asset('assets/img/Bitcoin-BTC-icon.png') }}"
+                                                                <img src="{{ asset('img/Bitcoin-BTC-icon.png') }}"
                                                                     class="coin-icon-img" alt="Coin Icon"
                                                                     title="Coin Icon"> PMON/USDT
                                                             </td>
@@ -842,7 +842,7 @@
                                                                 <i class="bi-star-fill"></i>
                                                             </td>
                                                             <td class="g-text-left asset-code g-pointer">
-                                                                <img src="{{ asset('assets/img/Bitcoin-BTC-icon.png') }}"
+                                                                <img src="{{ asset('img/Bitcoin-BTC-icon.png') }}"
                                                                     class="coin-icon-img" alt="Coin Icon"
                                                                     title="Coin Icon"> MAGIC/USDT
                                                             </td>
@@ -1182,7 +1182,7 @@
         <div class="modal-dialog">
             <div class="modal-content pt-3 pb-3 p-3">
                 <div class="modal-header">
-                    <img class="warning-img" src="{{ asset('assets/img/warning.svg') }}" alt="warning"
+                    <img class="warning-img" src="{{ asset('img/warning.svg') }}" alt="warning"
                         alt="warning">
                 </div>
                 <div class="modal-body">

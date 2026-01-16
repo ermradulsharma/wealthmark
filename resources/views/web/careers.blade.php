@@ -67,7 +67,7 @@
          <div class="container-fluid">
             <div class="row align-items-center justify-content-center">
                <div class="col-lg-5 col-md-6 col-sm-6 text-center mt-3 mb-4">
-                  <img src="{{ asset('assets/img/career-graphic.png') }}" class="img-fluid w-75" alt="wealthmark Career" title="wealthmark.io">
+                  <img src="{{ asset('img/career-graphic.png') }}" class="img-fluid w-75" alt="wealthmark Career" title="wealthmark.io">
                </div>
                <div class="col-lg-4 col-md-6 col-sm-6  d-flex flex-column justify-content-center order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
                   <h1 class="top-heading yellow-text fs-1 mb-3">Careers at Wealthmark</h1>
@@ -97,7 +97,7 @@
                      <div class="text">We protect our users by putting our users' needs first and delivering quality service.</div>
                   </div>
                   <div class="des-our-value-block-right">
-                     <img src="{{ asset('assets/img/wm-user-focused.png') }}" class="des-our-value-img-max" alt="wealthmark User-Focused" title="User-Focused">
+                     <img src="{{ asset('img/wm-user-focused.png') }}" class="des-our-value-img-max" alt="wealthmark User-Focused" title="User-Focused">
                   </div>
                </div>
                <div class="des-our-value-block-main">
@@ -107,7 +107,7 @@
                      <div class="text">We work as a team towards shared goals to build the ecosystem together.</div>
                   </div>
                   <div class="des-our-value-block-right">
-                     <img src="{{ asset('assets/img/wm-collaboration.png') }}" class="des-our-value-img-max">
+                     <img src="{{ asset('img/wm-collaboration.png') }}" class="des-our-value-img-max">
                   </div>
                </div>
                <div class="des-our-value-block-main">
@@ -118,7 +118,7 @@
                      <div class="text">When we fail, we learn fast, and pick ourselves up.</div>
                   </div>
                   <div class="des-our-value-block-right">
-                     <img src="{{ asset('assets/img/wm-hardcore.png') }}" class="des-our-value-img-max" alt="wealthmark Hardcore" title="Hardcore">
+                     <img src="{{ asset('img/wm-hardcore.png') }}" class="des-our-value-img-max" alt="wealthmark Hardcore" title="Hardcore">
                   </div>
                </div>
                <div class="des-our-value-block-main">
@@ -129,7 +129,7 @@
                      <div class="text">Our team is diverse and we challenge the status quo.</div>
                   </div>
                   <div class="des-our-value-block-right">
-                     <img src="{{ asset('assets/img/wm-freedom.png') }}" class="des-our-value-img-max" alt="wealthmark Freedom" title="Freedom">
+                     <img src="{{ asset('img/wm-freedom.png') }}" class="des-our-value-img-max" alt="wealthmark Freedom" title="Freedom">
                   </div>
                </div>
                <div class="des-our-value-block-main">
@@ -140,7 +140,7 @@
                      <div class="text">We are modest about our success.</div>
                   </div>
                   <div class="des-our-value-block-right">
-                     <img src="{{ asset('assets/img/wm-humility.png') }}" class="des-our-value-img-max" alt="wealthmark Humility" title="Humility">
+                     <img src="{{ asset('img/wm-humility.png') }}" class="des-our-value-img-max" alt="wealthmark Humility" title="Humility">
                   </div>
                </div>
             </div>
@@ -268,7 +268,7 @@
                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                   <div class="_div bg-white">
                      <div class="why_work_block">
-                        <img src="{{ asset('assets/img/competitive-salary.png') }}" class="why_work_block-svg" alt="wealthmark Competitive salary" title="wealthmark.io">
+                        <img src="{{ asset('img/competitive-salary.png') }}" class="why_work_block-svg" alt="wealthmark Competitive salary" title="wealthmark.io">
                      </div>
                      <div class="why_work_block-list">Competitive salary</div>
                      <div class="why_work_block-list">Option to be paid in crypto</div>
@@ -279,7 +279,7 @@
                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                   <div class="_div bg-white">
                      <div class="why_work_block">
-                        <img src="{{ asset('assets/img/remote-work.png') }}" class="why_work_block-svg" alt="wealthmark Remote Work" title="wealthmark.io">
+                        <img src="{{ asset('img/remote-work.png') }}" class="why_work_block-svg" alt="wealthmark Remote Work" title="wealthmark.io">
                      </div>
                      <div class="why_work_block-list">Remote work for many roles</div>
                      <div class="why_work_block-list">Company sponsored holidays</div>
@@ -290,7 +290,7 @@
                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                   <div class="_div bg-white">
                      <div class="why_work_block">
-                        <img src="{{ asset('assets/img/learning-development.png') }}" class="why_work_block-svg" alt="wealthmark development" title="wealthmark.io">
+                        <img src="{{ asset('img/learning-development.png') }}" class="why_work_block-svg" alt="wealthmark development" title="wealthmark.io">
                      </div>
                      <div class="why_work_block-list">Learning and development programs</div>
                      <div class="why_work_block-list">Free language classes</div>

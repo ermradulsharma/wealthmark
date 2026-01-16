@@ -136,7 +136,7 @@
                   </div>
                </div>
                <div class="col-lg-6 col-md-6 col-sm-12 text-center order-lg-2 hero-img p-4" data-aos="zoom-in" data-aos-delay="200">
-                  <img src="{{ asset('assets/img/p2p-pro_banner.png') }}" class="img-fluid animated" alt="P2P Merchant Banner" title="P2P Merchant Banner">
+                  <img src="{{ asset('img/p2p-pro_banner.png') }}" class="img-fluid animated" alt="P2P Merchant Banner" title="P2P Merchant Banner">
                </div>
             </div>
          </div>
@@ -155,7 +155,7 @@
                <div class="col">
                   <div class="service-card">
                      <div class="icon-wrapper shadow-sm">
-                        <img src="{{ asset('assets/img/p2p-merchant-application/special-pro-badge.png') }}" class="img-fluid" alt="Special “PRO” Badge" title="Special “PRO” Badge" >
+                        <img src="{{ asset('img/p2p-merchant-application/special-pro-badge.png') }}" class="img-fluid" alt="Special “PRO” Badge" title="Special “PRO” Badge" >
                      </div>
                      <h3 class="yellow-text">Special “PRO” Badge</h3>
                      <div class="text">
@@ -166,7 +166,7 @@
                <div class="col">
                   <div class="service-card ">
                      <div class="icon-wrapper shadow-sm">
-                        <img src="{{ asset('assets/img/p2p-merchant-application/customized-profile-page.png') }}" class="img-fluid" alt="Customized Profile Page"  title="Customized Profile Page">
+                        <img src="{{ asset('img/p2p-merchant-application/customized-profile-page.png') }}" class="img-fluid" alt="Customized Profile Page"  title="Customized Profile Page">
                      </div>
                      <h3 class="yellow-text">Customized Profile Page</h3>
                      <div class="text">
@@ -177,7 +177,7 @@
                <div class="col">
                   <div class="service-card">
                      <div class="icon-wrapper shadow-sm">
-                        <img src="{{ asset('assets/img/p2p-merchant-application/biggest-p2p-crypto.png') }}" class="img-fluid" alt="Biggest P2P Crypto" title="Biggest P2P Crypto">
+                        <img src="{{ asset('img/p2p-merchant-application/biggest-p2p-crypto.png') }}" class="img-fluid" alt="Biggest P2P Crypto" title="Biggest P2P Crypto">
                      </div>
                      <h3 class="yellow-text">Biggest P2P crypto</h3>
                      <div class="text">
@@ -192,7 +192,7 @@
          <div class="container">
             <div class="row align-items-center justify-content-center mb-5">
                <div class="col-md-6 col-sm-6 mb-4 d-flex justify-content-center">
-                  <img src="{{ asset('assets/img/p2p-merchant-application/dedicated-client-support.png') }}" class="img-fluid max-width-300px" alt="Dedicated client support" title="Dedicated client support">
+                  <img src="{{ asset('img/p2p-merchant-application/dedicated-client-support.png') }}" class="img-fluid max-width-300px" alt="Dedicated client support" title="Dedicated client support">
                </div>
                <div class="col-md-6 col-sm-6">
                   <div class="sec-title text-left">
@@ -208,7 +208,7 @@
             </div>
             <div class="row align-items-center justify-content-center">
                <div class="col-md-6 col-sm-6 order-md-last mb-4 d-flex justify-content-center">
-                  <img src="{{ asset('assets/img/p2p-merchant-application/pro-merchant-account.png') }}" class="img-fluid max-width-300px" alt="Apply for PRO merchant account" title="Apply for PRO merchant account">
+                  <img src="{{ asset('img/p2p-merchant-application/pro-merchant-account.png') }}" class="img-fluid max-width-300px" alt="Apply for PRO merchant account" title="Apply for PRO merchant account">
                </div>
                <div class="col-md-6 col-sm-6">
                   <div class="sec-title text-left">

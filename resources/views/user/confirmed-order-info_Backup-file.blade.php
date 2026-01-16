@@ -925,7 +925,7 @@ justify-content:space-between;
     <!--<div class="message message-right">-->
     <!--    <div class="bubble bubble-dark">-->
     <!--        <div class="position-relative chatbox-img-file">-->
-    <!--            <img src="https://www.wealthmark.io//assets/img/demo-5-dark.png" class="">-->
+    <!--            <img src="{{ asset('img//assets/img/demo-5-dark.png') }}" class="">-->
          
     <!--     <div class="chat-img-download">-->
     <!--         <span>-->
@@ -939,7 +939,7 @@ justify-content:space-between;
     <!-- <div class="message message-left">-->
     <!--    <div class="bubble bubble-light">-->
     <!--        <div class="position-relative chatbox-img-file">-->
-    <!--            <img src="https://www.wealthmark.io//assets/img/demo-5-dark.png" class="">-->
+    <!--            <img src="{{ asset('img//assets/img/demo-5-dark.png') }}" class="">-->
          
     <!--     <div class="chat-img-download">-->
     <!--         <span>-->

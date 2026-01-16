@@ -32,7 +32,7 @@
                  <!--  <div class="asset-overview login-box-main">-->
                  <!--         <div class="login-box-bg">-->
                  <!--           <div class="login-box">-->
-                 <!--             <img src="https://www.wealthmark.io/ount.png" class="login-box-img">-->
+                 <!--             <img src="{{ asset('img/ount.png') }}" class="login-box-img">-->
                  <!--             <div class="login-box-txt">Log in to view holding details</div>-->
                  <!--           <a href="{{ url( app()->getLocale(), 'login') }}"  <button type="button" class="btn btn-yellow">Log In</button></a>-->
                  <!--           </div>-->
@@ -66,7 +66,7 @@
                                     </div>
                                     <div class="d-flex mt-2 w-100">
                                       <div class="asset-priview-img-div">
-                                        <img class="asset-priview-img" src="{{ asset('96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
+                                        <img class="asset-priview-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                       </div>
                                     </div>
                                   </div>
@@ -199,7 +199,7 @@
               </div>
             </div>
             <div class="staking-coin-img-div">
-              <img class="staking-coin-img" src="{{ asset('96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
+              <img class="staking-coin-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
             </div>BTC
           </div>
           <div class="d-flex justify-content-between w-100 st-record-2-div">
@@ -229,7 +229,7 @@
               </div>
             </div>
             <div class="staking-coin-img-div">
-              <img class="staking-coin-img" src="{{ asset('96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
+              <img class="staking-coin-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
             </div>BTC
           </div>
           <div class="d-flex justify-content-between w-100 st-record-2-div">
@@ -259,7 +259,7 @@
               </div>
             </div>
             <div class="staking-coin-img-div">
-              <img class="staking-coin-img" src="{{ asset('96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
+              <img class="staking-coin-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
             </div>BTC
           </div>
           <div class="d-flex justify-content-between w-100 st-record-2-div">
@@ -289,7 +289,7 @@
               </div>
             </div>
             <div class="staking-coin-img-div">
-              <img class="staking-coin-img" src="{{ asset('96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
+              <img class="staking-coin-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
             </div>BTC
           </div>
           <div class="d-flex justify-content-between w-100 st-record-2-div">
@@ -319,7 +319,7 @@
               </div>
             </div>
             <div class="staking-coin-img-div">
-              <img class="staking-coin-img" src="{{ asset('96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
+              <img class="staking-coin-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
             </div>BTC
           </div>
           <div class="d-flex justify-content-between w-100 st-record-2-div">
@@ -349,7 +349,7 @@
               </div>
             </div>
             <div class="staking-coin-img-div">
-              <img class="staking-coin-img" src="{{ asset('96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
+              <img class="staking-coin-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
             </div>BTC
           </div>
           <div class="d-flex justify-content-between w-100 st-record-2-div">
@@ -379,7 +379,7 @@
               </div>
             </div>
             <div class="staking-coin-img-div">
-              <img class="staking-coin-img" src="{{ asset('96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
+              <img class="staking-coin-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
             </div>BTC
           </div>
           <div class="d-flex justify-content-between w-100 st-record-2-div">
@@ -409,7 +409,7 @@
               </div>
             </div>
             <div class="staking-coin-img-div">
-              <img class="staking-coin-img" src="{{ asset('96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
+              <img class="staking-coin-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
             </div>BTC
           </div>
           <div class="d-flex justify-content-between w-100 st-record-2-div">
@@ -439,7 +439,7 @@
               </div>
             </div>
             <div class="staking-coin-img-div">
-              <img class="staking-coin-img" src="{{ asset('96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
+              <img class="staking-coin-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
             </div>BTC
           </div>
           <div class="d-flex justify-content-between w-100 st-record-2-div">
@@ -632,7 +632,7 @@
                   </div>
                   <div class="px-3 mb-3">
                     <div class="modal-select-coin-img-div">
-                    <img class="modal-select-coin-img" src="{{ asset('96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
+                    <img class="modal-select-coin-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                     <div class="ms-2">APE</div>
                   </div>
                   </div>

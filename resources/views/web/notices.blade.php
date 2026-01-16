@@ -31,7 +31,7 @@
                </div>
                <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
                   <div class="notice-search-img">
-                     <img src="{{ asset('assets/img/notice-search-img.png') }}" class="img-fluid animated"
+                     <img src="{{ asset('img/notice-search-img.png') }}" class="img-fluid animated"
                         alt="Wealthmark Notice Slab" title="Wealthmark Notice Slab">
                   </div>
                </div>

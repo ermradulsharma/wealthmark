@@ -6,8 +6,8 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
   <meta name="theme-color" content="#287aff">
-  <link href="{{ asset('assets/img/wealthmark-logo.svg') }}" rel="icon">
-  <link href="{{ asset('assets/img/wealthmark-logo.svg') }}" rel="apple-touch-icon">
+  <link href="{{ asset('img/wealthmark-logo.svg') }}" rel="icon">
+  <link href="{{ asset('img/wealthmark-logo.svg') }}" rel="apple-touch-icon">
 
   @include('template.web_css')
     <link rel="stylesheet" href="{{ asset('assets/css/dashboard.css') }}">
@@ -47,7 +47,7 @@
                     <div class="">
                                 <div style="background-color: rgb(254, 246, 216); display: flex; place-content: center;">
                     <div style="width: 100%; max-width: 1200px; padding: 20px 24px;font-size: 14px;line-height: 24px;display: flex; ">
-                            <img src="{{  asset('assets/img/wealthmark-logo.svg') }}" style="display: inline-block;width: 24px; height: 24px;">
+                            <img src="{{  asset('img/wealthmark-logo.svg') }}" style="display: inline-block;width: 24px; height: 24px;">
                             <div style="flex: 1;padding-left: 8px;margin-right: 24px;color: #1E2329;">
                                 <div style="margin-right: 8px;display: inline-block;">Complete verification to access Binance products and services.</div>
                                 <a style=" color: #C99400; display: inline-block;text-decoration: underline;" href="#">Learn more</a>
@@ -74,7 +74,7 @@
         <!-- banner -->
         <div class=" d-flex align-items-center shadow-sm p-3">
             <div class="profile-img me-3">
-            <img src="{{ asset('assets/img/country-flag/India-Icon.svg') }}" alt="">
+            <img src="{{ asset('img/country-flag/India-Icon.svg') }}" alt="">
             </div>
             <div class="flex-item">
                 <div class="profile-id">
@@ -356,7 +356,7 @@
                     <hr>
                     <div class="dashboard-card-body">
                         <div class="text-center">
-                        <img src="{{ asset('assets/img/no-record-icon.svg') }}" class="" alt="">
+                        <img src="{{ asset('img/no-record-icon.svg') }}" class="" alt="">
                         <p class="my-2">No Record Found</p>
                         </div>
                     </div>
@@ -396,7 +396,7 @@
                         </tbody>
                         </table>
                         <div class="text-center">
-                        <img src="{{ asset('assets/img/no-record-icon.svg') }}" class="" alt="">
+                        <img src="{{ asset('img/no-record-icon.svg') }}" class="" alt="">
                         <p class="my-2">No Record Found</p>
                         </div>
                     </div>
@@ -415,7 +415,7 @@
                     <hr>
                     <div class="dashboard-card-body">
                         <div class="text-center">
-                        <img src="{{ asset('assets/img/no-record-icon.svg') }}" class="" alt="">
+                        <img src="{{ asset('img/no-record-icon.svg') }}" class="" alt="">
                         <p class="my-2">No Record Found</p>
                         </div>
                     </div>
@@ -472,7 +472,7 @@
                     <div class="col-6">
                         <a href="#">
                             <div class="card-body auth-block">
-                                <img src="{{ asset('assets/img/dashboard-icons/settings/authenticator.svg') }}" class="auth-img" alt="">
+                                <img src="{{ asset('img/dashboard-icons/settings/authenticator.svg') }}" class="auth-img" alt="">
                                 <p class="fs-14 mb-0 fw-bold my-2 text-dark">Enable WealthMark/Google Authenticator</p>
                                 <span class="small text-muted">Recommended</span>
                             </div>
@@ -481,7 +481,7 @@
                     <div class="col-6">
                         <a href="#">
                             <div class="card-body auth-block">
-                                <img src="{{ asset('assets/img/dashboard-icons/settings/phone-verification.svg') }}" class="auth-img" alt="">
+                                <img src="{{ asset('img/dashboard-icons/settings/phone-verification.svg') }}" class="auth-img" alt="">
                                 <p class="fs-14 mb-0 fw-bold my-2 text-dark">Phone verification</p>
                                 <!-- <span class="small text-muted">Recommended</span> -->
                             </div>

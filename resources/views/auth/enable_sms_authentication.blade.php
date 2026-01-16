@@ -7,8 +7,8 @@
         <meta content="" name="description">
         <meta content="" name="keywords">
         <meta name="theme-color" content="#287aff">
-        <link href="{{ asset('assets/img/wealthmark-logo.svg') }}" rel="icon">
-        <link href="{{ asset('assets/img/wealthmark-logo.svg') }}" rel="apple-touch-icon">
+        <link href="{{ asset('img/wealthmark-logo.svg') }}" rel="icon">
+        <link href="{{ asset('img/wealthmark-logo.svg') }}" rel="apple-touch-icon">
         <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
         <link href="{{ asset('assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
         <link href="{{ asset('assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
@@ -29,7 +29,7 @@
                     <div class="">
                                 <div style="background-color: rgb(254, 246, 216); display: flex; place-content: center;">
                     <div style="width: 100%; max-width: 1200px; padding: 20px 24px;font-size: 14px;line-height: 24px;display: flex; ">
-                            <img src="{{  asset('assets/img/wealthmark-logo.svg') }}" style="display: inline-block;width: 24px; height: 24px;">
+                            <img src="{{  asset('img/wealthmark-logo.svg') }}" style="display: inline-block;width: 24px; height: 24px;">
                             <div style="flex: 1;padding-left: 8px;margin-right: 24px;color: #1E2329;">
                                 <div style="margin-right: 8px;display: inline-block;">Complete verification to access Binance products and services.</div>
                                 <a style=" color: #C99400; display: inline-block;text-decoration: underline;" href="#">Learn more</a>

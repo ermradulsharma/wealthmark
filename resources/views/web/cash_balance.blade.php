@@ -391,7 +391,7 @@ display: flex;
                                              </div>
                                              <div class="lf-select-coin-to-active-div">
                                                 <div class="wm-dropdown-optn-item-div">
-                                                   <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                                   <img class="wm-dropdown-optn-item-img" src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                                    <div class="wm-dropdown-optn-item-txt">INR</div>
                                                 </div>
                                              </div>
@@ -409,7 +409,7 @@ display: flex;
                                                    <li role="option"  class="wm-dropdown-optn-item">
                                                       <div class="wm-dropdown-optn-item-inner">
                                                          <div class="wm-dropdown-optn-item-div">
-                                                            <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                                            <img class="wm-dropdown-optn-item-img" src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                                             <div class="wm-dropdown-optn-item-txt">demo</div>
                                                          </div>
                                                       </div>
@@ -431,7 +431,7 @@ display: flex;
                                              </div>
                                              <div class="lf-select-coin-to-active-div">
                                                 <div class="wm-dropdown-optn-item-div">
-                                                   <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                                   <img class="wm-dropdown-optn-item-img" src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                                    <div class="wm-dropdown-optn-item-txt">INR</div>
                                                 </div>
                                              </div>
@@ -449,7 +449,7 @@ display: flex;
                                                    <li role="option"  class="wm-dropdown-optn-item">
                                                       <div class="wm-dropdown-optn-item-inner">
                                                          <div class="wm-dropdown-optn-item-div">
-                                                            <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                                            <img class="wm-dropdown-optn-item-img" src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                                             <div class="wm-dropdown-optn-item-txt">demo</div>
                                                          </div>
                                                       </div>
@@ -640,7 +640,7 @@ display: flex;
          <div class="crypto-conversion">
              <div class="block">
                  <div>
-                     <img src="https://wealthmark.io/storage/app/bmklogo/12.png">
+                     <img src="{{ asset('img/storage/app/bmklogo/12.png') }}">
                  </div>
                  <div>
                         <span>BMK</span>
@@ -650,68 +650,7 @@ display: flex;
              </div>
               <div class="block">
                  <div>
-                     <img src="https://wealthmark.io/storage/app/bmklogo/12.png">
-                 </div>
-                 <div>
-                        <span>BMK</span>
-                        <span>to</span>
-                        <span>BTC</span>
-                 </div>
-             </div>
-
-              <div class="block">
-                 <div>
-                     <img src="https://wealthmark.io/storage/app/bmklogo/12.png">
-                 </div>
-                 <div>
-                        <span>BMK</span>
-                        <span>to</span>
-                        <span>BTC</span>
-                 </div>
-             </div>
-              <div class="block">
-                 <div>
-                     <img src="https://wealthmark.io/storage/app/bmklogo/12.png">
-                 </div>
-                 <div>
-                        <span>BMK</span>
-                        <span>to</span>
-                        <span>BTC</span>
-                 </div>
-             </div>
-              <div class="block">
-                 <div>
-                     <img src="https://wealthmark.io/storage/app/bmklogo/12.png">
-                 </div>
-                 <div>
-                        <span>BMK</span>
-                        <span>to</span>
-                        <span>BTC</span>
-                 </div>
-             </div>
-              <div class="block">
-                 <div>
-                     <img src="https://wealthmark.io/storage/app/bmklogo/12.png">
-                 </div>
-                 <div>
-                        <span>BMK</span>
-                        <span>to</span>
-                        <span>BTC</span>
-                 </div>
-             </div>
-              <div class="block">
-                 <div>
-                     <img src="https://wealthmark.io/storage/app/bmklogo/12.png">
-                 </div>
-                 <div>
-                        <span>BMK</span>
-                        <span>to</span>
-                        <span>BTC</span>
-                 </div>
-             </div>
-              <div class="block">
-                 <div>
-                     <img src="https://wealthmark.io/storage/app/bmklogo/12.png">
+                     <img src="{{ asset('img/storage/app/bmklogo/12.png') }}">
                  </div>
                  <div>
                         <span>BMK</span>
@@ -722,7 +661,7 @@ display: flex;
 
               <div class="block">
                  <div>
-                     <img src="https://wealthmark.io/storage/app/bmklogo/12.png">
+                     <img src="{{ asset('img/storage/app/bmklogo/12.png') }}">
                  </div>
                  <div>
                         <span>BMK</span>
@@ -732,7 +671,68 @@ display: flex;
              </div>
               <div class="block">
                  <div>
-                     <img src="https://wealthmark.io/storage/app/bmklogo/12.png">
+                     <img src="{{ asset('img/storage/app/bmklogo/12.png') }}">
+                 </div>
+                 <div>
+                        <span>BMK</span>
+                        <span>to</span>
+                        <span>BTC</span>
+                 </div>
+             </div>
+              <div class="block">
+                 <div>
+                     <img src="{{ asset('img/storage/app/bmklogo/12.png') }}">
+                 </div>
+                 <div>
+                        <span>BMK</span>
+                        <span>to</span>
+                        <span>BTC</span>
+                 </div>
+             </div>
+              <div class="block">
+                 <div>
+                     <img src="{{ asset('img/storage/app/bmklogo/12.png') }}">
+                 </div>
+                 <div>
+                        <span>BMK</span>
+                        <span>to</span>
+                        <span>BTC</span>
+                 </div>
+             </div>
+              <div class="block">
+                 <div>
+                     <img src="{{ asset('img/storage/app/bmklogo/12.png') }}">
+                 </div>
+                 <div>
+                        <span>BMK</span>
+                        <span>to</span>
+                        <span>BTC</span>
+                 </div>
+             </div>
+              <div class="block">
+                 <div>
+                     <img src="{{ asset('img/storage/app/bmklogo/12.png') }}">
+                 </div>
+                 <div>
+                        <span>BMK</span>
+                        <span>to</span>
+                        <span>BTC</span>
+                 </div>
+             </div>
+
+              <div class="block">
+                 <div>
+                     <img src="{{ asset('img/storage/app/bmklogo/12.png') }}">
+                 </div>
+                 <div>
+                        <span>BMK</span>
+                        <span>to</span>
+                        <span>BTC</span>
+                 </div>
+             </div>
+              <div class="block">
+                 <div>
+                     <img src="{{ asset('img/storage/app/bmklogo/12.png') }}">
                  </div>
                  <div>
                         <span>BMK</span>

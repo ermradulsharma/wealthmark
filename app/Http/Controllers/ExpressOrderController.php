@@ -1175,4 +1175,9 @@ class ExpressOrderController extends Controller
             return response()->json(['message' => 'success', 'all_express_orders' => $expressorderData, 'pagination' => $express_orders]);
         }
     }
+
+    public function express_buy_sell_crypto_22052023(Request $request)
+    {
+        return $this->express_buy_sell_crypto($request);
+    }
 }

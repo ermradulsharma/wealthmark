@@ -4,8 +4,8 @@
 <meta name="keywords" content="">
 <meta name="theme-color" content="#287aff">
 
-<link href="{{ asset('assets/img/wealthmark-logo.svg') }}" rel="icon">
-<link href="{{ asset('assets/img/wealthmark-logo.svg') }}" rel="apple-touch-icon">
+<link href="{{ asset('img/wealthmark-logo.svg') }}" rel="icon">
+<link href="{{ asset('img/wealthmark-logo.svg') }}" rel="apple-touch-icon">
 
 <!-- Vendor CSS -->
 <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">

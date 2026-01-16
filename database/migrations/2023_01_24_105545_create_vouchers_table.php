@@ -6,34 +6,23 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
         Schema::create('vouchers', function (Blueprint $table) {
-            $table->id();
-            $table->string('voucher_key', 255)->nullable();
-            $table->string('voucher_number', 255)->nullable();
-            $table->string('voucher_name', 255)->nullable();
-            $table->string('market', 255)->nullable();
-            $table->string('validityIndays', 255)->nullable();
-            $table->date('expiry')->nullable();
-            $table->string('amount',99)->nullable();
-            $table->string('status')->comment('1=active,0=inactive')->default('1');
-            $table->string('comment', 255)->nullable();
-            $table->softDeletes();
-            $table->timestamps();
+                $table->increments('id');
+                $table->string('voucher_key')->nullable();
+                $table->string('voucher_number')->nullable();
+                $table->string('voucher_name')->nullable();
+                $table->string('market')->nullable();
+                $table->string('validityIndays')->nullable();
+                $table->date('expiry')->nullable();
+                $table->string('amount')->nullable();
+                $table->string('status')->nullable();
+                $table->string('comment')->nullable();
+                $table->timestamps();
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::dropIfExists('vouchers');

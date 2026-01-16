@@ -2,7 +2,7 @@
                     <div class="chat-box">
                         <div class="header" id="my-div2">
                             <div class="avatar-wrapper avatar-big">
-                              <img src="{{  asset('assets/img/country-flag/') }} " alt="avatar" />
+                              <img src="{{  asset('img/country-flag/') }} " alt="avatar" />
                             </div>
                             <span class="name">
                                 <span>Shubham Rawat</span>

@@ -44,7 +44,7 @@
                         </div>
                                 <div class="row align-items-center justify-content-evenly">
                                      <div class="col-lg-4 col-md-6 col-sm-6 order-md-2">
-                                <img src="{{ asset('assets/img/auth-icons/password_change.png') }}" class="w-100">
+                                <img src="{{ asset('img/auth-icons/password_change.png') }}" class="w-100">
                             </div>
                                     <div class="col-lg-4 col-md-6 col-sm-6 order-md-1">
                                          <h4 class="form-heading mb-4  d-md-block ">

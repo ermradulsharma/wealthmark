@@ -6,32 +6,22 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
         Schema::create('currencies', function (Blueprint $table) {
-            $table->id();
-            $table->string('name', 70)->nullable();
-            $table->string('currency_symbol')->nullable();
-            $table->decimal('currency_value')->nullable();
-            $table->string('currency_type', 320)->nullable();
-            $table->decimal('currencyVal_by_INR')->nullable();
-            $table->string('status')->default(1)->comment('0:blocked|1:inactive|2:active|3: pending');;
-            $table->string('description')->nullable();
-            $table->softDeletes();
-            $table->timestamps();
+                $table->id();
+                $table->string('name')->nullable();
+                $table->string('currency_symbol')->nullable();
+                $table->decimal('currency_value', 10, 2)->nullable();
+                $table->string('currency_type')->nullable();
+                $table->decimal('currencyVal_by_INR', 10, 2)->nullable();
+                $table->decimal('currencyVal_by_USD', 10, 2)->nullable();
+                $table->string('status')->default(1);
+                $table->string('description')->nullable();
+                $table->timestamps();
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::dropIfExists('currencies');

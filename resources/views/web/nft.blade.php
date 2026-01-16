@@ -10,7 +10,7 @@
    <style>
 
    .nft-top-section{
-          background: var(--bg-white) url(https://wealthmark.io/assets/img/nft/top-banner.png);
+          background: var(--bg-white) url({{ asset('img/assets/img/nft/top-banner.png') }});
     padding-top: 100px;
     background-position: center;
     background-size: cover;
@@ -811,28 +811,28 @@
          <!-- Slider -->
         <div class="slider responsive">
           <div>
-						<img src="{{ asset('assets/img/nft/nft-slide-1.jpg') }}" alt="" />
+						<img src="{{ asset('img/nft/nft-slide-1.jpg') }}" alt="" />
 					</div>
 					<div>
-						<img src="{{ asset('assets/img/nft/nft-slide-2.jpg') }}" alt="" />
+						<img src="{{ asset('img/nft/nft-slide-2.jpg') }}" alt="" />
 					</div>
 					<div>
-						<img src="{{ asset('assets/img/nft/nft-slide-3.jpg') }}" alt="" />
+						<img src="{{ asset('img/nft/nft-slide-3.jpg') }}" alt="" />
 					</div>
 					<div>
-						<img src="{{ asset('assets/img/nft/nft-slide-4.jpg') }}" alt="" />
+						<img src="{{ asset('img/nft/nft-slide-4.jpg') }}" alt="" />
 					</div>
 					<div>
-						<img src="{{ asset('assets/img/nft/nft-slide-5.jpg') }}" alt="" />
+						<img src="{{ asset('img/nft/nft-slide-5.jpg') }}" alt="" />
 					</div>
 					<div>
-						<img src="{{ asset('assets/img/nft/nft-slide-1.jpg') }}" alt="" />
+						<img src="{{ asset('img/nft/nft-slide-1.jpg') }}" alt="" />
 					</div>
 					<div>
-						<img src="{{ asset('assets/img/nft/nft-slide-2.jpg') }}" alt="" />
+						<img src="{{ asset('img/nft/nft-slide-2.jpg') }}" alt="" />
 					</div>
 					<div>
-						<img src="{{ asset('assets/img/nft/nft-slide-3.jpg') }}" alt="" />
+						<img src="{{ asset('img/nft/nft-slide-3.jpg') }}" alt="" />
 					</div>
         </div>
 				 <!-- control arrows -->
@@ -870,10 +870,10 @@
     <div class="d-flex align-items-center gap-2 flex-wrap wm-btn-group-outile">
        <div class="btn-group" role="group" aria-label="Basic outlined example">
             <button type="button" class="btn btn-outline-primary active">All</button>
-            <button type="button" class="btn btn-outline-primary"><img src="https://wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png" class="btn-img"></button>
-            <button type="button" class="btn btn-outline-primary"><img src="https://wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png" class="btn-img"></button>
-            <button type="button" class="btn btn-outline-primary"><img src="https://wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png" class="btn-img"></button>
-            <button type="button" class="btn btn-outline-primary"><img src="https://wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png" class="btn-img"></button>
+            <button type="button" class="btn btn-outline-primary"><img src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}" class="btn-img"></button>
+            <button type="button" class="btn btn-outline-primary"><img src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}" class="btn-img"></button>
+            <button type="button" class="btn btn-outline-primary"><img src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}" class="btn-img"></button>
+            <button type="button" class="btn btn-outline-primary"><img src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}" class="btn-img"></button>
 </div>
 
 <div class="btn-group" role="group" aria-label="Basic outlined example">
@@ -921,7 +921,7 @@
                                                        <svg  viewBox="0 0 1024 1024" fill="none" class="css-1yd5y1d">
                                                           <path fill-rule="evenodd" clip-rule="evenodd" d="M884.363636 0H139.636364C62.487273 0 0 62.487273 0 139.636364v744.727272c0 77.149091 62.487273 139.636364 139.636364 139.636364h744.727272c77.149091 0 139.636364-62.487273 139.636364-139.636364V139.636364c0-77.149091-62.487273-139.636364-139.636364-139.636364zM514.792727 977.454545C139.869091 977.454545 46.545455 884.130909 46.545455 509.207273S139.869091 46.545455 514.792727 46.545455 977.454545 134.4 977.454545 509.207273 889.6 977.454545 514.792727 977.454545z" fill="currentColor"></path>
                                                        </svg>
-                                                       <div class="css-1x55ckl"><span class="lazy-load-image-custom-wrapper lazy-load-image-background  lazy-load-image-loaded" ><img  src="{{ asset('assets/img/nft/img-1.webp') }}" ></span></div>
+                                                       <div class="css-1x55ckl"><span class="lazy-load-image-custom-wrapper lazy-load-image-background  lazy-load-image-loaded" ><img  src="{{ asset('img/nft/img-1.webp') }}" ></span></div>
                                                     </div>
                                                     <div class="css-1wr4jig">
                                                        <div class="css-10nf7hq">
@@ -963,7 +963,7 @@
                                                        <svg  viewBox="0 0 1024 1024" fill="none" class="css-1yd5y1d">
                                                           <path fill-rule="evenodd" clip-rule="evenodd" d="M884.363636 0H139.636364C62.487273 0 0 62.487273 0 139.636364v744.727272c0 77.149091 62.487273 139.636364 139.636364 139.636364h744.727272c77.149091 0 139.636364-62.487273 139.636364-139.636364V139.636364c0-77.149091-62.487273-139.636364-139.636364-139.636364zM514.792727 977.454545C139.869091 977.454545 46.545455 884.130909 46.545455 509.207273S139.869091 46.545455 514.792727 46.545455 977.454545 134.4 977.454545 509.207273 889.6 977.454545 514.792727 977.454545z" fill="currentColor"></path>
                                                        </svg>
-                                                       <div class="css-1x55ckl"><span class="lazy-load-image-custom-wrapper lazy-load-image-background  lazy-load-image-loaded" ><img  src="{{ asset('assets/img/nft/img-2.webp') }}" ></span></div>
+                                                       <div class="css-1x55ckl"><span class="lazy-load-image-custom-wrapper lazy-load-image-background  lazy-load-image-loaded" ><img  src="{{ asset('img/nft/img-2.webp') }}" ></span></div>
                                                     </div>
                                                     <div class="css-1wr4jig">
                                                        <div class="css-10nf7hq">
@@ -1009,7 +1009,7 @@
                                                        </svg>
                                                        <div class="css-1x55ckl">
                                                            <span class="lazy-load-image-custom-wrapper lazy-load-image-background  lazy-load-image-loaded" >
-                                                               <img  src="{{ asset('assets/img/nft/img-3.webp') }}" >
+                                                               <img  src="{{ asset('img/nft/img-3.webp') }}" >
                                                              </span>
                                                         </div>
                                                     </div>
@@ -1076,7 +1076,7 @@
                                                        <svg  viewBox="0 0 1024 1024" fill="none" class="css-1yd5y1d">
                                                           <path fill-rule="evenodd" clip-rule="evenodd" d="M884.363636 0H139.636364C62.487273 0 0 62.487273 0 139.636364v744.727272c0 77.149091 62.487273 139.636364 139.636364 139.636364h744.727272c77.149091 0 139.636364-62.487273 139.636364-139.636364V139.636364c0-77.149091-62.487273-139.636364-139.636364-139.636364zM514.792727 977.454545C139.869091 977.454545 46.545455 884.130909 46.545455 509.207273S139.869091 46.545455 514.792727 46.545455 977.454545 134.4 977.454545 509.207273 889.6 977.454545 514.792727 977.454545z" fill="currentColor"></path>
                                                        </svg>
-                                                       <div class="css-1x55ckl"><span class="lazy-load-image-custom-wrapper lazy-load-image-background  lazy-load-image-loaded" ><img  src="{{ asset('assets/img/nft/img-1.webp') }}" ></span></div>
+                                                       <div class="css-1x55ckl"><span class="lazy-load-image-custom-wrapper lazy-load-image-background  lazy-load-image-loaded" ><img  src="{{ asset('img/nft/img-1.webp') }}" ></span></div>
                                                     </div>
                                                     <div class="css-1wr4jig">
                                                        <div class="css-10nf7hq">
@@ -1118,7 +1118,7 @@
                                                        <svg  viewBox="0 0 1024 1024" fill="none" class="css-1yd5y1d">
                                                           <path fill-rule="evenodd" clip-rule="evenodd" d="M884.363636 0H139.636364C62.487273 0 0 62.487273 0 139.636364v744.727272c0 77.149091 62.487273 139.636364 139.636364 139.636364h744.727272c77.149091 0 139.636364-62.487273 139.636364-139.636364V139.636364c0-77.149091-62.487273-139.636364-139.636364-139.636364zM514.792727 977.454545C139.869091 977.454545 46.545455 884.130909 46.545455 509.207273S139.869091 46.545455 514.792727 46.545455 977.454545 134.4 977.454545 509.207273 889.6 977.454545 514.792727 977.454545z" fill="currentColor"></path>
                                                        </svg>
-                                                       <div class="css-1x55ckl"><span class="lazy-load-image-custom-wrapper lazy-load-image-background  lazy-load-image-loaded" ><img  src="{{ asset('assets/img/nft/img-2.webp') }}" ></span></div>
+                                                       <div class="css-1x55ckl"><span class="lazy-load-image-custom-wrapper lazy-load-image-background  lazy-load-image-loaded" ><img  src="{{ asset('img/nft/img-2.webp') }}" ></span></div>
                                                     </div>
                                                     <div class="css-1wr4jig">
                                                        <div class="css-10nf7hq">
@@ -1164,7 +1164,7 @@
                                                        </svg>
                                                        <div class="css-1x55ckl">
                                                            <span class="lazy-load-image-custom-wrapper lazy-load-image-background  lazy-load-image-loaded" >
-                                                               <img  src="{{ asset('assets/img/nft/img-3.webp') }}" >
+                                                               <img  src="{{ asset('img/nft/img-3.webp') }}" >
                                                              </span>
                                                         </div>
                                                     </div>
@@ -1236,28 +1236,28 @@
          <!-- Slider -->
         <div class="slider Featured">
           <div>
-						<img src="{{ asset('assets/img/nft/nft-slide-1.jpg') }}" alt="" />
+						<img src="{{ asset('img/nft/nft-slide-1.jpg') }}" alt="" />
 					</div>
 					<div>
-						<img src="{{ asset('assets/img/nft/nft-slide-2.jpg') }}" alt="" />
+						<img src="{{ asset('img/nft/nft-slide-2.jpg') }}" alt="" />
 					</div>
 					<div>
-						<img src="{{ asset('assets/img/nft/nft-slide-3.jpg') }}" alt="" />
+						<img src="{{ asset('img/nft/nft-slide-3.jpg') }}" alt="" />
 					</div>
 					<div>
-						<img src="{{ asset('assets/img/nft/nft-slide-4.jpg') }}" alt="" />
+						<img src="{{ asset('img/nft/nft-slide-4.jpg') }}" alt="" />
 					</div>
 					<div>
-						<img src="{{ asset('assets/img/nft/nft-slide-5.jpg') }}" alt="" />
+						<img src="{{ asset('img/nft/nft-slide-5.jpg') }}" alt="" />
 					</div>
 					<div>
-						<img src="{{ asset('assets/img/nft/nft-slide-1.jpg') }}" alt="" />
+						<img src="{{ asset('img/nft/nft-slide-1.jpg') }}" alt="" />
 					</div>
 					<div>
-						<img src="{{ asset('assets/img/nft/nft-slide-2.jpg') }}" alt="" />
+						<img src="{{ asset('img/nft/nft-slide-2.jpg') }}" alt="" />
 					</div>
 					<div>
-						<img src="{{ asset('assets/img/nft/nft-slide-3.jpg') }}" alt="" />
+						<img src="{{ asset('img/nft/nft-slide-3.jpg') }}" alt="" />
 					</div>
         </div>
 				 <!-- control arrows -->
@@ -1289,7 +1289,7 @@
          <div class="css-1n0rtc0">
             <div class="css-hr04qc">
 
-                    <img src="{{ asset('assets/img/nft/slider-1.webp') }}" >
+                    <img src="{{ asset('img/nft/slider-1.webp') }}" >
 
             </div>
             <div class="css-spt8x2">
@@ -1299,7 +1299,7 @@
                   </svg>
                   <div class="css-1ehyqbw">
 
-                          <img src="{{ asset('assets/img/nft/img-3.webp') }}" >
+                          <img src="{{ asset('img/nft/img-3.webp') }}" >
                     </div>
                </div>
             </div>
@@ -1334,7 +1334,7 @@
          <div class="css-1n0rtc0">
             <div class="css-hr04qc">
 
-                    <img src="{{ asset('assets/img/nft/slider-1.webp') }}" >
+                    <img src="{{ asset('img/nft/slider-1.webp') }}" >
 
                     </div>
             <div class="css-spt8x2">
@@ -1379,7 +1379,7 @@
       <div class="css-x0dwiq">
          <div class="css-1n0rtc0">
             <div class="css-hr04qc">
-                <img src="{{ asset('assets/img/nft/slider-1.webp') }}" >
+                <img src="{{ asset('img/nft/slider-1.webp') }}" >
                 </div>
             <div class="css-spt8x2">
                <div class="css-qx3vov">
@@ -1418,7 +1418,7 @@
    <a href="javascript:void(0)">
       <div class="css-x0dwiq">
          <div class="css-1n0rtc0">
-            <div class="css-hr04qc"><img src="{{ asset('assets/img/nft/slider-1.webp') }}" ></div>
+            <div class="css-hr04qc"><img src="{{ asset('img/nft/slider-1.webp') }}" ></div>
             <div class="css-spt8x2">
                <div class="css-qx3vov">
                   <svg  viewBox="0 0 1024 1024" fill="none" class="css-alnszv">
@@ -1459,7 +1459,7 @@
       <div class="css-x0dwiq">
          <div class="css-1n0rtc0">
             <div class="css-hr04qc">
-                <img src="{{ asset('assets/img/nft/slider-1.webp') }}" >
+                <img src="{{ asset('img/nft/slider-1.webp') }}" >
 
             </div>
             <div class="css-spt8x2">
@@ -1503,7 +1503,7 @@
       <div class="css-x0dwiq">
          <div class="css-1n0rtc0">
             <div class="css-hr04qc">
-                <img src="{{ asset('assets/img/nft/slider-1.webp') }}" >
+                <img src="{{ asset('img/nft/slider-1.webp') }}" >
                 </div>
             <div class="css-spt8x2">
                <div class="css-qx3vov">
@@ -1543,7 +1543,7 @@
    <a href="javascript:void(0)">
       <div class="css-x0dwiq">
          <div class="css-1n0rtc0">
-            <div class="css-hr04qc"><img src="{{ asset('assets/img/nft/slider-1.webp') }}" >
+            <div class="css-hr04qc"><img src="{{ asset('img/nft/slider-1.webp') }}" >
             </div>
             <div class="css-spt8x2">
                <div class="css-qx3vov">
@@ -1585,7 +1585,7 @@
       <div class="css-x0dwiq">
          <div class="css-1n0rtc0">
             <div class="css-hr04qc">
-                <img src="{{ asset('assets/img/nft/slider-1.webp') }}" >
+                <img src="{{ asset('img/nft/slider-1.webp') }}" >
                 </div>
             <div class="css-spt8x2">
                <div class="css-qx3vov">

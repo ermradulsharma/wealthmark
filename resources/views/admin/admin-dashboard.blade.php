@@ -7,8 +7,8 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
   <meta name="theme-color" content="javascript:void(0)287aff">
-  <link href="{{ asset('assets/img/wealthmark-logo.svg') }}" rel="icon">
-  <link href="{{ asset('assets/img/wealthmark-logo.svg') }}" rel="apple-touch-icon">
+  <link href="{{ asset('img/wealthmark-logo.svg') }}" rel="icon">
+  <link href="{{ asset('img/wealthmark-logo.svg') }}" rel="apple-touch-icon">
   @include('template.web_css')
   <link rel="stylesheet" href="{{ asset('assets/css/dashboard.css') }}">
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
@@ -625,7 +625,7 @@ min-height:auto;
             <!--                        <div class="security-block first-block fund-div bg-light-blue shadow-sm">-->
             <!--                            <div class="d-flex">-->
             <!--                                  <div class="security-column-icon">-->
-            <!--                                     <img src="{{ asset('assets/img/dashboard-icons/settings/biometric.png') }}" alt="">-->
+            <!--                                     <img src="{{ asset('img/dashboard-icons/settings/biometric.png') }}" alt="">-->
             <!--                                  </div>-->
             <!--                                <span>Enable 2FA</span>-->
             <!--                            </div>-->
@@ -638,7 +638,7 @@ min-height:auto;
             <!--                           <div class="security-block first-block fund-div bg-light-blue shadow-sm">-->
             <!--                        <div class="d-flex">-->
             <!--                             <div class="security-column-icon">-->
-            <!--                                 <img src="{{ asset('assets/img/dashboard-icons/settings/login-pw.png') }}" alt="">-->
+            <!--                                 <img src="{{ asset('img/dashboard-icons/settings/login-pw.png') }}" alt="">-->
             <!--                              </div>-->
             <!--                            <span>Identity Verification</span>-->
             <!--                        </div>-->
@@ -651,7 +651,7 @@ min-height:auto;
             <!--                        <div class="security-block first-block fund-div bg-light-blue shadow-sm">-->
             <!--                        <div class="d-flex">-->
             <!--                            <div class="security-column-icon">-->
-            <!--                             <img src="{{ asset('assets/img/dashboard-icons/settings/anti-phishing.png') }}" alt="">-->
+            <!--                             <img src="{{ asset('img/dashboard-icons/settings/anti-phishing.png') }}" alt="">-->
             <!--                          </div>-->
             <!--                            <span>Anti-phishing Code</span>-->
             <!--                        </div>-->
@@ -673,7 +673,7 @@ min-height:auto;
             <!--                  <div class="security-block first-block fund-div bg-light-blue shadow-sm">-->
             <!--                <div class="d-flex">-->
             <!--                     <div class="security-column-icon">-->
-            <!--                    <img src="{{ asset('assets/img/dashboard-icons/settings/authenticator.svg') }}" alt="">-->
+            <!--                    <img src="{{ asset('img/dashboard-icons/settings/authenticator.svg') }}" alt="">-->
             <!--                </div>-->
             <!--                    <span>Turn-on Withdrawal Whitelist</span>-->
             <!--                </div>-->

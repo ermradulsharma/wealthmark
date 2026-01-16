@@ -143,7 +143,7 @@
                              <div class="fund-div bg-light-blue shadow-sm mb-3">
                                       <div class="fund-div-text pe-5">
                                           <div class="">
-                                               <img src="{{ asset('assets/img/dashboard-icons/bank-account.svg') }}" alt="">
+                                               <img src="{{ asset('img/dashboard-icons/bank-account.svg') }}" alt="">
                                           </div>
                                           <div>
                                               <span> Buy Crypto <span id="video-Buy" class="video cursor-pointer" onClick="openVideo(this.id)"> <i class="bi bi-play-circle-fill"></i> Video Tutorial  </span> </span>
@@ -162,7 +162,7 @@
                         <div class="fund-div bg-light-blue shadow-sm mb-3">
                                       <div class="fund-div-text pe-5">
                                           <div class="">
-                                                <img src="{{ asset('assets/img/dashboard-icons/crypto_deposit.svg') }}" alt="">
+                                                <img src="{{ asset('img/dashboard-icons/crypto_deposit.svg') }}" alt="">
                                           </div>
                                           <div>
                                               <span> Crypto Deposit <span id="video-Deposit" class="video cursor-pointer" onClick="openVideo(this.id)"> <i class="bi bi-play-circle-fill"></i> Video Tutorial  </span> </span>
@@ -181,7 +181,7 @@
                         <div class="fund-div bg-light-blue shadow-sm mb-3">
                                       <div class="fund-div-text pe-5">
                                           <div class="">
-                                               <img src="{{ asset('assets/img/dashboard-icons/Receive_Crypto.svg') }}" alt="">
+                                               <img src="{{ asset('img/dashboard-icons/Receive_Crypto.svg') }}" alt="">
                                           </div>
                                           <div>
                                               <span> Receive Crypto <span id="video-Receive" class="video cursor-pointer" onClick="openVideo(this.id)"> <i class="bi bi-play-circle-fill"></i> Video Tutorial  </span> </span>
@@ -208,7 +208,7 @@
                             <div class="tbl-1-div">
                                 <div class="tbl-lbl-div">Heading here</div>
                                 <div class="tbl-img-div">
-                                    <img src="https://wealthmark.io/assets/img/coins/3222a10d-5618-4100-8476-ee7fe0a6fb12.png" />
+                                    <img src="{{ asset('img/assets/img/coins/3222a10d-5618-4100-8476-ee7fe0a6fb12.png') }}" />
                                 </div>
                                 <div class="tbl-content-div">
                                     <div class="tbl-bold-text">BTC</div>
@@ -258,7 +258,7 @@
                             <div class="tbl-1-div">
                                 <div class="tbl-lbl-div">Heading here</div>
                                 <div class="tbl-img-div">
-                                    <img src="https://wealthmark.io/assets/img/coins/3222a10d-5618-4100-8476-ee7fe0a6fb12.png" />
+                                    <img src="{{ asset('img/assets/img/coins/3222a10d-5618-4100-8476-ee7fe0a6fb12.png') }}" />
                                 </div>
                                 <div class="tbl-content-div">
                                     <div class="tbl-bold-text">BTC</div>
@@ -308,7 +308,7 @@
                             <div class="tbl-1-div">
                                 <div class="tbl-lbl-div">Heading here</div>
                                 <div class="tbl-img-div">
-                                    <img src="https://wealthmark.io/assets/img/coins/3222a10d-5618-4100-8476-ee7fe0a6fb12.png" />
+                                    <img src="{{ asset('img/assets/img/coins/3222a10d-5618-4100-8476-ee7fe0a6fb12.png') }}" />
                                 </div>
                                 <div class="tbl-content-div">
                                     <div class="tbl-bold-text">BTC</div>
@@ -358,7 +358,7 @@
                             <div class="tbl-1-div">
                                 <div class="tbl-lbl-div">Heading here</div>
                                 <div class="tbl-img-div">
-                                    <img src="https://wealthmark.io/assets/img/coins/3222a10d-5618-4100-8476-ee7fe0a6fb12.png" />
+                                    <img src="{{ asset('img/assets/img/coins/3222a10d-5618-4100-8476-ee7fe0a6fb12.png') }}" />
                                 </div>
                                 <div class="tbl-content-div">
                                     <div class="tbl-bold-text">BTC</div>
@@ -440,7 +440,7 @@
                         <div class="fund-div bg-light-blue shadow-sm mb-3">
                                       <div class="fund-div-text pe-5">
                                           <div class="">
-                                              <img src="{{ asset('assets/img/dashboard-icons/bank-account.svg') }}" alt="">
+                                              <img src="{{ asset('img/dashboard-icons/bank-account.svg') }}" alt="">
                                           </div>
                                           <div>
                                               <span> Buy Crypto <span id="video-Buy" class="video cursor-pointer" onClick="openVideo(this.id)"> <i class="bi bi-play-circle-fill"></i> Video Tutorial  </span> </span>
@@ -459,7 +459,7 @@
                         <div class="fund-div bg-light-blue shadow-sm mb-3">
                                       <div class="fund-div-text pe-5">
                                           <div class="">
-                                              <img src="{{ asset('assets/img/dashboard-icons/crypto_deposit.svg') }}" alt="">
+                                              <img src="{{ asset('img/dashboard-icons/crypto_deposit.svg') }}" alt="">
                                           </div>
                                           <div>
                                               <span> Crypto Deposit <span id="video-Deposit" class="video cursor-pointer" onClick="openVideo(this.id)"> <i class="bi bi-play-circle-fill"></i> Video Tutorial  </span> </span>
@@ -478,7 +478,7 @@
                         <div class="fund-div bg-light-blue shadow-sm mb-3">
                                       <div class="fund-div-text pe-5">
                                           <div class="">
-                                               <img src="{{ asset('assets/img/dashboard-icons/Receive_Crypto.svg') }}" alt="">
+                                               <img src="{{ asset('img/dashboard-icons/Receive_Crypto.svg') }}" alt="">
                                           </div>
                                           <div>
                                               <span> Receive Crypto <span id="video-Receive" class="video cursor-pointer" onClick="openVideo(this.id)"> <i class="bi bi-play-circle-fill"></i> Video Tutorial  </span> </span>
@@ -530,7 +530,7 @@
     <div class="right-sidebar-body px-3 py-1">
         <div class="d-flex mb-3 align-items-center">
             <div class="me-3">
-                <img src="https://wealthmark.io/assets/img/coins/3222a10d-5618-4100-8476-ee7fe0a6fb12.png" class="max-width-30px">
+                <img src="{{ asset('img/assets/img/coins/3222a10d-5618-4100-8476-ee7fe0a6fb12.png') }}" class="max-width-30px">
             </div>
             <div class="tbl-content-div">
                                     <div class="tbl-bold-text">BTC</div>
@@ -592,7 +592,7 @@
 
                     <div class="lf-select-coin-to-active-value lf-select-coin-to-active-div">
                         <div class="wm-dropdown-optn-item-div">
-                            <img id="select_coin_img" class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">
+                            <img id="select_coin_img" class="wm-dropdown-optn-item-img" src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                             <div id="select_coin_text" class="wm-dropdown-optn-item-txt">All</div>
                          </div>
                     </div>

@@ -888,7 +888,7 @@
                      <div class="verification-steps">
                         <div class="step-box">
                            <div class="step-box-icon">
-                            <img src="{{ asset('assets/img/auth-icons/create-account.svg') }}" class="css-img-icon" alt="wealthmark" />
+                            <img src="{{ asset('img/auth-icons/create-account.svg') }}" class="css-img-icon" alt="wealthmark" />
                            </div>
                            <div class="step-box-content">
                               <div  class="step-box-title">Create Account</div>
@@ -897,7 +897,7 @@
                         </div>
                         <div class="step-box">
                            <div class="step-box-icon">
-                               <img src="{{ asset('assets/img/auth-icons/verify-identity.svg') }}" class="css-img-icon" alt="wealthmark" />
+                               <img src="{{ asset('img/auth-icons/verify-identity.svg') }}" class="css-img-icon" alt="wealthmark" />
                            </div>
                            <div class="step-box-content">
                               <div  class="step-box-title">Verify Identity</div>
@@ -906,7 +906,7 @@
                         </div>
                         <div class="step-box">
                            <div class="step-box-icon">
-                              <img src="{{ asset('assets/img/auth-icons/unlock.svg') }}" class="css-img-icon" alt="wealthmark" />
+                              <img src="{{ asset('img/auth-icons/unlock.svg') }}" class="css-img-icon" alt="wealthmark" />
                            </div>
                            <div class="step-box-content">
                               <div  class="step-box-title">Unlock Prize</div>
@@ -968,7 +968,7 @@
 
                     <div class="lf-select-coin-to-active-value lf-select-coin-to-active-div height-css">
                         <div class="wm-dropdown-optn-item-div">
-                            <img id="select_coin_img" class="wm-dropdown-optn-item-img" src="{{ asset('assets/img/country-flag/'.$country_code.'.png') }}">
+                            <img id="select_coin_img" class="wm-dropdown-optn-item-img" src="{{ asset('img/country-flag/'.$country_code.'.png') }}">
                             <div id="select_coin_text" class="wm-dropdown-optn-item-txt">
                                 @foreach($country as $eachCountry)
                                         @if( $eachCountry->ISO2code == $country_code)
@@ -1007,7 +1007,7 @@
                           <div class="wm-dropdown-optn-item-inner">
 
                                 <div class="wm-dropdown-optn-item-div">
-                                  <img class="wm-dropdown-optn-item-img" src="{{ asset('assets/img/country-flag/'.$eachCountry->ISO2code.'.png') }}">
+                                  <img class="wm-dropdown-optn-item-img" src="{{ asset('img/country-flag/'.$eachCountry->ISO2code.'.png') }}">
 
                                   <div class="wm-dropdown-optn-item-txt">{{ $eachCountry->name }}</div>
 
@@ -1025,26 +1025,26 @@
                      <div class="inner gh">
                         <div class="heading">Verification process</div>
                         <div class="content-box">
-                           <img src="{{ asset('assets/img/auth-icons/personal-info.svg') }}" class="css-icon-1rem" alt="wealthmark" />
+                           <img src="{{ asset('img/auth-icons/personal-info.svg') }}" class="css-icon-1rem" alt="wealthmark" />
                            <span class="content-box-text">Personal information</span>
                         </div>
                         <div class="content-box">
-                           <img src="{{ asset('assets/img/auth-icons/govt-issued.svg') }}" class="css-icon-1rem" alt="wealthmark" />
+                           <img src="{{ asset('img/auth-icons/govt-issued.svg') }}" class="css-icon-1rem" alt="wealthmark" />
                            <span class="content-box-text"> Government-issued ID</span>
                         </div>
                         <div class="content-box">
-                           <img src="{{ asset('assets/img/auth-icons/facial-reco.svg') }}" class="css-icon-1rem" alt="wealthmark" />
+                           <img src="{{ asset('img/auth-icons/facial-reco.svg') }}" class="css-icon-1rem" alt="wealthmark" />
                            <span class="content-box-text"> Facial recognition</span>
                         </div>
                         <div class="content-box">
-                            <img src="{{ asset('assets/img/auth-icons/review-time.svg') }}" class="css-icon-1rem" alt="wealthmark" />
+                            <img src="{{ asset('img/auth-icons/review-time.svg') }}" class="css-icon-1rem" alt="wealthmark" />
                            <span class="content-box-text"> Review time: 15 days</span>
                         </div>
                      </div>
                      <div class="inner">
                         <div class="heading">Guidance</div>
                         <div class="content-box">
-                            <img src="{{ asset('assets/img/auth-icons/verify-identity.svg') }}" class="css-icon-1rem" alt="wealthmark" />
+                            <img src="{{ asset('img/auth-icons/verify-identity.svg') }}" class="css-icon-1rem" alt="wealthmark" />
                            <a href="#">  <span class="content-box-text"> How to verify my identity</span> </a>
                         </div>
                      </div>
@@ -1075,11 +1075,11 @@
                         <div class="disable_div d-flex form-control">
                            <div class="img">
                                @if( Auth::user()->country != null)
-                                <img src="{{asset('assets/img/country-flag/'.Auth::user()->country_flag) }}" class="flag u">
+                                <img src="{{asset('img/country-flag/'.Auth::user()->country_flag) }}" class="flag u">
                               @endif
 
                               @if( Auth::user()->country === null)
-                                <img src="{{asset('assets/img/country-flag/'.$country_code.'.png') }}" class="flag p" {{ $country_code }}>
+                                <img src="{{asset('img/country-flag/'.$country_code.'.png') }}" class="flag p" {{ $country_code }}>
                               @endif
                            </div>
                            <div class="text">
@@ -1267,11 +1267,11 @@
                                     <div class="disable_div d-flex form-control">
                                        <div class="img">
                                            @if(Auth::user()->country != null)
-                                          <img src="{{asset('assets/img/country-flag/'.Auth::user()->country_flag) }}" class="flag">
+                                          <img src="{{asset('img/country-flag/'.Auth::user()->country_flag) }}" class="flag">
 
                                             @endif
                                              @if( Auth::user()->country == null)
-                                             <img src="{{ asset('assets/img/country-flag/'.$country_code.'.png') }}" class="flag">
+                                             <img src="{{ asset('img/country-flag/'.$country_code.'.png') }}" class="flag">
                                               @endif
                                        </div>
                                        <div class="text">
@@ -1299,7 +1299,7 @@
                             <div class="inner" >
                               <div class="document_type">
                                  <div class="document_type_inner">
-                                    <img src="{{ asset('assets/img/auth-icons/adhar.svg') }}" class="css-icon-1rem" title="wealthmark" />
+                                    <img src="{{ asset('img/auth-icons/adhar.svg') }}" class="css-icon-1rem" title="wealthmark" />
                                     <div class="_content_box">
                                        <div class="_title" id="id_card_type">ID Card (Aadhaar Image Upload)</div>
                                        <div class="_subtitle_box">
@@ -1307,7 +1307,7 @@
                                        </div>
                                     </div>
                                  </div>
-                                 <img src="{{ asset('assets/img/auth-icons/check-mark-grey.svg') }}" class="document_type_inner_right" alt="wealthmark" />
+                                 <img src="{{ asset('img/auth-icons/check-mark-grey.svg') }}" class="document_type_inner_right" alt="wealthmark" />
                               </div>
                            </div>
                            @endif
@@ -1316,7 +1316,7 @@
                             <div class="inner" >
                                  <div class="document_type">
                                      <div class="document_type_inner">
-                                        <img src="{{ asset('assets/img/auth-icons/digilocker.svg') }}" class="css-icon-1rem" alt="wealthmark" />
+                                        <img src="{{ asset('img/auth-icons/digilocker.svg') }}" class="css-icon-1rem" alt="wealthmark" />
                                         <div class="_content_box">
                                            <div class="_title" id="id_card_type">ID Card (Aadhaar Digilocker)</div>
                                            <div class="_subtitle_box">
@@ -1324,7 +1324,7 @@
                                            </div>
                                         </div>
                                      </div>
-                                   <img src="{{ asset('assets/img/auth-icons/check-mark-grey.svg') }}" class="document_type_inner_right" title="wealthmark" />
+                                   <img src="{{ asset('img/auth-icons/check-mark-grey.svg') }}" class="document_type_inner_right" title="wealthmark" />
                                   </div>
                             </div>
                           @endif
@@ -1332,25 +1332,25 @@
 
                               <div class="document_type">
                                  <div class="document_type_inner">
-                                     <img src="{{ asset('assets/img/auth-icons/driving-license.svg') }}" class="css-icon-1rem" title="wealthmark" />
+                                     <img src="{{ asset('img/auth-icons/driving-license.svg') }}" class="css-icon-1rem" title="wealthmark" />
                                     <div class="_content_box">
                                        <div class="_title" id="id_card_type">Driver's License</div>
                                     </div>
                                  </div>
-                                 <img src="{{ asset('assets/img/auth-icons/check-mark-grey.svg') }}" class="document_type_inner_right" alt="wealthmark" />
+                                 <img src="{{ asset('img/auth-icons/check-mark-grey.svg') }}" class="document_type_inner_right" alt="wealthmark" />
                               </div>
                            </div>
                            <div class="inner" style="pointer-events:none;">
 
                               <div class="document_type">
                                  <div class="document_type_inner">
-                                   <img src="{{ asset('assets/img/auth-icons/passport.svg') }}" class="css-icon-1rem" title="wealthmark" />
+                                   <img src="{{ asset('img/auth-icons/passport.svg') }}" class="css-icon-1rem" title="wealthmark" />
                                     <div class="_content_box">
                                        <div class="_title" id="
                                        ">Passport</div>
                                     </div>
                                  </div>
-                                 <img src="{{ asset('assets/img/auth-icons/check-mark-grey.svg') }}" class="document_type_inner_right" alt="wealthmark" />
+                                 <img src="{{ asset('img/auth-icons/check-mark-grey.svg') }}" class="document_type_inner_right" alt="wealthmark" />
                               </div>
                            </div>
 
@@ -1381,25 +1381,25 @@
                      <div class="modal-body">
 
                         <div class="img-box mt-3 mb-5">
-                           <img src="{{ asset('assets/img/auth-icons/adhar.svg') }}" class="mx-auto w-50 d-block modal-card-img" />
+                           <img src="{{ asset('img/auth-icons/adhar.svg') }}" class="mx-auto w-50 d-block modal-card-img" />
                         </div>
                         <div class="">
                            <p class="modal-p">You are about to upload your ID card. Please ensure that:</p>
                            <ul class="modal_ul">
                               <li class="modal_li">
-                                <img src="{{ asset('assets/img/auth-icons/drop-bullet-yellow.svg') }}" class="css-icon-1rem" alt="wealthmark" />
+                                <img src="{{ asset('img/auth-icons/drop-bullet-yellow.svg') }}" class="css-icon-1rem" alt="wealthmark" />
                                  <div class="modal_li_des">This is your own government-issued document that is not expired</div>
                               </li>
                               <li class="modal_li">
-                                <img src="{{ asset('assets/img/auth-icons/drop-bullet-yellow.svg') }}" class="css-icon-1rem" alt="wealthmark" />
+                                <img src="{{ asset('img/auth-icons/drop-bullet-yellow.svg') }}" class="css-icon-1rem" alt="wealthmark" />
                                  <div class="modal_li_des">This is an original document, not a scan or copy</div>
                               </li>
                               <li class="modal_li">
-                                <img src="{{ asset('assets/img/auth-icons/drop-bullet-yellow.svg') }}" class="css-icon-1rem" alt="wealthmark" />
+                                <img src="{{ asset('img/auth-icons/drop-bullet-yellow.svg') }}" class="css-icon-1rem" alt="wealthmark" />
                                  <div class="modal_li_des">Remove any card holders or covers to avoid reflections or blur</div>
                               </li>
                               <li class="modal_li">
-                                <img src="{{ asset('assets/img/auth-icons/drop-bullet-yellow.svg') }}" class="css-icon-1rem" alt="wealthmark" />
+                                <img src="{{ asset('img/auth-icons/drop-bullet-yellow.svg') }}" class="css-icon-1rem" alt="wealthmark" />
                                  <div class="modal_li_des">Place documents against a solid-colored background.</div>
                               </li>
                            </ul>
@@ -1413,25 +1413,25 @@
                      <!--///////////////////////////////////////// remove this style according to your convenience-->
                      <div class="modal-body">
                         <div class="img-box mt-3 mb-5">
-                           <img src="{{ asset('assets/img/auth-icons/adhar.svg') }}" class="mx-auto d-block modal-card-img" />
+                           <img src="{{ asset('img/auth-icons/adhar.svg') }}" class="mx-auto d-block modal-card-img" />
                         </div>
                         <div class="">
                            <p class="modal-p">You are about to upload your driving license. Please ensure that:</p>
                            <ul class="modal_ul">
                               <li class="modal_li">
-                                <img src="{{ asset('assets/img/auth-icons/drop-bullet-yellow.svg') }}" class="css-icon-1rem" alt="wealthmark" />
+                                <img src="{{ asset('img/auth-icons/drop-bullet-yellow.svg') }}" class="css-icon-1rem" alt="wealthmark" />
                                  <div class="modal_li_des">This is your own government-issued document that is not expired</div>
                               </li>
                               <li class="modal_li">
-                                <img src="{{ asset('assets/img/auth-icons/drop-bullet-yellow.svg') }}" class="css-icon-1rem" alt="wealthmark" />
+                                <img src="{{ asset('img/auth-icons/drop-bullet-yellow.svg') }}" class="css-icon-1rem" alt="wealthmark" />
                                  <div class="modal_li_des">This is an original document, not a scan or copy</div>
                               </li>
                               <li class="modal_li">
-                                <img src="{{ asset('assets/img/auth-icons/drop-bullet-yellow.svg') }}" class="css-icon-1rem" alt="wealthmark" />
+                                <img src="{{ asset('img/auth-icons/drop-bullet-yellow.svg') }}" class="css-icon-1rem" alt="wealthmark" />
                                  <div class="modal_li_des">Remove any card holders or covers to avoid reflections or blur</div>
                               </li>
                               <li class="modal_li">
-                                 <img src="{{ asset('assets/img/auth-icons/drop-bullet-yellow.svg') }}" class="css-icon-1rem" alt="wealthmark" />
+                                 <img src="{{ asset('img/auth-icons/drop-bullet-yellow.svg') }}" class="css-icon-1rem" alt="wealthmark" />
                                  <div class="modal_li_des">Place documents against a solid-colored background.</div>
                               </li>
                            </ul>
@@ -1445,25 +1445,25 @@
                      <!--///////////////////////////////////////// remove this style according to your convenience-->
                      <div class="modal-body">
                         <div class="img-box mt-3 mb-5">
-                           <img src="{{ asset('assets/img/card_dummy.png') }}" class="mx-auto d-block modal-card-img" />
+                           <img src="{{ asset('img/card_dummy.png') }}" class="mx-auto d-block modal-card-img" />
                         </div>
                         <div class="">
                            <p class="modal-p">You are about to upload your passport. Please ensure that:</p>
                            <ul class="modal_ul">
                               <li class="modal_li">
-                                <img src="{{ asset('assets/img/auth-icons/drop-bullet-yellow.svg') }}" class="css-icon-1rem" alt="wealthmark" />
+                                <img src="{{ asset('img/auth-icons/drop-bullet-yellow.svg') }}" class="css-icon-1rem" alt="wealthmark" />
                                  <div class="modal_li_des">This is your own government-issued document that is not expired</div>
                               </li>
                               <li class="modal_li">
-                               <img src="{{ asset('assets/img/auth-icons/drop-bullet-yellow.svg') }}" class="css-icon-1rem" alt="wealthmark" />
+                               <img src="{{ asset('img/auth-icons/drop-bullet-yellow.svg') }}" class="css-icon-1rem" alt="wealthmark" />
                                  <div class="modal_li_des">This is an original document, not a scan or copy</div>
                               </li>
                               <li class="modal_li">
-                                <img src="{{ asset('assets/img/auth-icons/drop-bullet-yellow.svg') }}" class="css-icon-1rem" alt="wealthmark" />
+                                <img src="{{ asset('img/auth-icons/drop-bullet-yellow.svg') }}" class="css-icon-1rem" alt="wealthmark" />
                                  <div class="modal_li_des">Remove any card holders or covers to avoid reflections or blur</div>
                               </li>
                               <li class="modal_li">
-                                <img src="{{ asset('assets/img/auth-icons/drop-bullet-yellow.svg') }}" class="css-icon-1rem" alt="wealthmark" />
+                                <img src="{{ asset('img/auth-icons/drop-bullet-yellow.svg') }}" class="css-icon-1rem" alt="wealthmark" />
                                  <div class="modal_li_des">Place documents against a solid-colored background.</div>
                               </li>
                            </ul>
@@ -1542,7 +1542,7 @@
                               <div class="photo-box1" id="btn_click_img_front">
                                  <div class="photo-box1-inner">
                                     <button type="button" class="upld-btn-doc" onclick="open_camera();">
-                                       <img src="{{ asset('assets/img/auth-icons/camera.svg') }}" class="css-icon-1rem" alt="wealthmark" />
+                                       <img src="{{ asset('img/auth-icons/camera.svg') }}" class="css-icon-1rem" alt="wealthmark" />
                                        Take photo
                                     </button>
                                  </div>
@@ -1563,7 +1563,7 @@
                               <div class="photo-box1" id="btn_click_img_back">
                                  <div class="photo-box1-inner">
                                     <button type="button" class="upld-btn-doc btn-back-img" onclick="open_back_camera();">
-                                       <img src="{{ asset('assets/img/auth-icons/camera.svg') }}" class="css-icon-1rem" alt="wealthmark" />
+                                       <img src="{{ asset('img/auth-icons/camera.svg') }}" class="css-icon-1rem" alt="wealthmark" />
                                        Take photo
                                     </button>
                                  </div>
@@ -1576,19 +1576,19 @@
                      <div class="modal-p mt-3">Ensure that the document meet all the standard below:</div>
                      <ul class="modal_ul">
                         <li class="modal_li">
-                          <img src="{{ asset('assets/img/auth-icons/drop-bullet-yellow.svg') }}" class="css-icon-1rem" alt="wealthmark" />
+                          <img src="{{ asset('img/auth-icons/drop-bullet-yellow.svg') }}" class="css-icon-1rem" alt="wealthmark" />
                            <div class="modal_li_des">Readable, clear and well-lit</div>
                         </li>
                         <li class="modal_li">
-                          <img src="{{ asset('assets/img/auth-icons/drop-bullet-yellow.svg') }}" class="css-icon-1rem" alt="wealthmark" />
+                          <img src="{{ asset('img/auth-icons/drop-bullet-yellow.svg') }}" class="css-icon-1rem" alt="wealthmark" />
                            <div class="modal_li_des">Not reflective, not blurry</div>
                         </li>
                         <li class="modal_li">
-                           <img src="{{ asset('assets/img/auth-icons/drop-bullet-yellow.svg') }}" class="css-icon-1rem" alt="wealthmark" />
+                           <img src="{{ asset('img/auth-icons/drop-bullet-yellow.svg') }}" class="css-icon-1rem" alt="wealthmark" />
                            <div class="modal_li_des">No black and white images, no edited</div>
                         </li>
                         <li class="modal_li">
-                           <img src="{{ asset('assets/img/auth-icons/drop-bullet-yellow.svg') }}" class="css-icon-1rem" alt="wealthmark" />
+                           <img src="{{ asset('img/auth-icons/drop-bullet-yellow.svg') }}" class="css-icon-1rem" alt="wealthmark" />
                            <div class="modal_li_des">Document is placed against a solid-colored background.</div>
                         </li>
                      </ul>
@@ -1768,7 +1768,7 @@
                </div>
                <div class="modal-body">
                   <div class="img-preview">
-                     <img src="{{ asset('assets/img/HTB1Alaue8WD3KVjSZFsq6AqkpXaz.jpg') }}" class="" />
+                     <img src="{{ asset('img/HTB1Alaue8WD3KVjSZFsq6AqkpXaz.jpg') }}" class="" />
                   </div>
                   <div>
                      <p class="modal-p">You are about to upload your passport. Please ensure that:</p>
@@ -1826,14 +1826,14 @@
                      <div class="upld-box">
                         <div class="upld-doc-subtitle">Front side of ID Card</div>
                         <div class="upld-box-inner">
-                           <img src="{{ asset('assets/img/HTB1Alaue8WD3KVjSZFsq6AqkpXaz.jpg') }}" class="" />
+                           <img src="{{ asset('img/HTB1Alaue8WD3KVjSZFsq6AqkpXaz.jpg') }}" class="" />
                         </div>
                      </div>
                      <div class="divider"></div>
                      <div class="upld-box">
                         <div class="upld-doc-subtitle">Back side of ID Card</div>
                         <div class="upld-box-inner">
-                           <img src="{{ asset('assets/img/HTB1Alaue8WD3KVjSZFsq6AqkpXaz.jpg') }}" class="" />
+                           <img src="{{ asset('img/HTB1Alaue8WD3KVjSZFsq6AqkpXaz.jpg') }}" class="" />
                         </div>
                      </div>
                   </div>
@@ -1888,7 +1888,7 @@
                            <div class="photo-box1" id="btn_selfie_image">
                               <div class="photo-box1-inner">
                                  <button type="button" class="upld-btn-doc" id="take_selfie" onclick="open_selfie_camera();" >
-                                   <img src="{{ asset('assets/img/auth-icons/camera.svg') }}" class="css-icon-1rem" alt="wealthmark" />
+                                   <img src="{{ asset('img/auth-icons/camera.svg') }}" class="css-icon-1rem" alt="wealthmark" />
                                     Take photo
                                  </button>
                               </div>
@@ -1899,7 +1899,7 @@
                   </div>
                   <!--<div class="demo-img mb-4 text-start">-->
                   <!--   <p class="mb-4"> Example</p>-->
-                  <!--   <img id="selfie_img_after_click" src="{{ asset('assets/img/HTB1Alaue8WD3KVjSZFsq6AqkpXaz.jpg') }}" class="demo" />-->
+                  <!--   <img id="selfie_img_after_click" src="{{ asset('img/HTB1Alaue8WD3KVjSZFsq6AqkpXaz.jpg') }}" class="demo" />-->
                   <!--</div>-->
                   <ul class="modal_ul">
                      <li class="modal_li done">
@@ -3168,8 +3168,8 @@
                 $(this).siblings().find(".document_type .document_type_inner_right").removeClass("document_type_active_icon");
                 $(this).addClass('document_type_active')
                $(this).find(".document_type .document_type_inner_right").addClass("document_type_active_icon");
-                $(this).find(".document_type .document_type_active_icon").attr("src", "{{ asset('assets/img/auth-icons/check-mark-yellow.svg') }}");
-                $(this).siblings().find(".document_type .document_type_inner_right").attr("src", "{{ asset('assets/img/auth-icons/check-mark-grey.svg') }}");
+                $(this).find(".document_type .document_type_active_icon").attr("src", "{{ asset('img/auth-icons/check-mark-yellow.svg') }}");
+                $(this).siblings().find(".document_type .document_type_inner_right").attr("src", "{{ asset('img/auth-icons/check-mark-grey.svg') }}");
 
 
 

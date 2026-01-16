@@ -577,7 +577,7 @@
 
                     <div class="lf-select-coin-to-active-value lf-select-coin-to-active-div">
                         <div class="wm-dropdown-optn-item-div">
-                            <img id="select_coin_img" class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/96d50-2408-43e1-ad4c-78b47b448a6a.png" alt="Coin" title="Coin">
+                            <img id="select_coin_img" class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" alt="Coin" title="Coin">
                             <div id="select_coin_text"  class="wm-dropdown-optn-item-txt">BTC/BUSD</div>
                          </div>
                     </div>
@@ -603,7 +603,7 @@
                           <div class="wm-dropdown-optn-item-inner">
 
                                 <div class="wm-dropdown-optn-item-div">
-                                  <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/96d50-2408-43e1-ad4c-78b47b448a6a.png" alt="Coin" title="Coin">
+                                  <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" alt="Coin" title="Coin">
 
                                   <div  class="wm-dropdown-optn-item-txt">BTC/USD</div>
 
@@ -615,7 +615,7 @@
 
 
                                 <div class="wm-dropdown-optn-item-div">
-                                    <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/96d50-2408-43e1-ad4c-78b47b448a6a.png"  alt="Coin" title="Coin">
+                                    <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}"  alt="Coin" title="Coin">
 
                                     <div  class="wm-dropdown-optn-item-txt">BNB/BUSD</div>
                                 </div>
@@ -628,7 +628,7 @@
 
 
                                 <div class="wm-dropdown-optn-item-div">
-                                  <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/96d50-2408-43e1-ad4c-78b47b448a6a.png" alt="Coin" title="Coin">
+                                  <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" alt="Coin" title="Coin">
 
                                   <div  class="wm-dropdown-optn-item-txt">ETH/DAI</div>
 
@@ -641,7 +641,7 @@
 
 
                                 <div class="wm-dropdown-optn-item-div">
-                                  <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/96d50-2408-43e1-ad4c-78b47b448a6a.png" alt="Coin" title="Coin">
+                                  <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" alt="Coin" title="Coin">
 
                                   <div  class="wm-dropdown-optn-item-txt">USDT/BNB</div>
                                 </div>
@@ -654,7 +654,7 @@
 
 
                                 <div class="wm-dropdown-optn-item-div">
-                                 <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/96d50-2408-43e1-ad4c-78b47b448a6a.png" alt="Coin" title="Coin">
+                                 <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" alt="Coin" title="Coin">
 
                                   <div  class="wm-dropdown-optn-item-txt">USDT/ETH</div>
                                 </div>
@@ -665,7 +665,7 @@
                         <li role="option" id="13" title="13" class="wm-dropdown-optn-item " onClick="changeSrc2(this.id)">
                           <div class="wm-dropdown-optn-item-inner">
                            <div class="wm-dropdown-optn-item-div">
-                                  <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/96d50-2408-43e1-ad4c-78b47b448a6a.png" alt="Coin" title="Coin">
+                                  <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" alt="Coin" title="Coin">
 
                                   <div  class="wm-dropdown-optn-item-txt">BTC/ETH</div>
                                 </div>
@@ -692,7 +692,7 @@
 
                           <div class="reward-alert-popup-div1">
                             <div class="d-flex mt-3">
-                              <img src="https://www.wealthmark.io/iliate-program-4.png" class="reward-alert-popup-img" alt="Principle Protected" title="Principle Protected">
+                              <img src="{{ asset('img/iliate-program-4.png') }}" class="reward-alert-popup-img" alt="Principle Protected" title="Principle Protected">
                               <div class="reward-alert-popup-title">Principal Protected</div>
                             </div>
                             <div class="reward-alert-popup-sb">An opportunity to receive higher than average gains but with corresponding risks to your invested cryptocurrencies. Only invest what you can afford to risk, regardless of how high the potential rates of return.</div>
@@ -791,7 +791,7 @@
                                           <td class="earn-td-block">
                                             <a  target="_blank" href="#" class="earn-td-block-link">
                                               <div class="earn-td-block-link-img">
-                                                <img class="earn-coin-img" src="{{ asset('63af2-c980-42cf-a139-7b9f462a36c2.png') }}" alt="coin" title="coin">
+                                                <img class="earn-coin-img" src="{{ asset('img/63af2-c980-42cf-a139-7b9f462a36c2.png') }}" alt="coin" title="coin">
 
                                                 <div  class="earn-coin-text">AXS</div>
                                               </div>
@@ -821,7 +821,7 @@
                                           <td class="earn-td-block">
                                             <a  target="_blank" href="#" class="earn-td-block-link">
                                               <div class="earn-td-block-link-img">
-                                               <img class="earn-coin-img" src="{{ asset('63af2-c980-42cf-a139-7b9f462a36c2.png') }}" alt="Coin" title="Coin">
+                                               <img class="earn-coin-img" src="{{ asset('img/63af2-c980-42cf-a139-7b9f462a36c2.png') }}" alt="Coin" title="Coin">
                                                 <div  class="earn-coin-text">NEAR</div>
                                               </div>
                                             </a>
@@ -849,7 +849,7 @@
                                           <td class="earn-td-block">
                                             <a  target="_blank" href="#" class="earn-td-block-link">
                                               <div class="earn-td-block-link-img">
-                                                <img class="earn-coin-img" src="{{ asset('63af2-c980-42cf-a139-7b9f462a36c2.png') }}"  alt="Coin" title="Coin">
+                                                <img class="earn-coin-img" src="{{ asset('img/63af2-c980-42cf-a139-7b9f462a36c2.png') }}"  alt="Coin" title="Coin">
                                                 <div  class="earn-coin-text">AXS</div>
                                               </div>
                                             </a>
@@ -879,7 +879,7 @@
                                           <td class="earn-td-block">
                                             <a  target="_blank" href="#" class="earn-td-block-link">
                                               <div class="earn-td-block-link-img">
-                                                <img class="earn-coin-img" src="{{ asset('63af2-c980-42cf-a139-7b9f462a36c2.png') }}"  alt="Coin" title="Coin">
+                                                <img class="earn-coin-img" src="{{ asset('img/63af2-c980-42cf-a139-7b9f462a36c2.png') }}"  alt="Coin" title="Coin">
                                                 <div  class="earn-coin-text">DOT</div>
                                               </div>
                                             </a>
@@ -907,7 +907,7 @@
                                           <td class="earn-td-block">
                                             <a  target="_blank" href="#" class="earn-td-block-link">
                                               <div class="earn-td-block-link-img">
-                                               <img class="earn-coin-img" src="{{ asset('63af2-c980-42cf-a139-7b9f462a36c2.png') }}"  alt="Coin" title="Coin">
+                                               <img class="earn-coin-img" src="{{ asset('img/63af2-c980-42cf-a139-7b9f462a36c2.png') }}"  alt="Coin" title="Coin">
                                                 <div  class="earn-coin-text">AVAX</div>
                                               </div>
                                             </a>
@@ -935,7 +935,7 @@
                                           <td class="earn-td-block">
                                             <a  target="_blank" href="#" class="earn-td-block-link">
                                               <div class="earn-td-block-link-img">
-                                                <img class="earn-coin-img" src="{{ asset('63af2-c980-42cf-a139-7b9f462a36c2.png') }}"  alt="Coin" title="Coin">
+                                                <img class="earn-coin-img" src="{{ asset('img/63af2-c980-42cf-a139-7b9f462a36c2.png') }}"  alt="Coin" title="Coin">
                                                 <div  class="earn-coin-text">ADA</div>
                                               </div>
                                             </a>
@@ -963,7 +963,7 @@
                                           <td class="earn-td-block">
                                             <a  target="_blank" href="#" class="earn-td-block-link">
                                               <div class="earn-td-block-link-img">
-                                                <img class="earn-coin-img" src="{{ asset('63af2-c980-42cf-a139-7b9f462a36c2.png') }}"  alt="Coin" title="Coin">
+                                                <img class="earn-coin-img" src="{{ asset('img/63af2-c980-42cf-a139-7b9f462a36c2.png') }}"  alt="Coin" title="Coin">
                                                 <div  class="earn-coin-text">USDT</div>
                                               </div>
                                             </a>
@@ -996,7 +996,7 @@
                                           <td class="earn-td-block">
                                             <a  target="_blank" href="#" class="earn-td-block-link">
                                               <div class="earn-td-block-link-img">
-                                                <img class="earn-coin-img" src="{{ asset('63af2-c980-42cf-a139-7b9f462a36c2.png') }}"  alt="Coin" title="Coin">
+                                                <img class="earn-coin-img" src="{{ asset('img/63af2-c980-42cf-a139-7b9f462a36c2.png') }}"  alt="Coin" title="Coin">
                                                 <div  class="earn-coin-text">BUSD</div>
                                               </div>
                                             </a>
@@ -1048,7 +1048,7 @@
 
                           <div class="reward-alert-popup-div1">
                             <div class="d-flex mb-3">
-                              <img src="https://www.wealthmark.io/iliate-program-4.png" class="reward-alert-popup-img"  alt="High Potential Rewards" title="High Potential Rewards">
+                              <img src="{{ asset('img/iliate-program-4.png') }}" class="reward-alert-popup-img"  alt="High Potential Rewards" title="High Potential Rewards">
                               <div class="reward-alert-popup-title">(High Yield) Higher Potential Rewards</div>
                             </div>
                             <div class="reward-alert-popup-sb">An opportunity to receive higher than average gains but with corresponding risks to your invested cryptocurrencies. Only invest what you can afford to risk, regardless of how high the potential rates of return.</div>
@@ -1157,8 +1157,8 @@
                                           <td class="earn-td-block">
                                             <a target="_blank" href="#" class="earn-td-block-link">
                                               <div class="earn-td-block-link-img">
-                                                <img class="earn-coin-img-2" src="https://www.wealthmark.io/63af2-c980-42cf-a139-7b9f462a36c2.png" alt="Coins" title="Coins">
-                                                <img class="earn-coin-img" src="https://www.wealthmark.io/63af2-c980-42cf-a139-7b9f462a36c2.png" alt="Coins" title="Coins">
+                                                <img class="earn-coin-img-2" src="{{ asset('img/63af2-c980-42cf-a139-7b9f462a36c2.png') }}" alt="Coins" title="Coins">
+                                                <img class="earn-coin-img" src="{{ asset('img/63af2-c980-42cf-a139-7b9f462a36c2.png') }}" alt="Coins" title="Coins">
 
                                                 <div class="earn-coin-text">demo</div>
                                               </div>
@@ -1178,7 +1178,7 @@
                                           <td class="earn-td-block">
                                             <a target="_blank" href="#" class="earn-td-block-link">
                                               <div class="earn-td-block-link-img">
-                                                <img class="earn-coin-img" src="https://www.wealthmark.io/63af2-c980-42cf-a139-7b9f462a36c2.png" alt="Coins" title="Coins">
+                                                <img class="earn-coin-img" src="{{ asset('img/63af2-c980-42cf-a139-7b9f462a36c2.png') }}" alt="Coins" title="Coins">
 
                                                 <div class="earn-coin-text">AXS</div>
                                               </div>
@@ -1198,8 +1198,8 @@
                                           <td class="earn-td-block">
                                             <a target="_blank" href="#" class="earn-td-block-link">
                                               <div class="earn-td-block-link-img">
-                                                <img class="earn-coin-img-2" src="https://www.wealthmark.io/63af2-c980-42cf-a139-7b9f462a36c2.png" alt="Coins" title="Coins">
-                                                <img class="earn-coin-img" src="https://www.wealthmark.io/63af2-c980-42cf-a139-7b9f462a36c2.png" alt="Coins" title="Coins">
+                                                <img class="earn-coin-img-2" src="{{ asset('img/63af2-c980-42cf-a139-7b9f462a36c2.png') }}" alt="Coins" title="Coins">
+                                                <img class="earn-coin-img" src="{{ asset('img/63af2-c980-42cf-a139-7b9f462a36c2.png') }}" alt="Coins" title="Coins">
 
                                                 <div class="earn-coin-text">AXS</div>
                                               </div>
@@ -1219,7 +1219,7 @@
                                           <td class="earn-td-block">
                                             <a target="_blank" href="#" class="earn-td-block-link">
                                               <div class="earn-td-block-link-img">
-                                                <img class="earn-coin-img" src="https://www.wealthmark.io/63af2-c980-42cf-a139-7b9f462a36c2.png" alt="Coins" title="Coins">
+                                                <img class="earn-coin-img" src="{{ asset('img/63af2-c980-42cf-a139-7b9f462a36c2.png') }}" alt="Coins" title="Coins">
 
                                                 <div class="earn-coin-text">AXS</div>
                                               </div>
@@ -1239,8 +1239,8 @@
                                           <td class="earn-td-block">
                                             <a target="_blank" href="#" class="earn-td-block-link">
                                               <div class="earn-td-block-link-img">
-                                                <img class="earn-coin-img-2" src="https://www.wealthmark.io/63af2-c980-42cf-a139-7b9f462a36c2.png" alt="Coins" title="Coins">
-                                                <img class="earn-coin-img" src="https://www.wealthmark.io/63af2-c980-42cf-a139-7b9f462a36c2.png" alt="Coins" title="Coins">
+                                                <img class="earn-coin-img-2" src="{{ asset('img/63af2-c980-42cf-a139-7b9f462a36c2.png') }}" alt="Coins" title="Coins">
+                                                <img class="earn-coin-img" src="{{ asset('img/63af2-c980-42cf-a139-7b9f462a36c2.png') }}" alt="Coins" title="Coins">
 
                                                 <div class="earn-coin-text">AXS</div>
                                               </div>
@@ -1260,7 +1260,7 @@
                                           <td class="earn-td-block">
                                             <a target="_blank" href="#" class="earn-td-block-link">
                                               <div class="earn-td-block-link-img">
-                                                <img class="earn-coin-img" src="https://www.wealthmark.io/63af2-c980-42cf-a139-7b9f462a36c2.png" alt="Coins" title="Coins">
+                                                <img class="earn-coin-img" src="{{ asset('img/63af2-c980-42cf-a139-7b9f462a36c2.png') }}" alt="Coins" title="Coins">
 
                                                 <div class="earn-coin-text">AXS</div>
                                               </div>
@@ -1280,8 +1280,8 @@
                                           <td class="earn-td-block">
                                             <a target="_blank" href="#" class="earn-td-block-link">
                                               <div class="earn-td-block-link-img">
-                                                <img class="earn-coin-img-2" src="https://www.wealthmark.io/63af2-c980-42cf-a139-7b9f462a36c2.png" alt="Coins" title="Coins">
-                                                <img class="earn-coin-img" src="https://www.wealthmark.io/63af2-c980-42cf-a139-7b9f462a36c2.png" alt="Coins" title="Coins">
+                                                <img class="earn-coin-img-2" src="{{ asset('img/63af2-c980-42cf-a139-7b9f462a36c2.png') }}" alt="Coins" title="Coins">
+                                                <img class="earn-coin-img" src="{{ asset('img/63af2-c980-42cf-a139-7b9f462a36c2.png') }}" alt="Coins" title="Coins">
 
                                                 <div class="earn-coin-text">AXS</div>
                                               </div>
@@ -1301,7 +1301,7 @@
                                           <td class="earn-td-block">
                                             <a target="_blank" href="#" class="earn-td-block-link">
                                               <div class="earn-td-block-link-img">
-                                                <img class="earn-coin-img" src="https://www.wealthmark.io/63af2-c980-42cf-a139-7b9f462a36c2.png" alt="Coins" title="Coins">
+                                                <img class="earn-coin-img" src="{{ asset('img/63af2-c980-42cf-a139-7b9f462a36c2.png') }}" alt="Coins" title="Coins">
 
                                                 <div class="earn-coin-text">AXS</div>
                                               </div>
@@ -1321,8 +1321,8 @@
                                           <td class="earn-td-block">
                                             <a target="_blank" href="#" class="earn-td-block-link">
                                               <div class="earn-td-block-link-img">
-                                                <img class="earn-coin-img-2" src="https://www.wealthmark.io/63af2-c980-42cf-a139-7b9f462a36c2.png" alt="Coins" title="Coins">
-                                                <img class="earn-coin-img" src="https://www.wealthmark.io/63af2-c980-42cf-a139-7b9f462a36c2.png" alt="Coins" title="Coins">
+                                                <img class="earn-coin-img-2" src="{{ asset('img/63af2-c980-42cf-a139-7b9f462a36c2.png') }}" alt="Coins" title="Coins">
+                                                <img class="earn-coin-img" src="{{ asset('img/63af2-c980-42cf-a139-7b9f462a36c2.png') }}" alt="Coins" title="Coins">
 
                                                 <div class="earn-coin-text">AXS</div>
                                               </div>
@@ -1342,7 +1342,7 @@
                                           <td class="earn-td-block">
                                             <a target="_blank" href="#" class="earn-td-block-link">
                                               <div class="earn-td-block-link-img">
-                                                <img class="earn-coin-img" src="https://www.wealthmark.io/63af2-c980-42cf-a139-7b9f462a36c2.png" alt="Coins" title="Coins">
+                                                <img class="earn-coin-img" src="{{ asset('img/63af2-c980-42cf-a139-7b9f462a36c2.png') }}" alt="Coins" title="Coins">
 
                                                 <div class="earn-coin-text">AXS</div>
                                               </div>
@@ -1397,10 +1397,10 @@
                               <div class="Auto-Invest-title-sm">Enjoy the Auto-Invest plan while earning passive income</div>
                               <div class="Auto-Invest-subtitle-sm">Once invested, you can receive daily earnings from Simple Earn and redeem your funds any time you wish.</div>
                             </div>
-                            <img src="https://www.wealthmark.io/cle-plus.svg" class="Auto-Invest-sideimg" alt="Auto Invest " title="Auto Invest">
+                            <img src="{{ asset('img/cle-plus.svg') }}" class="Auto-Invest-sideimg" alt="Auto Invest " title="Auto Invest">
                           </div>
                         </div>
-                       <img src="https://www.wealthmark.io/o-invest-banner.svg" class="Auto-Invest-Plan-img" alt="Auto Invest banner" title="Auto Invest Banner">
+                       <img src="{{ asset('img/o-invest-banner.svg') }}" class="Auto-Invest-Plan-img" alt="Auto Invest banner" title="Auto Invest Banner">
                 </div>
                 <div class="col-md-12 mt-5">
                     <div id="apendAutoInvest">
@@ -1449,7 +1449,7 @@
                             </div>
                             <div class="coin-select">
                                 <div class="input-right-img-div">
-                                    <img id="barrow-coin-img" src="https://www.wealthmark.io/ns/3222a10d-5618-4100-8476-ee7fe0a6fb12.png" alt="BUSD" title="BUSD">
+                                    <img id="barrow-coin-img" src="{{ asset('img/ns/3222a10d-5618-4100-8476-ee7fe0a6fb12.png') }}" alt="BUSD" title="BUSD">
                                 </div>
                                 <span id="barrow-coin-text" class="coin">BUSD</span>
                                 <svg viewBox="0 0 16 16" fill="none" class="arrow svg-down-arrow">
@@ -1473,7 +1473,7 @@
                                 <div class="">
                                   <div class="select-drop-list-div-inner">
                                     <div class="select-drp-img-name-div">
-                                      <img class="barrow-drdn-img" src="https://www.wealthmark.io/ns/3222a10d-5618-4100-8476-ee7fe0a6fb12.png" alt="USDT" title="USDT">
+                                      <img class="barrow-drdn-img" src="{{ asset('img/ns/3222a10d-5618-4100-8476-ee7fe0a6fb12.png') }}" alt="USDT" title="USDT">
                                     </div>
                                     <div class="select-drp-coin-name-div">
                                       <div class="select-drp-coin-title barrow-drdn-text">USDT</div>
@@ -1486,7 +1486,7 @@
                                 <div class="">
                                   <div class="select-drop-list-div-inner">
                                     <div class="select-drp-img-name-div">
-                                      <img class="barrow-drdn-img" src="https://www.wealthmark.io/96d50-2408-43e1-ad4c-78b47b448a6a.png" alt="BUSD" title="BUSD">
+                                      <img class="barrow-drdn-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" alt="BUSD" title="BUSD">
                                     </div>
                                     <div class="select-drp-coin-name-div">
                                       <div class="select-drp-coin-title barrow-drdn-text">BUSD</div>

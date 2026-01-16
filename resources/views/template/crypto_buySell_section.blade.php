@@ -24,7 +24,7 @@
                                   <div class="fund-div bg-light-blue shadow-sm">
                                       <div class="fund-div-text">
                                           <div class="">
-                                              <img src="{{ asset('assets/img/dashboard-icons/bank-account.svg') }}" alt="">
+                                              <img src="{{ asset('img/dashboard-icons/bank-account.svg') }}" alt="">
                                           </div>
                                           <div>
                                               <span> <span class="hot">Hot</span> Buy Crypto <span class="video"> <i class="bi bi-play-circle-fill"></i> Video Tutorial  </span> </span>
@@ -47,7 +47,7 @@
                                   <div class="fund-div bg-light-blue shadow-sm">
                                         <div class="fund-div-text">
                                             <div class="">
-                                                <img src="{{ asset('assets/img/dashboard-icons/gift-card.svg') }}" alt="">
+                                                <img src="{{ asset('img/dashboard-icons/gift-card.svg') }}" alt="">
                                             </div>
                                             <div>
                                                 <span> <span class="hot">Hot</span> Buy Crypto <span class="video"> <i class="bi bi-play-circle-fill"></i> Video Tutorial  </span> </span>
@@ -64,7 +64,7 @@
                                    <div class="fund-div bg-light-blue shadow-sm">
                                       <div class="fund-div-text">
                                           <div class="">
-                                              <img src="{{ asset('assets/img/dashboard-icons/crypto_deposit.svg') }}" alt="">
+                                              <img src="{{ asset('img/dashboard-icons/crypto_deposit.svg') }}" alt="">
                                           </div>
                                           <div>
                                               <span> <span class="hot">Hot</span> Deposit Crypto <span class="video"> <i class="bi bi-play-circle-fill"></i> Video Tutorial  </span> </span>
@@ -83,7 +83,7 @@
                                    <div class="fund-div bg-light-blue shadow-sm">
                                       <div class="fund-div-text">
                                           <div class="">
-                                              <img src="{{ asset('assets/img/dashboard-icons/Receive_Crypto.svg') }}" alt="">
+                                              <img src="{{ asset('img/dashboard-icons/Receive_Crypto.svg') }}" alt="">
                                           </div>
                                           <div>
                                               <span> <span class="hot">Hot</span> Receive  Crypto <span class="video"> <i class="bi bi-play-circle-fill"></i> Video Tutorial  </span> </span>

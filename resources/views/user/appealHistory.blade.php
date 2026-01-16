@@ -118,7 +118,7 @@
                                 <span class="time">15:51:25</span>
                             </div>
                             <div class="mb-2">
-                                <img src="https://wealthmark.io/assets/img/wealthmark-logo.svg" class="max-width-30px me-2" />
+                                <img src="{{ asset('img/assets/img/wealthmark-logo.svg') }}" class="max-width-30px me-2" />
                                 <span>Customer support's comment</span>
                             </div>
                             <div class="bg-light-blue p-2 position-relative">
@@ -138,7 +138,7 @@
                                 <span class="time">15:51:25</span>
                             </div>
                             <div class="mb-2">
-                                <img src="https://wealthmark.io/assets/img/wealthmark-logo.svg" class="max-width-30px me-2" />
+                                <img src="{{ asset('img/assets/img/wealthmark-logo.svg') }}" class="max-width-30px me-2" />
                                 <span>Shubhm rawat</span>
                             </div>
                             <div class="bg-light-blue p-2">
@@ -152,9 +152,9 @@
                                   I have not received payment by user even I asked to send me payment prooof
                                </div>
                                <div class="d-flex align-items-start mb-3 flex-wrap">
-                                <img class="max-width-80px mx-2" src="https://wealthmark.io/assets/img/reward-center/reward-gift-card.jpg" />
-                                <img class="max-width-80px mx-2" src="https://wealthmark.io/assets/img/reward-center/reward-gift-card.jpg" />
-                                <img class="max-width-80px mx-2" src="https://wealthmark.io/assets/img/reward-center/reward-gift-card.jpg" />
+                                <img class="max-width-80px mx-2" src="{{ asset('img/assets/img/reward-center/reward-gift-card.jpg') }}" />
+                                <img class="max-width-80px mx-2" src="{{ asset('img/assets/img/reward-center/reward-gift-card.jpg') }}" />
+                                <img class="max-width-80px mx-2" src="{{ asset('img/assets/img/reward-center/reward-gift-card.jpg') }}" />
                                </div>
                             </div>
                         </div>
@@ -171,7 +171,7 @@
                          <div class="header" id="my-div2">
                             <div class="avatar-wrapper avatar-big">
                                 @if(!empty($seller_details))
-                                <img src="{{  asset('assets/img/country-flag/').'/'.$seller_details->country_flag }} " alt="avatar" />
+                                <img src="{{  asset('img/country-flag/').'/'.$seller_details->country_flag }} " alt="avatar" />
 
 
                                @elseif(empty($seller_details) && $get_order_data->order_status==0 )

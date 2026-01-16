@@ -14,9 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('stackings', function (Blueprint $table) {
-
-          
-            $table->bigInteger('user_id')->nullable();
+                $table->bigInteger('user_id')->nullable();
             $table->string('stacking_num')->nullable();
             $table->bigInteger('wallet_ids')->nullable();
             $table->date('start_date')->nullable();
@@ -35,15 +33,14 @@ return new class extends Migration
         
             $table->date('end_date')->nullable();
             $table->bigInteger('num_of_year')->nullable();
-            $table->string('percentage_of_interest',255)->nullable();
-            $table->string('no_of_coin',255)->nullable();
-            $table->string('current_price_of_coin',255)->nullable();
-            $table->string('status',255)->default(1)->comment('0:inactive|1:active')->nullable();
-            $table->string('comments',255)->nullable();
+            $table->string('percentage_of_interest')->nullable();
+            $table->string('no_of_coin')->nullable();
+            $table->string('current_price_of_coin')->nullable();
+            $table->string('status')->default(1)->comment('0:inactive|1:active')->nullable();
+            $table->string('comments')->nullable();
 
             $table->softDeletes();
             $table->timestamps();
-
         });
     }
 

@@ -279,7 +279,7 @@ body {
                                     </div>
                                     <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 order-1 order-lg-2">
                                         <div class="blogs-inner-box-slider">
-                                            <img src="{{ asset('assets/img/gift-card.gif') }}"
+                                            <img src="{{ asset('img/gift-card.gif') }}"
                                                 class="img-fluid animated" alt="walth mark blog">
                                         </div>
                                     </div>
@@ -370,7 +370,7 @@ body {
                                     </div>
                                     <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 order-1 order-lg-2">
                                         <div class="blogs-inner-box-slider">
-                                            <img src="{{ asset('assets/img/gif-wallet.gif') }}"
+                                            <img src="{{ asset('img/gif-wallet.gif') }}"
                                                 class="img-fluid animated" alt="walth mark blog">
                                         </div>
                                     </div>
@@ -464,7 +464,7 @@ body {
                                     </div>
                                     <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 order-1 order-lg-2">
                                         <div class="blogs-inner-box-slider">
-                                            <img src="{{ asset('assets/img/gift-card.gif ') }}"
+                                            <img src="{{ asset('img/gift-card.gif ') }}"
                                                 class="img-fluid animated" alt="walth mark blog">
                                         </div>
                                     </div>
@@ -511,7 +511,7 @@ body {
       <div class="col">
         <div class="service-card">
           <div class="icon-wrapper">
-            <img src="{{ asset('assets/img/usdt-icon.png') }}"
+            <img src="{{ asset('img/usdt-icon.png') }}"
                                                 class="img-fluid animated" alt="walth mark blog">
           </div>
           <h3>USDT Gift Card</h3>
@@ -525,7 +525,7 @@ body {
       <div class="col">
         <div class="service-card">
           <div class="icon-wrapper">
-            <img src="{{ asset('assets/img/SHIB-icon.png') }}"
+            <img src="{{ asset('img/SHIB-icon.png') }}"
                                                 class="img-fluid animated" alt="walth mark blog">
           </div>
           <h3>SHIB Gift Card</h3>
@@ -538,7 +538,7 @@ body {
       <div class="col">
         <div class="service-card">
           <div class="icon-wrapper">
-            <img src="{{ asset('assets/img/eth-icon.png') }}"
+            <img src="{{ asset('img/eth-icon.png') }}"
                                                 class="img-fluid animated" alt="walth mark blog">
           </div>
           <h3>ETH Gift Card</h3>
@@ -551,7 +551,7 @@ body {
       <div class="col">
         <div class="service-card">
           <div class="icon-wrapper">
-            <img src="{{ asset('assets/img/doge-icon.png') }}"
+            <img src="{{ asset('img/doge-icon.png') }}"
                                                 class="img-fluid animated" alt="walth mark blog">
           </div>
           <h3>DOGE Gift Card</h3>
@@ -564,7 +564,7 @@ body {
       <div class="col">
         <div class="service-card">
           <div class="icon-wrapper">
-            <img src="{{ asset('assets/img/btc-icon.png') }}"
+            <img src="{{ asset('img/btc-icon.png') }}"
                                                 class="img-fluid animated" alt="walth mark blog">
           </div>
           <h3>BTC Gift Card</h3>
@@ -577,7 +577,7 @@ body {
             <div class="col">
         <div class="service-card">
           <div class="icon-wrapper">
-            <img src="{{ asset('assets/img/gif-wallet.gif') }}"
+            <img src="{{ asset('img/gif-wallet.gif') }}"
                                                 class="img-fluid animated" alt="walth mark blog">
           </div>
           <h3>Wealthmark Gift Card</h3>
@@ -604,7 +604,7 @@ body {
                         <h2 class="heading-h2">My Cards</h2>
                     </div>
                     <div class="available-gift-card" id="added-gift-card">
-                        <img src="{{ asset('assets/img/added-card-icon.jpg') }}" class="img-fluid"
+                        <img src="{{ asset('img/added-card-icon.jpg') }}" class="img-fluid"
                             alt="gift Card Image">
                         <div class="text text-center">No gift card available Create Gift Card</div>
                     </div>
@@ -632,7 +632,7 @@ body {
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 order-1 order-lg-2 grow-business-img-block">
-                        <img src="{{ asset('assets/img/grow-business-img.png') }}" class="img-fluid"
+                        <img src="{{ asset('img/grow-business-img.png') }}" class="img-fluid"
                             alt="gift Card Image" />
                     </div>
                 </div>

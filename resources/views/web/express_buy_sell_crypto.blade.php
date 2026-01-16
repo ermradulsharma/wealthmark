@@ -102,7 +102,7 @@
                                                               </div>
 
                                                               <div class="bS-crypto-div-open-list"  id="selected_crrency">
-                                                                 <div class="bS-crypto-select-coin-symbol"><img src="{{ asset('assets/img/inr-img.png') }}" class="bS-crypto-select-coin"></div>
+                                                                 <div class="bS-crypto-select-coin-symbol"><img src="{{ asset('img/inr-img.png') }}" class="bS-crypto-select-coin"></div>
                                                                 <div class="bS-crypto-select-coin-title cointitle">INR</div>
                                                                 <svg viewBox="0 0 24 24" fill="none" class="bS-crypto-div-open-list-svg">
                                                                   <path fill-rule="evenodd" clip-rule="evenodd" d="M12.11 12.178L16 8.287l1.768 1.768-5.657 5.657-1.768-1.768-3.889-3.889 1.768-1.768 3.889 3.89z" fill="currentColor"></path>
@@ -126,7 +126,7 @@
                                                           </div>
                                                           <div class="bS-crypto-div-open-list" id="selected_crypto">
 
-                                                            <!--<img src="{{ asset('assets/img/3a8c9fe6-2a76-4ace-aa07-415d994de6f0.png') }}" class="bS-crypto-select-coin"> 250423-->
+                                                            <!--<img src="{{ asset('img/3a8c9fe6-2a76-4ace-aa07-415d994de6f0.png') }}" class="bS-crypto-select-coin"> 250423-->
                                                             <img src="{{ asset('storage/app/bmklogo/12.png') }}" class="bS-crypto-select-coin">
                                                             <!--<div  class="bS-crypto-select-coin-title selectedCryptoTypeTitle">ETH</div> 250423-->
                                                              <div  class="bS-crypto-select-coin-title selectedCryptoTypeTitle">BMK</div>
@@ -361,7 +361,7 @@
              <div id="choose-coin-BTC" class="custom-modal-drpdn" onClick="select_crypto(this.id)">
                <div class="custom-modal-drpdn-inner">
                  <div class="d-flex">
-                   <img src="{{ asset('assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}" class="custom-modal-drpdn-img-1">
+                   <img src="{{ asset('img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}" class="custom-modal-drpdn-img-1">
                    <div class="custom-modal-drpdn-img">
                      <div class="custom-modal-drpdn-title">BTC</div>
                      <div class="custom-modal-drpdn-subtitle">Bitcoin</div>
@@ -382,7 +382,7 @@
              <div id="choose-coin-ETH" class="custom-modal-drpdn" onClick="select_crypto(this.id)">
                <div class="custom-modal-drpdn-inner">
                  <div class="d-flex">
-                   <img src="{{ asset('assets/img/3a8c9fe6-2a76-4ace-aa07-415d994de6f0.png') }}" class="custom-modal-drpdn-img-1">
+                   <img src="{{ asset('img/3a8c9fe6-2a76-4ace-aa07-415d994de6f0.png') }}" class="custom-modal-drpdn-img-1">
                    <div class="custom-modal-drpdn-img">
                      <div class="custom-modal-drpdn-title">ETH</div>
                      <div class="custom-modal-drpdn-subtitle">Ethereum</div>
@@ -403,7 +403,7 @@
              <!--<div id="choose-coin-BNB" class="custom-modal-drpdn" onClick="select_crypto(this.id)">-->
              <!--  <div class="custom-modal-drpdn-inner">-->
              <!--    <div class="d-flex">-->
-             <!--      <img src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" class="custom-modal-drpdn-img-1">-->
+             <!--      <img src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" class="custom-modal-drpdn-img-1">-->
              <!--      <div class="custom-modal-drpdn-img">-->
              <!--        <div class="custom-modal-drpdn-title">BNB</div>-->
              <!--        <div class="custom-modal-drpdn-subtitle">BNB</div>-->
@@ -418,7 +418,7 @@
              <!--<div id="choose-coin-XRP" class="custom-modal-drpdn" onClick="select_crypto(this.id)">-->
              <!--  <div class="custom-modal-drpdn-inner">-->
              <!--    <div class="d-flex">-->
-             <!--      <img src="{{ asset('assets/img/4766a9cc-8545-4c2b-bfa4-cad2be91c135.png') }}" class="custom-modal-drpdn-img-1">-->
+             <!--      <img src="{{ asset('img/4766a9cc-8545-4c2b-bfa4-cad2be91c135.png') }}" class="custom-modal-drpdn-img-1">-->
              <!--      <div class="custom-modal-drpdn-img">-->
              <!--        <div class="custom-modal-drpdn-title">XRP</div>-->
              <!--        <div class="custom-modal-drpdn-subtitle">Ripple</div>-->
@@ -433,7 +433,7 @@
              <!--<div id="choose-coin-LTC" class="custom-modal-drpdn" onClick="select_crypto(this.id)">-->
              <!--  <div class="custom-modal-drpdn-inner">-->
              <!--    <div class="d-flex">-->
-             <!--      <img src="{{ asset('assets/img/359ca651-a084-4010-92d8-4eaff96e6384.png') }}" class="custom-modal-drpdn-img-1">-->
+             <!--      <img src="{{ asset('img/359ca651-a084-4010-92d8-4eaff96e6384.png') }}" class="custom-modal-drpdn-img-1">-->
              <!--      <div class="custom-modal-drpdn-img">-->
              <!--        <div class="custom-modal-drpdn-title">LTC</div>-->
              <!--        <div class="custom-modal-drpdn-subtitle">Litecoin</div>-->
@@ -448,7 +448,7 @@
              <!--<div id="choose-coin-BUSD" class="custom-modal-drpdn" onClick="select_crypto(this.id)">-->
              <!--  <div class="custom-modal-drpdn-inner">-->
              <!--    <div class="d-flex">-->
-             <!--      <img src="{{ asset('assets/img/3222a10d-5618-4100-8476-ee7fe0a6fb12.png') }}" class="custom-modal-drpdn-img-1">-->
+             <!--      <img src="{{ asset('img/3222a10d-5618-4100-8476-ee7fe0a6fb12.png') }}" class="custom-modal-drpdn-img-1">-->
              <!--      <div class="custom-modal-drpdn-img">-->
              <!--        <div class="custom-modal-drpdn-title">BUSD</div>-->
              <!--        <div class="custom-modal-drpdn-subtitle">BUSD</div>-->
@@ -462,7 +462,7 @@
              <!--<div id="choose-coin-USDT" class="custom-modal-drpdn" onClick="select_crypto(this.id)">-->
              <!--  <div class="custom-modal-drpdn-inner">-->
              <!--    <div class="d-flex">-->
-             <!--      <img src="{{ asset('assets/img/2b5c7d80-7bcd-4cfb-8bd9-d1760a752afc.png') }}" class="custom-modal-drpdn-img-1">-->
+             <!--      <img src="{{ asset('img/2b5c7d80-7bcd-4cfb-8bd9-d1760a752afc.png') }}" class="custom-modal-drpdn-img-1">-->
              <!--      <div class="custom-modal-drpdn-img">-->
              <!--        <div class="custom-modal-drpdn-title">USDT</div>-->
              <!--        <div class="custom-modal-drpdn-subtitle">TetherUS</div>-->
@@ -488,9 +488,9 @@
 $(".pg-option").click(function () {
    // alert();
     $(this).addClass("active");
-    $(this).children(".pg-selected").attr("src","{{ asset('assets/img/wm-card_tick.svg') }}");
+    $(this).children(".pg-selected").attr("src","{{ asset('img/wm-card_tick.svg') }}");
     $(this).siblings(".pg-option").removeClass("active");
-    $(this).siblings(".pg-option").children(".pg-selected").attr("src","{{ asset('assets/img/wm-not_selected_tick.svg') }}");
+    $(this).siblings(".pg-option").children(".pg-selected").attr("src","{{ asset('img/wm-not_selected_tick.svg') }}");
 
    // var selectedpymnttypebefore =  $(".active .paymentMethodType ").val();
    clearInterval(timerId);
@@ -1711,7 +1711,7 @@ $(".confirmPay").click(function(){ // this is new function after removing hidden
 <!--================open when fund  insufficient===================-->
 
                                          <!--    <div class="d-flex flex-column align-items-center">-->
-                                         <!--  <img src="{{ asset('assets/img/empty-wallet.svg') }}" class="empty-wallet">-->
+                                         <!--  <img src="{{ asset('img/empty-wallet.svg') }}" class="empty-wallet">-->
                                          <!--  <h4 class="title text-center">You have insufficient assets to sell</h4>-->
                                          <!--  <div class="text text-center">Here are the hot cryptos</div>-->
                                          <!--  <div class="max-height-300px">-->
@@ -1719,7 +1719,7 @@ $(".confirmPay").click(function(){ // this is new function after removing hidden
                                          <!--      <div id="choose-coin-BNB" class="custom-modal-drpdn">-->
                                          <!--        <div class="custom-modal-drpdn-inner">-->
                                          <!--          <div class="d-flex">-->
-                                         <!--            <img src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" class="custom-modal-drpdn-img-1">-->
+                                         <!--            <img src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" class="custom-modal-drpdn-img-1">-->
                                          <!--            <div class="custom-modal-drpdn-img">-->
                                          <!--              <div class="custom-modal-drpdn-title">BNB</div>-->
                                          <!--              <div class="custom-modal-drpdn-subtitle">BNB</div>-->
@@ -1734,7 +1734,7 @@ $(".confirmPay").click(function(){ // this is new function after removing hidden
                                          <!--      <div id="choose-coin-BNB" class="custom-modal-drpdn">-->
                                          <!--        <div class="custom-modal-drpdn-inner">-->
                                          <!--          <div class="d-flex">-->
-                                         <!--            <img src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" class="custom-modal-drpdn-img-1">-->
+                                         <!--            <img src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" class="custom-modal-drpdn-img-1">-->
                                          <!--            <div class="custom-modal-drpdn-img">-->
                                          <!--              <div class="custom-modal-drpdn-title">BNB</div>-->
                                          <!--              <div class="custom-modal-drpdn-subtitle">BNB</div>-->
@@ -1749,7 +1749,7 @@ $(".confirmPay").click(function(){ // this is new function after removing hidden
                                          <!--      <div id="choose-coin-BNB" class="custom-modal-drpdn">-->
                                          <!--        <div class="custom-modal-drpdn-inner">-->
                                          <!--          <div class="d-flex">-->
-                                         <!--            <img src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" class="custom-modal-drpdn-img-1">-->
+                                         <!--            <img src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" class="custom-modal-drpdn-img-1">-->
                                          <!--            <div class="custom-modal-drpdn-img">-->
                                          <!--              <div class="custom-modal-drpdn-title">BNB</div>-->
                                          <!--              <div class="custom-modal-drpdn-subtitle">BNB</div>-->
@@ -1764,7 +1764,7 @@ $(".confirmPay").click(function(){ // this is new function after removing hidden
                                          <!--      <div id="choose-coin-BNB" class="custom-modal-drpdn">-->
                                          <!--        <div class="custom-modal-drpdn-inner">-->
                                          <!--          <div class="d-flex">-->
-                                         <!--            <img src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" class="custom-modal-drpdn-img-1">-->
+                                         <!--            <img src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" class="custom-modal-drpdn-img-1">-->
                                          <!--            <div class="custom-modal-drpdn-img">-->
                                          <!--              <div class="custom-modal-drpdn-title">BNB</div>-->
                                          <!--              <div class="custom-modal-drpdn-subtitle">BNB</div>-->
@@ -1779,7 +1779,7 @@ $(".confirmPay").click(function(){ // this is new function after removing hidden
                                          <!--      <div id="choose-coin-BNB" class="custom-modal-drpdn">-->
                                          <!--        <div class="custom-modal-drpdn-inner">-->
                                          <!--          <div class="d-flex">-->
-                                         <!--            <img src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" class="custom-modal-drpdn-img-1">-->
+                                         <!--            <img src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" class="custom-modal-drpdn-img-1">-->
                                          <!--            <div class="custom-modal-drpdn-img">-->
                                          <!--              <div class="custom-modal-drpdn-title">BNB</div>-->
                                          <!--              <div class="custom-modal-drpdn-subtitle">BNB</div>-->
@@ -1794,7 +1794,7 @@ $(".confirmPay").click(function(){ // this is new function after removing hidden
                                          <!--      <div id="choose-coin-BNB" class="custom-modal-drpdn">-->
                                          <!--        <div class="custom-modal-drpdn-inner">-->
                                          <!--          <div class="d-flex">-->
-                                         <!--            <img src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" class="custom-modal-drpdn-img-1">-->
+                                         <!--            <img src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" class="custom-modal-drpdn-img-1">-->
                                          <!--            <div class="custom-modal-drpdn-img">-->
                                          <!--              <div class="custom-modal-drpdn-title">BNB</div>-->
                                          <!--              <div class="custom-modal-drpdn-subtitle">BNB</div>-->
@@ -1809,7 +1809,7 @@ $(".confirmPay").click(function(){ // this is new function after removing hidden
                                          <!--      <div id="choose-coin-BNB" class="custom-modal-drpdn">-->
                                          <!--        <div class="custom-modal-drpdn-inner">-->
                                          <!--          <div class="d-flex">-->
-                                         <!--            <img src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" class="custom-modal-drpdn-img-1">-->
+                                         <!--            <img src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" class="custom-modal-drpdn-img-1">-->
                                          <!--            <div class="custom-modal-drpdn-img">-->
                                          <!--              <div class="custom-modal-drpdn-title">BNB</div>-->
                                          <!--              <div class="custom-modal-drpdn-subtitle">BNB</div>-->
@@ -1824,7 +1824,7 @@ $(".confirmPay").click(function(){ // this is new function after removing hidden
                                          <!--      <div id="choose-coin-BNB" class="custom-modal-drpdn">-->
                                          <!--        <div class="custom-modal-drpdn-inner">-->
                                          <!--          <div class="d-flex">-->
-                                         <!--            <img src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" class="custom-modal-drpdn-img-1">-->
+                                         <!--            <img src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" class="custom-modal-drpdn-img-1">-->
                                          <!--            <div class="custom-modal-drpdn-img">-->
                                          <!--              <div class="custom-modal-drpdn-title">BNB</div>-->
                                          <!--              <div class="custom-modal-drpdn-subtitle">BNB</div>-->
@@ -1839,7 +1839,7 @@ $(".confirmPay").click(function(){ // this is new function after removing hidden
                                          <!--      <div id="choose-coin-BNB" class="custom-modal-drpdn">-->
                                          <!--        <div class="custom-modal-drpdn-inner">-->
                                          <!--          <div class="d-flex">-->
-                                         <!--            <img src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" class="custom-modal-drpdn-img-1">-->
+                                         <!--            <img src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" class="custom-modal-drpdn-img-1">-->
                                          <!--            <div class="custom-modal-drpdn-img">-->
                                          <!--              <div class="custom-modal-drpdn-title">BNB</div>-->
                                          <!--              <div class="custom-modal-drpdn-subtitle">BNB</div>-->

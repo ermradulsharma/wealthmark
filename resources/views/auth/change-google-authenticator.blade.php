@@ -288,7 +288,7 @@
                     <div id="Auth-complete" style="display:none">
                         <div class="outer-div">
                             <div class="bar-code-div">
-                              <img src="{{ asset('assets/img/auth-icons/create-account.svg') }}" class="complet-img">
+                              <img src="{{ asset('img/auth-icons/create-account.svg') }}" class="complet-img">
                             </div>
                             <div class="complete-text">Authenticator Enabled Successfully</div>
                             <div class="subtitle">You have successfully Google Authenticator to protect your account.</div>

@@ -25,7 +25,7 @@
                        <div class="asset-overview login-box-main">
                               <div class="login-box-bg">
                                 <div class="login-box">
-                                  <img src="{{ asset('assets/img/account.png') }}" class="login-box-img">
+                                  <img src="{{ asset('img/account.png') }}" class="login-box-img">
                                   <div class="login-box-txt">Log in to view holding details</div>
                                   <button type="button" class="btn btn-yellow">Log In</button>
                                 </div>
@@ -55,10 +55,10 @@
                               <div class="Auto-Invest-title-sm">Enjoy the Auto-Invest plan while earning passive income</div>
                               <div class="Auto-Invest-subtitle-sm">Once invested, you can receive daily earnings from Simple Earn and redeem your funds any time you wish.</div>
                             </div>
-                            <img src="{{ asset('assets/img/circle-plus.svg') }}" class="Auto-Invest-sideimg">
+                            <img src="{{ asset('img/circle-plus.svg') }}" class="Auto-Invest-sideimg">
                           </div>
                         </div>
-                       <img src="{{ asset('assets/img/p2p-pro_banner.png') }}" class="Auto-Invest-Plan-img">
+                       <img src="{{ asset('img/p2p-pro_banner.png') }}" class="Auto-Invest-Plan-img">
                 </div>
             </div>
         </div>

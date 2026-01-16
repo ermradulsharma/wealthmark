@@ -554,7 +554,7 @@
                         <div id="Auth-complete" style="display:none">
                             <div class="outer-div">
                                 <div class="bar-code-div">
-                                  <img src="{{ asset('assets/img/auth-icons/create-account.svg') }}" class="complet-img">
+                                  <img src="{{ asset('img/auth-icons/create-account.svg') }}" class="complet-img">
                                 </div>
                                 <div class="complete-text">Google Authenticator Enabled</div>
                                 <div class="subtitle">If you are unable to scan the QR code, please enter this code manually into the app.</div>

@@ -35,7 +35,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 order-1 order-lg-2 order-md-2 order-sm-1"
                     id="search-box-announcement">
                     <div class="announcement-header-img">
-                        <img src="{{ asset('assets/img/annoncement-img.png') }}"
+                        <img src="{{ asset('img/annoncement-img.png') }}"
                             class="img-fluid float-md-end d-flex mx-auto blink-img-animation" alt="gift Card Image">
                     </div>
                 </div>
@@ -62,7 +62,7 @@
                     <div class="flip-box listing-topic-box">
                         <div class="flip-box-inner">
                             <div class="flip-box-front">
-                                <img src="{{ asset('assets/img/announcement/announcement-icon.svg') }}" class="img-fluid"
+                                <img src="{{ asset('img/announcement/announcement-icon.svg') }}" class="img-fluid"
                                     alt="gift Card Image">
                                 <a href="{{url(app()->getLocale().'/announcements-topics/'.trim(strtolower($all_announcements_with_eachCategory->slugs)))}}" ><h4> {{ Str::title( $all_announcements_with_eachCategory->category_name )}} </h4> </a>
                                 <div class="text">{{ $all_announcements_with_eachCategory->cat_short_description }} </div>

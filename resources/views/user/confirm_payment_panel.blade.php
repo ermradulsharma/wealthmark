@@ -516,7 +516,7 @@ justify-content:space-between;
                         <input type="hidden" class="paymentMethodType" name="paymentMethodType" value="{{ $userEachMethod->method_type }}">
                         <input type="hidden" class="paymentListId" name="paymentListId" value="{{ $payment_method_id->id }}">
                         </div>
-                        <img src="{{ asset('assets/img/wm-not_selected_tick.svg') }} " class="pg-selected">
+                        <img src="{{ asset('img/wm-not_selected_tick.svg') }} " class="pg-selected">
                     </div>
                     @endforeach
 
@@ -554,9 +554,9 @@ justify-content:space-between;
 // $(".pg-option").click(function () {
 //   // alert();
 //     $(this).addClass("active");
-//     $(this).children(".pg-selected").attr("src","{{ asset('assets/img/wm-card_tick.svg') }}");
+//     $(this).children(".pg-selected").attr("src","{{ asset('img/wm-card_tick.svg') }}");
 //     $(this).siblings(".pg-option").removeClass("active");
-//     $(this).siblings(".pg-option").children(".pg-selected").attr("src","{{ asset('assets/img/wm-not_selected_tick.svg') }}")
+//     $(this).siblings(".pg-option").children(".pg-selected").attr("src","{{ asset('img/wm-not_selected_tick.svg') }}")
 // });
 
 

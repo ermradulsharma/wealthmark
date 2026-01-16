@@ -1307,4 +1307,20 @@ class UserController extends Controller
     }
 
     /** user role method ended 151122**/
+    public function get_verification_type(Request $request)
+    {
+        return response()->json([]);
+    }
+    public function send_otp_by_secure_phone_old_user(Request $request)
+    {
+        return response()->json([]);
+    }
+    public function create()
+    {
+        return response()->json([]);
+    }
+    public function destroy($id)
+    {
+        return response()->json([]);
+    }
 }

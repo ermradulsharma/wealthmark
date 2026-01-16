@@ -73,7 +73,7 @@
                                     <div class="country_box"></div>
                                     <div class="col-md-12 mb-3">
                                        <div class="form-floating w-100 eRegCountrydrp">
-                                            <!--<span> <img src="{{ asset('assets/img/country-flag/').'/'.'IN'.'.png' }}" ></span>-->
+                                            <!--<span> <img src="{{ asset('img/country-flag/').'/'.'IN'.'.png' }}" ></span>-->
                                           <select id="eRegCountry" name="eRegCountry" placeholder="Jurisdiction country" class="w-100">
 
                                           @foreach($jo as $key => $value)
@@ -85,7 +85,7 @@
                                             <span> {{ $value }}</span>
                                           </option>
                                            <!--<img src="https://countryflagsapi.com/png/{{ $key }}" > -->
-                                          <!--<img src="{{ asset('assets/img/country-flag/').'/'.$key.'.png' }}" >-->
+                                          <!--<img src="{{ asset('img/country-flag/').'/'.$key.'.png' }}" >-->
                                           @endforeach
                                           </select>
                                        </div>

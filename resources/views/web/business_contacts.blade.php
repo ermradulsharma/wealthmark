@@ -56,7 +56,7 @@
                  </div>
                  </div>
                  <div class="col-lg-5 offset-lg-1 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-                    <img src="{{ asset('assets/img/graphic-1-01.svg') }}" class="img-fluid animated" alt="" style="width:100%">
+                    <img src="{{ asset('img/graphic-1-01.svg') }}" class="img-fluid animated" alt="" style="width:100%">
                  </div>
               </div>
            </div>
@@ -85,7 +85,7 @@
                 <!-- Image Column -->
                 <div class="image-column col-lg-4 col-md-6 col-sm-12 text-center">
 
-                    <img src="{{ asset('assets/img/about-us.svg') }}" class="img-fluid animated" alt="" style="width:100%">
+                    <img src="{{ asset('img/about-us.svg') }}" class="img-fluid animated" alt="" style="width:100%">
                  </div>
             </div>
         </div>

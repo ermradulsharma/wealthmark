@@ -122,7 +122,7 @@
                          </div>
                          <div class="lf-select-coin-to-active-value lf-select-coin-to-active-div">
                            <div class="wm-dropdown-optn-item-div">
-                             <img id="select_coin_img" class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/96d50-2408-43e1-ad4c-78b47b448a6a.png">
+                             <img id="select_coin_img" class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                              <div id="select_coin_text" class="wm-dropdown-optn-item-txt">USDT/BNB</div>
                            </div>
                          </div>
@@ -146,7 +146,7 @@
                              <li role="option" id="16" title="16" class="wm-dropdown-optn-item " onclick="changeSrc2(this.id)">
                                <div class="wm-dropdown-optn-item-inner">
                                  <div class="wm-dropdown-optn-item-div">
-                                   <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/96d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                   <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                    <div class="wm-dropdown-optn-item-txt">BTC/USD</div>
                                  </div>
                                </div>
@@ -154,7 +154,7 @@
                              <li role="option" id="17" title="17" class="wm-dropdown-optn-item " onclick="changeSrc2(this.id)">
                                <div class="wm-dropdown-optn-item-inner">
                                  <div class="wm-dropdown-optn-item-div">
-                                   <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/96d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                   <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                    <div class="wm-dropdown-optn-item-txt">BNB/BUSD</div>
                                  </div>
                                </div>
@@ -162,7 +162,7 @@
                              <li role="option" id="14" title="14" class="wm-dropdown-optn-item " onclick="changeSrc2(this.id)">
                                <div class="wm-dropdown-optn-item-inner">
                                  <div class="wm-dropdown-optn-item-div">
-                                   <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/96d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                   <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                    <div class="wm-dropdown-optn-item-txt">ETH/DAI</div>
                                  </div>
                                </div>
@@ -170,7 +170,7 @@
                              <li role="option" id="32" title="32" class="wm-dropdown-optn-item " onclick="changeSrc2(this.id)">
                                <div class="wm-dropdown-optn-item-inner selected">
                                  <div class="wm-dropdown-optn-item-div">
-                                   <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/96d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                   <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                    <div class="wm-dropdown-optn-item-txt">USDT/BNB</div>
                                  </div>
                                </div>
@@ -178,7 +178,7 @@
                              <li role="option" id="34" title="34" class="wm-dropdown-optn-item " onclick="changeSrc2(this.id)">
                                <div class="wm-dropdown-optn-item-inner">
                                  <div class="wm-dropdown-optn-item-div">
-                                   <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/96d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                   <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                    <div class="wm-dropdown-optn-item-txt">USDT/ETH</div>
                                  </div>
                                </div>
@@ -186,7 +186,7 @@
                              <li role="option" id="13" title="13" class="wm-dropdown-optn-item " onclick="changeSrc2(this.id)">
                                <div class="wm-dropdown-optn-item-inner">
                                  <div class="wm-dropdown-optn-item-div">
-                                   <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/96d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                   <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                    <div class="wm-dropdown-optn-item-txt">BTC/ETH</div>
                                  </div>
                                </div>
@@ -208,7 +208,7 @@
                          </div>
                          <div class="lf-select-coin-to-active-value lf-select-coin-to-active-div">
                            <div class="wm-dropdown-optn-item-div">
-                             <img id="select_coin_img" class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/96d50-2408-43e1-ad4c-78b47b448a6a.png">
+                             <img id="select_coin_img" class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                              <div id="select_coin_text" class="wm-dropdown-optn-item-txt">USDT/BNB</div>
                            </div>
                          </div>
@@ -232,7 +232,7 @@
                              <li role="option" id="16" title="16" class="wm-dropdown-optn-item " onclick="changeSrc2(this.id)">
                                <div class="wm-dropdown-optn-item-inner">
                                  <div class="wm-dropdown-optn-item-div">
-                                   <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/96d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                   <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                    <div class="wm-dropdown-optn-item-txt">BTC/USD</div>
                                  </div>
                                </div>
@@ -240,7 +240,7 @@
                              <li role="option" id="17" title="17" class="wm-dropdown-optn-item " onclick="changeSrc2(this.id)">
                                <div class="wm-dropdown-optn-item-inner">
                                  <div class="wm-dropdown-optn-item-div">
-                                   <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/96d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                   <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                    <div class="wm-dropdown-optn-item-txt">BNB/BUSD</div>
                                  </div>
                                </div>
@@ -248,7 +248,7 @@
                              <li role="option" id="14" title="14" class="wm-dropdown-optn-item " onclick="changeSrc2(this.id)">
                                <div class="wm-dropdown-optn-item-inner">
                                  <div class="wm-dropdown-optn-item-div">
-                                   <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/96d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                   <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                    <div class="wm-dropdown-optn-item-txt">ETH/DAI</div>
                                  </div>
                                </div>
@@ -256,7 +256,7 @@
                              <li role="option" id="32" title="32" class="wm-dropdown-optn-item " onclick="changeSrc2(this.id)">
                                <div class="wm-dropdown-optn-item-inner selected">
                                  <div class="wm-dropdown-optn-item-div">
-                                   <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/96d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                   <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                    <div class="wm-dropdown-optn-item-txt">USDT/BNB</div>
                                  </div>
                                </div>
@@ -264,7 +264,7 @@
                              <li role="option" id="34" title="34" class="wm-dropdown-optn-item " onclick="changeSrc2(this.id)">
                                <div class="wm-dropdown-optn-item-inner">
                                  <div class="wm-dropdown-optn-item-div">
-                                   <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/96d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                   <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                    <div class="wm-dropdown-optn-item-txt">USDT/ETH</div>
                                  </div>
                                </div>
@@ -272,7 +272,7 @@
                              <li role="option" id="13" title="13" class="wm-dropdown-optn-item " onclick="changeSrc2(this.id)">
                                <div class="wm-dropdown-optn-item-inner">
                                  <div class="wm-dropdown-optn-item-div">
-                                   <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/96d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                   <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                    <div class="wm-dropdown-optn-item-txt">BTC/ETH</div>
                                  </div>
                                </div>
@@ -306,7 +306,7 @@
                          </div>
                          <div class="lf-select-coin-to-active-value lf-select-coin-to-active-div">
                            <div class="wm-dropdown-optn-item-div">
-                             <img id="select_coin_img" class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/96d50-2408-43e1-ad4c-78b47b448a6a.png">
+                             <img id="select_coin_img" class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                              <div id="select_coin_text" class="wm-dropdown-optn-item-txt">USDT/BNB</div>
                            </div>
                          </div>
@@ -330,7 +330,7 @@
                              <li role="option" id="16" title="16" class="wm-dropdown-optn-item " onclick="changeSrc2(this.id)">
                                <div class="wm-dropdown-optn-item-inner">
                                  <div class="wm-dropdown-optn-item-div">
-                                   <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/96d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                   <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                    <div class="wm-dropdown-optn-item-txt">BTC/USD</div>
                                  </div>
                                </div>
@@ -338,7 +338,7 @@
                              <li role="option" id="17" title="17" class="wm-dropdown-optn-item " onclick="changeSrc2(this.id)">
                                <div class="wm-dropdown-optn-item-inner">
                                  <div class="wm-dropdown-optn-item-div">
-                                   <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/96d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                   <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                    <div class="wm-dropdown-optn-item-txt">BNB/BUSD</div>
                                  </div>
                                </div>
@@ -346,7 +346,7 @@
                              <li role="option" id="14" title="14" class="wm-dropdown-optn-item " onclick="changeSrc2(this.id)">
                                <div class="wm-dropdown-optn-item-inner">
                                  <div class="wm-dropdown-optn-item-div">
-                                   <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/96d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                   <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                    <div class="wm-dropdown-optn-item-txt">ETH/DAI</div>
                                  </div>
                                </div>
@@ -354,7 +354,7 @@
                              <li role="option" id="32" title="32" class="wm-dropdown-optn-item " onclick="changeSrc2(this.id)">
                                <div class="wm-dropdown-optn-item-inner selected">
                                  <div class="wm-dropdown-optn-item-div">
-                                   <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/96d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                   <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                    <div class="wm-dropdown-optn-item-txt">USDT/BNB</div>
                                  </div>
                                </div>
@@ -362,7 +362,7 @@
                              <li role="option" id="34" title="34" class="wm-dropdown-optn-item " onclick="changeSrc2(this.id)">
                                <div class="wm-dropdown-optn-item-inner">
                                  <div class="wm-dropdown-optn-item-div">
-                                   <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/96d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                   <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                    <div class="wm-dropdown-optn-item-txt">USDT/ETH</div>
                                  </div>
                                </div>
@@ -370,7 +370,7 @@
                              <li role="option" id="13" title="13" class="wm-dropdown-optn-item " onclick="changeSrc2(this.id)">
                                <div class="wm-dropdown-optn-item-inner">
                                  <div class="wm-dropdown-optn-item-div">
-                                   <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/96d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                   <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                    <div class="wm-dropdown-optn-item-txt">BTC/ETH</div>
                                  </div>
                                </div>
@@ -392,7 +392,7 @@
                          </div>
                          <div class="lf-select-coin-to-active-value lf-select-coin-to-active-div">
                            <div class="wm-dropdown-optn-item-div">
-                             <img id="select_coin_img" class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/96d50-2408-43e1-ad4c-78b47b448a6a.png">
+                             <img id="select_coin_img" class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                              <div id="select_coin_text" class="wm-dropdown-optn-item-txt">USDT/BNB</div>
                            </div>
                          </div>
@@ -416,7 +416,7 @@
                              <li role="option" id="16" title="16" class="wm-dropdown-optn-item " onclick="changeSrc2(this.id)">
                                <div class="wm-dropdown-optn-item-inner">
                                  <div class="wm-dropdown-optn-item-div">
-                                   <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/96d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                   <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                    <div class="wm-dropdown-optn-item-txt">BTC/USD</div>
                                  </div>
                                </div>
@@ -424,7 +424,7 @@
                              <li role="option" id="17" title="17" class="wm-dropdown-optn-item " onclick="changeSrc2(this.id)">
                                <div class="wm-dropdown-optn-item-inner">
                                  <div class="wm-dropdown-optn-item-div">
-                                   <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/96d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                   <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                    <div class="wm-dropdown-optn-item-txt">BNB/BUSD</div>
                                  </div>
                                </div>
@@ -432,7 +432,7 @@
                              <li role="option" id="14" title="14" class="wm-dropdown-optn-item " onclick="changeSrc2(this.id)">
                                <div class="wm-dropdown-optn-item-inner">
                                  <div class="wm-dropdown-optn-item-div">
-                                   <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/96d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                   <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                    <div class="wm-dropdown-optn-item-txt">ETH/DAI</div>
                                  </div>
                                </div>
@@ -440,7 +440,7 @@
                              <li role="option" id="32" title="32" class="wm-dropdown-optn-item " onclick="changeSrc2(this.id)">
                                <div class="wm-dropdown-optn-item-inner selected">
                                  <div class="wm-dropdown-optn-item-div">
-                                   <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/96d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                   <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                    <div class="wm-dropdown-optn-item-txt">USDT/BNB</div>
                                  </div>
                                </div>
@@ -448,7 +448,7 @@
                              <li role="option" id="34" title="34" class="wm-dropdown-optn-item " onclick="changeSrc2(this.id)">
                                <div class="wm-dropdown-optn-item-inner">
                                  <div class="wm-dropdown-optn-item-div">
-                                   <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/96d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                   <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                    <div class="wm-dropdown-optn-item-txt">USDT/ETH</div>
                                  </div>
                                </div>
@@ -456,7 +456,7 @@
                              <li role="option" id="13" title="13" class="wm-dropdown-optn-item " onclick="changeSrc2(this.id)">
                                <div class="wm-dropdown-optn-item-inner">
                                  <div class="wm-dropdown-optn-item-div">
-                                   <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/96d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                   <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                    <div class="wm-dropdown-optn-item-txt">BTC/ETH</div>
                                  </div>
                                </div>

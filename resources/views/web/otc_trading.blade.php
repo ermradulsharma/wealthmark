@@ -118,7 +118,7 @@
                   </div>
                </div>
                <div class="col-lg-6 col-md-6 col-sm-8 pt-5 pb-5  order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-                  <img src="{{ asset('assets/img/otcTrading/otc-cover-graphic.png') }}" class="img-fluid animated" alt="Wealthmark OTC and Execution Solutions" title="Wealthmark OTC and Execution Solutions" >
+                  <img src="{{ asset('img/otcTrading/otc-cover-graphic.png') }}" class="img-fluid animated" alt="Wealthmark OTC and Execution Solutions" title="Wealthmark OTC and Execution Solutions" >
                </div>
             </div>
          </div>
@@ -136,7 +136,7 @@
                   <div class="otc-Onboarding-Procedure" id="otc-Onboarding-Procedure-block">
                      <div class="otc-Procedure-block">
                         <div class="otc-Procedure-block-inner">
-                           <img src="{{ asset('assets/img/otcTrading/signup.png') }}" class="otc-Procedure-block-profile" alt="Open Wealthmark account and finish KYC" title="Open Wealthmark account and finish KYC" >
+                           <img src="{{ asset('img/otcTrading/signup.png') }}" class="otc-Procedure-block-profile" alt="Open Wealthmark account and finish KYC" title="Open Wealthmark account and finish KYC" >
                            <div class="otc-Procedure-block-title">Signup</div>
                            <div class="otc-Procedure-block-sbtitle">Open Wealthmark account and finish KYC</div>
                         </div>
@@ -151,7 +151,7 @@
                      </div>
                      <div class="otc-Procedure-block">
                         <div class="otc-Procedure-block-inner">
-                           <img src="{{ asset('assets/img/otcTrading/communicate.png') }}" class="otc-Procedure-block-profile" alt="Request for quote from OTC traders" title="Request for quote from OTC traders" >
+                           <img src="{{ asset('img/otcTrading/communicate.png') }}" class="otc-Procedure-block-profile" alt="Request for quote from OTC traders" title="Request for quote from OTC traders" >
                            <div class="otc-Procedure-block-title">Communicate</div>
                            <div class="otc-Procedure-block-sbtitle">Request for quote from OTC traders</div>
                         </div>
@@ -166,7 +166,7 @@
                      </div>
                      <div class="otc-Procedure-block">
                         <div class="otc-Procedure-block-inner">
-                           <img src="{{ asset('assets/img/otcTrading/confirm.png') }}" class="otc-Procedure-block-profile" alt="Agree on the price of the quote" title="Agree on the price of the quote" >
+                           <img src="{{ asset('img/otcTrading/confirm.png') }}" class="otc-Procedure-block-profile" alt="Agree on the price of the quote" title="Agree on the price of the quote" >
                            <div class="otc-Procedure-block-title">Confirm</div>
                            <div class="otc-Procedure-block-sbtitle">Agree on the price of the quote</div>
                         </div>
@@ -181,7 +181,7 @@
                      </div>
                      <div class="otc-Procedure-block">
                         <div class="otc-Procedure-block-inner">
-                           <img src="{{ asset('assets/img/otcTrading/settlement.png') }}" class="otc-Procedure-block-profile" alt="Trades directly settled into your wallet" title="Trades directly settled into your wallet" >
+                           <img src="{{ asset('img/otcTrading/settlement.png') }}" class="otc-Procedure-block-profile" alt="Trades directly settled into your wallet" title="Trades directly settled into your wallet" >
                            <div class="otc-Procedure-block-title">Settlement</div>
                            <div class="otc-Procedure-block-sbtitle">Trades directly settled into your wallet</div>
                         </div>
@@ -204,13 +204,13 @@
                   </div>
                </div>
                <div class="col-md-4 col-sm-12">
-                  <img src="{{ asset('assets/img/otcTrading/otc-features-graphics.svg') }}" class="img-fluid max-width-400px" alt="Onboarding Process"  title="Onboarding Process">
+                  <img src="{{ asset('img/otcTrading/otc-features-graphics.svg') }}" class="img-fluid max-width-400px" alt="Onboarding Process"  title="Onboarding Process">
                </div>
                <div class="col-md-8 col-sm-12">
                   <div class="why-otc-div">
                      <div class="why-otc-block">
                         <div class="why-otc-block-icn-div">
-                           <img src="{{ asset('assets/img/otcTrading/trade-asset.svg') }}" class="otc-Procedure-block-profile" alt="Trade Any Asset to Any Asset"title="Trade Any Asset to Any Asset" >
+                           <img src="{{ asset('img/otcTrading/trade-asset.svg') }}" class="otc-Procedure-block-profile" alt="Trade Any Asset to Any Asset"title="Trade Any Asset to Any Asset" >
                         </div>
                         <div class="">
                            <div class="why-otc-block-title">Trade Any Asset to Any Asset</div>
@@ -219,7 +219,7 @@
                      </div>
                      <div class="why-otc-block">
                         <div class="why-otc-block-icn-div">
-                           <img src="{{ asset('assets/img/otcTrading/fast-competitive.svg') }}" class="otc-Procedure-block-profile" alt="Fast & Competitive Pricing" title="Fast & Competitive Pricing" >
+                           <img src="{{ asset('img/otcTrading/fast-competitive.svg') }}" class="otc-Procedure-block-profile" alt="Fast & Competitive Pricing" title="Fast & Competitive Pricing" >
                         </div>
                         <div class="">
                            <div class="why-otc-block-title">Fast &amp; Competitive Pricing</div>
@@ -228,7 +228,7 @@
                      </div>
                      <div class="why-otc-block">
                         <div class="why-otc-block-icn-div">
-                           <img src="{{ asset('assets/img/otcTrading/global-real-time.png') }}" class="otc-Procedure-block-profile" alt="Global Real-time Support" title="Global Real-time Support" >
+                           <img src="{{ asset('img/otcTrading/global-real-time.png') }}" class="otc-Procedure-block-profile" alt="Global Real-time Support" title="Global Real-time Support" >
                         </div>
                         <div class="">
                            <div class="why-otc-block-title">Global Real-time Support</div>
@@ -237,7 +237,7 @@
                      </div>
                      <div class="why-otc-block">
                         <div class="why-otc-block-icn-div">
-                           <img src="{{ asset('assets/img/otcTrading/best-in-class.svg') }}" class="otc-Procedure-block-profile" alt="Best-In-Class Services" title="Best-In-Class Services" >
+                           <img src="{{ asset('img/otcTrading/best-in-class.svg') }}" class="otc-Procedure-block-profile" alt="Best-In-Class Services" title="Best-In-Class Services" >
                         </div>
                         <div class="">
                            <div class="why-otc-block-title">Best-In-Class Services</div>
@@ -287,7 +287,7 @@
                               </div>
                               <!-- Image Column -->
                               <div class="image-column col-lg-5 col-md-6 col-sm-12 text-center p-4">
-                                 <img src="{{ asset('assets/img/otcTrading/block-trading.png') }}" class="img-fluid  w-100" alt="Block Trading" title="Block Trading">
+                                 <img src="{{ asset('img/otcTrading/block-trading.png') }}" class="img-fluid  w-100" alt="Block Trading" title="Block Trading">
                               </div>
                            </div>
                         </div>
@@ -309,7 +309,7 @@
                               </div>
                               <!-- Image Column -->
                               <div class="image-column col-lg-5 col-md-6 col-sm-12 text-center p-4">
-                                 <img src="{{ asset('assets/img/otcTrading/api-rfq-solutions.svg') }}" class="img-fluid  w-50" alt="API RFQ and RFS Solutions" title="API RFQ and RFS Solutions">
+                                 <img src="{{ asset('img/otcTrading/api-rfq-solutions.svg') }}" class="img-fluid  w-50" alt="API RFQ and RFS Solutions" title="API RFQ and RFS Solutions">
                               </div>
                            </div>
                         </div>
@@ -331,7 +331,7 @@
                               </div>
                               <!-- Image Column -->
                               <div class="image-column col-lg-5 col-md-6 col-sm-12 text-center p-4">
-                                 <img src="{{ asset('assets/img/otcTrading/execution-algos-.svg') }}" class="img-fluid  w-100" alt="Execution algo" title="Execution algo">
+                                 <img src="{{ asset('img/otcTrading/execution-algos-.svg') }}" class="img-fluid  w-100" alt="Execution algo" title="Execution algo">
                               </div>
                            </div>
                         </div>
@@ -353,7 +353,7 @@
                               </div>
                               <!-- Image Column -->
                               <div class="image-column col-lg-5 col-md-6 col-sm-12 text-center p-4">
-                                 <img src="{{ asset('assets/img/otcTrading/wm-product.svg') }}" class="img-fluid  w-100" alt="Wealthmark Convert" title="Wealthmark Convert">
+                                 <img src="{{ asset('img/otcTrading/wm-product.svg') }}" class="img-fluid  w-100" alt="Wealthmark Convert" title="Wealthmark Convert">
                               </div>
                            </div>
                         </div>
@@ -376,7 +376,7 @@
                   </div>
                </div>
                <div class="col-md-12  col-sm-12">
-                  <img src="{{ asset('assets/img/otcTrading/settlement-credit-lines.svg') }}" class="w-100 h-100" alt="Settlement and Credit Lines" title="Settlement and Credit Lines" >
+                  <img src="{{ asset('img/otcTrading/settlement-credit-lines.svg') }}" class="w-100 h-100" alt="Settlement and Credit Lines" title="Settlement and Credit Lines" >
                </div>
             </div>
          </div>

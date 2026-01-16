@@ -6,8 +6,8 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
   <meta name="theme-color" content="#287aff">
-  <link href="{{ asset('assets/img/wealthmark-logo.svg') }}" rel="icon">
-  <link href="{{ asset('assets/img/wealthmark-logo.svg') }}" rel="apple-touch-icon">
+  <link href="{{ asset('img/wealthmark-logo.svg') }}" rel="icon">
+  <link href="{{ asset('img/wealthmark-logo.svg') }}" rel="apple-touch-icon">
   <link rel="stylesheet" href="{{ asset('assets/css/dashboard.css') }}">
   @include('template.web_css')
 
@@ -142,7 +142,7 @@ header{
                     <div class="modal-content">
                         <div class="modal-body text-center">
                             <div class="col-12  mt-3 mb-2rem">
-                                <img src="{{ asset('assets/img/dashboard-icons/warning-info.svg') }}" class="no-record-icon" alt="">
+                                <img src="{{ asset('img/dashboard-icons/warning-info.svg') }}" class="no-record-icon" alt="">
                             </div>
                             <p class="small text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
                             <button type="button" class="btn-theme mt-3 w-100 border-0" data-bs-dismiss="modal" aria-label="Close">I Understand</button>

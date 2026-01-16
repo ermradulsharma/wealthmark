@@ -22,7 +22,7 @@
                            <!--start directors model head -->
                            <div class="accordion__header is-active">
                               <h2>
-                                <img src="{{ asset('assets/img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io">
+                                <img src="{{ asset('img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io">
 
                                  Director(s) or Equivalent Persons
                               </h2>
@@ -142,7 +142,7 @@
                            <!--start  Ultimate Beneficial Owner(s) (if any) model head -->
                            <div class="accordion__header">
                               <h2>
-                                <img src="{{ asset('assets/img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io">
+                                <img src="{{ asset('img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io">
                                  Ultimate Beneficial Owner(s) (if any)
                               </h2>
                               <span class="accordion__toggle"></span>
@@ -257,7 +257,7 @@
                            <!------------------  starts Significant Controller(s) ---------->
                            <div class="accordion__header">
                               <h2>
-                                <img src="{{ asset('assets/img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io">
+                                <img src="{{ asset('img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io">
                                  Significant Controller(s)
                               </h2>
                               <span class="accordion__toggle"></span>
@@ -384,7 +384,7 @@
                            <!------------------  starts Authorised Account Trader Controller(s) ---------->
                            <div class="accordion__header">
                               <h2>
-                                <img src="{{ asset('assets/img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io">
+                                <img src="{{ asset('img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io">
                                  Authorised Account Trader
                               </h2>
                               <span class="accordion__toggle"></span>
@@ -510,7 +510,7 @@
                            <!------------------  starts Main Trader Verification Controller(s) ---------->
                            <div class="accordion__header">
                               <h2>
-                                <img src="{{ asset('assets/img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io">
+                                <img src="{{ asset('img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io">
                                  Main Trader Verification
                               </h2>
                               <span class="accordion__toggle"></span>

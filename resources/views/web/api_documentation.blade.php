@@ -11,7 +11,7 @@
       <link rel='stylesheet' href="{{('../assets/css/deepak_custom.css') }}">
       <style>
          .parallax-api-documentation {
-            background-image: url("https://wealthmark.io/assets/img/api-documentatopm-parallx-3.jpg");
+            background-image: url("{{ asset('img/assets/img/api-documentatopm-parallx-3.jpg') }}");
             min-height: 700px;
             background-attachment: fixed;
             background-position: center;
@@ -20,7 +20,7 @@
             /*filter: grayscale(1);*/
             }
             .parallax-api-documentation2 {
-            background-image: url("https://wealthmark.io/assets/img/api-documentation_img_parallax-2.jpg");
+            background-image: url("{{ asset('img/assets/img/api-documentation_img_parallax-2.jpg') }}");
             min-height: 700px;
             background-attachment: fixed;
             background-position: center;
@@ -43,7 +43,7 @@
                </div>
                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 order-1 order-lg-2" data-aos="zoom-in"
                   data-aos-delay="200">
-                  <img src="{{ asset('assets/img/api.png') }}" class="img-fluid animated"
+                  <img src="{{ asset('img/api.png') }}" class="img-fluid animated"
                      alt="API documentation banner" title="Application Programing Interface" />
                </div>
             </div>
@@ -111,7 +111,7 @@
                   </div>
                </div>
                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 order-1 order-lg-2 d-flex jusitfy-content-between align-items-center connectivity-api-wrapper">
-                  <img src="{{ asset('assets/img/connectivity-api-img.png') }}" class="img-fluid connectivity-api-img"
+                  <img src="{{ asset('img/connectivity-api-img.png') }}" class="img-fluid connectivity-api-img"
                      alt="Trading Connectivity"  title="Trading Connectivity"/>
                </div>
             </div>
@@ -1157,7 +1157,7 @@
          <div class="container">
             <div class="row">
                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex">
-                  <img src="{{ asset('assets/img/vip-ins.svg') }}" class="img-fluid float-end vip-instifutional-img"
+                  <img src="{{ asset('img/vip-ins.svg') }}" class="img-fluid float-end vip-instifutional-img"
                      alt="VIP Institutional"  title="VIP Institutional"/>
                </div>
                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -1283,7 +1283,7 @@
                   </ul>
                </div>
                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 order-1 order-lg-2">
-                  <img src="{{ asset('assets/img/dev-icon.svg') }}" class="img-fluid d-block mx-auto"
+                  <img src="{{ asset('img/dev-icon.svg') }}" class="img-fluid d-block mx-auto"
                      alt="Made for developers" title="Made for Developers" />
                </div>
             </div>
@@ -1399,7 +1399,7 @@
                   <a class="btn btn-yellow shadow mt-3">Learn More </a>
                </div>
                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 order-1 order-lg-2">
-                  <img src="{{ asset('assets/img/link-program.png') }}" class="img-fluid"
+                  <img src="{{ asset('img/link-program.png') }}" class="img-fluid"
                      alt="Link Program" title="Link Program" />
                </div>
             </div>

@@ -564,7 +564,7 @@
                                                                                                 <td class="table-row__td">
                                                                                                     @if($active_order->crypto_type == 'BTC')
                                                                                                         <div class="table-row__img">
-                                                                                                            <img src="https://wealthmark.io/img/coin-logo/bitcoin.svg" class="" alt="">
+                                                                                                            <img src="{{ asset('img/coin-logo/bitcoin.svg') }}" class="" alt="">
                                                                                                         </div>
                                                                                                         <div class="table-row__info">
                                                                                                             <p class="table-row__name">Bitcoin</p>
@@ -573,7 +573,7 @@
                                                                                                     @endif
                                                                                                     @if($active_order->crypto_type == 'BMK')
                                                                                                         <div class="table-row__img">
-                                                                                                            <img src="https://wealthmark.io/storage/app//12.png">
+                                                                                                            <img src="{{ asset('img/storage/app//12.png') }}">
                                                                                                         </div>
                                                                                                         <div class="table-row__info">
                                                                                                             <p class="table-row__name">Bmkoin</p>
@@ -582,7 +582,7 @@
                                                                                                     @endif
                                                                                                     @if($active_order->crypto_type == 'ETH')
                                                                                                         <div class="table-row__img">
-                                                                                                             <img src="https://wealthmark.io/img/coin-logo/ethereum.svg" class="" alt="">
+                                                                                                             <img src="{{ asset('img/coin-logo/ethereum.svg') }}" class="" alt="">
                                                                                                         </div>
                                                                                                         <div class="table-row__info">
                                                                                                           <p class="table-row__name">Ethereum</p>
@@ -960,7 +960,7 @@
                                                                                     <td class="table-row__td">
                                                                                         @if($p2p_order->crypto_type == 'BMK')
                                                                                             <div class="table-row__img">
-                                                                                                <img src="https://wealthmark.io/storage/app//12.png">
+                                                                                                <img src="{{ asset('img/storage/app//12.png') }}">
                                                                                             </div>
                                                                                             <div class="table-row__info">
                                                                                               <!--<p class="table-row__name">Bmkoin</p>-->
@@ -970,7 +970,7 @@
 
                                                                                         @if($p2p_order->crypto_type == 'BTC')
                                                                                             <div class="table-row__img">
-                                                                                                <img src="https://wealthmark.io/img/coin-logo/bitcoin.svg">
+                                                                                                <img src="{{ asset('img/coin-logo/bitcoin.svg') }}">
                                                                                             </div>
                                                                                             <div class="table-row__info">
                                                                                               <!--<p class="table-row__name">Bitcoin</p>-->
@@ -980,7 +980,7 @@
 
                                                                                         @if($p2p_order->crypto_type == 'ETH')
                                                                                             <div class="table-row__img">
-                                                                                                <img src="https://wealthmark.io/img/coin-logo/ethereum.svg">
+                                                                                                <img src="{{ asset('img/coin-logo/ethereum.svg') }}">
                                                                                             </div>
                                                                                             <div class="table-row__info">
                                                                                               <!--<p class="table-row__name">Ethereum</p>-->
@@ -1381,7 +1381,7 @@
                                                                             <td class="table-row__td">
                                                                                 @if($express_order['crypto_type'] == 'BMK')
                                                                                     <div class="table-row__img">
-                                                                                        <img src="https://wealthmark.io/storage/app//12.png">
+                                                                                        <img src="{{ asset('img/storage/app//12.png') }}">
                                                                                     </div>
                                                                                     <div class="table-row__info">
                                                                                       <!--<p class="table-row__name">Bmkoin</p>-->
@@ -1391,7 +1391,7 @@
 
                                                                                 @if($express_order['crypto_type'] == 'BTC')
                                                                                     <div class="table-row__img">
-                                                                                        <img src="https://wealthmark.io/img/coin-logo/bitcoin.svg">
+                                                                                        <img src="{{ asset('img/coin-logo/bitcoin.svg') }}">
                                                                                     </div>
                                                                                     <div class="table-row__info">
                                                                                       <!--<p class="table-row__name">Bitcoin</p>-->
@@ -1401,7 +1401,7 @@
 
                                                                                 @if($express_order['crypto_type'] == 'ETH')
                                                                                     <div class="table-row__img">
-                                                                                        <img src="https://wealthmark.io/img/coin-logo/ethereum.svg">
+                                                                                        <img src="{{ asset('img/coin-logo/ethereum.svg') }}">
                                                                                     </div>
                                                                                     <div class="table-row__info">
                                                                                       <!--<p class="table-row__name">Ethereum</p>-->
@@ -1694,7 +1694,7 @@
                                             html1 += '<td class="table-row__td">';
                                             if(val.crypto_type == 'BMK'){
                                                 html1 += '<div class="table-row__img">';
-                                                html1 += '<img src="https://wealthmark.io/storage/app//12.png">';
+                                                html1 += '<img src="{{ asset('img/storage/app//12.png') }}">';
                                                 html1 += '</div>';
                                                 html1 += '<div class="table-row__info">';
                                                 html1 += '<span class="table-row__small">'+val.crypto_type+'</span>';
@@ -1703,7 +1703,7 @@
                                             if(val.crypto_type == 'BTC'){
 
                                                 html1 += '<div class="table-row__img">';
-                                                html1 += '<img src="https://wealthmark.io/img/coin-logo/bitcoin.svg">';
+                                                html1 += '<img src="{{ asset('img/coin-logo/bitcoin.svg') }}">';
                                                 html1 += '</div>';
                                                 html1 += '<div class="table-row__info">';
 
@@ -1713,7 +1713,7 @@
                                             }
                                             if(val.crypto_type == 'ETH'){
                                                 html1 += '<div class="table-row__img">';
-                                                html1 += '<img src="https://wealthmark.io/img/coin-logo/ethereum.svg">';
+                                                html1 += '<img src="{{ asset('img/coin-logo/ethereum.svg') }}">';
                                                 html1 += '</div>';
                                                 html1 += '<div class="table-row__info">';
 
@@ -1841,7 +1841,7 @@
                                             html1 += '<td class="table-row__td">';
                                             if(val.crypto_type == 'BMK'){
                                                 html1 += '<div class="table-row__img">';
-                                                html1 += '<img src="https://wealthmark.io/storage/app//12.png">';
+                                                html1 += '<img src="{{ asset('img/storage/app//12.png') }}">';
                                                 html1 += '</div>';
                                                 html1 += '<div class="table-row__info">';
                                                 html1 += '<span class="table-row__small">'+val.crypto_type+'</span>';
@@ -1850,7 +1850,7 @@
                                             if(val.crypto_type == 'BTC'){
 
                                                 html1 += '<div class="table-row__img">';
-                                                html1 += '<img src="https://wealthmark.io/img/coin-logo/bitcoin.svg">';
+                                                html1 += '<img src="{{ asset('img/coin-logo/bitcoin.svg') }}">';
                                                 html1 += '</div>';
                                                 html1 += '<div class="table-row__info">';
 
@@ -1860,7 +1860,7 @@
                                             }
                                             if(val.crypto_type == 'ETH'){
                                                 html1 += '<div class="table-row__img">';
-                                                html1 += '<img src="https://wealthmark.io/img/coin-logo/ethereum.svg">';
+                                                html1 += '<img src="{{ asset('img/coin-logo/ethereum.svg') }}">';
                                                 html1 += '</div>';
                                                 html1 += '<div class="table-row__info">';
 
@@ -2063,7 +2063,7 @@
                                                 html1 += '<td class="table-row__td">';
                                                 if(val.crypto_type == 'BMK'){
                                                     html1 += '<div class="table-row__img">';
-                                                    html1 += '<img src="https://wealthmark.io/storage/app//12.png">';
+                                                    html1 += '<img src="{{ asset('img/storage/app//12.png') }}">';
                                                     html1 += '</div>';
                                                     html1 += '<div class="table-row__info">';
                                                     html1 += '<span class="table-row__small">'+val.crypto_type+'</span>';
@@ -2072,7 +2072,7 @@
                                                 if(val.crypto_type == 'BTC'){
 
                                                     html1 += '<div class="table-row__img">';
-                                                    html1 += '<img src="https://wealthmark.io/img/coin-logo/bitcoin.svg">';
+                                                    html1 += '<img src="{{ asset('img/coin-logo/bitcoin.svg') }}">';
                                                     html1 += '</div>';
                                                     html1 += '<div class="table-row__info">';
 
@@ -2082,7 +2082,7 @@
                                                 }
                                                 if(val.crypto_type == 'ETH'){
                                                     html1 += '<div class="table-row__img">';
-                                                    html1 += '<img src="https://wealthmark.io/img/coin-logo/ethereum.svg">';
+                                                    html1 += '<img src="{{ asset('img/coin-logo/ethereum.svg') }}">';
                                                     html1 += '</div>';
                                                     html1 += '<div class="table-row__info">';
 
@@ -2209,7 +2209,7 @@
                                     html1 += '<td class="table-row__td">';
                                     if(val.crypto_type == 'BMK'){
                                         html1 += '<div class="table-row__img">';
-                                        html1 += '<img src="https://wealthmark.io/storage/app//12.png">';
+                                        html1 += '<img src="{{ asset('img/storage/app//12.png') }}">';
                                         html1 += '</div>';
                                         html1 += '<div class="table-row__info">';
                                         html1 += '<span class="table-row__small">'+val.crypto_type+'</span>';
@@ -2218,7 +2218,7 @@
                                     if(val.crypto_type == 'BTC'){
 
                                         html1 += '<div class="table-row__img">';
-                                        html1 += '<img src="https://wealthmark.io/img/coin-logo/bitcoin.svg">';
+                                        html1 += '<img src="{{ asset('img/coin-logo/bitcoin.svg') }}">';
                                         html1 += '</div>';
                                         html1 += '<div class="table-row__info">';
 
@@ -2228,7 +2228,7 @@
                                     }
                                     if(val.crypto_type == 'ETH'){
                                         html1 += '<div class="table-row__img">';
-                                        html1 += '<img src="https://wealthmark.io/img/coin-logo/ethereum.svg">';
+                                        html1 += '<img src="{{ asset('img/coin-logo/ethereum.svg') }}">';
                                         html1 += '</div>';
                                         html1 += '<div class="table-row__info">';
 
@@ -2452,7 +2452,7 @@
                                             html1 += '<td class="table-row__td">';
                                             if(val.crypto_type == 'BMK'){
                                                 html1 += '<div class="table-row__img">';
-                                                html1 += '<img src="https://wealthmark.io/storage/app//12.png">';
+                                                html1 += '<img src="{{ asset('img/storage/app//12.png') }}">';
                                                 html1 += '</div>';
                                                 html1 += '<div class="table-row__info">';
                                                 html1 += '<span class="table-row__small">'+val.crypto_type+'</span>';
@@ -2461,7 +2461,7 @@
                                             if(val.crypto_type == 'BTC'){
 
                                                 html1 += '<div class="table-row__img">';
-                                                html1 += '<img src="https://wealthmark.io/img/coin-logo/bitcoin.svg">';
+                                                html1 += '<img src="{{ asset('img/coin-logo/bitcoin.svg') }}">';
                                                 html1 += '</div>';
                                                 html1 += '<div class="table-row__info">';
 
@@ -2471,7 +2471,7 @@
                                             }
                                             if(val.crypto_type == 'ETH'){
                                                 html1 += '<div class="table-row__img">';
-                                                html1 += '<img src="https://wealthmark.io/img/coin-logo/ethereum.svg">';
+                                                html1 += '<img src="{{ asset('img/coin-logo/ethereum.svg') }}">';
                                                 html1 += '</div>';
                                                 html1 += '<div class="table-row__info">';
 
@@ -2829,7 +2829,7 @@
                                             html1 += '<td class="table-row__td">';
                                             if(val.crypto_type == 'BMK'){
                                                 html1 += '<div class="table-row__img">';
-                                                html1 += '<img src="https://wealthmark.io/storage/app//12.png">';
+                                                html1 += '<img src="{{ asset('img/storage/app//12.png') }}">';
                                                 html1 += '</div>';
                                                 html1 += '<div class="table-row__info">';
                                                 html1 += '<span class="table-row__small">'+val.crypto_type+'</span>';
@@ -2838,7 +2838,7 @@
                                             if(val.crypto_type == 'BTC'){
 
                                                 html1 += '<div class="table-row__img">';
-                                                html1 += '<img src="https://wealthmark.io/img/coin-logo/bitcoin.svg">';
+                                                html1 += '<img src="{{ asset('img/coin-logo/bitcoin.svg') }}">';
                                                 html1 += '</div>';
                                                 html1 += '<div class="table-row__info">';
 
@@ -2848,7 +2848,7 @@
                                             }
                                             if(val.crypto_type == 'ETH'){
                                                 html1 += '<div class="table-row__img">';
-                                                html1 += '<img src="https://wealthmark.io/img/coin-logo/ethereum.svg">';
+                                                html1 += '<img src="{{ asset('img/coin-logo/ethereum.svg') }}">';
                                                 html1 += '</div>';
                                                 html1 += '<div class="table-row__info">';
 
@@ -2992,7 +2992,7 @@
                                             html1 += '<td class="table-row__td">';
                                             if(val.crypto_type == 'BMK'){
                                                 html1 += '<div class="table-row__img">';
-                                                html1 += '<img src="https://wealthmark.io/storage/app//12.png">';
+                                                html1 += '<img src="{{ asset('img/storage/app//12.png') }}">';
                                                 html1 += '</div>';
                                                 html1 += '<div class="table-row__info">';
                                                 html1 += '<span class="table-row__small">'+val.crypto_type+'</span>';
@@ -3001,7 +3001,7 @@
                                             if(val.crypto_type == 'BTC'){
 
                                                 html1 += '<div class="table-row__img">';
-                                                html1 += '<img src="https://wealthmark.io/img/coin-logo/bitcoin.svg">';
+                                                html1 += '<img src="{{ asset('img/coin-logo/bitcoin.svg') }}">';
                                                 html1 += '</div>';
                                                 html1 += '<div class="table-row__info">';
 
@@ -3011,7 +3011,7 @@
                                             }
                                             if(val.crypto_type == 'ETH'){
                                                 html1 += '<div class="table-row__img">';
-                                                html1 += '<img src="https://wealthmark.io/img/coin-logo/ethereum.svg">';
+                                                html1 += '<img src="{{ asset('img/coin-logo/ethereum.svg') }}">';
                                                 html1 += '</div>';
                                                 html1 += '<div class="table-row__info">';
 
@@ -3150,7 +3150,7 @@
                                             html1 += '<td class="table-row__td">';
                                             if(val.crypto_type == 'BMK'){
                                                 html1 += '<div class="table-row__img">';
-                                                html1 += '<img src="https://wealthmark.io/storage/app//12.png">';
+                                                html1 += '<img src="{{ asset('img/storage/app//12.png') }}">';
                                                 html1 += '</div>';
                                                 html1 += '<div class="table-row__info">';
                                                 html1 += '<span class="table-row__small">'+val.crypto_type+'</span>';
@@ -3159,7 +3159,7 @@
                                             if(val.crypto_type == 'BTC'){
 
                                                 html1 += '<div class="table-row__img">';
-                                                html1 += '<img src="https://wealthmark.io/img/coin-logo/bitcoin.svg">';
+                                                html1 += '<img src="{{ asset('img/coin-logo/bitcoin.svg') }}">';
                                                 html1 += '</div>';
                                                 html1 += '<div class="table-row__info">';
 
@@ -3169,7 +3169,7 @@
                                             }
                                             if(val.crypto_type == 'ETH'){
                                                 html1 += '<div class="table-row__img">';
-                                                html1 += '<img src="https://wealthmark.io/img/coin-logo/ethereum.svg">';
+                                                html1 += '<img src="{{ asset('img/coin-logo/ethereum.svg') }}">';
                                                 html1 += '</div>';
                                                 html1 += '<div class="table-row__info">';
 

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit Evaluation Version) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="30px" height="30px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 1.37 1.37"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil3 {fill:#263674}
+    .fil0 {fill:#EFB30C}
+    .fil2 {fill:white}
+    .fil1 {fill:#263674;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2104801214336">
+   <polygon class="fil0" points="0.53,0.31 0.84,0.31 0.84,1.33 0.53,1.33 "/>
+   <path class="fil1" d="M0.53 0.27l0.36 0 0 1.1 -0.4 0 0 -1.1 0.04 0zm0.27 0.09l-0.23 0 0 0.93 0.23 0 0 -0.93z"/>
+   <rect class="fil0" x="0.04" y="0.66" width="0.32" height="0.67"/>
+   <path class="fil1" d="M0.04 0.62l0.36 0 0 0.75 -0.4 0 0 -0.75 0.04 0zm0.28 0.08l-0.23 0 0 0.59 0.23 0 0 -0.59z"/>
+   <rect class="fil0" x="1.01" y="0.66" width="0.32" height="0.67"/>
+   <path class="fil1" d="M1.01 0.62l0.36 0 0 0.75 -0.4 0 0 -0.75 0.04 0zm0.28 0.08l-0.23 0 0 0.59 0.23 0 0 -0.59z"/>
+   <circle class="fil0" cx="0.19" cy="0.19" r="0.19"/>
+   <circle class="fil2" cx="0.27" cy="0.29" r="0.17"/>
+   <circle class="fil3" cx="0.27" cy="0.29" r="0.12"/>
+   <polygon class="fil2" points="0.32,1 0.09,1.23 0.09,1.29 0.32,1.29 "/>
+   <polygon class="fil2" points="0.8,1 0.57,1.23 0.57,1.29 0.8,1.29 "/>
+   <polygon class="fil2" points="1.29,1 1.05,1.23 1.05,1.29 1.29,1.29 "/>
+  </g>
+ </g>
+</svg>

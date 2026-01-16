@@ -14,9 +14,9 @@ return new class extends Migration
     public function up()
     {
         Schema::create('security_activity', function (Blueprint $table) {
-            $table->bigIncrements('id');
+                $table->bigIncrements('id');
 			$table->string('source');
-			$table->string('activity')->default('0')->comment("0=disabled,1=enabled");
+			$table->string('activity')->default(0)->comment("0=disabled,1=enabled");
             $table->integer('status')->comment("1=success,0=failed");
 			$table->text('data');
 			$table->bigInteger('user_id');

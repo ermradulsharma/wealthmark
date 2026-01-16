@@ -39,7 +39,7 @@
                </div>
                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 order-1 order-lg-2 hero-img " data-aos="zoom-in"
                   data-aos-delay="200">
-                  <img src="{{ asset('assets/img/execution-solutions/welcome-to-the-wealthmark.png') }}"
+                  <img src="{{ asset('img/execution-solutions/welcome-to-the-wealthmark.png') }}"
                      class="img-fluid animated d-flex mx-auto" alt="Execution Solutions"  title="Execution Solutions">
                </div>
             </div>
@@ -102,7 +102,7 @@
          <div class="container">
             <div class="row align-items-center p-2">
                <div class="col-md-6 col-sm-6  order-lg-last text-center">
-                  <img src="{{ asset('assets/img/execution-solutions/execution-solutions.png') }}" class="img-fluid animated"
+                  <img src="{{ asset('img/execution-solutions/execution-solutions.png') }}" class="img-fluid animated"
                      alt="Execution Solutions with Cashback" title="Execution Solutions with Cashback">
                </div>
                <div class="col-md-6 col-sm-6">
@@ -123,7 +123,7 @@
             </div>
             <div class="row align-items-center p-2">
                <div class="col-md-6 col-sm-6 text-center">
-                  <img src="{{ asset('assets/img/execution-solutions/lowest-frees.png') }}" class="img-fluid animated"
+                  <img src="{{ asset('img/execution-solutions/lowest-frees.png') }}" class="img-fluid animated"
                      alt="Lowest Fees Execution Solutions" title="Lowest Fees Execution Solutions">
                </div>
                <div class="col-md-6 col-sm-6">
@@ -146,7 +146,7 @@
             </div>
             <div class="row align-items-center p-2">
                <div class="col-md-6 col-sm-6  order-lg-last text-center">
-                  <img src="{{ asset('assets/img/execution-solutions/executions-when-need.png') }}" class="img-fluid animated"
+                  <img src="{{ asset('img/execution-solutions/executions-when-need.png') }}" class="img-fluid animated"
                      alt="Execution when need" title="Execution when need">
                </div>
                <div class="col-md-6 col-sm-6">
@@ -165,7 +165,7 @@
             </div>
             <div class="row align-items-center p-2">
                <div class="col-md-6 col-sm-6 text-center">
-                  <img src="{{ asset('assets/img/execution-solutions/all-types-of-solutions.png') }}" class="img-fluid animated"
+                  <img src="{{ asset('img/execution-solutions/all-types-of-solutions.png') }}" class="img-fluid animated"
                      alt="All type of Solutions" title="All types of Solutions">
                </div>
                <div class="col-md-6 col-sm-6">

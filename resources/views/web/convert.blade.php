@@ -59,14 +59,14 @@
 <!--            <div class="row">-->
 <!--                <div class="col-lg-8 col-md-8" id="convert-chart-block">-->
 <!--                    <div class="chart-heading-content">-->
-<!--                        <img src="{{ asset('assets/img/convert-busd-img.png') }}" class="img-fluid"-->
+<!--                        <img src="{{ asset('img/convert-busd-img.png') }}" class="img-fluid"-->
 <!--                            alt="walth mark blog">-->
-<!--                        <img src="{{ asset('assets/img/convert-bnb-img.png') }}" class="img-fluid"-->
+<!--                        <img src="{{ asset('img/convert-bnb-img.png') }}" class="img-fluid"-->
 <!--                            alt="walth mark blog">-->
 <!--                        <strong class="chart-inner-content">&nbsp;BNB/BUSD</strong> <small-->
 <!--                            class="chart-inner-content2">&nbsp;1 BNB = 313.9 BUSD</small>-->
 <!--                    </div>-->
-<!--                    <img src="{{ asset('assets/img/convert-limit-chart.png') }}" class="img-fluid"-->
+<!--                    <img src="{{ asset('img/convert-limit-chart.png') }}" class="img-fluid"-->
 <!--                        alt="walth mark blog">-->
 <!--                </div>-->
 
@@ -130,7 +130,7 @@
                             <!--                    data-bs-target="#buy-tab-select-currency-new">-->
                             <!--                    <div class="convert-select-currency">-->
                             <!--                        <div class="convert-currency-selected-box d-flex">-->
-                            <!--                            <img src="{{ asset('assets/img/convert-busd-img.png') }}"-->
+                            <!--                            <img src="{{ asset('img/convert-busd-img.png') }}"-->
                             <!--                                class="img-fluid convert-curreny-img"-->
                             <!--                                alt="walth mark blog">&nbsp;-->
                             <!--                            <input type="text" id= "setText" value="BUSD" class="currency-added" name= "setText" onclick= "this.value = '' " disabled>-->
@@ -176,7 +176,7 @@
                             <!--            <div class="col-md-4 col-sm-4">-->
                             <!--                <div class="convert-tab-dropdown float-end" data-bs-toggle="modal"-->
                             <!--                    data-bs-target="#market-currency-modal">-->
-                            <!--                    <img src="{{ asset('assets/img/convert-bnb-img.png') }}"-->
+                            <!--                    <img src="{{ asset('img/convert-bnb-img.png') }}"-->
                             <!--                        class="img-fluid convert-curreny-img"-->
                             <!--                        alt="walth mark blog">&nbsp;BNB-->
                             <!--                    <i class="bi bi-caret-down"></i>-->
@@ -217,7 +217,7 @@
                             <!--            </div>-->
                             <!--            <div class="col-md-4 col-sm-4">-->
                             <!--                <div class="convert-tab-dropdown float-end">-->
-                            <!--                    <img src="{{ asset('assets/img/convert-busd-img.png') }}"-->
+                            <!--                    <img src="{{ asset('img/convert-busd-img.png') }}"-->
                             <!--                        class="img-fluid convert-curreny-img"-->
                             <!--                        alt="walth mark blog">&nbsp;BUSD-->
                             <!--                    <i class="bi bi-caret-down"></i>-->
@@ -293,7 +293,7 @@
                             <!--            </div>-->
                             <!--            <div class="col-md-4 col-sm-4 right-currency-change-box">-->
                             <!--                <div class="convert-tab-dropdown float-end">-->
-                            <!--                    <img src="{{ asset('assets/img/convert-bnb-img.png') }}"-->
+                            <!--                    <img src="{{ asset('img/convert-bnb-img.png') }}"-->
                             <!--                        class="img-fluid convert-curreny-img"-->
                             <!--                        alt="walth mark blog">&nbsp;BNB-->
                             <!--                    <i class="bi bi-caret-down"></i>-->
@@ -422,14 +422,14 @@
 <!--            <div class="row mt-3">-->
 <!--                <div class="col-lg-6 col-md-6" id="chart-older-version">-->
 <!--                    <div class="chart-heading-content">-->
-<!--                        <img src="{{ asset('assets/img/convert-busd-img.png') }}" class="img-fluid"-->
+<!--                        <img src="{{ asset('img/convert-busd-img.png') }}" class="img-fluid"-->
 <!--                            alt="walth mark blog">-->
-<!--                        <img src="{{ asset('assets/img/convert-bnb-img.png') }}" class="img-fluid"-->
+<!--                        <img src="{{ asset('img/convert-bnb-img.png') }}" class="img-fluid"-->
 <!--                            alt="walth mark blog">-->
 <!--                        <strong class="chart-inner-content">&nbsp;BNB/BUSD</strong> <small-->
 <!--                            class="chart-inner-content2">&nbsp;1 BNB = 313.9 BUSD</small>-->
 <!--                    </div>-->
-<!--                    <img src="{{ asset('assets/img/limit-older-img.png') }}" class="img-fluid older-chart-img"-->
+<!--                    <img src="{{ asset('img/limit-older-img.png') }}" class="img-fluid older-chart-img"-->
 <!--                        alt="walth mark blog">-->
 <!--                </div>-->
 
@@ -1027,7 +1027,7 @@ function getAndSetText(){
     <!--                    <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">-->
     <!--                        <div class="select-country-group">-->
     <!--                            <div class="select-currency-tab">-->
-    <!--                                <img src="{{ asset('assets/img/currency-1.png') }}" class="img-fluid"-->
+    <!--                                <img src="{{ asset('img/currency-1.png') }}" class="img-fluid"-->
     <!--                                    alt="cash-balance-img" />-->
     <!--                                <div class="currency-detail">-->
     <!--                                    <h5>AED </h5>-->
@@ -1035,7 +1035,7 @@ function getAndSetText(){
     <!--                                </div>-->
     <!--                            </div>-->
     <!--                            <div class="select-currency-tab">-->
-    <!--                                <img src="{{ asset('assets/img/currency-2.png') }}" class="img-fluid"-->
+    <!--                                <img src="{{ asset('img/currency-2.png') }}" class="img-fluid"-->
     <!--                                    alt="cash-balance-img" />-->
     <!--                                <div class="currency-detail">-->
     <!--                                    <h5>AED </h5>-->
@@ -1043,7 +1043,7 @@ function getAndSetText(){
     <!--                                </div>-->
     <!--                            </div>-->
     <!--                            <div class="select-currency-tab">-->
-    <!--                                <img src="{{ asset('assets/img/currency-3.png') }}" class="img-fluid"-->
+    <!--                                <img src="{{ asset('img/currency-3.png') }}" class="img-fluid"-->
     <!--                                    alt="cash-balance-img" />-->
     <!--                                <div class="currency-detail">-->
     <!--                                    <h5>AED </h5>-->
@@ -1051,7 +1051,7 @@ function getAndSetText(){
     <!--                                </div>-->
     <!--                            </div>-->
     <!--                            <div class="select-currency-tab">-->
-    <!--                                <img src="{{ asset('assets/img/currency-4.png') }}" class="img-fluid"-->
+    <!--                                <img src="{{ asset('img/currency-4.png') }}" class="img-fluid"-->
     <!--                                    alt="cash-balance-img" />-->
     <!--                                <div class="currency-detail">-->
     <!--                                    <h5>AED </h5>-->
@@ -1059,7 +1059,7 @@ function getAndSetText(){
     <!--                                </div>-->
     <!--                            </div>-->
     <!--                            <div class="select-currency-tab">-->
-    <!--                                <img src="{{ asset('assets/img/currency-5.png') }}" class="img-fluid"-->
+    <!--                                <img src="{{ asset('img/currency-5.png') }}" class="img-fluid"-->
     <!--                                    alt="cash-balance-img" />-->
     <!--                                <div class="currency-detail">-->
     <!--                                    <h5>AED </h5>-->

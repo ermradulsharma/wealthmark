@@ -7,8 +7,8 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
   <meta name="theme-color" content="javascript:void(0)287aff">
-  <link href="{{ asset('assets/img/wealthmark-logo.svg') }}" rel="icon">
-  <link href="{{ asset('assets/img/wealthmark-logo.svg') }}" rel="apple-touch-icon">
+  <link href="{{ asset('img/wealthmark-logo.svg') }}" rel="icon">
+  <link href="{{ asset('img/wealthmark-logo.svg') }}" rel="apple-touch-icon">
   @include('template.web_css')
   <link rel="stylesheet" href="{{ asset('assets/css/dashboard.css') }}">
   <style>
@@ -290,7 +290,7 @@ min-height:auto;
                     <div class="">
                         <div style="background-color: rgb(254, 246, 216); display: flex; place-content: center;">
                             <div style="width: 100%; max-width: 1200px; padding: 20px 24px;font-size: 14px;line-height: 24px;display: flex; ">
-                                    <img src="{{  asset('assets/img/wealthmark-logo.svg') }}" style="display: inline-block;width: 24px; height: 24px;">
+                                    <img src="{{  asset('img/wealthmark-logo.svg') }}" style="display: inline-block;width: 24px; height: 24px;">
                                     <div style="flex: 1;padding-left: 8px;margin-right: 24px;color: #1E2329;">
                                         <div style="margin-right: 8px;display: inline-block;">Complete verification to access Wealthmark products and services.</div>
                                         <a style=" color: #C99400; display: inline-block;text-decoration: underline;" href="javascript:void(0)">Learn more</a>
@@ -317,9 +317,9 @@ min-height:auto;
             			<div class="db-user-div">
             				<div class="profile-img me-3">
             				     @if(Auth::user()->avatar != null)
-                                     <img src="{{ asset('assets/img/avatar').'/'.Auth::user()->avatar }}" alt="" >
+                                     <img src="{{ asset('img/avatar').'/'.Auth::user()->avatar }}" alt="" >
                                   @else
-            						<img src="{{ asset('assets/img/country-flag/India-Icon.svg') }}" alt="">
+            						<img src="{{ asset('img/country-flag/India-Icon.svg') }}" alt="">
             					 @endif
             				</div>
 
@@ -678,7 +678,7 @@ min-height:auto;
                             @endif
                        </div>
                         <div class="text-center">
-                        <!--<img src="{{ asset('assets/img/no-record-icon.svg') }}" class="" alt="">-->
+                        <!--<img src="{{ asset('img/no-record-icon.svg') }}" class="" alt="">-->
                           <!--<p class="my-2">No Record Found</p> -->
                         </div>
                     </div>
@@ -707,7 +707,7 @@ min-height:auto;
                                     <div class="security-block first-block fund-div bg-light-blue shadow-sm">
                                         <div class="d-flex">
                                               <div class="security-column-icon">
-                                                 <img src="{{ asset('assets/img/dashboard-icons/settings/enable2fa.svg') }}" alt="">
+                                                 <img src="{{ asset('img/dashboard-icons/settings/enable2fa.svg') }}" alt="">
                                               </div>
                                             <span>Enable 2FA</span>
                                         </div>
@@ -743,7 +743,7 @@ min-height:auto;
                                        <div class="security-block first-block fund-div bg-light-blue shadow-sm">
                                     <div class="d-flex">
                                          <div class="security-column-icon">
-                                             <img src="{{ asset('assets/img/dashboard-icons/settings/identity-verifications.svg') }}" alt="">
+                                             <img src="{{ asset('img/dashboard-icons/settings/identity-verifications.svg') }}" alt="">
                                           </div>
                                         <span>Identity Verification</span>
                                     </div>
@@ -783,7 +783,7 @@ min-height:auto;
                                     <div class="security-block first-block fund-div bg-light-blue shadow-sm">
                                     <div class="d-flex">
                                         <div class="security-column-icon">
-                                         <img src="{{ asset('assets/img/dashboard-icons/settings/anti-phishing.svg') }}" alt="">
+                                         <img src="{{ asset('img/dashboard-icons/settings/anti-phishing.svg') }}" alt="">
                                       </div>
                                         <span>Anti-phishing Code</span>
                                     </div>
@@ -805,7 +805,7 @@ min-height:auto;
                               <div class="security-block first-block fund-div bg-light-blue shadow-sm">
                             <div class="d-flex">
                                  <div class="security-column-icon">
-                                <img src="{{ asset('assets/img/dashboard-icons/settings/trun-on-wdrl-whitelist.svg') }}" alt="">
+                                <img src="{{ asset('img/dashboard-icons/settings/trun-on-wdrl-whitelist.svg') }}" alt="">
                             </div>
                                 <span>Turn-on Withdrawal Whitelist</span>
                             </div>
@@ -892,7 +892,7 @@ min-height:auto;
                     <hr>
                     <div class="dashboard-card-body">
                         <div class="text-center">
-                        <!--<img src="{{ asset('assets/img/no-record-icon.svg') }}" class="" alt="">-->
+                        <!--<img src="{{ asset('img/no-record-icon.svg') }}" class="" alt="">-->
                         <p class="my-2">No Record Found</p>
                         </div>
                     </div>
@@ -909,7 +909,7 @@ min-height:auto;
                     <hr>
                     <div class="dashboard-card-body">
                         <div class="text-center">
-                        <!--<img src="{{ asset('assets/img/no-record-icon.svg') }}" class="" alt="">-->
+                        <!--<img src="{{ asset('img/no-record-icon.svg') }}" class="" alt="">-->
                         <p class="my-2">No Record Found</p>
                         </div>
                     </div>
@@ -993,7 +993,7 @@ min-height:auto;
                                     <a href="{{ url( app()->getLocale()) }}/enable-google-authenticator">
                                         <div class="card-body auth-block border mb-2">
                                             <div class="d-flex align-items-center">
-                                                 <img src="{{ asset('assets/img/dashboard-icons/settings/wm-google-authenticator.svg') }}" class="auth-img" alt="">
+                                                 <img src="{{ asset('img/dashboard-icons/settings/wm-google-authenticator.svg') }}" class="auth-img" alt="">
                                                  <div class="text-left">
                                                         <p class="fs-13 mb-0 fw-bold text-dark">Enable WealthMark/Google Authenticator</p>
                                                         <span class="small  badge bg-warning text-white">Recommended</span>
@@ -1017,7 +1017,7 @@ min-height:auto;
                                            <div class="d-flex align-items-center">
 
 
-                                                <img src="{{ asset('assets/img/dashboard-icons/settings/phone-number-verification.svg') }}" class="auth-img" alt="">
+                                                <img src="{{ asset('img/dashboard-icons/settings/phone-number-verification.svg') }}" class="auth-img" alt="">
                                                 <div class="text-left">
                                                         <p class="fs-13 mb-0 fw-bold text-dark">Phone verification</p>
                                                         <span class="d-block fs-12 text-muted">Phone OTP Based Verification.  </span>
@@ -1040,7 +1040,7 @@ min-height:auto;
                                         <div class="card-body auth-block border mb-2">
                                             <div class="d-flex align-items-center">
 
-                                            <img src="{{ asset('assets/img/dashboard-icons/settings/email-address-verification.svg') }}" class="auth-img" alt="">
+                                            <img src="{{ asset('img/dashboard-icons/settings/email-address-verification.svg') }}" class="auth-img" alt="">
                                             <div class="text-left">
                                                 <p class="fs-13 mb-0 fw-bold text-dark">Email verification</p>
                                                 <span class="d-block fs-12 text-muted"> Email OTP Based Verification. </span>

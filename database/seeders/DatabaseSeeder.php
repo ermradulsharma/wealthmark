@@ -14,11 +14,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        // Standard Seeder (Roles, Admin, Test User) - Recommended for Dev/Testing
+        $this->call(StandardSeeder::class);
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        // Bulk Data Import (Uncomment to load original 200MB dataset)
+        // $this->call(ImportDataSeeder::class);
     }
 }

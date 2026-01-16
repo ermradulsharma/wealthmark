@@ -169,7 +169,7 @@
                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                   <div class="service_box">
                      <div class="service_icon">
-                        <img src="{{ asset('assets/img/affiliate/exclusive-content-program.png') }}" class="img-fluid affiliate-benefit-img"
+                        <img src="{{ asset('img/affiliate/exclusive-content-program.png') }}" class="img-fluid affiliate-benefit-img"
                            alt="Affiliate img">
                      </div>
                      <h3>Exclusive content program</h3>
@@ -179,7 +179,7 @@
                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                   <div class="service_box">
                      <div class="service_icon">
-                        <img src="{{ asset('assets/img/affiliate/more-rewards.png') }}" class="img-fluid affiliate-benefit-img"
+                        <img src="{{ asset('img/affiliate/more-rewards.png') }}" class="img-fluid affiliate-benefit-img"
                            alt="Affiliate img">
                      </div>
                      <h3>Every Month More rewards</h3>
@@ -189,7 +189,7 @@
                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                   <div class="service_box">
                      <div class="service_icon">
-                        <img src="{{ asset('assets/img/affiliate/convenient-payments.png') }}" class="img-fluid affiliate-benefit-img"
+                        <img src="{{ asset('img/affiliate/convenient-payments.png') }}" class="img-fluid affiliate-benefit-img"
                            alt="Affiliate img">
                      </div>
                      <h3>Receive Convenient payments</h3>
@@ -199,7 +199,7 @@
                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                   <div class="service_box">
                      <div class="service_icon">
-                        <img src="{{ asset('assets/img/affiliate/dedicated-account-manager.png') }}" class="img-fluid affiliate-benefit-img"
+                        <img src="{{ asset('img/affiliate/dedicated-account-manager.png') }}" class="img-fluid affiliate-benefit-img"
                            alt="Affiliate img">
                      </div>
                      <h3>Dedicated account manager</h3>
@@ -301,7 +301,7 @@
                   <a class=" btn btn-yellow shadow">Become a Wealth Mark Affiliate</a>
                </div>
                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                  <img src="{{ asset('assets/img/affiliate/affiliate-crypto.png') }}" class="img-fluid affiliate-benefit-img"
+                  <img src="{{ asset('img/affiliate/affiliate-crypto.png') }}" class="img-fluid affiliate-benefit-img"
                      alt="Affiliate img">
                </div>
             </div>

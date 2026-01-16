@@ -42,19 +42,19 @@
                                 </th>
                             </tr>
                             <tr>
-                                <th><img src="{{ asset('assets/img/high-light-icon-1.png') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-1.png') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-success">309.9 </span> </td>
                                 <td><span class="text-danger">0.49% </span> </td>
                             </tr>
                             <tr>
-                                <th><img src="{{ asset('assets/img/high-light-icon-2.jpg') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-2.jpg') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-danger">309.9 </span> </td>
                                 <td><span class="text-success">+1.12% </span> </td>
                             </tr>
                             <tr>
-                                <th><img src="{{ asset('assets/img/high-light-icon-3.png') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-3.png') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-success">19.9 </span> </td>
                                 <td><span class="text-danger">+4.51% </span> </td>
@@ -81,19 +81,19 @@
                                 </th>
                             </tr>
                             <tr>
-                                <th><img src="{{ asset('assets/img/high-light-icon-4.png') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-4.png') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>OSMO </strong></th>
                                 <td><span class="text-success">309.9 </span> </td>
                                 <td><span class="text-danger">0.49% </span> </td>
                             </tr>
                             <tr>
-                                <th><img src="{{ asset('assets/img/high-light-icon-5.png') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-5.png') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>APT </strong></th>
                                 <td><span class="text-danger">309.9 </span> </td>
                                 <td><span class="text-success">+1.12% </span> </td>
                             </tr>
                             <tr>
-                                <th><img src="{{ asset('assets/img/high-light-icon-6.png') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-6.png') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>KDA </strong></th>
                                 <td><span class="text-success">19.9 </span> </td>
                                 <td><span class="text-danger">+4.51% </span> </td>
@@ -121,19 +121,19 @@
                                 </th>
                             </tr>
                             <tr>
-                                <th><img src="{{ asset('assets/img/high-light-icon-7.png') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-7.png') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>LAZIO </strong></th>
                                 <td><span class="text-success">309.9 </span> </td>
                                 <td><span class="text-danger">0.49% </span> </td>
                             </tr>
                             <tr>
-                                <th><img src="{{ asset('assets/img/high-light-icon-8.png') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-8.png') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>PIVX </strong></th>
                                 <td><span class="text-danger">309.9 </span> </td>
                                 <td><span class="text-success">+1.12% </span> </td>
                             </tr>
                             <tr>
-                                <th><img src="{{ asset('assets/img/high-light-icon-9.png') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-9.png') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>PORTO </strong></th>
                                 <td><span class="text-success">19.9 </span> </td>
                                 <td><span class="text-danger">+4.51% </span> </td>
@@ -161,19 +161,19 @@
                                 </th>
                             </tr>
                             <tr>
-                                <th><img src="{{ asset('assets/img/high-light-icon-10.png') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-10.png') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BTC </strong></th>
                                 <td><span class="text-success">309.9 </span> </td>
                                 <td><span class="text-danger">0.49% </span> </td>
                             </tr>
                             <tr>
-                                <th><img src="{{ asset('assets/img/high-light-icon-11.png') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-11.png') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>ETH </strong></th>
                                 <td><span class="text-danger">309.9 </span> </td>
                                 <td><span class="text-success">+1.12% </span> </td>
                             </tr>
                             <tr>
-                                <th><img src="{{ asset('assets/img/high-light-icon-12.png') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-12.png') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>DOGE </strong></th>
                                 <td><span class="text-success">19.9 </span> </td>
                                 <td><span class="text-danger">+4.51% </span> </td>
@@ -505,7 +505,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -523,7 +523,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -541,7 +541,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-4.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-4.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -558,7 +558,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -575,7 +575,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -612,7 +612,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -630,7 +630,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -648,7 +648,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-4.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-4.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -665,7 +665,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -682,7 +682,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -718,7 +718,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -736,7 +736,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -754,7 +754,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-4.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-4.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -771,7 +771,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -788,7 +788,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -824,7 +824,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -842,7 +842,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -860,7 +860,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-4.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-4.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -877,7 +877,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -894,7 +894,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -931,7 +931,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -949,7 +949,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -967,7 +967,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-4.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-4.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -984,7 +984,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1001,7 +1001,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1038,7 +1038,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1056,7 +1056,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1074,7 +1074,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-4.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-4.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1091,7 +1091,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1108,7 +1108,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1144,7 +1144,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1162,7 +1162,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1180,7 +1180,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-4.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-4.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1197,7 +1197,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1214,7 +1214,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1250,7 +1250,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1268,7 +1268,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1286,7 +1286,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-4.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-4.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1303,7 +1303,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1320,7 +1320,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1357,7 +1357,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1375,7 +1375,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1393,7 +1393,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-4.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-4.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1410,7 +1410,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1427,7 +1427,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1464,7 +1464,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1482,7 +1482,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1500,7 +1500,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-4.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-4.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1517,7 +1517,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1534,7 +1534,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1570,7 +1570,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1588,7 +1588,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1606,7 +1606,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-4.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-4.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1623,7 +1623,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1640,7 +1640,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1677,7 +1677,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1695,7 +1695,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1713,7 +1713,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-4.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-4.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1730,7 +1730,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1747,7 +1747,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1784,7 +1784,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1802,7 +1802,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1820,7 +1820,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-4.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-4.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1837,7 +1837,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1854,7 +1854,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1891,7 +1891,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1909,7 +1909,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1927,7 +1927,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-4.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-4.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1944,7 +1944,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1961,7 +1961,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -1997,7 +1997,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -2015,7 +2015,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -2033,7 +2033,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-4.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-4.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -2050,7 +2050,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -2067,7 +2067,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -2104,7 +2104,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -2122,7 +2122,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -2140,7 +2140,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-4.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-4.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -2157,7 +2157,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -2174,7 +2174,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -2513,7 +2513,7 @@
                                             <tr>
                                                 <td>
                                                     <div class="market-future-tab">
-                                                        <img src="{{ asset('assets/img/high-light-icon-4.png') }}"
+                                                        <img src="{{ asset('img/high-light-icon-4.png') }}"
                                                             class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                         <p>BTCUSDT <span>BUSD </span></p>
                                                     </div>
@@ -2530,7 +2530,7 @@
                                             <tr>
                                                 <td>
                                                     <div class="market-future-tab">
-                                                        <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                        <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                             class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                         <p>BTCUSDT <span>BUSD </span></p>
                                                     </div>
@@ -2547,7 +2547,7 @@
                                             <tr>
                                                 <td>
                                                     <div class="market-future-tab">
-                                                        <img src="{{ asset('assets/img/high-light-icon-4.png') }}"
+                                                        <img src="{{ asset('img/high-light-icon-4.png') }}"
                                                             class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                         <p>BTCUSDT <span>BUSD </span></p>
                                                     </div>
@@ -2564,7 +2564,7 @@
                                             <tr>
                                                 <td>
                                                     <div class="market-future-tab">
-                                                        <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                        <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                             class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                         <p>BTCUSDT <span>BUSD </span></p>
                                                     </div>
@@ -2581,7 +2581,7 @@
                                             <tr>
                                                 <td>
                                                     <div class="market-future-tab">
-                                                        <img src="{{ asset('assets/img/high-light-icon-4.png') }}"
+                                                        <img src="{{ asset('img/high-light-icon-4.png') }}"
                                                             class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                         <p>BTCUSDT <span>BUSD </span></p>
                                                     </div>
@@ -2618,7 +2618,7 @@
                                             <tr>
                                                 <td>
                                                     <div class="market-future-tab">
-                                                        <img src="{{ asset('assets/img/high-light-icon-4.png') }}"
+                                                        <img src="{{ asset('img/high-light-icon-4.png') }}"
                                                             class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                         <p>BTCUSDT <span>BUSD </span></p>
                                                     </div>
@@ -2635,7 +2635,7 @@
                                             <tr>
                                                 <td>
                                                     <div class="market-future-tab">
-                                                        <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                        <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                             class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                         <p>BTCUSDT <span>BUSD </span></p>
                                                     </div>
@@ -2652,7 +2652,7 @@
                                             <tr>
                                                 <td>
                                                     <div class="market-future-tab">
-                                                        <img src="{{ asset('assets/img/high-light-icon-4.png') }}"
+                                                        <img src="{{ asset('img/high-light-icon-4.png') }}"
                                                             class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                         <p>BTCUSDT <span>BUSD </span></p>
                                                     </div>
@@ -2669,7 +2669,7 @@
                                             <tr>
                                                 <td>
                                                     <div class="market-future-tab">
-                                                        <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                        <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                             class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                         <p>BTCUSDT <span>BUSD </span></p>
                                                     </div>
@@ -2686,7 +2686,7 @@
                                             <tr>
                                                 <td>
                                                     <div class="market-future-tab">
-                                                        <img src="{{ asset('assets/img/high-light-icon-4.png') }}"
+                                                        <img src="{{ asset('img/high-light-icon-4.png') }}"
                                                             class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                         <p>BTCUSDT <span>BUSD </span></p>
                                                     </div>
@@ -2723,7 +2723,7 @@
                                             <tr>
                                                 <td>
                                                     <div class="market-future-tab">
-                                                        <img src="{{ asset('assets/img/high-light-icon-4.png') }}"
+                                                        <img src="{{ asset('img/high-light-icon-4.png') }}"
                                                             class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                         <p>BTCUSDT <span>BUSD </span></p>
                                                     </div>
@@ -2740,7 +2740,7 @@
                                             <tr>
                                                 <td>
                                                     <div class="market-future-tab">
-                                                        <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                        <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                             class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                         <p>BTCUSDT <span>BUSD </span></p>
                                                     </div>
@@ -2757,7 +2757,7 @@
                                             <tr>
                                                 <td>
                                                     <div class="market-future-tab">
-                                                        <img src="{{ asset('assets/img/high-light-icon-4.png') }}"
+                                                        <img src="{{ asset('img/high-light-icon-4.png') }}"
                                                             class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                         <p>BTCUSDT <span>BUSD </span></p>
                                                     </div>
@@ -2774,7 +2774,7 @@
                                             <tr>
                                                 <td>
                                                     <div class="market-future-tab">
-                                                        <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                        <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                             class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                         <p>BTCUSDT <span>BUSD </span></p>
                                                     </div>
@@ -2791,7 +2791,7 @@
                                             <tr>
                                                 <td>
                                                     <div class="market-future-tab">
-                                                        <img src="{{ asset('assets/img/high-light-icon-4.png') }}"
+                                                        <img src="{{ asset('img/high-light-icon-4.png') }}"
                                                             class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                         <p>BTCUSDT <span>BUSD </span></p>
                                                     </div>
@@ -2947,7 +2947,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -2965,7 +2965,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -2983,7 +2983,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-4.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-4.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -3000,7 +3000,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -3017,7 +3017,7 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="market-future-tab">
-                                                                    <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                                    <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                                         class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                                     <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                                 </div>
@@ -3058,7 +3058,7 @@
                                             <tr>
                                                 <td>
                                                     <div class="market-future-tab">
-                                                        <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                        <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                             class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                         <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                     </div>
@@ -3076,7 +3076,7 @@
                                             <tr>
                                                 <td>
                                                     <div class="market-future-tab">
-                                                        <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                        <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                             class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                         <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                     </div>
@@ -3093,7 +3093,7 @@
                                             <tr>
                                                 <td>
                                                     <div class="market-future-tab">
-                                                        <img src="{{ asset('assets/img/high-light-icon-4.png') }}"
+                                                        <img src="{{ asset('img/high-light-icon-4.png') }}"
                                                             class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                         <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                     </div>
@@ -3110,7 +3110,7 @@
                                             <tr>
                                                 <td>
                                                     <div class="market-future-tab">
-                                                        <img src="{{ asset('assets/img/high-light-icon-11.png') }}"
+                                                        <img src="{{ asset('img/high-light-icon-11.png') }}"
                                                             class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                         <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                     </div>
@@ -3127,7 +3127,7 @@
                                             <tr>
                                                 <td>
                                                     <div class="market-future-tab">
-                                                        <img src="{{ asset('assets/img/high-light-icon-12.png') }}"
+                                                        <img src="{{ asset('img/high-light-icon-12.png') }}"
                                                             class="img-fluid" alt="Market img">&nbsp;&nbsp;
                                                         <p>BTCUSDT <span>PERTECTUAL </span></p>
                                                     </div>
@@ -3210,84 +3210,84 @@
                             </tr>
                             <tr>
                                 <th class="overview-first-column">1 </th>
-                                <th><img src="{{ asset('assets/img/high-light-icon-1.png') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-1.png') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-success">309.9 </span> </td>
                                 <td><span class="text-danger">0.49% </span> </td>
                             </tr>
                             <tr>
                                 <th class="overview-first-column">2</th>
-                                <th><img src="{{ asset('assets/img/high-light-icon-2.jpg') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-2.jpg') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-danger">309.9 </span> </td>
                                 <td><span class="text-success">+1.12% </span> </td>
                             </tr>
                             <tr>
                                 <th class="overview-first-column">3</th>
-                                <th><img src="{{ asset('assets/img/high-light-icon-3.png') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-3.png') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-success">19.9 </span> </td>
                                 <td><span class="text-danger">+4.51% </span> </td>
                             </tr>
                             <tr>
                                 <th class="overview-first-column">4 </th>
-                                <th><img src="{{ asset('assets/img/high-light-icon-1.png') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-1.png') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-success">309.9 </span> </td>
                                 <td><span class="text-danger">0.49% </span> </td>
                             </tr>
                             <tr>
                                 <th class="overview-first-column">5</th>
-                                <th><img src="{{ asset('assets/img/high-light-icon-2.jpg') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-2.jpg') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-danger">309.9 </span> </td>
                                 <td><span class="text-success">+1.12% </span> </td>
                             </tr>
                             <tr>
                                 <th class="overview-first-column">6</th>
-                                <th><img src="{{ asset('assets/img/high-light-icon-3.png') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-3.png') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-success">19.9 </span> </td>
                                 <td><span class="text-danger">+4.51% </span> </td>
                             </tr>
                             <tr>
                                 <th class="overview-first-column">7 </th>
-                                <th><img src="{{ asset('assets/img/high-light-icon-1.png') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-1.png') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-success">309.9 </span> </td>
                                 <td><span class="text-danger">0.49% </span> </td>
                             </tr>
                             <tr>
                                 <th class="overview-first-column">8</th>
-                                <th><img src="{{ asset('assets/img/high-light-icon-2.jpg') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-2.jpg') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-danger">309.9 </span> </td>
                                 <td><span class="text-success">+1.12% </span> </td>
                             </tr>
                             <tr>
                                 <th class="overview-first-column">9</th>
-                                <th><img src="{{ asset('assets/img/high-light-icon-3.png') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-3.png') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-success">19.9 </span> </td>
                                 <td><span class="text-danger">+4.51% </span> </td>
                             </tr>
                             <tr>
                                 <th class="overview-first-column">10 </th>
-                                <th><img src="{{ asset('assets/img/high-light-icon-1.png') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-1.png') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-success">309.9 </span> </td>
                                 <td><span class="text-danger">0.49% </span> </td>
                             </tr>
                             <tr>
                                 <th class="overview-first-column">11</th>
-                                <th><img src="{{ asset('assets/img/high-light-icon-2.jpg') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-2.jpg') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-danger">309.9 </span> </td>
                                 <td><span class="text-success">+1.12% </span> </td>
                             </tr>
                             <tr>
                                 <th class="overview-first-column">12</th>
-                                <th><img src="{{ asset('assets/img/high-light-icon-3.png') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-3.png') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-success">19.9 </span> </td>
                                 <td><span class="text-danger">+4.51% </span> </td>
@@ -3321,84 +3321,84 @@
                             </tr>
                             <tr>
                                 <th class="overview-first-column">1 </th>
-                                <th><img src="{{ asset('assets/img/high-light-icon-1.png') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-1.png') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-success">309.9 </span> </td>
                                 <td><span class="text-danger">0.49% </span> </td>
                             </tr>
                             <tr>
                                 <th class="overview-first-column">2</th>
-                                <th><img src="{{ asset('assets/img/high-light-icon-2.jpg') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-2.jpg') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-danger">309.9 </span> </td>
                                 <td><span class="text-success">+1.12% </span> </td>
                             </tr>
                             <tr>
                                 <th class="overview-first-column">3</th>
-                                <th><img src="{{ asset('assets/img/high-light-icon-3.png') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-3.png') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-success">19.9 </span> </td>
                                 <td><span class="text-danger">+4.51% </span> </td>
                             </tr>
                             <tr>
                                 <th class="overview-first-column">4 </th>
-                                <th><img src="{{ asset('assets/img/high-light-icon-1.png') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-1.png') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-success">309.9 </span> </td>
                                 <td><span class="text-danger">0.49% </span> </td>
                             </tr>
                             <tr>
                                 <th class="overview-first-column">5</th>
-                                <th><img src="{{ asset('assets/img/high-light-icon-2.jpg') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-2.jpg') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-danger">309.9 </span> </td>
                                 <td><span class="text-success">+1.12% </span> </td>
                             </tr>
                             <tr>
                                 <th class="overview-first-column">6</th>
-                                <th><img src="{{ asset('assets/img/high-light-icon-3.png') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-3.png') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-success">19.9 </span> </td>
                                 <td><span class="text-danger">+4.51% </span> </td>
                             </tr>
                             <tr>
                                 <th class="overview-first-column">7 </th>
-                                <th><img src="{{ asset('assets/img/high-light-icon-1.png') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-1.png') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-success">309.9 </span> </td>
                                 <td><span class="text-danger">0.49% </span> </td>
                             </tr>
                             <tr>
                                 <th class="overview-first-column">8</th>
-                                <th><img src="{{ asset('assets/img/high-light-icon-2.jpg') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-2.jpg') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-danger">309.9 </span> </td>
                                 <td><span class="text-success">+1.12% </span> </td>
                             </tr>
                             <tr>
                                 <th class="overview-first-column">9</th>
-                                <th><img src="{{ asset('assets/img/high-light-icon-3.png') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-3.png') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-success">19.9 </span> </td>
                                 <td><span class="text-danger">+4.51% </span> </td>
                             </tr>
                             <tr>
                                 <th class="overview-first-column">10 </th>
-                                <th><img src="{{ asset('assets/img/high-light-icon-1.png') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-1.png') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-success">309.9 </span> </td>
                                 <td><span class="text-danger">0.49% </span> </td>
                             </tr>
                             <tr>
                                 <th class="overview-first-column">11</th>
-                                <th><img src="{{ asset('assets/img/high-light-icon-2.jpg') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-2.jpg') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-danger">309.9 </span> </td>
                                 <td><span class="text-success">+1.12% </span> </td>
                             </tr>
                             <tr>
                                 <th class="overview-first-column">12</th>
-                                <th><img src="{{ asset('assets/img/high-light-icon-3.png') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-3.png') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-success">19.9 </span> </td>
                                 <td><span class="text-danger">+4.51% </span> </td>
@@ -3432,84 +3432,84 @@
                             </tr>
                             <tr>
                                 <th class="overview-first-column">1 </th>
-                                <th><img src="{{ asset('assets/img/high-light-icon-1.png') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-1.png') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-success">309.9 </span> </td>
                                 <td><span class="text-danger">0.49% </span> </td>
                             </tr>
                             <tr>
                                 <th class="overview-first-column">2</th>
-                                <th><img src="{{ asset('assets/img/high-light-icon-2.jpg') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-2.jpg') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-danger">309.9 </span> </td>
                                 <td><span class="text-success">+1.12% </span> </td>
                             </tr>
                             <tr>
                                 <th class="overview-first-column">3</th>
-                                <th><img src="{{ asset('assets/img/high-light-icon-3.png') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-3.png') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-success">19.9 </span> </td>
                                 <td><span class="text-danger">+4.51% </span> </td>
                             </tr>
                             <tr>
                                 <th class="overview-first-column">4 </th>
-                                <th><img src="{{ asset('assets/img/high-light-icon-1.png') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-1.png') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-success">309.9 </span> </td>
                                 <td><span class="text-danger">0.49% </span> </td>
                             </tr>
                             <tr>
                                 <th class="overview-first-column">5</th>
-                                <th><img src="{{ asset('assets/img/high-light-icon-2.jpg') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-2.jpg') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-danger">309.9 </span> </td>
                                 <td><span class="text-success">+1.12% </span> </td>
                             </tr>
                             <tr>
                                 <th class="overview-first-column">6</th>
-                                <th><img src="{{ asset('assets/img/high-light-icon-3.png') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-3.png') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-success">19.9 </span> </td>
                                 <td><span class="text-danger">+4.51% </span> </td>
                             </tr>
                             <tr>
                                 <th class="overview-first-column">7 </th>
-                                <th><img src="{{ asset('assets/img/high-light-icon-1.png') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-1.png') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-success">309.9 </span> </td>
                                 <td><span class="text-danger">0.49% </span> </td>
                             </tr>
                             <tr>
                                 <th class="overview-first-column">8</th>
-                                <th><img src="{{ asset('assets/img/high-light-icon-2.jpg') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-2.jpg') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-danger">309.9 </span> </td>
                                 <td><span class="text-success">+1.12% </span> </td>
                             </tr>
                             <tr>
                                 <th class="overview-first-column">9</th>
-                                <th><img src="{{ asset('assets/img/high-light-icon-3.png') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-3.png') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-success">19.9 </span> </td>
                                 <td><span class="text-danger">+4.51% </span> </td>
                             </tr>
                             <tr>
                                 <th class="overview-first-column">10 </th>
-                                <th><img src="{{ asset('assets/img/high-light-icon-1.png') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-1.png') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-success">309.9 </span> </td>
                                 <td><span class="text-danger">0.49% </span> </td>
                             </tr>
                             <tr>
                                 <th class="overview-first-column">11</th>
-                                <th><img src="{{ asset('assets/img/high-light-icon-2.jpg') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-2.jpg') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-danger">309.9 </span> </td>
                                 <td><span class="text-success">+1.12% </span> </td>
                             </tr>
                             <tr>
                                 <th class="overview-first-column">12</th>
-                                <th><img src="{{ asset('assets/img/high-light-icon-3.png') }}" class="img-fluid"
+                                <th><img src="{{ asset('img/high-light-icon-3.png') }}" class="img-fluid"
                                         alt="Market img">&nbsp;&nbsp;<strong>BNB </strong></th>
                                 <td><span class="text-success">19.9 </span> </td>
                                 <td><span class="text-danger">+4.51% </span> </td>
@@ -3928,12 +3928,12 @@
                         <div class="col-md-6">
                             <div class="listing-modal-content-box-left">
                                 <div>
-                                    <img src="{{ asset('assets/img/detail-modal-icon.png') }}" class="img-fluid"
+                                    <img src="{{ asset('img/detail-modal-icon.png') }}" class="img-fluid"
                                         alt="Market img">
                                     Wealth Mark
                                 </div>
                                 <p>$4.84 <span class="text-danger">-2.08%</span> </p>
-                                <img src="{{ asset('assets/img/detail-listing-graph.svg') }}" class="img-fluid"
+                                <img src="{{ asset('img/detail-listing-graph.svg') }}" class="img-fluid"
                                     alt="Market img">
                                 <p>ApeCoin (APE) is the native governance token that empowers the decentralized
                                     community building of the APE ecosystem. The APE ecosystem includes the community of

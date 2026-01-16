@@ -172,7 +172,7 @@
                                     <div class="security-column  {{ $allnotification->read_at ? 'notification-read' : 'notification-unread' }}">
                                         <div class="security-column-left">
                                             <div class="security-column-icon">
-                                                <img src="https://wealthmark.io/assets/img/dashboard-icons/Security-Icon.svg" alt="">
+                                                <img src="{{ asset('img/assets/img/dashboard-icons/Security-Icon.svg') }}" alt="">
                                             </div>
                                             <div class="security-column-description">
                                                 <h5 class="{{ $allnotification->read_at ? 'notification-read-inner' : '' }}">{{ $notification->order_title }}</h5>
@@ -319,7 +319,7 @@
                                 var html = '<div class="security-column ' + (val.read_at ? 'notification-read' : 'notification-unread') + '">';
                                     html += '<div class="security-column-left">';
                                     html += '<div class="security-column-icon">';
-                                    html += '<img src="https://wealthmark.io/assets/img/dashboard-icons/Security-Icon.svg" alt="">';
+                                    html += '<img src="{{ asset('img/assets/img/dashboard-icons/Security-Icon.svg') }}" alt="">';
                                     html += '</div>';
                                     html += '<div class="security-column-description ">';
                                     html += '<h5 class="' + (val.read_at ? 'notification-read-inner' : '') + '" >' + notificationData.order_title + '</h5>';
@@ -392,7 +392,7 @@
                                 var html = '<div class="security-column ' + (val.read_at ? 'notification-read' : 'notification-unread') + '">';
                                     html += '<div class="security-column-left">';
                                     html += '<div class="security-column-icon">';
-                                    html += '<img src="https://wealthmark.io/assets/img/dashboard-icons/Security-Icon.svg" alt="">';
+                                    html += '<img src="{{ asset('img/assets/img/dashboard-icons/Security-Icon.svg') }}" alt="">';
                                     html += '</div>';
                                     html += '<div class="security-column-description ">';
                                     html += '<h5 class="' + (val.read_at ? 'notification-read-inner' : '') + '">' + notificationData.order_title + '</h5>';
@@ -464,7 +464,7 @@
                                 var html = '<div class="security-column ' + (val.read_at ? 'notification-read' : 'notification-unread') + '">';
                                     html += '<div class="security-column-left">';
                                     html += '<div class="security-column-icon">';
-                                    html += '<img src="https://wealthmark.io/assets/img/dashboard-icons/Security-Icon.svg" alt="">';
+                                    html += '<img src="{{ asset('img/assets/img/dashboard-icons/Security-Icon.svg') }}" alt="">';
                                     html += '</div>';
                                     html += '<div class="security-column-description ">';
                                     html += '<h5 class="' + (val.read_at ? 'notification-read-inner' : '') + '">' + notificationData.order_title + '</h5>';
@@ -537,7 +537,7 @@
                                 var html = '<div class="security-column ' + (val.read_at ? 'notification-read' : 'notification-unread') + '">';
                                     html += '<div class="security-column-left">';
                                     html += '<div class="security-column-icon">';
-                                    html += '<img src="https://wealthmark.io/assets/img/dashboard-icons/Security-Icon.svg" alt="">';
+                                    html += '<img src="{{ asset('img/assets/img/dashboard-icons/Security-Icon.svg') }}" alt="">';
                                     html += '</div>';
                                     html += '<div class="security-column-description ">';
                                     html += '<h5 class="' + (val.read_at ? 'notification-read-inner' : '') + '">' + notificationData.order_title + '</h5>';
@@ -616,7 +616,7 @@
                             var html = '<div class="security-column  ' + (val.read_at ? 'notification-read' : 'notification-unread') + '">';
                                 html += '<div class="security-column-left">';
                                 html += '<div class="security-column-icon">';
-                                html += '<img src="https://wealthmark.io/assets/img/dashboard-icons/Security-Icon.svg" alt="">';
+                                html += '<img src="{{ asset('img/assets/img/dashboard-icons/Security-Icon.svg') }}" alt="">';
                                 html += '</div>';
                                 html += '<div class="security-column-description">';
                                 html += '<h5 class="' + (val.read_at ? 'notification-read-inner' : '') + '">' + notificationData.order_title + '</h5>';
@@ -697,7 +697,7 @@
                                 var html = '<div class="security-column ' + (item.read_at ? 'notification-read' : 'notification-unread') + '">';
                                     html += '<div class="security-column-left">';
                                     html += '<div class="security-column-icon">';
-                                    html += '<img src="https://wealthmark.io/assets/img/dashboard-icons/Security-Icon.svg" alt="">';
+                                    html += '<img src="{{ asset('img/assets/img/dashboard-icons/Security-Icon.svg') }}" alt="">';
                                     html += '</div>';
                                     html += '<div class="security-column-description">';
                                     html += '<h5 class="' + (item.read_at ? 'notification-read-inner' : '') + '">' + notificationData.order_title + '</h5>';
@@ -771,7 +771,7 @@
                                 var html = '<div class="security-column ' + (item.read_at ? 'notification-read' : 'notification-unread') + '">';
                                     html += '<div class="security-column-left">';
                                     html += '<div class="security-column-icon">';
-                                    html += '<img src="https://wealthmark.io/assets/img/dashboard-icons/Security-Icon.svg" alt="">';
+                                    html += '<img src="{{ asset('img/assets/img/dashboard-icons/Security-Icon.svg') }}" alt="">';
                                     html += '</div>';
                                     html += '<div class="security-column-description ">';
                                     html += '<h5 class="' + (item.read_at ? 'notification-read-inner' : '') + '">' + notificationData.order_title + '</h5>';
@@ -932,7 +932,7 @@
                                 var html = '<div class="security-column  ' + (item.read_at ? 'notification-read' : 'notification-unread') + '">';
                                     html += '<div class="security-column-left">';
                                     html += '<div class="security-column-icon">';
-                                    html += '<img src="https://wealthmark.io/assets/img/dashboard-icons/Security-Icon.svg" alt="">';
+                                    html += '<img src="{{ asset('img/assets/img/dashboard-icons/Security-Icon.svg') }}" alt="">';
                                     html += '</div>';
                                     html += '<div class="security-column-description">';
                                     html += '<h5 class="' + (item.read_at ? 'notification-read-inner' : '') + '>' + notificationData.order_title + '</h5>';
@@ -1007,7 +1007,7 @@
                                 var html = '<div class="security-column ' + (item.read_at ? 'notification-read' : 'notification-unread') + '">';
                                     html += '<div class="security-column-left">';
                                     html += '<div class="security-column-icon">';
-                                    html += '<img src="https://wealthmark.io/assets/img/dashboard-icons/Security-Icon.svg" alt="">';
+                                    html += '<img src="{{ asset('img/assets/img/dashboard-icons/Security-Icon.svg') }}" alt="">';
                                     html += '</div>';
                                     html += '<div class="security-column-description ">';
                                     html += '<h5 class="' + (item.read_at ? 'notification-read-inner' : '') + '">' + notificationData.order_title + '</h5>';
@@ -1165,7 +1165,7 @@
                                 var html = '<div class="security-column ' + (item.read_at ? 'notification-read' : 'notification-unread') + '">';
                                     html += '<div class="security-column-left">';
                                     html += '<div class="security-column-icon">';
-                                    html += '<img src="https://wealthmark.io/assets/img/dashboard-icons/Security-Icon.svg" alt="">';
+                                    html += '<img src="{{ asset('img/assets/img/dashboard-icons/Security-Icon.svg') }}" alt="">';
                                     html += '</div>';
                                     html += '<div class="security-column-description ">';
                                     html += '<h5 class="' + (item.read_at ? 'notification-read-inner' : '') + '">' + notificationData.order_title + '</h5>';
@@ -1238,7 +1238,7 @@
                                 var html = '<div class="security-column ' + (item.read_at ? 'notification-read' : 'notification-unread') + '">';
                                     html += '<div class="security-column-left">';
                                     html += '<div class="security-column-icon">';
-                                    html += '<img src="https://wealthmark.io/assets/img/dashboard-icons/Security-Icon.svg" alt="">';
+                                    html += '<img src="{{ asset('img/assets/img/dashboard-icons/Security-Icon.svg') }}" alt="">';
                                     html += '</div>';
                                     html += '<div class="security-column-description ">';
                                     html += '<h5 class="' + (item.read_at ? 'notification-read-inner' : '') + '">' + notificationData.order_title + '</h5>';
@@ -1396,7 +1396,7 @@
                                 var html = '<div class="security-column ' + (item.read_at ? 'notification-read' : 'notification-unread') + '">';
                                     html += '<div class="security-column-left">';
                                     html += '<div class="security-column-icon">';
-                                    html += '<img src="https://wealthmark.io/assets/img/dashboard-icons/Security-Icon.svg" alt="">';
+                                    html += '<img src="{{ asset('img/assets/img/dashboard-icons/Security-Icon.svg') }}" alt="">';
                                     html += '</div>';
                                     html += '<div class="security-column-description ">';
                                     html += '<h5 class="' + (item.read_at ? 'notification-read-inner' : '') + '">' + notificationData.order_title + '</h5>';
@@ -1469,7 +1469,7 @@
                                 var html = '<div class="security-column ' + (item.read_at ? 'notification-read' : 'notification-unread') + '">';
                                     html += '<div class="security-column-left">';
                                     html += '<div class="security-column-icon">';
-                                    html += '<img src="https://wealthmark.io/assets/img/dashboard-icons/Security-Icon.svg" alt="">';
+                                    html += '<img src="{{ asset('img/assets/img/dashboard-icons/Security-Icon.svg') }}" alt="">';
                                     html += '</div>';
                                     html += '<div class="security-column-description ">';
                                     html += '<h5 class="' + (item.read_at ? 'notification-read-inner' : '') + '">' + notificationData.order_title + '</h5>';
@@ -1627,7 +1627,7 @@
                                 var html = '<div class="security-column  ' + (item.read_at ? 'notification-read' : 'notification-unread') + '">';
                                     html += '<div class="security-column-left">';
                                     html += '<div class="security-column-icon">';
-                                    html += '<img src="https://wealthmark.io/assets/img/dashboard-icons/Security-Icon.svg" alt="">';
+                                    html += '<img src="{{ asset('img/assets/img/dashboard-icons/Security-Icon.svg') }}" alt="">';
                                     html += '</div>';
                                     html += '<div class="security-column-description">';
                                     html += '<h5 class="' + (item.read_at ? 'notification-read-inner' : '') + '">' + notificationData.order_title + '</h5>';
@@ -1700,7 +1700,7 @@
                                 var html = '<div class="security-column  ' + (item.read_at ? 'notification-read' : 'notification-unread') + '">';
                                     html += '<div class="security-column-left">';
                                     html += '<div class="security-column-icon">';
-                                    html += '<img src="https://wealthmark.io/assets/img/dashboard-icons/Security-Icon.svg" alt="">';
+                                    html += '<img src="{{ asset('img/assets/img/dashboard-icons/Security-Icon.svg') }}" alt="">';
                                     html += '</div>';
                                     html += '<div class="security-column-description">';
                                     html += '<h5 class="' + (item.read_at ? 'notification-read-inner' : '') + '">' + notificationData.order_title + '</h5>';
@@ -2037,7 +2037,7 @@ $(document).on('click', '.previous', function(event){
                         var html = '<div class="security-column ' + (val.read_at ? 'notification-read' : 'notification-unread') + '">';
                         html += '<div class="security-column-left">';
                         html += '<div class="security-column-icon">';
-                        html += '<img src="https://wealthmark.io/assets/img/dashboard-icons/Security-Icon.svg" alt="">';
+                        html += '<img src="{{ asset('img/assets/img/dashboard-icons/Security-Icon.svg') }}" alt="">';
                         html += '</div>';
                         html += '<div class="security-column-description ">';
                         html += '<h5 class="' + (val.read_at ? 'notification-read-inner' : '') + '">' + notificationData.order_title + '</h5>';

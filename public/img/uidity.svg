@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit Evaluation Version) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="70px" height="62px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 25.177 22.157"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:#003399}
+    .fil1 {fill:#EFB30C}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2618365987104">
+   <polygon class="fil0" points="9.278,6.112 8.107,6.963 6.936,7.814 7.383,9.19 7.831,10.567 8.433,10.567 11.433,8.387 11.619,7.814 10.449,6.963 "/>
+   <polygon class="fil0" points="6.107,0 3.054,4.476 0,8.952 3.313,13.24 6.627,17.527 7.873,17.082 9.188,16.61 8.319,13.933 7.4,14.262 6.635,13.272 5.205,11.421 3.009,8.581 5.033,5.615 7.056,2.649 10.502,3.657 13.947,4.664 13.979,5.738 14.023,7.213 16.409,5.48 16.585,5.607 16.539,4.067 16.509,3.042 11.308,1.521 "/>
+   <path class="fil1" d="M16.409 5.48l-4.384 3.185 -4.383 3.185 1.674 5.153 1.674 5.154 5.419 0 5.419 0 1.674 -5.154 1.675 -5.153 -4.384 -3.185 -4.384 -3.185zm-1.681 9.844l0.234 0.721 1.447 0 1.447 0 0.447 -1.376 0.448 -1.377 -1.171 -0.85 -0.091 -0.067 0.057 1.94 -2.818 1.009zm1.681 -7.031l-2.904 2.111 -2.905 2.11 1.11 3.414 1.109 3.415 3.59 0 3.59 0 1.11 -3.415 1.109 -3.414 -2.904 -2.11 -2.905 -2.111z"/>
+   <polygon class="fil0" points="11.645,15.731 10.775,13.054 10.78,13.052 14.16,11.842 14.105,9.968 16.409,8.293 16.67,8.483 16.83,13.875 11.729,15.701 "/>
+   <polygon class="fil0" points="11.645,15.731 10.775,13.054 10.78,13.052 14.16,11.842 14.105,9.968 16.409,8.293 16.67,8.483 16.83,13.875 11.729,15.701 "/>
+   <polygon class="fil0" points="14.054,8.253 14.023,7.213 16.409,5.344 16.581,5.479 16.67,8.458 16.67,8.483 14.105,9.968 "/>
+  </g>
+  <polygon class="fil1" points="21.858,1.784 17.862,1.784 21.858,5.78 "/>
+  <polygon class="fil0" points="2.919,20.873 6.915,20.873 2.919,16.876 "/>
+ </g>
+</svg>

@@ -89,7 +89,7 @@
 
                  </div>
                  <div class="col-lg-6 col-sm-6  order-1 order-lg-2 hero-img text-center" data-aos="zoom-in" data-aos-delay="200">
-                    <img src="{{ asset('assets/img/about-banner-graphic.svg') }}" class="img-fluid animated w-75" alt="Wealthmark About Us Banner" title="Wealthmark About Us Banner">
+                    <img src="{{ asset('img/about-banner-graphic.svg') }}" class="img-fluid animated w-75" alt="Wealthmark About Us Banner" title="Wealthmark About Us Banner">
                  </div>
               </div>
             </div>
@@ -100,7 +100,7 @@
                   <div class="threediv">
   <div class="threediv-block">
     <div class="threediv-block-inner">
-         <img src="{{ asset('assets/img/volume.svg') }}" class="threediv-block-svg" alt="Average daily volume" title="Average daily volume"/>
+         <img src="{{ asset('img/volume.svg') }}" class="threediv-block-svg" alt="Average daily volume" title="Average daily volume"/>
 
       <div class="threediv-block-txt-div">
         <div class="threediv-block-txt-top">2.0 wm</div>
@@ -110,7 +110,7 @@
   </div>
   <div class="threediv-block">
     <div class="threediv-block-inner">
-         <img src="{{ asset('assets/img/translation.svg') }}" class="threediv-block-svg" alt="Transactions per second" title="Transactions per second"/>
+         <img src="{{ asset('img/translation.svg') }}" class="threediv-block-svg" alt="Transactions per second" title="Transactions per second"/>
 
       <div class="threediv-block-txt-div">
         <div class="threediv-block-txt-top">1,400,000+</div>
@@ -120,7 +120,7 @@
   </div>
   <div class="threediv-block">
     <div class="threediv-block-inner">
-        <img src="{{ asset('assets/img/support.svg') }}" class="threediv-block-svg" alt="Customer Support in 40 languages" title="Customer Support in 40 languages"/>
+        <img src="{{ asset('img/support.svg') }}" class="threediv-block-svg" alt="Customer Support in 40 languages" title="Customer Support in 40 languages"/>
 
       <div class="threediv-block-txt-div">
         <div class="threediv-block-txt-top">24/7</div>
@@ -156,7 +156,7 @@
                 <!-- Image Column -->
                 <div class="image-column col-lg-4 col-md-6 col-sm-12 text-center">
 
-                    <img src="{{ asset('assets/img/about-us.png') }}" class="img-fluid animated w-100" alt="wealthmark about-us" title="wealthmark about-us">
+                    <img src="{{ asset('img/about-us.png') }}" class="img-fluid animated w-100" alt="wealthmark about-us" title="wealthmark about-us">
                  </div>
             </div>
 
@@ -188,7 +188,7 @@
     <div class="row align-items-center">
 
         <div class="col-md-6 col-sm-6 text-center p-4">
-             <img src="{{ asset('assets/img/our-vision-2.svg') }}" class="img-fluid abt-tab-img" alt="Our Vision" title="Our Vision">
+             <img src="{{ asset('img/our-vision-2.svg') }}" class="img-fluid abt-tab-img" alt="Our Vision" title="Our Vision">
         </div>
 
         <div class="col-md-6  col-sm-6">
@@ -214,7 +214,7 @@
     <div class="row align-items-center">
 
         <div class="col-md-6 col-sm-6 text-center p-4">
-             <img src="{{ asset('assets/img/our-mission.svg') }}" class="img-fluid abt-tab-img" alt="wealthmark Mission" title="wealthmark Mission">
+             <img src="{{ asset('img/our-mission.svg') }}" class="img-fluid abt-tab-img" alt="wealthmark Mission" title="wealthmark Mission">
         </div>
 
         <div class="col-md-6  col-sm-6">
@@ -236,7 +236,7 @@
     <div class="row align-items-center">
 
         <div class="col-md-6 col-sm-6 text-center p-4">
-             <img src="{{ asset('assets/img/our-values.svg') }}" class="img-fluid abt-tab-img" alt="wealthmark Value" title="wealthmark Value">
+             <img src="{{ asset('img/our-values.svg') }}" class="img-fluid abt-tab-img" alt="wealthmark Value" title="wealthmark Value">
         </div>
 
         <div class="col-md-6  col-sm-6">
@@ -343,7 +343,7 @@
         <div class="container">
            <div class="row align-items-center">
              <div class="col-md-6 col-sm-6 order-1 order-lg-2 order-md-2 order-sm-2 col-xs-2 text-center">
-                   <img src="{{ asset('assets/img/abt-putting-our-users-first.png') }}" class="img-fluid abt-tab-img" alt="Putting our users first" title="Putting our users first">
+                   <img src="{{ asset('img/abt-putting-our-users-first.png') }}" class="img-fluid abt-tab-img" alt="Putting our users first" title="Putting our users first">
             </div>
             <div class="col-md-6 col-sm-6 order-2 order-lg-1 order-md-1 order-sm-1 order-xs-1">
                 <div class="sec-title text-left">
@@ -359,7 +359,7 @@
 
         <div class="row align-items-center">
              <div class="col-md-6 col-sm-6 text-center order-1 order-lg-1 order-md-1 order-sm-1 col-xs-1">
-                   <img src="{{ asset('assets/img/regulators.png') }}" class="img-fluid abt-tab-img" alt="Working with regulators" title="Working with regulators">
+                   <img src="{{ asset('img/regulators.png') }}" class="img-fluid abt-tab-img" alt="Working with regulators" title="Working with regulators">
             </div>
             <div class="col-md-6 col-sm-6 order-2 order-lg-2 order-md-2 order-sm-2 col-xs-2">
                 <div class="sec-title text-left">
@@ -389,7 +389,7 @@
          <a href="javascript:void(0);" class="btn btn-yellow"><span>Explore Jobs</span></a>
         </div>
            <div class="col-md-6 col-sm-6 text-center order-1 order-lg-2 order-md-2 order-sm-2 col-xs-2">
-             <img src="{{ asset('assets/img/bitcount-2.png') }}" class="img-fluid animated abt-tab-img" alt="wealthmark career" title="wealthmark career">
+             <img src="{{ asset('img/bitcount-2.png') }}" class="img-fluid animated abt-tab-img" alt="wealthmark career" title="wealthmark career">
         </div>
     </div>
          </div>

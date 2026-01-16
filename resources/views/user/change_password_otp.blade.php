@@ -10,8 +10,8 @@
 
 
 
-      <!--<link href="{{ asset('assets/img/wealthmark-logo.svg') }}" rel="icon">-->
-      <!--<link href="{{ asset('assets/img/wealthmark-logo.svg') }}" rel="apple-touch-icon">-->
+      <!--<link href="{{ asset('img/wealthmark-logo.svg') }}" rel="icon">-->
+      <!--<link href="{{ asset('img/wealthmark-logo.svg') }}" rel="apple-touch-icon">-->
       <!--<link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">-->
       <!--<link href="{{ asset('assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">-->
       <!--<link href="{{ asset('assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">-->

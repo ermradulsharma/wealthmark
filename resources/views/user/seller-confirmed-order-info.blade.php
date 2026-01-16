@@ -200,11 +200,11 @@
                                 <div class="header" id="my-div2">
                                     <div class="avatar-wrapper avatar-big">
                                         @if(!empty($buyer_details) && $get_order_data->order_status == 1)
-                                            <img src="{{  asset('assets/img/country-flag/').'/'.$buyer_details->country_flag }} " alt="avatar" />
+                                            <img src="{{  asset('img/country-flag/').'/'.$buyer_details->country_flag }} " alt="avatar" />
                                         @elseif(!empty($buyer_details) && $get_order_data->order_status == 2 ||  $get_order_data->order_status == 3)
-                                            <img src="{{  asset('assets/img/country-flag/').'/'.$buyer_details->country_flag }}" alt="avatar" />
+                                            <img src="{{  asset('img/country-flag/').'/'.$buyer_details->country_flag }}" alt="avatar" />
                                         @elseif(empty($buyer_details) && $get_order_data->order_status == 0 )
-                                            <img src="{{  asset('assets/img/country-flag/').'/'.$buyer_details->country_flag }}" alt="avatar" />
+                                            <img src="{{  asset('img/country-flag/').'/'.$buyer_details->country_flag }}" alt="avatar" />
                                         @endif
                                     </div>
                                     <span class="name">

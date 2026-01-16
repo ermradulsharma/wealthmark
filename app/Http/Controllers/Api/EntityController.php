@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\api;
+namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\UserController;
@@ -27,7 +27,7 @@ class EntityController extends Controller
 
     public function __construct()
     {
-        session_start();
+        // session_start();
     }
 
 
@@ -40,6 +40,11 @@ class EntityController extends Controller
             echo '</br>';
             $UpdateduserName = User::where('id', '=', $id)->update(['user_name' => $username]);
         } */
+    }
+
+    public function updateUsername250223()
+    {
+        return response()->json([]);
     }
 
     public function generate_referral_usernames_2feb23()

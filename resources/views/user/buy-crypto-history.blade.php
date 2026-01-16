@@ -7,8 +7,8 @@
     <meta content="" name="description">
     <meta content="" name="keywords">
     <meta name="theme-color" content="#287aff">
-    <link href="{{ asset('assets/img/wealthmark-logo.svg') }}" rel="icon">
-    <link href="{{ asset('assets/img/wealthmark-logo.svg') }}" rel="apple-touch-icon">
+    <link href="{{ asset('img/wealthmark-logo.svg') }}" rel="icon">
+    <link href="{{ asset('img/wealthmark-logo.svg') }}" rel="apple-touch-icon">
     <link rel="stylesheet" href="{{ asset('assets/css/dashboard.css') }}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
         <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/daterangepicker.css') }}" />
@@ -65,7 +65,7 @@
                   <div class="lf-select-coin-to-active-value lf-select-coin-to-active-div">
 
                       <div class="wm-dropdown-optn-item-div">
-                        <!--<img id="select_coin_img" class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">-->
+                        <!--<img id="select_coin_img" class="wm-dropdown-optn-item-img" src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">-->
                         <div id="select_coin_text" class="wm-dropdown-optn-item-txt">USDT/BNB</div>
                       </div>
                     </div>
@@ -150,7 +150,7 @@
                   <div class="lf-select-coin-to-active-value lf-select-coin-to-active-div">
 
                       <div class="wm-dropdown-optn-item-div">
-                        <!--<img id="select_coin_img" class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">-->
+                        <!--<img id="select_coin_img" class="wm-dropdown-optn-item-img" src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">-->
                         <div id="select_coin_text" class="wm-dropdown-optn-item-txt">USDT/BNB</div>
                       </div>
                     </div>
@@ -235,7 +235,7 @@
                   <div class="lf-select-coin-to-active-value lf-select-coin-to-active-div">
 
                       <div class="wm-dropdown-optn-item-div">
-                        <!--<img id="select_coin_img" class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">-->
+                        <!--<img id="select_coin_img" class="wm-dropdown-optn-item-img" src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">-->
                         <div id="select_coin_text" class="wm-dropdown-optn-item-txt">USDT/BNB</div>
                       </div>
                     </div>
@@ -339,7 +339,7 @@
                                <!--    <td><div class="">Online</div></td>-->
                                <!--    <td>-->
                                <!--        <div class="d-flex align-items-center">-->
-                               <!--            <img src="https://wealthmark.io/assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png" class="max-width-20px me-2" />-->
+                               <!--            <img src="{{ asset('img/assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" class="max-width-20px me-2" />-->
                                <!--            <span class="fs-12 fw-bolder">BTC</span>-->
                                <!--        </div>-->
                                <!--     </td>-->
@@ -363,7 +363,7 @@
                                <!--    <td><div class="">Online</div></td>-->
                                <!--    <td>-->
                                <!--        <div class="d-flex align-items-center">-->
-                               <!--            <img src="https://wealthmark.io/assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png" class="max-width-20px me-2" />-->
+                               <!--            <img src="{{ asset('img/assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" class="max-width-20px me-2" />-->
                                <!--            <span class="fs-12 fw-bolder">BTC</span>-->
                                <!--        </div>-->
                                <!--     </td>-->
@@ -387,7 +387,7 @@
                                <!--    <td><div class="">Online</div></td>-->
                                <!--    <td>-->
                                <!--        <div class="d-flex align-items-center">-->
-                               <!--            <img src="https://wealthmark.io/assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png" class="max-width-20px me-2" />-->
+                               <!--            <img src="{{ asset('img/assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" class="max-width-20px me-2" />-->
                                <!--            <span class="fs-12 fw-bolder">BTC</span>-->
                                <!--        </div>-->
                                <!--     </td>-->

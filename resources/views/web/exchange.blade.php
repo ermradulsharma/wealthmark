@@ -139,21 +139,21 @@ display:none;
                                                 <tr>
                                                     <th scope="col">
                                                         <a class="exchange-order-book-detailed" title="Order Book">
-                                                            <img src="{{ asset('assets/img/order-book-icon.png') }}"
+                                                            <img src="{{ asset('img/order-book-icon.png') }}"
                                                                 class="img-fluid order-icon" alt="gift Card Image">
                                                         </a>
                                                     </th>
                                                     <th scope="col">
                                                         <a class="exchange-buy-order-detailed order-icon"
                                                             title="Buy Order">
-                                                            <img src="{{ asset('assets/img/buy-order-icon.png') }}"
+                                                            <img src="{{ asset('img/buy-order-icon.png') }}"
                                                                 class="img-fluid" alt="gift Card Image">
                                                         </a>
                                                     </th>
                                                     <th scope="col">
                                                         <a class="exchange-sell-order-detailed order-icon"
                                                             title="Sell Order">
-                                                            <img src="{{ asset('assets/img/sell-order-icon.png') }}"
+                                                            <img src="{{ asset('img/sell-order-icon.png') }}"
                                                                 class="img-fluid" alt="gift Card Image">
                                                         </a>
                                                     </th>
@@ -164,7 +164,7 @@ display:none;
                                                     </th>
                                                     <th scope="col">
                                                         <a class="exchange-table-right-icon-2">
-                                                            <img src="{{ asset('assets/img/exchange-three-dots.png') }}"
+                                                            <img src="{{ asset('img/exchange-three-dots.png') }}"
                                                                 class="img-fluid" alt="gift Card Image">
                                                         </a>
                                                     </th>
@@ -442,7 +442,7 @@ display:none;
                         <div class="col-lg-8 col-md-8">
                             <div class="row">
                                 <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
-                                    <!--<img src="{{ asset('assets/img/exchange-chart.png') }}" class="img-fluid"-->
+                                    <!--<img src="{{ asset('img/exchange-chart.png') }}" class="img-fluid"-->
                                     <!--    alt="gift Card Image">-->
                                      <div class="tradingview-widget-container">
                                         <div id="tradingview_76e3c"></div>
@@ -1918,7 +1918,7 @@ display:none;
                         <div class="tab-content col-lg-6 col-lg-6 col-sm-6" id="v-pills-tabContent">
                             <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
                                 aria-labelledby="v-pills-home-tab">
-                                <img src="{{ asset('assets/img/strat-quiz-img-2.png') }}" class="img-fluid"
+                                <img src="{{ asset('img/strat-quiz-img-2.png') }}" class="img-fluid"
                                     alt="gift Card Image" />
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -1926,7 +1926,7 @@ display:none;
                             </div>
                             <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
                                 aria-labelledby="v-pills-profile-tab">
-                                <img src="{{ asset('assets/img/strat-quiz-img-1.png') }}" class="img-fluid"
+                                <img src="{{ asset('img/strat-quiz-img-1.png') }}" class="img-fluid"
                                     alt="gift Card Image" />
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -1935,7 +1935,7 @@ display:none;
                             </div>
                             <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
                                 aria-labelledby="v-pills-messages-tab">
-                                <img src="{{ asset('assets/img/strat-quiz-img-2.png') }}" class="img-fluid"
+                                <img src="{{ asset('img/strat-quiz-img-2.png') }}" class="img-fluid"
                                     alt="gift Card Image" />
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -1944,7 +1944,7 @@ display:none;
                             </div>
                             <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
                                 aria-labelledby="v-pills-settings-tab">
-                                <img src="{{ asset('assets/img/strat-quiz-img-2.png') }}" class="img-fluid"
+                                <img src="{{ asset('img/strat-quiz-img-2.png') }}" class="img-fluid"
                                     alt="gift Card Image" />
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -1953,7 +1953,7 @@ display:none;
                             </div>
                             <div class="tab-pane fade" id="v-repay-settings" role="tabpanel"
                                 aria-labelledby="v-pills-repay-tab">
-                                <img src="{{ asset('assets/img/strat-quiz-img-2.png') }}" class="img-fluid"
+                                <img src="{{ asset('img/strat-quiz-img-2.png') }}" class="img-fluid"
                                     alt="gift Card Image" />
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -2004,7 +2004,7 @@ display:none;
                         <div class="tab-content col-lg-6 col-lg-6 col-sm-6 col-xs-12" id="v-pills-tabContent">
                             <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
                                 aria-labelledby="v-pills-home-tab">
-                                <img src="{{ asset('assets/img/strat-quiz-img-2.png') }}" class="img-fluid"
+                                <img src="{{ asset('img/strat-quiz-img-2.png') }}" class="img-fluid"
                                     alt="gift Card Image" />
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -2012,7 +2012,7 @@ display:none;
                             </div>
                             <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
                                 aria-labelledby="v-pills-profile-tab">
-                                <img src="{{ asset('assets/img/strat-quiz-img-1.png') }}" class="img-fluid"
+                                <img src="{{ asset('img/strat-quiz-img-1.png') }}" class="img-fluid"
                                     alt="gift Card Image" />
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -2021,7 +2021,7 @@ display:none;
                             </div>
                             <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
                                 aria-labelledby="v-pills-messages-tab">
-                                <img src="{{ asset('assets/img/strat-quiz-img-2.png') }}" class="img-fluid"
+                                <img src="{{ asset('img/strat-quiz-img-2.png') }}" class="img-fluid"
                                     alt="gift Card Image" />
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -2030,7 +2030,7 @@ display:none;
                             </div>
                             <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
                                 aria-labelledby="v-pills-settings-tab">
-                                <img src="{{ asset('assets/img/strat-quiz-img-2.png') }}" class="img-fluid"
+                                <img src="{{ asset('img/strat-quiz-img-2.png') }}" class="img-fluid"
                                     alt="gift Card Image" />
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -2039,7 +2039,7 @@ display:none;
                             </div>
                             <div class="tab-pane fade" id="v-repay-settings" role="tabpanel"
                                 aria-labelledby="v-pills-repay-tab">
-                                <img src="{{ asset('assets/img/strat-quiz-img-2.png') }}" class="img-fluid"
+                                <img src="{{ asset('img/strat-quiz-img-2.png') }}" class="img-fluid"
                                     alt="gift Card Image" />
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud

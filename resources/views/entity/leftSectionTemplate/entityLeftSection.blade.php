@@ -12,7 +12,7 @@
 
 
                      <i class="bi bi-geo-alt-fill left-svg-icon"></i>
-                     <img src="{{asset('assets/img/Flag_of_India.jpg') }}" class="flag-img appendCountryflag">
+                     <img src="{{asset('img/Flag_of_India.jpg') }}" class="flag-img appendCountryflag">
                      <div class="border-box appendCountry"></div>
                   </div>
                   <div class="opt-display ">

@@ -117,7 +117,7 @@
                                   <div class="col-sm-4 ">
                                     <div class="d-sm-flex align-items-center p-2 border shadow-sm rounded mx-1 mb-1">
                                     <div class="children-align-middle me-2">
-                                        <img src="https://wealthmark.io/assets/img/deposit-type-icon-1.png" class="max-width-30px">
+                                        <img src="{{ asset('img/assets/img/deposit-type-icon-1.png') }}" class="max-width-30px">
                                     </div>
                                     <div class="">
                                          <span class="fs-16 text-black">Bank Transfer (SEPA) </span>
@@ -129,7 +129,7 @@
                                    <div class="col-sm-4 ">
                                     <div class="d-sm-flex align-items-center p-2 border shadow-sm rounded mx-1 mb-1">
                                     <div class="children-align-middle me-2">
-                                        <img src="https://wealthmark.io/assets/img/deposit-type-icon-1.png" class="max-width-30px">
+                                        <img src="{{ asset('img/assets/img/deposit-type-icon-1.png') }}" class="max-width-30px">
                                     </div>
                                     <div class="">
                                          <span class="fs-16 text-black">Bank Transfer (SEPA) </span>
@@ -141,7 +141,7 @@
                                 <div class="col-sm-4 ">
                                     <div class="d-sm-flex align-items-center p-2 border shadow-sm rounded mx-1 mb-1">
                                     <div class="children-align-middle me-2">
-                                        <img src="https://wealthmark.io/assets/img/deposit-type-icon-1.png" class="max-width-30px">
+                                        <img src="{{ asset('img/assets/img/deposit-type-icon-1.png') }}" class="max-width-30px">
                                     </div>
                                     <div class="">
                                          <span class="fs-16 text-black">Bank Transfer (SEPA) </span>
@@ -181,7 +181,7 @@
                       <div class="card text-center hover-border-yellow hover-shadow-sm h-100">
                           <div class="card-body d-flex align-items-center justify-content-between flex-column">
                               <div>
-                              <img src="{{ asset('assets/img/card-deposit/experienced-trader.png') }}" class="max-width-80px max-height-80px mb-4" alt="cash-balance-img" />
+                              <img src="{{ asset('img/card-deposit/experienced-trader.png') }}" class="max-width-80px max-height-80px mb-4" alt="cash-balance-img" />
                               <h5 class="card-title">Easy for both new & experienced trader</h5>
                               <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                   eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -197,7 +197,7 @@
                   <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
                       <div class="card text-center hover-border-yellow hover-shadow-sm h-100">
                           <div class="card-body d-flex align-items-center justify-content-between flex-column">
-                              <img src="{{ asset('assets/img/card-deposit/fiat-currency.png') }}" class="max-width-80px max-height-80px mb-4" alt="cash-balance-img" />
+                              <img src="{{ asset('img/card-deposit/fiat-currency.png') }}" class="max-width-80px max-height-80px mb-4" alt="cash-balance-img" />
                               <h5 class="card-title">WealthMark offers deposit with fiat currency</h5>
                               <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                   eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
@@ -210,7 +210,7 @@
                   <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
                       <div class="card text-center hover-border-yellow hover-shadow-sm h-100">
                           <div class="card-body d-flex align-items-center justify-content-between flex-column">
-                              <img src="{{ asset('assets/img/card-deposit/following-currencies.png') }}" class="max-width-80px max-height-80px mb-4" alt="cash-balance-img" />
+                              <img src="{{ asset('img/card-deposit/following-currencies.png') }}" class="max-width-80px max-height-80px mb-4" alt="cash-balance-img" />
                               <h5 class="card-title">WealthMark supports the following currencies</h5>
                               <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                   eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
@@ -240,7 +240,7 @@
                   </div>
                   <div class="col-12 col-lg-7 img-hover3 order-1 order-lg-2 text-center">
                       <figure>
-                          <img src="{{ asset('assets/img/card-deposit/eur-with-sepa.png') }}"  class="max-width-500px" alt="cash-balance-img" />
+                          <img src="{{ asset('img/card-deposit/eur-with-sepa.png') }}"  class="max-width-500px" alt="cash-balance-img" />
                       </figure>
                   </div>
               </div>
@@ -413,7 +413,7 @@
 
 <!--                                              <div class="wm-dropdown-optn-item-div">-->
 <!--                                                  <img id="select_coin_img" class="wm-dropdown-optn-item-img"-->
-<!--                                                      src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">-->
+<!--                                                      src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">-->
 <!--                                                  <div id="select_coin_text" class="wm-dropdown-optn-item-txt">USDT/ETH-->
 <!--                                                  </div>-->
 <!--                                              </div>-->
@@ -448,7 +448,7 @@
 
 <!--                                                          <div class="wm-dropdown-optn-item-div">-->
 <!--                                                              <img class="wm-dropdown-optn-item-img"-->
-<!--                                                                  src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">-->
+<!--                                                                  src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">-->
 
 <!--                                                              <div class="wm-dropdown-optn-item-txt">BTC/USD</div>-->
 
@@ -462,7 +462,7 @@
 
 <!--                                                          <div class="wm-dropdown-optn-item-div">-->
 <!--                                                              <img class="wm-dropdown-optn-item-img"-->
-<!--                                                                  src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">-->
+<!--                                                                  src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">-->
 
 <!--                                                              <div class="wm-dropdown-optn-item-txt">BNB/BUSD</div>-->
 <!--                                                          </div>-->
@@ -477,7 +477,7 @@
 
 <!--                                                          <div class="wm-dropdown-optn-item-div">-->
 <!--                                                              <img class="wm-dropdown-optn-item-img"-->
-<!--                                                                  src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">-->
+<!--                                                                  src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">-->
 
 <!--                                                              <div class="wm-dropdown-optn-item-txt">ETH/DAI</div>-->
 
@@ -492,7 +492,7 @@
 
 <!--                                                          <div class="wm-dropdown-optn-item-div">-->
 <!--                                                              <img class="wm-dropdown-optn-item-img"-->
-<!--                                                                  src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">-->
+<!--                                                                  src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">-->
 
 <!--                                                              <div class="wm-dropdown-optn-item-txt">USDT/BNB</div>-->
 <!--                                                          </div>-->
@@ -507,7 +507,7 @@
 
 <!--                                                          <div class="wm-dropdown-optn-item-div">-->
 <!--                                                              <img class="wm-dropdown-optn-item-img"-->
-<!--                                                                  src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">-->
+<!--                                                                  src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">-->
 
 <!--                                                              <div class="wm-dropdown-optn-item-txt">USDT/ETH</div>-->
 <!--                                                          </div>-->
@@ -520,7 +520,7 @@
 <!--                                                      <div class="wm-dropdown-optn-item-inner">-->
 <!--                                                          <div class="wm-dropdown-optn-item-div">-->
 <!--                                                              <img class="wm-dropdown-optn-item-img"-->
-<!--                                                                  src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">-->
+<!--                                                                  src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">-->
 
 <!--                                                              <div class="wm-dropdown-optn-item-txt">BTC/ETH</div>-->
 <!--                                                          </div>-->
@@ -562,7 +562,7 @@
 <!--                                                      </div>-->
 <!--                                                      <div class="wm-card-deposit-11v4451">-->
 <!--                                                          <div class="children-align-middle css-18bhcco">-->
-<!--                                                              <img src="{{ asset('assets/img/deposit-type-icon-1.png') }}"-->
+<!--                                                              <img src="{{ asset('img/deposit-type-icon-1.png') }}"-->
 <!--                                                                  class="wm-card-deposit-1jwu34t">-->
 <!--                                                              <span data-bn-type="text" class="wm-card-deposit-8mokm4">Bank Transfer-->
 <!--                                                                  (SEPA)</span>-->
@@ -582,7 +582,7 @@
 <!--                                                      </div>-->
 <!--                                                      <div class="wm-card-deposit-11v4451">-->
 <!--                                                          <div class="children-align-middle css-18bhcco"><img-->
-<!--                                                                  src="{{ asset('assets/img/deposit-type-icon-2.png') }}"-->
+<!--                                                                  src="{{ asset('img/deposit-type-icon-2.png') }}"-->
 <!--                                                                  class="wm-card-deposit-1jwu34t"><span data-bn-type="text"-->
 <!--                                                                  class="wm-card-deposit-8mokm4">Easy Bank Payment</span></div>-->
 <!--                                                          <div class="wm-card-deposit-12z3w6y">-->
@@ -599,7 +599,7 @@
 <!--                                                      </div>-->
 <!--                                                      <div class="wm-card-deposit-11v4451">-->
 <!--                                                          <div class="children-align-middle css-18bhcco"><img-->
-<!--                                                                  src="{{ asset('assets/img/deposit-type-icon-3.png') }}"-->
+<!--                                                                  src="{{ asset('img/deposit-type-icon-3.png') }}"-->
 <!--                                                                  class="wm-card-deposit-1jwu34t"><span data-bn-type="text"-->
 <!--                                                                  class="wm-card-deposit-8mokm4">Bank Card(Visa/MC)</span></div>-->
 <!--                                                          <div class="wm-card-deposit-12z3w6y">-->
@@ -625,7 +625,7 @@
 <!--                                                      </div>-->
 <!--                                                      <div class="wm-card-deposit-11v4451">-->
 <!--                                                          <div class="children-align-middle css-18bhcco">-->
-<!--                                                              <img src="{{ asset('assets/img/deposit-type-icon-1.png') }}"-->
+<!--                                                              <img src="{{ asset('img/deposit-type-icon-1.png') }}"-->
 <!--                                                                  class="wm-card-deposit-1jwu34t">-->
 <!--                                                              <span data-bn-type="text" class="wm-card-deposit-8mokm4">P2P-->
 <!--                                                                  Express</span>-->
@@ -644,7 +644,7 @@
 <!--                                                      </div>-->
 <!--                                                      <div class="wm-card-deposit-11v4451">-->
 <!--                                                          <div class="children-align-middle css-18bhcco"><img-->
-<!--                                                                  src="{{ asset('assets/img/deposit-type-icon-2.png') }}"-->
+<!--                                                                  src="{{ asset('img/deposit-type-icon-2.png') }}"-->
 <!--                                                                  class="wm-card-deposit-1jwu34t"><span data-bn-type="text"-->
 <!--                                                                  class="wm-card-deposit-8mokm4">Advcash Account Balance</span>-->
 <!--                                                          </div>-->
@@ -702,7 +702,7 @@
 <!--                  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">-->
 <!--                      <div class="card">-->
 <!--                          <div class="card-body">-->
-<!--                              <img src="{{ asset('assets/img/card-deposit/experienced-trader.png') }}" class="img-fluid max-width-80px mb-3"-->
+<!--                              <img src="{{ asset('img/card-deposit/experienced-trader.png') }}" class="img-fluid max-width-80px mb-3"-->
 <!--                                  alt="cash-balance-img" />-->
 <!--                              <h5 class="card-title">Easy for both new & experienced trader</h5>-->
 <!--                              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do-->
@@ -716,7 +716,7 @@
 <!--                  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">-->
 <!--                      <div class="card">-->
 <!--                          <div class="card-body">-->
-<!--                              <img src="{{ asset('assets/img/card-deposit/fiat-currency.png') }}" class="img-fluid max-width-80px mb-3"-->
+<!--                              <img src="{{ asset('img/card-deposit/fiat-currency.png') }}" class="img-fluid max-width-80px mb-3"-->
 <!--                                  alt="cash-balance-img" />-->
 <!--                              <h5 class="card-title">WealthMark offers deposit with fiat currency</h5>-->
 <!--                              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do-->
@@ -730,7 +730,7 @@
 <!--                  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">-->
 <!--                      <div class="card">-->
 <!--                          <div class="card-body">-->
-<!--                              <img src="{{ asset('assets/img/card-deposit/following-currencies.png') }}" class="img-fluid max-width-80px mb-3" alt="cash-balance-img" />-->
+<!--                              <img src="{{ asset('img/card-deposit/following-currencies.png') }}" class="img-fluid max-width-80px mb-3" alt="cash-balance-img" />-->
 <!--                              <h5 class="card-title">WealthMark supports the following currencies</h5>-->
 <!--                              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do-->
 <!--                                  eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>-->
@@ -762,7 +762,7 @@
 <!--                  </div>-->
 <!--                  <div class="col-12 col-lg-7 img-hover3 order-1 order-lg-2">-->
 <!--                      <figure>-->
-<!--                          <img src="{{ asset('assets/img/card-deposit/eur-with-sepa.png') }}"-->
+<!--                          <img src="{{ asset('img/card-deposit/eur-with-sepa.png') }}"-->
 <!--                              class="img-fluid d-block mx-auto rotate-img-animation" alt="cash-balance-img" />-->
 <!--                      </figure>-->
 <!--                  </div>-->
@@ -828,7 +828,7 @@
 <!--                          <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">-->
 <!--                              <div class="select-country-group">-->
 <!--                                  <div class="select-currency-tab">-->
-<!--                                      <img src="{{ asset('assets/img/currency-1.png') }}" class="img-fluid"-->
+<!--                                      <img src="{{ asset('img/currency-1.png') }}" class="img-fluid"-->
 <!--                                          alt="cash-balance-img" />-->
 <!--                                      <div class="currency-detail">-->
 <!--                                          <h5>AED </h5>-->
@@ -836,7 +836,7 @@
 <!--                                      </div>-->
 <!--                                  </div>-->
 <!--                                  <div class="select-currency-tab">-->
-<!--                                      <img src="{{ asset('assets/img/currency-2.png') }}" class="img-fluid"-->
+<!--                                      <img src="{{ asset('img/currency-2.png') }}" class="img-fluid"-->
 <!--                                          alt="cash-balance-img" />-->
 <!--                                      <div class="currency-detail">-->
 <!--                                          <h5>AED </h5>-->
@@ -844,7 +844,7 @@
 <!--                                      </div>-->
 <!--                                  </div>-->
 <!--                                  <div class="select-currency-tab">-->
-<!--                                      <img src="{{ asset('assets/img/currency-3.png') }}" class="img-fluid"-->
+<!--                                      <img src="{{ asset('img/currency-3.png') }}" class="img-fluid"-->
 <!--                                          alt="cash-balance-img" />-->
 <!--                                      <div class="currency-detail">-->
 <!--                                          <h5>AED </h5>-->
@@ -852,7 +852,7 @@
 <!--                                      </div>-->
 <!--                                  </div>-->
 <!--                                  <div class="select-currency-tab">-->
-<!--                                      <img src="{{ asset('assets/img/currency-4.png') }}" class="img-fluid"-->
+<!--                                      <img src="{{ asset('img/currency-4.png') }}" class="img-fluid"-->
 <!--                                          alt="cash-balance-img" />-->
 <!--                                      <div class="currency-detail">-->
 <!--                                          <h5>AED </h5>-->
@@ -860,7 +860,7 @@
 <!--                                      </div>-->
 <!--                                  </div>-->
 <!--                                  <div class="select-currency-tab">-->
-<!--                                      <img src="{{ asset('assets/img/currency-5.png') }}" class="img-fluid"-->
+<!--                                      <img src="{{ asset('img/currency-5.png') }}" class="img-fluid"-->
 <!--                                          alt="cash-balance-img" />-->
 <!--                                      <div class="currency-detail">-->
 <!--                                          <h5>AED </h5>-->

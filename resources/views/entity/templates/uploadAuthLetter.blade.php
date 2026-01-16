@@ -1,6 +1,6 @@
        <div class="accordion__header">
                               <h2>
-                                 <img src="{{ asset('assets/img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io">
+                                 <img src="{{ asset('img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io">
                                  Upload Letter of Authorization
                               </h2>
                               <span class="accordion__toggle"></span>

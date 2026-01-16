@@ -6,26 +6,15 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
         Schema::create('payment_method_lists', function (Blueprint $table) {
-            $table->id();
-            $table->string('name')->nullable();
-            $table->softDeletes();
-            $table->timestamps();
+                $table->increments('id');
+                $table->string('name')->nullable();
+                $table->timestamps();
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::dropIfExists('payment_method_lists');

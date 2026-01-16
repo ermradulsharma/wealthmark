@@ -429,7 +429,7 @@ code end  24 feb-2023
                 <div class="modal-content">
                     <div class="modal-body text-center">
                         <div class="col-12  mt-3 mb-2rem">
-                            <img src="{{ asset('assets/img/dashboard-icons/warning-info.svg') }}"
+                            <img src="{{ asset('img/dashboard-icons/warning-info.svg') }}"
                                 class="no-record-icon" alt="">
                         </div>
                         <h4>Verification Required </h4>

@@ -81,18 +81,18 @@
    <div class="wrapper">
       <div class="hero">
          <div class="">
-            <img loading="lazy" class="sc-fmlJrY buZCMp logo" src="{{ asset('assets/img/wealthmark-logo.svg') }}" alt="Wealthmark Logo">
+            <img loading="lazy" class="sc-fmlJrY buZCMp logo" src="{{ asset('img/wealthmark-logo.svg') }}" alt="Wealthmark Logo">
          </div>
          <div class="download-apps">
             <div class="set">
                <a href="" target="_blank" rel="noopener noreferrer">
-               <img loading="lazy" class="item" src="{{ asset('assets/img/google_play.svg') }}" alt="Google Play Icon"></a>
+               <img loading="lazy" class="item" src="{{ asset('img/google_play.svg') }}" alt="Google Play Icon"></a>
                <a href="" target="_blank" rel="noopener noreferrer">
-               <img loading="lazy" class="item" src="{{ asset('assets/img/app-store.svg') }}" alt="App Store Icon"></a>
+               <img loading="lazy" class="item" src="{{ asset('img/app-store.svg') }}" alt="App Store Icon"></a>
                <a href="" target="_blank" rel="noopener noreferrer">
-               <img loading="lazy" class="item" src="{{ asset('assets/img/window-10.svg') }}" alt="Windows Icon"></a>
+               <img loading="lazy" class="item" src="{{ asset('img/window-10.svg') }}" alt="Windows Icon"></a>
                <a href="" target="_blank" rel="noopener noreferrer">
-               <img loading="lazy" class="item" src="{{ asset('assets/img/macos.svg') }}" alt="Mac App Icon"></a>
+               <img loading="lazy" class="item" src="{{ asset('img/macos.svg') }}" alt="Mac App Icon"></a>
             </div>
          </div>
       </div>

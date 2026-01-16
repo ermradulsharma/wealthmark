@@ -85,7 +85,7 @@
                 <!-- Image Column -->
                 <div class="image-column col-lg-4 col-md-12 col-sm-12 text-center">
                     
-                    <img src="https://www.wealthmark.io/img/about-us.png" class="img-fluid animated w-100" alt="">
+                    <img src="{{ asset('img/about-us.png') }}" class="img-fluid animated w-100" alt="">
                  </div>
             </div>
         </div>
@@ -266,7 +266,7 @@
                             <div class="tab-pane fade active show" id="pills-spot" role="tabpanel" aria-labelledby="pills-spot-tab">
                          <div class="row align-items-center justify-content-between">
                              <div class="col-md-6 col-sm-12 col-xs-12 text-center order-md-2">
-                                    <img src="https://www.wealthmark.io/img/savings/crypto-saving-account.png" class="img-fluid max-width-250px">
+                                    <img src="{{ asset('img/savings/crypto-saving-account.png') }}" class="img-fluid max-width-250px">
                                 </div>
                                 <div class="col-md-6 col-sm-12 col-xs-12 order-md-1">
                                     <h3 class="title mb-4"> Crypto Saving Account</h3>
@@ -331,7 +331,7 @@
                           
                             <div class="row align-items-center justify-content-between">
                                   <div class="col-md-6 col-sm-12 col-xs-12 text-center order-md-2 mt-3 p-2">
-                                    <img src="https://www.wealthmark.io/img/savings/crypto-saving-wallet.png" class="img-fluid max-width-250px">
+                                    <img src="{{ asset('img/savings/crypto-saving-wallet.png') }}" class="img-fluid max-width-250px">
                                 </div>
                                 <div class="col-md-6 col-sm-12 col-xs-12 order-md-1 ">
                                     <h3 class="title mb-4"> Crypto Wallets</h3>

@@ -160,9 +160,9 @@
                   <a class="nav-link dropdown-toggle" href="javascript:void(0);" data-bs-toggle="dropdown">
                   <span class="">
                   @if(Auth::user()->avatar != null)
-                  <img width="20px" src="{{ asset('assets/img/avatar').'/'.Auth::user()->avatar }}" alt="">
+                  <img width="20px" src="{{ asset('img/avatar').'/'.Auth::user()->avatar }}" alt="">
                   @else
-                  <span class="nav-img d-lg-none"> <img src="{{ asset('assets/img/icon-user.svg') }}" class="img-responsive mr-0"> </span>
+                  <span class="nav-img d-lg-none"> <img src="{{ asset('img/icon-user.svg') }}" class="img-responsive mr-0"> </span>
                   @endif
                   </span>
                   <span class="d-lg-none user-name-txt hide-575">Vin Diesel</span>
@@ -216,12 +216,12 @@
       <nav id="navbar_main" class="mobile-offcanvas navbar navbar-expand-lg py-0">
          <div class="offcanvas-header justify-content-between">
             <a href="{{ url('') }}" class="navbar-brand" id="find-2">
-            <img src="{{ asset('assets/img/wealthmark-logo.svg') }}" alt="ss" class="wealthmark-logo">
+            <img src="{{ asset('img/wealthmark-logo.svg') }}" alt="ss" class="wealthmark-logo">
             </a>
             <span class="btn-close m-0 p-0"></span>
          </div>
          <a href="{{url('')}}" class="navbar-brand d-none d-lg-block">
-         <img src="{{asset('assets/img/wealthmark-logo.svg') }}" alt="dd" class="wealthmark-logo">
+         <img src="{{asset('img/wealthmark-logo.svg') }}" alt="dd" class="wealthmark-logo">
          </a>
          <div>
          </div>
@@ -233,9 +233,9 @@
                      <a class="nav-link dropdown-toggle nodropdown-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                      <span class="">
                      @if(Auth::user()->avatar != null)
-                     <img width="20px" src="{{ asset('assets/img/avatar').'/'.Auth::user()->avatar }}" alt="">
+                     <img width="20px" src="{{ asset('img/avatar').'/'.Auth::user()->avatar }}" alt="">
                      @else
-                     <span class="nav-img icon-only"> <img src="{{ asset('assets/img/icon-user.svg') }}" class="img-responsive">  </span>&nbsp;
+                     <span class="nav-img icon-only"> <img src="{{ asset('img/icon-user.svg') }}" class="img-responsive">  </span>&nbsp;
                      @endif
                      </span>
                      <span class="text-only user-name-txt ps-2"> Vin Diesel</span>

@@ -1,0 +1,31 @@
+<svg width="104" height="99" viewBox="0 0 104 99" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="93" y="28" width="11" height="57" fill="#F0B90B"/>
+<rect x="98" y="19" width="1" height="75" fill="#F0B90B"/>
+<rect x="62" y="9" width="11" height="59" fill="#F0B90B"/>
+<rect x="67" width="1" height="77" fill="#F0B90B"/>
+<rect y="66" width="11" height="28" fill="#F0B90B"/>
+<rect x="5" y="60" width="1" height="39" fill="#F0B90B"/>
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="31" y="30" width="11" height="52">
+<rect x="31" y="30" width="11" height="52" fill="#F0B90B"/>
+</mask>
+<g mask="url(#mask0)">
+<line opacity="0.4" y1="-0.5" x2="56.5685" y2="-0.5" transform="matrix(0.707107 0.707107 0.707107 -0.707107 31 14)" stroke="#1E2329"/>
+<line opacity="0.4" y1="-0.5" x2="56.5685" y2="-0.5" transform="matrix(0.707107 0.707107 0.707107 -0.707107 33 12)" stroke="#1E2329"/>
+<line opacity="0.4" y1="-0.5" x2="56.5685" y2="-0.5" transform="matrix(0.707107 0.707107 0.707107 -0.707107 31 18)" stroke="#1E2329"/>
+<line opacity="0.4" y1="-0.5" x2="56.5685" y2="-0.5" transform="matrix(0.707107 0.707107 0.707107 -0.707107 31 22)" stroke="#1E2329"/>
+<line opacity="0.4" y1="-0.5" x2="56.5685" y2="-0.5" transform="matrix(0.707107 0.707107 0.707107 -0.707107 31 26)" stroke="#1E2329"/>
+<line opacity="0.4" y1="-0.5" x2="56.5685" y2="-0.5" transform="matrix(0.707107 0.707107 0.707107 -0.707107 31 30)" stroke="#1E2329"/>
+<line opacity="0.4" y1="-0.5" x2="56.5685" y2="-0.5" transform="matrix(0.707107 0.707107 0.707107 -0.707107 31 34)" stroke="#1E2329"/>
+<line opacity="0.4" y1="-0.5" x2="56.5685" y2="-0.5" transform="matrix(0.707107 0.707107 0.707107 -0.707107 31 38)" stroke="#1E2329"/>
+<line opacity="0.4" y1="-0.5" x2="56.5685" y2="-0.5" transform="matrix(0.707107 0.707107 0.707107 -0.707107 31 42)" stroke="#1E2329"/>
+<line opacity="0.4" y1="-0.5" x2="56.5685" y2="-0.5" transform="matrix(0.707107 0.707107 0.707107 -0.707107 31 46)" stroke="#1E2329"/>
+<line opacity="0.4" y1="-0.5" x2="56.5685" y2="-0.5" transform="matrix(0.707107 0.707107 0.707107 -0.707107 31 50)" stroke="#1E2329"/>
+<line opacity="0.4" y1="-0.5" x2="56.5685" y2="-0.5" transform="matrix(0.707107 0.707107 0.707107 -0.707107 31 54)" stroke="#1E2329"/>
+<line opacity="0.4" y1="-0.5" x2="56.5685" y2="-0.5" transform="matrix(0.707107 0.707107 0.707107 -0.707107 31 58)" stroke="#1E2329"/>
+<line opacity="0.4" y1="-0.5" x2="56.5685" y2="-0.5" transform="matrix(0.707107 0.707107 0.707107 -0.707107 31 62)" stroke="#1E2329"/>
+<line opacity="0.4" y1="-0.5" x2="56.5685" y2="-0.5" transform="matrix(0.707107 0.707107 0.707107 -0.707107 31 66)" stroke="#1E2329"/>
+<line opacity="0.4" y1="-0.5" x2="56.5685" y2="-0.5" transform="matrix(0.707107 0.707107 0.707107 -0.707107 31 70)" stroke="#1E2329"/>
+<line opacity="0.4" y1="-0.5" x2="56.5685" y2="-0.5" transform="matrix(0.707107 0.707107 0.707107 -0.707107 31 74)" stroke="#1E2329"/>
+<line opacity="0.4" y1="-0.5" x2="56.5685" y2="-0.5" transform="matrix(0.707107 0.707107 0.707107 -0.707107 31 78)" stroke="#1E2329"/>
+</g>
+</svg>

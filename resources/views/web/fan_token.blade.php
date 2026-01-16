@@ -236,13 +236,13 @@
       <div class="w-192-h-192">
 
             <div class="write-main-mid-inner-left-img-div">
-                <img src="{{ asset('assets/img/fan-token/fan-2.gif') }}" class="w-100"/>
+                <img src="{{ asset('img/fan-token/fan-2.gif') }}" class="w-100"/>
             </div>
 
       </div>
       <div class="w-170-h-170">
         <div class="write-main-mid-inner-left-img-div">
-             <img src="{{ asset('assets/img/fan-token/as-a-team.gif') }}" class="w-100"/>
+             <img src="{{ asset('img/fan-token/as-a-team.gif') }}" class="w-100"/>
         </div>
       </div>
     </div>
@@ -470,7 +470,7 @@
       <div class="col-md-12">
         <div class="gallery-carousel owl-carousel owl-theme">
           <div>
-            <img src="https://www.wealthmark.io/assets/img/graphic-1-01.svg" alt="gallery" class="img-fluid" loading="lazy">
+            <img src="{{ asset('img/assets/img/graphic-1-01.svg') }}" alt="gallery" class="img-fluid" loading="lazy">
             <div class="gallery_carousel_text">
               <h3 class="title">Vote to Be Heard </h3>
               <p class="subtitle">Redeem exciting rewards, real life benefits and collectibles from your favorite teams with your Wealthmark Fan Tokens. </p>
@@ -481,7 +481,7 @@
             </div>
           </div>
           <div>
-            <img src="https://www.wealthmark.io/assets/img/wm-marketplace.png" alt="gallery" class="img-fluid" loading="lazy">
+            <img src="{{ asset('img/assets/img/wm-marketplace.png') }}" alt="gallery" class="img-fluid" loading="lazy">
             <div class="gallery_carousel_text">
               <h3 class="title">Vote to Be Heard </h3>
               <p class="subtitle">Redeem exciting rewards, real life benefits and collectibles from your favorite teams with your Wealthmark Fan Tokens. </p>
@@ -492,7 +492,7 @@
             </div>
           </div>
           <div>
-            <img src="https://www.wealthmark.io/assets/img/graphic-1-01.svg" alt="gallery" class="img-fluid" loading="lazy">
+            <img src="{{ asset('img/assets/img/graphic-1-01.svg') }}" alt="gallery" class="img-fluid" loading="lazy">
             <div class="gallery_carousel_text">
               <h3 class="title">Vote to Be Heard </h3>
               <p class="subtitle">Redeem exciting rewards, real life benefits and collectibles from your favorite teams with your Wealthmark Fan Tokens. </p>
@@ -503,7 +503,7 @@
             </div>
           </div>
           <div>
-            <img src="https://www.wealthmark.io/assets/img/wm-marketplace.png" alt="gallery" class="img-fluid" loading="lazy">
+            <img src="{{ asset('img/assets/img/wm-marketplace.png') }}" alt="gallery" class="img-fluid" loading="lazy">
             <div class="gallery_carousel_text">
               <h3 class="title">Vote to Be Heard </h3>
               <p class="subtitle">Redeem exciting rewards, real life benefits and collectibles from your favorite teams with your Wealthmark Fan Tokens. </p>
@@ -514,7 +514,7 @@
             </div>
           </div>
           <div>
-            <img src="https://www.wealthmark.io/assets/img/graphic-1-01.svg" alt="gallery" class="img-fluid" loading="lazy">
+            <img src="{{ asset('img/assets/img/graphic-1-01.svg') }}" alt="gallery" class="img-fluid" loading="lazy">
             <div class="gallery_carousel_text">
               <h3 class="title">Vote to Be Heard </h3>
               <p class="subtitle">Redeem exciting rewards, real life benefits and collectibles from your favorite teams with your Wealthmark Fan Tokens. </p>
@@ -525,7 +525,7 @@
             </div>
           </div>
           <div>
-            <img src="https://www.wealthmark.io/assets/img/wm-marketplace.png" alt="gallery" class="img-fluid" loading="lazy">
+            <img src="{{ asset('img/assets/img/wm-marketplace.png') }}" alt="gallery" class="img-fluid" loading="lazy">
             <div class="gallery_carousel_text">
               <h3 class="title">Vote to Be Heard </h3>
               <p class="subtitle">Redeem exciting rewards, real life benefits and collectibles from your favorite teams with your Wealthmark Fan Tokens. </p>

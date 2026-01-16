@@ -25,7 +25,7 @@
 
                  </div>
                  <div class="col-lg-4 col-md-6 col-sm-6 order-1 order-lg-2 hero-img text-center pb-3" data-aos="zoom-in" data-aos-delay="200">
-                    <img src="{{ asset('assets/img/bmk-vault/wm-ecosystem.png') }}" class="img-fluid w-100 max-width-350px" alt="welathmark">
+                    <img src="{{ asset('img/bmk-vault/wm-ecosystem.png') }}" class="img-fluid w-100 max-width-350px" alt="welathmark">
                  </div>
               </div>
            </div>
@@ -71,7 +71,7 @@
     <!--   <div class="ecosystemt-content-main-left">-->
     <!--  <h3>My Shares</h3>-->
     <!--  <div class="ecosystem-my-shares">-->
-    <!--    <img src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" class="ecosystemt-content-main-left-img">-->
+    <!--    <img src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" class="ecosystemt-content-main-left-img">-->
     <!--    <div class="btn-check-inner">-->
     <!--      <div  class="symbol-dash">-</div>-->
     <!--    </div>-->
@@ -100,7 +100,7 @@
     <div class="ecosystemt-content-main-left">
       <h3>My Shares</h3>
       <div class="ecosystem-my-shares">
-        <img src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" class="ecosystemt-content-main-left-img">
+        <img src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" class="ecosystemt-content-main-left-img">
         <div class="btn-check-inner">
           <div  class="symbol-dash">-</div>
         </div>
@@ -160,7 +160,7 @@
           <div class="reward-div-main-outer">
             <div class="reward-div-main">
               <div class="d-flex align-items-center text-dark">
-                <img class="reward-coin-img" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
+                <img class="reward-coin-img" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
                 <div  class="reward-coin-name">BNB</div>
               </div>
             </div>
@@ -228,9 +228,9 @@
   <div class="ecosystemt-inner">
     <div class="ecosystemt-content-block">
       <div class="ecosystemt-contentinner">
-        <img src="{{ asset('assets/img/bmk-vault/wm-vault.png') }}" class="ecosystemt-img-left max-width-300px">
+        <img src="{{ asset('img/bmk-vault/wm-vault.png') }}" class="ecosystemt-img-left max-width-300px">
         <div class="top-img-box">
-          <img src="{{ asset('assets/img/vault-bg-circle.svg') }}" class="ecosystemt-img">
+          <img src="{{ asset('img/vault-bg-circle.svg') }}" class="ecosystemt-img">
           <div  class="top-img-box-subtitle">What is Wealthmark</div>
         </div>
         <div class="eco-content-left">
@@ -276,13 +276,13 @@
             <h3>Buy Wealthmark</h3>
             <div class="text">Buying Wealthmark is easy. Check the list below to find the place that suits you best!</div>
           </div>
-          <img src="{{ asset('assets/img/vault-buy-wm-right.svg') }}" class="line-img">
+          <img src="{{ asset('img/vault-buy-wm-right.svg') }}" class="line-img">
         </div>
         <div class="our-partner-main">
           <div class="our-partner-block">
             <div class="our-partner-inner">
               <div class="our-partner-inner-div">
-                <img src="{{ asset('assets/img/vault-spendlogo.svg') }}" class="partner-logo">
+                <img src="{{ asset('img/vault-spendlogo.svg') }}" class="partner-logo">
                 <div  class="our-partner-inner-text">Buy &amp; Sell Wealthmark with bank account</div>
 
               </div>
@@ -305,7 +305,7 @@
           <div class="our-partner-block">
             <div class="our-partner-inner">
               <div class="our-partner-inner-div">
-                <img src="{{ asset('assets/img/vault-coinflip.svg') }} " class="partner-logo">
+                <img src="{{ asset('img/vault-coinflip.svg') }} " class="partner-logo">
                 <div  class="our-partner-inner-text">Buy Wealthmark with ATMs</div>
 
               </div>
@@ -328,7 +328,7 @@
           <div class="our-partner-block">
             <div class="our-partner-inner">
               <div class="our-partner-inner-div">
-                <img src="{{ asset('assets/img/vault-gb.svg') }}" class="partner-logo">
+                <img src="{{ asset('img/vault-gb.svg') }}" class="partner-logo">
                 <div  class="our-partner-inner-text">Buy Wealthmark with cash</div>
 
               </div>
@@ -351,7 +351,7 @@
           <div class="our-partner-block">
             <div class="our-partner-inner">
               <div class="our-partner-inner-div">
-                <img src="{{ asset('assets/img/vault-bravelion.svg') }}" class="partner-logo">
+                <img src="{{ asset('img/vault-bravelion.svg') }}" class="partner-logo">
                 <div  class="our-partner-inner-text">Trade Wealthmark and other crypto in Brave Browser</div>
 
               </div>
@@ -378,7 +378,7 @@
           <div class="our-partner-block">
             <div class="our-partner-inner">
               <div class="our-partner-inner-div">
-                <img src="{{ asset('assets/img/vault-metalpay.svg') }}" class="partner-logo">
+                <img src="{{ asset('img/vault-metalpay.svg') }}" class="partner-logo">
                 <div  class="our-partner-inner-text">Purchasing and selling Wealthmark with USD</div>
 
               </div>
@@ -401,7 +401,7 @@
           <div class="our-partner-block">
             <div class="our-partner-inner">
               <div class="our-partner-inner-div">
-                <img src="{{ asset('assets/img/vault-dether.svg') }}" class="partner-logo">
+                <img src="{{ asset('img/vault-dether.svg') }}" class="partner-logo">
                 <div  class="our-partner-inner-text">Buy Wealthmark with cash</div>
 
               </div>
@@ -424,7 +424,7 @@
           <div class="our-partner-block">
             <div class="our-partner-inner">
               <div class="our-partner-inner-div">
-                <img src="{{ asset('assets/img/vault-netcoins.svg') }}" class="partner-logo">
+                <img src="{{ asset('img/vault-netcoins.svg') }}" class="partner-logo">
                 <div  class="our-partner-inner-text">Buy Wealthmark voucher</div>
 
               </div>
@@ -582,7 +582,7 @@
         </div>
         <div class="px-4">
           <div class="mb-3 text-center">
-            <img class="warning-img" src="https://www.wealthmark.io/assets/img/warning.svg">
+            <img class="warning-img" src="{{ asset('img/assets/img/warning.svg') }}">
           </div>
           <h3 class="title mb-3 text-center">Auto Transfer</h3>
           <div class="text"> Turning Auto-transfer on means your corresponding asset (including your interests, new token purchase) in the spot wallet will be transferred to the Earn wallet every 24 hours; you can find the auto-transfer history under [Earn History]-[Savings]-[Flexible]. </div>
@@ -621,7 +621,7 @@
                       </div>
                       <div class="coin-select w-auto">
                         <div class="input-right-img-div">
-                          <img id="Collateral-coin-img" src="https://www.wealthmark.io/assets/img/coins/3222a10d-5618-4100-8476-ee7fe0a6fb12.png" alt="BUSD" title="BUSD">
+                          <img id="Collateral-coin-img" src="{{ asset('img/assets/img/coins/3222a10d-5618-4100-8476-ee7fe0a6fb12.png') }}" alt="BUSD" title="BUSD">
                         </div>
                         <span id="Collateral-coin-text" class="coin">Wm</span>
                       </div>
@@ -709,7 +709,7 @@
             <div class="coin-drop-down-div">
               <div class="coin-drop-down-div-inner" id="coinvert_coin_from">
                 <div class="d-flex">
-                  <img src="https://www.wealthmark.io/assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png" class="coin-drop-down-div-inner-img" id="coinvert_coin_from_img">
+                  <img src="{{ asset('img/assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" class="coin-drop-down-div-inner-img" id="coinvert_coin_from_img">
                   <div class="coin-drop-down-div-inner-txt" id="coinvert_coin_from_text">USDT</div>
                 </div>
                 <svg viewBox="0 0 24 24" fill="none" class="modal-svg-down">
@@ -730,7 +730,7 @@
             <div class="coin-drop-down-div">
               <div class="coin-drop-down-div-inner" id="coinvert_coin_to">
                 <div class="d-flex">
-                  <img src="https://www.wealthmark.io/assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png" class="coin-drop-down-div-inner-img" id="coinvert_coin_to_img">
+                  <img src="{{ asset('img/assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" class="coin-drop-down-div-inner-img" id="coinvert_coin_to_img">
                   <div class="coin-drop-down-div-inner-txt" id="coinvert_coin_to_text">APE</div>
                 </div>
                 <svg viewBox="0 0 24 24" fill="none" class="modal-svg-down">
@@ -804,7 +804,7 @@
                 <li role="option" id="16" title="16" class="wm-dropdown-optn-item " onclick="changeSrc2(this.id)">
                   <div class="wm-dropdown-optn-item-inner">
                     <div class="wm-dropdown-optn-item-div">
-                      <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">
+                      <img class="wm-dropdown-optn-item-img" src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                       <div class="wm-dropdown-optn-item-txt">BTC</div>
                     </div>
                   </div>
@@ -812,7 +812,7 @@
                 <li role="option" id="17" title="17" class="wm-dropdown-optn-item " onclick="changeSrc2(this.id)">
                   <div class="wm-dropdown-optn-item-inner">
                     <div class="wm-dropdown-optn-item-div">
-                      <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">
+                      <img class="wm-dropdown-optn-item-img" src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                       <div class="wm-dropdown-optn-item-txt">BNB</div>
                     </div>
                   </div>
@@ -820,7 +820,7 @@
                 <li role="option" id="14" title="14" class="wm-dropdown-optn-item " onclick="changeSrc2(this.id)">
                   <div class="wm-dropdown-optn-item-inner">
                     <div class="wm-dropdown-optn-item-div">
-                      <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">
+                      <img class="wm-dropdown-optn-item-img" src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                       <div class="wm-dropdown-optn-item-txt">ETH</div>
                     </div>
                   </div>
@@ -828,7 +828,7 @@
                 <li role="option" id="32" title="32" class="wm-dropdown-optn-item " onclick="changeSrc2(this.id)">
                   <div class="wm-dropdown-optn-item-inner">
                     <div class="wm-dropdown-optn-item-div">
-                      <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">
+                      <img class="wm-dropdown-optn-item-img" src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                       <div class="wm-dropdown-optn-item-txt">USDT</div>
                     </div>
                   </div>
@@ -836,7 +836,7 @@
                 <li role="option" id="34" title="34" class="wm-dropdown-optn-item " onclick="changeSrc2(this.id)">
                   <div class="wm-dropdown-optn-item-inner">
                     <div class="wm-dropdown-optn-item-div">
-                      <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">
+                      <img class="wm-dropdown-optn-item-img" src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                       <div class="wm-dropdown-optn-item-txt">Example-5</div>
                     </div>
                   </div>
@@ -844,7 +844,7 @@
                 <li role="option" id="35" title="35" class="wm-dropdown-optn-item " onclick="changeSrc2(this.id)">
                   <div class="wm-dropdown-optn-item-inner">
                     <div class="wm-dropdown-optn-item-div">
-                      <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">
+                      <img class="wm-dropdown-optn-item-img" src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                       <div class="wm-dropdown-optn-item-txt">Example-4</div>
                     </div>
                   </div>
@@ -852,7 +852,7 @@
                 <li role="option" id="36" title="36" class="wm-dropdown-optn-item " onclick="changeSrc2(this.id)">
                   <div class="wm-dropdown-optn-item-inner">
                     <div class="wm-dropdown-optn-item-div">
-                      <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">
+                      <img class="wm-dropdown-optn-item-img" src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                       <div class="wm-dropdown-optn-item-txt">coin-</div>
                     </div>
                   </div>
@@ -860,7 +860,7 @@
                 <li role="option" id="37" title="37" class="wm-dropdown-optn-item " onclick="changeSrc2(this.id)">
                   <div class="wm-dropdown-optn-item-inner">
                     <div class="wm-dropdown-optn-item-div">
-                      <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">
+                      <img class="wm-dropdown-optn-item-img" src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                       <div class="wm-dropdown-optn-item-txt">Example-2</div>
                     </div>
                   </div>
@@ -868,7 +868,7 @@
                 <li role="option" id="38" title="38" class="wm-dropdown-optn-item " onclick="changeSrc2(this.id)">
                   <div class="wm-dropdown-optn-item-inner">
                     <div class="wm-dropdown-optn-item-div">
-                      <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">
+                      <img class="wm-dropdown-optn-item-img" src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                       <div class="wm-dropdown-optn-item-txt">Example-1</div>
                     </div>
                   </div>

@@ -45,7 +45,7 @@
                 </div>
               <div class="col-lg-4 col-md-6">
                   <div class="shadow-sm max-width-350px m-auto cursor-pointer border">
-                      <img  src="https://wealthmark.io/assets/img/chain-img1.png" class="w-100 rounded" alt="New in BMK Chain" title="New in BMK Chain">
+                      <img  src="{{ asset('img/assets/img/chain-img1.png') }}" class="w-100 rounded" alt="New in BMK Chain" title="New in BMK Chain">
                       <div class="p-4">
                           <div class="fs-16 text-blue mb-3">
                               Wealth Mark Chain Builder Grant Opens Door to Innovators
@@ -61,7 +61,7 @@
               </div>
               <div class="col-lg-4 col-md-6">
                   <div class="shadow-sm max-width-350px m-auto cursor-pointer border">
-                      <img  src="https://wealthmark.io/assets/img/chain-img1.png" class="w-100 rounded" alt="New in BMK Chain" title="New in BMK Chain">
+                      <img  src="{{ asset('img/assets/img/chain-img1.png') }}" class="w-100 rounded" alt="New in BMK Chain" title="New in BMK Chain">
                       <div class="p-4">
                           <div class="fs-16 text-blue mb-3">
                               Wealth Mark Chain Builder Grant Opens Door to Innovators
@@ -77,7 +77,7 @@
               </div>
               <div class="col-lg-4 col-md-6">
                   <div class="shadow-sm max-width-350px m-auto cursor-pointer border">
-                      <img  src="https://wealthmark.io/assets/img/chain-img1.png" class="w-100 rounded" title="New in BMK Chain" alt="New in BMK Chain">
+                      <img  src="{{ asset('img/assets/img/chain-img1.png') }}" class="w-100 rounded" title="New in BMK Chain" alt="New in BMK Chain">
                       <div class="p-4">
                           <div class="fs-16 text-blue mb-3">
                               Wealth Mark Chain Builder Grant Opens Door to Innovators
@@ -152,7 +152,7 @@
                 </div>
                 <div class="col-md-6 col-md-6 col-xs-12 order-1 order-lg-2">
                     <div class="build-chain-inner-box">
-                        <img loading="lazy" class="chain-img img-fluid d-block mx-auto max-width-400px" src="{{ asset('assets/img/dex/code.png') }}" alt="Build on BMK Chain" title="Build on BMK Chain">
+                        <img loading="lazy" class="chain-img img-fluid d-block mx-auto max-width-400px" src="{{ asset('img/dex/code.png') }}" alt="Build on BMK Chain" title="Build on BMK Chain">
                     </div>
                 </div>
             </div>
@@ -216,8 +216,8 @@
                     </div>
                 </div>
            </div>
-            <img class="des-app-img one" src="{{ asset('assets/img/many-app-store.svg') }}" alt="WM-Apps on Playstore" title="WM-Apps on Playstore">
-            <img class="des-app-img two" src="{{ asset('assets/img/dex/wmapps-icons-md.svg') }}" alt="WM-Apps on Playstore" title="WM-Apps on Playstore">
+            <img class="des-app-img one" src="{{ asset('img/many-app-store.svg') }}" alt="WM-Apps on Playstore" title="WM-Apps on Playstore">
+            <img class="des-app-img two" src="{{ asset('img/dex/wmapps-icons-md.svg') }}" alt="WM-Apps on Playstore" title="WM-Apps on Playstore">
             </div>
 
            <div class="row align-items-center justify-content-center">

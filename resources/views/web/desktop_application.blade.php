@@ -69,7 +69,7 @@
             </div>
             <div class="row align-items-center justify-content-center text-center">
                <div class="col-md-6 col-sm-8 text-center">
-                  <img src="{{ asset('assets/img/electron-enhance.png') }}" class="img-fluid  w-100" alt="CONNECT WITH THE Wealthmark DESKTOP APP" title="CONNECT WITH THE Wealthmark DESKTOP APP">
+                  <img src="{{ asset('img/electron-enhance.png') }}" class="img-fluid  w-100" alt="CONNECT WITH THE Wealthmark DESKTOP APP" title="CONNECT WITH THE Wealthmark DESKTOP APP">
                </div>
             </div>
          </div>
@@ -89,7 +89,7 @@
                   </div>
                </div>
                 <div class="col-md-6 col-sm-6 text-center order-1 order-lg-2 order-sm-2">
-                  <img src="{{ asset('assets/img/secure-effortless.png') }}" class="img-fluid  w-100" alt="Secure & Effortless" title="Secure & Effortless">
+                  <img src="{{ asset('img/secure-effortless.png') }}" class="img-fluid  w-100" alt="Secure & Effortless" title="Secure & Effortless">
                </div>
             </div>
          </div>
@@ -98,7 +98,7 @@
          <div class="container">
             <div class="row align-items-center justify-content-center">
                <div class="col-md-6 col-sm-6 text-center">
-                  <img src="{{ asset('assets/img/verified-application-.png') }}" class="img-fluid  w-100" alt="Verified Application" title="Verified Application">
+                  <img src="{{ asset('img/verified-application-.png') }}" class="img-fluid  w-100" alt="Verified Application" title="Verified Application">
                </div>
                <div class="col-md-6 col-sm-6">
                   <div class="sec-title text-left">
@@ -130,7 +130,7 @@
                   </div>
                </div>
                     <div class="col-md-6 col-sm-6 text-center order-1 order-lg-2 order-sm-2">
-                  <img src="{{ asset('assets/img/multi-account-access.png') }}" class="img-fluid  w-100" alt="Multi-Account Access" title="Multi-Account Access">
+                  <img src="{{ asset('img/multi-account-access.png') }}" class="img-fluid  w-100" alt="Multi-Account Access" title="Multi-Account Access">
                </div>
             </div>
          </div>
@@ -139,7 +139,7 @@
          <div class="container">
             <div class="row align-items-center justify-content-center">
                <div class="col-md-6 col-sm-6 text-center">
-                  <img src="{{ asset('assets/img/world-wide-support.png') }}" class="img-fluid  w-100" alt="Wealthmark Support" title="World-Wide Support">
+                  <img src="{{ asset('img/world-wide-support.png') }}" class="img-fluid  w-100" alt="Wealthmark Support" title="World-Wide Support">
                </div>
                <div class="col-md-6 col-sm-6">
                   <div class="sec-title text-left">

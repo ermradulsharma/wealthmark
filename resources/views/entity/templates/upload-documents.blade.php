@@ -34,7 +34,7 @@
                             <div class="accordion__header">
                               <h2>
 
-                                <img src="{{ asset('assets/img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io">
+                                <img src="{{ asset('img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io">
                                 Certificate of Incorporation
                               </h2>
                               <span class="accordion__toggle"></span>
@@ -85,7 +85,7 @@
 
                             <div class="accordion__header">
                               <h2>
-                               <img src="{{ asset('assets/img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io">
+                               <img src="{{ asset('img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io">
                                Partnership Agreement
                               </h2>
                               <span class="accordion__toggle"></span>
@@ -132,7 +132,7 @@
 
                             <div class="accordion__header">
                               <h2>
-                               <img src="{{ asset('assets/img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io"> Register of Partners / Certificate of Incumbency/Business Registry or equivalent
+                               <img src="{{ asset('img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io"> Register of Partners / Certificate of Incumbency/Business Registry or equivalent
                               </h2>
                               <span class="accordion__toggle"></span>
                             </div>
@@ -178,7 +178,7 @@
 
                             <div class="accordion__header">
                               <h2>
-                               <img src="{{ asset('assets/img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io"> Current Operating Status
+                               <img src="{{ asset('img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io"> Current Operating Status
                               </h2>
                               <span class="accordion__toggle"></span>
                             </div>
@@ -227,7 +227,7 @@
 
                             <div class="accordion__header">
                               <h2>
-                                <img src="{{ asset('assets/img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io"> AML/CFT Policy or Binance AML Questionnaire
+                                <img src="{{ asset('img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io"> AML/CFT Policy or Binance AML Questionnaire
                               </h2>
                               <span class="accordion__toggle"></span>
                             </div>
@@ -279,7 +279,7 @@
 
                             <div class="accordion__header">
                               <h2>
-                               <img src="{{ asset('assets/img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io"> Operating License
+                               <img src="{{ asset('img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io"> Operating License
                               </h2>
                               <span class="accordion__toggle"></span>
                             </div>
@@ -339,7 +339,7 @@
 
                             <div class="accordion__header">
                               <h2>
-                               <img src="{{ asset('assets/img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io"> Outsourcing / Service Agreement
+                               <img src="{{ asset('img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io"> Outsourcing / Service Agreement
                               </h2>
                               <span class="accordion__toggle"></span>
                             </div>
@@ -400,7 +400,7 @@
 
                             <div class="accordion__header">
                               <h2>
-                                <img src="{{ asset('assets/img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io"> Proof of Address Collection of the Entity
+                                <img src="{{ asset('img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io"> Proof of Address Collection of the Entity
                               </h2>
                               <span class="accordion__toggle"></span>
                             </div>
@@ -467,7 +467,7 @@
 
                             <div class="accordion__header">
                               <h2>
-                               <img src="{{ asset('assets/img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io"> Intermediaries (at least 25% or more)
+                               <img src="{{ asset('img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io"> Intermediaries (at least 25% or more)
                               </h2>
                               <span class="accordion__toggle"></span>
                             </div>
@@ -526,7 +526,7 @@
 
                             <div class="accordion__header">
                               <h2>
-                                <img src="{{ asset('assets/img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io"> Investment Management Agreement or similar delegation of authority
+                                <img src="{{ asset('img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io"> Investment Management Agreement or similar delegation of authority
                               </h2>
                               <span class="accordion__toggle"></span>
                             </div>
@@ -570,7 +570,7 @@
 
                             <div class="accordion__header">
                               <h2>
-                               <img src="{{ asset('assets/img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io"> List of Investors
+                               <img src="{{ asset('img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io"> List of Investors
                               </h2>
                               <span class="accordion__toggle"></span>
                             </div>
@@ -621,7 +621,7 @@
 
                             <div class="accordion__header">
                               <h2>
-                                <img src="{{ asset('assets/img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io"> Offering documents or any marketing material of the fund
+                                <img src="{{ asset('img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io"> Offering documents or any marketing material of the fund
                               </h2>
                               <span class="accordion__toggle"></span>
                             </div>
@@ -667,7 +667,7 @@
 
                             <div class="accordion__header">
                               <h2>
-                               <img src="{{ asset('assets/img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io"> Investment Manager's Register of Directors/Certificate of Incumbency/Business Registry or equivalent
+                               <img src="{{ asset('img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io"> Investment Manager's Register of Directors/Certificate of Incumbency/Business Registry or equivalent
                               </h2>
                               <span class="accordion__toggle"></span>
                             </div>
@@ -720,7 +720,7 @@
 
                             <div class="accordion__header">
                               <h2>
-                               <img src="{{ asset('assets/img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io"> Supplemental Documents (optional)
+                               <img src="{{ asset('img/threedot-blue.png') }}" class="threedotsvg" alt="three dot" title="wealthmark.io"> Supplemental Documents (optional)
                               </h2>
                               <span class="accordion__toggle"></span>
                             </div>

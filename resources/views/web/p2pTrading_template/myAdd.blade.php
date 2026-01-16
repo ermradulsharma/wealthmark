@@ -172,7 +172,7 @@
 	.download-qr-code{
 	    min-height:300px;
 	    padding:20px 0px;
-	    background:url('https://www.wealthmark.io/-gr-bg.png');
+	    background:url('{{ asset('img/-gr-bg.png') }}');
 	    width:100%;
 	    max-width:450px;
 	    margin:auto
@@ -548,7 +548,7 @@
                             <div class="first">
                                 <div id="add-qr-div">
                                     <div class="ads-qr-code">
-                                            <img src="https://www.wealthmark.io/code.png">
+                                            <img src="{{ asset('img/code.png') }}">
                                     </div>
                                     <div class="ads-details">
                                         <div class="flex-div fs-5 justify-content-center p-2">
@@ -624,7 +624,7 @@
 
                             <div class="first w-100 border-0">
                                 <div class="flex-div">
-                                        <img src="https://wealthmark.io/lthmark-logo.svg" alt="dd" class="wealthmark-logo">
+                                        <img src="{{ asset('img/lthmark-logo.svg') }}" alt="dd" class="wealthmark-logo">
 
                                         <span></span>
                                 </div>
@@ -634,7 +634,7 @@
                                     </div>
 
                                     <div class="ads-qr-code mb-4">
-                                            <img src="https://wealthmark.io/lthmark-logo.svg">
+                                            <img src="{{ asset('img/lthmark-logo.svg') }}">
                                     </div>
                                      <div class="flex-div justify-content-between mt-4 mb-3 px-3">
                                         <div>
@@ -937,7 +937,7 @@
                 if(count<3){
                     if(jQuery.inArray(id , checkPaymentMethodIds) == -1){
                         var html ='<div class="d-flex align-items-center border rounded p-2 min-width-100px hover-border cursor-pointer selected-payment-option-div ele_'+id+'">';
-                        html +='<img src="https://wealthmark.io/hboard-icons/bank-account.svg" class="max-width-20px me-2" alt="wealthmark.io">';
+                        html +='<img src="{{ asset('img/hboard-icons/bank-account.svg') }}" class="max-width-20px me-2" alt="wealthmark.io">';
                         html +='<span class="fs-12 added-payment-div" id="'+id+'">'+ Value +'</span>';
                         html += '<span class="bi bi-x-circle-fill " onclick="delMthod('+id+')"></span></div>';
                         $(".selected-payment-option-hide").css("display" , "block")
@@ -970,7 +970,7 @@
         //         // loadpaymentmethod.empty();
 
         //         var html ='<div class="d-flex align-items-center border rounded p-2 min-width-100px hover-border cursor-pointer selected-payment-option-div ele_'+id+'">';
-        //         html +='<img src="https://wealthmark.io/hboard-icons/bank-account.svg" class="max-width-20px me-2" alt="wealthmark.io">';
+        //         html +='<img src="{{ asset('img/hboard-icons/bank-account.svg') }}" class="max-width-20px me-2" alt="wealthmark.io">';
         //         html +='<span class="fs-12 added-payment-div" id="'+id+'">'+ Value +'</span>';
 
         //         html += '<span class="bi bi-x-circle-fill " onclick="delMthod('+id+')"></span></div>';
@@ -1251,7 +1251,7 @@
 
                         var loadpaymentmethod = $('#selected-payment-option');
                         var html = '<div class="d-flex align-items-center border rounded p-2 min-width-100px hover-border cursor-pointer selected-payment-option-div ele_' + id + '">';
-                        html += '<img src="https://wealthmark.io/hboard-icons/bank-account.svg" class="max-width-20px me-2" alt="wealthmark.io">';
+                        html += '<img src="{{ asset('img/hboard-icons/bank-account.svg') }}" class="max-width-20px me-2" alt="wealthmark.io">';
                         html += '<span class="fs-12 added-payment-div" id="' + id + '">' + methodType + '</span>';
                         html += '<span class="bi bi-x-circle-fill" onclick="delMthod(' + id + ')"></span></div>';
 

@@ -24,7 +24,7 @@
                                                   <td class="table-row__td">
                                                     @if($p2p_order->crypto_type == 'BMK')
                                                         <div class="table-row__img">
-                                                            <img src="https://wealthmark.io/storage/app/bmklogo/12.png">
+                                                            <img src="{{ asset('img/storage/app/bmklogo/12.png') }}">
                                                         </div>
                                                         <div class="table-row__info">
                                                           <!--<p class="table-row__name">Bmkoin</p>-->
@@ -34,7 +34,7 @@
 
                                                     @if($p2p_order->crypto_type == 'BTC')
                                                         <div class="table-row__img">
-                                                            <img src="https://wealthmark.io/assets/img/coin-logo/bitcoin.svg">
+                                                            <img src="{{ asset('img/assets/img/coin-logo/bitcoin.svg') }}">
                                                         </div>
                                                         <div class="table-row__info">
                                                           <!--<p class="table-row__name">Bitcoin</p>-->
@@ -44,7 +44,7 @@
 
                                                     @if($p2p_order->crypto_type == 'ETH')
                                                         <div class="table-row__img">
-                                                            <img src="https://wealthmark.io/assets/img/coin-logo/ethereum.svg">
+                                                            <img src="{{ asset('img/assets/img/coin-logo/ethereum.svg') }}">
                                                         </div>
                                                         <div class="table-row__info">
                                                           <!--<p class="table-row__name">Ethereum</p>-->

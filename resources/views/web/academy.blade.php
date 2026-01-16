@@ -57,7 +57,7 @@
             <div class="row mt-3">
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <div class="card">
-                        <img  src="{{ asset('assets/img/academy/dummy-img.png') }}"
+                        <img  src="{{ asset('img/academy/dummy-img.png') }}"
                             class="img-fluid" alt="Academy Latest Release" title="Latest Release">
                         <h5 class="heading-latest-release">What is Wealth Mark BENQI (QI)?</h5>
                         <div class="featured-detaild-block mt-1">
@@ -71,7 +71,7 @@
 
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <div class="card">
-                        <img  src="{{ asset('assets/img/academy/dummy-img.png') }}"
+                        <img  src="{{ asset('img/academy/dummy-img.png') }}"
                             class="img-fluid" alt="Academy Latest Release" title="Latest Release">
                         <h5 class="heading-latest-release">What is Wealth Mark BENQI (QI)?</h5>
                         <div class="featured-detaild-block mt-1">
@@ -84,7 +84,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <div class="card">
-                        <img  src="{{ asset('assets/img/academy/dummy-img.png') }}"
+                        <img  src="{{ asset('img/academy/dummy-img.png') }}"
                             class="img-fluid" alt="Academy Latest Release" title="Latest Release">
                         <h5 class="heading-latest-release">What is Wealth Mark BENQI (QI)?</h5>
                         <div class="featured-detaild-block mt-1">
@@ -97,7 +97,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <div class="card">
-                        <img  src="{{ asset('assets/img/academy/dummy-img.png') }}"
+                        <img  src="{{ asset('img/academy/dummy-img.png') }}"
                             class="img-fluid" alt="Academy Latest Release" title="Latest Release">
                         <h5 class="heading-latest-release">What is Wealth Mark BENQI (QI)?</h5>
                         <div class="featured-detaild-block mt-1">
@@ -112,7 +112,7 @@
 
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <div class="card">
-                        <img  src="{{ asset('assets/img/academy/dummy-img.png') }}"
+                        <img  src="{{ asset('img/academy/dummy-img.png') }}"
                             class="img-fluid" alt="Academy Latest Release" title="Latest Release">
                         <h5 class="heading-latest-release">What is Wealth Mark BENQI (QI)?</h5>
                         <div class="featured-detaild-block mt-1">
@@ -125,7 +125,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <div class="card">
-                        <img  src="{{ asset('assets/img/academy/dummy-img.png') }}"
+                        <img  src="{{ asset('img/academy/dummy-img.png') }}"
                             class="img-fluid" alt="Academy Latest Release" title="Latest Release">
                         <h5 class="heading-latest-release">What is Wealth Mark BENQI (QI)?</h5>
                         <div class="featured-detaild-block mt-1">
@@ -138,7 +138,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <div class="card">
-                        <img  src="{{ asset('assets/img/academy/dummy-img.png') }}"
+                        <img  src="{{ asset('img/academy/dummy-img.png') }}"
                             class="img-fluid" alt="Academy Latest Release" title="Latest Release">
                         <h5 class="heading-latest-release">What is Wealth Mark BENQI (QI)?</h5>
                         <div class="featured-detaild-block mt-1">
@@ -151,7 +151,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <div class="card">
-                        <img  src="{{ asset('assets/img/academy/dummy-img.png') }}"
+                        <img  src="{{ asset('img/academy/dummy-img.png') }}"
                             class="img-fluid" alt="Academy Latest Release" title="Latest Release">
                         <h5 class="heading-latest-release">What is Wealth Mark BENQI (QI)?</h5>
                         <div class="featured-detaild-block mt-1">
@@ -190,7 +190,7 @@
                 </div>
                 <div class="col-md-6 col-lg-7 col-sm-12  order-1 order-lg-2 text-center">
 
-                    <img  src="{{ asset('assets/img/academy/earn-crypto-learning.png') }}" class="max-width-350px" alt="Earn Crypto by learning" title="Earn Crypto by learning">
+                    <img  src="{{ asset('img/academy/earn-crypto-learning.png') }}" class="max-width-350px" alt="Earn Crypto by learning" title="Earn Crypto by learning">
 
 
                 </div>
@@ -204,7 +204,7 @@
             <div class="row bitcoin-inner">
                 <div class="col-md-6 col-xs-6 col-sm-6">
                     <img  class="hero-image  img-fluid"
-                        src="{{ asset('assets/img/academy/keep-eye-bitcoin.png') }}" alt="Keep an eye on Bitcoin" title="Keep an eye on Bitcoin">
+                        src="{{ asset('img/academy/keep-eye-bitcoin.png') }}" alt="Keep an eye on Bitcoin" title="Keep an eye on Bitcoin">
                 </div>
                 <div class="col-md-6 col-xs-6 col-sm-6">
                     <h2>Keep an eye on Bitcoin </h2>
@@ -237,7 +237,7 @@
             <div class="row mt-3">
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <div class="card">
-                        <img  src="{{ asset('assets/img/academy/dummy-img.png') }}" class="img-fluid" alt="Trading Content" title="Trading Content">
+                        <img  src="{{ asset('img/academy/dummy-img.png') }}" class="img-fluid" alt="Trading Content" title="Trading Content">
                         <h5 class="heading-latest-release">Crypto Fear & Index Green</h5>
                         <div class="featured-detaild-block mt-1">
                             <span class="badge bg-warning text-darkg">Beginner </span>
@@ -250,7 +250,7 @@
 
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <div class="card">
-                        <img  src="{{ asset('assets/img/academy/dummy-img.png') }}" class="img-fluid" alt="Trading Content" title="Trading Content">
+                        <img  src="{{ asset('img/academy/dummy-img.png') }}" class="img-fluid" alt="Trading Content" title="Trading Content">
                         <h5 class="heading-latest-release">Now, Keep an eye on Bitcoin</h5>
                         <div class="featured-detaild-block mt-1">
                             <span class="badge bg-warning text-darkg">Beginner </span>
@@ -262,7 +262,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <div class="card">
-                        <img  src="{{ asset('assets/img/academy/dummy-img.png') }}"
+                        <img  src="{{ asset('img/academy/dummy-img.png') }}"
                             class="img-fluid" alt="Trading Content" title="Trading Content">
                         <h5 class="heading-latest-release">Calculate Investment for Future</h5>
                         <div class="featured-detaild-block mt-1">
@@ -275,7 +275,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <div class="card">
-                        <img  src="{{ asset('assets/img/academy/dummy-img.png') }}"
+                        <img  src="{{ asset('img/academy/dummy-img.png') }}"
                             class="img-fluid" alt="Trading Content" title="Trading Content">
                         <h5 class="heading-latest-release">Limit Orders, Calculate Investment </h5>
                         <div class="featured-detaild-block mt-1">
@@ -356,7 +356,7 @@
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                             <div class="academy-inner-box">
                                 <div class="card">
-                                    <img  src="{{ asset('assets/img/academy/dummy-img.png') }}" class="img-fluid" alt="Trading Content" title="Trading Content">
+                                    <img  src="{{ asset('img/academy/dummy-img.png') }}" class="img-fluid" alt="Trading Content" title="Trading Content">
                                     <div class="card-content-block p-2">
                                         <h5 class="m-0">What is Wealth Mark BENQI (QI)?</h5>
                                         <div class="featured-detaild-block mt-1">
@@ -372,7 +372,7 @@
                         <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
                             <div class="academy-inner-box">
                                 <div class="row academy-subscribe-inner-block subscribe-first-block">
-                                    <div class="col-md-6"><img src="{{ asset('assets/img/crypto-slang.png') }}" class="max-width-250px" alt="Trading Content" title="Trading Content">
+                                    <div class="col-md-6"><img src="{{ asset('img/crypto-slang.png') }}" class="max-width-250px" alt="Trading Content" title="Trading Content">
                                     </div>
                                     <div class="col-md-6">
                                         <div class="">
@@ -389,7 +389,7 @@
                             <div class="academy-inner-box">
                                 <div class="row academy-subscribe-inner-block subscribe-first-block">
                                     <div class="col-md-6">
-                                        <img  src="{{ asset('assets/img/crypto-slang.png') }}" class="max-width-250px" alt="Trading Content" title="Trading Content">
+                                        <img  src="{{ asset('img/crypto-slang.png') }}" class="max-width-250px" alt="Trading Content" title="Trading Content">
                                     </div>
                                     <div class="col-md-6">
                                         <div class="">
@@ -405,7 +405,7 @@
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                             <div class="academy-inner-box">
                                 <div class="card">
-                                    <img  src="{{ asset('assets/img/academy/dummy-img.png') }}"
+                                    <img  src="{{ asset('img/academy/dummy-img.png') }}"
                                         class="img-fluid" alt="Trading Content" title="Trading Content">
                                     <div class="card-content-block p-2">
                                         <h5 class="m-0">What is Wealth Mark BENQI (QI)?</h5>
@@ -423,7 +423,7 @@
                             <div class="academy-inner-box">
                                 <div class="row academy-subscribe-inner-block subscribe-first-block subscribe-last-row">
                                     <div class="col-md-3"><img
-                                            src="{{ asset('assets/img/crypto-slang.png') }}"
+                                            src="{{ asset('img/crypto-slang.png') }}"
                                             class="img-fluid float-end">
                                     </div>
                                     <div class="col-md-9">
@@ -438,7 +438,7 @@
                             <div class="academy-inner-box">
                                 <div class="row academy-subscribe-inner-block subscribe-first-block subscribe-last-row">
                                     <div class="col-md-3"><img <img=""
-                                            src="{{ asset('assets/img/banner-img-1.png') }}"
+                                            src="{{ asset('img/banner-img-1.png') }}"
                                             class="img-fluid float-end" alt="Trading Content" title="Trading Content">
                                     </div>
                                     <div class="col-md-9">
@@ -463,7 +463,7 @@
             <div class="row bitcoin-inner">
 
                 <div class="col-md-4">
-                    <img class="max-width-300px" src="{{ asset('assets/img/academy/find.png') }}" alt="Trading Content No Idea" title="Trading Content No Idea">
+                    <img class="max-width-300px" src="{{ asset('img/academy/find.png') }}" alt="Trading Content No Idea" title="Trading Content No Idea">
                 </div>
                 <div class="col-md-8">
                     <h2 class="mt-2">No idea what you just scrolled through?</h2>
@@ -496,7 +496,7 @@
             <div class="row mt-3">
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <div class="card">
-                        <img  src="{{ asset('assets/img/academy/dummy-img.png') }}" class="img-fluid" alt="Essential Trading Content" title="Essential Trading Content">
+                        <img  src="{{ asset('img/academy/dummy-img.png') }}" class="img-fluid" alt="Essential Trading Content" title="Essential Trading Content">
                         <h5 class="heading-latest-release">Crypto Fear & Index Green</h5>
                         <div class="featured-detaild-block mt-1">
                             <span class="badge bg-warning text-darkg">Beginner </span>
@@ -509,7 +509,7 @@
 
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <div class="card">
-                        <img  src="{{ asset('assets/img/academy/dummy-img.png') }}" class="img-fluid" alt="Stacking in Crypto" title="Stacking in Crypto">
+                        <img  src="{{ asset('img/academy/dummy-img.png') }}" class="img-fluid" alt="Stacking in Crypto" title="Stacking in Crypto">
                         <h5 class="heading-latest-release">What Is Staking In Crypto?</h5>
                         <div class="featured-detaild-block mt-1">
                             <span class="badge bg-warning text-darkg">Beginner </span>
@@ -521,7 +521,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <div class="card">
-                        <img  src="{{ asset('assets/img/academy/dummy-img.png') }}" class="img-fluid" alt="Calculate Investment" title="Calculate Investment">
+                        <img  src="{{ asset('img/academy/dummy-img.png') }}" class="img-fluid" alt="Calculate Investment" title="Calculate Investment">
                         <h5 class="heading-latest-release">Calculate Investment.</h5>
                         <div class="featured-detaild-block mt-1">
                             <span class="badge bg-warning text-darkg">Beginner </span>
@@ -533,7 +533,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <div class="card">
-                        <img  src="{{ asset('assets/img/academy/dummy-img.png') }}"
+                        <img  src="{{ asset('img/academy/dummy-img.png') }}"
                             class="img-fluid" alt="Moving Average Explained" title="Moving Average Explained">
                         <h5 class="heading-latest-release">Moving Averages Explained</h5>
                         <div class="featured-detaild-block mt-1">
@@ -566,7 +566,7 @@
 
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <div class="card">
-                        <img  src="{{ asset('assets/img/academy/dummy-img.png') }}"
+                        <img  src="{{ asset('img/academy/dummy-img.png') }}"
                             class="img-fluid" alt="Blockchain Trading Content" title="Blockchain Trading Content">
                         <h5 class="heading-latest-release">Crypto Fear & Index Green</h5>
                         <div class="featured-detaild-block mt-1">
@@ -580,7 +580,7 @@
 
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <div class="card">
-                        <img  src="{{ asset('assets/img/academy/dummy-img.png') }}"
+                        <img  src="{{ asset('img/academy/dummy-img.png') }}"
                             class="img-fluid" alt="Blockchain Trading Content" title="Blockchain Trading Content">
                         <h5 class="heading-latest-release">Keep an eye on Bitcoin</h5>
                         <div class="featured-detaild-block mt-1">
@@ -594,7 +594,7 @@
 
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <div class="card">
-                        <img  src="{{ asset('assets/img/academy/dummy-img.png') }}"
+                        <img  src="{{ asset('img/academy/dummy-img.png') }}"
                             class="img-fluid" alt="Blockchain Trading Content" title="Blockchain Trading Content">
                         <h5 class="heading-latest-release">Calculate Investment</h5>
                         <div class="featured-detaild-block mt-1">
@@ -608,7 +608,7 @@
 
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <div class="card">
-                        <img  src="{{ asset('assets/img/academy/dummy-img.png') }}"
+                        <img  src="{{ asset('img/academy/dummy-img.png') }}"
                             class="img-fluid" alt="Blockchain Trading Content" title="Blockchain Trading Content">
                         <h5 class="heading-latest-release">Limit Order</h5>
                         <div class="featured-detaild-block mt-1">
@@ -630,7 +630,7 @@
                 <div class="col-md-6 col-xs-6 col-sm-6">
                     <div class="row academy-subscribe-inner-block subscribe-first-block">
                         <div class="col-md-6"><img <img
-                                src="{{ asset('assets/img/crypto-slang.png') }}" class="img-fluid float-end" alt="Blockchain Trading Content" title="Blockchain Trading Content">
+                                src="{{ asset('img/crypto-slang.png') }}" class="img-fluid float-end" alt="Blockchain Trading Content" title="Blockchain Trading Content">
                         </div>
                         <div class="col-md-6">
                             <div class="">
@@ -645,7 +645,7 @@
                 <div class="col-md-6 col-xs-6 col-sm-6">
                     <div class="row academy-subscribe-inner-block subscribe-second-block">
                         <div class="col-md-6"><img <img
-                                src="{{ asset('assets/img/academy-learning-material.jpg') }}" class="img-fluid" alt="Blockchain Trading Content" title="Blockchain Trading Content">
+                                src="{{ asset('img/academy-learning-material.jpg') }}" class="img-fluid" alt="Blockchain Trading Content" title="Blockchain Trading Content">
                         </div>
                         <div class="col-md-6">
                             <div class=" float-start">
@@ -724,7 +724,7 @@
             <div class="row bitcoin-inner">
                 <div class="col-md-6 col-xs-6 col-sm-6">
                     <img  class="img-fluid  d-flex mx-auto"
-                        src="{{ asset('assets/img/academy/-signal.png') }}" alt="No noise just signal" title="No noise just signal">
+                        src="{{ asset('img/academy/-signal.png') }}" alt="No noise just signal" title="No noise just signal">
                 </div>
                 <div class="col-md-6 col-xs-6 col-sm-6">
                     <h2 class="subscribe-heading"><strong>No noise. Just signal.</strong></h2>

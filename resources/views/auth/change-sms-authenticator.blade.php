@@ -178,7 +178,7 @@
                     <div id="Auth-complete" style="display:none">
                         <div class="outer-div">
                             <div class="bar-code-div">
-                              <img src="{{ asset('assets/img/auth-icons/create-account.svg') }}" class="complet-img">
+                              <img src="{{ asset('img/auth-icons/create-account.svg') }}" class="complet-img">
                             </div>
                             <div class="complete-text">Email Changed Successfully</div>
                             <div class="subtitle">You have successfully Changed email.</div>

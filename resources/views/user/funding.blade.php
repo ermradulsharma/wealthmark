@@ -8,8 +8,8 @@
     <!--<meta content="" name="description">-->
     <!--<meta content="" name="keywords">-->
     <!--<meta name="theme-color" content="#287aff">-->
-    <!--<link href="{{ asset('assets/img/wealthmark-logo.svg') }}" rel="icon">-->
-    <!--<link href="{{ asset('assets/img/wealthmark-logo.svg') }}" rel="apple-touch-icon">-->
+    <!--<link href="{{ asset('img/wealthmark-logo.svg') }}" rel="icon">-->
+    <!--<link href="{{ asset('img/wealthmark-logo.svg') }}" rel="apple-touch-icon">-->
     <link rel="stylesheet" href="{{ asset('assets/css/dashboard.css') }}">
 
     @include('template.web_css')
@@ -422,7 +422,7 @@
                             <div class="fund-div bg-light-blue shadow-sm mb-3">
                                       <div class="fund-div-text pe-5">
                                           <div class="">
-                                               <img src="{{ asset('assets/img/dashboard-icons/bank-account.svg') }}" alt="">
+                                               <img src="{{ asset('img/dashboard-icons/bank-account.svg') }}" alt="">
                                           </div>
                                           <div>
                                               <span> Buy Crypto</span>
@@ -441,7 +441,7 @@
                             <div class="fund-div bg-light-blue shadow-sm mb-3">
                                       <div class="fund-div-text pe-5">
                                           <div class="">
-                                                <img src="{{ asset('assets/img/dashboard-icons/crypto_deposit.svg') }}" alt="">
+                                                <img src="{{ asset('img/dashboard-icons/crypto_deposit.svg') }}" alt="">
                                           </div>
                                           <div>
                                               <span> Crypto Deposit</span>
@@ -460,7 +460,7 @@
                             <div class="fund-div bg-light-blue shadow-sm mb-3">
                                       <div class="fund-div-text pe-5">
                                           <div class="">
-                                               <img src="{{ asset('assets/img/dashboard-icons/Receive_Crypto.svg') }}" alt="">
+                                               <img src="{{ asset('img/dashboard-icons/Receive_Crypto.svg') }}" alt="">
                                           </div>
                                           <div>
                                               <span> Receive Crypto </span>
@@ -505,7 +505,7 @@
                     <div class="row gap-y-3" id="show-guidance-box">
                         <div class="col-md-12 col-lg-12">
                             <div class="guiding-funding d-flex">
-                                <img src="{{ asset('assets/img/funding-guidance-icon.svg') }} " class="rounded"
+                                <img src="{{ asset('img/funding-guidance-icon.svg') }} " class="rounded"
                                     alt="">
                                 <div class="ps-3">
                                     <h6>Guidance of Funding</h6>
@@ -617,7 +617,7 @@
                 <!--                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">-->
                 <!--                                <div class="broker-tbl-coin-div-main">-->
                 <!--                                    <img class="coin-logo"-->
-                <!--                                        src="{{ asset('assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }} "-->
+                <!--                                        src="{{ asset('img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }} "-->
                 <!--                                        loading="lazy" alt="BTC logo">-->
 
                 <!--                                </div>-->
@@ -701,7 +701,7 @@
                                <tr>
                                    <td>
                                        <div class="broker-tbl-coin-div-main">
-                                                    <img class="coin-logo" src="https://wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png " loading="lazy" alt="BTC logo">
+                                                    <img class="coin-logo" src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }} " loading="lazy" alt="BTC logo">
 
                                                 </div>
                                    </td>
@@ -760,7 +760,7 @@
                               <tr>
                                    <td>
                                        <div class="broker-tbl-coin-div-main">
-                                                    <img class="coin-logo" src="https://wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png " loading="lazy" alt="BTC logo">
+                                                    <img class="coin-logo" src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }} " loading="lazy" alt="BTC logo">
 
                                                 </div>
                                    </td>
@@ -819,7 +819,7 @@
                                <tr>
                                    <td>
                                        <div class="broker-tbl-coin-div-main">
-                                                    <img class="coin-logo" src="https://wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png " loading="lazy" alt="BTC logo">
+                                                    <img class="coin-logo" src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }} " loading="lazy" alt="BTC logo">
 
                                                 </div>
                                    </td>
@@ -878,7 +878,7 @@
                                <tr>
                                    <td>
                                        <div class="broker-tbl-coin-div-main">
-                                                    <img class="coin-logo" src="https://wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png " loading="lazy" alt="BTC logo">
+                                                    <img class="coin-logo" src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }} " loading="lazy" alt="BTC logo">
 
                                                 </div>
                                    </td>
@@ -937,7 +937,7 @@
                                <tr>
                                    <td>
                                        <div class="broker-tbl-coin-div-main">
-                                                    <img class="coin-logo" src="https://wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png " loading="lazy" alt="BTC logo">
+                                                    <img class="coin-logo" src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }} " loading="lazy" alt="BTC logo">
 
                                                 </div>
                                    </td>
@@ -1022,7 +1022,7 @@
             <!--            <div class="tutorial-video-skipable">-->
             <!--                <div class="row gap-y-3 g-2 pb-3 mb-3 border-bottom ms-3">-->
             <!--                    <div class="col-sm-2 col-3">-->
-            <!--                        <img src="{{asset('assets/img/buyCrypto.png') }}" class="w-100 rounded"-->
+            <!--                        <img src="{{asset('img/buyCrypto.png') }}" class="w-100 rounded"-->
             <!--                            alt="">-->
             <!--                    </div>-->
             <!--                    <div class="col-sm-10 col-6">-->
@@ -1035,7 +1035,7 @@
             <!--            <div class="tutorial-video-skipable">-->
             <!--                <div class="row gap-y-3 g-2 pb-3 mb-3 border-bottom ms-3">-->
             <!--                    <div class="col-sm-2 col-3">-->
-            <!--                        <img src="{{asset('assets/img/buyCrypto.png') }}" class="w-100 rounded"-->
+            <!--                        <img src="{{asset('img/buyCrypto.png') }}" class="w-100 rounded"-->
             <!--                            alt="">-->
             <!--                    </div>-->
             <!--                    <div class="col-sm-10 col-6">-->
@@ -1072,7 +1072,7 @@
             <!--        <div class="row gap-y-3" id="show-guidance-box">-->
             <!--            <div class="col-md-12 col-lg-12">-->
             <!--                <div class="guiding-funding d-flex">-->
-            <!--                    <img src="{{ asset('assets/img/funding-guidance-icon.svg') }} " class="rounded"-->
+            <!--                    <img src="{{ asset('img/funding-guidance-icon.svg') }} " class="rounded"-->
             <!--                        alt="">-->
             <!--                    <div class="ps-3">-->
             <!--                        <h6>Guidance of Funding</h6>-->
@@ -1183,7 +1183,7 @@
             <!--                                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">-->
             <!--                                    <div class="broker-tbl-coin-div-main">-->
             <!--                                        <img class="coin-logo"-->
-            <!--                                            src="{{ asset('assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }} "-->
+            <!--                                            src="{{ asset('img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }} "-->
             <!--                                            loading="lazy" alt="BTC logo">-->
 
             <!--                                    </div>-->
@@ -1411,7 +1411,7 @@
                         <div class="fund-div bg-light-blue shadow-sm mb-3">
                                       <div class="fund-div-text pe-5">
                                           <div class="">
-                                              <img src="{{ asset('assets/img/dashboard-icons/bank-account.svg') }}" alt="">
+                                              <img src="{{ asset('img/dashboard-icons/bank-account.svg') }}" alt="">
                                           </div>
                                           <div>
                                               <span> Buy Crypto <span id="video-Buy" class="video cursor-pointer" onClick="openVideo(this.id)"> <i class="bi bi-play-circle-fill"></i> Video Tutorial  </span> </span>
@@ -1430,7 +1430,7 @@
                         <div class="fund-div bg-light-blue shadow-sm mb-3">
                                       <div class="fund-div-text pe-5">
                                           <div class="">
-                                              <img src="{{ asset('assets/img/dashboard-icons/crypto_deposit.svg') }}" alt="">
+                                              <img src="{{ asset('img/dashboard-icons/crypto_deposit.svg') }}" alt="">
                                           </div>
                                           <div>
                                               <span> Crypto Deposit <span id="video-Deposit" class="video cursor-pointer" onClick="openVideo(this.id)"> <i class="bi bi-play-circle-fill"></i> Video Tutorial  </span> </span>
@@ -1449,7 +1449,7 @@
                         <div class="fund-div bg-light-blue shadow-sm mb-3">
                                       <div class="fund-div-text pe-5">
                                           <div class="">
-                                               <img src="{{ asset('assets/img/dashboard-icons/Receive_Crypto.svg') }}" alt="">
+                                               <img src="{{ asset('img/dashboard-icons/Receive_Crypto.svg') }}" alt="">
                                           </div>
                                           <div>
                                               <span> Receive Crypto <span id="video-Receive" class="video cursor-pointer" onClick="openVideo(this.id)"> <i class="bi bi-play-circle-fill"></i> Video Tutorial  </span> </span>

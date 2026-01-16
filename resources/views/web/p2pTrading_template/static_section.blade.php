@@ -99,7 +99,7 @@
                                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb-2">
                                     <div class="steps-inner-box">
                                         <div class="show-number mb-3">
-                                            <img src="{{ asset('assets/img/p2p-trading/place-an-order.svg') }}"   class="img-fluid max-width-60px" alt="gift Card Image">
+                                            <img src="{{ asset('img/p2p-trading/place-an-order.svg') }}"   class="img-fluid max-width-60px" alt="gift Card Image">
                                         </div>
                                         <h4>Place an Order</h4>
                                         <div class="text text-center">Once you place a P2P order, the crypto asset will be escrowed
@@ -112,7 +112,7 @@
                                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb-2">
                                     <div class="steps-inner-box">
                                         <div class="show-number mb-3">
-                                            <img src="{{ asset('assets/img/p2p-trading/pay-the-seller.svg') }}"  class="img-fluid max-width-60px" alt="gift Card Image">
+                                            <img src="{{ asset('img/p2p-trading/pay-the-seller.svg') }}"  class="img-fluid max-width-60px" alt="gift Card Image">
                                         </div>
                                         <h4>Pay the Seller</h4>
                                         <div class="text">Send money to the seller via the suggested payment methods.
@@ -124,7 +124,7 @@
                                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb-2">
                                     <div class="steps-inner-box">
                                         <div class="show-number mb-3">
-                                            <img src="{{ asset('assets/img/p2p-trading/get-your-crypto.svg') }}"  class="img-fluid max-width-60px" alt="gift Card Image">
+                                            <img src="{{ asset('img/p2p-trading/get-your-crypto.svg') }}"  class="img-fluid max-width-60px" alt="gift Card Image">
                                         </div>
                                         <h4>Get your Crypto</h4>
                                         <div class="text">Once the seller confirms receipt of money, the escrowed crypto
@@ -138,7 +138,7 @@
                                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb-2">
                                     <div class="steps-inner-box">
                                         <div class="show-number mb-3">
-                                            <img src="{{ asset('assets/img/p2p-trading/place-an-order.svg') }}"   class="img-fluid max-width-60px" alt="gift Card Image">
+                                            <img src="{{ asset('img/p2p-trading/place-an-order.svg') }}"   class="img-fluid max-width-60px" alt="gift Card Image">
                                         </div>
                                         <h4>Place an Order</h4>
                                         <div class="text text-center">Once you place a P2P order, the crypto asset will be escrowed
@@ -151,7 +151,7 @@
                                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb-2">
                                     <div class="steps-inner-box">
                                         <div class="show-number mb-3">
-                                            <img src="{{ asset('assets/img/p2p-trading/pay-the-seller.svg') }}"  class="img-fluid max-width-60px" alt="gift Card Image">
+                                            <img src="{{ asset('img/p2p-trading/pay-the-seller.svg') }}"  class="img-fluid max-width-60px" alt="gift Card Image">
                                         </div>
                                         <h4>Confirm the Payment</h4>
                                         <div class="text">Check the transaction record in the given payment account, and make sure you receive the money sent by the buyer..</div>
@@ -161,7 +161,7 @@
                                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb-2">
                                     <div class="steps-inner-box">
                                         <div class="show-number mb-3">
-                                            <img src="{{ asset('assets/img/p2p-trading/get-your-crypto.svg') }}"  class="img-fluid max-width-60px" alt="gift Card Image">
+                                            <img src="{{ asset('img/p2p-trading/get-your-crypto.svg') }}"  class="img-fluid max-width-60px" alt="gift Card Image">
                                         </div>
                                         <h4>Release Crypto</h4>
                                         <div class="text">Once you confirm the receipt of money, release crypto to the buyer on Binance P2P.</div>
@@ -198,7 +198,7 @@
                </div>
             </div>
              <div class="exchange-display-img-box" style="display:block">
-               <img src="{{ asset('assets/img/p2p-trading/low-transaction.png') }}"  class="max-width-300px">
+               <img src="{{ asset('img/p2p-trading/low-transaction.png') }}"  class="max-width-300px">
           </div>
          </div>
          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -213,7 +213,7 @@
                </div>
             </div>
              <div class="exchange-display-img-box" >
-             <img src="{{ asset('assets/img/p2p-trading/flexible-payment.png') }}"  class="max-width-300px">
+             <img src="{{ asset('img/p2p-trading/flexible-payment.png') }}"  class="max-width-300px">
           </div>
          </div>
          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -229,7 +229,7 @@
             </div>
 
              <div class="exchange-display-img-box">
-               <img src="{{ asset('assets/img/p2p-trading/trade-preferred.png') }}"  class="max-width-300px">
+               <img src="{{ asset('img/p2p-trading/trade-preferred.png') }}"  class="max-width-300px">
           </div>
          </div>
          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -245,7 +245,7 @@
             </div>
 
              <div class="exchange-display-img-box">
-                         <img src="{{ asset('assets/img/p2p-trading/protecting-your.png') }}"  class="max-width-300px">
+                         <img src="{{ asset('img/p2p-trading/protecting-your.png') }}"  class="max-width-300px">
           </div>
          </div>
 
@@ -253,7 +253,7 @@
          <!--<div class="col-md-6 col-sm-12">-->
          <!--    <div class="d-flex align-items-center w-100 py-3 px-4 my-2">-->
          <!--        <span class="me-3 max-width-80px">-->
-         <!--            <img src="{{ asset('assets/img/p2p-trading/low-transaction-fee.png') }}"  class="max-width-60px" /> -->
+         <!--            <img src="{{ asset('img/p2p-trading/low-transaction-fee.png') }}"  class="max-width-60px" /> -->
          <!--        </span>-->
          <!--        <div>-->
          <!--            <h4 class="title mb-1">Low Transaction Fees</h4>-->
@@ -264,7 +264,7 @@
          <!--    </div>-->
          <!--    <div class="d-flex align-items-center w-100 py-3 px-4 my-2">-->
          <!--        <span class="me-3 max-width-80px">-->
-         <!--            <img src="{{ asset('assets/img/p2p-trading/flexible-payment-methods.png') }}"  class="max-width-60px" /> -->
+         <!--            <img src="{{ asset('img/p2p-trading/flexible-payment-methods.png') }}"  class="max-width-60px" /> -->
          <!--        </span>-->
          <!--        <div>-->
          <!--            <h4 class="title mb-1">Flexible Payment Methods</h4>-->
@@ -275,7 +275,7 @@
          <!--    </div>-->
          <!--    <div class="d-flex align-items-center w-100 py-3 px-4 my-2">-->
          <!--        <span class="me-3 max-width-80px">-->
-         <!--         <img src="{{ asset('assets/img/p2p-trading/trade-preferred-prices.png') }}"  class="max-width-60px" /> -->
+         <!--         <img src="{{ asset('img/p2p-trading/trade-preferred-prices.png') }}"  class="max-width-60px" /> -->
          <!--        </span>-->
          <!--        <div>-->
          <!--            <h4 class="title mb-1">Trade at Your Preferred Prices</h4>-->
@@ -286,7 +286,7 @@
          <!--    </div>-->
          <!--    <div class="d-flex align-items-center w-100 py-3 px-4 my-3">-->
          <!--        <span class="me-3 max-width-80px">-->
-         <!--          <img src="{{ asset('assets/img/p2p-trading/protecting-pricacy.png') }}"  class="max-width-60px" /> -->
+         <!--          <img src="{{ asset('img/p2p-trading/protecting-pricacy.png') }}"  class="max-width-60px" /> -->
          <!--        </span>-->
          <!--        <div>-->
          <!--            <h4 class="title mb-1">Protecting Your Privacy</h4>-->
@@ -297,7 +297,7 @@
          <!--    </div>-->
          <!--</div>-->
          <!--<div class="col-md-6 col-sm-6 hide-768px text-center">-->
-         <!--    <img src="{{ asset('assets/img/p2p-trading/advantages-of-p2p.svg') }}"  class="max-width-300px">-->
+         <!--    <img src="{{ asset('img/p2p-trading/advantages-of-p2p.svg') }}"  class="max-width-300px">-->
          <!--</div>-->
       </div>
    </div>

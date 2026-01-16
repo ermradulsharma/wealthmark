@@ -283,7 +283,7 @@
         <!-- <div class="row">-->
         <!--    <div class="col-12">-->
         <!--          <div class="text-center mt-5 py-5">-->
-        <!--             <img src="{{ asset('assets/img/not-found-icons/no-task-yet.svg') }}" class="no-record-icon" alt="">-->
+        <!--             <img src="{{ asset('img/not-found-icons/no-task-yet.svg') }}" class="no-record-icon" alt="">-->
         <!--             <p class="mt-3">No Tasks Yet.</p>-->
         <!--          </div>-->
         <!--    </div>-->
@@ -300,7 +300,7 @@
       </div>
       <div class="modal-body">
           <div class="col-12 text-center mb-3">
-             <img src="{{ asset('assets/img/dashboard-icons/task-rules.svg') }}" class="no-record-icon" alt="">
+             <img src="{{ asset('img/dashboard-icons/task-rules.svg') }}" class="no-record-icon" alt="">
              <h4 class="mt-3">Task Rules</h4>
           </div>
 

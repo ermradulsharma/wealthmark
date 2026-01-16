@@ -8,8 +8,8 @@
     <meta content="" name="description">
     <meta content="" name="keywords">
     <meta name="theme-color" content="#287aff">
-    <link href="{{ asset('assets/img/wealthmark-logo.svg') }}" rel="icon">
-    <link href="{{ asset('assets/img/wealthmark-logo.svg') }}" rel="apple-touch-icon">
+    <link href="{{ asset('img/wealthmark-logo.svg') }}" rel="icon">
+    <link href="{{ asset('img/wealthmark-logo.svg') }}" rel="apple-touch-icon">
 
     <link rel="stylesheet" href="{{ asset('assets/css/dashboard.css') }}">
     @include('template.web_css')
@@ -78,7 +78,7 @@
                                 <div class="col text-center">
                                     <a href="{{ url( app()->getLocale(), 'simple-earn') }}" class="text-warning">
                                         <div class="fund-icon-contain mx-auto">
-                                            <img src="{{ asset('assets/img/earn-product-icon.svg') }}"
+                                            <img src="{{ asset('img/earn-product-icon.svg') }}"
                                                 class="img-fluid" alt="Earn Product">
                                         </div>
                                         Earn
@@ -88,7 +88,7 @@
                                 <div class="col text-center">
                                     <a href="{{ url( app()->getLocale(), 'auto-invest') }}" class="text-warning">
                                         <div class="fund-icon-contain mx-auto">
-                                            <img src="{{ asset('assets/img/earn-auto-invest-icon.svg') }}"
+                                            <img src="{{ asset('img/earn-auto-invest-icon.svg') }}"
                                                 class="img-fluid" alt="Earn Product">
                                         </div>
                                         Auto-Invest
@@ -97,7 +97,7 @@
                                 <div class="col text-center">
                                     <a href="{{ url( app()->getLocale(), 'eth2') }}" class="text-warning">
                                         <div class="fund-icon-contain mx-auto">
-                                            <img src="{{ asset('assets/img/earn-eth2-icon.svg') }}"
+                                            <img src="{{ asset('img/earn-eth2-icon.svg') }}"
                                                 class="img-fluid" alt="Earn Product">
                                         </div>
                                         E2H 2.0
@@ -190,7 +190,7 @@
                                <tr>
                                    <td>
                                        <div class="broker-tbl-coin-div-main">
-                                                    <img class="coin-logo" src="https://wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png " loading="lazy" alt="BTC logo">
+                                                    <img class="coin-logo" src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }} " loading="lazy" alt="BTC logo">
 
                                                 </div>
                                    </td>
@@ -285,7 +285,7 @@
                                <tr>
                                    <td>
                                        <div class="broker-tbl-coin-div-main">
-                                                    <img class="coin-logo" src="https://wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png " loading="lazy" alt="BTC logo">
+                                                    <img class="coin-logo" src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }} " loading="lazy" alt="BTC logo">
 
                                                 </div>
                                    </td>
@@ -380,7 +380,7 @@
                                  <tr>
                                    <td>
                                        <div class="broker-tbl-coin-div-main">
-                                                    <img class="coin-logo" src="https://wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png " loading="lazy" alt="BTC logo">
+                                                    <img class="coin-logo" src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }} " loading="lazy" alt="BTC logo">
 
                                                 </div>
                                    </td>
@@ -475,7 +475,7 @@
                                  <tr>
                                    <td>
                                        <div class="broker-tbl-coin-div-main">
-                                                    <img class="coin-logo" src="https://wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png " loading="lazy" alt="BTC logo">
+                                                    <img class="coin-logo" src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }} " loading="lazy" alt="BTC logo">
 
                                                 </div>
                                    </td>
@@ -570,7 +570,7 @@
                                  <tr>
                                    <td>
                                        <div class="broker-tbl-coin-div-main">
-                                                    <img class="coin-logo" src="https://wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png " loading="lazy" alt="BTC logo">
+                                                    <img class="coin-logo" src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }} " loading="lazy" alt="BTC logo">
 
                                                 </div>
                                    </td>

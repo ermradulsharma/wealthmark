@@ -48,7 +48,7 @@
                <div class="col-lg-3 col-md-6 col-sm-6">
                    <div class="why-wm-cloud card card-body">
                        <div class="icon">
-                           <img src="{{ asset('assets/img/cloud/liquidity.svg') }}" />
+                           <img src="{{ asset('img/cloud/liquidity.svg') }}" />
                        </div>
                        <div class="why-build-content">
                             <h3 class="mb-3">Liquidity</h3>
@@ -60,7 +60,7 @@
                <div class="col-lg-3 col-md-6 col-sm-6">
                    <div class="why-wm-cloud card card-body">
                        <div class="icon">
-                           <img src="{{ asset('assets/img/cloud/secutiry.svg') }}" />
+                           <img src="{{ asset('img/cloud/secutiry.svg') }}" />
                        </div>
                        <div class="why-build-content">
                             <h3 class="mb-3">Security</h3>
@@ -72,7 +72,7 @@
                <div class="col-lg-3 col-md-6 col-sm-6">
                    <div class="why-wm-cloud card card-body">
                        <div class="icon">
-                           <img src="{{ asset('assets/img/cloud/performance.svg') }}" />
+                           <img src="{{ asset('img/cloud/performance.svg') }}" />
                        </div>
                        <div class="why-build-content">
                             <h3 class="mb-3">Performance</h3>
@@ -84,7 +84,7 @@
                <div class="col-lg-3 col-md-6 col-sm-6">
                    <div class="why-wm-cloud card card-body">
                        <div class="icon">
-                           <img src="{{ asset('assets/img/cloud/independence.svg') }}" />
+                           <img src="{{ asset('img/cloud/independence.svg') }}" />
                        </div>
                        <div class="why-build-content">
                             <h3 class="mb-3">Independence</h3>
@@ -120,56 +120,56 @@
         <!-- Slides -->
         <div class="swiper-slide">
             <div class="box">
-                    <img src="{{ asset('assets/img/cloud/s-icon7.png') }}" class="gray-img">
-                     <img src="{{ asset('assets/img/cloud/s-icon7a.png') }}" class="black-img">
+                    <img src="{{ asset('img/cloud/s-icon7.png') }}" class="gray-img">
+                     <img src="{{ asset('img/cloud/s-icon7a.png') }}" class="black-img">
                      <h3>Management System</h3>
                      <div>Including coin management, risk management, user management, financial management, etc.</div>
             </div>
         </div>
         <div class="swiper-slide">
              <div class="box">
-                    <img src="{{ asset('assets/img/cloud/s-icon1.png') }}" class="gray-img">
-                     <img src="{{ asset('assets/img/cloud/s-icon1a.png') }}" class="black-img">
+                    <img src="{{ asset('img/cloud/s-icon1.png') }}" class="gray-img">
+                     <img src="{{ asset('img/cloud/s-icon1a.png') }}" class="black-img">
                      <h3>Spot Trading</h3>
                      <div>Share the market depth and liquidity with Wealthmark; Support for new coins listing; Provide trading API.</div>
             </div>
         </div>
         <div class="swiper-slide">
              <div class="box">
-                    <img src="{{ asset('assets/img/cloud/s-icon2.png') }}" class="gray-img">
-                     <img src="{{ asset('assets/img/cloud/s-icon2a.png') }}" class="black-img">
+                    <img src="{{ asset('img/cloud/s-icon2.png') }}" class="gray-img">
+                     <img src="{{ asset('img/cloud/s-icon2a.png') }}" class="black-img">
                      <h3>Fiat Trading</h3>
                      <div>Support trading between fiat currencies and crypto currencies.</div>
             </div>
         </div>
         <div class="swiper-slide">
              <div class="box">
-                    <img src="{{ asset('assets/img/cloud/s-icon3.png') }}" class="gray-img">
-                     <img src="{{ asset('assets/img/cloud/s-icon3a.png') }}" class="black-img">
+                    <img src="{{ asset('img/cloud/s-icon3.png') }}" class="gray-img">
+                     <img src="{{ asset('img/cloud/s-icon3a.png') }}" class="black-img">
                      <h3>Futures Trading</h3>
                      <div>Margin mode; Long and short order; delivery contract and perpetual contract; Leverage support up to 125 times.</div>
             </div>
         </div>
         <div class="swiper-slide">
              <div class="box">
-                    <img src="{{ asset('assets/img/cloud/s-icon4.png') }}" class="gray-img">
-                     <img src="{{ asset('assets/img/cloud/s-icon4a.png') }}" class="black-img">
+                    <img src="{{ asset('img/cloud/s-icon4.png') }}" class="gray-img">
+                     <img src="{{ asset('img/cloud/s-icon4a.png') }}" class="black-img">
                      <h3>Quantitative Trading</h3>
                      <div>Provide market making solutions to improve the liquidity for your exchange.</div>
             </div>
         </div>
          <div class="swiper-slide">
              <div class="box">
-                    <img src="{{ asset('assets/img/cloud/s-icon5.png') }}" class="gray-img">
-                     <img src="{{ asset('assets/img/cloud/s-icon5a.png') }}" class="black-img">
+                    <img src="{{ asset('img/cloud/s-icon5.png') }}" class="gray-img">
+                     <img src="{{ asset('img/cloud/s-icon5a.png') }}" class="black-img">
                      <h3>KYC Solution</h3>
                      <div>Professional KYC solution, which protects the platform from financial crimes and risks.</div>
             </div>
         </div>
          <div class="swiper-slide">
              <div class="box">
-                    <img src="{{ asset('assets/img/cloud/s-icon6.png') }}" class="gray-img">
-                     <img src="{{ asset('assets/img/cloud/s-icon6a.png') }}" class="black-img">
+                    <img src="{{ asset('img/cloud/s-icon6.png') }}" class="gray-img">
+                     <img src="{{ asset('img/cloud/s-icon6a.png') }}" class="black-img">
                      <h3>Risk Control</h3>
                      <div>Separation of hot and cold wallets, user behavior monitoring.</div>
             </div>
@@ -186,7 +186,7 @@
 
 <section class="cloud-map">
     <div class="container text-center">
-         <img src="{{ asset('assets/img/cloud/map.png') }}" class="max-width-1000px"/>
+         <img src="{{ asset('img/cloud/map.png') }}" class="max-width-1000px"/>
     </div>
 </section>
 <section class="cloud-Getting-Started">

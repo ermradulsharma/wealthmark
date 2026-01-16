@@ -1260,7 +1260,7 @@
                     <div class="block">
                       <div class="icon">
 
-                        <img src="{{ asset('assets/img/charity/commitments.png') }}" class="w-100" alt="Affiliate img">
+                        <img src="{{ asset('img/charity/commitments.png') }}" class="w-100" alt="Affiliate img">
                       </div>
                       <div class="content">
                         <div class="">
@@ -1282,7 +1282,7 @@
                   <a href="javascript:void(0)">
                     <div class="block">
                       <div class="icon">
-                        <img src="{{ asset('assets/img/charity/impact.png') }}" class="w-100">
+                        <img src="{{ asset('img/charity/impact.png') }}" class="w-100">
                       </div>
                       <div class="content">
                         <div class="">
@@ -1368,7 +1368,7 @@
             <div>
                 <div class="commitments-div humanitarianAid">
       <div class="commitments-div-img">
-        <img src="{{ asset('assets/img/charity/humanitarian-aid.png') }}" class="w-100">
+        <img src="{{ asset('img/charity/humanitarian-aid.png') }}" class="w-100">
       </div>
       <div class="">
         <div class="block">

@@ -119,7 +119,7 @@
                                         <div class="body-div">
 
                                                 <div class="p2p-no-active-order">
-                                                        <img src="{{ asset('assets/img/p2p-trading/empty-list.svg') }}">
+                                                        <img src="{{ asset('img/p2p-trading/empty-list.svg') }}">
                                                         <div class="fs-16 text-muted mt-3">
                                                             No Active Orders
                                                         </div>
@@ -474,7 +474,7 @@
                                 <div class="lf-select-coin-to-active-value lf-select-coin-to-active-div">
 
                                     <div class="wm-dropdown-optn-item-div">
-                                        <img  class="wm-dropdown-optn-item-img" src="https://wealthmark.io/assets/img/country-flag/IN.png">
+                                        <img  class="wm-dropdown-optn-item-img" src="{{ asset('img/assets/img/country-flag/IN.png') }}">
                                         <div class="wm-dropdown-optn-item-txt">India</div>
                                     </div>
                                 </div>
@@ -503,7 +503,7 @@
 
                                                 <div class="wm-dropdown-optn-item-div">
 
-                                                        <img  class="wm-dropdown-optn-item-img" src="{{ asset('assets/img/country-flag/'.$eachCountry->ISO2code.'.png') }}">
+                                                        <img  class="wm-dropdown-optn-item-img" src="{{ asset('img/country-flag/'.$eachCountry->ISO2code.'.png') }}">
 
 
                                                     <div class="wm-dropdown-optn-item-txt">{{$eachCountry->name}}</div>

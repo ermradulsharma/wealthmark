@@ -235,7 +235,7 @@
                         <div class="tab-pane fade show active" id="Trading_Solutions" role="tabpanel" aria-labelledby="Trading_Solutions-tab">
                            <div class="row align-items-center">
                               <div class="col-md-3">
-                                 <img loading="lazy" src="https://wealthmark.io/img/vip-institutional/trading-solutions.png" class="img-fluid offer-prop-img"  alt="Trading Solutions" title="Trading Soltions">
+                                 <img loading="lazy" src="{{ asset('img/vip-institutional/trading-solutions.png') }}" class="img-fluid offer-prop-img"  alt="Trading Solutions" title="Trading Soltions">
                               </div>
                               <div class="col-md-9 tab-right-content d-block justify-content-center align-items-center">
                                  <div class="text">Savings offers a wide selection of digital assets for you to deposit. Flexible Savings allows you to subscribe and earn daily rewards on digital assets,
@@ -250,7 +250,7 @@
                         <div class="tab-pane fade" id="Yield_Products" role="tabpanel" aria-labelledby="Yield_Products-tab">
                            <div class="row align-items-center">
                               <div class="col-md-3">
-                                 <img loading="lazy" src="https://wealthmark.io/img/vip-institutional/yield-products.png" class="img-fluid offer-prop-img" title="Yields Products" alt="Yields Products">
+                                 <img loading="lazy" src="{{ asset('img/vip-institutional/yield-products.png') }}" class="img-fluid offer-prop-img" title="Yields Products" alt="Yields Products">
                               </div>
                               <div class="col-md-9 tab-right-content d-block justify-content-center align-items-center">
                                  <div class="text">Savings offers a wide selection of digital assets for you to deposit. Flexible Savings allows you to subscribe and earn daily rewards on digital assets,
@@ -265,7 +265,7 @@
                         <div class="tab-pane fade" id="professional_services" role="tabpanel" aria-labelledby="professional_services-tab">
                            <div class="row align-items-center">
                               <div class="col-md-3">
-                                 <img loading="lazy" src="https://wealthmark.io/img/vip-institutional/professional-services.png" class="img-fluid offer-prop-img" title="Professional Services" alt="Professional Services">
+                                 <img loading="lazy" src="{{ asset('img/vip-institutional/professional-services.png') }}" class="img-fluid offer-prop-img" title="Professional Services" alt="Professional Services">
                               </div>
                               <div class="col-md-9 tab-right-content d-block justify-content-center align-items-center">
                                  <div class="text">Savings offers a wide selection of digital assets for you to deposit. Flexible Savings allows you to subscribe and earn daily rewards on digital assets,
@@ -280,7 +280,7 @@
                         <div class="tab-pane fade" id="data_reporting" role="tabpanel" aria-labelledby="data_reporting-tab">
                            <div class="row align-items-center">
                               <div class="col-md-3">
-                                 <img loading="lazy" src="https://wealthmark.io/img/vip-institutional/data-reposting.png" class="img-fluid offer-prop-img" alt="Data Reporting" title="Data Reporting">
+                                 <img loading="lazy" src="{{ asset('img/vip-institutional/data-reposting.png') }}" class="img-fluid offer-prop-img" alt="Data Reporting" title="Data Reporting">
                               </div>
                               <div class="col-md-9 tab-right-content d-block justify-content-center align-items-center">
                                  <div class="text">Savings offers a wide selection of digital assets for you to deposit. Flexible Savings allows you to subscribe and earn daily rewards on digital assets,

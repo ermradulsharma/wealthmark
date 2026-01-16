@@ -19,7 +19,7 @@
                    <div class="col-lg-4 col-md-6 offset-lg-1 order-md-2">
                      <div class="login_scan">
                         <div class="qr_code">
-                           <img src="{{ asset('assets/img/qr-code.png') }}" class="img-responsive" />
+                           <img src="{{ asset('img/qr-code.png') }}" class="img-responsive" />
                         </div>
                         <div class="mob_login mb-3">
                            <h2>Buy Crypto in Minutes</h2>
@@ -44,7 +44,7 @@
                             <a href="{{ url('auth/google') }}" class="text-black">
                                 <div class="google">
                                   <div class="google-div">
-                                     <img src="{{ asset('assets/img/google-icon.png') }}" class="other-login-img">
+                                     <img src="{{ asset('img/google-icon.png') }}" class="other-login-img">
 
                                   </div>
                                   <div class="text m-0 p-0">   <strong>Google </strong>  </div>
@@ -54,7 +54,7 @@
                         <div class="apple-login">
                             <div class="apple">
                               <div class="apple-div">
-                                 <img src="{{ asset('assets/img/apple-icon.png') }}" class="other-login-img">
+                                 <img src="{{ asset('img/apple-icon.png') }}" class="other-login-img">
                               </div>
                               <div class="text m-0 p-0">Apple</div>
                            </div>

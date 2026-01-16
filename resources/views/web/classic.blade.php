@@ -7,7 +7,7 @@
   @include('template.web_css')
       <style>
   .classic_services{
-      background:url('https://www.wealthmark.io/assets/img/classic/classic-cover.png');
+      background:url('{{ asset('img/assets/img/classic/classic-cover.png') }}');
   }
 </style>
 
@@ -148,7 +148,7 @@
                       <!--      </clipPath>-->
                       <!--    </defs>-->
                       <!--  </svg>-->
-                      <img src="{{ asset('assets/img/classic/classic-cover-graphic.png') }}" class="w-100 classic-svh-top mb-5" alt="wealthmark classic" />
+                      <img src="{{ asset('img/classic/classic-cover-graphic.png') }}" class="w-100 classic-svh-top mb-5" alt="wealthmark classic" />
                     </div>
                      <div class="col-md-6 col-sm-6 col-xs-12 order-sm-1">
                         <h2 class="heading-h2 text-white mb-0">Wealthmark Best Crypto Currency Partners </h2>
@@ -184,7 +184,7 @@
     <div class="container">
         <div class="row align-items-center " >
             <div class="col-md-6 col-sm-12 col-xs-12">
-            <img src="{{ asset('assets/img/classic/classic-your-asset-management.png') }}" class="w-100" alt="" />
+            <img src="{{ asset('img/classic/classic-your-asset-management.png') }}" class="w-100" alt="" />
 
         </div>
             <div class="col-md-6 col-sm-12 col-xs-12">
@@ -276,7 +276,7 @@
                 </div>
        <div class="Classic_services_tabs_main">
           <div class="Classic_services_tabs_active" id="Normal_Account" onClick="Showdiv(this.id)">
-            <img src="{{ asset('assets/img/classic/classic-normal-sub-account.svg') }}" class="Classic_services_tb_icn" alt="wealthmark classic" />
+            <img src="{{ asset('img/classic/classic-normal-sub-account.svg') }}" class="Classic_services_tb_icn" alt="wealthmark classic" />
             <div class="Classic_services_tb_div">
               <div  class="Classic_services_tb_title">Normal Sub-Account</div>
               <div  class="Classic_services_tb_sbtitle">Fund Segregation and Risk Management</div>
@@ -284,14 +284,14 @@
           </div>
           <div class="Classic_services_tabs" id="Management__Account" onClick="Showdiv(this.id)">
 
-             <img src="{{ asset('assets/img/classic/classic-class-asset-management-sub-account.svg') }}" class="Classic_services_tb_icn" alt="wealthmark classic" />
+             <img src="{{ asset('img/classic/classic-class-asset-management-sub-account.svg') }}" class="Classic_services_tb_icn" alt="wealthmark classic" />
             <div class="Classic_services_tb_div">
               <div  class="Classic_services_tb_title">Asset Management Sub-Account</div>
               <div  class="Classic_services_tb_sbtitle">Entrust Your Accounts to Professional Asset Managers</div>
             </div>
           </div>
           <div class="Classic_services_tabs" id="Manage__Account" onClick="Showdiv(this.id)">
-            <img src="{{ asset('assets/img/classic/classic-managed-sub-account.svg') }}" class="Classic_services_tb_icn">
+            <img src="{{ asset('img/classic/classic-managed-sub-account.svg') }}" class="Classic_services_tb_icn">
             <div class="Classic_services_tb_div">
               <div  class="Classic_services_tb_title">Managed Sub-Account</div>
               <div  class="Classic_services_tb_sbtitle">Diversify Portfolio with Multiple Trading Teams</div>
@@ -304,7 +304,7 @@
              <div class="pb-5">
                  <div class="row align-items-center justify-content-between">
                      <div class="col-md-6 col-sm-12 col-xs-12">
-                         <img src="https://www.wealthmark.io/assets/img/classic/normal-sub-account-graphic.svg" class="img-fluid " alt="" >
+                         <img src="{{ asset('img/assets/img/classic/normal-sub-account-graphic.svg') }}" class="img-fluid " alt="" >
                      </div>
                       <div class="col-md-6 col-sm-12 col-xs-12">
                          <div class="text pt-4">
@@ -339,7 +339,7 @@
              <div class="pb-5">
                  <div class="row align-items-center justify-content-between">
                      <div class="col-md-6 col-sm-12 col-xs-12 order-md-2 text-center">
-                         <img src="https://www.wealthmark.io/assets/img/classic/classic-key-benefits.svg" class="img-fluid  w-75" alt="" >
+                         <img src="{{ asset('img/assets/img/classic/classic-key-benefits.svg') }}" class="img-fluid  w-75" alt="" >
                      </div>
                       <div class="col-md-6 col-sm-12 col-xs-12 order-md-1">
                          <h3 class="title mb-4">
@@ -485,7 +485,7 @@
              <div class="pb-5">
                  <div class="row align-items-center justify-content-between">
                      <div class="col-md-6 col-sm-12 col-xs-12">
-                         <img src="{{ asset('assets/img/classic/classic-class-asset-management-sub-account-graphic.svg') }} " class="img-fluid " alt="" >
+                         <img src="{{ asset('img/classic/classic-class-asset-management-sub-account-graphic.svg') }} " class="img-fluid " alt="" >
                      </div>
                       <div class="col-md-6 col-sm-12 col-xs-12">
                          <div class="text pt-4">
@@ -516,7 +516,7 @@
              <div class="pb-5">
                  <div class="row align-items-center justify-content-between">
                      <div class="col-md-6 col-sm-12 col-xs-12 order-md-2 text-center">
-                         <img src="https://www.wealthmark.io/assets/img/classic/classic-key-benefits.svg" class="img-fluid  w-75" alt="" >
+                         <img src="{{ asset('img/assets/img/classic/classic-key-benefits.svg') }}" class="img-fluid  w-75" alt="" >
                      </div>
                       <div class="col-md-6 col-sm-12 col-xs-12 order-md-1">
                          <h3 class="title mb-4">
@@ -663,7 +663,7 @@
              <div class="pb-5">
                  <div class="row align-items-center justify-content-between">
                      <div class="col-md-6 col-sm-12 col-xs-12">
-                         <img src="{{ asset('assets/img/classic/classic-managed-graphic.png') }} " class="img-fluid " alt="" >
+                         <img src="{{ asset('img/classic/classic-managed-graphic.png') }} " class="img-fluid " alt="" >
                      </div>
                       <div class="col-md-6 col-sm-12 col-xs-12">
                          <div class="text pt-4">
@@ -694,7 +694,7 @@
              <div class="pb-5">
                  <div class="row align-items-center justify-content-between">
                      <div class="col-md-6 col-sm-12 col-xs-12 order-md-2 text-center">
-                         <img src="https://www.wealthmark.io/assets/img/classic/classic-key-benefits.svg" class="img-fluid  w-75" alt="" >
+                         <img src="{{ asset('img/assets/img/classic/classic-key-benefits.svg') }}" class="img-fluid  w-75" alt="" >
                      </div>
                       <div class="col-md-6 col-sm-12 col-xs-12 order-md-1">
                          <h3 class="title mb-4">

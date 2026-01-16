@@ -138,7 +138,7 @@
                   </div>
                     <div class="coin-select">
                   <div class="input-right-img-div" >
-                    <img id="barrow-coin-img" src="{{ asset('assets/img/coins/3222a10d-5618-4100-8476-ee7fe0a6fb12.png') }}" alt="BUSD" title="BUSD">
+                    <img id="barrow-coin-img" src="{{ asset('img/coins/3222a10d-5618-4100-8476-ee7fe0a6fb12.png') }}" alt="BUSD" title="BUSD">
                   </div>
                   <span id="barrow-coin-text" class="coin">BUSD</span>
                   <svg  viewBox="0 0 16 16" fill="none" class="arrow svg-down-arrow">
@@ -162,7 +162,7 @@
                                 <div class="">
                                   <div class="select-drop-list-div-inner">
                                     <div class="select-drp-img-name-div">
-                                      <img class="barrow-drdn-img" src="https://www.wealthmark.io/assets/img/coins/3222a10d-5618-4100-8476-ee7fe0a6fb12.png" alt="USDT" title="USDT">
+                                      <img class="barrow-drdn-img" src="{{ asset('img/assets/img/coins/3222a10d-5618-4100-8476-ee7fe0a6fb12.png') }}" alt="USDT" title="USDT">
                                     </div>
                                     <div class="select-drp-coin-name-div">
                                       <div class="select-drp-coin-title barrow-drdn-text">USDT</div>
@@ -175,7 +175,7 @@
                                 <div class="">
                                   <div class="select-drop-list-div-inner">
                                     <div class="select-drp-img-name-div">
-                                      <img class="barrow-drdn-img" src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png" alt="BUSD" title="BUSD">
+                                      <img class="barrow-drdn-img" src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}" alt="BUSD" title="BUSD">
                                     </div>
                                     <div class="select-drp-coin-name-div">
                                       <div  class="select-drp-coin-title barrow-drdn-text">BUSD</div>
@@ -209,7 +209,7 @@
 
                 <div class="coin-select">
                   <div class="input-right-img-div">
-                    <img id="Collateral-coin-img" src="{{ asset('assets/img/coins/3222a10d-5618-4100-8476-ee7fe0a6fb12.png') }}" alt="BUSD" title="BUSD">
+                    <img id="Collateral-coin-img" src="{{ asset('img/coins/3222a10d-5618-4100-8476-ee7fe0a6fb12.png') }}" alt="BUSD" title="BUSD">
                   </div>
                   <span id="Collateral-coin-text" class="coin">Wm</span>
                   <svg  viewBox="0 0 16 16" fill="none" class="arrow svg-down-arrow">
@@ -233,7 +233,7 @@
                                 <div class="">
                                   <div class="select-drop-list-div-inner">
                                     <div class="select-drp-img-name-div">
-                                      <img class="barrow-drdn-img" src="https://www.wealthmark.io/assets/img/coins/3222a10d-5618-4100-8476-ee7fe0a6fb12.png" alt="USDT" title="USDT">
+                                      <img class="barrow-drdn-img" src="{{ asset('img/assets/img/coins/3222a10d-5618-4100-8476-ee7fe0a6fb12.png') }}" alt="USDT" title="USDT">
                                     </div>
                                     <div class="select-drp-coin-name-div">
                                       <div class="select-drp-coin-title barrow-drdn-text">USDT</div>
@@ -246,7 +246,7 @@
                                 <div class="">
                                   <div class="select-drop-list-div-inner">
                                     <div class="select-drp-img-name-div">
-                                      <img class="barrow-drdn-img" src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png" alt="BUSD" title="BUSD">
+                                      <img class="barrow-drdn-img" src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}" alt="BUSD" title="BUSD">
                                     </div>
                                     <div class="select-drp-coin-name-div">
                                       <div  class="select-drp-coin-title barrow-drdn-text">BUSD</div>

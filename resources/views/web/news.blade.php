@@ -96,7 +96,7 @@
                                                 <label class="toggle" for="toggle-btn-social-1">
                                                    <input type="checkbox" id="toggle-btn-social-1" />
                                                    <div class="social-share-hover-share-btn">
-                                                      <!--<img src="{{ asset('assets/img/icon-share.svg') }}" class="fa-share-alt">-->
+                                                      <!--<img src="{{ asset('img/icon-share.svg') }}" class="fa-share-alt">-->
                                                       <svg  viewBox="0 0 24 24" fill="none" class="tp_icon fa-share-alt">
                                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5 10a3.5 3.5 0 10-3.476-3.09L8.62 9.216a3.5 3.5 0 100 5.568l4.403 2.306a3.5 3.5 0 101.16-2.214L9.94 12.652a3.52 3.52 0 000-1.304l4.245-2.224A3.487 3.487 0 0016.5 10z" fill="currentColor"></path>
                                                       </svg>
@@ -125,7 +125,7 @@
                                              <label class="toggle" for="toggle-btn-social-1-1">
                                                 <input type="checkbox" id="toggle-btn-social-1-1" />
                                                 <div class="social-share-hover-share-btn">
-                                                   <!--<img src="{{ asset('assets/img/icon-share.svg') }}" class="fa-share-alt">-->
+                                                   <!--<img src="{{ asset('img/icon-share.svg') }}" class="fa-share-alt">-->
                                                    <svg  viewBox="0 0 24 24" fill="none" class="tp_icon fa-share-alt">
                                                       <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5 10a3.5 3.5 0 10-3.476-3.09L8.62 9.216a3.5 3.5 0 100 5.568l4.403 2.306a3.5 3.5 0 101.16-2.214L9.94 12.652a3.52 3.52 0 000-1.304l4.245-2.224A3.487 3.487 0 0016.5 10z" fill="currentColor"></path>
                                                    </svg>
@@ -180,7 +180,7 @@
                                                       <label class="toggle" for="toggle-btn-social-2">
                                                          <input type="checkbox" id="toggle-btn-social-2" />
                                                          <div class="social-share-hover-share-btn">
-                                                            <!--<img src="{{ asset('assets/img/icon-share.svg') }}" class="fa-share-alt">-->
+                                                            <!--<img src="{{ asset('img/icon-share.svg') }}" class="fa-share-alt">-->
                                                             <svg  viewBox="0 0 24 24" fill="none" class="tp_icon fa-share-alt">
                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5 10a3.5 3.5 0 10-3.476-3.09L8.62 9.216a3.5 3.5 0 100 5.568l4.403 2.306a3.5 3.5 0 101.16-2.214L9.94 12.652a3.52 3.52 0 000-1.304l4.245-2.224A3.487 3.487 0 0016.5 10z" fill="currentColor"></path>
                                                             </svg>
@@ -235,7 +235,7 @@
                            <div class="col-md-3">
                               <div class="card">
                                  <div class="card-img">
-                                    <img src="https://www.wealthmark.io/assets/img/drawers.jpg" class="img-fluid">
+                                    <img src="{{ asset('img/assets/img/drawers.jpg') }}" class="img-fluid">
                                  </div>
                                  <div class="card-img-overlay">Slide 1</div>
                               </div>
@@ -245,7 +245,7 @@
                            <div class="col-md-3">
                               <div class="card">
                                  <div class="card-img">
-                                    <img src="https://www.wealthmark.io/assets/img/drawers.jpg" class="img-fluid">
+                                    <img src="{{ asset('img/assets/img/drawers.jpg') }}" class="img-fluid">
                                  </div>
                                  <div class="card-img-overlay">Slide 2</div>
                               </div>
@@ -255,7 +255,7 @@
                            <div class="col-md-3">
                               <div class="card">
                                  <div class="card-img">
-                                    <img src="https://www.wealthmark.io/assets/img/drawers.jpg" class="img-fluid">
+                                    <img src="{{ asset('img/assets/img/drawers.jpg') }}" class="img-fluid">
                                  </div>
                                  <div class="card-img-overlay">Slide 3</div>
                               </div>
@@ -265,7 +265,7 @@
                            <div class="col-md-3">
                               <div class="card">
                                  <div class="card-img">
-                                    <img src="https://www.wealthmark.io/assets/img/drawers.jpg" class="img-fluid">
+                                    <img src="{{ asset('img/assets/img/drawers.jpg') }}" class="img-fluid">
                                  </div>
                                  <div class="card-img-overlay">Slide 4</div>
                               </div>
@@ -275,7 +275,7 @@
                            <div class="col-md-3">
                               <div class="card">
                                  <div class="card-img">
-                                    <img src="https://www.wealthmark.io/assets/img/drawers.jpg" class="img-fluid">
+                                    <img src="{{ asset('img/assets/img/drawers.jpg') }}" class="img-fluid">
                                  </div>
                                  <div class="card-img-overlay">Slide 5</div>
                               </div>
@@ -285,7 +285,7 @@
                            <div class="col-md-3">
                               <div class="card">
                                  <div class="card-img">
-                                    <img src="https://www.wealthmark.io/assets/img/drawers.jpg" class="img-fluid">
+                                    <img src="{{ asset('img/assets/img/drawers.jpg') }}" class="img-fluid">
                                  </div>
                                  <div class="card-img-overlay">Slide 6</div>
                               </div>
@@ -338,7 +338,7 @@
                   <div class="col-md-12 work-one latest_news" data-filter="vectors">
                      <div class="card">
                         <div class="card-left">
-                           <img src="https://www.wealthmark.io/assets/img/drawers.jpg" class="img-responsIve">
+                           <img src="{{ asset('img/assets/img/drawers.jpg') }}" class="img-responsIve">
                         </div>
                         <div class="card-right">
                            <div class="">
@@ -348,7 +348,7 @@
                            <div class="card-right-body">
                               <div class="press-blog-auther">
                                  <div class="card-rb-1">
-                                    <img src="{{ asset('assets/img/abt-team-3.jpg') }}" alt="">
+                                    <img src="{{ asset('img/abt-team-3.jpg') }}" alt="">
                                  </div>
                                  <div class="card-rb-2">
                                     <div class="card-rb-2-title fw-7">Michelle Appleton</div>
@@ -359,7 +359,7 @@
                                  <label class="toggle" for="toggle-btn-social-3">
                                     <input type="checkbox" id="toggle-btn-social-3" />
                                     <div class="social-share-hover-share-btn">
-                                       <img src="{{ asset('assets/img/icon-share.svg') }}" class="fa-share-alt">
+                                       <img src="{{ asset('img/icon-share.svg') }}" class="fa-share-alt">
                                        <i class="bi bi-x"></i>
                                        <div class="social-share-hover">
                                           <a href="#"><i class="bi bi-facebook"></i></a>
@@ -377,7 +377,7 @@
                   <div class="col-md-12 work-one" data-filter="Business">
                      <div class="card">
                         <div class="card-left">
-                           <img src="https://www.wealthmark.io/assets/img/drawers.jpg" class="img-responsIve">
+                           <img src="{{ asset('img/assets/img/drawers.jpg') }}" class="img-responsIve">
                         </div>
                         <div class="card-right">
                            <div class="">
@@ -387,7 +387,7 @@
                            <div class="card-right-body">
                               <div class="press-blog-auther">
                                  <div class="card-rb-1">
-                                    <img src="{{ asset('assets/img/abt-team-3.jpg') }}" alt="">
+                                    <img src="{{ asset('img/abt-team-3.jpg') }}" alt="">
                                  </div>
                                  <div class="card-rb-2">
                                     <div class="card-rb-2-title fw-7">Michelle Appleton</div>
@@ -398,7 +398,7 @@
                                  <label class="toggle" for="toggle-btn-social-4">
                                     <input type="checkbox" id="toggle-btn-social-4" />
                                     <div class="social-share-hover-share-btn">
-                                       <img src="{{ asset('assets/img/icon-share.svg') }}" class="fa-share-alt">
+                                       <img src="{{ asset('img/icon-share.svg') }}" class="fa-share-alt">
                                        <i class="bi bi-x"></i>
                                        <div class="social-share-hover">
                                           <a href="#"><i class="bi bi-facebook"></i></a>
@@ -416,7 +416,7 @@
                   <div class="col-md-12 work-one" data-filter="vectors">
                      <div class="card">
                         <div class="card-left">
-                           <img src="https://www.wealthmark.io/assets/img/drawers.jpg" class="img-responsIve">
+                           <img src="{{ asset('img/assets/img/drawers.jpg') }}" class="img-responsIve">
                         </div>
                         <div class="card-right">
                            <div class="">
@@ -426,7 +426,7 @@
                            <div class="card-right-body">
                               <div class="press-blog-auther">
                                  <div class="card-rb-1">
-                                    <img src="{{ asset('assets/img/abt-team-3.jpg') }}" alt="">
+                                    <img src="{{ asset('img/abt-team-3.jpg') }}" alt="">
                                  </div>
                                  <div class="card-rb-2">
                                     <div class="card-rb-2-title fw-7">Michelle Appleton</div>
@@ -437,7 +437,7 @@
                                  <label class="toggle" for="toggle-btn-social-5">
                                     <input type="checkbox" id="toggle-btn-social-5" />
                                     <div class="social-share-hover-share-btn">
-                                       <img src="{{ asset('assets/img/icon-share.svg') }}" class="fa-share-alt">
+                                       <img src="{{ asset('img/icon-share.svg') }}" class="fa-share-alt">
                                        <i class="bi bi-x"></i>
                                        <div class="social-share-hover">
                                           <a href="#"><i class="bi bi-facebook"></i></a>
@@ -455,7 +455,7 @@
                   <div class="col-md-12 work-one" data-filter="Business">
                      <div class="card">
                         <div class="card-left">
-                           <img src="https://www.wealthmark.io/assets/img/drawers.jpg" class="img-responsIve">
+                           <img src="{{ asset('img/assets/img/drawers.jpg') }}" class="img-responsIve">
                         </div>
                         <div class="card-right">
                            <div class="">
@@ -465,7 +465,7 @@
                            <div class="card-right-body">
                               <div class="press-blog-auther">
                                  <div class="card-rb-1">
-                                    <img src="{{ asset('assets/img/abt-team-3.jpg') }}" alt="">
+                                    <img src="{{ asset('img/abt-team-3.jpg') }}" alt="">
                                  </div>
                                  <div class="card-rb-2">
                                     <div class="card-rb-2-title fw-7">Michelle Appleton</div>
@@ -476,7 +476,7 @@
                                  <label class="toggle" for="toggle-btn-social-6">
                                     <input type="checkbox" id="toggle-btn-social-6" />
                                     <div class="social-share-hover-share-btn">
-                                       <img src="{{ asset('assets/img/icon-share.svg') }}" class="fa-share-alt">
+                                       <img src="{{ asset('img/icon-share.svg') }}" class="fa-share-alt">
                                        <i class="bi bi-x"></i>
                                        <div class="social-share-hover">
                                           <a href="#"><i class="bi bi-facebook"></i></a>
@@ -494,7 +494,7 @@
                   <div class="col-md-12 work-one" data-filter="Markets">
                      <div class="card">
                         <div class="card-left">
-                           <img src="https://www.wealthmark.io/assets/img/drawers.jpg" class="img-responsIve">
+                           <img src="{{ asset('img/assets/img/drawers.jpg') }}" class="img-responsIve">
                         </div>
                         <div class="card-right">
                            <div class="">
@@ -504,7 +504,7 @@
                            <div class="card-right-body">
                               <div class="press-blog-auther">
                                  <div class="card-rb-1">
-                                    <img src="{{ asset('assets/img/abt-team-3.jpg') }}" alt="">
+                                    <img src="{{ asset('img/abt-team-3.jpg') }}" alt="">
                                  </div>
                                  <div class="card-rb-2">
                                     <div class="card-rb-2-title fw-7">Michelle Appleton</div>
@@ -515,7 +515,7 @@
                                  <label class="toggle" for="toggle-btn-social-8">
                                     <input type="checkbox" id="toggle-btn-social-8" />
                                     <div class="social-share-hover-share-btn">
-                                       <img src="{{ asset('assets/img/icon-share.svg') }}" class="fa-share-alt">
+                                       <img src="{{ asset('img/icon-share.svg') }}" class="fa-share-alt">
                                        <i class="bi bi-x"></i>
                                        <div class="social-share-hover">
                                           <a href="#"><i class="bi bi-facebook"></i></a>
@@ -533,7 +533,7 @@
                   <div class="col-md-12 work-one" data-filter="Technology">
                      <div class="card">
                         <div class="card-left">
-                           <img src="https://www.wealthmark.io/assets/img/drawers.jpg" class="img-responsIve">
+                           <img src="{{ asset('img/assets/img/drawers.jpg') }}" class="img-responsIve">
                         </div>
                         <div class="card-right">
                            <div class="">
@@ -543,7 +543,7 @@
                            <div class="card-right-body">
                               <div class="press-blog-auther">
                                  <div class="card-rb-1">
-                                    <img src="{{ asset('assets/img/abt-team-3.jpg') }}" alt="">
+                                    <img src="{{ asset('img/abt-team-3.jpg') }}" alt="">
                                  </div>
                                  <div class="card-rb-2">
                                     <div class="card-rb-2-title fw-7">Michelle Appleton</div>
@@ -554,7 +554,7 @@
                                  <label class="toggle" for="toggle-btn-social-9">
                                     <input type="checkbox" id="toggle-btn-social-9" />
                                     <div class="social-share-hover-share-btn">
-                                       <img src="{{ asset('assets/img/icon-share.svg') }}" class="fa-share-alt">
+                                       <img src="{{ asset('img/icon-share.svg') }}" class="fa-share-alt">
                                        <i class="bi bi-x"></i>
                                        <div class="social-share-hover">
                                           <a href="#"><i class="bi bi-facebook"></i></a>
@@ -572,7 +572,7 @@
                   <div class="col-md-12 work-one" data-filter="Policy">
                      <div class="card">
                         <div class="card-left">
-                           <img src="https://www.wealthmark.io/assets/img/drawers.jpg" class="img-responsIve">
+                           <img src="{{ asset('img/assets/img/drawers.jpg') }}" class="img-responsIve">
                         </div>
                         <div class="card-right">
                            <div class="">
@@ -582,7 +582,7 @@
                            <div class="card-right-body">
                               <div class="press-blog-auther">
                                  <div class="card-rb-1">
-                                    <img src="{{ asset('assets/img/abt-team-3.jpg') }}" alt="">
+                                    <img src="{{ asset('img/abt-team-3.jpg') }}" alt="">
                                  </div>
                                  <div class="card-rb-2">
                                     <div class="card-rb-2-title fw-7">Michelle Appleton</div>
@@ -593,7 +593,7 @@
                                  <label class="toggle" for="toggle-btn-social-10">
                                     <input type="checkbox" id="toggle-btn-social-10" />
                                     <div class="social-share-hover-share-btn">
-                                       <img src="{{ asset('assets/img/icon-share.svg') }}" class="fa-share-alt">
+                                       <img src="{{ asset('img/icon-share.svg') }}" class="fa-share-alt">
                                        <i class="bi bi-x"></i>
                                        <div class="social-share-hover">
                                           <a href="#"><i class="bi bi-facebook"></i></a>
@@ -611,7 +611,7 @@
                   <div class="col-md-12 work-one" data-filter="Policy">
                      <div class="card">
                         <div class="card-left">
-                           <img src="https://www.wealthmark.io/assets/img/drawers.jpg" class="img-responsIve">
+                           <img src="{{ asset('img/assets/img/drawers.jpg') }}" class="img-responsIve">
                         </div>
                         <div class="card-right">
                            <div class="">
@@ -621,7 +621,7 @@
                            <div class="card-right-body">
                               <div class="press-blog-auther">
                                  <div class="card-rb-1">
-                                    <img src="{{ asset('assets/img/abt-team-3.jpg') }}" alt="">
+                                    <img src="{{ asset('img/abt-team-3.jpg') }}" alt="">
                                  </div>
                                  <div class="card-rb-2">
                                     <div class="card-rb-2-title fw-7">Michelle Appleton</div>
@@ -632,7 +632,7 @@
                                  <label class="toggle" for="toggle-btn-social-11">
                                     <input type="checkbox" id="toggle-btn-social-11" />
                                     <div class="social-share-hover-share-btn">
-                                       <img src="{{ asset('assets/img/icon-share.svg') }}" class="fa-share-alt">
+                                       <img src="{{ asset('img/icon-share.svg') }}" class="fa-share-alt">
                                        <i class="bi bi-x"></i>
                                        <div class="social-share-hover">
                                           <a href="#"><i class="bi bi-facebook"></i></a>

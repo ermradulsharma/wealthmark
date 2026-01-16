@@ -1,0 +1,11 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M34 26V32H38V26H44V22H38V16H34V22H28V26H34Z" fill="#76808F"/>
+<path d="M6 36C6 31.5817 9.58172 28 14 28H22C26.4183 28 30 31.5817 30 36V42H6V36Z" fill="#76808F"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M27 15C27 10.0294 22.9706 6 18 6C13.0294 6 9 10.0294 9 15C9 19.9706 13.0294 24 18 24C22.9706 24 27 19.9706 27 15Z" fill="url(#ocbs_select1_linear)"/>
+<defs>
+<linearGradient id="ocbs_select1_linear" x1="18" y1="24" x2="18" y2="6" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F0B90B"/>
+<stop offset="1" stop-color="#F8D33A"/>
+</linearGradient>
+</defs>
+</svg>

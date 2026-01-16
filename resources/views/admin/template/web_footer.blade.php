@@ -6,7 +6,7 @@
    <div class="opensidebar">
       <div class="sidebar-header">
          <div class="col"><a href="{{ url('/') }}" class="navbar-brand">
-            <img src="{{ asset('assets/img/wealthmark-logo.svg') }}" alt="" class="wealthmark-logo">
+            <img src="{{ asset('img/wealthmark-logo.svg') }}" alt="" class="wealthmark-logo">
             </a>
          </div>
          <div class="col text-right"> <i class="close-sidebar bi bi-x"></i></div>

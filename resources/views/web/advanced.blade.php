@@ -49,7 +49,7 @@
         <div class="container">
             <div class="row align-items-center p-2">
              <div class="col-lg-6 col-md-12 col-sm-12  order-lg-last text-center">
-                   <img src="{{ asset('assets/img/advanced/welcome-to-wm.png') }}" class="img-fluid w-100 animated max-width-450px" alt="">
+                   <img src="{{ asset('img/advanced/welcome-to-wm.png') }}" class="img-fluid w-100 animated max-width-450px" alt="">
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="sec-title text-left mb-2">
@@ -331,7 +331,7 @@
           <div class="d-flex align-items-center">
             <a href="#" class="wm-link">
               <div  class="broker-tbl-coin-div-main">
-                <img class="coin-logo" src="{{ asset('assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }} " loading="lazy" alt="BTC logo">
+                <img class="coin-logo" src="{{ asset('img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }} " loading="lazy" alt="BTC logo">
                 <div class="name-area ">
                   <p class="broker-tbl-coin-title">Bitcoin</p>
                   <div  class="coin-item-symbol-div">
@@ -384,7 +384,7 @@
         </td>
         <td style="text-align: end;">
           <a href="#" class="wm-link">
-            <img src="{{ asset('assets/img/brokers/grapgh.svg') }}">
+            <img src="{{ asset('img/brokers/grapgh.svg') }}">
           </a>
         </td>
 
@@ -405,7 +405,7 @@
           <div class="d-flex align-items-center">
             <a href="#" class="wm-link">
               <div  class="broker-tbl-coin-div-main">
-                <img class="coin-logo" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}"  alt="BNB logo">
+                <img class="coin-logo" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}"  alt="BNB logo">
                 <div class="name-area ">
                   <p class="broker-tbl-coin-title">BNB</p>
                   <div  class="coin-item-symbol-div">
@@ -457,7 +457,7 @@
         </td>
         <td style="text-align: end;">
           <a href="#" class="wm-link">
-            <img src="{{ asset('assets/img/brokers/grapgh.svg') }}">
+            <img src="{{ asset('img/brokers/grapgh.svg') }}">
           </a>
         </td>
 
@@ -477,7 +477,7 @@
           <div class="d-flex align-items-center">
             <a href="#" class="wm-link">
               <div  class="broker-tbl-coin-div-main">
-                <img class="coin-logo" src="{{ asset('assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }} " loading="lazy" alt="BTC logo">
+                <img class="coin-logo" src="{{ asset('img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }} " loading="lazy" alt="BTC logo">
                 <div class="name-area ">
                   <p class="broker-tbl-coin-title">Bitcoin</p>
                   <div  class="coin-item-symbol-div">
@@ -530,7 +530,7 @@
         </td>
         <td style="text-align: end;">
           <a href="#" class="wm-link">
-            <img src="{{ asset('assets/img/brokers/grapgh.svg') }}">
+            <img src="{{ asset('img/brokers/grapgh.svg') }}">
           </a>
         </td>
 
@@ -551,7 +551,7 @@
           <div class="d-flex align-items-center">
             <a href="#" class="wm-link">
               <div  class="broker-tbl-coin-div-main">
-                <img class="coin-logo" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}"  alt="BNB logo">
+                <img class="coin-logo" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}"  alt="BNB logo">
                 <div class="name-area ">
                   <p class="broker-tbl-coin-title">BNB</p>
                   <div  class="coin-item-symbol-div">
@@ -603,7 +603,7 @@
         </td>
         <td style="text-align: end;">
           <a href="#" class="wm-link">
-            <img src="{{ asset('assets/img/brokers/grapgh.svg') }}">
+            <img src="{{ asset('img/brokers/grapgh.svg') }}">
           </a>
         </td>
 
@@ -623,7 +623,7 @@
           <div class="d-flex align-items-center">
             <a href="#" class="wm-link">
               <div  class="broker-tbl-coin-div-main">
-                <img class="coin-logo" src="{{ asset('assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }} " loading="lazy" alt="BTC logo">
+                <img class="coin-logo" src="{{ asset('img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }} " loading="lazy" alt="BTC logo">
                 <div class="name-area ">
                   <p class="broker-tbl-coin-title">Bitcoin</p>
                   <div  class="coin-item-symbol-div">
@@ -676,7 +676,7 @@
         </td>
         <td style="text-align: end;">
           <a href="#" class="wm-link">
-            <img src="{{ asset('assets/img/brokers/grapgh.svg') }}">
+            <img src="{{ asset('img/brokers/grapgh.svg') }}">
           </a>
         </td>
 
@@ -697,7 +697,7 @@
           <div class="d-flex align-items-center">
             <a href="#" class="wm-link">
               <div  class="broker-tbl-coin-div-main">
-                <img class="coin-logo" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}"  alt="BNB logo">
+                <img class="coin-logo" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}"  alt="BNB logo">
                 <div class="name-area ">
                   <p class="broker-tbl-coin-title">BNB</p>
                   <div  class="coin-item-symbol-div">
@@ -749,7 +749,7 @@
         </td>
         <td style="text-align: end;">
           <a href="#" class="wm-link">
-            <img src="{{ asset('assets/img/brokers/grapgh.svg') }}">
+            <img src="{{ asset('img/brokers/grapgh.svg') }}">
           </a>
         </td>
 
@@ -769,7 +769,7 @@
           <div class="d-flex align-items-center">
             <a href="#" class="wm-link">
               <div  class="broker-tbl-coin-div-main">
-                <img class="coin-logo" src="{{ asset('assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }} " loading="lazy" alt="BTC logo">
+                <img class="coin-logo" src="{{ asset('img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }} " loading="lazy" alt="BTC logo">
                 <div class="name-area ">
                   <p class="broker-tbl-coin-title">Bitcoin</p>
                   <div  class="coin-item-symbol-div">
@@ -822,7 +822,7 @@
         </td>
         <td style="text-align: end;">
           <a href="#" class="wm-link">
-            <img src="{{ asset('assets/img/brokers/grapgh.svg') }}">
+            <img src="{{ asset('img/brokers/grapgh.svg') }}">
           </a>
         </td>
 
@@ -843,7 +843,7 @@
           <div class="d-flex align-items-center">
             <a href="#" class="wm-link">
               <div  class="broker-tbl-coin-div-main">
-                <img class="coin-logo" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}"  alt="BNB logo">
+                <img class="coin-logo" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}"  alt="BNB logo">
                 <div class="name-area ">
                   <p class="broker-tbl-coin-title">BNB</p>
                   <div  class="coin-item-symbol-div">
@@ -895,7 +895,7 @@
         </td>
         <td style="text-align: end;">
           <a href="#" class="wm-link">
-            <img src="{{ asset('assets/img/brokers/grapgh.svg') }}">
+            <img src="{{ asset('img/brokers/grapgh.svg') }}">
           </a>
         </td>
 

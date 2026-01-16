@@ -15,11 +15,11 @@ class CreateLogTable extends Migration
         $userInstance = config('user-activity-log.user_model') ?? '\App\Models\User';
 
         Schema::create('logs', function (Blueprint $table) use ($userInstance){
-            $table->id();
+                $table->id();
             $table->foreignIdFor($userInstance);
             $table->dateTime('log_datetime');
-            $table->string('table_name',50)->nullable();
-            $table->string('log_type',50);
+            $table->string('table_name')->nullable();
+            $table->string('log_type');
             $table->json('request_info');
             $table->json('data')->nullable();
         });

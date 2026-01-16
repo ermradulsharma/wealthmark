@@ -25,7 +25,7 @@
                   <p class="top-p">Easily trade and manage your cryptocurrency assets using our seamless buy/sell/swap process. Buy crypto with credit/debit card or bank transfer and receive crypto or fiat currency directly to your personal wallet.</p>
                </div>
                <div class="col-lg-6 col-md-6 order-1 order-lg-2 order-md-2 order-sm-1 col-xs-1 hero-img d-flex align-items-center" data-aos="zoom-in" data-aos-delay="200">
-                  <img src="{{ asset('assets/img/graphic-1-01.svg') }}" class="img-fluid animated w-100 h-100" alt="buy-dogecoin image" title="buy-dogecoin banner">
+                  <img src="{{ asset('img/graphic-1-01.svg') }}" class="img-fluid animated w-100 h-100" alt="buy-dogecoin image" title="buy-dogecoin banner">
                </div>
             </div>
          </div>
@@ -269,7 +269,7 @@
                <div class="right-section">
                   <div class="Coin-purchare-active">
                      <div class="CP-active-div">
-                        <img src="{{ asset('assets/img/doge-coin.png') }}" class="CP-active-img" title="DOGE price" alt="DOGE price">
+                        <img src="{{ asset('img/doge-coin.png') }}" class="CP-active-img" title="DOGE price" alt="DOGE price">
                         <div class="CP-active-div-">
                            <h4 class="CP-active--title">
                               <a href="#">DOGE price</a>
@@ -290,7 +290,7 @@
                   </div>
                   <div class="Coin-sgst-list">
                      <a  href="#" class="Coin-sgst-list-link">
-                        <img src="{{ asset('assets/img/3a8c9fe6-2a76-4ace-aa07-415d994de6f0.png') }}" class="Coin-sgst-img" title="Currency Icons" alt="Currency Icons">
+                        <img src="{{ asset('img/3a8c9fe6-2a76-4ace-aa07-415d994de6f0.png') }}" class="Coin-sgst-img" title="Currency Icons" alt="Currency Icons">
                         <h3 class="Coin-sgst-title">ethereum (ETH)</h3>
                         <svg viewBox="0 0 24 24" fill="none" class="Coin-sgst-icn">
                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.288 12l-3.89 3.89 1.768 1.767L15.823 12l-1.768-1.768-3.889-3.889-1.768 1.768 3.89 3.89z" fill="currentColor"></path>
@@ -299,7 +299,7 @@
                   </div>
                   <div class="Coin-sgst-list">
                      <a href="#" class="Coin-sgst-list-link">
-                        <img src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" class="Coin-sgst-img" title="Currency Icons" alt="Currency Icons">
+                        <img src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" class="Coin-sgst-img" title="Currency Icons" alt="Currency Icons">
                         <h3 class="Coin-sgst-title">Wealthmark</h3>
                         <svg viewBox="0 0 24 24" fill="none" class="Coin-sgst-icn">
                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.288 12l-3.89 3.89 1.768 1.767L15.823 12l-1.768-1.768-3.889-3.889-1.768 1.768 3.89 3.89z" fill="currentColor"></path>
@@ -308,7 +308,7 @@
                   </div>
                   <div class="Coin-sgst-list">
                      <a href="#" class="Coin-sgst-list-link">
-                        <img src="{{ asset('assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}" class="Coin-sgst-img" title="Currency Icons" alt="Currency Icons">
+                        <img src="{{ asset('img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}" class="Coin-sgst-img" title="Currency Icons" alt="Currency Icons">
                         <h3 class="Coin-sgst-title">Bitcoin (BTC)</h3>
                         <svg viewBox="0 0 24 24" fill="none" class="Coin-sgst-icn">
                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.288 12l-3.89 3.89 1.768 1.767L15.823 12l-1.768-1.768-3.889-3.889-1.768 1.768 3.89 3.89z" fill="currentColor"></path>
@@ -317,7 +317,7 @@
                   </div>
                   <div class="Coin-sgst-list">
                      <a href="#" class="Coin-sgst-list-link">
-                        <img src="{{ asset('assets/img/3222a10d-5618-4100-8476-ee7fe0a6fb12.png') }}" class="Coin-sgst-img" title="Currency Icons" alt="Currency Icons">
+                        <img src="{{ asset('img/3222a10d-5618-4100-8476-ee7fe0a6fb12.png') }}" class="Coin-sgst-img" title="Currency Icons" alt="Currency Icons">
                         <h3 class="Coin-sgst-title">BUSD</h3>
                         <svg viewBox="0 0 24 24" fill="none" class="Coin-sgst-icn">
                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.288 12l-3.89 3.89 1.768 1.767L15.823 12l-1.768-1.768-3.889-3.889-1.768 1.768 3.89 3.89z" fill="currentColor"></path>
@@ -326,7 +326,7 @@
                   </div>
                   <div class="Coin-sgst-list">
                      <a href="#" class="Coin-sgst-list-link">
-                        <img src="{{ asset('assets/img/4766a9cc-8545-4c2b-bfa4-cad2be91c135.png') }}" class="Coin-sgst-img" title="Currency Icons" alt="Currency Icons">
+                        <img src="{{ asset('img/4766a9cc-8545-4c2b-bfa4-cad2be91c135.png') }}" class="Coin-sgst-img" title="Currency Icons" alt="Currency Icons">
                         <h3 class="Coin-sgst-title">Ripple (XRP)</h3>
                         <svg viewBox="0 0 24 24" fill="none" class="Coin-sgst-icn">
                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.288 12l-3.89 3.89 1.768 1.767L15.823 12l-1.768-1.768-3.889-3.889-1.768 1.768 3.89 3.89z" fill="currentColor"></path>
@@ -335,7 +335,7 @@
                   </div>
                   <div class="Coin-sgst-list">
                      <a href="#" class="Coin-sgst-list-link">
-                        <img src="{{ asset('assets/img/359ca651-a084-4010-92d8-4eaff96e6384.png') }}" class="Coin-sgst-img" title="Currency Icons" alt="Currency Icons">
+                        <img src="{{ asset('img/359ca651-a084-4010-92d8-4eaff96e6384.png') }}" class="Coin-sgst-img" title="Currency Icons" alt="Currency Icons">
                         <h3 class="Coin-sgst-title">Litecoin (LTC)</h3>
                         <svg viewBox="0 0 24 24" fill="none" class="Coin-sgst-icn">
                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.288 12l-3.89 3.89 1.768 1.767L15.823 12l-1.768-1.768-3.889-3.889-1.768 1.768 3.89 3.89z" fill="currentColor"></path>

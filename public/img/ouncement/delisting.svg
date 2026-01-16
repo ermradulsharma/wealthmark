@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit Evaluation Version) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100px" height="100px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 77.26 77.26"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil2 {fill:#233862}
+    .fil0 {fill:#EFB30C}
+    .fil1 {fill:white}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2295493027280">
+   <g>
+    <path class="fil0" d="M38.63 42.57c5.27,0 9.53,4.26 9.53,9.53 0,5.27 -4.26,9.53 -9.53,9.53 -5.27,0 -9.53,-4.26 -9.53,-9.53 0,-5.27 4.26,-9.53 9.53,-9.53z"/>
+    <path class="fil1" d="M38.63 44.15c4.39,0 7.95,3.56 7.95,7.95 0,4.39 -3.56,7.95 -7.95,7.95 -4.39,0 -7.95,-3.56 -7.95,-7.95 0,-4.39 3.56,-7.95 7.95,-7.95z"/>
+    <polygon class="fil0" points="33.82,51.17 43.44,51.17 43.44,53.03 33.82,53.03 "/>
+   </g>
+   <polygon class="fil0" points="12.39,18.07 13.63,18.07 64.87,18.07 64.87,47.26 64.86,47.66 64.87,48.06 64.87,77.26 12.46,77.26 12.39,77.26 "/>
+   <polygon class="fil2" points="77.26,12.83 64.87,18.06 64.87,77.26 77.26,77.26 "/>
+   <polygon class="fil2" points="0,12.83 12.39,18.06 12.39,77.26 0,77.26 "/>
+   <rect class="fil2" transform="matrix(7.34993E-15 0.191101 -1.54893 2.82486E-14 55.5436 -9.33449E-05)" width="28.96" height="21.84"/>
+   <rect class="fil2" x="21.72" width="5.53" height="18.07"/>
+   <rect class="fil2" x="50.01" width="5.53" height="18.07"/>
+   <path class="fil1" d="M38.63 27.91c10.91,0 19.75,8.85 19.75,19.75 0,10.91 -8.84,19.75 -19.75,19.75 -10.91,0 -19.75,-8.84 -19.75,-19.75 0,-10.9 8.84,-19.75 19.75,-19.75z"/>
+   <polygon class="fil0" points="26.68,45.36 50.58,45.36 50.58,49.97 26.68,49.97 "/>
+  </g>
+ </g>
+</svg>

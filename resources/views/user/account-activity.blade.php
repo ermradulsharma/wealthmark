@@ -679,7 +679,7 @@
                                         <tr>
                                             <td colspan="3">
                                                 <div class="text-center mt-5 py-5">
-                                                    <img src="{{asset('assets/img/not-found-icons/no-vouchers.svg') }}" class="no-record-icon" alt="">
+                                                    <img src="{{asset('img/not-found-icons/no-vouchers.svg') }}" class="no-record-icon" alt="">
                                                     <p class="mt-3">No Record Found.</p>
                                                 </div>
                                             </td>
@@ -721,7 +721,7 @@
                                         <tr>
                                             <td colspan="3">
                                                 <div class="text-center mt-5 py-5">
-                                                    <img src="{{asset('assets/img/not-found-icons/no-vouchers.svg') }}" class="no-record-icon" alt="">
+                                                    <img src="{{asset('img/not-found-icons/no-vouchers.svg') }}" class="no-record-icon" alt="">
                                                     <p class="mt-3">No Record Found.</p>
                                                 </div>
                                             </td>

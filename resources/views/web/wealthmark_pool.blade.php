@@ -134,7 +134,7 @@
           <h3 class="title">Steady Earnings</h3>
           <p class="description">Lorem ipsum dolor sit amet conse ctetur adipisicing elit. Qui quaerat fugit quas veniam perferendis repudiandae sequi, dolore quisquam illum.</p>
           <div class="service-icon">
-            <img  src="https://wealthmark.io/img/wealthmark-pool/steady-earnings.svg" alt="Wealthmark Pool" class="w-75">
+            <img  src="{{ asset('img/wealthmark-pool/steady-earnings.svg') }}" alt="Wealthmark Pool" class="w-75">
           </div>
         </div>
       </div>
@@ -143,7 +143,7 @@
           <h3 class="title">Comprehensive Service</h3>
           <p class="description">Lorem ipsum dolor sit amet conse ctetur adipisicing elit. Qui quaerat fugit quas veniam perferendis repudiandae sequi, dolore quisquam illum.</p>
           <div class="service-icon">
-           <img  src="https://wealthmark.io/img/wealthmark-pool/comprehensive-service.svg" alt="Wealthmark Pool" class="w-75">
+           <img  src="{{ asset('img/wealthmark-pool/comprehensive-service.svg') }}" alt="Wealthmark Pool" class="w-75">
           </div>
         </div>
       </div>
@@ -152,7 +152,7 @@
           <h3 class="title">Wealth Mark Services</h3>
           <p class="description">Lorem ipsum dolor sit amet conse ctetur adipisicing elit. Qui quaerat fugit quas veniam perferendis repudiandae sequi, dolore quisquam illum.</p>
           <div class="service-icon">
-            <img  src="https://wealthmark.io/img/wealthmark-pool/wealthmark-services.svg" alt="Wealthmark Pool" class="w-75">
+            <img  src="{{ asset('img/wealthmark-pool/wealthmark-services.svg') }}" alt="Wealthmark Pool" class="w-75">
           </div>
         </div>
       </div>

@@ -43,7 +43,7 @@
                                         
                                              </div>
                                              <!--<div class="col-lg-5 col-md-6 col-sm-8 pt-5 pb-5  order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">-->
-                                             <!--   <img src="https://www.wealthmark.io/Trading/otc-cover-graphic.png" class="img-fluid animated" alt="wealthmark otc-trading">-->
+                                             <!--   <img src="{{ asset('img/Trading/otc-cover-graphic.png') }}" class="img-fluid animated" alt="wealthmark otc-trading">-->
                                              <!--</div>-->
                                          <div class="col-md-12">
                                              <div class="Refer_points">
@@ -261,7 +261,7 @@
                                              
                                              </div>
                                              <div class="col-lg-5 col-md-6 col-sm-8 pt-5 pb-5  order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-                                                <img src="https://www.wealthmark.io/Trading/otc-cover-graphic.png" class="img-fluid animated" alt="wealthmark otc-trading">
+                                                <img src="{{ asset('img/Trading/otc-cover-graphic.png') }}" class="img-fluid animated" alt="wealthmark otc-trading">
                                              </div>
                                          
                                        </div>

@@ -301,7 +301,7 @@ p{text-align:center;}
                                              </div>
                                              <div class="lf-select-coin-to-active-div">
                                                 <div class="wm-dropdown-optn-item-div">
-                                                   <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                                   <img class="wm-dropdown-optn-item-img" src="{{ asset('img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                                    <div class="wm-dropdown-optn-item-txt">INR</div>
                                                 </div>
                                              </div>
@@ -319,7 +319,7 @@ p{text-align:center;}
                                                    <li role="option" id="{{ $currency->id }}" title="{{ $currency->id }}" class="wm-dropdown-optn-item " onclick="changeSrc2(this.id); changeSrc4(this.id)" style="display: list-item;">
                                                       <div class="wm-dropdown-optn-item-inner">
                                                          <div class="wm-dropdown-optn-item-div">
-                                                            <img class="wm-dropdown-optn-item-img" src="https://www.wealthmark.io/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                                            <img class="wm-dropdown-optn-item-img" src="{{ asset('img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                                             <div class="wm-dropdown-optn-item-txt">{{ $currency->name }}</div>
                                                          </div>
                                                       </div>

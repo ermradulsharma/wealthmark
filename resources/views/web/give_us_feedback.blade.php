@@ -24,7 +24,7 @@
                   <a class="btn btn-yellow feedback-history-btn yellow shadow">My Feedback History </a>
                </div>
                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 order-1 order-lg-2 hero-img text-center" data-aos="zoom-in" data-aos-delay="200">
-                  <img src="{{ asset('assets/img/feedback/cover-graphic.png') }}" class="max-width-450px animated" alt="Give us feedback" title="Give us feedback">
+                  <img src="{{ asset('img/feedback/cover-graphic.png') }}" class="max-width-450px animated" alt="Give us feedback" title="Give us feedback">
                </div>
             </div>
          </div>
@@ -40,7 +40,7 @@
                <div class="col-md-6 col-lg-6 ol-xs-12 col-sm-12">
                   <a href="javascript:void(0)">
                      <div class="feedback-inner-box alert alert-warning d-flex">
-                        <img src="{{ asset('assets/img/feedback/localization.png') }}" class="max-width-30px" alt="Submit Feedback" title="Submit Feedback">
+                        <img src="{{ asset('img/feedback/localization.png') }}" class="max-width-30px" alt="Submit Feedback" title="Submit Feedback">
                         <div class="feedback-content-box">
                            <h4>
                               <span>Localization & Language </span>
@@ -53,7 +53,7 @@
                <div class="col-md-6 col-lg-6 ol-xs-12 col-sm-12">
                   <a href="javascript:void(0)">
                      <div class="feedback-inner-box alert alert-warning d-flex">
-                        <img src="{{ asset('assets/img/feedback/localization.png') }}" class="max-width-30px" alt="Submit Feedback" title="Submit Feedback">
+                        <img src="{{ asset('img/feedback/localization.png') }}" class="max-width-30px" alt="Submit Feedback" title="Submit Feedback">
                         <div class="feedback-content-box">
                            <h4>
                               <span>Localization & Language </span>
@@ -68,7 +68,7 @@
                <div class="col-md-6 col-lg-6 ol-xs-12 col-sm-12">
                   <a href="javascript:void(0)">
                      <div class="feedback-inner-box alert alert-warning d-flex">
-                        <img src="{{ asset('assets/img/feedback/design-layout.png') }}" class="max-width-30px" alt="Submit Feedback" title="Submit Feedback">
+                        <img src="{{ asset('img/feedback/design-layout.png') }}" class="max-width-30px" alt="Submit Feedback" title="Submit Feedback">
                         <div class="feedback-content-box">
                            <h4>
                               <span>Localization & Language </span>
@@ -81,7 +81,7 @@
                <div class="col-md-6 col-lg-6 ol-xs-12 col-sm-12">
                   <a href="javascript:void(0)">
                      <div class="feedback-inner-box alert alert-warning d-flex">
-                        <img src="{{ asset('assets/img/feedback/share-listed-project.png') }}" class="max-width-30px" alt="Submit Feedback" title="Submit Feedback">
+                        <img src="{{ asset('img/feedback/share-listed-project.png') }}" class="max-width-30px" alt="Submit Feedback" title="Submit Feedback">
                         <div class="feedback-content-box">
                            <h4>
                               <span>Localization & Language </span>
@@ -96,7 +96,7 @@
                <div class="col-md-6 col-lg-6 ol-xs-12 col-sm-12">
                   <a href="javascript:void(0)">
                      <div class="feedback-inner-box alert alert-warning d-flex">
-                        <img src="{{ asset('assets/img/feedback/security-vulnerabilities.png') }}" class="max-width-30px" alt="Submit Feedback" title="Submit Feedback">
+                        <img src="{{ asset('img/feedback/security-vulnerabilities.png') }}" class="max-width-30px" alt="Submit Feedback" title="Submit Feedback">
                         <div class="feedback-content-box">
                            <h4>
                               <span>Localization & Language </span>
@@ -109,7 +109,7 @@
                <div class="col-md-6 col-lg-6 ol-xs-12 col-sm-12">
                   <a href="javascript:void(0)">
                      <div class="feedback-inner-box alert alert-warning d-flex">
-                        <img src="{{ asset('assets/img/feedback/product-suggestions.png') }}" class="max-width-30px" alt="Submit Feedback" title="Submit Feedback">
+                        <img src="{{ asset('img/feedback/product-suggestions.png') }}" class="max-width-30px" alt="Submit Feedback" title="Submit Feedback">
                         <div class="feedback-content-box">
                            <h4>
                               <span>Localization & Language </span>
@@ -132,7 +132,7 @@
             </div>
             <div class="row">
                <div class="col-md-12">
-                  <img src="{{ asset('assets/img/feedback/how-does-it-work-graphic.png') }}" class="w-100" alt="how does it works?" title="how does it works?">
+                  <img src="{{ asset('img/feedback/how-does-it-work-graphic.png') }}" class="w-100" alt="how does it works?" title="how does it works?">
                </div>
             </div>
          </div>

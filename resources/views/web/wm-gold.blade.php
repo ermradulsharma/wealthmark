@@ -12,7 +12,7 @@
 
          section#wm-gold-top {
          padding: 50px !important;
-         background-image: url(https://wealthmark.io/-institutional/cover.png);
+         background-image: url({{ asset('img/-institutional/cover.png') }});
          background-position: center;
          background-repeat: no-repeat;
          background-size: cover;
@@ -148,7 +148,7 @@
          }
          .css-1ka7jde:hover {
          background-size: cover;
-         background-image: url(https://wealthmark.io/rlay-hover-bg.png);
+         background-image: url({{ asset('img/rlay-hover-bg.png') }});
          border-color: rgb(245 248 253);
          background-color: rgb(255 255 255);
          box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
@@ -484,7 +484,7 @@
          <div class="container">
             <div class="row align-items-center">
                <div class="col-lg-6 text-center pt-lg-0 order-lg-2 text-center">
-                  <img src="https://wealthmark.io/-institutional/cover-graphic.png" alt="Your Trusted Platform in Digital Institutions" title="Your Trusted Platform in Digital Institutions" class="img-fluid max-width-350px">
+                  <img src="{{ asset('img/-institutional/cover-graphic.png') }}" alt="Your Trusted Platform in Digital Institutions" title="Your Trusted Platform in Digital Institutions" class="img-fluid max-width-350px">
                </div>
                <div class="col-lg-6 d-flex flex-column justify-content-center pt-lg-0 order-lg-1" data-aos="fade-up" data-aos-delay="200">
                   <h1 class="fs-1"> Wealthmark WM Gold </h1>
@@ -524,7 +524,7 @@
                         </div>
                         <div class="lf-select-coin-to-active-div">
                            <div class="wm-dropdown-optn-item-div">
-                              <img class="wm-dropdown-optn-item-img" src="{{ asset('96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" title="coin" alt="coin">
+                              <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" title="coin" alt="coin">
                               <div class="wm-dropdown-optn-item-txt">INR</div>
                            </div>
                         </div>
@@ -540,7 +540,7 @@
                               <li role="option" id="demo_id" title="demo_id" class="wm-dropdown-optn-item ">
                                  <div class="wm-dropdown-optn-item-inner">
                                     <div class="wm-dropdown-optn-item-div">
-                                       <img class="wm-dropdown-optn-item-img" src="{{ asset('96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" title="coin" alt="coin">
+                                       <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" title="coin" alt="coin">
                                        <div class="wm-dropdown-optn-item-txt">Text</div>
                                     </div>
                                  </div>
@@ -555,7 +555,7 @@
                         </div>
                         <div class="lf-select-coin-to-active-div">
                            <div class="wm-dropdown-optn-item-div">
-                              <img class="wm-dropdown-optn-item-img" src="{{ asset('96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" title="coin" alt="coin">
+                              <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" title="coin" alt="coin">
                               <div class="wm-dropdown-optn-item-txt">INR</div>
                            </div>
                         </div>
@@ -571,7 +571,7 @@
                               <li role="option" id="demo_id" title="demo_id" class="wm-dropdown-optn-item ">
                                  <div class="wm-dropdown-optn-item-inner">
                                     <div class="wm-dropdown-optn-item-div">
-                                       <img class="wm-dropdown-optn-item-img" src="{{ asset('96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" title="coin" alt="coin">
+                                       <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" title="coin" alt="coin">
                                        <div class="wm-dropdown-optn-item-txt">Text</div>
                                     </div>
                                  </div>
@@ -586,7 +586,7 @@
                         </div>
                         <div class="lf-select-coin-to-active-div">
                            <div class="wm-dropdown-optn-item-div">
-                              <img class="wm-dropdown-optn-item-img" src="{{ asset('96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" title="coin" alt="coin">
+                              <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" title="coin" alt="coin">
                               <div class="wm-dropdown-optn-item-txt">INR</div>
                            </div>
                         </div>
@@ -602,7 +602,7 @@
                               <li role="option" id="demo_id" title="demo_id" class="wm-dropdown-optn-item ">
                                  <div class="wm-dropdown-optn-item-inner">
                                     <div class="wm-dropdown-optn-item-div">
-                                       <img class="wm-dropdown-optn-item-img" src="{{ asset('96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" title="coin" alt="coin">
+                                       <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" title="coin" alt="coin">
                                        <div class="wm-dropdown-optn-item-txt">Text</div>
                                     </div>
                                  </div>
@@ -617,7 +617,7 @@
                         </div>
                         <div class="lf-select-coin-to-active-div">
                            <div class="wm-dropdown-optn-item-div">
-                              <img class="wm-dropdown-optn-item-img" src="{{ asset('96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" title="coin" alt="coin">
+                              <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" title="coin" alt="coin">
                               <div class="wm-dropdown-optn-item-txt">INR</div>
                            </div>
                         </div>
@@ -633,7 +633,7 @@
                               <li role="option" id="demo_id" title="demo_id" class="wm-dropdown-optn-item ">
                                  <div class="wm-dropdown-optn-item-inner">
                                     <div class="wm-dropdown-optn-item-div">
-                                       <img class="wm-dropdown-optn-item-img" src="{{ asset('96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" title="coin" alt="coin">
+                                       <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" title="coin" alt="coin">
                                        <div class="wm-dropdown-optn-item-txt">Text</div>
                                     </div>
                                  </div>
@@ -648,7 +648,7 @@
                         </div>
                         <div class="lf-select-coin-to-active-div">
                            <div class="wm-dropdown-optn-item-div">
-                              <img class="wm-dropdown-optn-item-img" src="{{ asset('96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" title="coin" alt="coin">
+                              <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" title="coin" alt="coin">
                               <div class="wm-dropdown-optn-item-txt">INR</div>
                            </div>
                         </div>
@@ -664,7 +664,7 @@
                               <li role="option" id="demo_id" title="demo_id" class="wm-dropdown-optn-item ">
                                  <div class="wm-dropdown-optn-item-inner">
                                     <div class="wm-dropdown-optn-item-div">
-                                       <img class="wm-dropdown-optn-item-img" src="{{ asset('96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" title="coin" alt="coin">
+                                       <img class="wm-dropdown-optn-item-img" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" title="coin" alt="coin">
                                        <div class="wm-dropdown-optn-item-txt">Text</div>
                                     </div>
                                  </div>
@@ -1283,7 +1283,7 @@
                            <div class="symbol-box css-vurnku">
                               <div class="symbol-icon">
                                  <!--<img src="https://bin.bnbstatic.com/image/admin_mgs_image_upload/20201110/87496d50-2408-43e1-ad4c-78b47b448a6a.png" class="css-1jrxz3i">-->
-                                 <img class="css-1jrxz3i" src="{{ asset('96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" alt="Coin" title="Coin">
+                                 <img class="css-1jrxz3i" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" alt="Coin" title="Coin">
                               </div>
                               <span class="symbol-text">BTC/USDT</span>
                            </div>
@@ -1303,7 +1303,7 @@
                            <div class="symbol-box css-vurnku">
                               <div class="symbol-icon">
                                  <!--<img src="https://bin.bnbstatic.com/image/admin_mgs_image_upload/20201110/87496d50-2408-43e1-ad4c-78b47b448a6a.png" class="css-1jrxz3i">-->
-                                 <img class="css-1jrxz3i" src="{{ asset('96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" alt="Coin" title="Coin">
+                                 <img class="css-1jrxz3i" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" alt="Coin" title="Coin">
                               </div>
                               <span class="symbol-text">BTC/USDT</span>
                            </div>
@@ -1323,7 +1323,7 @@
                            <div class="symbol-box css-vurnku">
                               <div class="symbol-icon">
                                  <!--<img src="https://bin.bnbstatic.com/image/admin_mgs_image_upload/20201110/87496d50-2408-43e1-ad4c-78b47b448a6a.png" class="css-1jrxz3i">-->
-                                 <img class="css-1jrxz3i" src="{{ asset('96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" alt="Coin" title="Coin">
+                                 <img class="css-1jrxz3i" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" alt="Coin" title="Coin">
                               </div>
                               <span class="symbol-text">BTC/USDT</span>
                            </div>
@@ -1343,7 +1343,7 @@
                            <div class="symbol-box css-vurnku">
                               <div class="symbol-icon">
                                  <!--<img src="https://bin.bnbstatic.com/image/admin_mgs_image_upload/20201110/87496d50-2408-43e1-ad4c-78b47b448a6a.png" class="css-1jrxz3i">-->
-                                 <img class="css-1jrxz3i" src="{{ asset('96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" alt="Coin" title="Coin">
+                                 <img class="css-1jrxz3i" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" alt="Coin" title="Coin">
                               </div>
                               <span class="symbol-text">BTC/USDT</span>
                            </div>
@@ -1363,7 +1363,7 @@
                            <div class="symbol-box css-vurnku">
                               <div class="symbol-icon">
                                  <!--<img src="https://bin.bnbstatic.com/image/admin_mgs_image_upload/20201110/87496d50-2408-43e1-ad4c-78b47b448a6a.png" class="css-1jrxz3i">-->
-                                 <img class="css-1jrxz3i" src="{{ asset('96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" alt="Coin" title="Coin">
+                                 <img class="css-1jrxz3i" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" alt="Coin" title="Coin">
                               </div>
                               <span class="symbol-text">BTC/USDT</span>
                            </div>
@@ -1383,7 +1383,7 @@
                            <div class="symbol-box css-vurnku">
                               <div class="symbol-icon">
                                  <!--<img src="https://bin.bnbstatic.com/image/admin_mgs_image_upload/20201110/87496d50-2408-43e1-ad4c-78b47b448a6a.png" class="css-1jrxz3i">-->
-                                 <img class="css-1jrxz3i" src="{{ asset('96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" alt="Coin" title="Coin">
+                                 <img class="css-1jrxz3i" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" alt="Coin" title="Coin">
                               </div>
                               <span class="symbol-text">BTC/USDT</span>
                            </div>
@@ -1405,7 +1405,7 @@
                            <div class="symbol-box css-vurnku">
                               <div class="symbol-icon">
                                  <!--<img src="https://bin.bnbstatic.com/image/admin_mgs_image_upload/20201110/87496d50-2408-43e1-ad4c-78b47b448a6a.png" class="css-1jrxz3i">-->
-                                 <img class="css-1jrxz3i" src="{{ asset('96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" alt="Coin" title="Coin">
+                                 <img class="css-1jrxz3i" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" alt="Coin" title="Coin">
                               </div>
                               <span class="symbol-text">BTC/USDT</span>
                            </div>
@@ -1425,7 +1425,7 @@
                            <div class="symbol-box css-vurnku">
                               <div class="symbol-icon">
                                  <!--<img src="https://bin.bnbstatic.com/image/admin_mgs_image_upload/20201110/87496d50-2408-43e1-ad4c-78b47b448a6a.png" class="css-1jrxz3i">-->
-                                 <img class="css-1jrxz3i" src="{{ asset('96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" alt="Coin" title="Coin">
+                                 <img class="css-1jrxz3i" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" alt="Coin" title="Coin">
                               </div>
                               <span class="symbol-text">BTC/USDT</span>
                            </div>
@@ -1445,7 +1445,7 @@
                            <div class="symbol-box css-vurnku">
                               <div class="symbol-icon">
                                  <!--<img src="https://bin.bnbstatic.com/image/admin_mgs_image_upload/20201110/87496d50-2408-43e1-ad4c-78b47b448a6a.png" class="css-1jrxz3i">-->
-                                 <img class="css-1jrxz3i" src="{{ asset('96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" alt="Coin" title="Coin">
+                                 <img class="css-1jrxz3i" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" alt="Coin" title="Coin">
                               </div>
                               <span class="symbol-text">BTC/USDT</span>
                            </div>
@@ -1465,7 +1465,7 @@
                            <div class="symbol-box css-vurnku">
                               <div class="symbol-icon">
                                  <!--<img src="https://bin.bnbstatic.com/image/admin_mgs_image_upload/20201110/87496d50-2408-43e1-ad4c-78b47b448a6a.png" class="css-1jrxz3i">-->
-                                 <img class="css-1jrxz3i" src="{{ asset('96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" alt="Coin" title="Coin">
+                                 <img class="css-1jrxz3i" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" alt="Coin" title="Coin">
                               </div>
                               <span class="symbol-text">BTC/USDT</span>
                            </div>
@@ -1485,7 +1485,7 @@
                            <div class="symbol-box css-vurnku">
                               <div class="symbol-icon">
                                  <!--<img src="https://bin.bnbstatic.com/image/admin_mgs_image_upload/20201110/87496d50-2408-43e1-ad4c-78b47b448a6a.png" class="css-1jrxz3i">-->
-                                 <img class="css-1jrxz3i" src="{{ asset('96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" alt="Coin" title="Coin">
+                                 <img class="css-1jrxz3i" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" alt="Coin" title="Coin">
                               </div>
                               <span class="symbol-text">BTC/USDT</span>
                            </div>
@@ -1505,7 +1505,7 @@
                            <div class="symbol-box css-vurnku">
                               <div class="symbol-icon">
                                  <!--<img src="https://bin.bnbstatic.com/image/admin_mgs_image_upload/20201110/87496d50-2408-43e1-ad4c-78b47b448a6a.png" class="css-1jrxz3i">-->
-                                 <img class="css-1jrxz3i" src="{{ asset('96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" alt="Coin" title="Coin">
+                                 <img class="css-1jrxz3i" src="{{ asset('img/96d50-2408-43e1-ad4c-78b47b448a6a.png') }}" alt="Coin" title="Coin">
                               </div>
                               <span class="symbol-text">BTC/USDT</span>
                            </div>

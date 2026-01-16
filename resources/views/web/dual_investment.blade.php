@@ -50,7 +50,7 @@
                  <div class="asset-overview login-box-main">
                           <div class="login-box-bg">
                             <div class="login-box">
-                              <img src="{{ asset('assets/img/account.png') }}" class="login-box-img">
+                              <img src="{{ asset('img/account.png') }}" class="login-box-img">
                               <div class="login-box-txt">Log in to view holding details</div>
                               <button type="button" class="btn btn-yellow">Log In</button>
                             </div>
@@ -69,25 +69,25 @@
     <div class="dual-inv-top-row-inner-left">
       <div class="avbl-coin-text">Available Coins</div>
       <div class="dual-inv-avbl-coin">
-        <img class="dual-inv-avbl-coin-img" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
+        <img class="dual-inv-avbl-coin-img" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
       </div>
       <div class="dual-inv-avbl-coin">
-        <img class="dual-inv-avbl-coin-img" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
+        <img class="dual-inv-avbl-coin-img" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
       </div>
       <div class="dual-inv-avbl-coin">
-        <img class="dual-inv-avbl-coin-img" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
+        <img class="dual-inv-avbl-coin-img" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
       </div>
       <div class="dual-inv-avbl-coin">
-        <img class="dual-inv-avbl-coin-img" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
+        <img class="dual-inv-avbl-coin-img" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
       </div>
       <div class="dual-inv-avbl-coin">
-        <img class="dual-inv-avbl-coin-img" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
+        <img class="dual-inv-avbl-coin-img" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
       </div>
       <div class="dual-inv-avbl-coin">
-        <img class="dual-inv-avbl-coin-img" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
+        <img class="dual-inv-avbl-coin-img" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
       </div>
       <div class="dual-inv-avbl-coin">
-        <img class="dual-inv-avbl-coin-img" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
+        <img class="dual-inv-avbl-coin-img" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
       </div>
       <span class="dual-inv-avbl-coin-more">+7</span>
     </div>
@@ -148,13 +148,13 @@
                <div class="col-md-12 open show" id="coin_opt_desk">
                <div class="di-coin-list-div">
                   <div class="di-coin-list-active">
-                    <img src="{{ asset('assets/img/wm-card_tick.svg') }}" class="di-coin-list-img-tick">
+                    <img src="{{ asset('img/wm-card_tick.svg') }}" class="di-coin-list-img-tick">
                     <div class="di-coin-list-title-div">
                       <div class="di-coin-list-img-content">
-                        <img class="di-coin-list-img-coin" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
+                        <img class="di-coin-list-img-coin" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
                         <div class="di-coin-list-name-coin">BTC</div>
                       </div>
-                      <img src="{{ asset('assets/img/wm-hot.svg') }}" class="di-coin-list-img-hot">
+                      <img src="{{ asset('img/wm-hot.svg') }}" class="di-coin-list-img-hot">
                     </div>
                     <div class="di-coin-list-sts">
                       <div class="di-coin-list-sts-apr">
@@ -168,13 +168,13 @@
                     </div>
                   </div>
                   <div class="di-coin-list">
-                  <img src="{{ asset('assets/img/wm-not_selected_tick.svg') }}" class="di-coin-list-img-tick">
+                  <img src="{{ asset('img/wm-not_selected_tick.svg') }}" class="di-coin-list-img-tick">
                     <div class="di-coin-list-title-div">
                       <div class="di-coin-list-img-content">
-                        <img class="di-coin-list-img-coin" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
+                        <img class="di-coin-list-img-coin" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
                         <div class="di-coin-list-name-coin">BTC</div>
                       </div>
-                      <img src="{{ asset('assets/img/wm-hot.svg') }}" class="di-coin-list-img-hot">
+                      <img src="{{ asset('img/wm-hot.svg') }}" class="di-coin-list-img-hot">
                     </div>
                     <div class="di-coin-list-sts">
                       <div class="di-coin-list-sts-apr">
@@ -188,13 +188,13 @@
                     </div>
                   </div>
                    <div class="di-coin-list">
-                  <img src="{{ asset('assets/img/wm-not_selected_tick.svg') }}" class="di-coin-list-img-tick">
+                  <img src="{{ asset('img/wm-not_selected_tick.svg') }}" class="di-coin-list-img-tick">
                     <div class="di-coin-list-title-div">
                       <div class="di-coin-list-img-content">
-                        <img class="di-coin-list-img-coin" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
+                        <img class="di-coin-list-img-coin" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
                         <div class="di-coin-list-name-coin">BTC</div>
                       </div>
-                      <img src="{{ asset('assets/img/wm-hot.svg') }}" class="di-coin-list-img-hot">
+                      <img src="{{ asset('img/wm-hot.svg') }}" class="di-coin-list-img-hot">
                     </div>
                     <div class="di-coin-list-sts">
                       <div class="di-coin-list-sts-apr">
@@ -208,13 +208,13 @@
                     </div>
                   </div>
                   <div class="di-coin-list">
-                  <img src="{{ asset('assets/img/wm-not_selected_tick.svg') }}" class="di-coin-list-img-tick">
+                  <img src="{{ asset('img/wm-not_selected_tick.svg') }}" class="di-coin-list-img-tick">
                     <div class="di-coin-list-title-div">
                       <div class="di-coin-list-img-content">
-                        <img class="di-coin-list-img-coin" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
+                        <img class="di-coin-list-img-coin" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
                         <div class="di-coin-list-name-coin">BTC</div>
                       </div>
-                      <img src="{{ asset('assets/img/wm-hot.svg') }}" class="di-coin-list-img-hot">
+                      <img src="{{ asset('img/wm-hot.svg') }}" class="di-coin-list-img-hot">
                     </div>
                     <div class="di-coin-list-sts">
                       <div class="di-coin-list-sts-apr">
@@ -228,13 +228,13 @@
                     </div>
                   </div>
                   <div class="di-coin-list">
-                  <img src="{{ asset('assets/img/wm-not_selected_tick.svg') }}" class="di-coin-list-img-tick">
+                  <img src="{{ asset('img/wm-not_selected_tick.svg') }}" class="di-coin-list-img-tick">
                     <div class="di-coin-list-title-div">
                       <div class="di-coin-list-img-content">
-                        <img class="di-coin-list-img-coin" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
+                        <img class="di-coin-list-img-coin" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
                         <div class="di-coin-list-name-coin">BTC</div>
                       </div>
-                      <img src="{{ asset('assets/img/wm-hot.svg') }}" class="di-coin-list-img-hot">
+                      <img src="{{ asset('img/wm-hot.svg') }}" class="di-coin-list-img-hot">
                     </div>
                     <div class="di-coin-list-sts">
                       <div class="di-coin-list-sts-apr">
@@ -248,13 +248,13 @@
                     </div>
                   </div>
                   <div class="di-coin-list">
-                  <img src="{{ asset('assets/img/wm-not_selected_tick.svg') }}" class="di-coin-list-img-tick">
+                  <img src="{{ asset('img/wm-not_selected_tick.svg') }}" class="di-coin-list-img-tick">
                     <div class="di-coin-list-title-div">
                       <div class="di-coin-list-img-content">
-                        <img class="di-coin-list-img-coin" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
+                        <img class="di-coin-list-img-coin" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
                         <div class="di-coin-list-name-coin">BTC</div>
                       </div>
-                      <img src="{{ asset('assets/img/wm-hot.svg') }}" class="di-coin-list-img-hot">
+                      <img src="{{ asset('img/wm-hot.svg') }}" class="di-coin-list-img-hot">
                     </div>
                     <div class="di-coin-list-sts">
                       <div class="di-coin-list-sts-apr">
@@ -335,7 +335,7 @@
                               <div class="d-flex align-items-center">
                                 <a href="#" class="wm-link">
                                   <div class="broker-tbl-coin-div-main">
-                                    <img class="coin-logo" src="{{ asset('assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }} " loading="lazy" alt="BTC logo">
+                                    <img class="coin-logo" src="{{ asset('img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }} " loading="lazy" alt="BTC logo">
                                     <div class="name-area ">
                                       <p class="broker-tbl-coin-title">Bitcoin</p>
                                       <div class="coin-item-symbol-div">
@@ -378,7 +378,7 @@
                               <div class="d-flex align-items-center">
                                 <a href="#" class="wm-link">
                                   <div class="broker-tbl-coin-div-main">
-                                    <img class="coin-logo" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" alt="BNB logo">
+                                    <img class="coin-logo" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" alt="BNB logo">
                                     <div class="name-area ">
                                       <p class="broker-tbl-coin-title">BNB</p>
                                       <div class="coin-item-symbol-div">
@@ -419,7 +419,7 @@
                               <div class="d-flex align-items-center">
                                 <a href="#" class="wm-link">
                                   <div class="broker-tbl-coin-div-main">
-                                    <img class="coin-logo" src="{{ asset('assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }} " loading="lazy" alt="BTC logo">
+                                    <img class="coin-logo" src="{{ asset('img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }} " loading="lazy" alt="BTC logo">
                                     <div class="name-area ">
                                       <p class="broker-tbl-coin-title">Bitcoin</p>
                                       <div class="coin-item-symbol-div">
@@ -461,7 +461,7 @@
                               <div class="d-flex align-items-center">
                                 <a href="#" class="wm-link">
                                   <div class="broker-tbl-coin-div-main">
-                                    <img class="coin-logo" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" alt="BNB logo">
+                                    <img class="coin-logo" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" alt="BNB logo">
                                     <div class="name-area ">
                                       <p class="broker-tbl-coin-title">BNB</p>
                                       <div class="coin-item-symbol-div">
@@ -504,7 +504,7 @@
                               <div class="d-flex align-items-center">
                                 <a href="#" class="wm-link">
                                   <div class="broker-tbl-coin-div-main">
-                                    <img class="coin-logo" src="{{ asset('assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }} " loading="lazy" alt="BTC logo">
+                                    <img class="coin-logo" src="{{ asset('img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }} " loading="lazy" alt="BTC logo">
                                     <div class="name-area ">
                                       <p class="broker-tbl-coin-title">Bitcoin</p>
                                       <div class="coin-item-symbol-div">
@@ -546,7 +546,7 @@
                               <div class="d-flex align-items-center">
                                 <a href="#" class="wm-link">
                                   <div class="broker-tbl-coin-div-main">
-                                    <img class="coin-logo" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" alt="BNB logo">
+                                    <img class="coin-logo" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" alt="BNB logo">
                                     <div class="name-area ">
                                       <p class="broker-tbl-coin-title">BNB</p>
                                       <div class="coin-item-symbol-div">
@@ -590,7 +590,7 @@
                               <div class="d-flex align-items-center">
                                 <a href="#" class="wm-link">
                                   <div class="broker-tbl-coin-div-main">
-                                    <img class="coin-logo" src="{{ asset('assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }} " loading="lazy" alt="BTC logo">
+                                    <img class="coin-logo" src="{{ asset('img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }} " loading="lazy" alt="BTC logo">
                                     <div class="name-area ">
                                       <p class="broker-tbl-coin-title">Bitcoin</p>
                                       <div class="coin-item-symbol-div">
@@ -632,7 +632,7 @@
                               <div class="d-flex align-items-center">
                                 <a href="#" class="wm-link">
                                   <div class="broker-tbl-coin-div-main">
-                                    <img class="coin-logo" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" alt="BNB logo">
+                                    <img class="coin-logo" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" alt="BNB logo">
                                     <div class="name-area ">
                                       <p class="broker-tbl-coin-title">BNB</p>
                                       <div class="coin-item-symbol-div">
@@ -727,7 +727,7 @@
                               <div class="d-flex align-items-center">
                                 <a href="#" class="wm-link">
                                   <div class="broker-tbl-coin-div-main">
-                                    <img class="coin-logo" src="{{ asset('assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }} " loading="lazy" alt="BTC logo">
+                                    <img class="coin-logo" src="{{ asset('img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }} " loading="lazy" alt="BTC logo">
                                     <div class="name-area ">
                                       <p class="broker-tbl-coin-title">Bitcoin</p>
                                       <div class="coin-item-symbol-div">
@@ -770,7 +770,7 @@
                               <div class="d-flex align-items-center">
                                 <a href="#" class="wm-link">
                                   <div class="broker-tbl-coin-div-main">
-                                    <img class="coin-logo" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" alt="BNB logo">
+                                    <img class="coin-logo" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" alt="BNB logo">
                                     <div class="name-area ">
                                       <p class="broker-tbl-coin-title">BNB</p>
                                       <div class="coin-item-symbol-div">
@@ -811,7 +811,7 @@
                               <div class="d-flex align-items-center">
                                 <a href="#" class="wm-link">
                                   <div class="broker-tbl-coin-div-main">
-                                    <img class="coin-logo" src="{{ asset('assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }} " loading="lazy" alt="BTC logo">
+                                    <img class="coin-logo" src="{{ asset('img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }} " loading="lazy" alt="BTC logo">
                                     <div class="name-area ">
                                       <p class="broker-tbl-coin-title">Bitcoin</p>
                                       <div class="coin-item-symbol-div">
@@ -853,7 +853,7 @@
                               <div class="d-flex align-items-center">
                                 <a href="#" class="wm-link">
                                   <div class="broker-tbl-coin-div-main">
-                                    <img class="coin-logo" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" alt="BNB logo">
+                                    <img class="coin-logo" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" alt="BNB logo">
                                     <div class="name-area ">
                                       <p class="broker-tbl-coin-title">BNB</p>
                                       <div class="coin-item-symbol-div">
@@ -896,7 +896,7 @@
                               <div class="d-flex align-items-center">
                                 <a href="#" class="wm-link">
                                   <div class="broker-tbl-coin-div-main">
-                                    <img class="coin-logo" src="{{ asset('assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }} " loading="lazy" alt="BTC logo">
+                                    <img class="coin-logo" src="{{ asset('img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }} " loading="lazy" alt="BTC logo">
                                     <div class="name-area ">
                                       <p class="broker-tbl-coin-title">Bitcoin</p>
                                       <div class="coin-item-symbol-div">
@@ -938,7 +938,7 @@
                               <div class="d-flex align-items-center">
                                 <a href="#" class="wm-link">
                                   <div class="broker-tbl-coin-div-main">
-                                    <img class="coin-logo" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" alt="BNB logo">
+                                    <img class="coin-logo" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" alt="BNB logo">
                                     <div class="name-area ">
                                       <p class="broker-tbl-coin-title">BNB</p>
                                       <div class="coin-item-symbol-div">
@@ -982,7 +982,7 @@
                               <div class="d-flex align-items-center">
                                 <a href="#" class="wm-link">
                                   <div class="broker-tbl-coin-div-main">
-                                    <img class="coin-logo" src="{{ asset('assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }} " loading="lazy" alt="BTC logo">
+                                    <img class="coin-logo" src="{{ asset('img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }} " loading="lazy" alt="BTC logo">
                                     <div class="name-area ">
                                       <p class="broker-tbl-coin-title">Bitcoin</p>
                                       <div class="coin-item-symbol-div">
@@ -1024,7 +1024,7 @@
                               <div class="d-flex align-items-center">
                                 <a href="#" class="wm-link">
                                   <div class="broker-tbl-coin-div-main">
-                                    <img class="coin-logo" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" alt="BNB logo">
+                                    <img class="coin-logo" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}" alt="BNB logo">
                                     <div class="name-area ">
                                       <p class="broker-tbl-coin-title">BNB</p>
                                       <div class="coin-item-symbol-div">
@@ -1198,12 +1198,12 @@
 
     <div class="di-get-start-rgt">
       <div class="di-get-start-img">
-        <img src="{{ asset('assets/img/dual-investment/sell-wmc.png') }}" class="di-get-start-img-">
+        <img src="{{ asset('img/dual-investment/sell-wmc.png') }}" class="di-get-start-img-">
       </div>
       <div class="di-get-start-rgt-lft">
         <div class="di-get-start-rgt-lft-1">Find
         <div class="di-get-start-rgt-lft-1-inner">
-            <img class="di-coin-list-img-coin" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
+            <img class="di-coin-list-img-coin" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
             <div class="di-coin-list-name-coin">BTC</div>
           </div>
           Products </div>
@@ -1215,7 +1215,7 @@
         <div class="buy_BTC_div">
           <div class="buy_BTC_div-inner">
             <h3 class="title mb-0">$18,000</h3>
-            <img src="{{ asset('assets/img/wm-vertical_line.svg') }}" class="line-img">
+            <img src="{{ asset('img/wm-vertical_line.svg') }}" class="line-img">
             <div class="d-flex " id="demo_1" onclick="openModal(this.id)">
               <svg viewBox="0 0 24 24" fill="none" cursor="pointer" class="edit-svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M15.314 4.781l3.889 3.89-1.768 1.767-3.889-3.889 1.768-1.768zm-3.182 3.182l3.89 3.89-5.129 5.127H15v3H7.893l-.004.004H4v-3.889l8.132-8.132zM17 16.98h3v3h-3v-3z" fill="currentColor"></path>
@@ -1224,7 +1224,7 @@
           </div>
           <div class="lover-risk">Lowest Risk</div>
           <div class="gt-status">on <div class="gt-status-crrnt-price">&nbsp;&nbsp;2022/11/18</div>
-            <img src="{{ asset('assets/img/wm-vertical_line.svg') }}" class="gt-earn-apr">earn APR
+            <img src="{{ asset('img/wm-vertical_line.svg') }}" class="gt-earn-apr">earn APR
            :
 
             <div class="gt-crrnt-earn-title">&nbsp;15.18%</div>
@@ -1245,7 +1245,7 @@
                    <div class="dropdown show">
                           <a class="btn bg-light-theme d-flex align-items-center dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                              <div class="di-get-start-rgt-lft-1-inner">
-            <img class="di-coin-list-img-coin" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
+            <img class="di-coin-list-img-coin" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
             <div class="di-coin-list-name-coin">BTC</div>
           </div>
                           </a>
@@ -1259,7 +1259,7 @@
 
 
                 </div>
-                <img src="{{ asset('assets/img/wm-vertical_line.svg') }}" class="line-img">
+                <img src="{{ asset('img/wm-vertical_line.svg') }}" class="line-img">
                 <div class="d-flex" id="demo_2" onclick="openModal(this.id)">
                   <svg viewBox="0 0 24 24" fill="none" cursor="pointer" class="edit-svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M15.314 4.781l3.889 3.89-1.768 1.767-3.889-3.889 1.768-1.768zm-3.182 3.182l3.89 3.89-5.129 5.127H15v3H7.893l-.004.004H4v-3.889l8.132-8.132zM17 16.98h3v3h-3v-3z" fill="currentColor"></path>
@@ -1268,7 +1268,7 @@
               </div>
               <div class="lover-risk">Lowest Risk</div>
               <div class="gt-status">on <div class="gt-status-crrnt-price">&nbsp;&nbsp;2022/11/22</div>
-                <img src="{{ asset('assets/img/wm-vertical_line.svg') }}" class="gt-earn-apr">earn APR
+                <img src="{{ asset('img/wm-vertical_line.svg') }}" class="gt-earn-apr">earn APR
                :
 
                 <div class="gt-crrnt-earn-title">&nbsp;4.72%</div>
@@ -1316,10 +1316,10 @@
                                 <div  class="Choose_settlement_optn-div">
                                       <div class="Choose_settlement_optn-img">
                                         <div class="di-coin-list-img-content">
-                                          <img class="Choose_settlement_optn-img-main" src="{{ asset('assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
+                                          <img class="Choose_settlement_optn-img-main" src="{{ asset('img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                         </div>
                                         <div class="Choose_settlement_optn-img2-main">
-                                          <img class="Choose_settlement_optn-img2-main2" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
+                                          <img class="Choose_settlement_optn-img2-main2" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
                                         </div>
                                       </div>
                                       <div class="Choose_settlement_optn-title">Sell High</div>
@@ -1334,10 +1334,10 @@
                                 <div  class="Choose_settlement_optn-div">
                                       <div class="Choose_settlement_optn-img">
                                         <div class="di-coin-list-img-content">
-                                          <img class="Choose_settlement_optn-img-main" src="{{ asset('assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
+                                          <img class="Choose_settlement_optn-img-main" src="{{ asset('img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                         </div>
                                         <div class="Choose_settlement_optn-img2-main">
-                                          <img class="Choose_settlement_optn-img2-main2" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
+                                          <img class="Choose_settlement_optn-img2-main2" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
                                         </div>
                                       </div>
                                       <div class="Choose_settlement_optn-title">Buy Low</div>
@@ -1351,10 +1351,10 @@
                                 <div  class="Choose_settlement_optn-div">
                                       <div class="Choose_settlement_optn-img">
                                         <div class="di-coin-list-img-content">
-                                          <img class="Choose_settlement_optn-img-main" src="{{ asset('assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
+                                          <img class="Choose_settlement_optn-img-main" src="{{ asset('img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                         </div>
                                         <div class="Choose_settlement_optn-img2-main">
-                                          <img class="Choose_settlement_optn-img2-main2" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
+                                          <img class="Choose_settlement_optn-img2-main2" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
                                         </div>
                                       </div>
                                       <div class="Choose_settlement_optn-title">Buy Low</div>
@@ -1709,7 +1709,7 @@
 
         <div class="return_div_2222">
             <div class="d-flex mb-4">
-                <img src="{{ asset('assets/img/dual-investment/calculator.png') }}" class="me-2 di-coin-list-img-coin rounded-0" >
+                <img src="{{ asset('img/dual-investment/calculator.png') }}" class="me-2 di-coin-list-img-coin rounded-0" >
                 <div class="return_cal_deading_div">
                     <h3 class="title m-0 p-0 me-2"> Return Calculator</h3>
                     <p class="text m-0 p-0">Select a product above to start the calculation.</p>
@@ -1750,7 +1750,7 @@
           </div>
           <div  class="chart_Calculator_title_--">--</div>
           <div class="chart_Calculator_img_div-coin">
-            <img class="rc_coin-img" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
+            <img class="rc_coin-img" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
             <div  class="chart_Calculator_img_name">BUSD</div>
           </div>
         </div>
@@ -1761,7 +1761,7 @@
           </div>
           <div  class="chart_Calculator_title_--">--</div>
           <div class="chart_Calculator_img_div-coin">
-            <img class="rc_coin-img" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
+            <img class="rc_coin-img" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
             <div  class="chart_Calculator_img_name">ETH</div>
           </div>
         </div>
@@ -1780,7 +1780,7 @@
             <div class="wm-input-suffix ">
               <div class="sell_div_sub_amt_coin-div">
                 <div class="sell_div_inner-row-right-img">
-                  <img class="rc_coin-img" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
+                  <img class="rc_coin-img" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
                 </div>
                 <div  class="sell_div_sub_amt_coin-title">ETH</div>
               </div>
@@ -1791,7 +1791,7 @@
           <div  class="sell_div_inner-row-title">Target Price</div>
           <div class="sell_div_inner-row-right">
             <div class="sell_div_inner-row-right-img">
-              <img class="rc_coin-img" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
+              <img class="rc_coin-img" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
             </div>
             <div  class="sell_div_inner-row-target-coin">ETH = $</div>
             <div  class="sell_div_inner-row-target-price">1,300</div>
@@ -1827,7 +1827,7 @@
         <div class="cal_div_return_right">
           <div  class="rc_blank_record">--</div>
           <div class="rc_crnt_rcrd">
-            <img class="rc_coin-img" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
+            <img class="rc_coin-img" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
             <div  class="rc_title">ETH</div>
           </div>
         </div>
@@ -1845,7 +1845,7 @@
         <div class="cal_div_return_right">
           <div  class="rc_blank_record">--</div>
           <div class="rc_crnt_rcrd">
-            <img class="rc_coin-img" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
+            <img class="rc_coin-img" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
             <div  class="rc_title">ETH</div>
           </div>
         </div>
@@ -1858,7 +1858,7 @@
         <div class="cal_div_return_right">
           <div  class="rc_blank_record">--</div>
           <div class="rc_crnt_rcrd">
-            <img class="rc_coin-img" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
+            <img class="rc_coin-img" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
             <div  class="rc_title">ETH</div>
           </div>
         </div>
@@ -1880,7 +1880,7 @@
         <div class="cal_div_return_right">
           <div  class="rc_blank_record">--</div>
           <div class="rc_crnt_rcrd">
-            <img class="rc_coin-img" src="{{ asset('assets/img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
+            <img class="rc_coin-img" src="{{ asset('img/94863af2-c980-42cf-a139-7b9f462a36c2.png') }}">
             <div  class="rc_title">BUSD</div>
           </div>
         </div>
@@ -2193,7 +2193,7 @@ In both scenarios, you will first earn interest in your existing currency (BNB).
         </div>
         <div class="px-4">
           <div class="mb-3 text-center">
-            <img class="warning-img" src="https://www.wealthmark.io/assets/img/warning.svg">
+            <img class="warning-img" src="{{ asset('img/assets/img/warning.svg') }}">
           </div>
           <h3 class="title mb-3 text-center">Risk Warning</h3>
           <div class="text"> You may lose more cryptocurrency than initially subscribed. Subscribed assets are locked until the Settlement Date and subject to market volatility. Wealthmark does not assume liability for any losses incurred from price fluctuations. Cryptocurrency trading is subject to high market risk. Please make your trades cautiously. </div>
@@ -2251,9 +2251,9 @@ $(document).ready(function(){
 
 $(".di-coin-list-div").on("click", ".di-coin-list", function () {
     $(this).addClass("di-coin-list-active").removeClass("di-coin-list");
-    $(this).children(".di-coin-list-img-tick").attr("src","{{ asset('assets/img/wm-card_tick.svg') }}");
+    $(this).children(".di-coin-list-img-tick").attr("src","{{ asset('img/wm-card_tick.svg') }}");
     $(this).siblings(".di-coin-list-active").removeClass("di-coin-list-active").addClass("di-coin-list");
-    $(this).siblings(".di-coin-list").children(".di-coin-list-img-tick").attr("src","{{ asset('assets/img/wm-not_selected_tick.svg') }}")
+    $(this).siblings(".di-coin-list").children(".di-coin-list-img-tick").attr("src","{{ asset('img/wm-not_selected_tick.svg') }}")
 });
 
 //   ------------------------

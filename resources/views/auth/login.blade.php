@@ -139,7 +139,7 @@
                    <div class="col-lg-4 col-md-6 offset-lg-1 order-md-2">
                      <div class="login_scan">WealthMark Account Login
                         <div class="qr_code">
-                           <img src="{{ asset('assets/img/qr-code.png') }}" class="img-responsive" />
+                           <img src="{{ asset('img/qr-code.png') }}" class="img-responsive" />
                         </div>
                         <div class="mob_login mb-4">
                            <h2 class="login-head">Log in with QR code</h2>
@@ -253,7 +253,7 @@
                             <div class="google-login">
                                <div class="google">
                                   <div class="google-div">
-                                     <img src="{{ asset('assets/img/google-icon.png') }}" class="other-login-img">
+                                     <img src="{{ asset('img/google-icon.png') }}" class="other-login-img">
 
                                   </div>
 
@@ -267,7 +267,7 @@
                             <div class="apple-login">
                                <div class="apple">
                                   <div class="apple-div">
-                                     <img src="{{ asset('assets/img/apple-icon.png') }}" class="other-login-img">
+                                     <img src="{{ asset('img/apple-icon.png') }}" class="other-login-img">
                                   </div>
                                   <div class="text m-0 p-0">
                                       <strong>Apple</strong>
@@ -634,8 +634,8 @@
             },
              setSrc:function () {
 
-                          return '{{ asset('assets/img/captchaImages/') }}' +'/'+Math.round(Math.random() * 20) +'.jpg';
-                         // return '{{ asset('assets/img/captchaImages/1.jpg') }}';
+                          return '{{ asset('img/captchaImages/') }}' +'/'+Math.round(Math.random() * 20) +'.jpg';
+                         // return '{{ asset('img/captchaImages/1.jpg') }}';
 
                         },
 
@@ -725,8 +725,8 @@
             },
              setSrc:function () {
 
-                          return '{{ asset('assets/img/captchaImages/') }}' +'/'+Math.round(Math.random() * 20) +'.jpg';
-                         // return '{{ asset('assets/img/captchaImages/1.jpg') }}';
+                          return '{{ asset('img/captchaImages/') }}' +'/'+Math.round(Math.random() * 20) +'.jpg';
+                         // return '{{ asset('img/captchaImages/1.jpg') }}';
 
                         },
 

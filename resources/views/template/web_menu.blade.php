@@ -33,16 +33,16 @@ function hideEmailAddress($email)
                             <a class="nav-link dropdown-toggle" href="javascript:void(0);" data-bs-toggle="dropdown">
                                 <span class="nav-img" data-bs-toggle="tooltip" data-bs-placement="top" title=""
                                     data-bs-original-title="Wallet">
-                                    <img src="{{ asset('assets/img/header-icons/mobile-bar-icons/empty-wallet.svg') }}"
+                                    <img src="{{ asset('img/header-icons/mobile-bar-icons/empty-wallet.svg') }}"
                                         class="img-responsive"> </span>
-                                <!--<span class="nav-img d-lg-none"><img src="{{ asset('assets/img/header-icons/mobile-bar-icons/empty-wallet.svg') }}" class="img-responsive mr-0"> </span>-->
+                                <!--<span class="nav-img d-lg-none"><img src="{{ asset('img/header-icons/mobile-bar-icons/empty-wallet.svg') }}" class="img-responsive mr-0"> </span>-->
                                 <!--<span class="hide-575">   Wallet</span>-->
                             </a>
                             <ul class="dropdown-menu fade-down dropdown-menu-end">
                                 <li>
                                     <a class="dropdown-item" href="{{ url(app()->getLocale()) }}/user/overview">
                                         <div class="d-flex align-items-center">
-                                            <img src="{{ asset('assets/img/header-icons/derivatives/wealthmark-futures-overview.svg') }}"
+                                            <img src="{{ asset('img/header-icons/derivatives/wealthmark-futures-overview.svg') }}"
                                                 class="header-icons" />
                                             <div class="d-block">
                                                 <span> Overview</span>
@@ -53,7 +53,7 @@ function hideEmailAddress($email)
                                 <li>
                                     <a class="dropdown-item" href="{{ url(app()->getLocale()) }}/user/fiat-and-spot">
                                         <div class="d-flex align-items-center">
-                                            <img src="{{ asset('assets/img/header-icons/derivatives/responsible-trading.svg') }}"
+                                            <img src="{{ asset('img/header-icons/derivatives/responsible-trading.svg') }}"
                                                 class="header-icons" />
                                             <div class="d-block">
                                                 <span> Fiat and Spot</span>
@@ -65,7 +65,7 @@ function hideEmailAddress($email)
                                 <li>
                                     <a class="dropdown-item" href="{{ url(app()->getLocale()) }}/user/funding">
                                         <div class="d-flex align-items-center">
-                                            <img src="{{ asset('assets/img/header-icons/derivatives/coin-m-futures.svg') }}"
+                                            <img src="{{ asset('img/header-icons/derivatives/coin-m-futures.svg') }}"
                                                 class="header-icons" />
                                             <div class="d-block">
                                                 <span> Funding</span>
@@ -76,7 +76,7 @@ function hideEmailAddress($email)
                                 <li>
                                     <a class="dropdown-item" href="{{ url(app()->getLocale()) }}/user/futures">
                                         <div class="d-flex align-items-center">
-                                            <img src="{{ asset('assets/img/header-icons/derivatives/vanilla-option.svg') }}"
+                                            <img src="{{ asset('img/header-icons/derivatives/vanilla-option.svg') }}"
                                                 class="header-icons" />
                                             <div class="d-block">
                                                 <span> Futures </span>
@@ -87,7 +87,7 @@ function hideEmailAddress($email)
                                 <li>
                                     <a class="dropdown-item" href="{{ url(app()->getLocale()) }}/user/earn">
                                         <div class="d-flex align-items-center">
-                                            <img src="{{ asset('assets/img/header-icons/derivatives/leveraged-tokens.svg') }}"
+                                            <img src="{{ asset('img/header-icons/derivatives/leveraged-tokens.svg') }}"
                                                 class="header-icons" />
                                             <div class="d-block">
                                                 <span> Earn</span>
@@ -102,16 +102,16 @@ function hideEmailAddress($email)
                             <a class="nav-link dropdown-toggle" href="javascript:void(0);" data-bs-toggle="dropdown">
                                 <span class="nav-img d-lg-none" data-bs-toggle="tooltip" data-bs-placement="top"
                                     title="" data-bs-original-title="order">
-                                    <img src="{{ asset('assets/img/header-icons/mobile-bar-icons/order.svg') }}"
+                                    <img src="{{ asset('img/header-icons/mobile-bar-icons/order.svg') }}"
                                         class="img-responsive"> </span>
-                                <!--<span class="nav-img d-lg-none"><img src="{{ asset('assets/img/header-icons/mobile-bar-icons/order.svg') }}" class="img-responsive mr-0"> </span>-->
+                                <!--<span class="nav-img d-lg-none"><img src="{{ asset('img/header-icons/mobile-bar-icons/order.svg') }}" class="img-responsive mr-0"> </span>-->
                                 <!--<span class="hide-575">   Order</span>-->
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end  fade-down">
                                 <li>
                                     <a class="dropdown-item" href="{{ url(app()->getLocale()) }}/user/spot-order">
                                         <div class="d-flex align-items-center">
-                                            <img src="{{ asset('assets/img/header-icons/derivatives/wealthmark-futures-overview.svg') }}"
+                                            <img src="{{ asset('img/header-icons/derivatives/wealthmark-futures-overview.svg') }}"
                                                 class="header-icons" />
                                             <div class="d-block">
                                                 <span> Spot Order</span>
@@ -122,7 +122,7 @@ function hideEmailAddress($email)
                                 <li>
                                     <a class="dropdown-item" href="{{ url(app()->getLocale()) }}/user/margin-order">
                                         <div class="d-flex align-items-center">
-                                            <img src="{{ asset('assets/img/header-icons/derivatives/responsible-trading.svg') }}"
+                                            <img src="{{ asset('img/header-icons/derivatives/responsible-trading.svg') }}"
                                                 class="header-icons" />
                                             <div class="d-block">
                                                 <span> Margin Order</span>
@@ -134,7 +134,7 @@ function hideEmailAddress($email)
                                 <li>
                                     <a class="dropdown-item" href="{{ url(app()->getLocale()) }}/user/p2p-order">
                                         <div class="d-flex align-items-center">
-                                            <img src="{{ asset('assets/img/header-icons/derivatives/coin-m-futures.svg') }}"
+                                            <img src="{{ asset('img/header-icons/derivatives/coin-m-futures.svg') }}"
                                                 class="header-icons" />
                                             <div class="d-block">
                                                 <span> Orders</span>
@@ -145,7 +145,7 @@ function hideEmailAddress($email)
                                 <li>
                                     <a class="dropdown-item" href="{{ url(app()->getLocale()) }}/user/earn-history">
                                         <div class="d-flex align-items-center">
-                                            <img src="{{ asset('assets/img/header-icons/derivatives/vanilla-option.svg') }}"
+                                            <img src="{{ asset('img/header-icons/derivatives/vanilla-option.svg') }}"
                                                 class="header-icons" />
                                             <div class="d-block">
                                                 <span> Earn History </span>
@@ -157,7 +157,7 @@ function hideEmailAddress($email)
                                     <a class="dropdown-item"
                                         href="{{ url(app()->getLocale()) }}/user/buy-crypto-history">
                                         <div class="d-flex align-items-center">
-                                            <img src="{{ asset('assets/img/header-icons/derivatives/leveraged-tokens.svg') }}"
+                                            <img src="{{ asset('img/header-icons/derivatives/leveraged-tokens.svg') }}"
                                                 class="header-icons" />
                                             <div class="d-block">
                                                 <span> Buy Crypto History</span>
@@ -168,7 +168,7 @@ function hideEmailAddress($email)
                                 <li>
                                     <a class="dropdown-item" href="{{ url(app()->getLocale()) }}/user/coin-staking">
                                         <div class="d-flex align-items-center">
-                                            <img src="{{ asset('assets/img/header-icons/derivatives/leveraged-tokens.svg') }}"
+                                            <img src="{{ asset('img/header-icons/derivatives/leveraged-tokens.svg') }}"
                                                 class="header-icons" />
                                             <div class="d-block">
                                                 <span> Staking</span>
@@ -183,12 +183,12 @@ function hideEmailAddress($email)
                                 <span class="nav-img menu_avatar" data-bs-toggle="tooltip" data-bs-placement="top"
                                     title="" data-bs-original-title="User Profile">
                                     @if (Auth::user()->avatar != null)
-                                        <img src="{{ asset('assets/img/avatar') . '/' . Auth::user()->avatar }}"
+                                        <img src="{{ asset('img/avatar') . '/' . Auth::user()->avatar }}"
                                             alt="">
                                     @else
                                         <!--<i class="bi bi-person-circle user-icon-desktop"></i>-->
                                         <span class="nav-img d-lg-none"> <img
-                                                src="{{ asset('assets/img/header-icons/mobile-bar-icons/user.svg') }}"
+                                                src="{{ asset('img/header-icons/mobile-bar-icons/user.svg') }}"
                                                 class="img-responsive mr-0"> </span>
                                     @endif
 
@@ -377,7 +377,7 @@ function hideEmailAddress($email)
                                 @endphp
                                 <span class="nav-img d-lg-none" data-bs-toggle="tooltip" data-bs-placement="top"
                                     title="" data-bs-original-title="Notification">
-                                    <img src="{{ asset('assets/img/header-icons/mobile-bar-icons/top-right-notification.svg') }}"
+                                    <img src="{{ asset('img/header-icons/mobile-bar-icons/top-right-notification.svg') }}"
                                         class="img-responsive mr-0"> </span>
 
                                 @auth
@@ -433,13 +433,13 @@ function hideEmailAddress($email)
         <nav id="navbar_main" class="mobile-offcanvas navbar navbar-expand-lg py-0">
             <div class="offcanvas-header justify-content-between">
                 <a href="{{ url('/') }}" class="navbar-brand" id="find-2">
-                    <img src="{{ asset('assets/img/wealthmark-logo.svg') }}" alt="ss"
+                    <img src="{{ asset('img/wealthmark-logo.svg') }}" alt="ss"
                         class="wealthmark-logo">
                 </a>
                 <span class="btn-close m-0 p-0"></span>
             </div>
             <a href="{{ url('/') }}" class="navbar-brand d-none d-lg-block">
-                <img src="{{ asset('assets/img/wealthmark-logo.svg') }}" alt="dd"
+                <img src="{{ asset('img/wealthmark-logo.svg') }}" alt="dd"
                     class="wealthmark-logo">
             </a>
             <div>
@@ -449,7 +449,7 @@ function hideEmailAddress($email)
                             data-bs-toggle="dropdown">
                             <i class='bi bi-grid-3x3-gap d-none d-lg-inline-block'></i>
                             <span class="nav-img d-lg-none">
-                                <img src="{{ asset('assets/img/mob-nav-icon/product.svg') }}"
+                                <img src="{{ asset('img/mob-nav-icon/product.svg') }}"
                                     class="img-responsive"> </span> <span class="d-inline-block d-lg-none"> Products
                             </span>
                         </a>
@@ -461,7 +461,7 @@ function hideEmailAddress($email)
                                             <li>
                                                 <a href="{{ url(app()->getLocale(), 'exchange') }}">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="{{ asset('assets/img/header-icons/mega-option/exchange.svg') }}"
+                                                        <img src="{{ asset('img/header-icons/mega-option/exchange.svg') }}"
                                                             class="header-icons" alt="Exchange" />
                                                         <div class="d-block">
                                                             <span> Exchange</span>
@@ -474,7 +474,7 @@ function hideEmailAddress($email)
                                             <li>
                                                 <a href="{{ url(app()->getLocale(), 'academy') }}">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="{{ asset('assets/img/header-icons/mega-option/academy.svg') }}"
+                                                        <img src="{{ asset('img/header-icons/mega-option/academy.svg') }}"
                                                             class="header-icons" alt="Academy" />
                                                         <div class="d-block">
                                                             <span> Academy</span>
@@ -487,7 +487,7 @@ function hideEmailAddress($email)
                                             <li>
                                                 <a href="{{ url(app()->getLocale(), 'broker') }}">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="{{ asset('assets/img/header-icons/mega-option/broker.svg') }}"
+                                                        <img src="{{ asset('img/header-icons/mega-option/broker.svg') }}"
                                                             class="header-icons" alt="Broker" />
                                                         <div class="d-block">
                                                             <span> Broker</span>
@@ -501,7 +501,7 @@ function hideEmailAddress($email)
                                                 <a
                                                     href="{{ url(app()->getLocale(), 'vip-institutional-services') }}">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="{{ asset('assets/img/header-icons/mega-option/institutional-and-vip.svg') }}"
+                                                        <img src="{{ asset('img/header-icons/mega-option/institutional-and-vip.svg') }}"
                                                             class="header-icons" alt="Institutional Services" />
                                                         <div class="d-block">
                                                             <span> Institutional Services</span>
@@ -520,7 +520,7 @@ function hideEmailAddress($email)
                                             <li>
                                                 <a href="{{ url(app()->getLocale(), 'charity') }}">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="{{ asset('assets/img/header-icons/mega-option/charity.svg') }}"
+                                                        <img src="{{ asset('img/header-icons/mega-option/charity.svg') }}"
                                                             class="header-icons" alt="Charity" />
                                                         <div class="d-block">
                                                             <span> Charity</span>
@@ -533,7 +533,7 @@ function hideEmailAddress($email)
                                             <li>
                                                 <a href="{{ url(app()->getLocale(), 'cloud') }}">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="{{ asset('assets/img/header-icons/mega-option/cloud.svg') }}"
+                                                        <img src="{{ asset('img/header-icons/mega-option/cloud.svg') }}"
                                                             class="header-icons" alt="Cloud" />
                                                         <div class="d-block">
                                                             <span> Cloud</span>
@@ -546,7 +546,7 @@ function hideEmailAddress($email)
                                             <li>
                                                 <a href="{{ url(app()->getLocale(), 'dex') }}">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="{{ asset('assets/img/header-icons/mega-option/dex.svg') }}"
+                                                        <img src="{{ asset('img/header-icons/mega-option/dex.svg') }}"
                                                             class="header-icons" alt="Dex" />
                                                         <div class="d-block">
                                                             <span> Dex</span>
@@ -559,7 +559,7 @@ function hideEmailAddress($email)
                                             <li>
                                                 <a href="{{ url(app()->getLocale(), 'labs') }}">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="{{ asset('assets/img/header-icons/mega-option/lab.svg') }}"
+                                                        <img src="{{ asset('img/header-icons/mega-option/lab.svg') }}"
                                                             class="header-icons" alt="Labs" />
                                                         <div class="d-block">
                                                             <span> Labs</span>
@@ -578,7 +578,7 @@ function hideEmailAddress($email)
                                             <li>
                                                 <a href="{{ url(app()->getLocale(), 'launchpad') }}">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="{{ asset('assets/img/header-icons/mega-option/launchpad.svg') }}"
+                                                        <img src="{{ asset('img/header-icons/mega-option/launchpad.svg') }}"
                                                             class="header-icons" alt="Launchpad" />
                                                         <div class="d-block">
                                                             <span> Launchpad</span>
@@ -591,7 +591,7 @@ function hideEmailAddress($email)
                                             <li>
                                                 <a href="{{ url(app()->getLocale(), 'research') }}">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="{{ asset('assets/img/header-icons/mega-option/research.svg') }}"
+                                                        <img src="{{ asset('img/header-icons/mega-option/research.svg') }}"
                                                             class="header-icons" alt="Research" />
                                                         <div class="d-block">
                                                             <span> Research</span>
@@ -604,7 +604,7 @@ function hideEmailAddress($email)
                                             <li>
                                                 <a href="{{ url(app()->getLocale(), 'trust-wallet') }}">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="{{ asset('assets/img/header-icons/mega-option/trust-wallet.svg') }}"
+                                                        <img src="{{ asset('img/header-icons/mega-option/trust-wallet.svg') }}"
                                                             class="header-icons" alt="Trust Wallet" />
                                                         <div class="d-block">
                                                             <span> WM Wallet</span>
@@ -617,7 +617,7 @@ function hideEmailAddress($email)
                                             <li>
                                                 <a href="{{ url(app()->getLocale(), 'gift-card') }}">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="{{ asset('assets/img/header-icons/mega-option/gift-card.svg') }}"
+                                                        <img src="{{ asset('img/header-icons/mega-option/gift-card.svg') }}"
                                                             class="header-icons" alt="Gift Card" />
                                                         <div class="d-block">
                                                             <span> Gift Card</span>
@@ -638,14 +638,14 @@ function hideEmailAddress($email)
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="javascript:void(0);" data-bs-toggle="dropdown">
                             <span class="nav-img d-lg-none"><img
-                                    src="{{ asset('assets/img/mob-nav-icon/buy-crypto.svg') }}"
+                                    src="{{ asset('img/mob-nav-icon/buy-crypto.svg') }}"
                                     class="img-responsive"> </span>
                             <span class="d-inline-block "> Buy&nbsp;Crypto</span> </a>
                         <ul class="dropdown-menu dropdown-menu-end fade-down">
                             <li>
                                 <a class="dropdown-item" href="{{ url(app()->getLocale(), 'card-deposite') }}">
                                     <div class="d-flex align-items-center">
-                                        <img src="{{ asset('assets/img/header-icons/buy-crypto/card-deposit.svg') }}"
+                                        <img src="{{ asset('img/header-icons/buy-crypto/card-deposit.svg') }}"
                                             class="header-icons" alt="Card Deposit" />
                                         <div class="d-block">
                                             <span> Card Deposit</span>
@@ -658,7 +658,7 @@ function hideEmailAddress($email)
                             <li>
                                 <a class="dropdown-item" href="{{ url(app()->getLocale() . '/p2p-trading/buy') }}">
                                     <div class="d-flex align-items-center">
-                                        <img src="{{ asset('assets/img/header-icons/buy-crypto/p2p-trading.svg') }}"
+                                        <img src="{{ asset('img/header-icons/buy-crypto/p2p-trading.svg') }}"
                                             class="header-icons" alt="P2P Trading" />
                                         <div class="d-block">
                                             <span> P2P Trading</span>
@@ -671,7 +671,7 @@ function hideEmailAddress($email)
                             <li>
                                 <a class="dropdown-item" href="{{ url(app()->getLocale(), 'cash-balance') }}">
                                     <div class="d-flex align-items-center">
-                                        <img src="{{ asset('assets/img/header-icons/buy-crypto/cash-balance.svg') }}"
+                                        <img src="{{ asset('img/header-icons/buy-crypto/cash-balance.svg') }}"
                                             class="header-icons" alt="Cash Balance" />
                                         <div class="d-block">
                                             <span> Cash Balance</span>
@@ -685,7 +685,7 @@ function hideEmailAddress($email)
                                 <a class="dropdown-item"
                                     href="{{ url(app()->getLocale(), 'third-party-payment') }}">
                                     <div class="d-flex align-items-center">
-                                        <img src="{{ asset('assets/img/header-icons/buy-crypto/third-party-payment.svg') }}"
+                                        <img src="{{ asset('img/header-icons/buy-crypto/third-party-payment.svg') }}"
                                             class="header-icons" alt="Third Party Payment" />
                                         <div class="d-block">
                                             <span> Third Party Payment</span>
@@ -700,7 +700,7 @@ function hideEmailAddress($email)
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url(app()->getLocale(), 'markets') }}">
                             <span class="nav-img d-lg-none"><img
-                                    src="{{ asset('assets/img/mob-nav-icon/market.svg') }}"
+                                    src="{{ asset('img/mob-nav-icon/market.svg') }}"
                                     class="img-responsive"> </span>
                             <span class="d-inline-block"> Market</span>
                         </a>
@@ -709,7 +709,7 @@ function hideEmailAddress($email)
                         <a class="nav-link dropdown-toggle click-off-event icon-link" href="javascript:void(0);"
                             data-bs-toggle="dropdown">
                             <span class="nav-img d-lg-none">
-                                <img src="{{ asset('assets/img/mob-nav-icon/trade.svg') }}"
+                                <img src="{{ asset('img/mob-nav-icon/trade.svg') }}"
                                     class="img-responsive">
                             </span>
                             <span class="d-inline-block"> Trade
@@ -724,7 +724,7 @@ function hideEmailAddress($email)
                                                 <a class="dropdown-item"
                                                     href="{{ url(app()->getLocale(), 'convert') }}">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="{{ asset('assets/img/header-icons/trade/convert.svg') }}"
+                                                        <img src="{{ asset('img/header-icons/trade/convert.svg') }}"
                                                             class="header-icons" alt="Convert" />
                                                         <div class="d-block">
                                                             <span> Convert</span>
@@ -738,7 +738,7 @@ function hideEmailAddress($email)
                                                 <a class="dropdown-item"
                                                     href="{{ url(app()->getLocale(), 'classic') }}">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="{{ asset('assets/img/header-icons/trade/classic.svg') }}"
+                                                        <img src="{{ asset('img/header-icons/trade/classic.svg') }}"
                                                             class="header-icons" alt="Classic" />
                                                         <div class="d-block">
                                                             <span> Classic</span>
@@ -752,7 +752,7 @@ function hideEmailAddress($email)
                                                 <a class="dropdown-item"
                                                     href="{{ url(app()->getLocale(), 'advanced') }}">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="{{ asset('assets/img/header-icons/trade/advanced.svg') }}"
+                                                        <img src="{{ asset('img/header-icons/trade/advanced.svg') }}"
                                                             class="header-icons" alt="Advanced" />
                                                         <div class="d-block">
                                                             <span> Advanced</span>
@@ -766,7 +766,7 @@ function hideEmailAddress($email)
                                                 <a class="dropdown-item"
                                                     href="{{ url(app()->getLocale(), 'margin') }}">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="{{ asset('assets/img/header-icons/trade/margin.svg') }}"
+                                                        <img src="{{ asset('img/header-icons/trade/margin.svg') }}"
                                                             class="header-icons" alt="Margin" />
                                                         <div class="d-block">
                                                             <span> Margin</span>
@@ -787,7 +787,7 @@ function hideEmailAddress($email)
                                                 <a class="dropdown-item"
                                                     href="{{ url(app()->getLocale(), 'p2p-trading') }}">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="{{ asset('assets/img/header-icons/trade/p2p.svg') }}"
+                                                        <img src="{{ asset('img/header-icons/trade/p2p.svg') }}"
                                                             class="header-icons" alt="P2P" />
                                                         <div class="d-block">
                                                             <span> P2P</span>
@@ -801,7 +801,7 @@ function hideEmailAddress($email)
                                                 <a class="dropdown-item"
                                                     href="{{ url(app()->getLocale(), 'strategy-trading') }}">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="{{ asset('assets/img/header-icons/trade/strategy-trading.svg') }}"
+                                                        <img src="{{ asset('img/header-icons/trade/strategy-trading.svg') }}"
                                                             class="header-icons" alt="Strategy Trading" />
                                                         <div class="d-block">
                                                             <span> Strategy Trading</span>
@@ -815,7 +815,7 @@ function hideEmailAddress($email)
                                                 <a class="dropdown-item"
                                                     href="{{ url(app()->getLocale(), 'swap-farming') }}">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="{{ asset('assets/img/header-icons/trade/swap-farming.svg') }}"
+                                                        <img src="{{ asset('img/header-icons/trade/swap-farming.svg') }}"
                                                             class="header-icons" alt="Swap Farming" />
                                                         <div class="d-block">
                                                             <span> Swap Farming</span>
@@ -829,7 +829,7 @@ function hideEmailAddress($email)
                                                 <a class="dropdown-item"
                                                     href="{{ url(app()->getLocale(), 'fan-token') }}">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="{{ asset('assets/img/header-icons/trade/fan-token.svg') }}"
+                                                        <img src="{{ asset('img/header-icons/trade/fan-token.svg') }}"
                                                             class="header-icons" alt="Fan Token" />
                                                         <div class="d-block">
                                                             <span> Fan Token</span>
@@ -852,7 +852,7 @@ function hideEmailAddress($email)
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="javascript:void(0);" data-bs-toggle="dropdown">
                             <span class="nav-img d-lg-none"><img
-                                    src="{{ asset('assets/img/mob-nav-icon/derivatives.svg') }}"
+                                    src="{{ asset('img/mob-nav-icon/derivatives.svg') }}"
                                     class="img-responsive"> </span>
                             <span class="d-inline-block"> Derivatives</span>
                         </a>
@@ -861,7 +861,7 @@ function hideEmailAddress($email)
                                 <a class="dropdown-item"
                                     href="{{ url(app()->getLocale(), 'wealthmark-futures-overview') }}">
                                     <div class="d-flex align-items-center">
-                                        <img src="{{ asset('assets/img/header-icons/derivatives/wealthmark-futures-overview.svg') }}"
+                                        <img src="{{ asset('img/header-icons/derivatives/wealthmark-futures-overview.svg') }}"
                                             class="header-icons" alt="WealthMark Futures Overview" />
                                         <div class="d-block">
                                             <span> WealthMark Futures Overview</span>
@@ -875,7 +875,7 @@ function hideEmailAddress($email)
                                 <a class="dropdown-item"
                                     href="{{ url(app()->getLocale(), 'responsible-trading') }}">
                                     <div class="d-flex align-items-center">
-                                        <img src="{{ asset('assets/img/header-icons/derivatives/responsible-trading.svg') }}"
+                                        <img src="{{ asset('img/header-icons/derivatives/responsible-trading.svg') }}"
                                             class="header-icons" alt="Responsible Trading" />
                                         <div class="d-block">
                                             <span> Responsible Trading</span>
@@ -888,7 +888,7 @@ function hideEmailAddress($email)
                             <li>
                                 <a class="dropdown-item" href="{{ url(app()->getLocale(), 'coin-m-futures') }}">
                                     <div class="d-flex align-items-center">
-                                        <img src="{{ asset('assets/img/header-icons/derivatives/coin-m-futures.svg') }}"
+                                        <img src="{{ asset('img/header-icons/derivatives/coin-m-futures.svg') }}"
                                             class="header-icons" alt="Coin-M Futures" />
                                         <div class="d-block">
                                             <span> Coin-M Futures</span>
@@ -901,7 +901,7 @@ function hideEmailAddress($email)
                             <li>
                                 <a class="dropdown-item" href="{{ url(app()->getLocale(), 'vanilla-options') }}">
                                     <div class="d-flex align-items-center">
-                                        <img src="{{ asset('assets/img/header-icons/derivatives/vanilla-option.svg') }}"
+                                        <img src="{{ asset('img/header-icons/derivatives/vanilla-option.svg') }}"
                                             class="header-icons" alt="Vanilla Options" />
                                         <div class="d-block">
                                             <span> Vanilla Options</span>
@@ -914,7 +914,7 @@ function hideEmailAddress($email)
                             <li>
                                 <a class="dropdown-item" href="{{ url(app()->getLocale(), 'leveraged-tokens') }}">
                                     <div class="d-flex align-items-center">
-                                        <img src="{{ asset('assets/img/header-icons/derivatives/leveraged-tokens.svg') }}"
+                                        <img src="{{ asset('img/header-icons/derivatives/leveraged-tokens.svg') }}"
                                             class="header-icons" alt="Leveraged Tokens" />
                                         <div class="d-block">
                                             <span> Leveraged Tokens</span>
@@ -927,7 +927,7 @@ function hideEmailAddress($email)
                             <li>
                                 <a class="dropdown-item" href="{{ url(app()->getLocale(), 'battle') }}">
                                     <div class="d-flex align-items-center">
-                                        <img src="{{ asset('assets/img/header-icons/derivatives/battle.svg') }}"
+                                        <img src="{{ asset('img/header-icons/derivatives/battle.svg') }}"
                                             class="header-icons" alt="Battle" />
                                         <div class="d-block">
                                             <span> Battle</span>
@@ -945,7 +945,7 @@ function hideEmailAddress($email)
                             <!--<i class='bi bi-grid-3x3-gap d-none d-lg-inline-block' ></i>-->
                             <span class="nav-img d-lg-none">
 
-                                <img src="{{ asset('assets/img/mob-nav-icon/earn.svg') }}"
+                                <img src="{{ asset('img/mob-nav-icon/earn.svg') }}"
                                     class="img-responsive">
                             </span>
                             <span class="d-inline-block"> Earn
@@ -960,7 +960,7 @@ function hideEmailAddress($email)
                                                 <a class="dropdown-item"
                                                     href="{{ url(app()->getLocale(), 'wealthmark-earn') }}">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="{{ asset('assets/img/header-icons/earn/wealthmark-earn.svg') }}"
+                                                        <img src="{{ asset('img/header-icons/earn/wealthmark-earn.svg') }}"
                                                             class="header-icons" alt=" WealthMark Earn" />
                                                         <div class="d-block">
                                                             <span> WealthMark Earn</span>
@@ -974,7 +974,7 @@ function hideEmailAddress($email)
                                                 <a class="dropdown-item"
                                                     href="{{ url(app()->getLocale(), 'launchpad') }}">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="{{ asset('assets/img/header-icons/earn/launchpad.svg') }}"
+                                                        <img src="{{ asset('img/header-icons/earn/launchpad.svg') }}"
                                                             class="header-icons" alt="Launchpad" />
                                                         <div class="d-block">
                                                             <span> Launchpad</span>
@@ -988,7 +988,7 @@ function hideEmailAddress($email)
                                                 <a class="dropdown-item"
                                                     href="{{ url(app()->getLocale(), 'simple-earn') }}">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="{{ asset('assets/img/header-icons/earn/simple-earn.svg') }}"
+                                                        <img src="{{ asset('img/header-icons/earn/simple-earn.svg') }}"
                                                             class="header-icons" alt=" WealthMark Earn" />
                                                         <div class="d-block">
                                                             <span> Simple Earn</span>
@@ -1002,7 +1002,7 @@ function hideEmailAddress($email)
                                                 <a class="dropdown-item"
                                                     href="{{ url(app()->getLocale(), 'savings') }}">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="{{ asset('assets/img/header-icons/earn/saving.svg') }}"
+                                                        <img src="{{ asset('img/header-icons/earn/saving.svg') }}"
                                                             class="header-icons" alt="Saving" />
                                                         <div class="d-block">
                                                             <span> Saving</span>
@@ -1022,7 +1022,7 @@ function hideEmailAddress($email)
                                                 <a class="dropdown-item"
                                                     href="{{ url(app()->getLocale(), 'staking') }}">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="{{ asset('assets/img/header-icons/earn/staking.svg') }}"
+                                                        <img src="{{ asset('img/header-icons/earn/staking.svg') }}"
                                                             class="header-icons" alt="Staking" />
                                                         <div class="d-block">
                                                             <span> Staking</span>
@@ -1036,7 +1036,7 @@ function hideEmailAddress($email)
                                                 <a class="dropdown-item"
                                                     href="{{ url(app()->getLocale(), 'bmk-vault') }}">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="{{ asset('assets/img/header-icons/earn/bm-vault.svg') }}"
+                                                        <img src="{{ asset('img/header-icons/earn/bm-vault.svg') }}"
                                                             class="header-icons" alt="BMVault" />
                                                         <div class="d-block">
                                                             <span> BMK Vault</span>
@@ -1050,7 +1050,7 @@ function hideEmailAddress($email)
                                                 <a class="dropdown-item"
                                                     href="{{ url(app()->getLocale(), 'dual-investment') }}">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="{{ asset('assets/img/header-icons/earn/dual-investment.svg') }}"
+                                                        <img src="{{ asset('img/header-icons/earn/dual-investment.svg') }}"
                                                             class="header-icons" alt="Dual Investment" />
                                                         <div class="d-block">
                                                             <span> Dual Investment</span>
@@ -1064,7 +1064,7 @@ function hideEmailAddress($email)
                                                 <a class="dropdown-item"
                                                     href="{{ url(app()->getLocale(), 'liquidity-farming') }}">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="{{ asset('assets/img/header-icons/earn/liquidity-farming.svg') }}"
+                                                        <img src="{{ asset('img/header-icons/earn/liquidity-farming.svg') }}"
                                                             class="header-icons" alt="Liquidity Farming" />
                                                         <div class="d-block">
                                                             <span> Liquidity Farming</span>
@@ -1086,7 +1086,7 @@ function hideEmailAddress($email)
                                                 <a class="dropdown-item"
                                                     href="{{ url(app()->getLocale(), 'auto-invest') }}">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="{{ asset('assets/img/header-icons/earn/auto-invest.svg') }}"
+                                                        <img src="{{ asset('img/header-icons/earn/auto-invest.svg') }}"
                                                             class="header-icons" alt="Auto Invest" />
                                                         <div class="d-block">
                                                             <span> Auto Invest</span>
@@ -1100,7 +1100,7 @@ function hideEmailAddress($email)
                                                 <a class="dropdown-item"
                                                     href="{{ url(app()->getLocale(), 'wealthmark-pool') }}">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="{{ asset('assets/img/header-icons/earn/wealthmark-pool.svg') }}"
+                                                        <img src="{{ asset('img/header-icons/earn/wealthmark-pool.svg') }}"
                                                             class="header-icons" alt="WealthMark Pool" />
                                                         <div class="d-block">
                                                             <span> WealthMark Pool</span>
@@ -1113,7 +1113,7 @@ function hideEmailAddress($email)
                                             <li>
                                                 <a class="dropdown-item" href="javascript:void(0)">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="{{ asset('assets/img/header-icons/earn/wealthmark-pool.svg') }}"
+                                                        <img src="{{ asset('img/header-icons/earn/wealthmark-pool.svg') }}"
                                                             class="header-icons" alt="WealthMark Pool" />
                                                         <div class="d-block">
                                                             <span> Referral</span>
@@ -1135,7 +1135,7 @@ function hideEmailAddress($email)
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-bs-toggle="dropdown">
                             <span class="nav-img d-lg-none"><img
-                                    src="{{ asset('assets/img/mob-nav-icon/finance.svg') }}"
+                                    src="{{ asset('img/mob-nav-icon/finance.svg') }}"
                                     class="img-responsive"> </span>
                             <span class="d-inline-block"> Finance</span>
                         </a>
@@ -1144,7 +1144,7 @@ function hideEmailAddress($email)
                                 <a class="dropdown-item"
                                     href="{{ url(app()->getLocale(), 'wealthmark-visa-card') }}">
                                     <div class="d-flex align-items-center">
-                                        <img src="{{ asset('assets/img/header-icons/Finance/wealthmark-pool.svg') }}"
+                                        <img src="{{ asset('img/header-icons/Finance/wealthmark-pool.svg') }}"
                                             class="header-icons" alt="WealthMark Visa Card" />
                                         <div class="d-block">
                                             <span> Wealthmark Card</span>
@@ -1157,7 +1157,7 @@ function hideEmailAddress($email)
                             <li>
                                 <a class="dropdown-item" href="{{ url(app()->getLocale(), 'crypto-loans') }}">
                                     <div class="d-flex align-items-center">
-                                        <img src="{{ asset('assets/img/header-icons/Finance/crypto-loan.svg') }}"
+                                        <img src="{{ asset('img/header-icons/Finance/crypto-loan.svg') }}"
                                             class="header-icons" />
                                         <div class="d-block">
                                             <span> Crypto Loans</span>
@@ -1170,7 +1170,7 @@ function hideEmailAddress($email)
                             <li>
                                 <a class="dropdown-item" href="{{ url(app()->getLocale(), 'wealthmark-pay') }}">
                                     <div class="d-flex align-items-center">
-                                        <img src="{{ asset('assets/img/header-icons/Finance/wm-pay.svg') }}"
+                                        <img src="{{ asset('img/header-icons/Finance/wm-pay.svg') }}"
                                             class="header-icons" />
                                         <div class="d-block">
                                             <span> WealthMark Pay</span>
@@ -1183,7 +1183,7 @@ function hideEmailAddress($email)
                             <li>
                                 <a class="dropdown-item" href="Javascript:void(0)">
                                     <div class="d-flex align-items-center">
-                                        <img src="{{ asset('assets/img/header-icons/Finance/wm-pay.svg') }}"
+                                        <img src="{{ asset('img/header-icons/Finance/wm-pay.svg') }}"
                                             class="header-icons" />
                                         <div class="d-block">
                                             <span> WealthMark Gift Card</span>
@@ -1197,20 +1197,20 @@ function hideEmailAddress($email)
                     </li>
                     <li class="nav-item"> <a class="nav-link txtleft" href="{{ url(app()->getLocale(), 'nft') }}">
                             <span class="nav-img d-lg-none"><img
-                                    src="{{ asset('assets/img/mob-nav-icon/nft.svg') }}"
+                                    src="{{ asset('img/mob-nav-icon/nft.svg') }}"
                                     class="img-responsive"> </span>
                             <span class="d-inline-block"> NFT</span></a>
                     </li>
                     <li class="nav-item"> <a class="nav-link txtleft"
                             href="{{ url(app()->getLocale()) }}/corporate">
                             <span class="nav-img d-lg-none"><img
-                                    src="{{ asset('assets/img/mob-nav-icon/corporate.svg') }}"
+                                    src="{{ asset('img/mob-nav-icon/corporate.svg') }}"
                                     class="img-responsive"> </span>
                             <span class="d-inline-block"> Corporate</span></a>
                     </li>
                     <li class="nav-item"> <a class="nav-link txtleft" href="{{ url(app()->getLocale()) }}/wm-gold">
                             <span class="nav-img d-lg-none"><img
-                                    src="{{ asset('assets/img/mob-nav-icon/wm-gold.svg') }}"
+                                    src="{{ asset('img/mob-nav-icon/wm-gold.svg') }}"
                                     class="img-responsive"> </span>
                             <span class="d-inline-block"> WM&nbsp;Gold</span></a>
                     </li>
@@ -1230,7 +1230,7 @@ function hideEmailAddress($email)
                                     data-bs-toggle="dropdown">
                                     <span class="nav-img" data-bs-toggle="tooltip" data-bs-placement="top"
                                         title="" data-bs-original-title="wallet">
-                                        <img src="{{ asset('assets/img/header-icons/mobile-bar-icons/empty-wallet.svg') }}"
+                                        <img src="{{ asset('img/header-icons/mobile-bar-icons/empty-wallet.svg') }}"
                                             class="img-responsive"> </span>
                                     <!--<span class="text-only">   Wallet</span>-->
                                 </a>
@@ -1239,7 +1239,7 @@ function hideEmailAddress($email)
                                     <li>
                                         <a class="dropdown-item" href="{{ url(app()->getLocale()) }}/user/overview">
                                             <div class="d-flex align-items-center">
-                                                <img src="{{ asset('assets/img/header-icons/wallet/overview.svg') }}"
+                                                <img src="{{ asset('img/header-icons/wallet/overview.svg') }}"
                                                     class="header-icons" />
                                                 <div class="d-block">
                                                     <span> Overview</span>
@@ -1251,7 +1251,7 @@ function hideEmailAddress($email)
                                         <a class="dropdown-item"
                                             href="{{ url(app()->getLocale()) }}/user/fiat-and-spot">
                                             <div class="d-flex align-items-center">
-                                                <img src="{{ asset('assets/img/header-icons/wallet/fiat-spot.svg') }}"
+                                                <img src="{{ asset('img/header-icons/wallet/fiat-spot.svg') }}"
                                                     class="header-icons" />
                                                 <div class="d-block">
                                                     <span> Fiat and Spot</span>
@@ -1263,7 +1263,7 @@ function hideEmailAddress($email)
                                     <li>
                                         <a class="dropdown-item" href="{{ url(app()->getLocale()) }}/user/funding">
                                             <div class="d-flex align-items-center">
-                                                <img src="{{ asset('assets/img/header-icons/wallet/funding.svg') }}"
+                                                <img src="{{ asset('img/header-icons/wallet/funding.svg') }}"
                                                     class="header-icons" />
                                                 <div class="d-block">
                                                     <span> Funding</span>
@@ -1274,7 +1274,7 @@ function hideEmailAddress($email)
                                     <li>
                                         <a class="dropdown-item" href="{{ url(app()->getLocale()) }}/user/futures">
                                             <div class="d-flex align-items-center">
-                                                <img src="{{ asset('assets/img/header-icons/wallet/future.svg') }}"
+                                                <img src="{{ asset('img/header-icons/wallet/future.svg') }}"
                                                     class="header-icons" />
                                                 <div class="d-block">
                                                     <span> Futures </span>
@@ -1285,7 +1285,7 @@ function hideEmailAddress($email)
                                     <li>
                                         <a class="dropdown-item" href="{{ url(app()->getLocale()) }}/user/earn">
                                             <div class="d-flex align-items-center">
-                                                <img src="{{ asset('assets/img/header-icons/wallet/earn.svg') }}"
+                                                <img src="{{ asset('img/header-icons/wallet/earn.svg') }}"
                                                     class="header-icons" />
                                                 <div class="d-block">
                                                     <span> Earn</span>
@@ -1301,7 +1301,7 @@ function hideEmailAddress($email)
                                     data-bs-toggle="dropdown">
                                     <span class="nav-img" data-bs-toggle="tooltip" data-bs-placement="top"
                                         title="" data-bs-original-title="Order">
-                                        <img src="{{ asset('assets/img/header-icons/mobile-bar-icons/order.svg') }}"
+                                        <img src="{{ asset('img/header-icons/mobile-bar-icons/order.svg') }}"
                                             class="img-responsive">
                                     </span>
                                     <!--<span class="text-only">   Order</span>-->
@@ -1310,7 +1310,7 @@ function hideEmailAddress($email)
                                     <li>
                                         <a class="dropdown-item" href="{{ url(app()->getLocale()) }}/user/spot-order">
                                             <div class="d-flex align-items-center">
-                                                <img src="{{ asset('assets/img/header-icons/order/spot-order.svg') }}"
+                                                <img src="{{ asset('img/header-icons/order/spot-order.svg') }}"
                                                     class="header-icons" />
                                                 <div class="d-block">
                                                     <span> Spot Order</span>
@@ -1321,7 +1321,7 @@ function hideEmailAddress($email)
                                     <li>
                                         <a class="dropdown-item" href="{{ url(app()->getLocale()) }}/user/margin-order">
                                             <div class="d-flex align-items-center">
-                                                <img src="{{ asset('assets/img/header-icons/order/marging-order.svg') }}"
+                                                <img src="{{ asset('img/header-icons/order/marging-order.svg') }}"
                                                     class="header-icons" />
                                                 <div class="d-block">
                                                     <span> Margin Order</span>
@@ -1333,7 +1333,7 @@ function hideEmailAddress($email)
                                     <li>
                                         <a class="dropdown-item" href="{{ url(app()->getLocale()) }}/user/p2p-order">
                                             <div class="d-flex align-items-center">
-                                                <img src="{{ asset('assets/img/header-icons/order/p2p-order.svg') }}"
+                                                <img src="{{ asset('img/header-icons/order/p2p-order.svg') }}"
                                                     class="header-icons" />
                                                 <div class="d-block">
                                                     <span> Orders</span>
@@ -1344,7 +1344,7 @@ function hideEmailAddress($email)
                                     <li>
                                         <a class="dropdown-item" href="{{ url(app()->getLocale()) }}/user/earn-history">
                                             <div class="d-flex align-items-center">
-                                                <img src="{{ asset('assets/img/header-icons/order/earn-history.svg') }}"
+                                                <img src="{{ asset('img/header-icons/order/earn-history.svg') }}"
                                                     class="header-icons" />
                                                 <div class="d-block">
                                                     <span> Earn History </span>
@@ -1356,7 +1356,7 @@ function hideEmailAddress($email)
                                         <a class="dropdown-item"
                                             href="{{ url(app()->getLocale()) }}/user/buy-crypto-history">
                                             <div class="d-flex align-items-center">
-                                                <img src="{{ asset('assets/img/header-icons/order/buycrypto-history.svg') }}"
+                                                <img src="{{ asset('img/header-icons/order/buycrypto-history.svg') }}"
                                                     class="header-icons" />
                                                 <div class="d-block">
                                                     <span> Buy Crypto History</span>
@@ -1367,7 +1367,7 @@ function hideEmailAddress($email)
                                     <li>
                                         <a class="dropdown-item" href="{{ url(app()->getLocale()) }}/user/coin-staking">
                                             <div class="d-flex align-items-center">
-                                                <img src="{{ asset('assets/img/header-icons/derivatives/leveraged-tokens.svg') }}"
+                                                <img src="{{ asset('img/header-icons/derivatives/leveraged-tokens.svg') }}"
                                                     class="header-icons" />
                                                 <div class="d-block">
                                                     <span> Staking</span>
@@ -1384,12 +1384,12 @@ function hideEmailAddress($email)
                                         title="" data-bs-original-title="User Profile">
                                         @if (Auth::user()->avatar != null)
                                             <img width="20px"
-                                                src="{{ asset('assets/img/avatar') . '/' . Auth::user()->avatar }}"
+                                                src="{{ asset('img/avatar') . '/' . Auth::user()->avatar }}"
                                                 alt="" class=" img-responsiveborder rounded-circle">
                                         @else
                                             <!--<i class="bi bi-person-circle user-icon-desktop"></i>-->
                                             <span class="nav-img"> <img
-                                                    src="{{ asset('assets/img/header-icons/mobile-bar-icons/user.svg') }}"
+                                                    src="{{ asset('img/header-icons/mobile-bar-icons/user.svg') }}"
                                                     class="img-responsive"> </span>
                                         @endif
 
@@ -1571,7 +1571,7 @@ function hideEmailAddress($email)
                                     <span class="nav-img" data-bs-toggle="tooltip" data-bs-placement="top"
                                         title="" data-bs-original-title="Notification"
                                         id="getLatestNotificationsBtn">
-                                        <img src="{{ asset('assets/img/header-icons/mobile-bar-icons/top-right-notification.svg') }}"
+                                        <img src="{{ asset('img/header-icons/mobile-bar-icons/top-right-notification.svg') }}"
                                             class="img-responsive">
                                         <!--@auth {{ $count_allnotification }}@endauth-->
                                         </span>
@@ -1619,7 +1619,7 @@ function hideEmailAddress($email)
                                                     class="latestNotification {{ $latest_notification->read_at ? 'notification-read' : 'notification-unread' }}">
                                                     <a class="dropdown-item no-hover " href="javascript:void(0)">
                                                         <div class="d-flex align-items-center ">
-                                                            <img src="{{ asset('assets/img/msg-box.png') }}"
+                                                            <img src="{{ asset('img/msg-box.png') }}"
                                                                 class="header-icons" alt="Responsible Trading" />
                                                             <div class="d-block">
                                                                 @php
@@ -1679,10 +1679,10 @@ function hideEmailAddress($email)
                                 </a>
                                 <a href="{{ url(app()->getLocale(), 'login') }}" class="show-max-1365"
                                     data-bs-toggle="tooltip" data-bs-placement="top" title="Login">
-                                    <img src="{{ asset('assets/img/header-icons/login1.png') }}" class="auth-img">
+                                    <img src="{{ asset('img/header-icons/login1.png') }}" class="auth-img">
                                 </a>
                                 <a href="{{ url(app()->getLocale(), 'register') }}" class="show-max-1365">
-                                    <img src="{{ asset('assets/img/header-icons/signup2.png') }}" class="auth-img"
+                                    <img src="{{ asset('img/header-icons/signup2.png') }}" class="auth-img"
                                         data-bs-toggle="tooltip" data-bs-placement="top" title="Register">
                                 </a>
                             </div>
@@ -1693,7 +1693,7 @@ function hideEmailAddress($email)
                             <a class="nav-link modal-currency demo" id="select-lang-modal" href="javascript:void(0);"
                                 data-bs-toggle="modal" data-bs-target="#currLangModal">
                                 <span class="nav-img">
-                                    <img src="{{ asset('assets/img/mob-nav-icon/english.svg') }}"
+                                    <img src="{{ asset('img/mob-nav-icon/english.svg') }}"
                                         class="img-responsive">
                                 </span>
                                 <span class="d-lg-none">English&nbsp;@if (Cookie::get('country_name') != '')
@@ -1706,14 +1706,14 @@ function hideEmailAddress($email)
                             data-bs-placement="top" title="" data-bs-original-title="Download">
                             <a class="nav-link dropdown-toggle " href="javascript:void(0);" data-bs-toggle="dropdown">
                                 <span class="nav-img">
-                                    <img src="{{ asset('assets/img/mob-nav-icon/download.svg') }}"
+                                    <img src="{{ asset('img/mob-nav-icon/download.svg') }}"
                                         class="img-responsive">
                                 </span>
                                 <span class="d-lg-none">Download</span>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end fade-down">
                                 <li> <a href="javascript:void(0);">
-                                        <img src="{{ asset('assets/img/qr/qrcode_wealthmark.io.png') }}"
+                                        <img src="{{ asset('img/qr/qrcode_wealthmark.io.png') }}"
                                             class="header-download" alt="QR Code" />
                                     </a>
                                 </li>
@@ -1725,7 +1725,7 @@ function hideEmailAddress($email)
                             <a class="nav-link modal-currency ps-0" id="select-currency-modal"
                                 href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#currLangModal">
                                 <span class="nav-img">
-                                    <img src="{{ asset('assets/img/mob-nav-icon/inr.svg') }}"
+                                    <img src="{{ asset('img/mob-nav-icon/inr.svg') }}"
                                         class="img-responsive">
                                 </span>
                                 <span class="d-lg-none">INR</span>
@@ -1736,7 +1736,7 @@ function hideEmailAddress($email)
                             <a class="nav-link ps-0" href="javascript:void(0);">
                                 <!--<i class="bi-moon-stars-fill"></i>-->
                                 <span class="nav-img">
-                                    <img src="{{ asset('assets/img/mob-nav-icon/dark.svg') }}"
+                                    <img src="{{ asset('img/mob-nav-icon/dark.svg') }}"
                                         class="img-responsive">
                                 </span>
                             </a>

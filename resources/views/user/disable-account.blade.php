@@ -620,7 +620,7 @@
                         <div class="row">
                             <div class="col-lg-4 col-md-4 offset-md-4 offset-lg-4 text-center">
                                  <h2 class="text-center text-dark">Account Activity</h2>
-                                <img src="{{ asset('assets/img/dashboard-icons/settings/account-activity.svg') }}" alt="">
+                                <img src="{{ asset('img/dashboard-icons/settings/account-activity.svg') }}" alt="">
                                 <h5 class="form-heading mb-4 text-center mt-4 "> Disable Your Account  </h5>
                                <form action="" method="post" id="pass_frm">
                                             <div class="bg-light-theme fs-14 p-2 rounded"> Disabling your account will cause the following:</div>

@@ -7,8 +7,8 @@
       <!--<meta content="" name="description">-->
       <!--<meta content="" name="keywords">-->
       <!--<meta name="theme-color" content="#287aff">-->
-      <!--<link href="{{ asset('assets/img/wealthmark-logo.svg') }}" rel="icon">-->
-      <!--<link href="{{ asset('assets/img/wealthmark-logo.svg') }}" rel="apple-touch-icon">-->
+      <!--<link href="{{ asset('img/wealthmark-logo.svg') }}" rel="icon">-->
+      <!--<link href="{{ asset('img/wealthmark-logo.svg') }}" rel="apple-touch-icon">-->
       <link rel="stylesheet" href="{{ asset('assets/css/dashboard.css') }}">
       @include('template.web_css')
       <style>
@@ -223,7 +223,7 @@
                                  <label for="" class="lbl-heading">From</label>
                                  <input type="text" class="form-control" disabled />
                                  <div class="input-icon-contain">
-                                    <img src="{{asset('assets/img/header-icons/buy-crypto/card-deposit.svg')}}"
+                                    <img src="{{asset('img/header-icons/buy-crypto/card-deposit.svg')}}"
                                        alt="" class="input-icon" />
                                     <span class="fs-14">Spot Wallet</span>
                                  </div>
@@ -245,7 +245,7 @@
                                  <label for="" class="lbl-heading">To</label>
                                  <input type="text" class="form-control" disabled />
                                  <div class="input-icon-contain">
-                                    <img src="{{asset('assets/img/dashboard-icons/jex.png') }}" alt=""
+                                    <img src="{{asset('img/dashboard-icons/jex.png') }}" alt=""
                                        class="input-icon" />
                                     <span class="fs-14">Spot Wallet</span>
                                  </div>
@@ -267,7 +267,7 @@
                                              class="lf-select-coin-to-active-value lf-select-coin-to-active-div">
                                              <div class="wm-dropdown-optn-item-div">
                                                 <img id="select_coin_img" class="wm-dropdown-optn-item-img"
-                                                   src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                                   src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                                 <div id="select_coin_text"
                                                    class="wm-dropdown-optn-item-txt">USDT/ETH</div>
                                              </div>
@@ -305,7 +305,7 @@
                                                    <div class="wm-dropdown-optn-item-inner">
                                                       <div class="wm-dropdown-optn-item-div">
                                                          <img class="wm-dropdown-optn-item-img"
-                                                            src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                                            src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                                          <div class="wm-dropdown-optn-item-txt">BTC/USD
                                                          </div>
                                                       </div>
@@ -318,7 +318,7 @@
                                                    <div class="wm-dropdown-optn-item-inner">
                                                       <div class="wm-dropdown-optn-item-div">
                                                          <img class="wm-dropdown-optn-item-img"
-                                                            src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                                            src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                                          <div class="wm-dropdown-optn-item-txt">BNB/BUSD
                                                          </div>
                                                       </div>
@@ -330,7 +330,7 @@
                                                    <div class="wm-dropdown-optn-item-inner">
                                                       <div class="wm-dropdown-optn-item-div">
                                                          <img class="wm-dropdown-optn-item-img"
-                                                            src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                                            src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                                          <div class="wm-dropdown-optn-item-txt">ETH/DAI
                                                          </div>
                                                       </div>
@@ -343,7 +343,7 @@
                                                    <div class="wm-dropdown-optn-item-inner">
                                                       <div class="wm-dropdown-optn-item-div">
                                                          <img class="wm-dropdown-optn-item-img"
-                                                            src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                                            src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                                          <div class="wm-dropdown-optn-item-txt">USDT/BNB
                                                          </div>
                                                       </div>
@@ -356,7 +356,7 @@
                                                    <div class="wm-dropdown-optn-item-inner selected">
                                                       <div class="wm-dropdown-optn-item-div">
                                                          <img class="wm-dropdown-optn-item-img"
-                                                            src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                                            src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                                          <div class="wm-dropdown-optn-item-txt">USDT/ETH
                                                          </div>
                                                       </div>
@@ -368,7 +368,7 @@
                                                    <div class="wm-dropdown-optn-item-inner">
                                                       <div class="wm-dropdown-optn-item-div">
                                                          <img class="wm-dropdown-optn-item-img"
-                                                            src="https://www.wealthmark.io/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">
+                                                            src="{{ asset('img/assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                                          <div class="wm-dropdown-optn-item-txt">BTC/ETH
                                                          </div>
                                                       </div>
@@ -428,7 +428,7 @@
                </div>
                <div class="modal-body">
                   <div class="text-center">
-                     <img src="{{asset('assets/img/jexpay-login-img.png') }}" class="popup-img" alt="">
+                     <img src="{{asset('img/jexpay-login-img.png') }}" class="popup-img" alt="">
                   </div>
                   <p class="para text-center">
                      Please visit Jexpay and use Wealthmark Login to connect your Wealthmark account to your JexPay

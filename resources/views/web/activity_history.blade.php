@@ -27,7 +27,7 @@
 
                 <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
                     <div class="activity-history-inner-box">
-                        <img src="{{ asset('assets/img/activity-history-img.png') }}" class="img-fluid"
+                        <img src="{{ asset('img/activity-history-img.png') }}" class="img-fluid"
                             alt="gift Card Image">
                         <h5 class="mt-4">Refer and share $500,000 in Mystery Boxes </h5>
                         <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" >
@@ -41,7 +41,7 @@
 
                 <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
                     <div class="activity-history-inner-box">
-                        <img src="{{ asset('assets/img/activity-history-img.png') }}" class="img-fluid"
+                        <img src="{{ asset('img/activity-history-img.png') }}" class="img-fluid"
                             alt="gift Card Image">
                         <h5 class="mt-4">Refer and share $500,000 in Mystery Boxes </h5>
                         <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" >
@@ -55,7 +55,7 @@
 
                 <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
                     <div class="activity-history-inner-box">
-                        <img src="{{ asset('assets/img/activity-history-img.png') }}" class="img-fluid"
+                        <img src="{{ asset('img/activity-history-img.png') }}" class="img-fluid"
                             alt="gift Card Image">
                         <h5 class="mt-4">Refer and share $500,000 in Mystery Boxes </h5>
                         <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" >
@@ -69,7 +69,7 @@
 
                 <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
                     <div class="activity-history-inner-box">
-                        <img src="{{ asset('assets/img/activity-history-img.png') }}" class="img-fluid"
+                        <img src="{{ asset('img/activity-history-img.png') }}" class="img-fluid"
                             alt="gift Card Image">
                         <h5 class="mt-4">Refer and share $500,000 in Mystery Boxes </h5>
                         <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" >
@@ -83,7 +83,7 @@
 
                 <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
                     <div class="activity-history-inner-box">
-                        <img src="{{ asset('assets/img/activity-history-img.png') }}" class="img-fluid"
+                        <img src="{{ asset('img/activity-history-img.png') }}" class="img-fluid"
                             alt="gift Card Image">
                         <h5 class="mt-4">Refer and share $500,000 in Mystery Boxes </h5>
                         <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" >
@@ -97,7 +97,7 @@
 
                 <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
                     <div class="activity-history-inner-box">
-                        <img src="{{ asset('assets/img/activity-history-img.png') }}" class="img-fluid"
+                        <img src="{{ asset('img/activity-history-img.png') }}" class="img-fluid"
                             alt="gift Card Image">
                         <h5 class="mt-4">Refer and share $500,000 in Mystery Boxes </h5>
                         <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" >
@@ -113,7 +113,7 @@
             <div class="row">
                 <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
                     <div class="activity-history-inner-box">
-                        <img src="{{ asset('assets/img/activity-history-img.png') }}" class="img-fluid"
+                        <img src="{{ asset('img/activity-history-img.png') }}" class="img-fluid"
                             alt="gift Card Image">
                         <h5 class="mt-4">Refer and share $500,000 in Mystery Boxes </h5>
                         <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" >
@@ -127,7 +127,7 @@
 
                 <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
                     <div class="activity-history-inner-box">
-                        <img src="{{ asset('assets/img/activity-history-img.png') }}" class="img-fluid"
+                        <img src="{{ asset('img/activity-history-img.png') }}" class="img-fluid"
                             alt="gift Card Image">
                         <h5 class="mt-4">Refer and share $500,000 in Mystery Boxes </h5>
                         <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" >
@@ -141,7 +141,7 @@
 
                 <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
                     <div class="activity-history-inner-box">
-                        <img src="{{ asset('assets/img/activity-history-img.png') }}" class="img-fluid"
+                        <img src="{{ asset('img/activity-history-img.png') }}" class="img-fluid"
                             alt="gift Card Image">
                         <h5 class="mt-4">Refer and share $500,000 in Mystery Boxes </h5>
                         <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" >

@@ -522,7 +522,7 @@
                                     <div class="row d-flex justify-content-center align-items-center">
                                         <div class="col-md-4">
                                             <div class="listing-detail-box-img">
-                                                <img src="{{ asset('assets/img/listing-icon.png') }}"
+                                                <img src="{{ asset('img/listing-icon.png') }}"
                                                     class="img-fluid" alt="Listing Application" title="Listing Application">
                                             </div>
                                         </div>

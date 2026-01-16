@@ -19,7 +19,7 @@
       <div class="investment-Portfolio">
         <div class="Portfolio-inner">
           <div class="Portfolio-inner-left">
-            <img src="{{ asset('assets/img/chart-pie-g.svg') }}" class="Portfolio-inner-icon">
+            <img src="{{ asset('img/chart-pie-g.svg') }}" class="Portfolio-inner-icon">
             <div class="Portfolio-inner-content-box">
               <div class="Portfolio-inner-title">Portfolio Auto-Invest</div>
               <div class="Portfolio-inner-subtitle">Diversify your crypto holdings and increase coverage.</div>
@@ -29,16 +29,16 @@
             <div class="Portfolio-Available-Coins">
               <div class="Available-Coins-inner">
                 <div class="Available-Coins-img-box">
-                  <img class="coin-list-img" src="{{ asset('assets/img/133e0469-3a96-4e3a-9c42-b4c5a4f8def8.png') }}">
+                  <img class="coin-list-img" src="{{ asset('img/133e0469-3a96-4e3a-9c42-b4c5a4f8def8.png') }}">
                 </div>
                 <div class="Available-Coins-img-box">
-                  <img class="coin-list-img" src="{{ asset('assets/img/6caae4f1-f4c6-4486-b05b-442dd559f51f.jpg') }}">
+                  <img class="coin-list-img" src="{{ asset('img/6caae4f1-f4c6-4486-b05b-442dd559f51f.jpg') }}">
                 </div>
                 <div class="Available-Coins-img-box">
-                  <img class="coin-list-img" src="{{ asset('assets/img/133e0469-3a96-4e3a-9c42-b4c5a4f8def8.png') }}">
+                  <img class="coin-list-img" src="{{ asset('img/133e0469-3a96-4e3a-9c42-b4c5a4f8def8.png') }}">
                 </div>
                 <div class="Available-Coins-img-box">
-                  <img class="coin-list-img" src="{{ asset('assets/img/8f181a53-bacb-4a3a-a66a-e586a7b7b61a.png') }}">
+                  <img class="coin-list-img" src="{{ asset('img/8f181a53-bacb-4a3a-a66a-e586a7b7b61a.png') }}">
                 </div>
                 <div class="Available-Coins-img-box">
                   <i class="bi bi-three-dots"></i>
@@ -51,72 +51,72 @@
                             <div class="more_coun-drp-body">
                               <div class="more_coun-drp-list-div">
                                 <div class="more_coun-drp-img-div">
-                                  <img class="more_coun-drp-img" src="{{ asset('assets/img/8f181a53-bacb-4a3a-a66a-e586a7b7b61a.png') }}">
+                                  <img class="more_coun-drp-img" src="{{ asset('img/8f181a53-bacb-4a3a-a66a-e586a7b7b61a.png') }}">
                                 </div>BTC
                               </div>
                               <div class="more_coun-drp-list-div">
                                 <div class="more_coun-drp-img-div">
-                                  <img class="more_coun-drp-img" src="{{ asset('assets/img/133e0469-3a96-4e3a-9c42-b4c5a4f8def8.png') }}">
+                                  <img class="more_coun-drp-img" src="{{ asset('img/133e0469-3a96-4e3a-9c42-b4c5a4f8def8.png') }}">
                                 </div>ETH
                               </div>
                               <div class="more_coun-drp-list-div">
                                 <div class="more_coun-drp-img-div">
-                                  <img class="more_coun-drp-img" src="{{ asset('assets/img/8f181a53-bacb-4a3a-a66a-e586a7b7b61a.png') }}">
+                                  <img class="more_coun-drp-img" src="{{ asset('img/8f181a53-bacb-4a3a-a66a-e586a7b7b61a.png') }}">
                                 </div>BTC
                               </div>
                               <div class="more_coun-drp-list-div">
                                 <div class="more_coun-drp-img-div">
-                                  <img class="more_coun-drp-img" src="{{ asset('assets/img/133e0469-3a96-4e3a-9c42-b4c5a4f8def8.png') }}">
+                                  <img class="more_coun-drp-img" src="{{ asset('img/133e0469-3a96-4e3a-9c42-b4c5a4f8def8.png') }}">
                                 </div>ETH
                               </div>
                               <div class="more_coun-drp-list-div">
                                 <div class="more_coun-drp-img-div">
-                                  <img class="more_coun-drp-img" src="{{ asset('assets/img/8f181a53-bacb-4a3a-a66a-e586a7b7b61a.png') }}">
+                                  <img class="more_coun-drp-img" src="{{ asset('img/8f181a53-bacb-4a3a-a66a-e586a7b7b61a.png') }}">
                                 </div>BTC
                               </div>
                               <div class="more_coun-drp-list-div">
                                 <div class="more_coun-drp-img-div">
-                                  <img class="more_coun-drp-img" src="{{ asset('assets/img/133e0469-3a96-4e3a-9c42-b4c5a4f8def8.png') }}">
+                                  <img class="more_coun-drp-img" src="{{ asset('img/133e0469-3a96-4e3a-9c42-b4c5a4f8def8.png') }}">
                                 </div>ETH
                               </div>
                               <div class="more_coun-drp-list-div">
                                 <div class="more_coun-drp-img-div">
-                                  <img class="more_coun-drp-img" src="{{ asset('assets/img/8f181a53-bacb-4a3a-a66a-e586a7b7b61a.png') }}">
+                                  <img class="more_coun-drp-img" src="{{ asset('img/8f181a53-bacb-4a3a-a66a-e586a7b7b61a.png') }}">
                                 </div>BTC
                               </div>
                               <div class="more_coun-drp-list-div">
                                 <div class="more_coun-drp-img-div">
-                                  <img class="more_coun-drp-img" src="{{ asset('assets/img/133e0469-3a96-4e3a-9c42-b4c5a4f8def8.png') }}">
+                                  <img class="more_coun-drp-img" src="{{ asset('img/133e0469-3a96-4e3a-9c42-b4c5a4f8def8.png') }}">
                                 </div>ETH
                               </div>
                               <div class="more_coun-drp-list-div">
                                 <div class="more_coun-drp-img-div">
-                                  <img class="more_coun-drp-img" src="{{ asset('assets/img/8f181a53-bacb-4a3a-a66a-e586a7b7b61a.png') }}">
+                                  <img class="more_coun-drp-img" src="{{ asset('img/8f181a53-bacb-4a3a-a66a-e586a7b7b61a.png') }}">
                                 </div>BTC
                               </div>
                               <div class="more_coun-drp-list-div">
                                 <div class="more_coun-drp-img-div">
-                                  <img class="more_coun-drp-img" src="{{ asset('assets/img/133e0469-3a96-4e3a-9c42-b4c5a4f8def8.png') }}">
+                                  <img class="more_coun-drp-img" src="{{ asset('img/133e0469-3a96-4e3a-9c42-b4c5a4f8def8.png') }}">
                                 </div>ETH
                               </div>
                               <div class="more_coun-drp-list-div">
                                 <div class="more_coun-drp-img-div">
-                                  <img class="more_coun-drp-img" src="{{ asset('assets/img/8f181a53-bacb-4a3a-a66a-e586a7b7b61a.png') }}">
+                                  <img class="more_coun-drp-img" src="{{ asset('img/8f181a53-bacb-4a3a-a66a-e586a7b7b61a.png') }}">
                                 </div>BTC
                               </div>
                               <div class="more_coun-drp-list-div">
                                 <div class="more_coun-drp-img-div">
-                                  <img class="more_coun-drp-img" src="{{ asset('assets/img/133e0469-3a96-4e3a-9c42-b4c5a4f8def8.png') }}">
+                                  <img class="more_coun-drp-img" src="{{ asset('img/133e0469-3a96-4e3a-9c42-b4c5a4f8def8.png') }}">
                                 </div>ETH
                               </div>
                               <div class="more_coun-drp-list-div">
                                 <div class="more_coun-drp-img-div">
-                                  <img class="more_coun-drp-img" src="{{ asset('assets/img/8f181a53-bacb-4a3a-a66a-e586a7b7b61a.png') }}">
+                                  <img class="more_coun-drp-img" src="{{ asset('img/8f181a53-bacb-4a3a-a66a-e586a7b7b61a.png') }}">
                                 </div>BTC
                               </div>
                               <div class="more_coun-drp-list-div">
                                 <div class="more_coun-drp-img-div">
-                                  <img class="more_coun-drp-img" src="{{ asset('assets/img/133e0469-3a96-4e3a-9c42-b4c5a4f8def8.png') }}">
+                                  <img class="more_coun-drp-img" src="{{ asset('img/133e0469-3a96-4e3a-9c42-b4c5a4f8def8.png') }}">
                                 </div>ETH
                               </div>
 
@@ -159,7 +159,7 @@
             <div id="1" class="lot-status-row scrollbar-style">
             <div class="lot-name">
               <div class="lot-name-inner">
-                <img class="coin-list-img" src="{{ asset('assets/img/6caae4f1-f4c6-4486-b05b-442dd559f51f.jpg') }}">
+                <img class="coin-list-img" src="{{ asset('img/6caae4f1-f4c6-4486-b05b-442dd559f51f.jpg') }}">
                 <div  class="lot-name-text">WM</div>
               </div>
             </div>
@@ -176,7 +176,7 @@
                 <div class="mt-24">
                 <div class="d-inline-block">
 
-                  <img class="svg-data-chart" src="{{ asset('assets/img/chart-icon.svg') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Show Chart">
+                  <img class="svg-data-chart" src="{{ asset('img/chart-icon.svg') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Show Chart">
                 </div>
               </div>
             </div>
@@ -192,7 +192,7 @@
             <div id="2" class="lot-status-row scrollbar-style">
             <div class="lot-name">
               <div class="lot-name-inner">
-                <img class="coin-list-img" src="{{ asset('assets/img/6caae4f1-f4c6-4486-b05b-442dd559f51f.jpg') }}">
+                <img class="coin-list-img" src="{{ asset('img/6caae4f1-f4c6-4486-b05b-442dd559f51f.jpg') }}">
                 <div  class="lot-name-text">APE</div>
               </div>
             </div>
@@ -209,7 +209,7 @@
               <div class="mt-24">
                 <div class="d-inline-block">
 
-                 <img class="svg-data-chart" src="{{ asset('assets/img/chart-icon.svg') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Show Chart">
+                 <img class="svg-data-chart" src="{{ asset('img/chart-icon.svg') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Show Chart">
                 </div>
               </div>
             </div>
@@ -225,7 +225,7 @@
             <div id="3" class="lot-status-row scrollbar-style">
             <div class="lot-name">
               <div class="lot-name-inner">
-                <img class="coin-list-img" src="{{ asset('assets/img/6caae4f1-f4c6-4486-b05b-442dd559f51f.jpg') }}">
+                <img class="coin-list-img" src="{{ asset('img/6caae4f1-f4c6-4486-b05b-442dd559f51f.jpg') }}">
                 <div  class="lot-name-text">WM</div>
               </div>
             </div>
@@ -242,7 +242,7 @@
                 <div class="mt-24">
                 <div class="d-inline-block">
 
-                 <img class="svg-data-chart" src="{{ asset('assets/img/chart-icon.svg') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Show Chart">
+                 <img class="svg-data-chart" src="{{ asset('img/chart-icon.svg') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Show Chart">
                 </div>
               </div>
             </div>
@@ -258,7 +258,7 @@
             <div id="4" class="lot-status-row scrollbar-style">
             <div class="lot-name">
               <div class="lot-name-inner">
-                <img class="coin-list-img" src="{{ asset('assets/img/6caae4f1-f4c6-4486-b05b-442dd559f51f.jpg') }}">
+                <img class="coin-list-img" src="{{ asset('img/6caae4f1-f4c6-4486-b05b-442dd559f51f.jpg') }}">
                 <div  class="lot-name-text">APE</div>
               </div>
             </div>
@@ -275,7 +275,7 @@
               <div class="mt-24">
                 <div class="d-inline-block">
 
-                 <img class="svg-data-chart" src="{{ asset('assets/img/chart-icon.svg') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Show Chart">
+                 <img class="svg-data-chart" src="{{ asset('img/chart-icon.svg') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Show Chart">
                 </div>
               </div>
             </div>
@@ -291,7 +291,7 @@
             <div id="5" class="lot-status-row scrollbar-style">
             <div class="lot-name">
               <div class="lot-name-inner">
-                <img class="coin-list-img" src="{{ asset('assets/img/6caae4f1-f4c6-4486-b05b-442dd559f51f.jpg') }}">
+                <img class="coin-list-img" src="{{ asset('img/6caae4f1-f4c6-4486-b05b-442dd559f51f.jpg') }}">
                 <div  class="lot-name-text">WM</div>
               </div>
             </div>
@@ -308,7 +308,7 @@
                 <div class="mt-24">
                 <div class="d-inline-block">
 
-                 <img class="svg-data-chart" src="{{ asset('assets/img/chart-icon.svg') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Show Chart">
+                 <img class="svg-data-chart" src="{{ asset('img/chart-icon.svg') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Show Chart">
                 </div>
               </div>
             </div>
@@ -324,7 +324,7 @@
             <div id="6" class="lot-status-row scrollbar-style">
             <div class="lot-name">
               <div class="lot-name-inner">
-                <img class="coin-list-img" src="{{ asset('assets/img/6caae4f1-f4c6-4486-b05b-442dd559f51f.jpg') }}">
+                <img class="coin-list-img" src="{{ asset('img/6caae4f1-f4c6-4486-b05b-442dd559f51f.jpg') }}">
                 <div  class="lot-name-text">APE</div>
               </div>
             </div>
@@ -341,7 +341,7 @@
               <div class="mt-24">
                 <div class="d-inline-block">
 
-                 <img class="svg-data-chart" src="{{ asset('assets/img/chart-icon.svg') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Show Chart">
+                 <img class="svg-data-chart" src="{{ asset('img/chart-icon.svg') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Show Chart">
                 </div>
               </div>
             </div>
@@ -357,7 +357,7 @@
             <div id="7" class="lot-status-row scrollbar-style">
             <div class="lot-name">
               <div class="lot-name-inner">
-                <img class="coin-list-img" src="{{ asset('assets/img/6caae4f1-f4c6-4486-b05b-442dd559f51f.jpg') }}">
+                <img class="coin-list-img" src="{{ asset('img/6caae4f1-f4c6-4486-b05b-442dd559f51f.jpg') }}">
                 <div  class="lot-name-text">WM</div>
               </div>
             </div>
@@ -374,7 +374,7 @@
                 <div class="mt-24">
                 <div class="d-inline-block">
 
-                 <img class="svg-data-chart" src="{{ asset('assets/img/chart-icon.svg') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Show Chart">
+                 <img class="svg-data-chart" src="{{ asset('img/chart-icon.svg') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Show Chart">
                 </div>
               </div>
             </div>
@@ -390,7 +390,7 @@
             <div id="8" class="lot-status-row scrollbar-style">
             <div class="lot-name">
               <div class="lot-name-inner">
-                <img class="coin-list-img" src="{{ asset('assets/img/6caae4f1-f4c6-4486-b05b-442dd559f51f.jpg') }}">
+                <img class="coin-list-img" src="{{ asset('img/6caae4f1-f4c6-4486-b05b-442dd559f51f.jpg') }}">
                 <div  class="lot-name-text">APE</div>
               </div>
             </div>
@@ -407,7 +407,7 @@
               <div class="mt-24">
                 <div class="d-inline-block">
 
-                 <img class="svg-data-chart" src="{{ asset('assets/img/chart-icon.svg') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Show Chart">
+                 <img class="svg-data-chart" src="{{ asset('img/chart-icon.svg') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Show Chart">
                 </div>
               </div>
             </div>
@@ -423,7 +423,7 @@
             <div id="9" class="lot-status-row scrollbar-style">
             <div class="lot-name">
               <div class="lot-name-inner">
-                <img class="coin-list-img" src="{{ asset('assets/img/6caae4f1-f4c6-4486-b05b-442dd559f51f.jpg') }}">
+                <img class="coin-list-img" src="{{ asset('img/6caae4f1-f4c6-4486-b05b-442dd559f51f.jpg') }}">
                 <div  class="lot-name-text">WM</div>
               </div>
             </div>
@@ -440,7 +440,7 @@
                 <div class="mt-24">
                 <div class="d-inline-block">
 
-                 <img class="svg-data-chart" src="{{ asset('assets/img/chart-icon.svg') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Show Chart">
+                 <img class="svg-data-chart" src="{{ asset('img/chart-icon.svg') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Show Chart">
                 </div>
               </div>
             </div>
@@ -456,7 +456,7 @@
             <div id="10" class="lot-status-row scrollbar-style">
             <div class="lot-name">
               <div class="lot-name-inner">
-                <img class="coin-list-img" src="{{ asset('assets/img/6caae4f1-f4c6-4486-b05b-442dd559f51f.jpg') }}">
+                <img class="coin-list-img" src="{{ asset('img/6caae4f1-f4c6-4486-b05b-442dd559f51f.jpg') }}">
                 <div  class="lot-name-text">APE</div>
               </div>
             </div>
@@ -473,7 +473,7 @@
               <div class="mt-24">
                 <div class="d-inline-block">
 
-                 <img class="svg-data-chart" src="{{ asset('assets/img/chart-icon.svg') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Show Chart">
+                 <img class="svg-data-chart" src="{{ asset('img/chart-icon.svg') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Show Chart">
                 </div>
               </div>
             </div>
@@ -491,7 +491,7 @@
                   <div class="investment-table-mob" id="1">
                     <div class="investment-table-inner">
                       <div class="lot-name-inner">
-                        <img class="investment-table-img-mob" src="{{ asset('assets/img/6caae4f1-f4c6-4486-b05b-442dd559f51f.jpg') }}">
+                        <img class="investment-table-img-mob" src="{{ asset('img/6caae4f1-f4c6-4486-b05b-442dd559f51f.jpg') }}">
                         <div  class="lot-name-text">WM</div>
                       </div>
                       <div class="investment-table-desc">
@@ -515,7 +515,7 @@
                                 <div  class="a-click duration-box-mob">3M</div>
                                 <div  class="a-click duration-box-mob">7D</div>
                               </div>
-                             <img class="svg-data-chart" src="{{ asset('assets/img/chart-icon.svg') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Show Chart">
+                             <img class="svg-data-chart" src="{{ asset('img/chart-icon.svg') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Show Chart">
                             </div>
                           </div>
                         </div>
@@ -536,7 +536,7 @@
                   <div class="investment-table-mob" id="2">
                     <div class="investment-table-inner">
                       <div class="lot-name-inner">
-                        <img class="investment-table-img-mob" src="{{ asset('assets/img/6caae4f1-f4c6-4486-b05b-442dd559f51f.jpg') }}">
+                        <img class="investment-table-img-mob" src="{{ asset('img/6caae4f1-f4c6-4486-b05b-442dd559f51f.jpg') }}">
                         <div  class="lot-name-text">BTC</div>
                       </div>
                       <div class="investment-table-desc">
@@ -558,7 +558,7 @@
                                 <div  class="a-click duration-box-mob">3M</div>
                                 <div  class="a-click duration-box-mob">7D</div>
                               </div>
-                             <img class="svg-data-chart" src="{{ asset('assets/img/chart-icon.svg') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Show Chart">
+                             <img class="svg-data-chart" src="{{ asset('img/chart-icon.svg') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Show Chart">
                             </div>
                           </div>
                         </div>
@@ -579,7 +579,7 @@
                   <div class="investment-table-mob" id="3">
                     <div class="investment-table-inner">
                       <div class="lot-name-inner">
-                        <img class="investment-table-img-mob" src="{{ asset('assets/img/6caae4f1-f4c6-4486-b05b-442dd559f51f.jpg') }}">
+                        <img class="investment-table-img-mob" src="{{ asset('img/6caae4f1-f4c6-4486-b05b-442dd559f51f.jpg') }}">
                         <div  class="lot-name-text">ETH</div>
                       </div>
                       <div class="investment-table-desc">
@@ -604,7 +604,7 @@
                                 <div  class="a-click duration-box-mob">3M</div>
                                 <div  class="a-click duration-box-mob">7D</div>
                               </div>
-                              <img class="svg-data-chart" src="{{ asset('assets/img/chart-icon.svg') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Show Chart">
+                              <img class="svg-data-chart" src="{{ asset('img/chart-icon.svg') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Show Chart">
                             </div>
                           </div>
                         </div>
@@ -625,7 +625,7 @@
                   <div class="investment-table-mob" id="4">
                     <div class="investment-table-inner">
                       <div class="lot-name-inner">
-                        <img class="investment-table-img-mob" src="{{ asset('assets/img/6caae4f1-f4c6-4486-b05b-442dd559f51f.jpg') }}">
+                        <img class="investment-table-img-mob" src="{{ asset('img/6caae4f1-f4c6-4486-b05b-442dd559f51f.jpg') }}">
                         <div  class="lot-name-text">RUNE</div>
                       </div>
                       <div class="investment-table-desc">
@@ -649,7 +649,7 @@
                                 <div  class="a-click duration-box-mob">3M</div>
                                 <div  class="a-click duration-box-mob">7D</div>
                               </div>
-                              <img class="svg-data-chart" src="{{ asset('assets/img/chart-icon.svg') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Show Chart">
+                              <img class="svg-data-chart" src="{{ asset('img/chart-icon.svg') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Show Chart">
                             </div>
                           </div>
                         </div>
@@ -670,7 +670,7 @@
                   <div class="investment-table-mob" id="5">
                     <div class="investment-table-inner">
                       <div class="lot-name-inner">
-                        <img class="investment-table-img-mob" src="{{ asset('assets/img/6caae4f1-f4c6-4486-b05b-442dd559f51f.jpg') }}">
+                        <img class="investment-table-img-mob" src="{{ asset('img/6caae4f1-f4c6-4486-b05b-442dd559f51f.jpg') }}">
                         <div  class="lot-name-text">SOL</div>
                       </div>
                       <div class="investment-table-desc">
@@ -694,7 +694,7 @@
                                 <div  class="a-click duration-box-mob">3M</div>
                                 <div  class="a-click duration-box-mob">7D</div>
                               </div>
-                             <img class="svg-data-chart" src="{{ asset('assets/img/chart-icon.svg') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Show Chart">
+                             <img class="svg-data-chart" src="{{ asset('img/chart-icon.svg') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Show Chart">
                             </div>
                           </div>
                         </div>
@@ -786,7 +786,7 @@
 
                   <div class="px-3 mb-3 d-flex justify-content-between">
                     <div class="modal-select-coin-img-div">
-                    <img class="modal-select-coin-img" src="{{ asset('assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
+                    <img class="modal-select-coin-img" src="{{ asset('img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                     <div class="ms-2">APE</div>
                   </div>
 
@@ -829,7 +829,7 @@
                                                           </div>
                                                           <div class="wm-lf-value coin-drpdn-active">
                                                               <div class="coin-drpdn-active-inner">
-                                                                  <img id="fromCoinImg" src="{{ asset('assets/img/3222a10d-5618-4100-8476-ee7fe0a6fb12.png') }}" class="coin-drpdn-active-img">
+                                                                  <img id="fromCoinImg" src="{{ asset('img/3222a10d-5618-4100-8476-ee7fe0a6fb12.png') }}" class="coin-drpdn-active-img">
                                                                   <div id="fromCoinText" class="coin-drpdn-active-lbl">
                                                                                   BUSD</div>
                                                               </div>
@@ -841,7 +841,7 @@
                                                                       <div class="wm-dropdown-optn-item-inner">
 
                                                                           <div class="wm-dropdown-optn-item-div">
-                                                                              <img class="wm-dropdown-optn-item-img" src="{{ asset('assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
+                                                                              <img class="wm-dropdown-optn-item-img" src="{{ asset('img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                                                               <div class="wm-dropdown-optn-item-txt">BTC
                                                                               </div>
                                                                           </div>
@@ -852,7 +852,7 @@
                                                                       <div class="wm-dropdown-optn-item-inner">
 
                                                                           <div class="wm-dropdown-optn-item-div">
-                                                                              <img class="wm-dropdown-optn-item-img" src="{{ asset('assets/img/3222a10d-5618-4100-8476-ee7fe0a6fb12.png') }}">
+                                                                              <img class="wm-dropdown-optn-item-img" src="{{ asset('img/3222a10d-5618-4100-8476-ee7fe0a6fb12.png') }}">
                                                                               <div class="wm-dropdown-optn-item-txt">
                                                                                   BUSD</div>
 

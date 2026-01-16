@@ -351,7 +351,7 @@
  .job-style:checked + label:before {
 	 background-color: var(--active-color);
 	 border-color: var(--active-color);
-	 background-image: url('https://wealthmark.io/assets/img/right-tick-white.png');
+	 background-image: url('{{ asset('img/assets/img/right-tick-white.png') }}');
 	 background-position: 50%;
 	 background-size: 14px;
 	 background-repeat: no-repeat;
@@ -969,7 +969,7 @@
      <div class="job">
  <div class="header">
   <div class="logo">
-   <img src="https://wealthmark.io/assets/img/wealthmark-logo.svg" class="max-width-50px">
+   <img src="{{ asset('img/assets/img/wealthmark-logo.svg') }}" class="max-width-50px">
   </div>
   <div class="header-menu">
 
@@ -1694,7 +1694,7 @@ jobCards.forEach((jobCard) => {
  jobCard.addEventListener("click", () => {
   const number = Math.floor(Math.random() * 10);
   //    const url = `https://unsplash.it/640/425?image=${number}`;
-  const url = `https://wealthmark.io/assets/img/job-bg-img.jpg`;
+  const url = `{{ asset('img/assets/img/job-bg-img.jpg') }}`;
   jobBg.src = url;
 
   const logo = jobCard.querySelector("svg");

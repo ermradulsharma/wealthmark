@@ -722,7 +722,7 @@
     <!--                                        <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">-->
     <!--                                            <div class="coin-block1 d-flex">-->
     <!--                                                <img id="select_coin_img" class="wm-dropdown-optn-item-img"-->
-    <!--                                                    src="https://www.wealthmark.io/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">-->
+    <!--                                                    src="{{ asset('img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">-->
     <!--                                                <div class="coin-name">-->
     <!--                                                    <p>1INCH</p>-->
     <!--                                                    <span>0.000000 </span>-->
@@ -734,7 +734,7 @@
     <!--                                            id="second-to-isolate-margin-hide-box">-->
     <!--                                            <div class="coin-block1 d-flex">-->
     <!--                                                <img id="select_coin_img" class="wm-dropdown-optn-item-img"-->
-    <!--                                                    src="https://www.wealthmark.io/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">-->
+    <!--                                                    src="{{ asset('img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">-->
     <!--                                                <div class="coin-name">-->
     <!--                                                    <p>1INCH</p>-->
     <!--                                                    <span>0.000000 </span>-->
@@ -981,7 +981,7 @@
     <!--                                                        <div class="wm-dropdown-optn-item-div">-->
     <!--                                                            <img id="select_coin_img"-->
     <!--                                                                class="wm-dropdown-optn-item-img"-->
-    <!--                                                                src="https://www.wealthmark.io/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">-->
+    <!--                                                                src="{{ asset('img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">-->
     <!--                                                            <div id="select_coin_text"-->
     <!--                                                                class="wm-dropdown-optn-item-txt">1 INCH<small>-->
     <!--                                                                    1inch </small></div>-->
@@ -1024,7 +1024,7 @@
 
     <!--                                                                    <div class="wm-dropdown-optn-item-div">-->
     <!--                                                                        <img class="wm-dropdown-optn-item-img"-->
-    <!--                                                                            src="https://www.wealthmark.io/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">-->
+    <!--                                                                            src="{{ asset('img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">-->
 
     <!--                                                                        <div class="wm-dropdown-optn-item-txt">-->
     <!--                                                                            AAVE<small> Aave </small></div>-->
@@ -1041,7 +1041,7 @@
 
     <!--                                                                    <div class="wm-dropdown-optn-item-div">-->
     <!--                                                                        <img class="wm-dropdown-optn-item-img"-->
-    <!--                                                                            src="https://www.wealthmark.io/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">-->
+    <!--                                                                            src="{{ asset('img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">-->
 
     <!--                                                                        <div class="wm-dropdown-optn-item-txt">-->
     <!--                                                                            ACH<small> Alchemy Pay </small></div>-->
@@ -1059,7 +1059,7 @@
 
     <!--                                                                    <div class="wm-dropdown-optn-item-div">-->
     <!--                                                                        <img class="wm-dropdown-optn-item-img"-->
-    <!--                                                                            src="https://www.wealthmark.io/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">-->
+    <!--                                                                            src="{{ asset('img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">-->
 
     <!--                                                                        <div class="wm-dropdown-optn-item-txt">-->
     <!--                                                                            AGLD<small> Adventure Gold</small></div>-->
@@ -1077,7 +1077,7 @@
 
     <!--                                                                    <div class="wm-dropdown-optn-item-div">-->
     <!--                                                                        <img class="wm-dropdown-optn-item-img"-->
-    <!--                                                                            src="https://www.wealthmark.io/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">-->
+    <!--                                                                            src="{{ asset('img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">-->
 
     <!--                                                                        <div class="wm-dropdown-optn-item-txt">-->
     <!--                                                                            ALGO<small> Algorand</small></div>-->
@@ -1095,7 +1095,7 @@
 
     <!--                                                                    <div class="wm-dropdown-optn-item-div">-->
     <!--                                                                        <img class="wm-dropdown-optn-item-img"-->
-    <!--                                                                            src="https://www.wealthmark.io/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">-->
+    <!--                                                                            src="{{ asset('img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">-->
 
     <!--                                                                        <div class="wm-dropdown-optn-item-txt">-->
     <!--                                                                            AMB<small> Ambrosus</small></div>-->
@@ -1111,7 +1111,7 @@
     <!--                                                                <div class="wm-dropdown-optn-item-inner">-->
     <!--                                                                    <div class="wm-dropdown-optn-item-div">-->
     <!--                                                                        <img class="wm-dropdown-optn-item-img"-->
-    <!--                                                                            src="https://www.wealthmark.io/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png">-->
+    <!--                                                                            src="{{ asset('img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">-->
 
     <!--                                                                        <div class="wm-dropdown-optn-item-txt">-->
     <!--                                                                            APE<small> ApeCoin</small></div>-->

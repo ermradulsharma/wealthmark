@@ -442,7 +442,7 @@
                                 <div class="header" id="my-div2">
                                     <div class="avatar-wrapper avatar-big">
                                         @if(!empty($seller_details))
-                                            <img src="{{  asset('assets/img/country-flag/').'/'.$seller_details->country_flag }} " alt="avatar" />
+                                            <img src="{{  asset('img/country-flag/').'/'.$seller_details->country_flag }} " alt="avatar" />
 
                                         @endif
                                     </div>
@@ -2338,11 +2338,11 @@ conn.onmessage = function(e){
 
 				if(data.data.user_image != '')
 				{
-					user_image = `<img src="{{ asset('assets/img/country-flag/') }}/`+data.data.country_flag+`" alt="avatar" />`;
+					user_image = `<img src="{{ asset('img/country-flag/') }}/`+data.data.country_flag+`" alt="avatar" />`;
 				}
 				else
 				{
-					user_image = `<img src="{{ asset('assets/img/country-flag/') }}" width="35" class="rounded-circle" />`;
+					user_image = `<img src="{{ asset('img/country-flag/') }}" width="35" class="rounded-circle" />`;
 				}
 
 

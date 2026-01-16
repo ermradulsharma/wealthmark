@@ -135,7 +135,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6 col-sm-6">
                     <div class="launchpad-second-block">
-                        <img loading="lazy" src="{{ asset('assets/img/launch.jpg') }}" alt="LaunchPad" title="Launchpad"
+                        <img loading="lazy" src="{{ asset('img/launch.jpg') }}" alt="LaunchPad" title="Launchpad"
                             class="img-fluid">
                     </div>
                 </div>
@@ -214,7 +214,7 @@
                                 <p class="badge badge-warning text-uppercase">Completed</p>
                                 <div class="col-md-12">
                                     <img loading="lazy" class="lunchpool-img-1 img-fluid"
-                                        src="{{ asset('assets/img/wm-logo.png') }}" alt="Launchpool image" title="Launchpool image">
+                                        src="{{ asset('img/wm-logo.png') }}" alt="Launchpool image" title="Launchpool image">
                                 </div>
                                 <div class="col-md-12 launchpool-txt d-flex justify-content-center align-item-center">
                                     <h4>Wealth Mark<h4>
@@ -250,7 +250,7 @@
                         <div class="card-body">
                             <div class="row mb-4">
                                 <div class="col-md-12">
-                                    <img loading="lazy" src="{{ asset('assets/img/launchpad-card.png') }}"
+                                    <img loading="lazy" src="{{ asset('img/launchpad-card.png') }}"
                                         alt="LaunchPad Image" title="LaunchPad" class="launchpad-top-img img-fluid">
                                 </div>
                             </div>
@@ -262,7 +262,7 @@
                             </div>
                             <div class="row mb-4">
                                 <div class="col-md-12">
-                                    <img loading="lazy" src="{{ asset('assets/img/lunchpad-img.png') }}"
+                                    <img loading="lazy" src="{{ asset('img/lunchpad-img.png') }}"
                                         alt="LaunchPad" title="LaunchPad" class="img-fluid">
                                 </div>
                             </div>
@@ -296,7 +296,7 @@
                         <div class="card-body">
                             <div class="row mb-4">
                                 <div class="col-md-12">
-                                    <img loading="lazy" src="{{ asset('assets/img/launchpad-card.png') }}"
+                                    <img loading="lazy" src="{{ asset('img/launchpad-card.png') }}"
                                         alt="LaunchPad Image" title="LaunchPad" class="launchpad-top-img img-fluid">
                                 </div>
                             </div>
@@ -308,7 +308,7 @@
                             </div>
                             <div class="row mb-4">
                                 <div class="col-md-12">
-                                    <img loading="lazy" src="{{ asset('assets/img/lunchpad-img.png') }}"
+                                    <img loading="lazy" src="{{ asset('img/lunchpad-img.png') }}"
                                         alt="LaunchPad" title="LaunchPad"  class="img-fluid">
                                 </div>
                             </div>
@@ -342,7 +342,7 @@
                         <div class="card-body">
                             <div class="row mb-4">
                                 <div class="col-md-12">
-                                    <img loading="lazy" src="{{ asset('assets/img/launchpad-card.png') }}"
+                                    <img loading="lazy" src="{{ asset('img/launchpad-card.png') }}"
                                         alt="LaunchPad Image" title="LaunchPad" class="launchpad-top-img img-fluid">
                                 </div>
                             </div>
@@ -354,7 +354,7 @@
                             </div>
                             <div class="row mb-4">
                                 <div class="col-md-12">
-                                    <img loading="lazy" src="{{ asset('assets/img/lunchpad-img.png') }}"
+                                    <img loading="lazy" src="{{ asset('img/lunchpad-img.png') }}"
                                         alt="LaunchPad Image" title="LaunchPad" class="img-fluid">
                                 </div>
                             </div>
@@ -405,7 +405,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-7 col-sm-12 col-xs-12 order-1 order-lg-2 order-md-2 img-hover3">
                     <figure><img loading="lazy" class="hero-image mx-auto d-block img-fluid"
-                            src="{{ asset('assets/img/launch-project-on-wealthmark.svg') }}"
+                            src="{{ asset('img/launch-project-on-wealthmark.svg') }}"
                             alt="launch-project" title="launchpad project">
 
 
@@ -428,7 +428,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 why-choos-block">
                     <div class="card">
-                        <img loading="lazy" src="{{ asset('assets/img/exposure.svg') }}" alt="launch-project"
+                        <img loading="lazy" src="{{ asset('img/exposure.svg') }}" alt="launch-project"
                             class="img-fluid" title="launchapd project">
                         <div class="card-body">
                             <h5 class="card-title">Exposure</h5>
@@ -441,7 +441,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 why-choos-block">
                     <div class="card">
-                        <img loading="lazy" src="{{ asset('assets/img/liquidity.svg') }}" alt="LaunchPad Image" title="Launchpad image"
+                        <img loading="lazy" src="{{ asset('img/liquidity.svg') }}" alt="LaunchPad Image" title="Launchpad image"
                             class="img-fluid">
                         <div class="card-body">
                             <h5 class="card-title">Liquidity</h5>
@@ -454,7 +454,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 why-choos-block">
                     <div class="card">
-                        <img loading="lazy" src="{{ asset('assets/img/token-distribution.svg') }}"
+                        <img loading="lazy" src="{{ asset('img/token-distribution.svg') }}"
                             alt="LaunchPad Image" title="LaunchPad" class="img-fluid">
                         <div class="card-body">
                             <h5 class="card-title">Token Distribution</h5>
@@ -467,7 +467,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 why-choos-block">
                     <div class="card">
-                        <img loading="lazy" src="{{ asset('assets/img/feature-syynergy.svg') }}"
+                        <img loading="lazy" src="{{ asset('img/feature-syynergy.svg') }}"
                             alt="LaunchPad Image" title="LaunchPad" class="img-fluid">
                         <div class="card-body">
                             <h5 class="card-title">Future Synergy</h5>

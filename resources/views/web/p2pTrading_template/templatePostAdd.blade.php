@@ -53,7 +53,7 @@
                     <li role="option" id="2" title="2" class="wm-dropdown-optn-item ">
                         <div class="wm-dropdown-optn-item-inner"  id="choose-coin-BTC" onClick="select_crypto(this.id)">
                             <div class="wm-dropdown-optn-item-div">
-                                <img class="wm-dropdown-optn-item-img" src="{{ asset('assets/img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
+                                <img class="wm-dropdown-optn-item-img" src="{{ asset('img/87496d50-2408-43e1-ad4c-78b47b448a6a.png') }}">
                                 <div class="wm-dropdown-optn-item-txt">BTC</div>
                                  <input type="hidden"id="choose-coin-BTC_Currentprice" name="choose-coin-BTC_Currentprice"  value=" {{ number_format( $bitcoin->data->priceUsd , 8, '.', '') }}" >
                             </div>
@@ -62,7 +62,7 @@
                     <li role="option" id="3" title="3" class="wm-dropdown-optn-item ">
                         <div class="wm-dropdown-optn-item-inner"  id="choose-coin-ETH" onClick="select_crypto(this.id)">
                             <div class="wm-dropdown-optn-item-div">
-                                <img class="wm-dropdown-optn-item-img" src="{{ asset('assets/img/3a8c9fe6-2a76-4ace-aa07-415d994de6f0.png') }}">
+                                <img class="wm-dropdown-optn-item-img" src="{{ asset('img/3a8c9fe6-2a76-4ace-aa07-415d994de6f0.png') }}">
                                 <div class="wm-dropdown-optn-item-txt">ETH</div>
                                 <input type="hidden"  id="choose-coin-ETH_Currentprice" name="choose-coin-ETH_Currentprice" value=" {{ number_format( $ethereum->data->priceUsd , 8, '.', '') }}">
                             </div>

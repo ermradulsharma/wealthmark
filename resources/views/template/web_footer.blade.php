@@ -383,7 +383,7 @@
                             var html = '<a class="dropdown-item no-hover" href="javascript:void(0)">';
                             html += '<div class="d-flex align-items-center" >';
                             html +=
-                                '<img src="{{ asset('assets/img/msg-box.png') }}" class="header-icons" alt="Responsible Trading" />';
+                                '<img src="{{ asset('img/msg-box.png') }}" class="header-icons" alt="Responsible Trading" />';
                             html += '<div class="d-block">';
                             html += '<span class="' + (val.read_at ? 'notification-read-inner' : '') +
                                 '"> ' + notificationData.order_title + '</span>';

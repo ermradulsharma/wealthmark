@@ -59,7 +59,7 @@
                             </div>
                         </div>
                         <div class="col-4 text-end">
-                          <img src="{{ asset('assets/img/dashboard-icons/Security-Icon.svg') }}" class="breadcrumb-icon" alt="">
+                          <img src="{{ asset('img/dashboard-icons/Security-Icon.svg') }}" class="breadcrumb-icon" alt="">
                         </div>
                     </div>
 
@@ -88,7 +88,7 @@
                     <div class="security-column ">
                        <div class="security-column-left">
                           <div class="security-column-icon">
-                             <img src="{{ asset('assets/img/dashboard-icons/settings/biometric-authentication.svg') }}" alt="">
+                             <img src="{{ asset('img/dashboard-icons/settings/biometric-authentication.svg') }}" alt="">
                           </div>
                           <div class="security-column-description">
                              <h5>Biometric Authentication/Security Key</h5>
@@ -108,7 +108,7 @@
                     <div class="security-column ">
                        <div class="security-column-left">
                           <div class="security-column-icon">
-                             <img src="{{ asset('assets/img/dashboard-icons/settings/email-address-verification.svg') }}" alt="">
+                             <img src="{{ asset('img/dashboard-icons/settings/email-address-verification.svg') }}" alt="">
                           </div>
                           <div class="security-column-description">
                              <h5>Email Address Verification</h5>
@@ -139,7 +139,7 @@
                     <div class="security-column ">
                         <div class="security-column-left">
                           <div class="security-column-icon">
-                             <img src="{{ asset('assets/img/dashboard-icons/settings/wm-google-authenticator.svg') }}" alt="">
+                             <img src="{{ asset('img/dashboard-icons/settings/wm-google-authenticator.svg') }}" alt="">
                           </div>
                           <div class="security-column-description">
                              <h5>WealthMark/Google Authenticator (Recommended)</h5>
@@ -171,7 +171,7 @@
                     <div class="security-column ">
                        <div class="security-column-left">
                           <div class="security-column-icon">
-                             <img src="{{ asset('assets/img/dashboard-icons/settings/phone-number-verification.svg') }}" alt="">
+                             <img src="{{ asset('img/dashboard-icons/settings/phone-number-verification.svg') }}" alt="">
                           </div>
                           <div class="security-column-description">
                              <h5>Phone Number Verification</h5>
@@ -206,7 +206,7 @@
                     <div class="security-column ">
                        <div class="security-column-left">
                           <div class="security-column-icon">
-                             <img src="{{ asset('assets/img/dashboard-icons/security/loging-password.svg') }}" alt="">
+                             <img src="{{ asset('img/dashboard-icons/security/loging-password.svg') }}" alt="">
                           </div>
                           <div class="security-column-description">
                              <h5>Login Password</h5>
@@ -226,7 +226,7 @@
                     <div class="mt-4">
                         <div class="security-column-left">
                             <div class="security-column-icon">
-                                <!--<img src="{{ asset('assets/img/dashboard-icons/settings/crypto-withdrawal.svg') }}" alt="">-->
+                                <!--<img src="{{ asset('img/dashboard-icons/settings/crypto-withdrawal.svg') }}" alt="">-->
                             </div>
                             <div class="security-column-description">
                                 <h5>Crypto Withdrawal</h5>
@@ -236,7 +236,7 @@
                         <div class="security-column border-0">
                             <div class="security-column-left">
                                  <div class="security-column-icon">
-                                <img src="{{ asset('assets/img/dashboard-icons/security/one-step-withdrawal.svg') }}" alt="">
+                                <img src="{{ asset('img/dashboard-icons/security/one-step-withdrawal.svg') }}" alt="">
                             </div>
                                 <div class="security-column-description">
                                     <h5>One-step Withdrawal</h5>
@@ -259,7 +259,7 @@
                         <div class="security-column border-0">
                             <div class="security-column-left">
                                  <div class="security-column-icon">
-                                <img src="{{ asset('assets/img/dashboard-icons/settings/withdrawal-whitelist.svg') }}" alt="">
+                                <img src="{{ asset('img/dashboard-icons/settings/withdrawal-whitelist.svg') }}" alt="">
                             </div>
                                 <div class="security-column-description">
                                     <h5>Withdrawal Whitelist</h5>
@@ -281,7 +281,7 @@
                     <div class="security-column">
                         <div class="security-column-left">
                           <div class="security-column-icon">
-                             <img src="{{ asset('assets/img/dashboard-icons/settings/anti-phishing.svg') }}" alt="">
+                             <img src="{{ asset('img/dashboard-icons/settings/anti-phishing.svg') }}" alt="">
                           </div>
                           <div class="security-column-description">
                              <h5>Anti-Phishing Code</h5>
@@ -301,7 +301,7 @@
                     <div class="security-column ">
                         <div class="security-column-left">
                           <div class="security-column-icon">
-                             <img src="{{ asset('assets/img/dashboard-icons/security/third-party-apps-account-access.svg') }}" alt="">
+                             <img src="{{ asset('img/dashboard-icons/security/third-party-apps-account-access.svg') }}" alt="">
                           </div>
                           <div class="security-column-description">
                              <h5>Third-party apps with account access</h5>
@@ -326,7 +326,7 @@
                     <div class="security-column ">
                        <div class="security-column-left">
                           <div class="security-column-icon">
-                             <img src="{{ asset('assets/img/dashboard-icons/Security-Icon.svg') }}" alt="">
+                             <img src="{{ asset('img/dashboard-icons/Security-Icon.svg') }}" alt="">
                           </div>
                           <div class="security-column-description">
                              <h5>Device Management</h5>
@@ -346,7 +346,7 @@
                     <div class="security-column ">
                        <div class="security-column-left">
                           <div class="security-column-icon">
-                             <img src="{{ asset('assets/img/dashboard-icons/security/account-activity.svg') }}" alt="">
+                             <img src="{{ asset('img/dashboard-icons/security/account-activity.svg') }}" alt="">
                           </div>
                           <div class="security-column-description">
                              <h5>Account Activity</h5>

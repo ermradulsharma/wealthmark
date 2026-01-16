@@ -1045,122 +1045,122 @@
                                  <tr>
                                     <th class="wm-td">
                                        <div class="fee-borrow-box"><img
-                                          src="{{ asset('assets/img/fee-borrow-icon-1.png') }}"
+                                          src="{{ asset('img/fee-borrow-icon-1.png') }}"
                                           class="img-fluid" alt="Trading / Deposit Fee" title="Trading / Deposit Fee" />1INCH</div>
                                     </th>
                                     <th class="wm-td">
                                        <div class="fee-borrow-box"><img
-                                          src="{{ asset('assets/img/fee-borrow-icon-2.png') }}"
+                                          src="{{ asset('img/fee-borrow-icon-2.png') }}"
                                           class="img-fluid" alt="Trading / Deposit Fee" title="Trading / Deposit Fee" />AAVE</div>
                                     </th>
                                     <th class="wm-td">
                                        <div class="fee-borrow-box"><img
-                                          src="{{ asset('assets/img/fee-borrow-icon-3.png') }}"
+                                          src="{{ asset('img/fee-borrow-icon-3.png') }}"
                                           class="img-fluid" alt="Trading / Deposit Fee" title="Trading / Deposit Fee" />ACH</div>
                                     </th>
                                     <th class="wm-td">
                                        <div class="fee-borrow-box"><img
-                                          src="{{ asset('assets/img/fee-borrow-icon-4.png') }}"
+                                          src="{{ asset('img/fee-borrow-icon-4.png') }}"
                                           class="img-fluid" alt="Trading / Deposit Fee" title="Trading / Deposit Fee" />ADA</div>
                                     </th>
                                     <th class="wm-td">
                                        <div class="fee-borrow-box"><img
-                                          src="{{ asset('assets/img/fee-borrow-icon-5.png') }}"
+                                          src="{{ asset('img/fee-borrow-icon-5.png') }}"
                                           class="img-fluid" alt="Trading / Deposit Fee" title="Trading / Deposit Fee" />AGLD</div>
                                     </th>
                                     <th class="wm-td">
                                        <div class="fee-borrow-box"><img
-                                          src="{{ asset('assets/img/fee-borrow-icon-1.png') }}"
+                                          src="{{ asset('img/fee-borrow-icon-1.png') }}"
                                           class="img-fluid" alt="Trading / Deposit Fee" title="Trading / Deposit Fee" />ALGO</div>
                                     </th>
                                     <th class="wm-td">
                                        <div class="fee-borrow-box"><img
-                                          src="{{ asset('assets/img/fee-borrow-icon-4.png') }}"
+                                          src="{{ asset('img/fee-borrow-icon-4.png') }}"
                                           class="img-fluid" alt="Trading / Deposit Fee" title="Trading / Deposit Fee" />1INCH</div>
                                     </th>
                                     <th class="wm-td">
                                        <div class="fee-borrow-box"><img
-                                          src="{{ asset('assets/img/fee-borrow-icon-2.png') }}"
+                                          src="{{ asset('img/fee-borrow-icon-2.png') }}"
                                           class="img-fluid" alt="Trading / Deposit Fee" title="Trading / Deposit Fee" />AAVE</div>
                                     </th>
                                     <th class="wm-td">
                                        <div class="fee-borrow-box"><img
-                                          src="{{ asset('assets/img/fee-borrow-icon-3.png') }}"
+                                          src="{{ asset('img/fee-borrow-icon-3.png') }}"
                                           class="img-fluid" alt="Trading / Deposit Fee" title="Trading / Deposit Fee" />ACH</div>
                                     </th>
                                     <th class="wm-td">
                                        <div class="fee-borrow-box"><img
-                                          src="{{ asset('assets/img/fee-borrow-icon-4.png') }}"
+                                          src="{{ asset('img/fee-borrow-icon-4.png') }}"
                                           class="img-fluid" alt="Trading / Deposit Fee" title="Trading / Deposit Fee" />ADA</div>
                                     </th>
                                     <th class="wm-td">
                                        <div class="fee-borrow-box"><img
-                                          src="{{ asset('assets/img/fee-borrow-icon-5.png') }}"
+                                          src="{{ asset('img/fee-borrow-icon-5.png') }}"
                                           class="img-fluid" alt="Trading / Deposit Fee" title="Trading / Deposit Fee" />AGLD</div>
                                     </th>
                                     <th class="wm-td">
                                        <div class="fee-borrow-box"><img
-                                          src="{{ asset('assets/img/fee-borrow-icon-4.png') }}"
+                                          src="{{ asset('img/fee-borrow-icon-4.png') }}"
                                           class="img-fluid" alt="Trading / Deposit Fee" title="Trading / Deposit Fee" />ALGO</div>
                                     </th>
                                     <th class="wm-td">
                                        <div class="fee-borrow-box"><img
-                                          src="{{ asset('assets/img/fee-borrow-icon-1.png') }}"
+                                          src="{{ asset('img/fee-borrow-icon-1.png') }}"
                                           class="img-fluid" alt="Trading / Deposit Fee" title="Trading / Deposit Fee" />1INCH</div>
                                     </th>
                                     <th class="wm-td">
                                        <div class="fee-borrow-box"><img
-                                          src="{{ asset('assets/img/fee-borrow-icon-2.png') }}"
+                                          src="{{ asset('img/fee-borrow-icon-2.png') }}"
                                           class="img-fluid" alt="Trading / Deposit Fee" title="Trading / Deposit Fee" />AAVE</div>
                                     </th>
                                     <th class="wm-td">
                                        <div class="fee-borrow-box"><img
-                                          src="{{ asset('assets/img/fee-borrow-icon-3.png') }}"
+                                          src="{{ asset('img/fee-borrow-icon-3.png') }}"
                                           class="img-fluid" alt="Trading / Deposit Fee" title="Trading / Deposit Fee" />ACH</div>
                                     </th>
                                     <th class="wm-td">
                                        <div class="fee-borrow-box"><img
-                                          src="{{ asset('assets/img/fee-borrow-icon-4.png') }}"
+                                          src="{{ asset('img/fee-borrow-icon-4.png') }}"
                                           class="img-fluid" alt="Trading / Deposit Fee" title="Trading / Deposit Fee" />ADA</div>
                                     </th>
                                     <th class="wm-td">
                                        <div class="fee-borrow-box"><img
-                                          src="{{ asset('assets/img/fee-borrow-icon-5.png') }}"
+                                          src="{{ asset('img/fee-borrow-icon-5.png') }}"
                                           class="img-fluid" alt="Trading / Deposit Fee" title="Trading / Deposit Fee" />AGLD</div>
                                     </th>
                                     <th class="wm-td">
                                        <div class="fee-borrow-box"><img
-                                          src="{{ asset('assets/img/fee-borrow-icon-1.png') }}"
+                                          src="{{ asset('img/fee-borrow-icon-1.png') }}"
                                           class="img-fluid" alt="Trading / Deposit Fee" title="Trading / Deposit Fee" />ALGO</div>
                                     </th>
                                     <th class="wm-td">
                                        <div class="fee-borrow-box"><img
-                                          src="{{ asset('assets/img/fee-borrow-icon-4.png') }}"
+                                          src="{{ asset('img/fee-borrow-icon-4.png') }}"
                                           class="img-fluid" alt="Trading / Deposit Fee" title="Trading / Deposit Fee" />1INCH</div>
                                     </th>
                                     <th class="wm-td">
                                        <div class="fee-borrow-box"><img
-                                          src="{{ asset('assets/img/fee-borrow-icon-2.png') }}"
+                                          src="{{ asset('img/fee-borrow-icon-2.png') }}"
                                           class="img-fluid" alt="Trading / Deposit Fee" title="Trading / Deposit Fee" />AAVE</div>
                                     </th>
                                     <th class="wm-td">
                                        <div class="fee-borrow-box"><img
-                                          src="{{ asset('assets/img/fee-borrow-icon-3.png') }}"
+                                          src="{{ asset('img/fee-borrow-icon-3.png') }}"
                                           class="img-fluid" alt="Trading / Deposit Fee" title="Trading / Deposit Fee" />ACH</div>
                                     </th>
                                     <th class="wm-td">
                                        <div class="fee-borrow-box"><img
-                                          src="{{ asset('assets/img/fee-borrow-icon-4.png') }}"
+                                          src="{{ asset('img/fee-borrow-icon-4.png') }}"
                                           class="img-fluid" alt="Trading / Deposit Fee" title="Trading / Deposit Fee" />ADA</div>
                                     </th>
                                     <th class="wm-td">
                                        <div class="fee-borrow-box"><img
-                                          src="{{ asset('assets/img/fee-borrow-icon-5.png') }}"
+                                          src="{{ asset('img/fee-borrow-icon-5.png') }}"
                                           class="img-fluid" alt="Trading / Deposit Fee" title="Trading / Deposit Fee" />AGLD</div>
                                     </th>
                                     <th class="wm-td">
                                        <div class="fee-borrow-box"><img
-                                          src="{{ asset('assets/img/fee-borrow-icon-4.png') }}"
+                                          src="{{ asset('img/fee-borrow-icon-4.png') }}"
                                           class="img-fluid" alt="Trading / Deposit Fee" title="Trading / Deposit Fee" />ALGO</div>
                                     </th>
                                  </tr>
@@ -1341,7 +1341,7 @@
                               <tbody>
                                  <tr>
                                     <td>Regular User</td>
-                                    <td><img src="{{ asset('assets/img/trading-fee-pool-icon.png') }}"
+                                    <td><img src="{{ asset('img/trading-fee-pool-icon.png') }}"
                                        class="img-fluid fee-pool-icon"
                                        alt="fee Coin/Token" title="fee Coin/Token" />&nbsp;&nbsp;WOO/USDT
                                     </td>
@@ -1351,7 +1351,7 @@
                                  </tr>
                                  <tr>
                                     <td>VIP 1</td>
-                                    <td><img src="{{ asset('assets/img/trading-fee-pool-icon.png') }}"
+                                    <td><img src="{{ asset('img/trading-fee-pool-icon.png') }}"
                                        class="img-fluid fee-pool-icon"
                                        alt="fee Coin/Token" title="fee Coin/Token" />&nbsp;&nbsp;WOO/USDT
                                     </td>
@@ -1449,7 +1449,7 @@
                                  <tr    class="wm-table-row wm-table-row-level-0">
                                     <td>
                                        <div class="fee-table-icon"><img
-                                          src="{{ asset('assets/img/fee-rate-icon-1.png') }}"
+                                          src="{{ asset('img/fee-rate-icon-1.png') }}"
                                           class="img-fluid" alt="fee Coin/Token" title="fee Coin/Token" /> BNB</div>
                                     </td>
                                     <td>Wealth Mark Coin</td>
@@ -1459,7 +1459,7 @@
                                  <tr     class="wm-table-row wm-table-row-level-0">
                                     <td>
                                        <div class="fee-table-icon"><img
-                                          src="{{ asset('assets/img/fee-rate-icon-2.png') }}"
+                                          src="{{ asset('img/fee-rate-icon-2.png') }}"
                                           class="img-fluid" alt="fee Coin/Token" title="fee Coin/Token" />BTC</div>
                                     </td>
                                     <td>Bitcoin</td>
@@ -1469,7 +1469,7 @@
                                  <tr     class="wm-table-row wm-table-row-level-0">
                                     <td>
                                        <div class="fee-table-icon"><img
-                                          src="{{ asset('assets/img/fee-rate-icon-3.png') }}"
+                                          src="{{ asset('img/fee-rate-icon-3.png') }}"
                                           class="img-fluid" alt="fee Coin/Token" title="fee Coin/Token" />BUSD</div>
                                     </td>
                                     <td>Wealth Mark USD</td>
@@ -1479,7 +1479,7 @@
                                  <tr     class="wm-table-row wm-table-row-level-0">
                                     <td>
                                        <div class="fee-table-icon"><img
-                                          src="{{ asset('assets/img/fee-rate-icon-4.png') }}"
+                                          src="{{ asset('img/fee-rate-icon-4.png') }}"
                                           class="img-fluid" alt="fee Coin/Token" title="fee Coin/Token" /> DAI</div>
                                     </td>
                                     <td>DAI</td>
@@ -1489,7 +1489,7 @@
                                  <tr     class="wm-table-row wm-table-row-level-0">
                                     <td>
                                        <div class="fee-table-icon"><img
-                                          src="{{ asset('assets/img/fee-rate-icon-5.png') }}"
+                                          src="{{ asset('img/fee-rate-icon-5.png') }}"
                                           class="img-fluid" alt="fee Coin/Token" title="fee Coin/Token" /> ETH</div>
                                     </td>
                                     <td>Ethereum</td>
@@ -1499,7 +1499,7 @@
                                  <tr class="wm-table-row wm-table-row-level-0">
                                     <td>
                                        <div class="fee-table-icon"><img
-                                          src="{{ asset('assets/img/fee-rate-icon-6.png') }}"
+                                          src="{{ asset('img/fee-rate-icon-6.png') }}"
                                           class="img-fluid" alt="fee Coin/Token" title="fee Coin/Token" />USDT</div>
                                     </td>
                                     <td>TetherUS</td>

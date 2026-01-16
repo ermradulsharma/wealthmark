@@ -32,7 +32,7 @@
                  <!--  <div class="asset-overview login-box-main">-->
                  <!--         <div class="login-box-bg">-->
                  <!--           <div class="login-box">-->
-                 <!--             <img src="https://www.wealthmark.io/img/account.png" class="login-box-img">-->
+                 <!--             <img src="{{ asset('img/account.png') }}" class="login-box-img">-->
                  <!--             <div class="login-box-txt">Log in to view holding details</div>-->
                  <!--           <a href="{{ url( app()->getLocale(), 'login') }}"  <button type="button" class="btn btn-yellow">Log In</button></a>-->
                  <!--           </div>-->

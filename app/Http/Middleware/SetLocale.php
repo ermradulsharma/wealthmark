@@ -16,7 +16,10 @@ class SetLocale
      */
     public function handle(Request $request, Closure $next)
     {
-		app()->setLocale($request->segment(1));
+        $locale = $request->segment(1);
+        app()->setLocale($locale);
+        \Illuminate\Support\Facades\URL::defaults(['locale' => $locale]);
+
         return $next($request);
     }
 }

@@ -2330,7 +2330,7 @@ a{
 
  <!--     @foreach($jo AS $key => $cn)-->
                                        <!--{{ $cn }}-->
- <!--          <img src="{{asset('assets/img/country-flag/'.$key.'.png') }}" class="flag-img">                           -->
+ <!--          <img src="{{asset('img/country-flag/'.$key.'.png') }}" class="flag-img">                           -->
 
  <!--@endforeach      -->
 
@@ -2375,7 +2375,7 @@ a{
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="left-svg-icon">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M17.534 16.32a7.826 7.826 0 10-11.068 0L12 21.854l5.534-5.534zM12 7l-4 4 4 4 4-4-4-4z" fill="currentColor"></path>
           </svg>
-          <img src="{{asset('assets/img/Flag_of_India.jpg') }}" class="flag-img">
+          <img src="{{asset('img/Flag_of_India.jpg') }}" class="flag-img">
           <div class="border-box">India</div>
         </div>
         <div class="opt-display">
@@ -2507,7 +2507,7 @@ a{
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="left-svg-icon">
                               <path fill-rule="evenodd" clip-rule="evenodd" d="M17.534 16.32a7.826 7.826 0 10-11.068 0L12 21.854l5.534-5.534zM12 7l-4 4 4 4 4-4-4-4z" fill="currentColor"></path>
                             </svg>
-                            <img src="{{asset('assets/img/Flag_of_India.jpg') }}" class="flag-img">
+                            <img src="{{asset('img/Flag_of_India.jpg') }}" class="flag-img">
                             <div class="border-box">India</div>
                           </div>
                           <div class="opt-display">
@@ -2618,7 +2618,7 @@ a{
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="left-svg-icon">
                               <path fill-rule="evenodd" clip-rule="evenodd" d="M17.534 16.32a7.826 7.826 0 10-11.068 0L12 21.854l5.534-5.534zM12 7l-4 4 4 4 4-4-4-4z" fill="currentColor"></path>
                             </svg>
-                            <img src="{{asset('assets/img/Flag_of_India.jpg') }}" class="flag-img">
+                            <img src="{{asset('img/Flag_of_India.jpg') }}" class="flag-img">
                             <div class="border-box">India</div>
                           </div>
                           <div class="opt-display">
@@ -2757,7 +2757,7 @@ a{
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="left-svg-icon">
                               <path fill-rule="evenodd" clip-rule="evenodd" d="M17.534 16.32a7.826 7.826 0 10-11.068 0L12 21.854l5.534-5.534zM12 7l-4 4 4 4 4-4-4-4z" fill="currentColor"></path>
                             </svg>
-                            <img src="{{asset('assets/img/Flag_of_India.jpg') }}" class="flag-img">
+                            <img src="{{asset('img/Flag_of_India.jpg') }}" class="flag-img">
                             <div class="border-box">India</div>
                           </div>
                           <div class="opt-display">
@@ -2909,7 +2909,7 @@ a{
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="left-svg-icon">
                               <path fill-rule="evenodd" clip-rule="evenodd" d="M17.534 16.32a7.826 7.826 0 10-11.068 0L12 21.854l5.534-5.534zM12 7l-4 4 4 4 4-4-4-4z" fill="currentColor"></path>
                             </svg>
-                            <img src="{{asset('assets/img/Flag_of_India.jpg') }}" class="flag-img">
+                            <img src="{{asset('img/Flag_of_India.jpg') }}" class="flag-img">
                             <div class="border-box">India</div>
                           </div>
                           <div class="opt-display">
@@ -3122,7 +3122,7 @@ a{
                                     <div class="col">
                                       <div class="disable_div d-flex form-control mt-3 mb-3">
                                         <div class="img">
-                                          <img src="{{asset('assets/img/Flag_of_India.jpg') }}" class="flag">
+                                          <img src="{{asset('img/Flag_of_India.jpg') }}" class="flag">
                                         </div>
                                         <div class="text">
                                           <span>{{ $jo->$country_code }}</span>
@@ -3184,7 +3184,7 @@ a{
                                         <div class="col">
                                           <div class="disable_div d-flex form-control mt-3 mb-3">
                                             <div class="img">
-                                              <img src="{{asset('assets/img/Flag_of_India.jpg') }}" class="flag">
+                                              <img src="{{asset('img/Flag_of_India.jpg') }}" class="flag">
                                             </div>
                                             <div class="text">
                                               <span>{{ $jo->$country_code }}</span>

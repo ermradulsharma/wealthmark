@@ -36,7 +36,7 @@
                             </div>
                         @else
                         <div class="col-12 text-center">
-                            <img src="https://wealthmark.io/assets/img/not-found-icons/no-payment-method.svg" class="no-record-icon" alt="">
+                            <img src="{{ asset('img/assets/img/not-found-icons/no-payment-method.svg') }}" class="no-record-icon" alt="">
                             <p class="mt-3 mb-2">You have not added any payment methods</p>
                             <a href="{{ url(app()->getLocale().'/user/payment') }}" class="btn-yellow">Add a Payment Method</a>
                             <div class="p-3"></div>
