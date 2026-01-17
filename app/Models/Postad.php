@@ -30,6 +30,7 @@ class Postad extends Model
         'countryparty_condition',
         'estimated_fee',
         'cryptorateinusd',
-        'currencyrateinusd'
+        'currencyrateinusd',
+        'status'
     ];
 }

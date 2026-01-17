@@ -9,9 +9,9 @@ use Illuminate\Support\Facades\Validator;
 
 use Session;
 use App\Models\User;
-use App\Models\loginAttemptHistory;
-use App\Models\Entity_detail;
-use App\Models\change_password_history;
+use App\Models\LoginAttemptHistory;
+use App\Models\EntityDetail;
+use App\Models\ChangePasswordHistory;
 use Jenssegers\Agent\Agent;
 use App\Http\Controllers\MailerController;
 use App\Http\Controllers\GoogleAuthenticatorController;
@@ -76,7 +76,7 @@ class AuthController extends Controller
         if (Auth::check()) {
             return redirect(app()->getLocale() . "/user/dashboard");
         }
-        $entity_types = Entity_detail::all();
+        $entity_types = EntityDetail::all();
         return view('auth.register_business', compact('entity_types'));
     }
 
@@ -197,10 +197,10 @@ class AuthController extends Controller
                     $location = $ipdetail['city'];
 
                     if ($getLoginAttemptHistory) {
-                        $updateLoginAttemptHistory = loginAttemptHistory::where('user_id', Auth::user()->id)->where('id', $getLoginAttemptHistory->id)->update(['status' => 0]);
+                        $updateLoginAttemptHistory = LoginAttemptHistory::where('user_id', Auth::user()->id)->where('id', $getLoginAttemptHistory->id)->update(['status' => 0]);
 
                         if ($updateLoginAttemptHistory) {
-                            $loginAttemptHistory = new loginAttemptHistory;
+                            $loginAttemptHistory = new LoginAttemptHistory;
                             $loginAttemptHistory->user_id = Auth::user()->id;
                             $loginAttemptHistory->browser = $agent->browser();
                             $loginAttemptHistory->device = $agent->device();
@@ -212,7 +212,7 @@ class AuthController extends Controller
                             $loginAttemptHistory->save();
 
                             $email = Auth::user()->email;
-                            $subject = "[Wealthmark] Login From New Device device Or IP " . \Request::ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
+                            $subject = "[Wealthmark] Login From New Device device Or IP " . request()->ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
                             $result = new MailerController;
                             $text_message = file_get_contents(asset('public/assets/img/emailTemplates/login-from-new-device-location.html'));
 
@@ -228,7 +228,7 @@ class AuthController extends Controller
                         }
                     } else {
 
-                        $loginAttemptHistory = new loginAttemptHistory;
+                        $loginAttemptHistory = new LoginAttemptHistory;
                         $loginAttemptHistory->user_id = Auth::user()->id;
                         $loginAttemptHistory->browser = $agent->browser();
                         $loginAttemptHistory->device = $agent->device();
@@ -324,7 +324,7 @@ class AuthController extends Controller
 
                             // code for sending mail incase if any user loggedin on other device anywhere
                             $email = Auth::user()->email;
-                            $subject = "[Wealthmark] Login From New Device device Or IP " . \Request::ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
+                            $subject = "[Wealthmark] Login From New Device device Or IP " . request()->ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
                             $result = new MailerController;
                             $text_message = file_get_contents(asset('public/assets/img/emailTemplates/login-from-new-device-location.html'));
 
@@ -578,7 +578,7 @@ class AuthController extends Controller
 
 
 
-                    $subject = "[Wealthmark] Congratulations, Your Registration has been successful From " . \Request::ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
+                    $subject = "[Wealthmark] Congratulations, Your Registration has been successful From " . request()->ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
                     $result = new MailerController;
                     $text_message = file_get_contents(asset('public/assets/img/emailTemplates/registrationSuccessful.html'));
                     $text_message = str_replace("@__email__@", session('email_id'), $text_message);
@@ -727,7 +727,7 @@ class AuthController extends Controller
 
                         // print_r($_SESSION);
 
-                        $oldUserHistory = new change_password_history;
+                        $oldUserHistory = new ChangePasswordHistory;
                         $oldUserHistory->user_id = session('user_id');
                         $oldUserHistory->login_type = session('login_type');
                         $oldUserHistory->old_record = $old_record;
@@ -889,7 +889,7 @@ class AuthController extends Controller
                 $secret = $AuthenticatorController->createSecret();
                 $reg_data = $request->all();
                 $reg_data["google2fa_secret"] = $secret;
-                $request->session()->flash('registration_data', $reg_data);
+                session()->flash('registration_data', $reg_data);
                 $reg_data['email'] = Auth::user()->email;
                 $QR_Image = $AuthenticatorController->getQRCodeGoogleUrl(
                     $reg_data['email'],
@@ -914,7 +914,7 @@ class AuthController extends Controller
                 $secret = $AuthenticatorController->createSecret();
                 $reg_data = $request->all();
                 $reg_data["google2fa_secret"] = $secret;
-                $request->session()->flash('registration_data', $reg_data);
+                session()->flash('registration_data', $reg_data);
                 $reg_data['email'] = Auth::user()->email;
                 $QR_Image = $AuthenticatorController->getQRCodeGoogleUrl(
                     $reg_data['email'],
@@ -941,9 +941,9 @@ class AuthController extends Controller
             } else {
                 $otp = mt_rand(100000, 999999);
                 $input['email_otp'] = $otp;
-                $user->update($input);
+                User::where('id', $user->id)->update($input);
                 $data = $this->hideEmailAddress($email);
-                $subject = "[Wealthmark] Confirm Your Email Verification " . \Request::ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
+                $subject = "[Wealthmark] Confirm Your Email Verification " . request()->ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
 
                 $result = new MailerController;
                 //    $text_message = "Dear Customer Your email verification OTP is ".$otp." This is valid for only 15 minutes. Do not share the OTP with anyone. @www.wealthmark.io Team wealthmark";
@@ -971,9 +971,9 @@ class AuthController extends Controller
             if (Auth::user()) {
                 $otp = mt_rand(100000, 999999);
                 $input['email_otp'] = $otp;
-                $user->update($input);
+                User::where('id', $user->id)->update($input);
                 $email = Auth::user()->email;
-                $subject = "[Wealthmark] Confirm Your Email Verification " . \Request::ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
+                $subject = "[Wealthmark] Confirm Your Email Verification " . request()->ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
                 $result = new MailerController;
                 // $text_message = "Dear Customer Your email verification OTP is ".$otp." This is valid for only 15 minutes. Do not share the OTP with anyone. @www.wealthmark.io Team wealthmark";
 
@@ -1011,7 +1011,7 @@ class AuthController extends Controller
                     session(['newEmail_otp' => $otp]);
 
                     $email = $request->email;
-                    $subject = "[Wealthmark] Confirm Your Email Verification " . \Request::ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
+                    $subject = "[Wealthmark] Confirm Your Email Verification " . request()->ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
                     $result = new MailerController;
                     // $text_message = "Dear Customer Your email verification OTP is ".$otp." This is valid for only 15 minutes. Do not share the OTP with anyone. @www.wealthmark.io Team wealthmark";
 
@@ -1100,7 +1100,7 @@ class AuthController extends Controller
                             $user = Auth::user();
                             $input['email'] = $request->email;
                             $input['email_otp'] = $request->new_e_otp;
-                            $data = $user->update($input);
+                            $data = User::where('id', $user->id)->update($input);
                         } else {
                             return response()->json(['error' => "Please enter valid google authenticator code"], 401);
                         }
@@ -1110,13 +1110,13 @@ class AuthController extends Controller
                         $user = Auth::user();
                         $input['email'] = $request->email;
                         $input['email_otp'] = $request->new_e_otp;
-                        $data = $user->update($input);
+                        $data = User::where('id', $user->id)->update($input);
                     }
 
                     if ($data) {
                         session()->forget('newEmail_otp');
 
-                        $subject = "[Wealthmark] New email has been updated " . \Request::ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
+                        $subject = "[Wealthmark] New email has been updated " . request()->ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
                         $result = new MailerController;
                         $text_message = file_get_contents(asset('public/assets/img/emailTemplates/newEmailUpdation.html'));
                         $text_message =    str_replace("@__email__@", Auth::user()->email, $text_message);
@@ -1175,7 +1175,7 @@ class AuthController extends Controller
                             $user = Auth::user();
                             $input['phone'] = $request->phone;
                             $input['phone_otp'] = $request->new_p_otp;
-                            $data = $user->update($input);
+                            $data = User::where('id', $user->id)->update($input);
                         } else {
                             return response()->json(['error' => "Please enter valid google authenticator code"], 401);
                         }
@@ -1185,14 +1185,14 @@ class AuthController extends Controller
                         $user = Auth::user();
                         $input['phone'] = $request->phone;
                         $input['phone_otp'] = $request->new_p_otp;
-                        $data = $user->update($input);
+                        $data = User::where('id', $user->id)->update($input);
                     }
 
                     if ($data) {
 
                         session()->forget('newPhone_otp');
 
-                        $subject = "[Wealthmark] New phone has been updated " . \Request::ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
+                        $subject = "[Wealthmark] New phone has been updated " . request()->ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
                         $result = new MailerController;
                         $text_message = file_get_contents(asset('public/assets/img/emailTemplates/newPhoneUpdation.html'));
                         $text_message =    str_replace("@__phone__@", Auth::user()->phone, $text_message);
@@ -1241,7 +1241,7 @@ class AuthController extends Controller
             if (Auth::user()) {
                 $otp = mt_rand(100000, 999999);
                 $input['phone_otp'] = $otp;
-                $user->update($input);
+                User::where('id', $user->id)->update($input);
                 $text_message = 'Dear User Your account verification OTP is ' . $otp . ' This is valid for only 15 minutes. Do not share the OTP with anyone. Team INDEX';
                 $sms = urlencode($text_message);
                 $result = new SmsController;
@@ -1273,7 +1273,7 @@ class AuthController extends Controller
                     } else {
                         $otp = mt_rand(100000, 999999);
                         $input['phone_otp'] = $otp;
-                        $user->update($input);
+                        User::where('id', $user->id)->update($input);
                         $text_message = 'Dear User Your account verification OTP is ' . $otp . ' This is valid for only 15 minutes. Do not share the OTP with anyone. Team INDEX';
                         $sms = urlencode($text_message);
                         $result = new SmsController;
@@ -1308,8 +1308,8 @@ class AuthController extends Controller
                     } else {
                         $otp = mt_rand(100000, 999999);
                         $input['email_otp'] = $otp;
-                        $user->update($input);
-                        $subject = "[Wealthmark] Confirm Your Email Verification " . \Request::ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
+                        User::where('id', $user->id)->update($input);
+                        $subject = "[Wealthmark] Confirm Your Email Verification " . request()->ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
                         $result = new MailerController;
                         //    $text_message = "Dear Customer Your email verification OTP is ".$otp." This is valid for only 15 minutes. Do not share the OTP with anyone. @www.wealthmark.io Team wealthmark";
 
@@ -1361,7 +1361,7 @@ class AuthController extends Controller
                             $input['phone_otp'] = "NULL";
                             $input['email'] = $email;
                             $input['is_mail_verified'] = 1;
-                            $user->update($input);
+                            User::where('id', $user->id)->update($input);
 
                             return response()->json(['success' => "200"], $this->successStatus);
                         } else {
@@ -1375,7 +1375,7 @@ class AuthController extends Controller
                         $input['phone_otp'] = "NULL";
                         $input['email'] = $email;
                         $input['is_mail_verified'] = 1;
-                        $user->update($input);
+                        User::where('id', $user->id)->update($input);
                         return response()->json(['success' => "200"], $this->successStatus);
                     }
                 } else {
@@ -1415,7 +1415,7 @@ class AuthController extends Controller
                             $input['phone_otp'] = "NULL";
                             $input['phone'] = $phone;
                             $input['is_phone_verified'] = 1;
-                            $user->update($input);
+                            User::where('id', $user->id)->update($input);
                             return response()->json(['success' => "200"], $this->successStatus);
                         } else {
 
@@ -1428,7 +1428,7 @@ class AuthController extends Controller
                         $input['phone_otp'] = "NULL";
                         $input['phone'] = $phone;
                         $input['is_phone_verified'] = 1;
-                        $user->update($input);
+                        User::where('id', $user->id)->update($input);
                         return response()->json(['success' => "200"], $this->successStatus);
                     }
                 } else {

@@ -7,7 +7,7 @@ use Stevebauman\Location\Facades\Location;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-class ImageCompression extends Controller
+class ImageCompressionController extends Controller
 {
     // Logic for uploading images is handled in controllers that use this class.
 
@@ -28,7 +28,7 @@ class ImageCompression extends Controller
             return $error;
         } else {
             if (in_array($imageExt, $allowImageExt)) {
-                $compressedImage = compress_image($tempPath, $originalPath, $imageQuality);
+                $compressedImage = $this->compress_image($tempPath, $originalPath, $imageQuality);
                 if ($compressedImage) {
                     return "Image was compressed and uploaded to server";
                 } else {

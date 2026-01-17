@@ -8,18 +8,18 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
-use App\Models\Entity_detail;
-use App\Models\company_type;
-use App\Models\entities;
-use App\Models\document_lists;
-use App\Models\businessDocs;
-use App\Models\relatedParties;
-use App\Models\nature_and_resources;
+use App\Models\EntityDetail;
+use App\Models\CompanyType;
+use App\Models\Entity;
+use App\Models\DocumentList;
+use App\Models\BusinessDoc;
+use App\Models\RelatedParty;
+use App\Models\NatureAndResource;
 use App\Models\User;
 use Stevebauman\Location\Facades\Location;
 use Illuminate\Http\UploadedFile;
 use App\Models\Country;
-use App\Models\Banks;
+use App\Models\Bank;
 use Illuminate\Support\Facades\Validator;
 
 class EntityController extends Controller
@@ -178,7 +178,7 @@ class EntityController extends Controller
 
         //   foreach($paymentss as $pmnt){
         //       print_r($pmnt);
-        //      $ptmntmdth = new Banks;
+        //      $ptmntmdth = new Bank;
         //    $ptmntmdth->bank_name = $pmnt ;
         //    $ptmntmdth->save();
         //   };
@@ -230,7 +230,7 @@ class EntityController extends Controller
         }
 
         // Check if entity exists for the user
-        $entity = Entities::where('user_id', $request->user_id)->first();
+        $entity = Entity::where('user_id', $request->user_id)->first();
 
         if ($entity) {
             $entity->update($data);
@@ -241,7 +241,7 @@ class EntityController extends Controller
             ], 200);
         } else {
             $data['user_id'] = $request->user_id; // Ensure user_id is set
-            $entity = Entities::create($data);
+            $entity = Entity::create($data);
             return response()->json([
                 'success' => true,
                 'message' => 'Entity created successfully',
@@ -260,7 +260,7 @@ class EntityController extends Controller
         //  DB::enableQueryLog();
 
         // dd($request->all());
-        $all = Entities::all();
+        $all = Entity::all();
         //  dd($all);
 
         // dd(DB::getQueryLog(), $all);
@@ -296,7 +296,7 @@ class EntityController extends Controller
     {
         // print_r($request->all());
         $inputs = $request->all();
-        $related_prolicies = relatedParties::create($inputs);
+        $related_prolicies = RelatedParty::create($inputs);
         // dd($related_prolicies);
         return response()->json($related_prolicies);
     }
@@ -306,16 +306,16 @@ class EntityController extends Controller
     public function entityDashboard()
     {
 
-        $UserInEntity = Entities::where('user_id', Auth::user()->id)->first();
+        $UserInEntity = Entity::where('user_id', Auth::user()->id)->first();
         //dd($UserInEntity);
 
         if (empty($UserInEntity)) {
             return redirect('en/entity-verification');
         }
 
-        $entity = entities::where('user_id', Auth::user()->id)->first();
-        $entitydocs = businessDocs::where('user_id', Auth::user()->id)->first();
-        $related_parties = relatedParties::where('user_id', Auth::user()->id)->first();
+        $entity = Entity::where('user_id', Auth::user()->id)->first();
+        $entitydocs = BusinessDoc::where('user_id', Auth::user()->id)->first();
+        $related_parties = RelatedParty::where('user_id', Auth::user()->id)->first();
 
         $entity_verificationStatus = $this->is_entity_verified(Auth::user()->id);
 
@@ -336,7 +336,7 @@ class EntityController extends Controller
     // To get business nature from its type
     public function getBusinessnatureName($natureType)
     {
-        //   $businatureNamae = nature_and_resources::where('id', $natureType)->get('name');
+        //   $businatureNamae = NatureAndResource::where('id', $natureType)->get('name');
         //  return $businatureNamae;
         return $natureType;
     }
@@ -348,22 +348,22 @@ class EntityController extends Controller
 
         // print_r(Auth::user()->id."/".Auth::user()->account_type);
 
-        $companyTypes = company_type::all();
-        $entityTypes = Entity_detail::all();
-        $entityDocs = document_lists::all();
-        $businessNatures = nature_and_resources::all();
+        $companyTypes = CompanyType::all();
+        $entityTypes = EntityDetail::all();
+        $entityDocs = DocumentList::all();
+        $businessNatures = NatureAndResource::all();
 
 
-        $entity = entities::where('user_id', Auth::user()->id)->first();
-        $entitydocs = businessDocs::where('user_id', Auth::user()->id)->first();
-        $related_parties = relatedParties::where('user_id', Auth::user()->id)->first();
-        $related_partiesPartners = relatedParties::where(['user_id' => Auth::user()->id, 'partnerId' => 1,])->whereIn('status', [3, 1])->get();
-        $relatedParties_beneficialOwner = relatedParties::where(['user_id' => Auth::user()->id, 'partnerId' => 2,])->whereIn('status', [3, 1])->get();
-        $relatedParties_significantController = relatedParties::where(['user_id' => Auth::user()->id, 'partnerId' => 3,])->whereIn('status', [3, 1])->get();
+        $entity = Entity::where('user_id', Auth::user()->id)->first();
+        $entitydocs = BusinessDoc::where('user_id', Auth::user()->id)->first();
+        $related_parties = RelatedParty::where('user_id', Auth::user()->id)->first();
+        $related_partiesPartners = RelatedParty::where(['user_id' => Auth::user()->id, 'partnerId' => 1,])->whereIn('status', [3, 1])->get();
+        $relatedParties_beneficialOwner = RelatedParty::where(['user_id' => Auth::user()->id, 'partnerId' => 2,])->whereIn('status', [3, 1])->get();
+        $relatedParties_significantController = RelatedParty::where(['user_id' => Auth::user()->id, 'partnerId' => 3,])->whereIn('status', [3, 1])->get();
 
-        $relatedParties_accountTrader = relatedParties::where(['user_id' => Auth::user()->id, 'partnerId' => 4,])->whereIn('status', [3, 1])->get();
-        $relatedParties_mainTrader = relatedParties::where(['user_id' => Auth::user()->id, 'partnerId' => 5,])->whereIn('status', [3, 1])->get();
-        $relatedParties_authLetters = relatedParties::where(['user_id' => Auth::user()->id, 'partnerId' => 6,])->whereIn('status', [3, 1])->get();
+        $relatedParties_accountTrader = RelatedParty::where(['user_id' => Auth::user()->id, 'partnerId' => 4,])->whereIn('status', [3, 1])->get();
+        $relatedParties_mainTrader = RelatedParty::where(['user_id' => Auth::user()->id, 'partnerId' => 5,])->whereIn('status', [3, 1])->get();
+        $relatedParties_authLetters = RelatedParty::where(['user_id' => Auth::user()->id, 'partnerId' => 6,])->whereIn('status', [3, 1])->get();
 
         return view('entity/verifyEntity',  compact('businessNatures', 'entityTypes', 'companyTypes', 'entityDocs', 'entity', 'entitydocs', 'related_parties', 'related_partiesPartners', 'relatedParties_beneficialOwner', 'relatedParties_significantController', 'relatedParties_accountTrader', 'relatedParties_mainTrader', 'relatedParties_authLetters'));
     }
@@ -391,7 +391,7 @@ class EntityController extends Controller
             return response()->json(['error' => $validator->errors()], 401);
         } else {
 
-            $findIfUser = Entities::where('user_id', $request->user_id)->first();
+            $findIfUser = Entity::where('user_id', $request->user_id)->first();
 
 
             //dd($findIfUser);
@@ -403,7 +403,7 @@ class EntityController extends Controller
                 //  print_r($findIfUser->reg_num);
                 //  print_r($findIfUser->DOB_incorpor);
 
-                $entityUpdated = Entities::where('user_id', $request->user_id)->update(['entity_name' => $request->entity_name, 'reg_num' => $request->reg_num, 'DOB_incorpor' => $request->DOB_incorpor]);
+                $entityUpdated = Entity::where('user_id', $request->user_id)->update(['entity_name' => $request->entity_name, 'reg_num' => $request->reg_num, 'DOB_incorpor' => $request->DOB_incorpor]);
 
                 if ($entityUpdated == true) {
 
@@ -443,14 +443,14 @@ class EntityController extends Controller
             if ($request->user_id) {
 
 
-                $findIfUser = Entities::where('user_id', $request->user_id)->first();
+                $findIfUser = Entity::where('user_id', $request->user_id)->first();
 
                 if ($findIfUser) {
 
 
                     if ($request->oprting_addrs_same == 0) {
 
-                        $entityUpdated = Entities::where('user_id', $request->user_id)->update([
+                        $entityUpdated = Entity::where('user_id', $request->user_id)->update([
 
 
                             'juris_cntry'  =>  $request->juris_cntry,
@@ -468,7 +468,7 @@ class EntityController extends Controller
 
                     if ($request->oprting_addrs_same == 1) {
 
-                        $entityUpdated = Entities::where('user_id', $request->user_id)->update([
+                        $entityUpdated = Entity::where('user_id', $request->user_id)->update([
 
                             'juris_cntry'  =>  $request->juris_cntry,
                             'city' => $request->city,
@@ -524,11 +524,11 @@ class EntityController extends Controller
             return response()->json(['error' => $validator->errors()], 401);
         } else {
 
-            $findIfUser = Entities::where('user_id', $request->user_id)->first();
+            $findIfUser = Entity::where('user_id', $request->user_id)->first();
 
             if ($findIfUser) {
 
-                $entityUpdated = Entities::where('user_id', $request->user_id)->update([
+                $entityUpdated = Entity::where('user_id', $request->user_id)->update([
                     'fund_source' => $request->fund_source,
                     'cap_source' => $request->cap_source,
                     'wealth_source' => $request->wealth_source,
@@ -566,7 +566,7 @@ class EntityController extends Controller
             return response()->json(['error' => $validator->errors()], 401);
         } else {
 
-            $findIfUser = Entities::where('user_id', $request->user_id)->first();
+            $findIfUser = Entity::where('user_id', $request->user_id)->first();
 
 
             //dd($findIfUser);
@@ -578,7 +578,7 @@ class EntityController extends Controller
                 //  print_r($findIfUser->reg_num);
                 //  print_r($findIfUser->DOB_incorpor);
 
-                $entityUpdated = Entities::where('user_id', $request->user_id)->update(['entity_nature' => $request->entity_nature, 'appli_purpose' => $request->appli_purpose, 'listed_cntry' => $request->listed_country, 'additional_mob' => $request->additional_mob, 'web_address' => $request->web_address]);
+                $entityUpdated = Entity::where('user_id', $request->user_id)->update(['entity_nature' => $request->entity_nature, 'appli_purpose' => $request->appli_purpose, 'listed_cntry' => $request->listed_country, 'additional_mob' => $request->additional_mob, 'web_address' => $request->web_address]);
 
                 if ($entityUpdated == true) {
 
@@ -631,16 +631,16 @@ class EntityController extends Controller
                 return response()->json(['error' => $validator->errors()], 401);
             } else {
 
-                $relatedPartiesRec = new relatedParties;
+                $relatedPartiesRec = new RelatedParty;
 
-                $findIfUser =  relatedParties::where(['user_id' => $request->user_id, 'partnerId' => $request->partnerId,  'partnerType' =>  $request->partnerType, 'dob' =>  $request->dob, 'idDocNum' =>  $request->idDocNum])->first();
+                $findIfUser =  RelatedParty::where(['user_id' => $request->user_id, 'partnerId' => $request->partnerId,  'partnerType' =>  $request->partnerType, 'dob' =>  $request->dob, 'idDocNum' =>  $request->idDocNum])->first();
 
                 if ($findIfUser) {
                     // $existedIndivisualID = $findIfUser->id;
                     return response()->json(['message' => 'Duplicate record found!']);
                 } else {
 
-                    $relatedPartiesIndivisualRec = new relatedParties;
+                    $relatedPartiesIndivisualRec = new RelatedParty;
 
 
                     $relatedPartiesIndivisualRec->user_id = $request->user_id;
@@ -714,9 +714,9 @@ class EntityController extends Controller
             } else {
 
 
-                $relatedPartiesRec = new relatedParties;
+                $relatedPartiesRec = new RelatedParty;
 
-                $findIfUser =  relatedParties::where(['companyRegNum' => $request->companyRegNum, 'user_id' => $request->user_id])->first();
+                $findIfUser =  RelatedParty::where(['companyRegNum' => $request->companyRegNum, 'user_id' => $request->user_id])->first();
 
                 // print_r($findIfUser);
 
@@ -729,7 +729,7 @@ class EntityController extends Controller
 
                     // now inserting extra directors
                     //  $this->insertDirectors($existedcompanyID);
-                    $relatedPartiesDirector = new relatedParties;
+                    $relatedPartiesDirector = new RelatedParty;
 
                     $relatedPartiesDirector->companyID = $existedcompanyID;
                     $relatedPartiesDirector->partnerId  = $request->partnerId;
@@ -761,7 +761,7 @@ class EntityController extends Controller
                     $companyID = $relatedPartiesDirector->companyID;
 
                     //    to find company name
-                    $findCompany =  relatedParties::where(['id' => $companyID, 'user_id' => $request->user_id])->first();
+                    $findCompany =  RelatedParty::where(['id' => $companyID, 'user_id' => $request->user_id])->first();
 
                     $compName = $findCompany->companyName;
                     $compPartnerType =  $findCompany->partnerType;
@@ -769,7 +769,7 @@ class EntityController extends Controller
                     return response()->json(['compPartnerType' => $compPartnerType, 'compName' => $compName, 'companyID' => $companyID, 'directorId' => $directorid, 'directorFirstname' => $directorFirstname, 'directorLastname' => $directorLastname]);
                 } else {
 
-                    $relatedPartiesCompany = new relatedParties;
+                    $relatedPartiesCompany = new RelatedParty;
 
                     $relatedPartiesCompany->partnerId  = $request->partnerId;
                     $relatedPartiesCompany->partnerType  = $request->partnerType;
@@ -784,7 +784,7 @@ class EntityController extends Controller
                     // now inserting extra directors
                     // $this->insertDirectors($addedCompanyId);
 
-                    $relatedPartiesDirector = new relatedParties;
+                    $relatedPartiesDirector = new RelatedParty;
 
                     $relatedPartiesDirector->companyID = $addedCompanyId;
                     $relatedPartiesDirector->partnerId  = $request->partnerId;
@@ -815,7 +815,7 @@ class EntityController extends Controller
                     $companyID = $relatedPartiesDirector->companyID;
 
                     //    to find company name
-                    $findCompany =  relatedParties::where(['id' => $companyID, 'user_id' => $request->user_id])->first();
+                    $findCompany =  RelatedParty::where(['id' => $companyID, 'user_id' => $request->user_id])->first();
 
                     $compName = $findCompany->companyName;
                     $compPartnerType =  $findCompany->partnerType;
@@ -835,8 +835,8 @@ class EntityController extends Controller
             // dd($request->partnerType);
             //   print_r($request->partnerType);
 
-            $findpartnerComp = relatedParties::where(['id' => $request->id])->first();
-            $findCompDirector = relatedParties::where(['companyID' => $request->id])->get();
+            $findpartnerComp = RelatedParty::where(['id' => $request->id])->first();
+            $findCompDirector = RelatedParty::where(['companyID' => $request->id])->get();
 
             //     print_r($request->all());
             return view('entity/templates/editTemplateDirector',  compact('findpartnerComp', 'findCompDirector'));
@@ -847,7 +847,7 @@ class EntityController extends Controller
 
         if ($request->partnerType == 1) {
 
-            $findpartnerIndi = relatedParties::where(['id' => $request->id])->first();
+            $findpartnerIndi = RelatedParty::where(['id' => $request->id])->first();
 
 
             return view('entity/templates/editTemplateIndivisual',  compact('findpartnerIndi'));
@@ -866,7 +866,7 @@ class EntityController extends Controller
         ]);
 
         // Find the director
-        $findCompDirector = relatedParties::where([
+        $findCompDirector = RelatedParty::where([
             'id' => $request->id,
             'partnerType' => $request->partnerType
         ])->first();
@@ -910,7 +910,7 @@ class EntityController extends Controller
 
             if ($request->file('edit_idDocUploadedFront') == NULL || $request->file('edit_idDocUploadedBack') == NULL) {
 
-                $updateindipartnr = relatedParties::where('id', $request->pdId)->update([
+                $updateindipartnr = RelatedParty::where('id', $request->pdId)->update([
                     'partnerId' => $request->partnerId,
                     'partnerType' => $request->directoTypeIndi,
                     'firstName' => $request->firstName,
@@ -925,7 +925,7 @@ class EntityController extends Controller
                 ]);
             } else {
 
-                $updateindipartnr = relatedParties::where('id', $request->pdId)->update([
+                $updateindipartnr = RelatedParty::where('id', $request->pdId)->update([
                     'partnerId' => $request->partnerId,
                     'partnerType' => $request->directoTypeIndi,
                     'firstName' => $request->firstName,
@@ -975,7 +975,7 @@ class EntityController extends Controller
         } else {
             if ($request->file('edit_idDocUploadedFront') == NULL || $request->file('edit_idDocUploadedBack') == NULL) {
 
-                $updateSingleDir = relatedParties::where('id', $request->pdId)->update([
+                $updateSingleDir = RelatedParty::where('id', $request->pdId)->update([
                     'partnerId' => $request->partnerId,
                     'partnerType' => $request->directoTypeIndi,
                     'firstName' => $request->firstName,
@@ -990,7 +990,7 @@ class EntityController extends Controller
                 ]);
             } else {
 
-                $updateSingleDir = relatedParties::where('id', $request->pdId)->update([
+                $updateSingleDir = RelatedParty::where('id', $request->pdId)->update([
                     'partnerId' => $request->partnerId,
                     'partnerType' => $request->directoTypeIndi,
                     'firstName' => $request->firstName,
@@ -1023,30 +1023,30 @@ class EntityController extends Controller
 
     public function deleteGeneralPartner(Request $request)
     {
-        $findpartnerType = relatedParties::where(['id' => $request->toDeleteId])->first();
+        $findpartnerType = RelatedParty::where(['id' => $request->toDeleteId])->first();
 
         // return $findpartnerType->partnerType;
 
 
         if ($findpartnerType->partnerType == 1) {
 
-            $indiPartnrchange = relatedParties::where(['id' => $request->toDeleteId])->update(['status' => 0]);
+            $indiPartnrchange = RelatedParty::where(['id' => $request->toDeleteId])->update(['status' => 0]);
 
-            $indiPartnrTobeDeleted = relatedParties::where(['id' => $request->toDeleteId])->delete();
+            $indiPartnrTobeDeleted = RelatedParty::where(['id' => $request->toDeleteId])->delete();
 
             if ($indiPartnrchange && $indiPartnrTobeDeleted) {
                 return response()->json(['message' => 'Indivisual partner deleted successfuly!']);
             }
         } else {
 
-            $updateCompanyTobeDeleted = relatedParties::find($request->toDeleteId)->update(['status' => 0]);
+            $updateCompanyTobeDeleted = RelatedParty::find($request->toDeleteId)->update(['status' => 0]);
 
-            $updateDirectorsOfsameCompany =  relatedParties::where(['companyID' => $request->toDeleteId])->update(['status' => 0]);
+            $updateDirectorsOfsameCompany =  RelatedParty::where(['companyID' => $request->toDeleteId])->update(['status' => 0]);
 
 
             if ($updateCompanyTobeDeleted && $updateDirectorsOfsameCompany) {
-                $deletedRec = relatedParties::find($request->toDeleteId)->delete();
-                $deleteDirectors =  relatedParties::where(['companyID' => $request->toDeleteId])->delete();
+                $deletedRec = RelatedParty::find($request->toDeleteId)->delete();
+                $deleteDirectors =  RelatedParty::where(['companyID' => $request->toDeleteId])->delete();
 
                 // dd($request);
                 if ($deletedRec && $deleteDirectors) {
@@ -1059,10 +1059,10 @@ class EntityController extends Controller
     public function deleteSingleDirector(Request $request)
     {
         //dd($request);
-        $updatedirector = relatedParties::find($request->toDeleteId)->update(['status' => 0]);
+        $updatedirector = RelatedParty::find($request->toDeleteId)->update(['status' => 0]);
 
         if ($updatedirector) {
-            $deleteDirectors = relatedParties::find($request->toDeleteId)->delete();
+            $deleteDirectors = RelatedParty::find($request->toDeleteId)->delete();
 
 
             if ($deleteDirectors) {
@@ -1089,13 +1089,13 @@ class EntityController extends Controller
             return response()->json(['error' => $validator->errors()], 401);
         } else {
 
-            $updateCompany = relatedParties::where('id', $request->edit_compID)->update([
+            $updateCompany = RelatedParty::where('id', $request->edit_compID)->update([
                 'companyName' => $request->edit_companyName,
                 'companyRegNum' => $request->edit_companyRegNum,
                 'countryIncorp' => $request->edit_countryIncorp,
 
             ]);
-            $updateDiretorsCompany = relatedParties::where('companyID', $request->edit_compID)->update([
+            $updateDiretorsCompany = RelatedParty::where('companyID', $request->edit_compID)->update([
                 'companyName' => $request->edit_companyName,
                 'companyRegNum' => $request->edit_companyRegNum,
                 'countryIncorp' => $request->edit_countryIncorp,
@@ -1155,7 +1155,7 @@ class EntityController extends Controller
         } else {
             // dd($request);
 
-            $findIfUser =  relatedParties::where(['user_id' => $request->user_id, 'partnerId' => $request->partnerId,  'dob' =>  $request->DOB, 'firstName' =>  $request->owner_fname, 'lastName' =>  $request->owner_lastName, 'idDocNum' =>  $request->owner_IdNum])->first();
+            $findIfUser =  RelatedParty::where(['user_id' => $request->user_id, 'partnerId' => $request->partnerId,  'dob' =>  $request->DOB, 'firstName' =>  $request->owner_fname, 'lastName' =>  $request->owner_lastName, 'idDocNum' =>  $request->owner_IdNum])->first();
 
             if ($findIfUser) {
                 // $existedIndivisualID = $findIfUser->id;
@@ -1163,7 +1163,7 @@ class EntityController extends Controller
                 return response()->json(['message' => 'Duplicate record found!']);
             } else {
 
-                $BeneficialOwner = new relatedParties;
+                $BeneficialOwner = new RelatedParty;
 
 
                 $BeneficialOwner->user_id = $request->user_id;
@@ -1223,7 +1223,7 @@ class EntityController extends Controller
         ]);
 
         // Find the beneficial owner
-        $findBeneficialOwner = relatedParties::where([
+        $findBeneficialOwner = RelatedParty::where([
             'id' => $request->id,
             'partnerId' => $request->partnerId
         ])->first();
@@ -1281,24 +1281,24 @@ class EntityController extends Controller
 
             if ($request->file('ownerId_frontCopy')) {
 
-                $updateownerFrontId = relatedParties::where('id', $request->user_id)->update([
+                $updateownerFrontId = RelatedParty::where('id', $request->user_id)->update([
                     'idDocUploadedFront'  =>   $request->file('ownerId_frontCopy')->store('public/images'),
                 ]);
             }
 
             if ($request->file('ownerId_BackCopy')) {
 
-                $updateownerBackId = relatedParties::where('id', $request->user_id)->update([
+                $updateownerBackId = RelatedParty::where('id', $request->user_id)->update([
                     'idDocUploadedBack'  =>   $request->file('ownerId_BackCopy')->store('public/images'),
                 ]);
             }
             if ($request->file('owner_addressproof')) {
 
-                $updateownerAddressproof = relatedParties::where('id', $request->user_id)->update([
+                $updateownerAddressproof = RelatedParty::where('id', $request->user_id)->update([
                     'addDocAttachFront'  =>   $request->file('owner_addressproof')->store('public/images'),
                 ]);
             }
-            $updateBeneficialOwnerDetail = relatedParties::where('id', $request->user_id)->update([
+            $updateBeneficialOwnerDetail = RelatedParty::where('id', $request->user_id)->update([
 
                 'firstName' => $request->owner_fname,
                 'MidName' => $request->owner_midName,
@@ -1336,10 +1336,10 @@ class EntityController extends Controller
     public function deleteBeneficialOwner(Request $request)
     {
         //  dd($request->all());
-        $updateOwnerstatusTobeDeleted = relatedParties::find($request->toDeleteId)->update(['status' => 0]);
+        $updateOwnerstatusTobeDeleted = RelatedParty::find($request->toDeleteId)->update(['status' => 0]);
 
         if ($updateOwnerstatusTobeDeleted) {
-            $deleteOwner = relatedParties::find($request->toDeleteId)->delete();
+            $deleteOwner = RelatedParty::find($request->toDeleteId)->delete();
 
 
             if ($deleteOwner) {
@@ -1392,7 +1392,7 @@ class EntityController extends Controller
         } else {
             // dd($request);
 
-            $findIfUser =  relatedParties::where(['user_id' => $request->user_id, 'partnerId' => $request->partnerId,  'dob' =>  $request->significant_dob, 'firstName' =>  $request->significant_fname, 'lastName' =>  $request->significant_lastName, 'idDocNum' =>  $request->significant_IdNum])->first();
+            $findIfUser =  RelatedParty::where(['user_id' => $request->user_id, 'partnerId' => $request->partnerId,  'dob' =>  $request->significant_dob, 'firstName' =>  $request->significant_fname, 'lastName' =>  $request->significant_lastName, 'idDocNum' =>  $request->significant_IdNum])->first();
 
             if ($findIfUser) {
                 // $existedIndivisualID = $findIfUser->id;
@@ -1400,7 +1400,7 @@ class EntityController extends Controller
                 return response()->json(['message' => 'Duplicate record found!']);
             } else {
 
-                $significantController = new relatedParties;
+                $significantController = new RelatedParty;
 
 
                 $significantController->user_id = $request->user_id;
@@ -1461,7 +1461,7 @@ class EntityController extends Controller
         ]);
 
         // Find the significant controller
-        $findSignificantController = relatedParties::where([
+        $findSignificantController = RelatedParty::where([
             'id' => $request->id,
             'partnerId' => $request->partnerId
         ])->first();
@@ -1521,26 +1521,26 @@ class EntityController extends Controller
 
             if ($request->file('significantId_frontCopy')) {
 
-                $updatesignificantFrontId = relatedParties::where('id', $request->user_id)->update([
+                $updatesignificantFrontId = RelatedParty::where('id', $request->user_id)->update([
                     'idDocUploadedFront'  =>   $request->file('significantId_frontCopy')->store('public/images'),
                 ]);
             }
 
             if ($request->file('significantId_BackCopy')) {
 
-                $updatesignificantBackId = relatedParties::where('id', $request->user_id)->update([
+                $updatesignificantBackId = RelatedParty::where('id', $request->user_id)->update([
                     'idDocUploadedBack'  =>   $request->file('significantId_BackCopy')->store('public/images'),
                 ]);
             }
             if ($request->file('significant_addressproof')) {
 
-                $updatesignificantAddressproof = relatedParties::where('id', $request->user_id)->update([
+                $updatesignificantAddressproof = RelatedParty::where('id', $request->user_id)->update([
                     'addDocAttachFront'  =>   $request->file('significant_addressproof')->store('public/images'),
                 ]);
             }
 
 
-            $updateSignificantController = relatedParties::where('id', $request->user_id)->update([
+            $updateSignificantController = RelatedParty::where('id', $request->user_id)->update([
 
                 'firstName' => $request->significant_fname,
                 'MidName' => $request->significant_midName,
@@ -1580,10 +1580,10 @@ class EntityController extends Controller
     {
         //  dd($request->all());
 
-        $updateSignificantstatusTobeDeleted = relatedParties::find($request->toDeleteId)->update(['status' => 0]);
+        $updateSignificantstatusTobeDeleted = RelatedParty::find($request->toDeleteId)->update(['status' => 0]);
 
         if ($updateSignificantstatusTobeDeleted) {
-            $deleteSignificant = relatedParties::find($request->toDeleteId)->delete();
+            $deleteSignificant = RelatedParty::find($request->toDeleteId)->delete();
 
 
             if ($deleteSignificant) {
@@ -1634,7 +1634,7 @@ class EntityController extends Controller
         } else {
             // dd($request->all());
 
-            $findIfUser =  relatedParties::where(['user_id' => $request->user_id, 'partnerId' => $request->partnerId,  'dob' =>  $request->accountTrader_dob, 'firstName' =>  $request->accountTrader_fname, 'lastName' =>  $request->accountTrader_lastName, 'idDocNum' =>  $request->accountTrader_IdNum])->first();
+            $findIfUser =  RelatedParty::where(['user_id' => $request->user_id, 'partnerId' => $request->partnerId,  'dob' =>  $request->accountTrader_dob, 'firstName' =>  $request->accountTrader_fname, 'lastName' =>  $request->accountTrader_lastName, 'idDocNum' =>  $request->accountTrader_IdNum])->first();
 
             if ($findIfUser) {
                 // $existedIndivisualID = $findIfUser->id;
@@ -1642,7 +1642,7 @@ class EntityController extends Controller
                 return response()->json(['message' => 'Duplicate record found!']);
             } else {
 
-                $accountTrader = new relatedParties;
+                $accountTrader = new RelatedParty;
 
 
                 $accountTrader->user_id = $request->user_id;
@@ -1697,7 +1697,7 @@ class EntityController extends Controller
     {
         // dd($request->all());
 
-        $findAccountTrader = relatedParties::where(['id' => $request->id, 'partnerId' => $request->partnerId])->first();
+        $findAccountTrader = RelatedParty::where(['id' => $request->id, 'partnerId' => $request->partnerId])->first();
 
         //     print_r($request->all());
         return view('entity/templates/editAccountTrader',  compact('findAccountTrader'));
@@ -1743,26 +1743,26 @@ class EntityController extends Controller
 
             if ($request->file('accountTraderId_frontCopy')) {
 
-                $updateaccountTraderFrontId = relatedParties::where('id', $request->user_id)->update([
+                $updateaccountTraderFrontId = RelatedParty::where('id', $request->user_id)->update([
                     'idDocUploadedFront'  =>   $request->file('accountTraderId_frontCopy')->store('public/images'),
                 ]);
             }
 
             if ($request->file('accountTraderId_BackCopy')) {
 
-                $updateaccountTraderBackId = relatedParties::where('id', $request->user_id)->update([
+                $updateaccountTraderBackId = RelatedParty::where('id', $request->user_id)->update([
                     'idDocUploadedBack'  =>   $request->file('accountTraderId_BackCopy')->store('public/images'),
                 ]);
             }
             if ($request->file('accountTrader_addressproof')) {
 
-                $updateaccountTraderAddressproof = relatedParties::where('id', $request->user_id)->update([
+                $updateaccountTraderAddressproof = RelatedParty::where('id', $request->user_id)->update([
                     'addDocAttachFront'  =>   $request->file('accountTrader_addressproof')->store('public/images'),
                 ]);
             }
 
 
-            $updateAccountTrader = relatedParties::where('id', $request->user_id)->update([
+            $updateAccountTrader = RelatedParty::where('id', $request->user_id)->update([
 
                 'firstName' => $request->accountTrader_fname,
                 'MidName' => $request->accountTrader_midName,
@@ -1802,10 +1802,10 @@ class EntityController extends Controller
     {
         //  dd($request->all());
 
-        $updateAccountTraderstatusTobeDeleted = relatedParties::find($request->toDeleteId)->update(['status' => 0]);
+        $updateAccountTraderstatusTobeDeleted = RelatedParty::find($request->toDeleteId)->update(['status' => 0]);
 
         if ($updateAccountTraderstatusTobeDeleted) {
-            $deleteAccountTrader = relatedParties::find($request->toDeleteId)->delete();
+            $deleteAccountTrader = RelatedParty::find($request->toDeleteId)->delete();
 
 
             if ($deleteAccountTrader) {
@@ -1820,7 +1820,7 @@ class EntityController extends Controller
     {
         //dd($request->all());
 
-        $basicCompletionChk =  Entities::where('user_id', $request->user_id)
+        $basicCompletionChk =  Entity::where('user_id', $request->user_id)
             ->whereNotNull('entity_name')
             ->whereNotNull('reg_num')
             ->whereNotNull('DOB_incorpor')
@@ -1838,7 +1838,7 @@ class EntityController extends Controller
             ->whereNotNull('additional_mob')
             ->where('status', '=', 1)->count();
 
-        $businessDocCountChk =  businessDocs::where('user_id', $request->user_id)
+        $businessDocCountChk =  BusinessDoc::where('user_id', $request->user_id)
             ->whereNotNull('incorp_cert')
             ->whereNotNull('partnership_agrnmt')
             ->whereNotNull('regsterOf_partner')
@@ -1855,8 +1855,8 @@ class EntityController extends Controller
             ->whereNotNull('supmentry')
             ->whereIn('status', [3, 1])->count();
 
-        $relatedPartiesCountChk =  relatedParties::where('user_id', $request->user_id)->whereIn('status', [3, 1])->distinct('partnerId')->count();
-        $fietCountChk =  Entities::where('user_id', $request->user_id)->whereNotNull('fiat_dpstWithdwl')->whereNotNull('fiat_currencies')->whereIn('status', [3, 1])->count();
+        $relatedPartiesCountChk =  RelatedParty::where('user_id', $request->user_id)->whereIn('status', [3, 1])->distinct('partnerId')->count();
+        $fietCountChk =  Entity::where('user_id', $request->user_id)->whereNotNull('fiat_dpstWithdwl')->whereNotNull('fiat_currencies')->whereIn('status', [3, 1])->count();
 
         //  return response()->json(['rec' => $relatedPartiesChk]);
 
@@ -1920,9 +1920,9 @@ class EntityController extends Controller
 
             //     $insertAuthLetter->uploadedAuthLetters = $request->file('uploadedAuthLetters')->store('public/images');
 
-            $findIfLetterExist = relatedParties::where(['user_id' => $request->user_id, 'partnerId' => $request->authletterPartnerId])->whereIn('status', [3, 1])->count();
+            $findIfLetterExist = RelatedParty::where(['user_id' => $request->user_id, 'partnerId' => $request->authletterPartnerId])->whereIn('status', [3, 1])->count();
 
-            $insertAuthLetter = new relatedParties;
+            $insertAuthLetter = new RelatedParty;
 
             if ($findIfLetterExist < 1) {
 
@@ -1946,15 +1946,15 @@ class EntityController extends Controller
                 $insertAuthLetter->user_id = $request->user_id;
                 $insertAuthLetter->status = $request->authletterStatus;
                 $insertAuthLetter->partnerId  = $request->authletterPartnerId;
-                $oldLetters  =  relatedParties::where(['user_id' => $request->user_id, 'partnerId' => $request->authletterPartnerId])->whereIn('status', [3, 1])->get('authLetter');
+                $oldLetters  =  RelatedParty::where(['user_id' => $request->user_id, 'partnerId' => $request->authletterPartnerId])->whereIn('status', [3, 1])->get('authLetter');
 
                 foreach ($request->uploadedAuthLetters as $key => $val) {
-                    $updateAuthLetter = relatedParties::where(['user_id' => $request->user_id, 'partnerId' => $request->authletterPartnerId,])->update(['authLetter'  =>   $val->store('public/images')]);
+                    $updateAuthLetter = RelatedParty::where(['user_id' => $request->user_id, 'partnerId' => $request->authletterPartnerId,])->update(['authLetter'  =>   $val->store('public/images')]);
                     $authLettersImgNames[] = $val->store('public/authLetters');
                 }
 
                 $insertAuthLetter->authLetter =   implode(',', $authLettersImgNames);
-                $updateAuthLetter = relatedParties::where(['user_id' => $request->user_id, 'partnerId' => $request->authletterPartnerId,])->update(['authLetter'  =>   $insertAuthLetter->authLetter]);
+                $updateAuthLetter = RelatedParty::where(['user_id' => $request->user_id, 'partnerId' => $request->authletterPartnerId,])->update(['authLetter'  =>   $insertAuthLetter->authLetter]);
 
 
                 if ($updateAuthLetter == true) {
@@ -1992,14 +1992,14 @@ class EntityController extends Controller
     public function prepareChecklist(Request $request)
     {
 
-        $findIfUser = BusinessDocs::where('user_id', $request->user_id)->first();
+        $findIfUser = BusinessDoc::where('user_id', $request->user_id)->first();
 
         if ($findIfUser) {
             //  dd($findIfUser);
-            $checklistUpdated = BusinessDocs::where('user_id', $request->user_id)->update(['checklist' => $request->checklist]);
+            $checklistUpdated = BusinessDoc::where('user_id', $request->user_id)->update(['checklist' => $request->checklist]);
         } else {
             $inputs = $request->All();
-            $allInputs = BusinessDocs::create($inputs);
+            $allInputs = BusinessDoc::create($inputs);
             // dd($allInputs);
             return response()->json($allInputs);
             //  print_r(' upload business documents');
@@ -2032,31 +2032,31 @@ class EntityController extends Controller
                 $ifdoc = $request->Intermedianes;
             }
 
-            $ifUserExist = businessDocs::where(['user_id' => $request->user_id])->count();
+            $ifUserExist = BusinessDoc::where(['user_id' => $request->user_id])->count();
 
             if ($ifUserExist < 1) {
 
-                $insertbusinessDocs = new businessDocs;
+                $insertbusinessDocs = new BusinessDoc;
                 $insertbusinessDocs->user_id = $request->user_id;
                 $insertbusinessDocs[$request->user_doctype] =  $ifdoc;
                 $insertbusinessDocs->save();
                 return response()->json(['uplodeddocs' => 'no', 'message' => 'Updated successfully'], 200);
             } else {
-                $IfdocIsnotNull = businessDocs::where(['user_id' => $request->user_id])->whereNotNull($request->user_doctype)->whereIn('status', [3, 1])->count();
+                $IfdocIsnotNull = BusinessDoc::where(['user_id' => $request->user_id])->whereNotNull($request->user_doctype)->whereIn('status', [3, 1])->count();
 
                 // dd($IfdocIsnotNull);
                 if ($IfdocIsnotNull > 0)  // Here user exist but perticilar doc is 'no' OR 'is has image string'
                 {
-                    $IfdocRow = businessDocs::where(['user_id' => $request->user_id])->whereIn('status', [3, 1])->get($request->user_doctype)->first();
+                    $IfdocRow = BusinessDoc::where(['user_id' => $request->user_id])->whereIn('status', [3, 1])->get($request->user_doctype)->first();
                     // dd($IfdocRow[$request->user_doctype]);
 
                     if ($IfdocRow[$request->user_doctype] == 'no') {
-                        $updateDocs = businessDocs::where(['user_id' => $request->user_id])->update([$request->user_doctype  =>   'no']);
+                        $updateDocs = BusinessDoc::where(['user_id' => $request->user_id])->update([$request->user_doctype  =>   'no']);
                     } else {
 
-                        $oldDocs  =  businessDocs::where(['user_id' => $request->user_id])->whereIn('status', [3, 1])->get($request->user_doctype);
+                        $oldDocs  =  BusinessDoc::where(['user_id' => $request->user_id])->whereIn('status', [3, 1])->get($request->user_doctype);
 
-                        $updateDocs = businessDocs::where(['user_id' => $request->user_id])->update([$request->user_doctype  =>   'no']);
+                        $updateDocs = BusinessDoc::where(['user_id' => $request->user_id])->update([$request->user_doctype  =>   'no']);
 
 
                         // dd($oldDocs);
@@ -2074,7 +2074,7 @@ class EntityController extends Controller
                     }
                 } else {     // Here user exist but perticilar doc field is 'NULL'
 
-                    $updateDocs = businessDocs::where(['user_id' => $request->user_id])->update([$request->user_doctype  =>   'no']);
+                    $updateDocs = BusinessDoc::where(['user_id' => $request->user_id])->update([$request->user_doctype  =>   'no']);
                 }
                 return response()->json(['uplodeddocs' => 'no', 'message' => 'Updated successfully'], 200);
             }
@@ -2092,11 +2092,11 @@ class EntityController extends Controller
                 return response()->json(['error' => $validator->errors()], 401);
             } else {
 
-                $ifUserExist = businessDocs::where(['user_id' => $request->user_id])->count();
+                $ifUserExist = BusinessDoc::where(['user_id' => $request->user_id])->count();
                 // dd($ifUserExist);
                 if ($ifUserExist < 1) {
                     // if user does not exist
-                    $insertbusinessDocs = new businessDocs;
+                    $insertbusinessDocs = new BusinessDoc;
 
                     $insertbusinessDocs->user_id = $request->user_id;
 
@@ -2118,12 +2118,12 @@ class EntityController extends Controller
                 } else {
                     // Here user exist
 
-                    $IfdocIsnotNull = businessDocs::where(['user_id' => $request->user_id])->whereNotNull($request->user_doctype)->whereIn('status', [3, 1])->count();
+                    $IfdocIsnotNull = BusinessDoc::where(['user_id' => $request->user_id])->whereNotNull($request->user_doctype)->whereIn('status', [3, 1])->count();
 
                     // dd($IfdocIsnotNull);
                     if ($IfdocIsnotNull > 0)  // Here user exist but perticilar doc is not null
                     {
-                        $oldDocs  =  businessDocs::where(['user_id' => $request->user_id])->whereIn('status', [3, 1])->get($request->user_doctype);
+                        $oldDocs  =  BusinessDoc::where(['user_id' => $request->user_id])->whereIn('status', [3, 1])->get($request->user_doctype);
                         // dd($oldDocs);
                     }
                     foreach ($request->uploaddedFile as $key => $val) {
@@ -2136,7 +2136,7 @@ class EntityController extends Controller
                     }
                     $updatebusinessDocs =   implode(',', $docsNames);
 
-                    $updateDocs = businessDocs::where(['user_id' => $request->user_id])->update([$request->user_doctype  =>   $updatebusinessDocs]);
+                    $updateDocs = BusinessDoc::where(['user_id' => $request->user_id])->update([$request->user_doctype  =>   $updatebusinessDocs]);
                     //  $updateDocs  =   DB::table('businessDocs')->where('user_id', $request->user_id)->update([$request->user_doctype => $updatebusinessDocs]);
 
                     if ($updateDocs == true) {
@@ -2165,7 +2165,7 @@ class EntityController extends Controller
 
 
 
-        //  $ConfirmBusinessDocs = businessDocs::where('user_id', $request->user_id )->update( [ 'status' => 1 ]);
+        //  $ConfirmBusinessDocs = BusinessDoc::where('user_id', $request->user_id )->update( [ 'status' => 1 ]);
 
 
         //   if($ConfirmBusinessDocs == true){
@@ -2193,7 +2193,7 @@ class EntityController extends Controller
 
 
         //   print_r(' list of business documents');
-        $alldocs = businessDocs::all();
+        $alldocs = BusinessDoc::all();
         // return view('api/show-businesses-docs', compact('alldocs'));
 
         return response()->json($alldocs);
@@ -2247,7 +2247,7 @@ class EntityController extends Controller
 
             //   dd( $request->all());
 
-            $ifUserExist = Entities::where(['user_id' => $request->user_id])->count();
+            $ifUserExist = Entity::where(['user_id' => $request->user_id])->count();
 
             if ($ifUserExist < 1) {  // if user does not exist
 
@@ -2255,7 +2255,7 @@ class EntityController extends Controller
 
 
 
-                $insertfietDocs = new Entities;
+                $insertfietDocs = new Entity;
 
 
                 $insertfietDocs->user_id = $request->user_id;
@@ -2301,17 +2301,17 @@ class EntityController extends Controller
 
                 $dropdown_group = implode(',', $request->dropdown_group);
 
-                $update_feitCurrencies = Entities::where(['user_id' => $request->user_id])->update(['fiat_dpstWithdwl' => $request->fiat_dpstWithdwl, 'fiat_currencies'  =>   $dropdown_group]);
+                $update_feitCurrencies = Entity::where(['user_id' => $request->user_id])->update(['fiat_dpstWithdwl' => $request->fiat_dpstWithdwl, 'fiat_currencies'  =>   $dropdown_group]);
 
                 if ((in_array("BRL", $request->dropdown_group) === true) && count((array)$request->cnpjDoc) != 0  && (is_array($request->cnpjDoc) || is_object($request->cnpjDoc))) { // if BDL selected
 
 
-                    $IfCNPJ_docIsnotNull = Entities::where(['user_id' => $request->user_id])->whereNotNull('CNPJ_doc')->whereIn('status', [3, 1])->count();
+                    $IfCNPJ_docIsnotNull = Entity::where(['user_id' => $request->user_id])->whereNotNull('CNPJ_doc')->whereIn('status', [3, 1])->count();
                     // dd($IfCNPJ_docIsnotNull);
 
                     if ($IfCNPJ_docIsnotNull > 0)  // if user exist but CNPJ_doc is not null
                     {
-                        $oldCNPJ_doc  =  Entities::where(['user_id' => $request->user_id])->whereIn('status', [3, 1])->get('CNPJ_doc');
+                        $oldCNPJ_doc  =  Entity::where(['user_id' => $request->user_id])->whereIn('status', [3, 1])->get('CNPJ_doc');
                         // dd($oldCNPJ_doc);
                     }
                     foreach ($request->cnpjDoc as $key => $val) {
@@ -2324,7 +2324,7 @@ class EntityController extends Controller
                     }
                     $updatecnpjDoc =   implode(',', $cnpjDocNames);
 
-                    $update_cnpjDoc = Entities::where(['user_id' => $request->user_id])->update(['CNPJ_doc'  =>   $updatecnpjDoc, 'CNPJ_number'  =>  $request->cnpjNum]);
+                    $update_cnpjDoc = Entity::where(['user_id' => $request->user_id])->update(['CNPJ_doc'  =>   $updatecnpjDoc, 'CNPJ_number'  =>  $request->cnpjNum]);
 
                     // deleting old document if BRL is selected
                     if ($update_cnpjDoc == true) {
@@ -2348,13 +2348,13 @@ class EntityController extends Controller
 
                 if ((in_array("AUD", $request->dropdown_group) === true)   && (count((array)$request->asicDoc) != 0) && (is_array($request->asicDoc) || is_object($request->asicDoc))) { // if AUD selected
 
-                    $IfASIC_docIsnotNull = Entities::where(['user_id' => $request->user_id])->whereNotNull('ASIC_doc')->whereIn('status', [3, 1])->count();
+                    $IfASIC_docIsnotNull = Entity::where(['user_id' => $request->user_id])->whereNotNull('ASIC_doc')->whereIn('status', [3, 1])->count();
                     // dd($IfASIC_docIsnotNull);
 
 
                     if ($IfASIC_docIsnotNull > 0)  // if user exist but ASIC_doc is not null
                     {
-                        $oldASIC_doc  =  Entities::where(['user_id' => $request->user_id])->whereIn('status', [3, 1])->get('ASIC_doc');
+                        $oldASIC_doc  =  Entity::where(['user_id' => $request->user_id])->whereIn('status', [3, 1])->get('ASIC_doc');
                         // dd($oldASIC_doc);
                     }
 
@@ -2368,7 +2368,7 @@ class EntityController extends Controller
                     }
 
                     $updateasicDoc =   implode(',', $asicDocNames);
-                    $update_asicDoc = Entities::where(['user_id' => $request->user_id])->update(['ASIC_doc'  =>   $updateasicDoc]);
+                    $update_asicDoc = Entity::where(['user_id' => $request->user_id])->update(['ASIC_doc'  =>   $updateasicDoc]);
 
                     // deleting old document if AUD is selected
                     if ($update_asicDoc == true) {
@@ -2439,7 +2439,7 @@ class EntityController extends Controller
 
 
 
-        //  $ConfirmBusiness = relatedParties::where('user_id', $request->user_id )->where('partnerId', $request->businessTypeID )->update( [ 'status' => 1 ]);
+        //  $ConfirmBusiness = RelatedParty::where('user_id', $request->user_id )->where('partnerId', $request->businessTypeID )->update( [ 'status' => 1 ]);
 
 
         //   if($ConfirmBusiness == true){

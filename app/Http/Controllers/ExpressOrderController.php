@@ -7,8 +7,8 @@ use PragmaRX\Google2FALaravel\Support\Authenticator;
 
 use Illuminate\Support\Facades\Storage;
 use App\Models\User;
-use App\Models\giftcard;
-use App\Models\Entity_detail;
+use App\Models\Giftcard;
+use App\Models\EntityDetail;
 use App\Models\SecurityActivity;
 use Illuminate\Http\Request;
 use App\Http\Controllers\HomeController;
@@ -19,52 +19,52 @@ use App\Http\Controllers\GoogleAuthenticatorController;
 use App\Http\Controllers\SmsController;
 use App\Http\Controllers\GiftcardController;
 use App\Http\Controllers\StakingController;
-use App\Http\Controllers\ImageCompression;
+use App\Http\Controllers\ImageCompressionController;
 use Validator;
-use Session;
-use DB;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
 use Illuminate\Pagination\Paginator;
 use Base32\Base32;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Hash;
 use WisdomDiala\Cryptocap\Facades\Cryptocap;
-use App\Models\company_type;
-use App\Models\entities;
-use App\Models\document_lists;
-use App\Models\businessDocs;
-use App\Models\relatedParties;
-use App\Models\PaymentMedhods;
-use App\Models\Banks;
+use App\Models\CompanyType;
+use App\Models\Entity;
+use App\Models\DocumentList;
+use App\Models\BusinessDoc;
+use App\Models\RelatedParty;
+use App\Models\PaymentMethod;
+use App\Models\Bank;
 use App\Models\Country;
-use App\Models\currencies;
+use App\Models\Currency;
 use Illuminate\Support\Facades\File;
 use App\Models\Order;
-use App\Models\change_password_history;
-use App\Models\gift_card_history;
-use App\Models\loginAttemptHistory;
-use App\Models\payment_method_list;
-use App\Models\marketWallet;
+use App\Models\ChangePasswordHistory;
+use App\Models\GiftCardHistory;
+use App\Models\LoginAttemptHistory;
+use App\Models\PaymentMethodList;
+use App\Models\MarketWallet;
 use Jenssegers\Agent\Agent;
-use App\Models\LoginDetails;
+use App\Models\LoginDetail;
 use App\Models\Chat;
-use App\Models\Tradingratings;
+use App\Models\TradingRating;
 use App\Models\NotificationCategory;
 use App\Notifications\TradeNotification;
 use App\Models\Notification;
-use App\Models\stakings;
-use App\Models\announcement;
-use App\Models\announcement_category;
+use App\Models\Staking;
+use App\Models\Announcement;
+use App\Models\AnnouncementCategory;
 use App\Models\Escrow;
-use App\Models\config;
-use App\Models\user_account_activity;
+use App\Models\Config;
+use App\Models\UserAccountActivity;
 use App\Imports\P2pOrderExport;
 use App\Imports\SelectedP2POrderExport;
 use Maatwebsite\Excel\Facades\Excel;
 use DateTime;
-use App\Models\Postads;
-use App\Models\Estimatedfee;
-use App\Models\failed_verification_history;
+use App\Models\Postad;
+use App\Models\EstimatedFee;
+use App\Models\FailedVerificationHistory;
 use Illuminate\Support\Facades\Cache;
 
 
@@ -102,8 +102,8 @@ class ExpressOrderController extends Controller
             $orderid = Session::get('orderid');
             $get_order_data = Order::where('id', $orderid)->where('buyer_id', Auth::user()->id)->first();
 
-            $ratedRecords = Tradingratings::where('order_id', $orderid)->where('buyer_id', Auth::user()->id)->first();
-            $config_data = config::all();
+            $ratedRecords = TradingRating::where('order_id', $orderid)->where('buyer_id', Auth::user()->id)->first();
+            $config_data = Config::all();
 
 
             $accept_by_buyer_orderid = $request->accept_by_buyer_orderid;
@@ -143,8 +143,8 @@ class ExpressOrderController extends Controller
             // $getbuyer_bank_details = json_decode($get_order_data->payment_account_details,true);
             // echo "<pre>"; print_r($getbuyer_bank_details); die;
 
-            //$getbuyer_bank_details = PaymentMedhods::where('user_id', $get_order_data->buyer_id)->where('deleted_at','=',NULL)->select('method_type')->get();
-            $getbuyer_bank_details = PaymentMedhods::where('user_id', $get_order_data->buyer_id)->where('deleted_at', '=', NULL)->get();
+            //$getbuyer_bank_details = PaymentMethod::where('user_id', $get_order_data->buyer_id)->where('deleted_at','=',NULL)->select('method_type')->get();
+            $getbuyer_bank_details = PaymentMethod::where('user_id', $get_order_data->buyer_id)->where('deleted_at', '=', NULL)->get();
 
             if ($get_seller_details) {
 
@@ -180,8 +180,8 @@ class ExpressOrderController extends Controller
                     } else {
                         $get_order_data = Order::where('id', $orderid)->first();
                         $get_buyer_details = DB::table('users')->where('id', $get_order_data->buyer_id)->first();
-                        $ratedRecords = Tradingratings::where('order_id', $orderid)->where('seller_id', Auth::user()->id)->first();
-                        $getbuyer_bank_details = DB::table('payment_medhods')->where('user_id', $get_order_data->buyer_id)->select('method_type')->get();
+                        $ratedRecords = TradingRating::where('order_id', $orderid)->where('seller_id', Auth::user()->id)->first();
+                        $getbuyer_bank_details = DB::table('payment_methods')->where('user_id', $get_order_data->buyer_id)->select('method_type')->get();
 
                         if (!empty($get_buyer_details)) {
                             $buyer_details = $get_buyer_details;
@@ -222,8 +222,8 @@ class ExpressOrderController extends Controller
             $orderid = $id;
 
             $get_order_data = Order::where('id', $lastSegment)->where('buyer_id', Auth::user()->id)->first();
-            $ratedRecords = Tradingratings::where('order_id', $lastSegment)->where('buyer_id', Auth::user()->id)->first();
-            $config_data = config::all();
+            $ratedRecords = TradingRating::where('order_id', $lastSegment)->where('buyer_id', Auth::user()->id)->first();
+            $config_data = Config::all();
 
 
             $accept_by_buyer_orderid = $request->accept_by_buyer_orderid;
@@ -251,7 +251,7 @@ class ExpressOrderController extends Controller
 
             $get_seller_details = DB::table('users')->where('id', $get_order_data->seller_id)->first();
 
-            $getbuyer_bank_details = PaymentMedhods::where('user_id', $get_order_data->buyer_id)->where('deleted_at', '=', NULL)->get();
+            $getbuyer_bank_details = PaymentMethod::where('user_id', $get_order_data->buyer_id)->where('deleted_at', '=', NULL)->get();
 
             if ($get_seller_details) {
 
@@ -297,8 +297,8 @@ class ExpressOrderController extends Controller
                 } else {
                     $get_order_data = Order::where('id', $orderid)->first();
                     $get_buyer_details = DB::table('users')->where('id', $get_order_data->buyer_id)->first();
-                    $ratedRecords = Tradingratings::where('order_id', $orderid)->where('seller_id', Auth::user()->id)->first();
-                    $getbuyer_bank_details = DB::table('payment_medhods')->where('user_id', $get_order_data->buyer_id)->select('method_type')->get();
+                    $ratedRecords = TradingRating::where('order_id', $orderid)->where('seller_id', Auth::user()->id)->first();
+                    $getbuyer_bank_details = DB::table('payment_methods')->where('user_id', $get_order_data->buyer_id)->select('method_type')->get();
 
                     if (!empty($get_buyer_details)) {
                         $buyer_details = $get_buyer_details;
@@ -338,11 +338,11 @@ class ExpressOrderController extends Controller
             return view('web.page_not_found');
             //abort(404, 'Record not found');
         } else {
-            $get_order_data = Order::where('id', $lastSegment)->first();
+            $get_order_data = Order::where('id', $orderid)->first();
 
             $get_buyer_details = DB::table('users')->where('id', $get_order_data->seller_id)->first();
-            $ratedRecords = Tradingratings::where('order_id', $orderid)->where('buyer_id', Auth::user()->id)->first();
-            $getbuyer_bank_details = DB::table('payment_medhods')->where('user_id', $get_order_data->seller_id)->select('method_type')->get();
+            $ratedRecords = TradingRating::where('order_id', $orderid)->where('buyer_id', Auth::user()->id)->first();
+            $getbuyer_bank_details = DB::table('payment_methods')->where('user_id', $get_order_data->seller_id)->select('method_type')->get();
 
             if (!empty($get_buyer_details)) {
                 $buyer_details = $get_buyer_details;
@@ -378,7 +378,7 @@ class ExpressOrderController extends Controller
     //     $get_order_data = Order::where('id', $lastSegment)->first();
 
     //     $get_buyer_details = DB::table('users')->where('id', $get_order_data->seller_id)->first();
-    //      $ratedRecords = Tradingratings::where('order_id', $orderid)->where('buyer_id', Auth::user()->id)->first();
+    //      $ratedRecords = TradingRating::where('order_id', $orderid)->where('buyer_id', Auth::user()->id)->first();
     //     $getbuyer_bank_details = DB::table('payment_medhods')->where('user_id', $get_order_data->seller_id)->select('method_type')->get();
 
     //     if(!empty($get_buyer_details)){
@@ -398,7 +398,7 @@ class ExpressOrderController extends Controller
         $user_id = $userId;
         //  return $user_id ;
 
-        $getpendingorders = Order::where(function ($query) {
+        $getpendingorders = Order::where(function ($query) use ($user_id) {
             $query->where('buyer_id', $user_id)
                 ->orWhere('seller_id', $user_id);
         })
@@ -464,7 +464,7 @@ class ExpressOrderController extends Controller
     //                 //     $bitcoin=Cryptocap::getSingleAsset('bitcoin');
     //                 //     $ethereum=Cryptocap::getSingleAsset('ethereum');
     //                 //     $allcurrency = currencies::all();
-    //                 //     $userPaymentMethod = PaymentMedhods::where('user_id', '=', Auth::user()->id)->get();
+    //                 //     $userPaymentMethod = PaymentMethod::where('user_id', '=', Auth::user()->id)->get();
     //                 //     return view('web.express_buy_sell_crypto',compact('bitcoin','ethereum','allcurrency', 'userPaymentMethod' ));
 
 
@@ -492,7 +492,7 @@ class ExpressOrderController extends Controller
     //                                 $wallet_address_result=$BmkApiController->verify_api($url,$params);
     //                                 $upadeWalletAddress = User::where('id', Auth::user()->id)->update(['bmk_wallet_address' => $wallet_address_result->wallet_signature]);
     //                             }
-    //                         $payment_account_details = PaymentMedhods::where('id',$request->payment_bank_id)->first();
+    //                         $payment_account_details = PaymentMethod::where('id',$request->payment_bank_id)->first();
     //                         // echo "<pre>"; print_r($payment_account_details); echo "<pre>";
     //                         // echo "<pre>"; print_r($data);die();
     //                         $orderid = mt_rand(1000000000, 9999999999);
@@ -586,8 +586,8 @@ class ExpressOrderController extends Controller
     //                         $bmk_price=$BmkApiController->verify_api($current_bmk_price_url,$bmk_params);
     //                         //$allcurrency = currencies::all();
     //                         //$allcurrency = currencies::orderBy('id','desc')->get();
-    //                         $userPaymentMethod = PaymentMedhods::where('user_id', '=', Auth::user()->id)->get();
-    //                         $allpaymentMethod_list = payment_method_list::all();
+    //                         $userPaymentMethod = PaymentMethod::where('user_id', '=', Auth::user()->id)->get();
+    //                         $allpaymentMethod_list = PaymentMethodList::all();
     //                         return view('web.express_buy_sell_crypto',compact('bitcoin','ethereum','allcurrency', 'userPaymentMethod','allpaymentMethod_list','bmk_price' ));
 
     //               }
@@ -611,7 +611,7 @@ class ExpressOrderController extends Controller
             //     $bitcoin=Cryptocap::getSingleAsset('bitcoin');
             //     $ethereum=Cryptocap::getSingleAsset('ethereum');
             //     $allcurrency = currencies::all();
-            //     $userPaymentMethod = PaymentMedhods::where('user_id', '=', Auth::user()->id)->get();
+            //     $userPaymentMethod = PaymentMethod::where('user_id', '=', Auth::user()->id)->get();
             //     return view('web.express_buy_sell_crypto',compact('bitcoin','ethereum','allcurrency', 'userPaymentMethod' ));
 
 
@@ -637,7 +637,7 @@ class ExpressOrderController extends Controller
                     $upadeWalletAddress = User::where('id', Auth::user()->id)->update(['bmk_wallet_address' => $wallet_address_result->wallet_signature]);
                 }
 
-                $payment_account_details = PaymentMedhods::where('id', $request->payment_bank_id)->first();
+                $payment_account_details = PaymentMethod::where('id', $request->payment_bank_id)->first();
                 // echo "<pre>"; print_r($payment_account_details); echo "<pre>";
                 // echo "<pre>"; print_r($data);die();
                 $orderid = mt_rand(1000000000, 9999999999);
@@ -701,7 +701,7 @@ class ExpressOrderController extends Controller
                     }
 
                     if (Auth::user()->on_site_notification_status == 1) {
-                        $user->notify(new TradeNotification($orderdata, $notification_category_id, $orderstatus, $seller_confirmation_status, $buyer_confirmation_status, $order_accept_action, $orderId, $buyer_id, $seller_id));
+                        User::find($user->id)->notify(new TradeNotification($orderdata, $notification_category_id, $orderstatus, $seller_confirmation_status, $buyer_confirmation_status, $order_accept_action, $orderId, $buyer_id, $seller_id));
                     }
 
                     return response()->json(['message' => 'success', 'order_data' => $conf_order_data, 'ordertype' => $request->ordertype]);
@@ -732,8 +732,8 @@ class ExpressOrderController extends Controller
                 $bmk_price = $BmkApiController->verify_api($current_bmk_price_url, $bmk_params);
                 //$allcurrency = currencies::all();
                 //$allcurrency = currencies::orderBy('id','desc')->get();
-                $userPaymentMethod = PaymentMedhods::where('user_id', '=', Auth::user()->id)->get();
-                $allpaymentMethod_list = payment_method_list::all();
+                $userPaymentMethod = PaymentMethod::where('user_id', '=', Auth::user()->id)->get();
+                $allpaymentMethod_list = PaymentMethodList::all();
                 return view('web.express_buy_sell_crypto', compact('bitcoin', 'ethereum', 'allcurrency', 'userPaymentMethod', 'allpaymentMethod_list', 'bmk_price'));
             }
         } else {
@@ -745,7 +745,7 @@ class ExpressOrderController extends Controller
     {
         // dd($request->all());
         $orderserialId = $request->orderId;
-        $getExpressOrderData = order::where('id', $orderserialId)->first();
+        $getExpressOrderData = Order::where('id', $orderserialId)->first();
         //print_r($getExpressOrderData);
         if ($getExpressOrderData) {
             //print_r($orderserialId);
@@ -754,14 +754,14 @@ class ExpressOrderController extends Controller
 
 
 
-                // $payment_account_details_for_seller =  PaymentMedhods::where('user_id', Auth::user()->id)->where('id', $getExpressOrderData->payment_method_id)->where('deleted_at','=',NULL)->first();
+                // $payment_account_details_for_seller =  PaymentMethod::where('user_id', Auth::user()->id)->where('id', $getExpressOrderData->payment_method_id)->where('deleted_at','=',NULL)->first();
 
-                $payment_account_details_for_seller = DB::table('payment_medhods')
-                    ->join('payment_method_lists', 'payment_medhods.method_type', '=', 'payment_method_lists.name')
+                $payment_account_details_for_seller = DB::table('payment_methods')
+                    ->join('payment_method_lists', 'payment_methods.method_type', '=', 'payment_method_lists.name')
                     ->where('payment_method_lists.id', $getExpressOrderData->payment_method_id)
-                    ->select('payment_medhods.*', 'payment_method_lists.*')
-                    ->where('payment_medhods.user_id',  Auth::user()->id)
-                    ->whereNull('payment_medhods.deleted_at')
+                    ->select('payment_methods.*', 'payment_method_lists.*')
+                    ->where('payment_methods.user_id',  Auth::user()->id)
+                    ->whereNull('payment_methods.deleted_at')
                     ->first();
 
                 //print_r($payment_account_details_for_seller);
@@ -795,7 +795,7 @@ class ExpressOrderController extends Controller
     public function checkOrderAcceptedorNot(Request $request)
     {
         $acceptedOrderid = $request->orderId;
-        $check_Order = order::where('id', $acceptedOrderid)->first();
+        $check_Order = Order::where('id', $acceptedOrderid)->first();
         if ($check_Order->order_accept_action == 1 || $check_Order->order_status == 1 || $check_Order->order_status == 2 || $check_Order->order_status == 3 || $check_Order->order_status == 4) {
             $value = 1;
         } else {
@@ -810,7 +810,7 @@ class ExpressOrderController extends Controller
         $totalCoins = $HomeController->getTotalAvailableCoinsInMarketWallet();
         $formattedTotalCoins = number_format($totalCoins, 8);
         //print_r($HomeController->getTotalAvailableCoinsInMarketWallet());
-        //   $payment_account_details_for_seller =  PaymentMedhods::where('user_id', Auth::user()->id)->where('payment_method', $getExpressOrderData->payment_method_id)->where('deleted_at','=',NULL)->first();
+        //   $payment_account_details_for_seller =  PaymentMethod::where('user_id', Auth::user()->id)->where('payment_method', $getExpressOrderData->payment_method_id)->where('deleted_at','=',NULL)->first();
         $payment_account_details_for_seller  = DB::table('payment_medhods')
             ->join('payment_method_lists', 'payment_method_lists.name', '=', 'payment_medhods.method_type')
             ->where('payment_medhods.user_id', '=', Auth::user()->id)

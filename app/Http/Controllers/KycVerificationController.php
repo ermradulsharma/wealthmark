@@ -9,11 +9,11 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use Exception;
 use App\Models\User;
-use App\Models\failed_verification_history;
+use App\Models\FailedVerificationHistory;
 use Illuminate\Support\Facades\Auth;
-use Validator;
-use Session;
-use DB;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
 
 class KycVerificationController extends Controller
@@ -83,7 +83,7 @@ class KycVerificationController extends Controller
         $url = $baseurl . $urltype;
 
         $d =  $this->CallKycApi($url, $loginData, $header);
-        $data = json_decode($d);
+        $data = json_decode($d ?? '');
 
 
         return $data;
@@ -113,7 +113,7 @@ class KycVerificationController extends Controller
         $loginData = "{\"type\":\"$id_type\",\"callbackUrl\":\"https://localhost/data.php\",\"email\":\"admin@signzy.com\",\"images\":[\"$id_img\"]}";
 
         $d =  $this->CallKycApi($url, $loginData, $header);
-        $data = json_decode($d);
+        $data = json_decode($d ?? '');
         return $data;
         // $itemId = $data->id;
         //  $accessToken = $data->accessToken;
@@ -171,7 +171,7 @@ class KycVerificationController extends Controller
         ];
 
         $d =  $this->CallKycApi($url, $loginData, $header);
-        $data = json_decode($d);
+        $data = json_decode($d ?? '');
         // dd($data);
         return $data;
     }
@@ -208,7 +208,7 @@ class KycVerificationController extends Controller
         $loginData =  "{\"essentials\":{\"firstImage\":\"$img1\",\"secondImage\":\"$img2\"}}";
 
         $d =  $this->CallKycApi($url, $loginData, $header);
-        $data = json_decode($d);
+        $data = json_decode($d ?? '');
         // dd($data);
         return $data;
     }
@@ -231,7 +231,7 @@ class KycVerificationController extends Controller
         ];
         $loginData = "{\"service\":\"Identity\",\"itemId\":\"$identitifiedUser->id\",\"accessToken\":\"$identitifiedUser->accessToken\",\"task\":\"verifyAadhaar\",\"essentials\":{\"uid\":\"$id_number\"}}";
         $d =  $this->CallKycApi($url, $loginData, $header);
-        $data = json_decode($d);
+        $data = json_decode($d ?? '');
         // dd($data);
         return $data;
     }
@@ -264,7 +264,7 @@ class KycVerificationController extends Controller
 
             $loginData = "{\"service\":\"Identity\",\"itemId\":\"$identitifiedUser->id\",\"accessToken\":\"$identitifiedUser->accessToken\",\"task\":\"verification\",\"essentials\":{\"name\":\"$nameOnPan\",\"number\":\"$id_number\"}}";
             $d =  $this->CallKycApi($url, $loginData, $header);
-            $data = json_decode($d);
+            $data = json_decode($d ?? '');
 
             // dd($data);
             return $data;
@@ -295,7 +295,7 @@ class KycVerificationController extends Controller
         ];
         $loginData = "{\"service\":\"Identity\",\"itemId\":\"$identitifiedUser->id\",\"task\":\"autoRecognition\",\"accessToken\":\"$identitifiedUser->accessToken\",\"essentials\":{\"number\":\"$id_number\"}}";
         $d =  $this->CallKycApi($url, $loginData, $header);
-        $data = json_decode($d);
+        $data = json_decode($d ?? '');
         // dd($data);
         return $data;
     }
@@ -367,7 +367,7 @@ class KycVerificationController extends Controller
 
         $d =  $this->CallKycApi($url, $loginData, $header);
 
-        $data = json_decode($d);
+        $data = json_decode($d ?? '');
         if (isset($data->result)) {
             return $data;
         }
@@ -414,7 +414,7 @@ class KycVerificationController extends Controller
 
         $loginData  = "{\"task\":\"url\",\"essentials\":{\"redirectUrl\":\"$redirecturl\",\"redirectTime\":\"\",\"callbackUrl\":\"$callbackurl\"}}";
         $d =  $this->CallKycApi($url, $loginData, $header);
-        $data = json_decode($d);
+        $data = json_decode($d ?? '');
         echo "<script>window.open('" . $data->result->url . "', '_self');</script>";
     }
 
@@ -438,7 +438,7 @@ class KycVerificationController extends Controller
             $updateAadhaarStatus = User::where('id', Auth::user()->id)->update(['eaadhar_response' => $data_json]);
             $getEaadhaar_data = $this->getEaadhaarVerificationResponse($requestId, $status);
 
-            $digilockaerUserdata = json_decode($getEaadhaar_data);
+            $digilockaerUserdata = json_decode($getEaadhaar_data ?? '');
 
             // removing session
             Session::forget('id_card_type');
@@ -473,7 +473,7 @@ class KycVerificationController extends Controller
                 ]);
 
                 // inserting verification failed detail history
-                $InseertFailedAadhaarHistory = new failed_verification_history;
+                $InseertFailedAadhaarHistory = new FailedVerificationHistory;
                 $InseertFailedAadhaarHistory->user_id = Auth::user()->id;
                 $InseertFailedAadhaarHistory->digilocker_verification_responce = $getEaadhaar_data;
                 $InseertFailedAadhaarHistory->eaadhar_response = $data_json;
@@ -485,7 +485,7 @@ class KycVerificationController extends Controller
                 return redirect(app()->getLocale() . "/need-kyc");
             }
         } else {
-            $ReUpdateAadhaarResponseAfterVerification = User::where('id', $request->user_id)->update(['id_card_type' => NULL, 'id_card_num' => NULL]);
+            $ReUpdateAadhaarResponseAfterVerification = User::where('id', Auth::user()->id)->update(['id_card_type' => NULL, 'id_card_num' => NULL]);
             return redirect(app()->getLocale() . "/user/need-kyc");
         }
     }

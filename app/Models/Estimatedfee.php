@@ -5,13 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Estimatedfee extends Model
+class EstimatedFee extends Model
 {
     use HasFactory;
-    
+
     protected $fillable = [
-       
-        'fee_type','estimated_fee',
-       
+
+        'fee_type',
+        'estimated_fee',
+
     ];
 }

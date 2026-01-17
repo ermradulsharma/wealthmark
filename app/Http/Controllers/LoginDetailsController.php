@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\LoginDetails;
+use App\Models\LoginDetail;
 use Illuminate\Http\Request;
 
 class LoginDetailsController extends Controller
@@ -34,7 +34,7 @@ class LoginDetailsController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(LoginDetails $loginDetails)
+    public function show(LoginDetail $loginDetails)
     {
         //
     }
@@ -42,7 +42,7 @@ class LoginDetailsController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(LoginDetails $loginDetails)
+    public function edit(LoginDetail $loginDetails)
     {
         //
     }
@@ -50,7 +50,7 @@ class LoginDetailsController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, LoginDetails $loginDetails)
+    public function update(Request $request, LoginDetail $loginDetails)
     {
         //
     }
@@ -58,7 +58,7 @@ class LoginDetailsController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(LoginDetails $loginDetails)
+    public function destroy(LoginDetail $loginDetails)
     {
         //
     }

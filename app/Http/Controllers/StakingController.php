@@ -7,8 +7,8 @@ use PragmaRX\Google2FALaravel\Support\Authenticator;
 
 use Illuminate\Support\Facades\Storage;
 use App\Models\User;
-use App\Models\giftcard;
-use App\Models\Entity_detail;
+use App\Models\Giftcard;
+use App\Models\EntityDetail;
 use App\Models\SecurityActivity;
 use Illuminate\Http\Request;
 use App\Http\Controllers\MailerController;
@@ -20,37 +20,37 @@ use App\Http\Controllers\GiftcardController;
 use App\Http\Controllers\HomeController;
 use Validator;
 use Session;
-use DB;
+use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
 use Illuminate\Pagination\Paginator;
 use Base32\Base32;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Hash;
 use WisdomDiala\Cryptocap\Facades\Cryptocap;
-use App\Models\company_type;
-use App\Models\entities;
-use App\Models\document_lists;
-use App\Models\businessDocs;
-use App\Models\relatedParties;
-use App\Models\PaymentMedhods;
-use App\Models\Banks;
+use App\Models\CompanyType;
+use App\Models\Entity;
+use App\Models\DocumentList;
+use App\Models\BusinessDoc;
+use App\Models\RelatedParty;
+use App\Models\PaymentMethod;
+use App\Models\Bank;
 use App\Models\Country;
-use App\Models\currencies;
+use App\Models\Currency;
 use Illuminate\Support\Facades\File;
 use App\Models\Order;
-use App\Models\change_password_history;
-use App\Models\gift_card_history;
-use App\Models\loginAttemptHistory;
-use App\Models\payment_method_list;
-use App\Models\marketWallet;
+use App\Models\ChangePasswordHistory;
+use App\Models\GiftCardHistory;
+use App\Models\LoginAttemptHistory;
+use App\Models\PaymentMethodList;
+use App\Models\MarketWallet;
 use Jenssegers\Agent\Agent;
-use App\Models\LoginDetails;
+use App\Models\LoginDetail;
 use App\Models\Chat;
-use App\Models\Tradingratings;
+use App\Models\TradingRating;
 use App\Models\NotificationCategory;
 use App\Notifications\TradeNotification;
 use App\Models\Notification;
-use App\Models\stakings;
+use App\Models\Staking;
 
 class StakingController extends Controller
 {
@@ -128,7 +128,7 @@ class StakingController extends Controller
 
         if ($request->coin_name == "BTC" || $request->coin_name == "ETH") {
             $total = DB::select("SELECT SUM(no_of_coin) as no_of_coin FROM `market_wallets`,orders WHERE market_wallets.order_id=orders.id and status=1 AND type_of_coin='1' AND transaction_status='1' and orders.crypto_type='$request->coin_name' and orders.buyer_id=market_wallets.user_id and market_wallets.user_id=" . Auth::User()->id);
-            $stacking_coin = stakings::where('user_id', '=', Auth::User()->id)->where('status', 1)->where('maturity_status', 0)->where('staking_coin_name', $request->coin_name)->where('staking_coin_type', "P2P")->sum('before_maturity_coins');
+            $stacking_coin = Staking::where('user_id', '=', Auth::User()->id)->where('status', 1)->where('maturity_status', 0)->where('staking_coin_name', $request->coin_name)->where('staking_coin_type', "P2P")->sum('before_maturity_coins');
             $coin = floor($total[0]->no_of_coin) - floor($stacking_coin);
             echo $data = "<option value=''></option><option value='P2P'>P2P($coin)</option>";
         }
@@ -140,7 +140,7 @@ class StakingController extends Controller
             ->where('coin_name', '=', 'BMK')->select(DB::raw('IFNULL(SUM(no_of_coin), 0) as total'))->get()->first()->total;
         $base_url = env('BMK_API_BASE_URL');
         $BmkApiController = new BmkApiController;
-        $currency = currencies::where('name', 'INR')->first();
+        $currency = Currency::where('name', 'INR')->first();
         $coin_price_url = $base_url . '/get_current_coin_price';
         $coin_price_params = array();
         $price = $BmkApiController->verify_api($coin_price_url, $coin_price_params);
@@ -224,13 +224,13 @@ class StakingController extends Controller
                             'maturity_status' => 0,
                             'comments' => "Staking coin"
                         );
-                        //$data=stakings::insert($staking_data);
-                        $stakings_data = stakings::insertGetId($staking_data);
+                        //$data=Staking::insert($staking_data);
+                        $stakings_data = Staking::insertGetId($staking_data);
                         if ($stakings_data) {
                             if ($request->coin_name == "BMK" and $request->bmk_coin_type == 'Recurring') {
                                 $data = $this->get_bmk_recurring_wallet_coin_for_staking_list();
                                 foreach ($data as $row) {
-                                    $block_recurring_wallet = marketWallet::where('id', $row->id)->update(['status' => 2]);
+                                    $block_recurring_wallet = MarketWallet::where('id', $row->id)->update(['status' => 2]);
                                 }
                             }
                             if ($request->coin_name == "BMK" and $request->bmk_coin_type == 'P2P') {
@@ -238,7 +238,7 @@ class StakingController extends Controller
                                     ->where('coin_name', '=', 'BMK')->get();
                                 //$data=DB::table('market_wallets')->selectRaw('id')->where('user_id', '=', Auth::User()->id)->where('staking_id', '=', '0')->where('transaction_status', '=', '1')->where('type_of_coin', '=', '1')->where('coin_name', '=', 'BMK')->whereIn('coin_type', [1, 2, 3])->where('status', '=', 1)->get();
                                 foreach ($data as $row) {
-                                    $block_recurring_wallet = marketWallet::where('id', $row->id)->update(['status' => 2, 'new_staking_id' => $stakings_data]);
+                                    $block_recurring_wallet = MarketWallet::where('id', $row->id)->update(['status' => 2, 'new_staking_id' => $stakings_data]);
                                 }
                             }
                             $monthly_wallet_coin_val = $stacking_coin * $bmk_stack_per / 100;
@@ -274,10 +274,10 @@ class StakingController extends Controller
                                     'comments' =>    'BMK staking revenue benefites.',
                                 );
 
-                                $block_recurring_wallet = marketWallet::insert($staking_wallet_arr);
+                                $block_recurring_wallet = MarketWallet::insert($staking_wallet_arr);
                             }
 
-                            $subject = "[Wealthmark] Your Coin Staking Successfully" . \Request::ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
+                            $subject = "[Wealthmark] Your Coin Staking Successfully" . \Illuminate\Support\Facades\Request::ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
                             $result = new MailerController;
                             $text_message = file_get_contents(asset('public/assets/img/emailTemplates/coinStakingSuccessful.html'));
                             $text_message =    str_replace("@__email__@", Auth::User()->email, $text_message);
@@ -346,7 +346,7 @@ class StakingController extends Controller
                     $request->session()->put('staking_coin_otp', $otp);
                     $HomeController = new HomeController;
                     $data = $HomeController->hideEmailAddress(Auth::User()->email);
-                    $subject = "[Wealthmark] Confirm Your Staking Coin OTP Verification " . \Request::ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
+                    $subject = "[Wealthmark] Confirm Your Staking Coin OTP Verification " . \Illuminate\Support\Facades\Request::ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
                     $result = new MailerController;
                     $text_message = file_get_contents(asset('public/assets/img/emailTemplates/gift_card_email_otp.html'));
                     $text_message =    str_replace("@__email__@", Auth::User()->email, $text_message);
@@ -370,8 +370,8 @@ class StakingController extends Controller
 
     public function get_staking_coin_detail(Request $request)
     {
-        $stacking_coin = stakings::where('user_id', '=', Auth::User()->id)->where('id', $request->id)->first();
-        $staking_wallet_coin = marketWallet::where('staking_id', '=', $request->id)->where('coin_type', 1)->get();
+        $stacking_coin = Staking::where('user_id', '=', Auth::User()->id)->where('id', $request->id)->first();
+        $staking_wallet_coin = MarketWallet::where('staking_id', '=', $request->id)->where('coin_type', 1)->get();
         $coin = array('stacking_coin' => $stacking_coin, 'staking_wallet_coin' => $staking_wallet_coin);
         $coin = json_encode($coin);
         return $coin;
@@ -380,7 +380,7 @@ class StakingController extends Controller
     public function get_recurring_coin_detail(Request $request)
     {
         $Order_coin = Order::where('buyer_id', '=', Auth::User()->id)->where('id', $request->id)->first();
-        $recurring_wallet_coin = marketWallet::where('order_id', '=', $request->id)->where('coin_type', 2)->where('coin_name', 'BMK')->get();
+        $recurring_wallet_coin = MarketWallet::where('order_id', '=', $request->id)->where('coin_type', 2)->where('coin_name', 'BMK')->get();
         $buyer_detail = User::select('first_name')->where('id', '=', Auth::User()->id)->first();
         $seller_detail = User::select('first_name')->where('id', '=', $Order_coin->seller_id)->first();
         $coin = array('order_coin' => $Order_coin, 'seller_detail' => $seller_detail, 'buyer_detail' => $buyer_detail, 'recurring_wallet_coin' => $recurring_wallet_coin);
@@ -396,7 +396,7 @@ class StakingController extends Controller
     //         })->get();
     //     if($results){
     //         foreach($results as $row){
-    //             //echo marketWallet::where('id', $row->id)->where('user_id',Auth::User()->id)->where('coin_name','BMK')->update(['order_id' => 1,'status'=>1,'updated_at'=> date("Y-m-d H:i:s")]);
+    //             //echo MarketWallet::where('id', $row->id)->where('user_id',Auth::User()->id)->where('coin_name','BMK')->update(['order_id' => 1,'status'=>1,'updated_at'=> date("Y-m-d H:i:s")]);
     //             $base_url=env('BMK_API_BASE_URL');
     //             $BmkApiController = new BmkApiController;
     //             $url = $base_url.'/buy_bmk_coin';
@@ -404,7 +404,7 @@ class StakingController extends Controller
     //             $params = array('wallet_address'=>$user_wallet_addrs->bmk_wallet_address,'no_of_coin'=>$row->no_of_coin,'type'=>3, 'mode'=>5);
     //             $api_result = $BmkApiController->verify_api($url,$params);
     //             $order_id=rand(1000000000,1234567890);
-    //             $currency = currencies::where('name','INR')->first();
+    //             $currency = Currency::where('name','INR')->first();
     //             $coin_price_url = $base_url.'/get_current_coin_price';
     //             $coin_price_params = array();
     //             $price=$BmkApiController->verify_api($coin_price_url,$coin_price_params);
@@ -426,7 +426,7 @@ class StakingController extends Controller
     //             );
     //             $order_data = Order::insertGetId($data);
     //             if($order_data){
-    //                 marketWallet::where('id', $row->id)->where('user_id',Auth::User()->id)->where('coin_name','BMK')->update(['order_id' => $order_data,'status'=>1,'updated_at'=> date("Y-m-d H:i:s")]);
+    //                 MarketWallet::where('id', $row->id)->where('user_id',Auth::User()->id)->where('coin_name','BMK')->update(['order_id' => $order_data,'status'=>1,'updated_at'=> date("Y-m-d H:i:s")]);
     //             }
     //         }
     //     }

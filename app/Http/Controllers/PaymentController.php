@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Auth;
 use PragmaRX\Google2FALaravel\Support\Authenticator;
 use App\Models\User;
-use App\Models\Entity_detail;
+use App\Models\EntityDetail;
 use App\Models\SecurityActivity;
 use Illuminate\Http\Request;
 use App\Http\Controllers\MailerController;
@@ -13,22 +13,22 @@ use App\Http\Controllers\HomeController;
 
 use App\Http\Controllers\GoogleAuthenticatorController;
 use App\Http\Controllers\SmsController;
-use Validator;
 use Session;
-use DB;
+use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
 use Illuminate\Pagination\Paginator;
 use Base32\Base32;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Hash;
 use WisdomDiala\Cryptocap\Facades\Cryptocap;
-use App\Models\company_type;
-use App\Models\entities;
-use App\Models\document_lists;
-use App\Models\businessDocs;
-use App\Models\relatedParties;
-use App\Models\PaymentMedhods;
+use App\Models\CompanyType;
+use App\Models\Entity;
+use App\Models\DocumentList;
+use App\Models\BusinessDoc;
+use App\Models\RelatedParty;
+use App\Models\PaymentMethod;
 use App\Models\Order;
+use Illuminate\Support\Facades\Validator;
 
 class PaymentController extends Controller
 {
@@ -37,17 +37,15 @@ class PaymentController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    function __construct()
-    {
-    }
+    function __construct() {}
 
 
     // To check entity is verified or not on dashboard page starts
     public function is_entity_verified($id)
     {
-        $entity = entities::where('user_id', $id)->first();
-        $entitydocs = businessDocs::where('user_id', $id)->first();
-        $related_parties = relatedParties::where('user_id', $id)->first();
+        $entity = Entity::where('user_id', $id)->first();
+        $entitydocs = BusinessDoc::where('user_id', $id)->first();
+        $related_parties = RelatedParty::where('user_id', $id)->first();
         if ((empty($entity->reg_num) || empty($entity->DOB_incorpor) || empty($entity->DOB_incorpor) || empty($entity->contact_num) ||  empty($entity->fund_source) || empty($entity->cap_source) || empty($entity->wealth_source) || empty($entity->share_holds) ||  empty($entity->listed_cntry) || empty($entity->regstrd_cntry) || empty($entity->entity_nature) || empty($entity->appli_purpose) || empty($entity->juris_cntry) || empty($entity->oprt_juris_cntry) || empty($entity->keyAcount_manager) || empty($entity->most_recentMail) || empty($entity->web_address) || empty($entity->fiat_dpstWithdwl) || empty($entity->fiat_currencies) || empty($entity->fiat_currencies)) || (empty($entitydocs->incorp_cert) || empty($entitydocs->partnership_agrnmt) ||  empty($entitydocs->regsterOf_partner) ||  empty($entitydocs->incorp_date) || empty($entitydocs->sanc_questn) || empty($entitydocs->auth_letter) || empty($entitydocs->curnt_oprtiv_status) || empty($entitydocs->aml) || empty($entitydocs->Intermedianes) || empty($entitydocs->SoW) || empty($entitydocs->SoF) || empty($entitydocs->iftrd_othr_behlf) || empty($entitydocs->add_proof) || empty($entitydocs->supmentry) || empty($entitydocs->SoW) || empty($entitydocs->SoF) || empty($entitydocs->iftrd_othr_behlf)) || (empty($related_parties->gen_partnr_info) || empty($related_parties->beneficial_owner) ||  empty($related_parties->sign_controlr) || empty($related_parties->auth_acunt_trade) || empty($related_parties->main_trd_vrfication) || empty($related_parties->letter_auth))) {
             $verificationStatus = 0;
         } else {
@@ -60,10 +58,10 @@ class PaymentController extends Controller
 
     public function show_paytm(Request $request)
     {
-        //   $chkpaytmMedhods = PaymentMedhods::where('user_id', Auth::user()->id)->where('method_type', 'Paytm')->where('bank_name', 'Paytm')->first();
+        //   $chkpaytmMedhods = PaymentMethod::where('user_id', Auth::user()->id)->where('method_type', 'Paytm')->where('bank_name', 'Paytm')->first();
         //   return view('user/payment.paymentMethodsTemplates.paytmMethod', compact('chkpaytmMedhods'));
         if (($this->is_entity_verified(Auth::user()->id) == 1) || (Auth::user()->is_mail_verified == 1 &&  Auth::user()->is_phone_verified == 1 &&  Auth::user()->government_id_verified == 1)) {
-            $chkpaytmMedhods = PaymentMedhods::where('user_id', Auth::user()->id)->where('method_type', 'Paytm')->where('bank_name', 'Paytm')->first();
+            $chkpaytmMedhods = PaymentMethod::where('user_id', Auth::user()->id)->where('method_type', 'Paytm')->where('bank_name', 'Paytm')->first();
             return view('user/payment.paymentMethodsTemplates.paytmMethod', compact('chkpaytmMedhods'));
         } else {
             return redirect(app()->getLocale() . '/user/payment');
@@ -71,7 +69,7 @@ class PaymentController extends Controller
 
         // OR
         // if( (Auth::user()->entity_verified == 1) || ( Auth::user()->is_mail_verified == 1 &&  Auth::user()->is_phone_verified == 1 &&  Auth::user()->government_id_verified == 1) ){
-        //      $chkpaytmMedhods = PaymentMedhods::where('user_id', Auth::user()->id)->where('method_type', 'Paytm')->where('bank_name', 'Paytm')->first();
+        //      $chkpaytmMedhods = PaymentMethod::where('user_id', Auth::user()->id)->where('method_type', 'Paytm')->where('bank_name', 'Paytm')->first();
         //      return view('user/payment.paymentMethodsTemplates.paytmMethod', compact('chkpaytmMedhods'));
 
         // }else{
@@ -90,8 +88,8 @@ class PaymentController extends Controller
             return response()->json(['error' => $validator->errors()], 401);
         } else {
             // start check if paytm detail  is already exist
-            $if_methodAccount = PaymentMedhods::where('account_number', $request->account_number)->where('bank_name', $request->bank_name)->count();
-            $if_methodAccount_withLogedInUser = PaymentMedhods::where('user_id', $request->user_id)->where('account_number', $request->account_number)->where('bank_name', $request->bank_name)->count();
+            $if_methodAccount = PaymentMethod::where('account_number', $request->account_number)->where('bank_name', $request->bank_name)->count();
+            $if_methodAccount_withLogedInUser = PaymentMethod::where('user_id', $request->user_id)->where('account_number', $request->account_number)->where('bank_name', $request->bank_name)->count();
             if ($if_methodAccount > 1) {
                 return response()->json(['error' => '401', 'message' => 'paytm detail already exist']);
                 return false;
@@ -101,8 +99,8 @@ class PaymentController extends Controller
             }
             // dd($if_methodAccount, $if_methodAccount_withLogedInUser );
             // end check if paytm detail is already exist
-            $PaymentMedhods = new PaymentMedhods;
-            $findIfUser = PaymentMedhods::where('user_id', $request->user_id)->where('method_type', 'Paytm')->first();
+            $PaymentMethod = new PaymentMethod;
+            $findIfUser = PaymentMethod::where('user_id', $request->user_id)->where('method_type', 'Paytm')->first();
             //  dd($findIfUser);
             if ($findIfUser !== NULL) {
                 if ($findIfUser->qr_code != null) {
@@ -112,10 +110,10 @@ class PaymentController extends Controller
                 }
                 if (empty($request->ifuploadSelected)) {
                     // dd($request->ifuploadedQR);
-                    $updatePaymentMedhods = PaymentMedhods::where('user_id', $request->user_id)->where('method_type', $request->method_type)->where('bank_name', $request->bank_name)->where('account_holder', $request->account_holder)->update(['account_number' => $request->account_number,]);
+                    $updatePaymentMedhods = PaymentMethod::where('user_id', $request->user_id)->where('method_type', $request->method_type)->where('bank_name', $request->bank_name)->where('account_holder', $request->account_holder)->update(['account_number' => $request->account_number,]);
                     if ($updatePaymentMedhods == 1) {
                         if (($old_file != NULL) && ($request->ifuploadedQR == 'undefined')) {
-                            $updatePaymentMedhods = PaymentMedhods::where('user_id', $request->user_id)->where('method_type', $request->method_type)->where('account_holder', $request->account_holder)->update(['qr_code' => NULL,]);
+                            $updatePaymentMedhods = PaymentMethod::where('user_id', $request->user_id)->where('method_type', $request->method_type)->where('account_holder', $request->account_holder)->update(['qr_code' => NULL,]);
                             unlink(storage_path('app/' . $old_file));
                         }
                         return response()->json(['account_number' => $request->account_number, 'paytmQR' => '', 'success' => 200], 200);
@@ -126,10 +124,10 @@ class PaymentController extends Controller
                     } else {
                         $old_file = NULL;
                     }
-                    $updatePaymentMedhods = PaymentMedhods::where('user_id', $request->user_id)->where('method_type', $request->method_type)->where('bank_name', $request->bank_name)->where('account_holder', $request->account_holder)->update(['account_number' => $request->account_number, 'qr_code'  =>   $request->file('uploads')->store('public/payments/paytm'),]);
+                    $updatePaymentMedhods = PaymentMethod::where('user_id', $request->user_id)->where('method_type', $request->method_type)->where('bank_name', $request->bank_name)->where('account_holder', $request->account_holder)->update(['account_number' => $request->account_number, 'qr_code'  =>   $request->file('uploads')->store('public/payments/paytm'),]);
                     // dd($updatePaymentMedhods);
                     if ($updatePaymentMedhods == 1) {
-                        $updatedQR =  PaymentMedhods::where('user_id', $request->user_id)->where('method_type', $request->method_type)->where('bank_name', $request->bank_name)->first();
+                        $updatedQR =  PaymentMethod::where('user_id', $request->user_id)->where('method_type', $request->method_type)->where('bank_name', $request->bank_name)->first();
                         if ($old_file != NULL) {
                             unlink(storage_path('app/' . $old_file));
                         }
@@ -138,19 +136,19 @@ class PaymentController extends Controller
                 }
             } else {
                 // dd($request->all());
-                $PaymentMedhods->user_id = $request->user_id;
-                $PaymentMedhods->method_type = $request->method_type;
-                $PaymentMedhods->account_holder = $request->account_holder;
-                $PaymentMedhods->account_number = $request->account_number;
-                $PaymentMedhods->bank_name = $request->bank_name;
+                $PaymentMethod->user_id = $request->user_id;
+                $PaymentMethod->method_type = $request->method_type;
+                $PaymentMethod->account_holder = $request->account_holder;
+                $PaymentMethod->account_number = $request->account_number;
+                $PaymentMethod->bank_name = $request->bank_name;
                 if (!empty($request->ifuploadSelected)) {
-                    $PaymentMedhods->qr_code  =   $request->file('uploads')->store('public/payments/paytm');
+                    $PaymentMethod->qr_code  =   $request->file('uploads')->store('public/payments/paytm');
                 }
-                $PaymentMedhods->save();
-                // dd('hello', $PaymentMedhods);
-                if ($PaymentMedhods->id) {
+                $PaymentMethod->save();
+                // dd('hello', $PaymentMethod);
+                if ($PaymentMethod->id) {
                     if (!empty($request->ifuploadSelected)) {
-                        return response()->json(['account_number' => $request->account_number, 'paytmQR' => $PaymentMedhods->qr_code, 'success' => 200], 200);
+                        return response()->json(['account_number' => $request->account_number, 'paytmQR' => $PaymentMethod->qr_code, 'success' => 200], 200);
                     } else {
                         return response()->json(['account_number' => $request->account_number, 'paytmQR' => '', 'success' => 200], 200);
                     }
@@ -164,11 +162,11 @@ class PaymentController extends Controller
 
     public function show_Imps(Request $request)
     {
-        // $chkIMPSMedhods = PaymentMedhods::where('user_id', Auth::user()->id)->where('method_type', 'IMPS')->first();
+        // $chkIMPSMedhods = PaymentMethod::where('user_id', Auth::user()->id)->where('method_type', 'IMPS')->first();
         // return view('user/payment.paymentMethodsTemplates.impsMethod',  compact('chkIMPSMedhods'));
         if (($this->is_entity_verified(Auth::user()->id) == 1) || (Auth::user()->is_mail_verified == 1 &&  Auth::user()->is_phone_verified == 1 &&  Auth::user()->government_id_verified == 1)) {
-            //   $chkIMPSMedhods = PaymentMedhods::where('user_id', Auth::user()->id)->where('method_type', 'IMPS')->where('bank_name', 'IMPS')->first();
-            $chkIMPSMedhods = PaymentMedhods::where('user_id', Auth::user()->id)->where('method_type', 'IMPS')->first();
+            //   $chkIMPSMedhods = PaymentMethod::where('user_id', Auth::user()->id)->where('method_type', 'IMPS')->where('bank_name', 'IMPS')->first();
+            $chkIMPSMedhods = PaymentMethod::where('user_id', Auth::user()->id)->where('method_type', 'IMPS')->first();
             return view('user/payment.paymentMethodsTemplates.impsMethod',  compact('chkIMPSMedhods'));
         } else {
             return redirect(app()->getLocale() . '/user/payment');
@@ -177,7 +175,7 @@ class PaymentController extends Controller
         // OR
 
         // if( (Auth::user()->entity_verified == 1) || ( Auth::user()->is_mail_verified == 1 &&  Auth::user()->is_phone_verified == 1 &&  Auth::user()->government_id_verified == 1) ){
-        //          $chkIMPSMedhods = PaymentMedhods::where('user_id', Auth::user()->id)->where('method_type', 'IMPS')->where('bank_name', 'IMPS')->first();
+        //          $chkIMPSMedhods = PaymentMethod::where('user_id', Auth::user()->id)->where('method_type', 'IMPS')->where('bank_name', 'IMPS')->first();
         //         return view('user/payment.paymentMethodsTemplates.impsMethod',  compact('chkIMPSMedhods'));
         //         }else{
         //             return redirect(app()->getLocale().'/user/payment');
@@ -190,7 +188,7 @@ class PaymentController extends Controller
     public function Imps(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'account_number' => 'required|numeric|digits_between:8,35', //|unique:payment_medhods,account_number',
+            'account_number' => 'required|numeric|digits_between:8,35', //|unique:payment_methods,account_number',
             'ifsc' => 'required|max:25',
             'bank_name' => 'required|max:199',
             'account_type' => 'required|max:25',
@@ -200,19 +198,19 @@ class PaymentController extends Controller
             $message = $validator->messages();
             return response()->json(['error' => $validator->errors(), 'success' => 401], 401);
         }
-        $PaymentMedhods = PaymentMedhods::where(['user_id' => $request->user_id, 'method_type' => 'IMPS',])->latest()->first();
-        if (!$PaymentMedhods) {
-            $PaymentMedhods = new PaymentMedhods;
+        $PaymentMethod = PaymentMethod::where(['user_id' => $request->user_id, 'method_type' => 'IMPS',])->latest()->first();
+        if (!$PaymentMethod) {
+            $PaymentMethod = new PaymentMethod;
         }
-        $PaymentMedhods->user_id = $request->user_id;
-        $PaymentMedhods->method_type = $request->method_type;
-        $PaymentMedhods->account_holder = $request->account_holder;
-        $PaymentMedhods->account_number = $request->account_number;
-        $PaymentMedhods->ifsc = $request->ifsc;
-        $PaymentMedhods->bank_name = $request->bank_name;
-        $PaymentMedhods->account_type = $request->account_type;
-        $PaymentMedhods->branch_name = $request->branch_name;
-        if ($PaymentMedhods->save()) {
+        $PaymentMethod->user_id = $request->user_id;
+        $PaymentMethod->method_type = $request->method_type;
+        $PaymentMethod->account_holder = $request->account_holder;
+        $PaymentMethod->account_number = $request->account_number;
+        $PaymentMethod->ifsc = $request->ifsc;
+        $PaymentMethod->bank_name = $request->bank_name;
+        $PaymentMethod->account_type = $request->account_type;
+        $PaymentMethod->branch_name = $request->branch_name;
+        if ($PaymentMethod->save()) {
             return response()->json([
                 'account_number' => $request->account_number,
                 'ifsc' => $request->ifsc,
@@ -227,10 +225,10 @@ class PaymentController extends Controller
 
     public function show_Upi(Request $request)
     {
-        //   $chkupiMedhods = PaymentMedhods::where('user_id', Auth::user()->id)->where('method_type', 'UPI')->first();
+        //   $chkupiMedhods = PaymentMethod::where('user_id', Auth::user()->id)->where('method_type', 'UPI')->first();
         //   return view('user/payment.paymentMethodsTemplates.upiMethod', compact('chkupiMedhods'));
         if (($this->is_entity_verified(Auth::user()->id) == 1) || (Auth::user()->is_mail_verified == 1 &&  Auth::user()->is_phone_verified == 1 &&  Auth::user()->government_id_verified == 1)) {
-            $chkupiMedhods = PaymentMedhods::where('user_id', Auth::user()->id)->where('method_type', 'UPI')->first();
+            $chkupiMedhods = PaymentMethod::where('user_id', Auth::user()->id)->where('method_type', 'UPI')->first();
             return view('user/payment.paymentMethodsTemplates.upiMethod', compact('chkupiMedhods'));
         } else {
             return redirect(app()->getLocale() . '/user/payment');
@@ -238,7 +236,7 @@ class PaymentController extends Controller
 
         //OR
         //   if( (Auth::user()->entity_verified == 1) || ( Auth::user()->is_mail_verified == 1 &&  Auth::user()->is_phone_verified == 1 &&  Auth::user()->government_id_verified == 1) ){
-        //          $chkupiMedhods = PaymentMedhods::where('user_id', Auth::user()->id)->where('method_type', 'UPI')->first();
+        //          $chkupiMedhods = PaymentMethod::where('user_id', Auth::user()->id)->where('method_type', 'UPI')->first();
         //           return view('user/payment.paymentMethodsTemplates.upiMethod', compact('chkupiMedhods'));
         //          }else{
         //              return redirect(app()->getLocale().'/user/payment');
@@ -257,8 +255,8 @@ class PaymentController extends Controller
             return response()->json(['error' => $validator->errors()], 401);
         } else {
             // start check if upi is already exist
-            $if_upiIdExist = PaymentMedhods::where('upi_Id', $request->upi_Id)->count();
-            $if_upiIdExist_withLogedInUser = PaymentMedhods::where('user_id', $request->user_id)->where('upi_Id', $request->upi_Id)->count();
+            $if_upiIdExist = PaymentMethod::where('upi_Id', $request->upi_Id)->count();
+            $if_upiIdExist_withLogedInUser = PaymentMethod::where('user_id', $request->user_id)->where('upi_Id', $request->upi_Id)->count();
             if ($if_upiIdExist > 1) {
                 return response()->json(['error' => '401', 'message' => 'UPI already exist']);
                 return false;
@@ -268,8 +266,8 @@ class PaymentController extends Controller
             }
             // dd($if_upiIdExist, $if_upiIdExist_withLogedInUser );
             // end check if upi is already exist
-            $PaymentMedhods = new PaymentMedhods;
-            $findIfUser = PaymentMedhods::where('user_id', $request->user_id)->where('method_type', 'UPI')->first();
+            $PaymentMethod = new PaymentMethod;
+            $findIfUser = PaymentMethod::where('user_id', $request->user_id)->where('method_type', 'UPI')->first();
             // dd($findIfUser);
             if ($findIfUser !== NULL) {
                 if ($findIfUser->qr_code != null) {
@@ -278,10 +276,10 @@ class PaymentController extends Controller
                     $old_file = NULL;
                 }
                 if (empty($request->ifuploadSelected)) {
-                    $updatePaymentMedhods = PaymentMedhods::where('user_id', $request->user_id)->where('method_type', $request->method_type)->where('account_holder', $request->account_holder)->update(['upi_Id' => $request->upi_Id,]);
+                    $updatePaymentMedhods = PaymentMethod::where('user_id', $request->user_id)->where('method_type', $request->method_type)->where('account_holder', $request->account_holder)->update(['upi_Id' => $request->upi_Id,]);
                     if ($updatePaymentMedhods == 1) {
                         if (($old_file != NULL) && ($request->ifuploadedQR == 'undefined')) {
-                            $updatePaymentMedhods = PaymentMedhods::where('user_id', $request->user_id)->where('method_type', $request->method_type)->where('account_holder', $request->account_holder)->update(['qr_code' => NULL,]);
+                            $updatePaymentMedhods = PaymentMethod::where('user_id', $request->user_id)->where('method_type', $request->method_type)->where('account_holder', $request->account_holder)->update(['qr_code' => NULL,]);
                             unlink(storage_path('app/' . $old_file));
                         }
                         return response()->json(['upi_Id' => $request->upi_Id, 'upi_IdQR' => '', 'success' => 200], 200);
@@ -292,10 +290,10 @@ class PaymentController extends Controller
                     } else {
                         $old_file = NULL;
                     }
-                    $updatePaymentMedhods = PaymentMedhods::where('user_id', $request->user_id)->where('method_type', $request->method_type)->where('account_holder', $request->account_holder)->update(['upi_Id' => $request->upi_Id, 'qr_code'  =>   $request->file('uploads')->store('public/payments/UpiID'),]);
+                    $updatePaymentMedhods = PaymentMethod::where('user_id', $request->user_id)->where('method_type', $request->method_type)->where('account_holder', $request->account_holder)->update(['upi_Id' => $request->upi_Id, 'qr_code'  =>   $request->file('uploads')->store('public/payments/UpiID'),]);
                     // dd($updatePaymentMedhods);
                     if ($updatePaymentMedhods == 1) {
-                        $updatedQR =  PaymentMedhods::where('user_id', $request->user_id)->where('method_type', $request->method_type)->first();
+                        $updatedQR =  PaymentMethod::where('user_id', $request->user_id)->where('method_type', $request->method_type)->first();
                         if ($old_file != NULL) {
                             unlink(storage_path('app/' . $old_file));
                         }
@@ -304,18 +302,18 @@ class PaymentController extends Controller
                 }
             } else {
                 // dd($request->all());
-                $PaymentMedhods->user_id = $request->user_id;
-                $PaymentMedhods->method_type = $request->method_type;
-                $PaymentMedhods->account_holder = $request->account_holder;
-                $PaymentMedhods->upi_Id = $request->upi_Id;
+                $PaymentMethod->user_id = $request->user_id;
+                $PaymentMethod->method_type = $request->method_type;
+                $PaymentMethod->account_holder = $request->account_holder;
+                $PaymentMethod->upi_Id = $request->upi_Id;
                 if (!empty($request->ifuploadSelected)) {
-                    $PaymentMedhods->qr_code  =   $request->file('uploads')->store('public/payments/UpiID');
+                    $PaymentMethod->qr_code  =   $request->file('uploads')->store('public/payments/UpiID');
                 }
-                $PaymentMedhods->save();
-                // dd('hello', $PaymentMedhods);
-                if ($PaymentMedhods->id) {
+                $PaymentMethod->save();
+                // dd('hello', $PaymentMethod);
+                if ($PaymentMethod->id) {
                     if (!empty($request->ifuploadSelected)) {
-                        return response()->json(['upi_Id' => $request->upi_Id, 'upi_IdQR' => $PaymentMedhods->qr_code, 'success' => 200], 200);
+                        return response()->json(['upi_Id' => $request->upi_Id, 'upi_IdQR' => $PaymentMethod->qr_code, 'success' => 200], 200);
                     } else {
                         return response()->json(['upi_Id' => $request->upi_Id, 'upi_IdQR' => '', 'success' => 200], 200);
                     }
@@ -328,10 +326,10 @@ class PaymentController extends Controller
 
     public function show_Bank_transfer_india(Request $request)
     {
-        //  $chkbanktransferMedhods = PaymentMedhods::where('user_id', Auth::user()->id)->where('method_type', 'Bank-Transfer-INDIA')->first();
+        //  $chkbanktransferMedhods = PaymentMethod::where('user_id', Auth::user()->id)->where('method_type', 'Bank-Transfer-INDIA')->first();
         //  return view('user/payment.paymentMethodsTemplates.indianBanks', compact('chkbanktransferMedhods'));
         if (($this->is_entity_verified(Auth::user()->id) == 1) || (Auth::user()->is_mail_verified == 1 &&  Auth::user()->is_phone_verified == 1 &&  Auth::user()->government_id_verified == 1)) {
-            $chkbanktransferMedhods = PaymentMedhods::where('user_id', Auth::user()->id)->where('method_type', 'Bank-Transfer-INDIA')->first();
+            $chkbanktransferMedhods = PaymentMethod::where('user_id', Auth::user()->id)->where('method_type', 'Bank-Transfer-INDIA')->first();
             return view('user/payment.paymentMethodsTemplates.indianBanks', compact('chkbanktransferMedhods'));
         } else {
             return redirect(app()->getLocale() . '/user/payment');
@@ -339,7 +337,7 @@ class PaymentController extends Controller
 
         //OR
         //   if( (Auth::user()->entity_verified) == 1) || ( Auth::user()->is_mail_verified == 1 &&  Auth::user()->is_phone_verified == 1 &&  Auth::user()->government_id_verified == 1) ){
-        //           $chkbanktransferMedhods = PaymentMedhods::where('user_id', Auth::user()->id)->where('method_type', 'Bank-Transfer-INDIA')->first();
+        //           $chkbanktransferMedhods = PaymentMethod::where('user_id', Auth::user()->id)->where('method_type', 'Bank-Transfer-INDIA')->first();
         //          return view('user/payment.paymentMethodsTemplates.indianBanks', compact('chkbanktransferMedhods'));
         //          }else{
         //              return redirect(app()->getLocale().'/user/payment');
@@ -349,7 +347,7 @@ class PaymentController extends Controller
     public function Bank_transfer_india(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'account_number' => 'required|numeric|digits_between:8,35', //|unique:payment_medhods,account_number',
+            'account_number' => 'required|numeric|digits_between:8,35', //|unique:payment_methods,account_number',
             'ifsc' => 'required|max:25',
             'bank_name' => 'required|max:199',
             'account_type' => 'required|max:25',
@@ -359,20 +357,20 @@ class PaymentController extends Controller
             $message = $validator->messages();
             return response()->json(['error' => $validator->errors()], 401);
         }
-        $PaymentMedhods = PaymentMedhods::where(['user_id' => $request->user_id, 'method_type' => $request->method_type])->latest()->first();
+        $PaymentMethod = PaymentMethod::where(['user_id' => $request->user_id, 'method_type' => $request->method_type])->latest()->first();
 
-        if (!$PaymentMedhods) {
-            $PaymentMedhods = new PaymentMedhods;
-            $PaymentMedhods->method_type = $request->method_type;
+        if (!$PaymentMethod) {
+            $PaymentMethod = new PaymentMethod;
+            $PaymentMethod->method_type = $request->method_type;
         }
-        $PaymentMedhods->user_id = $request->user_id;
-        $PaymentMedhods->account_holder = $request->account_holder;
-        $PaymentMedhods->account_number = $request->account_number;
-        $PaymentMedhods->ifsc = $request->ifsc;
-        $PaymentMedhods->account_type = $request->account_type;
-        $PaymentMedhods->bank_name = $request->bank_name;
-        $PaymentMedhods->branch_name = $request->branch_name;
-        if ($PaymentMedhods->save()) {
+        $PaymentMethod->user_id = $request->user_id;
+        $PaymentMethod->account_holder = $request->account_holder;
+        $PaymentMethod->account_number = $request->account_number;
+        $PaymentMethod->ifsc = $request->ifsc;
+        $PaymentMethod->account_type = $request->account_type;
+        $PaymentMethod->bank_name = $request->bank_name;
+        $PaymentMethod->branch_name = $request->branch_name;
+        if ($PaymentMethod->save()) {
             return response()->json([
                 'account_number' => $request->account_number,
                 'ifsc' => $request->ifsc,
@@ -396,7 +394,7 @@ class PaymentController extends Controller
         //OR
 
         //  if( (Auth::user()->entity_verified == 1) || ( Auth::user()->is_mail_verified == 1 &&  Auth::user()->is_phone_verified == 1 &&  Auth::user()->government_id_verified == 1) ){
-        //         // $chkpaytmMedhods = PaymentMedhods::where('user_id', Auth::user()->id)->where('method_type', 'Paytm')->where('bank_name', 'Paytm')->first();
+        //         // $chkpaytmMedhods = PaymentMethod::where('user_id', Auth::user()->id)->where('method_type', 'Paytm')->where('bank_name', 'Paytm')->first();
         //           return view('user/payment.paymentMethodsTemplates.morePaymethods');
         //         }else{
         //             return redirect(app()->getLocale().'/user/payment');
@@ -414,8 +412,8 @@ class PaymentController extends Controller
     public function delete_paymentMethod(Request $request)
     {
         //  dd($request->all());
-        $medhodTobeDeleted = PaymentMedhods::where('id', $request->id)->first();
-        $deleteMedhod = PaymentMedhods::where('id', $request->id)->delete();
+        $medhodTobeDeleted = PaymentMethod::where('id', $request->id)->first();
+        $deleteMedhod = PaymentMethod::where('id', $request->id)->delete();
         //  dd($medhodTobeDeleted->qr_code);
         if ($deleteMedhod == true) {
             if ($medhodTobeDeleted->qr_code != NULL) {

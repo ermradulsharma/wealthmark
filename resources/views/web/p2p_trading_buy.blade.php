@@ -1,314 +1,285 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <title>Wealth Mark | {{ Request::segment(2) }}</title>
-        @include('template.web_css')
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
-        <link rel='stylesheet' href="{{ asset('_trading.css') }}">
-        <link rel="stylesheet" href="{{ asset('rt.css') }}">
-    </head>
-    <style>
-    #load_buy_p2p_trading {
-        display:none;
 
-    }
-    .btn-green[disabled] {
-        pointer-events: none;
-        opacity: 0.5;
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Wealth Mark | {{ Request::segment(2) }}</title>
+    @include('template.web_css')
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link rel='stylesheet' href="{{ asset('assets/css/p2p_trading.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/alert.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
 
-    }
-    .buy_modal_value {
-        color: #727272;
-        font-weight: 500;
 
-    }
-    @media(max-width:576px) {
-        .set-pyment-mthd {
-            display: flex!important;
-            width: 100%!important;
-            text-align: center!important;
-
-        }
-
-    }
-    button#Buy_bmk_51 {
-        height: 40px;
-
-    }
-    .refresh-price-btn {
-        height: 40px;
-
-    }
-
-    span.payment-method-option.imps {
-        min-width: 200px;
-        padding:6.5px 10px;
-        margin-right: 10px;
-        background: var(--bg-theme-light);
-        border-radius: 8px;
-    }
-
-    span.payment-method-option.upi {
-        min-width: 200px;
-         padding:6.5px 10px;
-        margin-right: 10px;
-        background: var(--bg-light-blue);
-        border-radius: 8px;
-    }
-    span.payment-method-option.paytm {
-        min-width: 200px;
-        padding:6.5px 10px;
-        margin-right: 10px;
-        background: var(--bg-yellow);
-        border-radius: 8px;
-    }
-    #load_buy_p2p_trading{
-        display:none;
-    }
-    .btn-green[disabled] {
-        pointer-events: none;
-        opacity: 0.5;
-    }
-
-    .set-payment-method-right table:nth-child(odd) {
-        background:whitesmoke;
-    }
-    </style>
-    <body>
-        @include('template.web_menu')
-        <!-------------baner section------------------------->
-        <section class="p2p-trading-box" id="p2p-trading-section">
+<body>
+    @include('template.web_menu')
+    <!-------------baner section------------------------->
+    <section class="p2p-trading-box" id="p2p-trading-section">
+        <div class="container">
+            <div class="row">
+                <div class="overview-inner-box text-center">
+                    <h3 class="digital-asset-heading text-white">Buy and Sell P2P with Your Preferred Payment Methods
+                    </h3>
+                    <p class="text-center text-white fw-bold"> Buy and sell BMK safely and easily on Wealth Mark
+                        P2P. Find the best offer below and buy and sell BMK with Your Preferred Payment Methods today.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------------baner section------------------------->
+    @include('web.p2pTrading_template.tabSection')
+    <div id="load_page_here">
+        <section class="p2p-trading-table-box pt-3 pb-3" id="p2p-trading">
             <div class="container">
                 <div class="row">
-                   <div class="overview-inner-box text-center">
-                      <h3 class="digital-asset-heading text-white">Buy and Sell P2P with Your Preferred Payment Methods
-                      </h3>
-                      <p class="text-center text-white fw-bold"> Buy and sell BMK safely and easily on Wealth Mark
-                         P2P. Find the best offer below and buy and sell BMK with Your Preferred Payment Methods today.
-                      </p>
-                   </div>
+                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                        <div id="table_data">
+                            <div id="loading" style="display:none;">
+                                <img src="" alt="Loading...">
+                            </div>
+                            @include('web.p2p_trading_buy_ajax')
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <!-------------baner section------------------------->
-        @include('web.p2pTrading_template.tabSection')
-        <div id="load_page_here">
-            <section class="p2p-trading-table-box pt-3 pb-3" id="p2p-trading">
-                <div class="container">
-                   <div class="row">
-                      <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
-                         <div id="table_data">
-                            <div id="loading" style="display:none;">
-                               <img src="" alt="Loading...">
+    </div>
+    <div id="load_buy_p2p_trading">
+        <section class="p2p-trading-table-box pt-3 pb-3" id="p2p-trading_buy">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                        <div id="table_data_buy">
+                            <div id="loading_buy" style="display:none;">
+                                <img src="" alt="Loading...">
                             </div>
+                            <h3>BUY COINS</h3>
                             @include('web.p2p_trading_buy_ajax')
-                         </div>
-                      </div>
-                   </div>
-                </div>
-            </section>
-        </div>
-        <div id="load_buy_p2p_trading">
-            <section class="p2p-trading-table-box pt-3 pb-3" id="p2p-trading_buy">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
-                            <div id="table_data_buy">
-                                <div id="loading_buy" style="display:none;">
-                                    <img src="" alt="Loading...">
-                                </div>
-                                <h3>BUY COINS</h3>
-                                @include('web.p2p_trading_buy_ajax')
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <!--==================================div section =======================================-->
-        @include('web.p2pTrading_template.static_section')
-        @include('web.p2pTrading_template.faq')
-        <!--==================================div section =======================================-->
-        <!--// user payment method-->
-        {{-- $userPaymentMethod --}}
-        <!--// all payment method-->
-        {{-- $allpaymentMethod --}}
-        <!--// count payment type-->
-        {{-- $count_payment_type  --}}
-        <div class="modal_open_id">
-            <div class="hide">
-                <div class="wm-custom-modal-diolog">
-                    <div class="wm-custom-modal-body">
-                        <div class="wm-custom-modal-header">
-                            <span>Trading Requirements</span>
-                            <svg viewBox="0 0 24 24" fill="none" class="wm-custom-modal-close">
-                                <path d="M6.697 4.575L4.575 6.697 9.88 12l-5.304 5.303 2.122 2.122L12 14.12l5.303 5.304 2.122-2.122L14.12 12l5.304-5.303-2.122-2.122L12 9.88 6.697 4.575z" fill="currentColor"></path>
-                            </svg>
-                        </div>
-                        <p>P2P Trading is not available in the following countries: United States, Cuba, Iran, North Korea, and Syria. </p>
-                        <div class="row mb-3 mt-3 mt-2">
-                            <div class="col">Complete KYC Verification</div>
-                            <div class="col d-flex justify-content-end">
-                                <span class="badge badge-warning enable-badge-link">Enable </span>
-                            </div>
-                        </div>
-                        <hr />
-                        <div class="row mb-3 mt-3">
-                            <div class="col">Enable SMS authentication</div>
-                            <div class="col d-flex justify-content-end text-warning align-items-center">
-                                <svg viewBox="0 0 24 24" fill="none" class="finish-tick-icon">
-                                    <path d="M19.068 4.932A9.917 9.917 0 0012 2a9.917 9.917 0 00-7.068 2.932A9.917 9.917 0 002 11.988C2 17.521 6.479 22 12 22a9.917 9.917 0 007.068-2.932A9.992 9.992 0 0022 11.988a9.918 9.918 0 00-2.932-7.056zm-8.912 12.234L5.71 12.71l1.42-1.42 3.025 3.024 6.7-6.713 1.421 1.42-8.121 8.145z" fill="currentColor"></path>
-                                </svg>
-                                Finished
-                            </div>
-                        </div>
-                        <hr />
-                        <div class="row d-flex text-center mt-2 justify-content-center">
-                            <a class="btn btn-yellow trading-refresh-btn">
-                                <svg viewBox="0 0 24 24" fill="none" class="refresh-icon-trading">
-                                    <path d="M20.7 11.925c0 2.1-.8 4.1-2.3 5.6-1.6 1.5-3.6 2.3-5.6 2.3-2 0-4-.8-5.6-2.3l-1.3-1.3 1.4-1.4 1.3 1.3c2.3 2.3 6 2.3 8.3 0 1.1-1.1 1.7-2.6 1.7-4.2s-.6-3.1-1.7-4.2c-2.3-2.3-6-2.3-8.3 0l-1.1 1.2h3.3v2H4v-6.8h2v3.4l1.2-1.2c3.1-3.1 8.1-3.1 11.2 0 1.5 1.5 2.3 3.5 2.3 5.6z" fill="currentColor"></path>
-                                </svg>
-                                Refresh
-                            </a>
-                        </div>
-                        <div class="row mt-1">
-                            <a class="btn btn-default requirement-btn">I have met the requirementes</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="sell_coin_p2p_modal">
-            <div class="hide">
-                <div class="wm-custom-modal-diolog max-width-700px">
-                    <div>
-                        <div class="wm-custom-modal-header m-0">
-                            <svg viewBox="0 0 24 24" fill="none" class="wm-custom-modal-close" id="wm-custom-modal-close">
-                                <path d="M6.697 4.575L4.575 6.697 9.88 12l-5.304 5.303 2.122 2.122L12 14.12l5.303 5.304 2.122-2.122L14.12 12l5.304-5.303-2.122-2.122L12 9.88 6.697 4.575z" fill="currentColor"></path>
-                            </svg>
+        </section>
+    </div>
+    <!--==================================div section =======================================-->
+    @include('web.p2pTrading_template.static_section')
+    @include('web.p2pTrading_template.faq')
+    <!--==================================div section =======================================-->
+    <!--// user payment method-->
+    {{-- $userPaymentMethod --}}
+    <!--// all payment method-->
+    {{-- $allpaymentMethod --}}
+    <!--// count payment type-->
+    {{-- $count_payment_type  --}}
+    <div class="modal_open_id">
+        <div class="hide">
+            <div class="wm-custom-modal-diolog">
+                <div class="wm-custom-modal-body">
+                    <div class="wm-custom-modal-header">
+                        <span>Trading Requirements</span>
+                        <svg viewBox="0 0 24 24" fill="none" class="wm-custom-modal-close">
+                            <path d="M6.697 4.575L4.575 6.697 9.88 12l-5.304 5.303 2.122 2.122L12 14.12l5.303 5.304 2.122-2.122L14.12 12l5.304-5.303-2.122-2.122L12 9.88 6.697 4.575z" fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <p>P2P Trading is not available in the following countries: United States, Cuba, Iran, North Korea, and Syria. </p>
+                    <div class="row mb-3 mt-3 mt-2">
+                        <div class="col">Complete KYC Verification</div>
+                        <div class="col d-flex justify-content-end">
+                            <span class="badge badge-warning enable-badge-link">Enable </span>
                         </div>
                     </div>
-                    <div class="wm-custom-modal-body bg-light-blue py-2 px-3 max-height-600px scrollbar-style">
-                        <div class="bg-white p-2 mb-2 " id="payment-method-content-left">
-                            <input type="hidden" class="postID" name="postID" value="">
-                            <table class="table tbl-borderless">
-                                <tr>
-                                    <td><div class="buy_modal_lbl"> Name  :  </div></td>
-                                    <td><div class="buy_modal_value"> <span class="buyer_name"></span> </div></td>
-                                </tr>
-                                <tr>
-                                    <td><div class="buy_modal_lbl">Order Status  : </div></td>
-                                    <td><div class="buy_modal_value"><span class="buyer_order_completion" style="white-space: normal;"></span></div></td>
-                                </tr>
-                                <tr>
-                                    <td><div class="buy_modal_lbl">Price  : </div></td>
-                                    <td><div class="buy_modal_value"><span class="buyer_cr_value"></span></div></td>
-                                </tr>
-                                <tr>
-                                    <td><div class="buy_modal_lbl">Payment Method  : </div></td>
-                                    <td><div class="buy_modal_value buyer_p_type"><span class="buyer_payment_type"></span></div></td>
-                                </tr>
-                                <tr>
-                                    <td><div class="buy_modal_lbl">Total BMK & Price : </div></td>
-                                    <td><div class="buy_modal_value"><span class="total-crypto-coin"></span><small>BMK</small> - <span class="crypto-coin-type"></span></div></td>
-                                </tr>
-                                <tr>
-                                    <td><div class="buy_modal_lbl">Payment Time Limit  : </div></td>
-                                    <td><div class="buy_modal_value"><span class="buyer_payment_timel_imit"></span><small>Minutes</small></div></td>
-                                </tr>
-                            </table>
-                            <div class="record-section bg-whitesmoke flex-column  scrollbar-style">
-                                <div class="buy_modal_lbl w-100">Country Party Conditions  : </div>
+                    <hr />
+                    <div class="row mb-3 mt-3">
+                        <div class="col">Enable SMS authentication</div>
+                        <div class="col d-flex justify-content-end text-warning align-items-center">
+                            <svg viewBox="0 0 24 24" fill="none" class="finish-tick-icon">
+                                <path d="M19.068 4.932A9.917 9.917 0 0012 2a9.917 9.917 0 00-7.068 2.932A9.917 9.917 0 002 11.988C2 17.521 6.479 22 12 22a9.917 9.917 0 007.068-2.932A9.992 9.992 0 0022 11.988a9.918 9.918 0 00-2.932-7.056zm-8.912 12.234L5.71 12.71l1.42-1.42 3.025 3.024 6.7-6.713 1.421 1.42-8.121 8.145z" fill="currentColor"></path>
+                            </svg>
+                            Finished
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row d-flex text-center mt-2 justify-content-center">
+                        <a class="btn btn-yellow trading-refresh-btn">
+                            <svg viewBox="0 0 24 24" fill="none" class="refresh-icon-trading">
+                                <path d="M20.7 11.925c0 2.1-.8 4.1-2.3 5.6-1.6 1.5-3.6 2.3-5.6 2.3-2 0-4-.8-5.6-2.3l-1.3-1.3 1.4-1.4 1.3 1.3c2.3 2.3 6 2.3 8.3 0 1.1-1.1 1.7-2.6 1.7-4.2s-.6-3.1-1.7-4.2c-2.3-2.3-6-2.3-8.3 0l-1.1 1.2h3.3v2H4v-6.8h2v3.4l1.2-1.2c3.1-3.1 8.1-3.1 11.2 0 1.5 1.5 2.3 3.5 2.3 5.6z" fill="currentColor"></path>
+                            </svg>
+                            Refresh
+                        </a>
+                    </div>
+                    <div class="row mt-1">
+                        <a class="btn btn-default requirement-btn">I have met the requirementes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sell_coin_p2p_modal">
+        <div class="hide">
+            <div class="wm-custom-modal-diolog max-width-700px">
+                <div>
+                    <div class="wm-custom-modal-header m-0">
+                        <svg viewBox="0 0 24 24" fill="none" class="wm-custom-modal-close" id="wm-custom-modal-close">
+                            <path d="M6.697 4.575L4.575 6.697 9.88 12l-5.304 5.303 2.122 2.122L12 14.12l5.303 5.304 2.122-2.122L14.12 12l5.304-5.303-2.122-2.122L12 9.88 6.697 4.575z" fill="currentColor"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="wm-custom-modal-body bg-light-blue py-2 px-3 max-height-600px scrollbar-style">
+                    <div class="bg-white p-2 mb-2 " id="payment-method-content-left">
+                        <input type="hidden" class="postID" name="postID" value="">
+                        <table class="table tbl-borderless">
+                            <tr>
+                                <td>
+                                    <div class="buy_modal_lbl"> Name : </div>
+                                </td>
+                                <td>
+                                    <div class="buy_modal_value"> <span class="buyer_name"></span> </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="buy_modal_lbl">Order Status : </div>
+                                </td>
+                                <td>
+                                    <div class="buy_modal_value"><span class="buyer_order_completion" style="white-space: normal;"></span></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="buy_modal_lbl">Price : </div>
+                                </td>
+                                <td>
+                                    <div class="buy_modal_value"><span class="buyer_cr_value"></span></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="buy_modal_lbl">Payment Method : </div>
+                                </td>
+                                <td>
+                                    <div class="buy_modal_value buyer_p_type"><span class="buyer_payment_type"></span></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="buy_modal_lbl">Total BMK & Price : </div>
+                                </td>
+                                <td>
+                                    <div class="buy_modal_value"><span class="total-crypto-coin"></span><small>BMK</small> - <span class="crypto-coin-type"></span></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="buy_modal_lbl">Payment Time Limit : </div>
+                                </td>
+                                <td>
+                                    <div class="buy_modal_value"><span class="buyer_payment_timel_imit"></span><small>Minutes</small></div>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="record-section bg-whitesmoke flex-column  scrollbar-style">
+                            <div class="buy_modal_lbl w-100">Country Party Conditions : </div>
+                            <div class="buy_modal_value w-100 flex-div fs-12">
+                                <!--<div class="step-progress-highlight-point"></div>-->
+                                <span class="buyer_countryparty_conditions p-3"></span>
+                            </div>
+                            <div class="buy_modal_lbl w-100">Terms & conditions : </div>
+                            <div class="p-3 w-100">
                                 <div class="buy_modal_value w-100 flex-div fs-12">
                                     <!--<div class="step-progress-highlight-point"></div>-->
-                                    <span class="buyer_countryparty_conditions p-3"></span>
-                                </div>
-                                <div class="buy_modal_lbl w-100">Terms & conditions  : </div>
-                                <div class="p-3 w-100">
-                                    <div class="buy_modal_value w-100 flex-div fs-12">
-                                        <!--<div class="step-progress-highlight-point"></div>-->
-                                        <span class="terms_and_conditions "></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="bg-white p-2 mb-2">
-                            <div  id="payment-method-content-right">
-                                <div class="set-payment-method-right">
-                                    <form action="javascript:void(0);">
-                                        <div class="mb-3 mt-1 bg-light-blue p-2">
-                                            <div class="table-responsive mb-2 bg-white" id="addHiddenValues" ></div>
-                                            <a href="javascript:void(0);" class="btn-yellow d-inline-block shadow-none set-pyment-mthd"  id="" data-target-modal="payMethod" >Set My Payment  Method</a>
-                                        </div>
-                                    </form>
+                                    <span class="terms_and_conditions "></span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="wm-custom-modal-footer py-2 px-3">
-                        <div class="d-flex">
-                            <a class="btn-default refresh-price-btn d-inline-block w-50 mb-3 text-center">Refresh Price</a>&nbsp;&nbsp;
-                            <button type="button" class="btn btn-yellow Crypto_type d-inline-block w-50 mb-3 sell-btn-id confirmPay " disabled>Confirm</button>
+                    <div class="bg-white p-2 mb-2">
+                        <div id="payment-method-content-right">
+                            <div class="set-payment-method-right">
+                                <form action="javascript:void(0);">
+                                    <div class="mb-3 mt-1 bg-light-blue p-2">
+                                        <div class="table-responsive mb-2 bg-white" id="addHiddenValues"></div>
+                                        <a href="javascript:void(0);" class="btn-yellow d-inline-block shadow-none set-pyment-mthd" id="" data-target-modal="payMethod">Set My Payment Method</a>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
+                    </div>
+                </div>
+                <div class="wm-custom-modal-footer py-2 px-3">
+                    <div class="d-flex">
+                        <a class="btn-default refresh-price-btn d-inline-block w-50 mb-3 text-center">Refresh Price</a>&nbsp;&nbsp;
+                        <button type="button" class="btn btn-yellow Crypto_type d-inline-block w-50 mb-3 sell-btn-id confirmPay " disabled>Confirm</button>
                     </div>
                 </div>
             </div>
         </div>
-        @include('template.web_footer')
-        @include('web.p2pTrading_template.script')
-        @include('user.payment.paymentMethodsTemplates.selectAllPaymethods')
-        <script>
-            function getPostDataByid_01062023(id){
-                var postId = id;
-                $.ajax({
-                    type: 'POST',
-                    url: '{{ route('getPostbyId') }}',
-                    data: {
-                        '_token': "{{ csrf_token() }}",
-                        'postId' : postId,
-                    },
-                    success: function (data) {
-                        console.log(data);
-                        console.log(data.ads_data);
-                        console.log(data.countryparty_condition);
-                        console.log(data.payment_method_type);
-                        console.log(data.method_type);
+    </div>
+    @include('template.web_footer')
+    @include('web.p2pTrading_template.script')
+    @include('user.payment.paymentMethodsTemplates.selectAllPaymethods')
+    <script>
+        function getPostDataByid_01062023(id) {
+            var postId = id;
+            $.ajax({
+                type: 'POST',
+                url: '{{ route("getPostbyId") }}',
+                data: {
+                    '_token': "{{ csrf_token() }}",
+                    'postId': postId,
+                },
+                success: function(data) {
+                    console.log(data);
+                    console.log(data.ads_data);
+                    console.log(data.countryparty_condition);
+                    console.log(data.payment_method_type);
+                    console.log(data.method_type);
 
-                    },
-                    error: function(xhr, status, error) {
-                        var erroJson = JSON.parse(xhr.responseText);
-
-                    }
-
-                });
-
-            }
-            $('.switch-btn').click(function(){
-                if(document.getElementById("togBtn").checked){
-                    $('#load_page_here').css({'display' : 'block'});
-                    $('#load_buy_p2p_trading').css({'display' : 'none'});
-
-                } else {
-                    $('#load_page_here').css({'display' : 'none'});
-                    $('#load_buy_p2p_trading').css({'display' : 'block'});
+                },
+                error: function(xhr, status, error) {
+                    var erroJson = JSON.parse(xhr.responseText);
 
                 }
 
             });
-        </script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
-        <script src="{{ asset('t.js') }}"></script>
-        {{-- @include('web.p2pTrading_template.script') --}}
-        <script>
-        $('.countrybarToggle').click(function(){$('#region-dropdown-list').toggle()})
-        function addHiddenValues(id){
+
+        }
+        $('.switch-btn').click(function() {
+            if (document.getElementById("togBtn").checked) {
+                $('#load_page_here').css({
+                    'display': 'block'
+                });
+                $('#load_buy_p2p_trading').css({
+                    'display': 'none'
+                });
+
+            } else {
+                $('#load_page_here').css({
+                    'display': 'none'
+                });
+                $('#load_buy_p2p_trading').css({
+                    'display': 'block'
+                });
+
+            }
+
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <script src="{{ asset('assets/js/alert.js') }}"></script>
+    {{-- @include('web.p2pTrading_template.script') --}}
+    <script>
+        $('.countrybarToggle').click(function() {
+            $('#region-dropdown-list').toggle()
+        })
+
+        function addHiddenValues(id) {
             const ID = id;
             // $(this).parent().addClass('selected');
             const parentA = event.target.closest('a');
-            if(parentA.classList.contains('selected')) {
+            if (parentA.classList.contains('selected')) {
                 parentA.classList.remove('selected');
 
             } else {
@@ -330,7 +301,7 @@
             //  console.log(paymentMethodIds);
             //  const count =$('.selected-payment-option-div').find('.fs-12').length;
             //  console.log(paymentMethodIds.length);
-            if(paymentMethodIds.length < 4){
+            if (paymentMethodIds.length < 4) {
                 var loadpaymentmethod = $('#selected-payment-option');
                 loadpaymentmethod.html('');
                 $.each(paymentMethodIds, function(index, id) {
@@ -341,24 +312,25 @@
                 });
 
             } else {
-                triggerAlert('You can select up to 3 methods','error');
+                triggerAlert('You can select up to 3 methods', 'error');
                 $('#payMethod .hide').addClass('custom-modal-bck-bg').removeClass('hide');
 
             }
 
         });
+
         function appendPaymentDetails(paymentMethodId) {
             var paymentMethod_Id = paymentMethodId;
             $.ajax({
                 type: 'POST',
-                url: '{{ route('getPaymentDetailBymethodId') }}',
+                url: '{{ route("getPaymentDetailBymethodId") }}',
                 data: {
                     '_token': "{{ csrf_token() }}",
-                    'paymentMethodId' : paymentMethod_Id,
+                    'paymentMethodId': paymentMethod_Id,
                 },
-                success: function (data) {
+                success: function(data) {
                     console.log(data);
-                    var accountHolder =  data.paymentmethods_details.account_holder;
+                    var accountHolder = data.paymentmethods_details.account_holder;
                     var paymentMethodType = data.paymentmethods_details.method_type;
                     var account_number = data.paymentmethods_details.account_number;
                     var ifsc = data.paymentmethods_details.ifsc;
@@ -367,56 +339,56 @@
                     var upi_Id = data.paymentmethods_details.upi_Id;
                     var swift_code = data.paymentmethods_details.swift_code;
                     var qr_code = data.paymentmethods_details.qr_code;
-                    if(qr_code == null || qr_code == 'undefined' || qr_code == '') {
-                        qr_code= 'dded.png';
+                    if (qr_code == null || qr_code == 'undefined' || qr_code == '') {
+                        qr_code = 'dded.png';
 
                     }
                     // $('#addHiddenValues').html('');
-                    var QR = "{{ url('storage/app/') }}" +'/'+ qr_code;
+                    var QR = "{{ url('storage/app/') }}" + '/' + qr_code;
                     var html = '';
                     var html = '<table class="table mb-0"><tbody>';
-                    if(paymentMethodType != null) {
-                        html = html+'<tr>';
-                        html = html+'<td colspan="4" class="text-black"><b>'+paymentMethodType+'</b></td>';
-                        html = html+'</tr>';
+                    if (paymentMethodType != null) {
+                        html = html + '<tr>';
+                        html = html + '<td colspan="4" class="text-black"><b>' + paymentMethodType + '</b></td>';
+                        html = html + '</tr>';
                     }
-                    if(bank_name != null){
-                        html = html+'<tr>';
-                        html = html+'<td colspan="2" class="text-muted fs-12">Bank Name</td>';
-                        html = html+'<td colspan="2" class="text-black"><b>'+bank_name+'</b></td>';
-                        html = html+'</tr>';
+                    if (bank_name != null) {
+                        html = html + '<tr>';
+                        html = html + '<td colspan="2" class="text-muted fs-12">Bank Name</td>';
+                        html = html + '<td colspan="2" class="text-black"><b>' + bank_name + '</b></td>';
+                        html = html + '</tr>';
                     }
-                        html = html+'<tr>';
-                        html = html+'<td class="text-muted fs-12">Holder Name</td>';
-                        html = html+'<td class="text-black"><b>'+accountHolder+'</b></td>';
-                        html = html+'<td class="text-muted fs-12">Payment Mode</td>';
-                        html = html+'<td class="text-black"><b class="paymentmode">'+paymentMethodType+'</b></td>';
-                        html = html+'</tr>';
-                    if(account_number!= null){
-                        html = html+'<tr>';
-                        html = html+'<td class="text-muted fs-12">Account No</td>';
-                        html = html+'<td class="text-black"><b>'+account_number+'</b></td>';
-                        html = html+'<td class="text-muted fs-12">Ifsc Code</td>';
-                        html = html+'<td class="text-black"><b>'+ifsc+'</b></td>';
-                        html = html+'</tr>';
+                    html = html + '<tr>';
+                    html = html + '<td class="text-muted fs-12">Holder Name</td>';
+                    html = html + '<td class="text-black"><b>' + accountHolder + '</b></td>';
+                    html = html + '<td class="text-muted fs-12">Payment Mode</td>';
+                    html = html + '<td class="text-black"><b class="paymentmode">' + paymentMethodType + '</b></td>';
+                    html = html + '</tr>';
+                    if (account_number != null) {
+                        html = html + '<tr>';
+                        html = html + '<td class="text-muted fs-12">Account No</td>';
+                        html = html + '<td class="text-black"><b>' + account_number + '</b></td>';
+                        html = html + '<td class="text-muted fs-12">Ifsc Code</td>';
+                        html = html + '<td class="text-black"><b>' + ifsc + '</b></td>';
+                        html = html + '</tr>';
                     }
-                    if(bank_name!= null){
-                        html = html+'<tr>';
-                        html = html+'<td class="text-muted fs-12">Bank Name</td>';
-                        html = html+'<td class="text-black"><b>'+bank_name+'</b></td>';
-                        html = html+'<td class="text-muted fs-12">Branch Name</td>';
-                        html = html+'<td class="text-black"><b>'+branch_name+'</b></td>';
-                        html = html+'</tr>';
+                    if (bank_name != null) {
+                        html = html + '<tr>';
+                        html = html + '<td class="text-muted fs-12">Bank Name</td>';
+                        html = html + '<td class="text-black"><b>' + bank_name + '</b></td>';
+                        html = html + '<td class="text-muted fs-12">Branch Name</td>';
+                        html = html + '<td class="text-black"><b>' + branch_name + '</b></td>';
+                        html = html + '</tr>';
                     }
-                    if(upi_Id!= null){
-                        html = html+'<tr>';
-                        html = html+'<td class="text-muted fs-12">UPI ID</td>';
-                        html = html+'<td class="text-black"><b>'+upi_Id+'</b></td>';
-                        html = html+'<td class="text-muted fs-12">QR Code</td>';
-                        html = html+'<td class="text-black"><b><span><img class="img-thumbnail " width="100px" src="'+QR+'" alt="" title=""></span></b></td>';
-                        html = html+'</tr>';
+                    if (upi_Id != null) {
+                        html = html + '<tr>';
+                        html = html + '<td class="text-muted fs-12">UPI ID</td>';
+                        html = html + '<td class="text-black"><b>' + upi_Id + '</b></td>';
+                        html = html + '<td class="text-muted fs-12">QR Code</td>';
+                        html = html + '<td class="text-black"><b><span><img class="img-thumbnail " width="100px" src="' + QR + '" alt="" title=""></span></b></td>';
+                        html = html + '</tr>';
                     }
-                    html = html+'</tbody></table>';
+                    html = html + '</tbody></table>';
                     //  html = html+'<div class="h-divider my-2"></div>';
                     $('#addHiddenValues').append(html);
                     $('.confirmPay').attr('disabled', false)
@@ -429,10 +401,10 @@
             });
 
         }
-        $('#p2p-trading-buy-tab').click(function(){
+        $('#p2p-trading-buy-tab').click(function() {
             var clickedid = $(this).attr('id');
-            if(clickedid == 'p2p-trading-buy-tab'){
-                var pageURL=$(this).attr('href');
+            if (clickedid == 'p2p-trading-buy-tab') {
+                var pageURL = $(this).attr('href');
                 history.pushState(null, '', pageURL);
                 var appLocale = "<?php echo url(app()->getLocale()) ?>";
                 location.reload();
@@ -440,10 +412,10 @@
             }
 
         });
-        $('#p2p-trading-sell-tab').click(function(){
+        $('#p2p-trading-sell-tab').click(function() {
             var clickedid = $(this).attr('id');
-            if(clickedid == 'p2p-trading-sell-tab'){
-                var pageURL=$(this).attr('href');
+            if (clickedid == 'p2p-trading-sell-tab') {
+                var pageURL = $(this).attr('href');
                 history.pushState(null, '', pageURL);
                 var appLocale = "<?php echo url(app()->getLocale()) ?>";
                 location.reload();
@@ -452,50 +424,56 @@
 
         });
 
-        $(document).on('click','a.nav-link', function(e){
+        $(document).on('click', 'a.nav-link', function(e) {
 
             e.preventDefault();
             var clickedid = this.id;
-            if(clickedid == 'p2p-trading-BTC-tab'){
-                var pageURL=$(this).attr('href');
+            if (clickedid == 'p2p-trading-BTC-tab') {
+                var pageURL = $(this).attr('href');
                 history.pushState(null, '', pageURL);
                 var appLocale = "<?php echo url(app()->getLocale()) ?>";
-                    $.ajax({
+                $.ajax({
                     type: "GET",
-                    url: appLocale +"/p2p-trading/btc",
-                    data:{page:pageURL},
+                    url: appLocale + "/p2p-trading/btc",
+                    data: {
+                        page: pageURL
+                    },
                     dataType: "html",
-                    success: function(data){
+                    success: function(data) {
                         document.location.reload();
                     }
                 });
             }
 
-            if(clickedid == 'p2p-trading-USDT-tab'){
-                var pageURL=$(this).attr('href');
+            if (clickedid == 'p2p-trading-USDT-tab') {
+                var pageURL = $(this).attr('href');
                 history.pushState(null, '', pageURL);
                 var appLocale = "<?php echo url(app()->getLocale()) ?>";
                 $.ajax({
                     type: "GET",
-                    url: appLocale +"/p2p-trading/bmk",
-                    data:{page:pageURL},
+                    url: appLocale + "/p2p-trading/bmk",
+                    data: {
+                        page: pageURL
+                    },
                     dataType: "html",
-                    success: function(data){
+                    success: function(data) {
                         document.location.reload();
                     }
                 });
             }
 
-            if(clickedid == 'p2p-trading-ETH-tab'){
-                var pageURL=$(this).attr('href');
+            if (clickedid == 'p2p-trading-ETH-tab') {
+                var pageURL = $(this).attr('href');
                 history.pushState(null, '', pageURL);
                 var appLocale = "<?php echo url(app()->getLocale()) ?>";
                 $.ajax({
                     type: "GET",
-                    url: appLocale +"/p2p-trading/eth",
-                    data:{page:pageURL},
+                    url: appLocale + "/p2p-trading/eth",
+                    data: {
+                        page: pageURL
+                    },
                     dataType: "html",
-                    success: function(data){
+                    success: function(data) {
                         document.location.reload();
                     }
                 });
@@ -503,9 +481,9 @@
 
         });
 
-        $(document).ready(function(){
+        $(document).ready(function() {
 
-            $(document).on('click', '.pagination a', function(event){
+            $(document).on('click', '.pagination a', function(event) {
                 event.preventDefault();
                 var page = $(this).attr('href').split('page=')[1];
                 fetch_data(page);
@@ -513,199 +491,201 @@
                 history.pushState(null, '', page1);
             });
 
-            function fetch_data(page){
+            function fetch_data(page) {
                 var appLocale = "<?php echo url(app()->getLocale()) ?>";
                 $.ajax({
-                    url:appLocale +"/p2p-trading/buy?page="+page,
-                    success:function(data){
+                    url: appLocale + "/p2p-trading/buy?page=" + page,
+                    success: function(data) {
                         $('#table_data').html(data);
                     }
                 });
             }
 
         });
-        function changeSrc3(id){ // for payment filter
 
-             var CurrencyId = $('.currency_filter  .wm-dropdown-optn-item-inner.selected').parent().attr('id');
-             var countryname =  $('#region-dropdown-list ul li .selected').parent().attr('id');
-             var paymentType = id;
+        function changeSrc3(id) { // for payment filter
 
-              if(CurrencyId === undefined){
-                 CurrencyId = null;
-             }
-             if(countryname === undefined){
-                 countryname = null;
-             }
+            var CurrencyId = $('.currency_filter  .wm-dropdown-optn-item-inner.selected').parent().attr('id');
+            var countryname = $('#region-dropdown-list ul li .selected').parent().attr('id');
+            var paymentType = id;
 
-
-              $(document).ajaxStart(function(){
-                 $('#loading').show();
-             }).ajaxStop(function(){
-                   $('#loading').hide();
-             });
-
-             var appLocale = "<?php echo url(app()->getLocale()) ?>";
-             var id = id;
+            if (CurrencyId === undefined) {
+                CurrencyId = null;
+            }
+            if (countryname === undefined) {
+                countryname = null;
+            }
 
 
-             $.ajax({
-                 url: appLocale +'/p2p-trading/buy',
-                 type: 'GET',
-                 data: {
-                     paymentType: paymentType,
-                      countryname: countryname,
-                       CurrencyId: CurrencyId,
+            $(document).ajaxStart(function() {
+                $('#loading').show();
+            }).ajaxStop(function() {
+                $('#loading').hide();
+            });
+
+            var appLocale = "<?php echo url(app()->getLocale()) ?>";
+            var id = id;
 
 
-                 },
-                 success: function(response) {
-                     $('#table_data').html(response);
-                 }
-             });
-         };
-         function changeSrc4(id){ // for currency filter
-
-             var CurrencyId = id;
-             var countryname =  $('#region-dropdown-list ul li .selected').parent().attr('id')
-             var paymentType = $('#payment-dropdown-list .wm-dropdown-optn-item-inner.selected').parent().attr('id');
-
-             if(paymentType === undefined){
-                 paymentType = null;
-             }
-             if(countryname === undefined){
-                 countryname = null;
-             }
+            $.ajax({
+                url: appLocale + '/p2p-trading/buy',
+                type: 'GET',
+                data: {
+                    paymentType: paymentType,
+                    countryname: countryname,
+                    CurrencyId: CurrencyId,
 
 
-              $(document).ajaxStart(function(){
-                 $('#loading').show();
-             }).ajaxStop(function(){
-                   $('#loading').hide();
-             });
-             var id = id;
+                },
+                success: function(response) {
+                    $('#table_data').html(response);
+                }
+            });
+        };
 
-             var appLocale = "<?php echo url(app()->getLocale()) ?>";
-             $.ajax({
-                 url: appLocale +'/p2p-trading/buy',
-                 type: 'GET',
-                 data: {
-                     CurrencyId: CurrencyId,
-                     countryname : countryname,
-                     paymentType : paymentType
+        function changeSrc4(id) { // for currency filter
 
+            var CurrencyId = id;
+            var countryname = $('#region-dropdown-list ul li .selected').parent().attr('id')
+            var paymentType = $('#payment-dropdown-list .wm-dropdown-optn-item-inner.selected').parent().attr('id');
 
-                 },
-                 success: function(response) {
-                     $('#table_data').html(response);
-                 }
-             });
-
-         };
-
-         function changeSrc5(id){  // for country filter
-             var countryname = id;
-              var CurrencyId = $('.currency_filter  .wm-dropdown-optn-item-inner.selected').parent().attr('id');
-              var paymentType = $('#payment-dropdown-list .wm-dropdown-optn-item-inner.selected').parent().attr('id');
-
-                  if( CurrencyId === undefined){
-                 CurrencyId = null;
-             }
-             if(paymentType === undefined){
-                 paymentType = null;
-             }
+            if (paymentType === undefined) {
+                paymentType = null;
+            }
+            if (countryname === undefined) {
+                countryname = null;
+            }
 
 
+            $(document).ajaxStart(function() {
+                $('#loading').show();
+            }).ajaxStop(function() {
+                $('#loading').hide();
+            });
+            var id = id;
 
-              $(document).ajaxStart(function(){
-                 $('#loading').show();
-             }).ajaxStop(function(){
-                   $('#loading').hide();
-             });
-             var id = id;
+            var appLocale = "<?php echo url(app()->getLocale()) ?>";
+            $.ajax({
+                url: appLocale + '/p2p-trading/buy',
+                type: 'GET',
+                data: {
+                    CurrencyId: CurrencyId,
+                    countryname: countryname,
+                    paymentType: paymentType
+
+
+                },
+                success: function(response) {
+                    $('#table_data').html(response);
+                }
+            });
+
+        };
+
+        function changeSrc5(id) { // for country filter
+            var countryname = id;
+            var CurrencyId = $('.currency_filter  .wm-dropdown-optn-item-inner.selected').parent().attr('id');
+            var paymentType = $('#payment-dropdown-list .wm-dropdown-optn-item-inner.selected').parent().attr('id');
+
+            if (CurrencyId === undefined) {
+                CurrencyId = null;
+            }
+            if (paymentType === undefined) {
+                paymentType = null;
+            }
+
+
+
+            $(document).ajaxStart(function() {
+                $('#loading').show();
+            }).ajaxStop(function() {
+                $('#loading').hide();
+            });
+            var id = id;
 
 
             var appLocale = "<?php echo url(app()->getLocale()) ?>";
-             $.ajax({
-                 url: appLocale +'/p2p-trading/buy',
-                 type: 'GET',
-                 data: {
-                     CurrencyId: CurrencyId,
-                     countryname : countryname,
-                     paymentType : paymentType
+            $.ajax({
+                url: appLocale + '/p2p-trading/buy',
+                type: 'GET',
+                data: {
+                    CurrencyId: CurrencyId,
+                    countryname: countryname,
+                    paymentType: paymentType
 
-                 },
-                 success: function(response) {
-                     $('#table_data').html(response);
-                 }
-             });
+                },
+                success: function(response) {
+                    $('#table_data').html(response);
+                }
+            });
 
-         };
-
-      </script>
-      <script>
+        };
+    </script>
+    <script>
         var intervalId;
+
         function refresh(id) {
 
 
-             if (id === 'five-sec') {
-                 var fivesec = $('#five-sec').text();
-                 $('#block-tab-trading-refresh-btn').html('&#x21bb'+' '+fivesec);
-                 clearInterval(intervalId);
-                 intervalId = setInterval(function() {
-                     $('#block-tab-trading-refresh-btn').html('<img src="{{ asset('f') }}" style="width: 20px;" />'+' '+fivesec);
-                     $('#table_data').load(location.href + '#table_data');
-                 }, 5000);
-             } else if (id === 'ten-sec') {
-                 var ten_sec = $('#ten-sec').text();
-                 $('#block-tab-trading-refresh-btn').html('&#x21bb'+' '+ten_sec);
-                 clearInterval(intervalId);
-                 intervalId = setInterval(function() {
-                     $('#block-tab-trading-refresh-btn').html('<img src="{{ asset('f') }}" style="width: 20px;" />'+' '+ten_sec);
-                     $('#table_data').load(location.href + '#table_data');
-                 }, 10000);
-             } else if (id === 'twenty-sec') {
-                 var twenty_sec = $('#twenty-sec').text();
-                 $('#block-tab-trading-refresh-btn').html('&#x21bb'+' '+twenty_sec);
-                 clearInterval(intervalId);
-                 intervalId = setInterval(function() {
-                     $('#block-tab-trading-refresh-btn').html('<img src="{{ asset('f') }}" style="width: 20px;" />'+' '+twenty_sec);
-                     $('#table_data').load(location.href + '#table_data');
-                 }, 20000);
-             }else if (id === 'not-now') {
-                 var not_now = $('#not-now').text();
-                 $('#block-tab-trading-refresh-btn').html('&#x21bb'+' '+not_now);
-                 clearInterval(intervalId);
-                 intervalId = setTimeout(function() {
-                     $('#table_data').load(location.href + '#table_data');
-                 }, 100);
-             }
-              $('.ul-dropdown').removeClass('active')
-         };
+            if (id === 'five-sec') {
+                var fivesec = $('#five-sec').text();
+                $('#block-tab-trading-refresh-btn').html('&#x21bb' + ' ' + fivesec);
+                clearInterval(intervalId);
+                intervalId = setInterval(function() {
+                    $('#block-tab-trading-refresh-btn').html('<img src="{{ asset("assets/Spin.gif") }}" style="width: 20px;" />' + ' ' + fivesec);
+                    $('#table_data').load(location.href + '#table_data');
+                }, 5000);
+            } else if (id === 'ten-sec') {
+                var ten_sec = $('#ten-sec').text();
+                $('#block-tab-trading-refresh-btn').html('&#x21bb' + ' ' + ten_sec);
+                clearInterval(intervalId);
+                intervalId = setInterval(function() {
+                    $('#block-tab-trading-refresh-btn').html('<img src="{{ asset("assets/Spin.gif") }}" style="width: 20px;" />' + ' ' + ten_sec);
+                    $('#table_data').load(location.href + '#table_data');
+                }, 10000);
+            } else if (id === 'twenty-sec') {
+                var twenty_sec = $('#twenty-sec').text();
+                $('#block-tab-trading-refresh-btn').html('&#x21bb' + ' ' + twenty_sec);
+                clearInterval(intervalId);
+                intervalId = setInterval(function() {
+                    $('#block-tab-trading-refresh-btn').html('<img src="{{ asset("f") }}" style="width: 20px;" />' + ' ' + twenty_sec);
+                    $('#table_data').load(location.href + '#table_data');
+                }, 20000);
+            } else if (id === 'not-now') {
+                var not_now = $('#not-now').text();
+                $('#block-tab-trading-refresh-btn').html('&#x21bb' + ' ' + not_now);
+                clearInterval(intervalId);
+                intervalId = setTimeout(function() {
+                    $('#table_data').load(location.href + '#table_data');
+                }, 100);
+            }
+            $('.ul-dropdown').removeClass('active')
+        };
         $(document).ready(function() {
 
 
-                         $('#five-sec').click(function() {
-                             refresh('five-sec');
-                         });
+            $('#five-sec').click(function() {
+                refresh('five-sec');
+            });
 
-                         $('#ten-sec').click(function() {
-                             refresh('ten-sec');
-                         });
+            $('#ten-sec').click(function() {
+                refresh('ten-sec');
+            });
 
-                         $('#twenty-sec').click(function() {
-                             refresh('twenty-sec');
-                         });
+            $('#twenty-sec').click(function() {
+                refresh('twenty-sec');
+            });
 
-                         $('#not-now').click(function() {
-                             refresh('not-now');
-                         });
-                     });
-      </script>
-        <script>
+            $('#not-now').click(function() {
+                refresh('not-now');
+            });
+        });
+    </script>
+    <script>
         // function Buy_bmk(id){
         //     console.log('ok');
         //     $('#addHiddenValues').html('')
-        //     const ifAuth =  <?php echo Auth::check() ? 'true' : 'false' ?>;
+        //     const ifAuth = {{ auth()->check() ? 'true' : 'false' }};
         //     if(ifAuth == true){
         //         //  alert(id);
         //         if (parseInt(localStorage.getItem('timerValue'))  == 0){
@@ -862,7 +842,7 @@
 
         //         } else {
         //             triggerAlert('Previous Order pending!', 'error');
-        //             const ifAuth =  <?php echo Auth::check() ? 'true' : 'false' ?>;
+        //             const ifAuth = {{ auth()->check() ? 'true' : 'false' }};
         //             if(ifAuth == true){
         //                 const trader_id = 'Auth::user()->id';
         //                 $.ajax({
@@ -905,7 +885,7 @@
 
         // }
 
-        function Buy_bmk(id){
+        function Buy_bmk(id) {
             // $("#"+id).html("<span class='spinner-border spinner-border-sm' style='cursor: wait;'></span>");
             // setTimeout(function(){
             //     if($('.sell_coin_p2p_modal div').hasClass('custom-modal-bck-bg') === true){
@@ -916,42 +896,42 @@
             // }, 2000);
 
             $('#addHiddenValues').html('')
-            const ifAuth =  <?php echo Auth::check() ? 'true' : 'false' ?>;
-            if(ifAuth == true) {
-                if (parseInt(localStorage.getItem('timerValue'))  == 0){
+            const ifAuth = "{{ auth()->check() ? 'true' : 'false' }}";
+            if (ifAuth == true) {
+                if (parseInt(localStorage.getItem('timerValue')) == 0) {
                     var buttonId = id;
                     var number = buttonId.replace('Buy_bmk_', '');
                     var value = parseInt(number);
 
-                    var buyer_name =$('#'+id).closest('.p2p-tbl-record-body').find('.buyer_name').text().trim();
-                    var buyer_order_completion = $('#'+id).closest('.p2p-tbl-record-body').find('.buyer_order_completion').text().trim();
-                    var buyer_cr_value = $('#'+id).closest('.p2p-tbl-record-body').find('.buyer_cr_value').text().trim();
-                    var buyer_cr_type = $('#'+id).closest('.p2p-tbl-record-body').find('.buyer_cr_type').text().trim();
-                    var buyer_total_cr_value = $('#'+id).closest('.p2p-tbl-record-body').find('.total-coin').text().trim();
-                    var buyer_total_cr_type = $('#'+id).closest('.p2p-tbl-record-body').find('.crypto-total-coin-type').text().trim();
+                    var buyer_name = $('#' + id).closest('.p2p-tbl-record-body').find('.buyer_name').text().trim();
+                    var buyer_order_completion = $('#' + id).closest('.p2p-tbl-record-body').find('.buyer_order_completion').text().trim();
+                    var buyer_cr_value = $('#' + id).closest('.p2p-tbl-record-body').find('.buyer_cr_value').text().trim();
+                    var buyer_cr_type = $('#' + id).closest('.p2p-tbl-record-body').find('.buyer_cr_type').text().trim();
+                    var buyer_total_cr_value = $('#' + id).closest('.p2p-tbl-record-body').find('.total-coin').text().trim();
+                    var buyer_total_cr_type = $('#' + id).closest('.p2p-tbl-record-body').find('.crypto-total-coin-type').text().trim();
                     var numericValue = parseFloat(buyer_total_cr_type.replace(/₹/g, ''));
                     var formattedValue = numericValue.toFixed(2);
                     var formattedBuyerTotalCrType = '₹' + formattedValue;
-                    var buyer_Crypto_type = $('#'+id).closest('.p2p-tbl-record-body').find('.buyer_Crypto_type').text().trim();
-                    var t_and_c = $('#'+id).closest('.p2p-tbl-record-body').find('input[name="terms_conditions"]').val();
-                    var buyerpaymentlimit = $('#'+id).closest('.p2p-tbl-record-body').find('input[name="timelimit"]').val();
+                    var buyer_Crypto_type = $('#' + id).closest('.p2p-tbl-record-body').find('.buyer_Crypto_type').text().trim();
+                    var t_and_c = $('#' + id).closest('.p2p-tbl-record-body').find('input[name="terms_conditions"]').val();
+                    var buyerpaymentlimit = $('#' + id).closest('.p2p-tbl-record-body').find('input[name="timelimit"]').val();
 
                     $.ajax({
                         type: 'POST',
-                        url: '{{ route('sellBmkPostById') }}',
+                        url: '{{ route("sellBmkPostById") }}',
                         data: {
                             '_token': "{{ csrf_token() }}",
-                            'orderId' : value,
-                            'ordervalue' : buyer_total_cr_value,
-                            'currency_type' :buyer_cr_type,
+                            'orderId': value,
+                            'ordervalue': buyer_total_cr_value,
+                            'currency_type': buyer_cr_type,
                         },
-                        success: function (data) {
+                        success: function(data) {
 
-                            if(data.order_data_by_ads == "0"){
+                            if (data.order_data_by_ads == "0") {
                                 var countryparty_conditions, timelimit, terms_conditions, buyer_payment_type, adsid;
                                 var posttotalcrypto = data.ads_data.total_amount;
 
-                                if(data.AvailableCoins >= posttotalcrypto){
+                                if (data.AvailableCoins >= posttotalcrypto) {
                                     $('.sell_coin_p2p_modal').children('.hide').addClass('custom-modal-bck-bg').removeClass('hide');
                                     var countryparty_conditions = data.countryparty_condition;
                                     countryparty_conditions.CompletedKYC = (countryparty_conditions.CompletedKYC === '1') ? 'Yes' : 'No';
@@ -960,10 +940,10 @@
                                     var timelimit = data.ads_data.payment_time_limit;
                                     var terms_conditions = data.ads_data.terms;
                                     var buyer_payment_type = data.method_type;
-                                    var adsid= data.ads_data.adsid;
-                                    var ads_order_id= data.ads_data.id;
+                                    var adsid = data.ads_data.adsid;
+                                    var ads_order_id = data.ads_data.id;
 
-                                    const myButtonId = 'Buy_bmk_'+id;
+                                    const myButtonId = 'Buy_bmk_' + id;
                                     const myButton = $("#" + myButtonId);
                                     myButton.attr("disabled", true);
 
@@ -972,13 +952,13 @@
 
                                     }, 1000);
 
-                                    $('.sell-btn-id').attr('id',id);
-                                    $('.sell-btn-id').attr('data-id',id);
-                                    $('.sell-btn-id').attr('data-name',id);
+                                    $('.sell-btn-id').attr('id', id);
+                                    $('.sell-btn-id').attr('data-id', id);
+                                    $('.sell-btn-id').attr('data-name', id);
 
                                     $('#payment-method-content-left .buyer_name').html(buyer_name);
                                     $('#payment-method-content-left .buyer_order_completion').html(buyer_order_completion);
-                                    $('#payment-method-content-left .buyer_cr_value').html('<p>'+ buyer_cr_value +' '+ buyer_cr_type+ '</p>');
+                                    $('#payment-method-content-left .buyer_cr_value').html('<p>' + buyer_cr_value + ' ' + buyer_cr_type + '</p>');
                                     $('#payment-method-content-left .buyer_cr_type').html(buyer_cr_type);
                                     $('#payment-method-content-left .total-crypto-coin').html(buyer_total_cr_value);
                                     $('#payment-method-content-left .crypto-coin-type').html(formattedBuyerTotalCrType);
@@ -1030,7 +1010,7 @@
                                 // };
                                 $('#' + this.id + ' .span').text('on going');
                                 triggerAlert('This order already on going!', 'error');
-                                const myButtonId = 'Buy_bmk_'+id;
+                                const myButtonId = 'Buy_bmk_' + id;
                                 const myButton = $("#" + myButtonId);
                                 myButton.attr("disabled", true);
                             }
@@ -1043,24 +1023,24 @@
 
                 } else {
                     triggerAlert('Previous Order pending!', 'error');
-                    const ifAuth =  <?php echo Auth::check() ? 'true' : 'false' ?>;
-                    if(ifAuth == true) {
+                    const ifAuth = "{{ auth()->check() ? 'true' : 'false' }}";
+                    if (ifAuth == true) {
                         const trader_id = 'Auth::user()->id';
                         $.ajax({
                             type: 'post',
                             url: '{{ "/getOrderDetailbyId" }}',
                             data: {
                                 '_token': "{{ csrf_token() }}",
-                                'orderId' : '<?php echo isset($_SESSION['orderid']) ? $_SESSION['orderid'] : 'null'; ?>;',
+                                'orderId': '<?php echo isset($_SESSION['orderid']) ? $_SESSION['orderid'] : 'null'; ?>;',
 
                             },
-                            success: function (data) {
-                                setTimeout(function(){
-                                    if(data.order_data.buyer_id == trader_id){
+                            success: function(data) {
+                                setTimeout(function() {
+                                    if (data.order_data.buyer_id == trader_id) {
                                         window.location.href = '{{ url(app()->getLocale())."/user/confirmed-order-info" }}';
 
                                     }
-                                    if(data.order_data.seller_id == trader_id){
+                                    if (data.order_data.seller_id == trader_id) {
                                         window.location.href = '{{ url(app()->getLocale())."/users/seller-confirm-order" }}';
 
                                     }
@@ -1084,139 +1064,140 @@
             }
 
         }
-        </script>
-        <script>
-        $(".confirmPay").click(function(){
+    </script>
+    <script>
+        $(".confirmPay").click(function() {
 
-             if (parseInt(localStorage.getItem('timerValue'))  == 0){
-                 var buttonId = this.id;
-                    var number = buttonId.replace('Buy_bmk_', '');
-                    var value = parseInt(number);
-                  var adsid;
-                    $.ajax({
-                        type: 'POST',
-                        url: '{{ route('getPostbyId') }}',
-                        data: {
-                            '_token': "{{ csrf_token() }}",
-                             'postId' : value,
-                            },
-                            success: function (data) {
+            if (parseInt(localStorage.getItem('timerValue')) == 0) {
+                var buttonId = this.id;
+                var number = buttonId.replace('Buy_bmk_', '');
+                var value = parseInt(number);
+                var adsid;
+                $.ajax({
+                    type: 'POST',
+                    url: '{{ route("getPostbyId") }}',
+                    data: {
+                        '_token': "{{ csrf_token() }}",
+                        'postId': value,
+                    },
+                    success: function(data) {
 
-                               var adsid= data.ads_data.adsid;
+                        var adsid = data.ads_data.adsid;
 
-                                processResponse(adsid);
+                        processResponse(adsid);
 
-                            },
-                            error: function(xhr, status, error) {
-                                var erroJson = JSON.parse(xhr.responseText);
+                    },
+                    error: function(xhr, status, error) {
+                        var erroJson = JSON.parse(xhr.responseText);
 
-                            }
-                        });
-
-                    function processResponse(adsid) {
-                         const value = adsid;
-                         //const paymentMethodID = $('.select-payment').find('.selected div').attr('id');
-                         const paymentMethodID = $('.select-payment').find('.selected span').text();
-                         $.ajax({
-
-                             type: 'POST',
-                             url: '{{  url(app()->getLocale()."/buyer_sell_request_accept") }}',
-                             data: {
-
-                               '_token': "{{ csrf_token() }}",
-
-                               'id' : value,
-                               'paymentMethodID' : paymentMethodID
-
-                             },
-                             success: function (data) {
-
-
-                                 if(data.order_data.ordertype == 1){
-                                     location.href = '{{  url(app()->getLocale()."/p2p-trading/buy/confirm-order-info") }}';
-                                 }
-
-
-                             },
-                             error: function(xhr, status, error) {
-
-                                         var erroJson = JSON.parse(xhr.responseText);
-
-
-
-                                     }
-                           });
                     }
+                });
 
-             }else{
-                 triggerAlert('Previous Order pending!', 'error');
-                 const ifAuth =  <?php echo Auth::check() ? 'true' : 'false' ?>;
-                 if(ifAuth == true){
-                     const trader_id = 'Auth::user()->id';
-                 }
-                  $.ajax({
-                         type: 'post',
-                         url: '{{ "/getOrderDetailbyId" }}',
-                         data: {
-                                 '_token': "{{ csrf_token() }}",
-                                 'orderId' : '<?php echo isset($_SESSION['orderid']) ? $_SESSION['orderid'] : 'null'; ?>;',
+                function processResponse(adsid) {
+                    const value = adsid;
+                    //const paymentMethodID = $('.select-payment').find('.selected div').attr('id');
+                    const paymentMethodID = $('.select-payment').find('.selected span').text();
+                    $.ajax({
+
+                        type: 'POST',
+                        url: '{{  url(app()->getLocale()."/buyer_sell_request_accept") }}',
+                        data: {
+
+                            '_token': "{{ csrf_token() }}",
+
+                            'id': value,
+                            'paymentMethodID': paymentMethodID
+
                         },
-                         success: function (data) {
+                        success: function(data) {
 
 
-                                setTimeout(function(){
-                                  if(data.order_data.buyer_id == trader_id){
-                                                      window.location.href = '{{ url(app()->getLocale())."/user/confirmed-order-info" }}';
-                                              }
-
-                                              if(data.order_data.seller_id == trader_id){
-                                                      window.location.href = '{{ url(app()->getLocale())."/users/seller-confirm-order" }}';
-                                              }
-
-                                }, 2500)
-
-                         },
-                         error: function(xhr, status, error) {
-
-                                     var erroJson = JSON.parse(xhr.responseText);
-                                      triggerAlert('something went wrong!', 'error');
-
-                                 }
-                     });
+                            if (data.order_data.ordertype == 1) {
+                                location.href = '{{  url(app()->getLocale()."/p2p-trading/buy/confirm-order-info") }}';
+                            }
 
 
-             }
+                        },
+                        error: function(xhr, status, error) {
 
-         });
-        $(".cancelPay").click(function(){
+                            var erroJson = JSON.parse(xhr.responseText);
 
 
-         const cancel_id = this.id;
 
-         $.ajax({
+                        }
+                    });
+                }
 
-             type: 'POST',
-             url: '{{  url(app()->getLocale()."/buyer_sell_request_accept") }}',
-             data: {
+            } else {
+                triggerAlert('Previous Order pending!', 'error');
+                const ifAuth = "{{ auth()->check() ? 'true' : 'false' }}";
+                if (ifAuth == true) {
+                    const trader_id = 'Auth::user()->id';
+                }
+                $.ajax({
+                    type: 'post',
+                    url: '{{ "/getOrderDetailbyId" }}',
+                    data: {
+                        '_token': "{{ csrf_token() }}",
+                        'orderId': '<?php echo isset($_SESSION['orderid']) ? $_SESSION['orderid'] : 'null'; ?>;',
+                    },
+                    success: function(data) {
 
-                 '_token': "{{ csrf_token() }}",
 
-                  'cancel_id' : cancel_id,
-                 },
-                 success: function (data) {
+                        setTimeout(function() {
+                            if (data.order_data.buyer_id == trader_id) {
+                                window.location.href = '{{ url(app()->getLocale())."/user/confirmed-order-info" }}';
+                            }
 
-                       const p = 'https://wealthmark.io/beta-dlp/en/user/confirmed-order-info';
-             $("#my-div").load(p + " #my-div");
+                            if (data.order_data.seller_id == trader_id) {
+                                window.location.href = '{{ url(app()->getLocale())."/users/seller-confirm-order" }}';
+                            }
 
-                 },
-                 error: function(xhr, status, error) {
+                        }, 2500)
 
-                     var erroJson = JSON.parse(xhr.responseText);
+                    },
+                    error: function(xhr, status, error) {
 
-                 }
-         });
+                        var erroJson = JSON.parse(xhr.responseText);
+                        triggerAlert('something went wrong!', 'error');
 
-         });
-        </script>
-   </body>
+                    }
+                });
+
+
+            }
+
+        });
+        $(".cancelPay").click(function() {
+
+
+            const cancel_id = this.id;
+
+            $.ajax({
+
+                type: 'POST',
+                url: '{{  url(app()->getLocale()."/buyer_sell_request_accept") }}',
+                data: {
+
+                    '_token': "{{ csrf_token() }}",
+
+                    'cancel_id': cancel_id,
+                },
+                success: function(data) {
+
+                    const p = 'https://wealthmark.io/beta-dlp/en/user/confirmed-order-info';
+                    $("#my-div").load(p + " #my-div");
+
+                },
+                error: function(xhr, status, error) {
+
+                    var erroJson = JSON.parse(xhr.responseText);
+
+                }
+            });
+
+        });
+    </script>
+</body>
+
 </html>

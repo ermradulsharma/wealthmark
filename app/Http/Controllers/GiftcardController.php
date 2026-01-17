@@ -16,8 +16,8 @@ use App\Imports\GiftCardImport;
 use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Support\Facades\Storage;
 use App\Models\User;
-use App\Models\Entity_detail;
-use App\Models\giftcard;
+use App\Models\EntityDetail;
+use App\Models\Giftcard;
 use App\Models\SecurityActivity;
 use Illuminate\Http\Request;
 use App\Http\Controllers\MailerController;
@@ -36,20 +36,20 @@ use Base32\Base32;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Hash;
 use WisdomDiala\Cryptocap\Facades\Cryptocap;
-use App\Models\company_type;
-use App\Models\entities;
-use App\Models\document_lists;
-use App\Models\businessDocs;
-use App\Models\relatedParties;
-use App\Models\PaymentMedhods;
-use App\Models\payment_method_list;
-use App\Models\Banks;
+use App\Models\CompanyType;
+use App\Models\Entity;
+use App\Models\DocumentList;
+use App\Models\BusinessDoc;
+use App\Models\RelatedParty;
+use App\Models\PaymentMethod;
+use App\Models\PaymentMethodList;
+use App\Models\Bank;
 use App\Models\Country;
-use App\Models\currencies;
+use App\Models\Currency;
 use Illuminate\Support\Facades\File;
 use App\Models\Order;
-use App\Models\change_password_history;
-use App\Models\loginAttemptHistory;
+use App\Models\ChangePasswordHistory;
+use App\Models\LoginAttemptHistory;
 use Jenssegers\Agent\Agent;
 use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
@@ -89,7 +89,7 @@ class GiftcardController extends Controller
     {
         $user_id = Auth::User()->id;
         $percent = env('BMK_EVERY_MONTH_FLUCTUATE_PERCENTAGE');
-        $p_method = payment_method_list::where('name', '=', 'Gift-card')->first();
+        $p_method = PaymentMethodList::where('name', '=', 'Gift-card')->first();
         $data = Order::where('payment_method_id', $p_method->id)->where('id', $order_id)->where('buyer_id', $user_id)->whereDate('created_at', date('Y-m-d'))->first();
         //  $wallet_coin=floatval($data->total_crypto_value)*$percent/100;
         $wallet_coin = floatval($data->total_crypto_value);
@@ -108,10 +108,10 @@ class GiftcardController extends Controller
         if (Auth::User()->account_type == 3) {
 
             if ($request->filter_email != "") {
-                $giftcard = giftcard::orderBy('id', 'DESC')->where('Gift_Card_email', '=', $request->filter_email)->paginate(20);
+                $giftcard = Giftcard::orderBy('id', 'DESC')->where('Gift_Card_email', '=', $request->filter_email)->paginate(20);
                 return view('admin.manage-gift-card', compact('giftcard'));
             } elseif ($request->filter_phone != "") {
-                $giftcard = giftcard::orderBy('id', 'DESC')->where('Gift_Card_phone', '=', $request->filter_phone)->paginate(20);
+                $giftcard = Giftcard::orderBy('id', 'DESC')->where('Gift_Card_phone', '=', $request->filter_phone)->paginate(20);
                 return view('admin.manage-gift-card', compact('giftcard'));
             } elseif ($request->filter_date != "") {
                 $filter_date = explode(" - ", $request->filter_date);
@@ -119,16 +119,16 @@ class GiftcardController extends Controller
                 $to = str_replace("/", "-", $filter_date[1]);
                 $from = date("Y-m-d", strtotime($from));
                 $to = date("Y-m-d", strtotime($to));
-                $giftcard = giftcard::orderBy('id', 'DESC')->whereBetween('created_at', [$from, $to])->paginate(20);
+                $giftcard = Giftcard::orderBy('id', 'DESC')->whereBetween('created_at', [$from, $to])->paginate(20);
                 return view('admin.manage-gift-card', compact('giftcard'));
             } elseif ($request->filter_status != "") {
-                $giftcard = giftcard::orderBy('id', 'DESC')->where('Gift_Card_Status', '=', $request->filter_status)->paginate(20);
+                $giftcard = Giftcard::orderBy('id', 'DESC')->where('Gift_Card_Status', '=', $request->filter_status)->paginate(20);
                 return view('admin.manage-gift-card', compact('giftcard'));
             } elseif ($request->filter_amount != "") {
-                $giftcard = giftcard::orderBy('id', 'DESC')->where('Gift_Card_Amount', '=', $request->filter_amount)->paginate(20);
+                $giftcard = Giftcard::orderBy('id', 'DESC')->where('Gift_Card_Amount', '=', $request->filter_amount)->paginate(20);
                 return view('admin.manage-gift-card', compact('giftcard'));
             } else {
-                $giftcard = giftcard::orderBy('id', 'DESC')->paginate(20);
+                $giftcard = Giftcard::orderBy('id', 'DESC')->paginate(20);
                 return view('admin.manage-gift-card', compact('giftcard'));
             }
         } else {
@@ -161,7 +161,7 @@ class GiftcardController extends Controller
                         'Gift_Card_Status' => $_POST['status'],
                         'Gift_Card_Amount' => $_POST['amount']
                     );
-                    $data = giftcard::insert($record);
+                    $data = Giftcard::insert($record);
                 }
                 if ($data) {
                     echo $msg = "1";
@@ -216,7 +216,7 @@ class GiftcardController extends Controller
     {
 
         if (Auth::User()->account_type == 3) {
-            $giftcard = giftcard::orderBy('id', 'DESC');
+            $giftcard = Giftcard::orderBy('id', 'DESC');
 
             if ($request->filter_email != "") {
                 $giftcard->where('Gift_Card_email', '=', $request->filter_email);
@@ -261,7 +261,7 @@ class GiftcardController extends Controller
     {
 
         if (Auth::User()->account_type == 3) {
-            $giftcard = giftcard::orderBy('id', 'DESC');
+            $giftcard = Giftcard::orderBy('id', 'DESC');
 
             if ($request->filter_email != "") {
                 $giftcard->where('Gift_Card_email', '=', $request->filter_email);

@@ -7,7 +7,7 @@ use Laravel\Socialite\Facades\Socialite;
 use Exception;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
-use App\Models\loginAttemptHistory;
+use App\Models\LoginAttemptHistory;
 use Session;
 use Jenssegers\Agent\Agent;
 use App\Http\Controllers\MailerController;

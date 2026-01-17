@@ -11,12 +11,12 @@ use App\Http\Controllers\SmsController;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Country;
-use App\Models\stakings;
+use App\Models\Staking;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Auth;
 use Stevebauman\Location\Facades\Location;
 use Spatie\Permission\Models\Role;
-use App\Models\failed_verification_history;
+use App\Models\FailedVerificationHistory;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
@@ -1176,7 +1176,7 @@ class UserController extends Controller
         $user = User::find($id);
         $roles = Role::pluck('name', 'name')->all();
         $userRole = $user->roles->pluck('name', 'name')->all();
-        $ifpanORdigilockerFailedEver = failed_verification_history::where('user_id', $user->id)->get();
+        $ifpanORdigilockerFailedEver = FailedVerificationHistory::where('user_id', $user->id)->get();
 
         $objHomeController = new HomeController;
         $BmkApiController = new BmkApiController;
@@ -1202,7 +1202,7 @@ class UserController extends Controller
 
         $stacking = 0;
         $coinSInEscrowAccount = $objHomeController->getEscrowHoldCoin($id);
-        $stackingData = stakings::where('user_id', $id)->orderBy('id', 'DESC')->get();
+        $stackingData = Staking::where('user_id', $id)->orderBy('id', 'DESC')->get();
         return view('admin.users.edit', compact('user', 'roles', 'userRole', 'ifpanORdigilockerFailedEver', 'totalAvailableCoinsInMarketWallet', 'recurring_coin', 'regular_coin', 'charity_coin', 'coinSInEscrowAccount', 'stackingData'));
     }
 

@@ -7,8 +7,8 @@ use PragmaRX\Google2FALaravel\Support\Authenticator;
 
 use Illuminate\Support\Facades\Storage;
 use App\Models\User;
-use App\Models\giftcard;
-use App\Models\Entity_detail;
+use App\Models\Giftcard;
+use App\Models\EntityDetail;
 use App\Models\SecurityActivity;
 use Illuminate\Http\Request;
 use App\Http\Controllers\MailerController;
@@ -18,44 +18,47 @@ use App\Http\Controllers\GoogleAuthenticatorController;
 use App\Http\Controllers\SmsController;
 use App\Http\Controllers\GiftcardController;
 use App\Http\Controllers\StakingController;
-use App\Http\Controllers\ImageCompression;
-use Session;
+use App\Http\Controllers\ImageCompressionController;
+use Illuminate\Support\Facades\Session;
 use Carbon\Carbon;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Hash;
 use WisdomDiala\Cryptocap\Facades\Cryptocap;
-use App\Models\entities;
-use App\Models\businessDocs;
-use App\Models\relatedParties;
-use App\Models\PaymentMedhods;
-use App\Models\Banks;
+use App\Models\Entity;
+use App\Models\BusinessDoc;
+use App\Models\RelatedParty;
+use App\Models\PaymentMethod;
+use App\Models\Bank;
 use App\Models\Country;
-use App\Models\currencies;
+use App\Models\Currency;
 use Illuminate\Support\Facades\File;
 use App\Models\Order;
-use App\Models\change_password_history;
-use App\Models\gift_card_history;
-use App\Models\loginAttemptHistory;
-use App\Models\payment_method_list;
+use App\Models\ChangePasswordHistory;
+use App\Models\GiftCardHistory;
+use App\Models\LoginAttemptHistory;
+use App\Models\PaymentMethodList;
 use App\Models\MarketWallet;
 use Jenssegers\Agent\Agent;
-use App\Models\LoginDetails;
+use App\Models\LoginDetail;
 use App\Models\Chat;
-use App\Models\Tradingratings;
+use App\Models\TradingRating;
 use App\Models\NotificationCategory;
 use App\Notifications\TradeNotification;
 use App\Models\Notification;
-use App\Models\stakings;
+use App\Models\Staking;
 use App\Models\Escrow;
-use App\Models\config;
-use App\Models\user_account_activity;
+use App\Models\Config;
+use DateTimeZone;
+use App\Models\UserAccountActivity;
 use App\Imports\P2pOrderExport;
 use App\Imports\SelectedP2POrderExport;
 use Maatwebsite\Excel\Facades\Excel;
 use DateTime;
-use App\Models\Postads;
-use App\Models\Estimatedfee;
-use App\Models\failed_verification_history;
+use App\Models\Postad;
+use App\Models\EstimatedFee;
+use App\Models\FailedVerificationHistory;
+use App\Models\Announcement;
+use App\Models\AnnouncementCategory;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Validator;
@@ -120,7 +123,7 @@ class HomeController extends Controller
                 $params = array('wallet_address' => $user_wallet_addrs->bmk_wallet_address, 'no_of_coin' => $row->no_of_coin, 'type' => 3, 'mode' => 5);
                 $api_result = $BmkApiController->verify_api($url, $params);
                 $order_id = rand(1000000000, 1234567890);
-                $currency = currencies::where('name', 'INR')->first();
+                $currency = Currency::where('name', 'INR')->first();
                 $coin_price_url = $base_url . '/get_current_coin_price';
                 $coin_price_params = array();
                 $price = $BmkApiController->verify_api($coin_price_url, $coin_price_params);
@@ -231,7 +234,7 @@ class HomeController extends Controller
                         $otp = mt_rand(100000, 999999);
                         session(['gift_card_otp' => $otp]);
                         $data = $this->hideEmailAddress($giftcard->Gift_Card_email);
-                        $subject = "[Wealthmark] Confirm Your Gift Card Verification " . \Request::ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
+                        $subject = "[Wealthmark] Confirm Your Gift Card Verification " . $request->ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
                         $result = new MailerController;
                         $text_message = file_get_contents(asset('public/assets/img/emailTemplates/gift_card_email_otp.html'));
                         $text_message =    str_replace("@__email__@", $giftcard->Gift_Card_email, $text_message);
@@ -312,8 +315,8 @@ class HomeController extends Controller
                                 'ip_address' => request()->ip() . " - " . $agent->browser() . " - " . $agent->device() . " - " . $location,
                             );
                             $seller_results = DB::table('model_has_roles')->join('users', 'users.id', '=', 'model_has_roles.model_id')->where('model_has_roles.role_id', '=', 1)->select('*')->first();
-                            $payment_method_list = payment_method_list::where('name', 'Gift-card')->first();
-                            $currency = currencies::where('name', 'INR')->first();
+                            $payment_method_list = PaymentMethodList::where('name', 'Gift-card')->first();
+                            $currency = Currency::where('name', 'INR')->first();
                             if (Auth::User()->bmk_wallet_address === NULL) {
                                 $base_url = env('BMK_API_BASE_URL');
                                 $url = $base_url . '/generate_bmk_wallet_address';
@@ -339,9 +342,9 @@ class HomeController extends Controller
                                 'created_at' => date("Y-m-d h:i:s"),
                                 'updated_at' => date("Y-m-d h:i:s"),
                             );
-                            $gift_card_history_result_data = gift_card_history::insert($gift_history_data);
+                            $gift_card_history_result_data = GiftCardHistory::insert($gift_history_data);
                             $history_order_data = Order::insert($order_data);
-                            $update_gift_card = giftcard::where('id', $giftcard->id)->update(['Gift_Card_Status' => 3, 'Gift_Card_Used_Date' => date("Y-m-d H:i:s"), 'updated_at' => date("Y-m-d H:i:s")]);
+                            $update_gift_card = Giftcard::where('id', $giftcard->id)->update(['Gift_Card_Status' => 3, 'Gift_Card_Used_Date' => date("Y-m-d H:i:s"), 'updated_at' => date("Y-m-d H:i:s")]);
                             if ($gift_card_history_result_data && $history_order_data && $update_gift_card) {
                                 $base_url = env('BMK_API_BASE_URL');
                                 //$BmkApiController = new BmkApiController;
@@ -408,7 +411,7 @@ class HomeController extends Controller
                                     }
 
                                     $data = $this->hideEmailAddress($giftcard->Gift_Card_email);
-                                    $subject = "[Wealthmark] Your Gift Card Order Successfully " . \Request::ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
+                                    $subject = "[Wealthmark] Your Gift Card Order Successfully " . $request->ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
                                     $result = new MailerController;
                                     $text_message = file_get_contents(asset('public/assets/img/emailTemplates/coin_purchase.html'));
                                     $text_message =    str_replace("@__email__@", $giftcard->Gift_Card_email, $text_message);
@@ -717,7 +720,7 @@ class HomeController extends Controller
                                     'nameEnteredByuser' => $nameOnPan,
                                     'nameInResponse' => $returnedPanNumber_Status->result->name,
                                 ];
-                                $InseertFailedAadhaarHistory = new failed_verification_history;
+                                $InseertFailedAadhaarHistory = new FailedVerificationHistory;
                                 $InseertFailedAadhaarHistory->user_id = Auth::user()->id;
                                 $InseertFailedAadhaarHistory->pan_verification_responce = json_encode($panResult);
 
@@ -738,7 +741,7 @@ class HomeController extends Controller
                                 'nameEnteredByuser' => $nameOnPan,
 
                             ];
-                            $InseertFailedAadhaarHistory = new failed_verification_history;
+                            $InseertFailedAadhaarHistory = new FailedVerificationHistory;
                             $InseertFailedAadhaarHistory->user_id = Auth::user()->id;
                             $InseertFailedAadhaarHistory->pan_verification_responce = json_encode($panResult);
 
@@ -1113,7 +1116,7 @@ class HomeController extends Controller
                     // $google2fa = app('pragmarx.google2fa');
                     $reg_data = $request->all();
                     $reg_data["google2fa_secret"] = $secret;
-                    $request->session()->flash('registration_data', $reg_data);
+                    Session::flash('registration_data', $reg_data);
                     $reg_data['email'] = Auth::user()->email;
                     //$qrCodeUrl = $authenticator->getQRCodeGoogleUrl($title, $secret,$website);
                     $QR_Image = $AuthenticatorController->getQRCodeGoogleUrl(
@@ -1155,7 +1158,7 @@ class HomeController extends Controller
 
                 if ($checkResult) {
 
-                    $user = Auth::user();
+                    $user = User::find(Auth::id());
                     $input['is_two_factor'] = '1';
                     $data = $user->update($input);
                     if ($data) {
@@ -1169,7 +1172,7 @@ class HomeController extends Controller
                         $security_activities->user_id = Auth::user()->id;
                         $security_activities->save();
 
-                        $subject = "[Wealthmark] Authenticator has been enabled successfully " . \Request::ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
+                        $subject = "[Wealthmark] Authenticator has been enabled successfully " . $request->ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
                         $result = new MailerController;
                         $text_message = file_get_contents(asset('public/assets/img/emailTemplates/googleAuthenticationEnable.html'));
 
@@ -1231,7 +1234,7 @@ class HomeController extends Controller
                 $checkResult = $AuthenticatorController->verifyCode($secret, $request->post('o_otp'), $tolerance);
                 $security_activities = new SecurityActivity;
                 if ($checkResult) {
-                    $user = Auth::user();
+                    $user = User::find(Auth::id());
                     $input['is_two_factor'] = '0';
                     $input['google2fa_secret'] = 'NULL';
                     $data = $user->update($input);
@@ -1244,7 +1247,7 @@ class HomeController extends Controller
                         $security_activities->user_id = Auth::user()->id;
                         $security_activities->save();
 
-                        $subject = "[Wealthmark] Authenticator has been removed " . \Request::ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
+                        $subject = "[Wealthmark] Authenticator has been removed " . $request->ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
                         $result = new MailerController;
                         $text_message = file_get_contents(asset('public/assets/img/emailTemplates/googleAuthenticationremove.html'));
                         // $text_message =	str_replace("@__email__@", Auth::user()->email , $text_message);
@@ -1285,7 +1288,7 @@ class HomeController extends Controller
     {
         if (Auth::check()) {
             if ($request->post('code') != "") {
-                $user = Auth::user();
+                $user = User::find(Auth::id());
                 $input['google2fa_secret'] = $request->post('code');
                 $data = $user->update($input);
                 if ($data) {
@@ -1304,7 +1307,7 @@ class HomeController extends Controller
     {
         if (Auth::check()) {
             if ($request->post('auth_status') === "yes") {
-                $user = Auth::user();
+                $user = User::find(Auth::id());
                 $input['is_two_factor'] = '1';
                 $data = $user->update($input);
                 if ($data) {
@@ -1314,7 +1317,7 @@ class HomeController extends Controller
                 }
             }
             if ($request->post('auth_status') === "no") {
-                $user = Auth::user();
+                $user = User::find(Auth::id());
                 $input['is_two_factor'] = '0';
                 $input['google2fa_secret'] = 'NULL';
                 $data = $user->update($input);
@@ -1350,7 +1353,7 @@ class HomeController extends Controller
                 $secret = $AuthenticatorController->createSecret();
                 $reg_data = $request->all();
                 $reg_data["google2fa_secret"] = $secret;
-                $request->session()->flash('registration_data', $reg_data);
+                Session::flash('registration_data', $reg_data);
                 $reg_data['email'] = Auth::user()->email;
                 $QR_Image = $AuthenticatorController->getQRCodeGoogleUrl(
                     $reg_data['email'],
@@ -1679,7 +1682,7 @@ class HomeController extends Controller
             $bmk_inr_params = array('currency_name' => 'INR');
             $bmk_inr_price = $BmkApiController->verify_api($current_bmk_price_url, $bmk_inr_params);
 
-            $userStakingData = stakings::where('user_id', Auth::user()->id)->orderBy('id', 'DESC')->paginate(10);
+            $userStakingData = Staking::where('user_id', Auth::user()->id)->orderBy('id', 'DESC')->paginate(10);
 
             return view('user.coin_staking', compact('regular_coin', 'recurring_coin', 'charity_coin', 'p2p_coin', 'bmk_price', 'bmk_inr_price', 'userStakingData'));
         }
@@ -1710,16 +1713,16 @@ class HomeController extends Controller
         if (Auth::check()) {
             if (Auth::user()->account_type == 2) {
                 //  return redirect('entity-dashboard');
-                $UserInEntity = Entities::where('user_id', Auth::user()->id)->first();
+                $UserInEntity = Entity::where('user_id', Auth::user()->id)->first();
                 //dd($UserInEntity);
 
                 if (empty($UserInEntity)) {
                     return redirect(app()->getLocale() . '/entity-verification');
                 }
 
-                $entity = entities::where('user_id', Auth::user()->id)->first();
-                $entitydocs = businessDocs::where('user_id', Auth::user()->id)->first();
-                $related_parties = relatedParties::where('user_id', Auth::user()->id)->first();
+                $entity = Entity::where('user_id', Auth::user()->id)->first();
+                $entitydocs = BusinessDoc::where('user_id', Auth::user()->id)->first();
+                $related_parties = RelatedParty::where('user_id', Auth::user()->id)->first();
 
                 $entity_verificationStatus = $this->is_entity_verified(Auth::user()->id);
 
@@ -1940,9 +1943,9 @@ class HomeController extends Controller
             } else {
                 $otp = mt_rand(100000, 999999);
                 $input['email_otp'] = $otp;
-                $user->update($input);
+                User::where('id', $user->id)->update($input);
                 $data = $this->hideEmailAddress($email);
-                $subject = "[Wealthmark] Confirm Your Email Verification " . \Request::ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
+                $subject = "[Wealthmark] Confirm Your Email Verification " . request()->ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
 
                 $result = new MailerController;
                 //    $text_message = "Dear Customer Your email verification OTP is ".$otp." This is valid for only 15 minutes. Do not share the OTP with anyone. @www.wealthmark.io Team wealthmark";
@@ -2270,9 +2273,9 @@ class HomeController extends Controller
             if (Auth::user()) {
                 $otp = mt_rand(100000, 999999);
                 $input['email_otp'] = $otp;
-                $user->update($input);
+                User::where('id', $user->id)->update($input);
                 $email = Auth::user()->email;
-                $subject = "[Wealthmark] Confirm Your Email Verification " . \Request::ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
+                $subject = "[Wealthmark] Confirm Your Email Verification " . request()->ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
                 $result = new MailerController;
                 // $text_message = "Dear Customer Your email verification OTP is ".$otp." This is valid for only 15 minutes. Do not share the OTP with anyone. @www.wealthmark.io Team wealthmark";
 
@@ -2310,7 +2313,7 @@ class HomeController extends Controller
                     session(['newEmail_otp' => $otp]);
 
                     $email = $request->email;
-                    $subject = "[Wealthmark] Confirm Your Email Verification " . \Request::ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
+                    $subject = "[Wealthmark] Confirm Your Email Verification " . request()->ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
                     $result = new MailerController;
                     // $text_message = "Dear Customer Your email verification OTP is ".$otp." This is valid for only 15 minutes. Do not share the OTP with anyone. @www.wealthmark.io Team wealthmark";
 
@@ -2399,7 +2402,7 @@ class HomeController extends Controller
                             $user = Auth::user();
                             $input['email'] = $request->email;
                             $input['email_otp'] = $request->new_e_otp;
-                            $data = $user->update($input);
+                            $data = User::where('id', $user->id)->update($input);
                         } else {
                             return response()->json(['error' => "Please enter valid google authenticator code"], 401);
                         }
@@ -2409,13 +2412,13 @@ class HomeController extends Controller
                         $user = Auth::user();
                         $input['email'] = $request->email;
                         $input['email_otp'] = $request->new_e_otp;
-                        $data = $user->update($input);
+                        $data = User::where('id', $user->id)->update($input);
                     }
 
                     if ($data) {
                         session()->forget('newEmail_otp');
 
-                        $subject = "[Wealthmark] New email has been updated " . \Request::ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
+                        $subject = "[Wealthmark] New email has been updated " . request()->ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
                         $result = new MailerController;
                         $text_message = file_get_contents(asset('public/assets/img/emailTemplates/newEmailUpdation.html'));
                         $text_message =    str_replace("@__email__@", Auth::user()->email, $text_message);
@@ -2473,7 +2476,7 @@ class HomeController extends Controller
                         $tolerance = 0;
                         $checkResult = $AuthenticatorController->verifyCode($secret, $request->post('o_otp'), $tolerance);
                         if ($checkResult) {
-                            $user = Auth::user();
+                            $user = User::find(Auth::id());
                             $input['phone'] = $request->phone;
                             $input['phone_otp'] = $request->new_p_otp;
                             $data = $user->update($input);
@@ -2483,7 +2486,7 @@ class HomeController extends Controller
                     }
 
                     if ($ifTwoFactor_verified == 0) {
-                        $user = Auth::user();
+                        $user = User::find(Auth::id());
                         $input['phone'] = $request->phone;
                         $input['phone_otp'] = $request->new_p_otp;
                         $data = $user->update($input);
@@ -2493,7 +2496,7 @@ class HomeController extends Controller
 
                         session()->forget('newPhone_otp');
 
-                        $subject = "[Wealthmark] New phone has been updated " . \Request::ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
+                        $subject = "[Wealthmark] New phone has been updated " . request()->ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
                         $result = new MailerController;
                         $text_message = file_get_contents(asset('public/assets/img/emailTemplates/newPhoneUpdation.html'));
                         $text_message =    str_replace("@__phone__@", Auth::user()->phone, $text_message);
@@ -2544,7 +2547,7 @@ class HomeController extends Controller
             if (Auth::user()) {
                 $otp = mt_rand(100000, 999999);
                 $input['phone_otp'] = $otp;
-                $user->update($input);
+                User::where('id', $user->id)->update($input);
                 //   $text_message = "Dear Customer Your account verification OTP is ".$otp." This is valid for only 15 minutes. Do not share the OTP with anyone. @www.gmartindia.com Team Gmart India";
                 // $text_message = "Dear Customer Your account verification OTP is ".$otp." This is valid for only 15 minutes. Do not share the OTP with anyone. @www.webgv.in";
                 $text_message = 'Dear User Your account verification OTP is ' . $otp . ' This is valid for only 15 minutes. Do not share the OTP with anyone. Team INDEX';
@@ -2578,7 +2581,7 @@ class HomeController extends Controller
                     } else {
                         $otp = mt_rand(100000, 999999);
                         $input['phone_otp'] = $otp;
-                        $user->update($input);
+                        User::where('id', $user->id)->update($input);
                         // $text_message = "Dear Customer Your account verification OTP is ".$otp." This is valid for only 15 minutes. Do not share the OTP with anyone. @www.gmartindia.com Team Gmart India";
                         // $text_message = "Dear Customer Your account verification OTP is ".$otp." This is valid for only 15 minutes. Do not share the OTP with anyone. @www.webgv.in";
                         $text_message = 'Dear User Your account verification OTP is ' . $otp . ' This is valid for only 15 minutes. Do not share the OTP with anyone. Team INDEX';
@@ -2615,8 +2618,8 @@ class HomeController extends Controller
                     } else {
                         $otp = mt_rand(100000, 999999);
                         $input['email_otp'] = $otp;
-                        $user->update($input);
-                        $subject = "[Wealthmark] Confirm Your Email Verification " . \Request::ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
+                        User::where('id', $user->id)->update($input);
+                        $subject = "[Wealthmark] Confirm Your Email Verification " . request()->ip() . " - " . date('Y-m-d h:i:s') . " (UTC)";
                         $result = new MailerController;
                         //    $text_message = "Dear Customer Your email verification OTP is ".$otp." This is valid for only 15 minutes. Do not share the OTP with anyone. @www.wealthmark.io Team wealthmark";
 
@@ -2668,7 +2671,7 @@ class HomeController extends Controller
                             $input['phone_otp'] = "NULL";
                             $input['email'] = $email;
                             $input['is_mail_verified'] = 1;
-                            $user->update($input);
+                            User::where('id', $user->id)->update($input);
 
                             return response()->json(['success' => "200"], $this->successStatus);
                         } else {
@@ -2682,7 +2685,7 @@ class HomeController extends Controller
                         $input['phone_otp'] = "NULL";
                         $input['email'] = $email;
                         $input['is_mail_verified'] = 1;
-                        $user->update($input);
+                        User::where('id', $user->id)->update($input);
                         return response()->json(['success' => "200"], $this->successStatus);
                     }
                 } else {
@@ -2722,7 +2725,7 @@ class HomeController extends Controller
                             $input['phone_otp'] = "NULL";
                             $input['phone'] = $phone;
                             $input['is_phone_verified'] = 1;
-                            $user->update($input);
+                            User::where('id', $user->id)->update($input);
                             return response()->json(['success' => "200"], $this->successStatus);
                         } else {
 
@@ -2735,7 +2738,7 @@ class HomeController extends Controller
                         $input['phone_otp'] = "NULL";
                         $input['phone'] = $phone;
                         $input['is_phone_verified'] = 1;
-                        $user->update($input);
+                        User::where('id', $user->id)->update($input);
                         return response()->json(['success' => "200"], $this->successStatus);
                     }
                 } else {
@@ -2906,9 +2909,9 @@ class HomeController extends Controller
     public function payment()
     {
         if (Auth::check()) {
-            $ifpaymentMethod = PaymentMedhods::where('user_id', Auth::user()->id)->paginate(4);
-            $allpaymentMethod = Banks::all();
-            $allpaymentMethod_list = payment_method_list::all();
+            $ifpaymentMethod = PaymentMethod::where('user_id', Auth::user()->id)->paginate(4);
+            $allpaymentMethod = Bank::all();
+            $allpaymentMethod_list = PaymentMethodList::all();
             return view('user.payment.payment', compact('ifpaymentMethod', 'allpaymentMethod', 'allpaymentMethod_list'));
         } else {
             return redirect(app()->getLocale() . "/login");
@@ -2961,8 +2964,8 @@ class HomeController extends Controller
     public function reward_center()
     {
         if (Auth::check()) {
-            $my_giftcard_histroy = gift_card_history::where('gift_card_user_id', Auth::user()->id)->paginate('10');
-            $other_giftcard_histroy = gift_card_history::where('gift_card_current_user_id', Auth::user()->id)->paginate('10');
+            $my_giftcard_histroy = GiftCardHistory::where('gift_card_user_id', Auth::user()->id)->paginate('10');
+            $other_giftcard_histroy = GiftCardHistory::where('gift_card_current_user_id', Auth::user()->id)->paginate('10');
             return view('user.reward_center', compact('my_giftcard_histroy', 'other_giftcard_histroy'));
         } else {
             return redirect(app()->getLocale() . "/login");
@@ -2989,7 +2992,7 @@ class HomeController extends Controller
     public function other_giftcard_history()
     {
 
-        $other_giftcard_histroy = gift_card_history::where('gift_card_current_user_id', Auth::user()->id)->paginate('10');
+        $other_giftcard_histroy = GiftCardHistory::where('gift_card_current_user_id', Auth::user()->id)->paginate('10');
 
 
         return view('user.other_giftcard_history', compact('other_giftcard_histroy'));
@@ -3100,7 +3103,7 @@ class HomeController extends Controller
             $totalAvailableCoinsInMarketWallet = 0;
         }
         if (Auth::check()) {
-            $userPaymentMethod = PaymentMedhods::where('user_id', '=', Auth::user()->id)->where('deleted_at', null)->get();
+            $userPaymentMethod = PaymentMethod::where('user_id', '=', Auth::user()->id)->where('deleted_at', null)->get();
             //print_r($userPaymentMethod);
             $userPaymentMethodcount = $userPaymentMethod->count();
         } else {
@@ -3109,36 +3112,36 @@ class HomeController extends Controller
         }
 
 
-        $get_BTC_orders = Postads::where('cryptoname', '=', 'BTC')->where('status', 1)->where('ordertype', 0)
+        $get_BTC_orders = Postad::where('cryptoname', '=', 'BTC')->where('status', 1)->where('ordertype', 0)
             ->orderBy('id', 'desc')
             ->paginate(10);
 
-        $get_ETH_orders = Postads::where('cryptoname', '=', 'ETH')->where('status', 1)->where('ordertype', 0)
+        $get_ETH_orders = Postad::where('cryptoname', '=', 'ETH')->where('status', 1)->where('ordertype', 0)
             ->orderBy('id', 'desc')
             ->paginate(10);
 
         if (Auth::check()) {
-            $get_BMK_orders = Postads::where('cryptoname', '=', 'BMK')->Where('userid', '!=', Auth::user()->id)->where('status', 1)->where('ordertype', 0)
+            $get_BMK_orders = Postad::where('cryptoname', '=', 'BMK')->Where('userid', '!=', Auth::user()->id)->where('status', 1)->where('ordertype', 0)
                 ->orderBy('id', 'desc')
                 ->paginate(10);
         } else {
-            $get_BMK_orders = Postads::where('cryptoname', '=', 'BMK')->where('status', 1)->where('ordertype', 0)
+            $get_BMK_orders = Postad::where('cryptoname', '=', 'BMK')->where('status', 1)->where('ordertype', 0)
                 ->orderBy('id', 'desc')
                 ->paginate(10);
         }
 
 
         if (Auth::check()) {
-            $ifpaymentMethod = PaymentMedhods::where('user_id', Auth::user()->id)->paginate(3);
+            $ifpaymentMethod = PaymentMethod::where('user_id', Auth::user()->id)->paginate(3);
         } else {
             $ifpaymentMethod = 0;
         }
 
-        $allpaymentMethod = Banks::all();
+        $allpaymentMethod = Bank::all();
 
         $paymentType = $request->paymentType;
-        $count_payment_type = Postads::where('cryptoname', '=', 'BMK')->where('status', 1)->where('ordertype', 0)->count();
-        $allpaymentMethod_list = payment_method_list::all();
+        $count_payment_type = Postad::where('cryptoname', '=', 'BMK')->where('status', 1)->where('ordertype', 0)->count();
+        $allpaymentMethod_list = PaymentMethodList::all();
 
         $base_url = env('BMK_API_BASE_URL');
         $BmkApiController = new \App\Http\Controllers\BmkApiController;
@@ -3156,12 +3159,12 @@ class HomeController extends Controller
 
         // if  ($paymentType || $currencyid || $countryname)  {
 
-        //     $count_payment_type = Postads::where('cryptoname','=','BMK')->where('status',1)->count();
+        //     $count_payment_type = Postad::where('cryptoname','=','BMK')->where('status',1)->count();
 
         //     if(Auth::check()){
 
 
-        //         $query = Postads::where('cryptoname', '=', 'BMK')
+        //         $query = Postad::where('cryptoname', '=', 'BMK')
         //                     ->where('userid', '!=', Auth::user()->id)
         //                     ->where('status', '=', 1);
 
@@ -3232,7 +3235,7 @@ class HomeController extends Controller
         }
 
 
-        $all_sell_request = Postads::where('status', 1)->get();
+        $all_sell_request = Postad::where('status', 1)->get();
 
 
 
@@ -3243,7 +3246,7 @@ class HomeController extends Controller
 
             $username = User::where('id', $item->userid)->first();
             $buylist_mapped_details['username'] = isset($username->nick_name) ? $username->nick_name  : $username->first_name;
-            $countbmk_orders = Postads::where('userid', $item->userid)->where('cryptoname', "$item->cryptoname")->get();
+            $countbmk_orders = Postad::where('userid', $item->userid)->where('cryptoname', "$item->cryptoname")->get();
             $user_last_activity = User::where('id', $item->userid)->first();
             $buylist_mapped_details['id'] = $item->id;
             $buylist_mapped_details['nick_name'] = $item->nick_name;
@@ -3269,7 +3272,7 @@ class HomeController extends Controller
 
 
 
-            $first_order = Postads::where('id', '=', $item->id)->first();
+            $first_order = Postad::where('id', '=', $item->id)->first();
             $getadsid = $first_order->adsid;
             $today = date('Y-m-d');
             $activeorders = Order::where('order_status', '=', 1)
@@ -3319,7 +3322,7 @@ class HomeController extends Controller
 
             $payment_method_type = array();
             foreach ($paymentmethodid as $key => $value) {
-                // $payment_method = App\Models\PaymentMedhods::where('id', $value)->first();
+                // $payment_method = App\Models\PaymentMethod::where('id', $value)->first();
                 // if ($payment_method) {
                 //       $payment_method_type[] = $payment_method;
                 //  }
@@ -3395,7 +3398,7 @@ class HomeController extends Controller
         */
 
         //   if(Auth::check()){
-        //               $userPaymentMethod = PaymentMedhods::where('user_id', '=', Auth::user()->id)->where('deleted_at',null)->get();
+        //               $userPaymentMethod = PaymentMethod::where('user_id', '=', Auth::user()->id)->where('deleted_at',null)->get();
         //               $userPaymentMethodcount =$userPaymentMethod->count();
         //          }else{
         //               $userPaymentMethod = 0;
@@ -3423,16 +3426,16 @@ class HomeController extends Controller
 
 
         //     if(Auth::check()){
-        //     $ifpaymentMethod = PaymentMedhods::where('user_id', Auth::user()->id)->paginate(3);
+        //     $ifpaymentMethod = PaymentMethod::where('user_id', Auth::user()->id)->paginate(3);
         //     }else{
         //           $ifpaymentMethod = 0;
         //     }
 
-        //     $allpaymentMethod = Banks::all();
+        //     $allpaymentMethod = Bank::all();
 
         //     $paymentType = $request->paymentType;
         //     $count_payment_type = Order::where('crypto_type','=','BMK')->where('order_status',0)->count();
-        //     $allpaymentMethod_list = payment_method_list::all();
+        //     $allpaymentMethod_list = PaymentMethodList::all();
 
         //     $base_url=env('BMK_API_BASE_URL');
         //                                 $BmkApiController = new \App\Http\Controllers\BmkApiController;
@@ -3554,7 +3557,7 @@ class HomeController extends Controller
             $totalAvailableCoinsInMarketWallet = 0;
         }
         if (Auth::check()) {
-            $userPaymentMethod = PaymentMedhods::where('user_id', '=', Auth::user()->id)->where('deleted_at', null)->get();
+            $userPaymentMethod = PaymentMethod::where('user_id', '=', Auth::user()->id)->where('deleted_at', null)->get();
             //print_r($userPaymentMethod);
             $userPaymentMethodcount = $userPaymentMethod->count();
         } else {
@@ -3563,36 +3566,36 @@ class HomeController extends Controller
         }
 
 
-        $get_BTC_orders = Postads::where('cryptoname', '=', 'BTC')->where('status', 1)->where('ordertype', 0)
+        $get_BTC_orders = Postad::where('cryptoname', '=', 'BTC')->where('status', 1)->where('ordertype', 0)
             ->orderBy('id', 'desc')
             ->paginate(10);
 
-        $get_ETH_orders = Postads::where('cryptoname', '=', 'ETH')->where('status', 1)->where('ordertype', 0)
+        $get_ETH_orders = Postad::where('cryptoname', '=', 'ETH')->where('status', 1)->where('ordertype', 0)
             ->orderBy('id', 'desc')
             ->paginate(10);
 
         if (Auth::check()) {
-            $get_BMK_orders = Postads::where('cryptoname', '=', 'BMK')->Where('userid', '!=', Auth::user()->id)->where('status', 1)->where('ordertype', 0)
+            $get_BMK_orders = Postad::where('cryptoname', '=', 'BMK')->Where('userid', '!=', Auth::user()->id)->where('status', 1)->where('ordertype', 0)
                 ->orderBy('id', 'desc')
                 ->paginate(10);
         } else {
-            $get_BMK_orders = Postads::where('cryptoname', '=', 'BMK')->where('status', 1)->where('ordertype', 0)
+            $get_BMK_orders = Postad::where('cryptoname', '=', 'BMK')->where('status', 1)->where('ordertype', 0)
                 ->orderBy('id', 'desc')
                 ->paginate(10);
         }
 
 
         if (Auth::check()) {
-            $ifpaymentMethod = PaymentMedhods::where('user_id', Auth::user()->id)->paginate(3);
+            $ifpaymentMethod = PaymentMethod::where('user_id', Auth::user()->id)->paginate(3);
         } else {
             $ifpaymentMethod = 0;
         }
 
-        $allpaymentMethod = Banks::all();
+        $allpaymentMethod = Bank::all();
 
         $paymentType = $request->paymentType;
-        $count_payment_type = Postads::where('cryptoname', '=', 'BMK')->where('status', 1)->where('ordertype', 0)->count();
-        $allpaymentMethod_list = payment_method_list::all();
+        $count_payment_type = Postad::where('cryptoname', '=', 'BMK')->where('status', 1)->where('ordertype', 0)->count();
+        $allpaymentMethod_list = PaymentMethodList::all();
 
         $base_url = env('BMK_API_BASE_URL');
         $BmkApiController = new \App\Http\Controllers\BmkApiController;
@@ -3610,12 +3613,12 @@ class HomeController extends Controller
 
         // if  ($paymentType || $currencyid || $countryname)  {
 
-        //     $count_payment_type = Postads::where('cryptoname','=','BMK')->where('status',1)->count();
+        //     $count_payment_type = Postad::where('cryptoname','=','BMK')->where('status',1)->count();
 
         //     if(Auth::check()){
 
 
-        //         $query = Postads::where('cryptoname', '=', 'BMK')
+        //         $query = Postad::where('cryptoname', '=', 'BMK')
         //                     ->where('userid', '!=', Auth::user()->id)
         //                     ->where('status', '=', 1);
 
@@ -3686,7 +3689,7 @@ class HomeController extends Controller
         }
 
 
-        $all_sell_request = Postads::where('status', 1)->get();
+        $all_sell_request = Postad::where('status', 1)->get();
 
 
 
@@ -3697,7 +3700,7 @@ class HomeController extends Controller
 
             $username = User::where('id', $item->userid)->first();
             $buylist_mapped_details['username'] = isset($username->nick_name) ? $username->nick_name  : $username->first_name;
-            $countbmk_orders = Postads::where('userid', $item->userid)->where('cryptoname', "$item->cryptoname")->get();
+            $countbmk_orders = Postad::where('userid', $item->userid)->where('cryptoname', "$item->cryptoname")->get();
             $user_last_activity = User::where('id', $item->userid)->first();
             $buylist_mapped_details['id'] = $item->id;
             $buylist_mapped_details['nick_name'] = $item->nick_name;
@@ -3723,7 +3726,7 @@ class HomeController extends Controller
 
 
 
-            $first_order = Postads::where('id', '=', $item->id)->first();
+            $first_order = Postad::where('id', '=', $item->id)->first();
             $getadsid = $first_order->adsid;
             $today = date('Y-m-d');
             $activeorders = Order::where('order_status', '=', 1)
@@ -3773,7 +3776,7 @@ class HomeController extends Controller
 
             $payment_method_type = array();
             foreach ($paymentmethodid as $key => $value) {
-                // $payment_method = App\Models\PaymentMedhods::where('id', $value)->first();
+                // $payment_method = App\Models\PaymentMethod::where('id', $value)->first();
                 // if ($payment_method) {
                 //       $payment_method_type[] = $payment_method;
                 //  }
@@ -3849,7 +3852,7 @@ class HomeController extends Controller
         */
 
         //   if(Auth::check()){
-        //               $userPaymentMethod = PaymentMedhods::where('user_id', '=', Auth::user()->id)->where('deleted_at',null)->get();
+        //               $userPaymentMethod = PaymentMethod::where('user_id', '=', Auth::user()->id)->where('deleted_at',null)->get();
         //               $userPaymentMethodcount =$userPaymentMethod->count();
         //          }else{
         //               $userPaymentMethod = 0;
@@ -3877,16 +3880,16 @@ class HomeController extends Controller
 
 
         //     if(Auth::check()){
-        //     $ifpaymentMethod = PaymentMedhods::where('user_id', Auth::user()->id)->paginate(3);
+        //     $ifpaymentMethod = PaymentMethod::where('user_id', Auth::user()->id)->paginate(3);
         //     }else{
         //           $ifpaymentMethod = 0;
         //     }
 
-        //     $allpaymentMethod = Banks::all();
+        //     $allpaymentMethod = Bank::all();
 
         //     $paymentType = $request->paymentType;
         //     $count_payment_type = Order::where('crypto_type','=','BMK')->where('order_status',0)->count();
-        //     $allpaymentMethod_list = payment_method_list::all();
+        //     $allpaymentMethod_list = PaymentMethodList::all();
 
         //     $base_url=env('BMK_API_BASE_URL');
         //                                 $BmkApiController = new \App\Http\Controllers\BmkApiController;
@@ -4009,7 +4012,7 @@ class HomeController extends Controller
 
         $paymentType = $request->input('paymentType');
         $count_payment_type = Order::where('crypto_type', '=', 'BTC')->where('order_status', 0)->count();
-        $allpaymentMethod_list = payment_method_list::all();
+        $allpaymentMethod_list = PaymentMethodList::all();
         $base_url = env('BMK_API_BASE_URL');
         $BmkApiController = new \App\Http\Controllers\BmkApiController;
         $url = $base_url . '/get_currency';
@@ -4018,12 +4021,12 @@ class HomeController extends Controller
         $currencyid = $request->input('CurrencyId');
         $country = Country::all();
         $countryname = $request->input('countryname');
-        $allpaymentMethod = Banks::all();
+        $allpaymentMethod = Bank::all();
 
         if (Auth::check()) {
             $get_BTC_orders = Order::where('crypto_type', '=', 'BTC')->where('order_status', 0)->where('buyer_id', '!=', Auth::user()->id)->orderBy('id', 'desc')->paginate(10);
 
-            $userPaymentMethod = PaymentMedhods::where('user_id', '=', Auth::user()->id)->get();
+            $userPaymentMethod = PaymentMethod::where('user_id', '=', Auth::user()->id)->get();
             $userPaymentMethodcount = $userPaymentMethod->count();
         } else {
             $get_BTC_orders = Order::where('crypto_type', '=', 'BTC')->where('order_status', 0)->orderBy('id', 'desc')->paginate(10);
@@ -4096,7 +4099,7 @@ class HomeController extends Controller
 
 
         if (Auth::check()) {
-            $userPaymentMethod = PaymentMedhods::where('user_id', '=', Auth::user()->id)->where('deleted_at', null)->get();
+            $userPaymentMethod = PaymentMethod::where('user_id', '=', Auth::user()->id)->where('deleted_at', null)->get();
             $userPaymentMethodcount = $userPaymentMethod->count();
         } else {
             $userPaymentMethod = 0;
@@ -4104,36 +4107,36 @@ class HomeController extends Controller
         }
 
 
-        $get_BTC_orders = Postads::where('cryptoname', '=', 'BTC')->where('status', 1)->where('ordertype', 0)
+        $get_BTC_orders = Postad::where('cryptoname', '=', 'BTC')->where('status', 1)->where('ordertype', 0)
             ->orderBy('id', 'desc')
             ->paginate(10);
 
-        $get_ETH_orders = Postads::where('cryptoname', '=', 'ETH')->where('status', 1)->where('ordertype', 0)
+        $get_ETH_orders = Postad::where('cryptoname', '=', 'ETH')->where('status', 1)->where('ordertype', 0)
             ->orderBy('id', 'desc')
             ->paginate(10);
 
         if (Auth::check()) {
-            $get_BMK_orders = Postads::where('cryptoname', '=', 'BMK')->Where('userid', '!=', Auth::user()->id)->where('status', 1)->where('ordertype', 0)
+            $get_BMK_orders = Postad::where('cryptoname', '=', 'BMK')->Where('userid', '!=', Auth::user()->id)->where('status', 1)->where('ordertype', 0)
                 ->orderBy('id', 'desc')
                 ->paginate(10);
         } else {
-            $get_BMK_orders = Postads::where('cryptoname', '=', 'BMK')->where('status', 1)
+            $get_BMK_orders = Postad::where('cryptoname', '=', 'BMK')->where('status', 1)
                 ->orderBy('id', 'desc')
                 ->paginate(10);
         }
 
 
         if (Auth::check()) {
-            $ifpaymentMethod = PaymentMedhods::where('user_id', Auth::user()->id)->paginate(3);
+            $ifpaymentMethod = PaymentMethod::where('user_id', Auth::user()->id)->paginate(3);
         } else {
             $ifpaymentMethod = 0;
         }
 
-        $allpaymentMethod = Banks::all();
+        $allpaymentMethod = Bank::all();
 
         $paymentType = $request->paymentType;
-        $count_payment_type = Postads::where('cryptoname', '=', 'BMK')->where('ordertype', 0)->where('status', 1)->count();
-        $allpaymentMethod_list = payment_method_list::all();
+        $count_payment_type = Postad::where('cryptoname', '=', 'BMK')->where('ordertype', 0)->where('status', 1)->count();
+        $allpaymentMethod_list = PaymentMethodList::all();
 
         $base_url = env('BMK_API_BASE_URL');
         $BmkApiController = new \App\Http\Controllers\BmkApiController;
@@ -4154,14 +4157,14 @@ class HomeController extends Controller
         }
 
 
-        $all_sell_request = Postads::where('status', 1)->get();
+        $all_sell_request = Postad::where('status', 1)->get();
 
 
         $buyList_details =   $get_BMK_orders->map(function ($item) {
 
             $username = User::where('id', $item->userid)->first();
             $buylist_mapped_details['username'] = isset($username->nick_name) ? $username->nick_name  : $username->first_name;
-            $countbmk_orders = Postads::where('userid', $item->userid)->where('cryptoname', "$item->cryptoname")->get();
+            $countbmk_orders = Postad::where('userid', $item->userid)->where('cryptoname', "$item->cryptoname")->get();
             $user_last_activity = User::where('id', $item->userid)->first();
             $buylist_mapped_details['id'] = $item->id;
             $buylist_mapped_details['nick_name'] = $item->nick_name;
@@ -4187,7 +4190,7 @@ class HomeController extends Controller
 
 
 
-            $first_order = Postads::where('id', '=', $item->id)->first();
+            $first_order = Postad::where('id', '=', $item->id)->first();
             $getadsid = $first_order->adsid;
             $today = date('Y-m-d');
             $activeorders = Order::where('order_status', '=', 1)
@@ -4237,7 +4240,7 @@ class HomeController extends Controller
 
             $payment_method_type = array();
             foreach ($paymentmethodid as $key => $value) {
-                // $payment_method = App\Models\PaymentMedhods::where('id', $value)->first();
+                // $payment_method = App\Models\PaymentMethod::where('id', $value)->first();
                 // if ($payment_method) {
                 //       $payment_method_type[] = $payment_method;
                 //  }
@@ -4299,7 +4302,7 @@ class HomeController extends Controller
 
         //     $paymentType = $request->input('paymentType');
         //     $count_payment_type = Order::where('crypto_type','=','BMK')->where('order_status',0)->count();
-        //     $allpaymentMethod_list = payment_method_list::all();
+        //     $allpaymentMethod_list = PaymentMethodList::all();
         //      $base_url=env('BMK_API_BASE_URL');
         //                                 $BmkApiController = new \App\Http\Controllers\BmkApiController;
         //                                 $url = $base_url.'/get_currency';
@@ -4309,10 +4312,10 @@ class HomeController extends Controller
         //     $country = Country::all();
         //     $countryname = $request->input('countryname');
 
-        //      $allpaymentMethod = Banks::all();
+        //      $allpaymentMethod = Bank::all();
         //     if(Auth::check()){
         //             $get_BMK_orders = Order::where('crypto_type','=','BMK')->where('order_status',0)->Where('buyer_id','!=',Auth::user()->id)->orderBy('id','desc')->paginate(2);
-        //             $userPaymentMethod = PaymentMedhods::where('user_id', '=', Auth::user()->id)->get();
+        //             $userPaymentMethod = PaymentMethod::where('user_id', '=', Auth::user()->id)->get();
         //             $userPaymentMethodcount =$userPaymentMethod->count();
         //      }else{
         //           $get_BMK_orders = Order::where('crypto_type','=','BMK')->where('order_status',0)->orderBy('id','desc')->paginate(2);
@@ -4461,7 +4464,7 @@ class HomeController extends Controller
 
 
         if (Auth::check()) {
-            $userPaymentMethod = PaymentMedhods::where('user_id', '=', Auth::user()->id)->where('deleted_at', null)->get();
+            $userPaymentMethod = PaymentMethod::where('user_id', '=', Auth::user()->id)->where('deleted_at', null)->get();
             $userPaymentMethodcount = $userPaymentMethod->count();
         } else {
             $userPaymentMethod = 0;
@@ -4469,36 +4472,36 @@ class HomeController extends Controller
         }
 
 
-        $get_BTC_orders = Postads::where('cryptoname', '=', 'BTC')->where('status', 1)->where('ordertype', 0)
+        $get_BTC_orders = Postad::where('cryptoname', '=', 'BTC')->where('status', 1)->where('ordertype', 0)
             ->orderBy('id', 'desc')
             ->paginate(10);
 
-        $get_ETH_orders = Postads::where('cryptoname', '=', 'ETH')->where('status', 1)->where('ordertype', 0)
+        $get_ETH_orders = Postad::where('cryptoname', '=', 'ETH')->where('status', 1)->where('ordertype', 0)
             ->orderBy('id', 'desc')
             ->paginate(10);
 
         if (Auth::check()) {
-            $get_BMK_orders = Postads::where('cryptoname', '=', 'BMK')->Where('userid', '!=', Auth::user()->id)->where('status', 1)->where('ordertype', 0)
+            $get_BMK_orders = Postad::where('cryptoname', '=', 'BMK')->Where('userid', '!=', Auth::user()->id)->where('status', 1)->where('ordertype', 0)
                 ->orderBy('id', 'desc')
                 ->paginate(10);
         } else {
-            $get_BMK_orders = Postads::where('cryptoname', '=', 'BMK')->where('status', 1)
+            $get_BMK_orders = Postad::where('cryptoname', '=', 'BMK')->where('status', 1)
                 ->orderBy('id', 'desc')
                 ->paginate(10);
         }
 
 
         if (Auth::check()) {
-            $ifpaymentMethod = PaymentMedhods::where('user_id', Auth::user()->id)->paginate(3);
+            $ifpaymentMethod = PaymentMethod::where('user_id', Auth::user()->id)->paginate(3);
         } else {
             $ifpaymentMethod = 0;
         }
 
-        $allpaymentMethod = Banks::all();
+        $allpaymentMethod = Bank::all();
 
         $paymentType = $request->paymentType;
-        $count_payment_type = Postads::where('cryptoname', '=', 'BMK')->where('ordertype', 0)->where('status', 1)->count();
-        $allpaymentMethod_list = payment_method_list::all();
+        $count_payment_type = Postad::where('cryptoname', '=', 'BMK')->where('ordertype', 0)->where('status', 1)->count();
+        $allpaymentMethod_list = PaymentMethodList::all();
 
         $base_url = env('BMK_API_BASE_URL');
         $BmkApiController = new \App\Http\Controllers\BmkApiController;
@@ -4519,14 +4522,14 @@ class HomeController extends Controller
         }
 
 
-        $all_sell_request = Postads::where('status', 1)->get();
+        $all_sell_request = Postad::where('status', 1)->get();
 
 
         $buyList_details =   $get_BMK_orders->map(function ($item) {
 
             $username = User::where('id', $item->userid)->first();
             $buylist_mapped_details['username'] = isset($username->nick_name) ? $username->nick_name  : $username->first_name;
-            $countbmk_orders = Postads::where('userid', $item->userid)->where('cryptoname', "$item->cryptoname")->get();
+            $countbmk_orders = Postad::where('userid', $item->userid)->where('cryptoname', "$item->cryptoname")->get();
             $user_last_activity = User::where('id', $item->userid)->first();
             $buylist_mapped_details['id'] = $item->id;
             $buylist_mapped_details['nick_name'] = $item->nick_name;
@@ -4552,7 +4555,7 @@ class HomeController extends Controller
 
 
 
-            $first_order = Postads::where('id', '=', $item->id)->first();
+            $first_order = Postad::where('id', '=', $item->id)->first();
             $getadsid = $first_order->adsid;
             $today = date('Y-m-d');
             $activeorders = Order::where('order_status', '=', 1)
@@ -4602,7 +4605,7 @@ class HomeController extends Controller
 
             $payment_method_type = array();
             foreach ($paymentmethodid as $key => $value) {
-                // $payment_method = App\Models\PaymentMedhods::where('id', $value)->first();
+                // $payment_method = App\Models\PaymentMethod::where('id', $value)->first();
                 // if ($payment_method) {
                 //       $payment_method_type[] = $payment_method;
                 //  }
@@ -4664,7 +4667,7 @@ class HomeController extends Controller
 
         //     $paymentType = $request->input('paymentType');
         //     $count_payment_type = Order::where('crypto_type','=','BMK')->where('order_status',0)->count();
-        //     $allpaymentMethod_list = payment_method_list::all();
+        //     $allpaymentMethod_list = PaymentMethodList::all();
         //      $base_url=env('BMK_API_BASE_URL');
         //                                 $BmkApiController = new \App\Http\Controllers\BmkApiController;
         //                                 $url = $base_url.'/get_currency';
@@ -4674,10 +4677,10 @@ class HomeController extends Controller
         //     $country = Country::all();
         //     $countryname = $request->input('countryname');
 
-        //      $allpaymentMethod = Banks::all();
+        //      $allpaymentMethod = Bank::all();
         //     if(Auth::check()){
         //             $get_BMK_orders = Order::where('crypto_type','=','BMK')->where('order_status',0)->Where('buyer_id','!=',Auth::user()->id)->orderBy('id','desc')->paginate(2);
-        //             $userPaymentMethod = PaymentMedhods::where('user_id', '=', Auth::user()->id)->get();
+        //             $userPaymentMethod = PaymentMethod::where('user_id', '=', Auth::user()->id)->get();
         //             $userPaymentMethodcount =$userPaymentMethod->count();
         //      }else{
         //           $get_BMK_orders = Order::where('crypto_type','=','BMK')->where('order_status',0)->orderBy('id','desc')->paginate(2);
@@ -4832,7 +4835,7 @@ class HomeController extends Controller
 
         $paymentType = $request->input('paymentType');
         $count_payment_type = Order::where('crypto_type', '=', 'ETH')->where('order_status', 0)->count();
-        $allpaymentMethod_list = payment_method_list::all();
+        $allpaymentMethod_list = PaymentMethodList::all();
         $base_url = env('BMK_API_BASE_URL');
         $BmkApiController = new \App\Http\Controllers\BmkApiController;
         $url = $base_url . '/get_currency';
@@ -4842,10 +4845,10 @@ class HomeController extends Controller
         $country = Country::all();
         $countryname = $request->input('countryname');
 
-        $allpaymentMethod = Banks::all();
+        $allpaymentMethod = Bank::all();
         if (Auth::check()) {
             $get_ETH_orders = Order::where('crypto_type', '=', 'ETH')->where('order_status', 0)->Where('buyer_id', '!=', Auth::user()->id)->orderBy('id', 'desc')->paginate(10);
-            $userPaymentMethod = PaymentMedhods::where('user_id', '=', Auth::user()->id)->get();
+            $userPaymentMethod = PaymentMethod::where('user_id', '=', Auth::user()->id)->get();
             $userPaymentMethodcount = $userPaymentMethod->count();
         } else {
             $get_ETH_orders = Order::where('crypto_type', '=', 'ETH')->where('order_status', 0)->orderBy('id', 'desc')->paginate(10);
@@ -5339,8 +5342,8 @@ class HomeController extends Controller
             // commented on 180223
             //     $bitcoin=Cryptocap::getSingleAsset('bitcoin');
             //     $ethereum=Cryptocap::getSingleAsset('ethereum');
-            //     $allcurrency = currencies::all();
-            //     $userPaymentMethod = PaymentMedhods::where('user_id', '=', Auth::user()->id)->get();
+            //     $allcurrency = Currency::all();
+            //     $userPaymentMethod = PaymentMethod::where('user_id', '=', Auth::user()->id)->get();
             //     return view('web.buy_sell_crypto',compact('bitcoin','ethereum','allcurrency', 'userPaymentMethod' ));
 
 
@@ -5369,7 +5372,7 @@ class HomeController extends Controller
                         $wallet_address_result = $BmkApiController->verify_api($url, $params);
                         $upadeWalletAddress = User::where('id', Auth::user()->id)->update(['bmk_wallet_address' => $wallet_address_result->wallet_signature]);
                     }
-                    $payment_account_details = PaymentMedhods::where('id', $request->payment_bank_id)->first();
+                    $payment_account_details = PaymentMethod::where('id', $request->payment_bank_id)->first();
                     // echo "<pre>"; print_r($payment_account_details); echo "<pre>";
                     // echo "<pre>"; print_r($data);die();
                     $orderid = mt_rand(1000000000, 9999999999);
@@ -5409,6 +5412,7 @@ class HomeController extends Controller
                     if ($conf_order_data) {
                         $orderdata =  Order::where('id', $lastId)->latest()->first();
                         $order_accept_action = $orderdata->order_accept_action;
+                        /** @var \App\Models\User $user */
                         $user = auth()->user();
                         $notification_category_id = NotificationCategory::where('id', 2)->first();
                         $orderstatus = 0;
@@ -5456,10 +5460,10 @@ class HomeController extends Controller
                 $current_bmk_price_url = $base_url . '/get_bmk_currency_price';
                 $bmk_params = array('currency_name' => 'USD');
                 $bmk_price = $BmkApiController->verify_api($current_bmk_price_url, $bmk_params);
-                //$allcurrency = currencies::all();
-                //$allcurrency = currencies::orderBy('id','desc')->get();
-                $userPaymentMethod = PaymentMedhods::where('user_id', '=', Auth::user()->id)->get();
-                $allpaymentMethod_list = payment_method_list::all();
+                //$allcurrency = Currency::all();
+                //$allcurrency = Currency::orderBy('id','desc')->get();
+                $userPaymentMethod = PaymentMethod::where('user_id', '=', Auth::user()->id)->get();
+                $allpaymentMethod_list = PaymentMethodList::all();
                 return view('web.buy_sell_crypto', compact('bitcoin', 'ethereum', 'allcurrency', 'userPaymentMethod', 'allpaymentMethod_list', 'bmk_price'));
             }
         } else {
@@ -6425,7 +6429,7 @@ class HomeController extends Controller
     public function getOrderDetailsbyAds(Request $request)
     {
 
-        $first_order = Postads::where('id', '=', $request->orderId)->first();
+        $first_order = Postad::where('id', '=', $request->orderId)->first();
         $getadsid = $first_order->adsid;
         $today = date('Y-m-d');
         $activeorders = Order::where('adsid', '=', $getadsid)
@@ -6539,8 +6543,8 @@ class HomeController extends Controller
                 $get_order_data = Order::where('id', $orderid)->first();
 
                 $get_buyer_details = DB::table('users')->where('id', $get_order_data->buyer_id)->first();
-                $ratedRecords = Tradingratings::where('order_id', $orderid)->where('seller_id', Auth::user()->id)->first();
-                $getbuyer_bank_details = DB::table('payment_medhods')->where('user_id', $get_order_data->buyer_id)->select('method_type')->get();
+                $ratedRecords = TradingRating::where('order_id', $orderid)->where('seller_id', Auth::user()->id)->first();
+                $getbuyer_bank_details = DB::table('payment_methods')->where('user_id', $get_order_data->buyer_id)->select('method_type')->get();
 
                 if (!empty($get_buyer_details)) {
                     $buyer_details = $get_buyer_details;
@@ -6587,9 +6591,9 @@ class HomeController extends Controller
     // To check entity is verified or not on dashboard page
     public function is_entity_verified($id)
     {
-        $entity = entities::where('user_id', $id)->first();
-        $entitydocs = businessDocs::where('user_id', $id)->first();
-        $related_parties = relatedParties::where('user_id', $id)->first();
+        $entity = Entity::where('user_id', $id)->first();
+        $entitydocs = BusinessDoc::where('user_id', $id)->first();
+        $related_parties = RelatedParty::where('user_id', $id)->first();
 
         if ((empty($entity->reg_num) || empty($entity->DOB_incorpor) || empty($entity->DOB_incorpor) || empty($entity->contact_num) ||  empty($entity->fund_source) || empty($entity->cap_source) ||
                 empty($entity->wealth_source) || empty($entity->share_holds) ||  empty($entity->listed_cntry) || empty($entity->regstrd_cntry) || empty($entity->entity_nature) || empty($entity->appli_purpose) ||
@@ -6683,7 +6687,7 @@ class HomeController extends Controller
 
         $response = curl_exec($curl);
         // print_r(json_decode($response));
-        curl_close($curl);
+        // curl_close($curl); // Deprecated in PHP 8.0+, cURL handles are automatically cleaned up
         //   echo $response;
         return json_decode($response);
     }
@@ -6711,8 +6715,8 @@ class HomeController extends Controller
             $ch = $amount / $response->result;
             //  print_r($amount/$response->result);
 
-            //  $updateColumn =  currencies::where('name', $to_selected_global_currency)->update(['currencyVal_by_INR' => $response->result]);
-            $updateColumn =  currencies::where('name', $to)->update(['currencyVal_by_USD' => $ch]);
+            //  $updateColumn =  Currency::where('name', $to_selected_global_currency)->update(['currencyVal_by_INR' => $response->result]);
+            $updateColumn =  Currency::where('name', $to)->update(['currencyVal_by_USD' => $ch]);
         }
     }
 
@@ -6745,7 +6749,7 @@ class HomeController extends Controller
                 $orderid = $id;
 
                 $get_order_data = Order::where('id', $lastSegment)->where('buyer_id', Auth::user()->id)->first();
-                $ratedRecords = Tradingratings::where('order_id', $lastSegment)->where('buyer_id', Auth::user()->id)->first();
+                $ratedRecords = TradingRating::where('order_id', $lastSegment)->where('buyer_id', Auth::user()->id)->first();
                 $config_data = config::all();
 
 
@@ -6774,7 +6778,7 @@ class HomeController extends Controller
 
                 $get_seller_details = DB::table('users')->where('id', $get_order_data->seller_id)->first();
 
-                $getbuyer_bank_details = PaymentMedhods::where('user_id', $get_order_data->buyer_id)->where('deleted_at', '=', NULL)->get();
+                $getbuyer_bank_details = PaymentMethod::where('user_id', $get_order_data->buyer_id)->where('deleted_at', '=', NULL)->get();
 
                 if ($get_seller_details) {
 
@@ -6811,7 +6815,7 @@ class HomeController extends Controller
             $orderid = $lastSegment;
             //print_r($_SESSION);
             $get_order_data = Order::where('id', $orderid)->where('buyer_id', Auth::user()->id)->first();
-            $ratedRecords = Tradingratings::where('order_id', $orderid)->where('buyer_id', Auth::user()->id)->first();
+            $ratedRecords = TradingRating::where('order_id', $orderid)->where('buyer_id', Auth::user()->id)->first();
             $config_data = config::all();
 
 
@@ -6849,15 +6853,15 @@ class HomeController extends Controller
             // $getbuyer_bank_details = json_decode($get_order_data->payment_account_details,true);
             // echo "<pre>"; print_r($getbuyer_bank_details); die;
 
-            //$getbuyer_bank_details = PaymentMedhods::where('user_id', $get_order_data->buyer_id)->where('deleted_at','=',NULL)->select('method_type')->get();
-            $getbuyer_bank_details = PaymentMedhods::where('user_id', $get_order_data->buyer_id)->where('deleted_at', '=', NULL)->get();
+            //$getbuyer_bank_details = PaymentMethod::where('user_id', $get_order_data->buyer_id)->where('deleted_at','=',NULL)->select('method_type')->get();
+            $getbuyer_bank_details = PaymentMethod::where('user_id', $get_order_data->buyer_id)->where('deleted_at', '=', NULL)->get();
             //echo "<pre>"; print_r($getbuyer_bank_details); die;
             // print_r($get_order_data->buyer_id);
             // $getseller_bank_details=[];
 
             //print_r($methodtype);
             if ($get_seller_details) {
-                //  $getseller_bank_details[] = PaymentMedhods::where('user_id', $get_seller_details->id)->where('deleted_at','=',NULL)->where('method_type',$methodtype)->get();
+                //  $getseller_bank_details[] = PaymentMethod::where('user_id', $get_seller_details->id)->where('deleted_at','=',NULL)->where('method_type',$methodtype)->get();
                 $getseller_bank_details = Order::where('seller_id', $get_order_data->seller_id)->where('id', $orderid)->first();
             } else {
                 $getseller_bank_details = null;
@@ -7226,7 +7230,7 @@ class HomeController extends Controller
 
             if ($ifOrderUpdated > 0) {
 
-                Postads::where('adsid', $get_order_data->adsid)->update(['status' => 2]);
+                Postad::where('adsid', $get_order_data->adsid)->update(['status' => 2]);
 
                 // escrow account insert or update
                 $countEscrowRecord = Escrow::where('orderId', $orderid)->count();
@@ -7345,9 +7349,9 @@ class HomeController extends Controller
 
         $seller_id = $request->seller_id;
         //$buyer_id = $get_order_data->buyer_id;
-        $checkbuyer = Tradingratings::where('seller_id', $seller_id)->where('order_id', $orderid)->first();
+        $checkbuyer = TradingRating::where('seller_id', $seller_id)->where('order_id', $orderid)->first();
         if ($checkbuyer == null) {
-            $rating = new Tradingratings;
+            $rating = new TradingRating;
             $rating->order_id = $orderid;
             //$rating->buyer_id =$buyer_id;
             $rating->seller_id = $seller_id;
@@ -7361,10 +7365,10 @@ class HomeController extends Controller
         } else {
             //$buyer_id = $request->buyer_id;
             if ($request->rating_type == 'PositiveRating') {
-                $update = Tradingratings::where('seller_id', $seller_id)->where('order_id', $orderid)->update(['positive_rating' => $PositiveRating, 'negative_rating' => $NegativeRating]);
+                $update = TradingRating::where('seller_id', $seller_id)->where('order_id', $orderid)->update(['positive_rating' => $PositiveRating, 'negative_rating' => $NegativeRating]);
             }
             if ($request->rating_type == 'NegativeRating') {
-                $update = Tradingratings::where('seller_id', $seller_id)->where('order_id', $orderid)->update(['negative_rating' => $NegativeRating, 'positive_rating' => $PositiveRating]);
+                $update = TradingRating::where('seller_id', $seller_id)->where('order_id', $orderid)->update(['negative_rating' => $NegativeRating, 'positive_rating' => $PositiveRating]);
             }
             if ($update) {
                 return response()->json(['message' => 'Rating submiteupdated successfully', 'rateType' => $request->rating_type]);
@@ -7396,9 +7400,9 @@ class HomeController extends Controller
 
         $buyer_id = $request->buyer_id;
 
-        $checkbuyer = Tradingratings::where('buyer_id', $buyer_id)->where('order_id', $orderid)->first();
+        $checkbuyer = TradingRating::where('buyer_id', $buyer_id)->where('order_id', $orderid)->first();
         if ($checkbuyer == null) {
-            $rating = new Tradingratings;
+            $rating = new TradingRating;
             $rating->order_id = $orderid;
             $rating->buyer_id = $buyer_id;
             //$rating->seller_id =$seller_id;
@@ -7412,10 +7416,10 @@ class HomeController extends Controller
         } else {
             //$buyer_id = $request->buyer_id;
             if ($request->rating_type == 'PositiveRating') {
-                $update = Tradingratings::where('buyer_id', $buyer_id)->where('order_id', $orderid)->update(['positive_rating' => $PositiveRating, 'negative_rating' => $NegativeRating]);
+                $update = TradingRating::where('buyer_id', $buyer_id)->where('order_id', $orderid)->update(['positive_rating' => $PositiveRating, 'negative_rating' => $NegativeRating]);
             }
             if ($request->rating_type == 'NegativeRating') {
-                $update = Tradingratings::where('buyer_id', $buyer_id)->where('order_id', $orderid)->update(['negative_rating' => $NegativeRating, 'positive_rating' => $PositiveRating]);
+                $update = TradingRating::where('buyer_id', $buyer_id)->where('order_id', $orderid)->update(['negative_rating' => $NegativeRating, 'positive_rating' => $PositiveRating]);
             }
             if ($update) {
                 return response()->json(['message' => 'Rating submited successfully', 'rateType' => $request->rating_type]);
@@ -7459,7 +7463,7 @@ class HomeController extends Controller
         */
 
         if ($data_id) {
-            $getbuyerdetails = Postads::where('adsid', $data_id)->where('status', 1)->latest()->first();
+            $getbuyerdetails = Postad::where('adsid', $data_id)->where('status', 1)->latest()->first();
             if ($getbuyerdetails->ordertype == 0) {
                 $buyer_id = $getbuyerdetails->userid; // Coin buy by buyer
                 $seller_id =  Auth::user()->id;
@@ -7467,7 +7471,7 @@ class HomeController extends Controller
                 $payment_method_type = [];
                 foreach ($payment_methods as $key => $value) {
                     $method_id =  json_decode($value)->id;
-                    $payment_method = PaymentMedhods::where('id', $method_id)->first();
+                    $payment_method = PaymentMethod::where('id', $method_id)->first();
                     if ($payment_method) {
                         $payment_method_type[] = $payment_method;
                         $method_ids = [];
@@ -7479,7 +7483,7 @@ class HomeController extends Controller
                     }
                 }
                 // ======================== Extra code
-                $payment_account_details_for_buyer = PaymentMedhods::where('user_id', $buyer_id)
+                $payment_account_details_for_buyer = PaymentMethod::where('user_id', $buyer_id)
                     ->whereIn('id', $method_ids)
                     ->where('deleted_at', null)
                     ->get();
@@ -7489,7 +7493,7 @@ class HomeController extends Controller
                 $buyer_country = User::where('id', $buyer_id)->first();
                 $buyer_country_name = $buyer_country->country;
                 // ======================== Extra code
-                $payment_account_details_for_seller = PaymentMedhods::where('user_id', $seller_id)
+                $payment_account_details_for_seller = PaymentMethod::where('user_id', $seller_id)
                     ->whereIn('method_type', $method_type)
                     ->where('deleted_at', '=', NULL)
                     ->get();
@@ -7502,7 +7506,7 @@ class HomeController extends Controller
                 $payment_method_type = [];
                 foreach ($payment_methods as $key => $value) {
                     $method_id =  json_decode($value)->id;
-                    $payment_method = PaymentMedhods::where('id', $method_id)->first();
+                    $payment_method = PaymentMethod::where('id', $method_id)->first();
                     if ($payment_method) {
                         $payment_method_type[] = $payment_method;
                         $method_ids = [];
@@ -7516,7 +7520,7 @@ class HomeController extends Controller
                 // dd($method_type);
 
                 // ======================== Extra code
-                $payment_account_details_for_buyer = PaymentMedhods::where('user_id', $seller_id)
+                $payment_account_details_for_buyer = PaymentMethod::where('user_id', $seller_id)
                     ->whereIn('id', $method_ids)
                     ->where('deleted_at', null)
                     ->get();
@@ -7527,7 +7531,7 @@ class HomeController extends Controller
                 $seller_country =  $seller_country_name->country;
 
                 // ======================== Extra code
-                $payment_account_details_for_seller = PaymentMedhods::where('user_id', $buyer_id)
+                $payment_account_details_for_seller = PaymentMethod::where('user_id', $buyer_id)
                     ->whereIn('method_type', $method_type)
                     ->where('deleted_at', '=', NULL)
                     ->get(); // ============================
@@ -7697,7 +7701,8 @@ class HomeController extends Controller
 
                 $orderdata =  Order::where('id', $orderId)->latest()->first();
                 $order_accept_action = $orderdata->order_accept_action;
-                $user = auth()->user();
+                /** @var User|null $user */
+                $user = User::find(Auth::id());
                 $notification_category_id = NotificationCategory::where('id', 2)->first();
                 $orderstatus = $orderdata->order_status;
                 $seller_confirmation_status = $orderdata->seller_confirmation_status;
@@ -7717,7 +7722,9 @@ class HomeController extends Controller
                 }
 
                 //$orderstatus=2;
-                $user->notify(new TradeNotification($orderdata, $notification_category_id, $orderstatus, $seller_confirmation_status, $buyer_confirmation_status, $order_accept_action, $orderId, $buyer_id, $seller_id));
+                if ($user) {
+                    $user->notify(new TradeNotification($orderdata, $notification_category_id, $orderstatus, $seller_confirmation_status, $buyer_confirmation_status, $order_accept_action, $orderId, $buyer_id, $seller_id));
+                }
                 session()->forget('orderid');
                 return response()->json(['message' => 'success', 'order_data' => $can_order_data]);
             } else {
@@ -7737,7 +7744,8 @@ class HomeController extends Controller
             if ($can_order_data) {
                 $orderdata =  Order::where('id', $orderId)->latest()->first();
                 $order_accept_action = $orderdata->order_accept_action;
-                $user = auth()->user();
+                /** @var User|null $user */
+                $user = User::find(Auth::id());
                 $notification_category_id = NotificationCategory::where('id', 2)->first();
                 $orderstatus = $orderdata->order_status;
                 $seller_confirmation_status = $orderdata->seller_confirmation_status;
@@ -7745,7 +7753,7 @@ class HomeController extends Controller
                 $orderId = $orderId;
 
                 // updating cancelation
-                $user_account_activity = new user_account_activity;
+                $user_account_activity = new UserAccountActivity;
                 $user_account_activity->user_id = $request->user_cancel_id;
                 $user_account_activity->order_id = $request->order_id;
                 $user_account_activity->reason_id = $request->reason;
@@ -7776,7 +7784,9 @@ class HomeController extends Controller
                 }
 
                 //$orderstatus=2;
-                $user->notify(new TradeNotification($orderdata, $notification_category_id, $orderstatus, $seller_confirmation_status, $buyer_confirmation_status, $order_accept_action, $orderId, $buyer_id, $seller_id));
+                if ($user) {
+                    $user->notify(new TradeNotification($orderdata, $notification_category_id, $orderstatus, $seller_confirmation_status, $buyer_confirmation_status, $order_accept_action, $orderId, $buyer_id, $seller_id));
+                }
                 session()->forget('orderid');
                 return response()->json(['message' => 'success', 'order_data' => $can_order_data]);
             } else {
@@ -7803,7 +7813,7 @@ class HomeController extends Controller
 
     public function fetch_user_last_activity($user_id)
     {
-        $query = LoginDetails::where(user_id, $user_id)->orderBy('id', 'DESC')->limit(1)->get();
+        $query = LoginDetail::where('user_id', $user_id)->orderBy('id', 'DESC')->limit(1)->get();
         foreach ($query as $row) {
             return $row->last_activity;
         }
@@ -7854,7 +7864,7 @@ class HomeController extends Controller
             'last_activity'        =>    now()
         );
 
-        $lastactivity = LoginDetails::where('login_details_id', '=', $login_details_id)->update($data);
+        $lastactivity = LoginDetail::where('login_details_id', '=', $login_details_id)->update($data);
     }
     public function update_is_type_status(Request $request)
     {
@@ -7864,7 +7874,7 @@ class HomeController extends Controller
             'is_type'        =>    $request->is_type
         );
 
-        $lastactivity = LoginDetails::where('login_details_id', '=', $login_details_id)->update($data);
+        $lastactivity = LoginDetail::where('login_details_id', '=', $login_details_id)->update($data);
     }
 
     public function insert_chat(Request $request)
@@ -8119,16 +8129,40 @@ class HomeController extends Controller
     public function groupchat(Request $request)
     {
         // session_start();
-        if ($request->action = 'insert_data') {
+        if ($request->action == 'insert_data') {
+            // Handle image upload if file is present
+            if ($request->hasFile('uploadFile') && $request->file('uploadFile')->isValid()) {
+                $file = $request->file('uploadFile');
+                $_source_path = $file->getPathname();
+                $target_path = 'upload/' . $file->getClientOriginalName();
+
+                if (move_uploaded_file($_source_path, $target_path)) {
+                    $data = array(
+                        'to_user_id'        =>    0,
+                        'from_user_id'        =>    session('user_id'),
+                        'chat_message'        =>    $target_path,
+                        'status'            =>    '1'
+                    );
+
+                    $insertdatatoChat = Chat::insert($data);
+                    return '<p><img src="' . $target_path . '" class="img-thumbnail" width="200" height="160" /></p><br />';
+                }
+            }
+
+            // Handle text message
             $data = array(
                 'to_user_id'        =>    0,
                 'from_user_id'        =>    session('user_id'),
-                'chat_message'        =>    $_source_path,
+                'chat_message'        =>    $request->chat_message,
                 'status'            =>    '1'
             );
 
             $insertdatatoChat = Chat::insert($data);
-            return '<p><img src="' . $target_path . '" class="img-thumbnail" width="200" height="160" /></p><br />';
+
+            if ($insertdatatoChat) {
+                return response()->json(['success' => true, 'message' => 'Chat message inserted successfully']);
+            }
+            return response()->json(['success' => false, 'message' => 'Failed to insert chat message']);
         }
         // if($request->action = 'fetch_data'){
 
@@ -8189,7 +8223,7 @@ class HomeController extends Controller
     {
         // print_r($request->all());
         //   $found_record = Tradingratings::where('order_id', $request->order_id)->orwhere('buyer_id', Auth::user()->id)->orWhere('seller_id', Auth::user()->id)->first();
-        $found_record = Tradingratings::where('order_id', '=', $request->order_id)
+        $found_record = TradingRating::where('order_id', '=', $request->order_id)
             ->where(function ($query) {
                 $query->where('buyer_id', '=', Auth::user()->id)
                     ->orWhere('seller_id', '=', Auth::user()->id);
@@ -8229,7 +8263,7 @@ class HomeController extends Controller
         //  print_r($allajaxdata);
         $orderid = $request->orderid;
 
-        $deleterating = Tradingratings::where('order_id', $orderid)->where($request->trader_type, Auth::user()->id)->delete();
+        $deleterating = TradingRating::where('order_id', $orderid)->where($request->trader_type, Auth::user()->id)->delete();
         if ($deleterating) {
             return response()->json(['message' => 'Rating deleted'], 200);
         } else {
@@ -8653,9 +8687,9 @@ class HomeController extends Controller
         //  print_r($categorySlugs);
 
         $all_announcements = Announcement::orderBy('id', 'DESC')->get();
-        $announcements_categories = Announcement_category::all();
+        $announcements_categories = AnnouncementCategory::all();
 
-        $selected_category_detail  = Announcement_category::where('slugs', $categorySlugs)->first();
+        $selected_category_detail  = AnnouncementCategory::where('slugs', $categorySlugs)->first();
         $selected_annoncements_OfSelected_category  = Announcement::where('category_id', $selected_category_detail->id)->orderBy('id', 'DESC')->paginate(10);
         $announcements_Count = $all_announcements->count();
         return view('web.announcement_categories', compact('all_announcements', 'announcements_categories', 'announcements_Count', 'selected_category_detail', 'selected_annoncements_OfSelected_category'));
@@ -8671,13 +8705,13 @@ class HomeController extends Controller
         // print_r($articelSlugs);
         // $all_announcements = Announcement::orderBy('id', 'DESC')->paginate(11);
 
-        $announcements_categories = Announcement_category::all();
+        $announcements_categories = AnnouncementCategory::all();
         //  $selected_annoncements_OfSelected_category  = Announcement::where('category_id', $categoryId)->orderBy('id', 'DESC')->paginate(10);
 
 
         $get_announcement = Announcement::where('slugs', $articelSlugs)->orderBy('id', 'DESC')->first();
         //dd($get_announcement);
-        $selected_annoncements_category  = Announcement_category::where('id', $get_announcement->category_id)->orderBy('id', 'DESC')->first();
+        $selected_annoncements_category  = AnnouncementCategory::where('id', $get_announcement->category_id)->orderBy('id', 'DESC')->first();
         $all_annoncements_OfSelected_category = Announcement::where('category_id', $selected_annoncements_category->id)->orderBy('id', 'DESC')->paginate(10);
         //  $announcements_Count= $all_announcements->count();
 
@@ -9175,7 +9209,7 @@ class HomeController extends Controller
          * @param int $status 	0=inactive,1=active, 2=block, 3=staking
          * @return total available of coins
          **/
-        $query = marketWallet::where('user_id', $userID)
+        $query = MarketWallet::where('user_id', $userID)
             ->where('coin_name', $coinName)
             //->where('coin_type', $coinType)
             ->where('type_of_coin', $typeOfCoin)
@@ -9188,7 +9222,7 @@ class HomeController extends Controller
             $query->where('status', $status);
         }
 
-        $total = $query->sum('no_of_coin');
+        $total = $query->sum(DB::raw('CAST(no_of_coin AS NUMERIC)'));
 
 
 
@@ -9207,7 +9241,7 @@ class HomeController extends Controller
          * @param int $status 	0=inactive,1=active, 2=block, 3=staking
          * @return total available of coins
          **/
-        $query = marketWallet::where('coin_name', $coinName)
+        $query = MarketWallet::where('coin_name', $coinName)
             //->where('coin_type', $coinType)
             ->where('type_of_coin', $typeOfCoin)
             ->where('transaction_status', $transactionStatus);
@@ -9219,7 +9253,7 @@ class HomeController extends Controller
             $query->where('status', $status);
         }
 
-        $total = $query->sum('no_of_coin');
+        $total = $query->sum(DB::raw('CAST(no_of_coin AS NUMERIC)'));
 
 
 
@@ -9395,7 +9429,7 @@ class HomeController extends Controller
             $crypto_value_based_on_currency_type = $currencies_name->per_coin;
             $available_ballence_in_selected_currency = $available_coin * $crypto_value_based_on_currency_type;
             $adsID = $request->ads_id;
-            $Countryparty_Conditions = Postads::where('adsid', $adsID)->first();
+            $Countryparty_Conditions = Postad::where('adsid', $adsID)->first();
             $cc = json_decode($Countryparty_Conditions->countryparty_condition);
             //  print_r($cc->CompletedKYC);
             //  CompletedKYC] => 1 [registerd_account_day] => 50 [holding_coin] => 200
@@ -9439,7 +9473,7 @@ class HomeController extends Controller
             $orderid = session('orderid');
             //print_r(session()->all());
             $get_order_data = Order::where('id', $orderid)->where('buyer_id', Auth::user()->id)->first();
-            $ratedRecords = Tradingratings::where('order_id', $orderid)->where('buyer_id', Auth::user()->id)->first();
+            $ratedRecords = TradingRating::where('order_id', $orderid)->where('buyer_id', Auth::user()->id)->first();
 
             $accept_by_buyer_orderid = $request->accept_by_buyer_orderid;
             $cancel_by_buyer_orderid = $request->cancel_by_buyer_orderid;
@@ -9467,15 +9501,15 @@ class HomeController extends Controller
             // $getbuyer_bank_details = json_decode($get_order_data->payment_account_details,true);
             // echo "<pre>"; print_r($getbuyer_bank_details); die;
 
-            //$getbuyer_bank_details = PaymentMedhods::where('user_id', $get_order_data->buyer_id)->where('deleted_at','=',NULL)->select('method_type')->get();
-            $getbuyer_bank_details = PaymentMedhods::where('user_id', $get_order_data->buyer_id)->where('deleted_at', '=', NULL)->get();
+            //$getbuyer_bank_details = PaymentMethod::where('user_id', $get_order_data->buyer_id)->where('deleted_at','=',NULL)->select('method_type')->get();
+            $getbuyer_bank_details = PaymentMethod::where('user_id', $get_order_data->buyer_id)->where('deleted_at', '=', NULL)->get();
             //echo "<pre>"; print_r($getbuyer_bank_details); die;
             // print_r($get_order_data->buyer_id);
             // $getseller_bank_details=[];
 
             //print_r($methodtype);
             if ($get_seller_details) {
-                //  $getseller_bank_details[] = PaymentMedhods::where('user_id', $get_seller_details->id)->where('deleted_at','=',NULL)->where('method_type',$methodtype)->get();
+                //  $getseller_bank_details[] = PaymentMethod::where('user_id', $get_seller_details->id)->where('deleted_at','=',NULL)->where('method_type',$methodtype)->get();
                 $getseller_bank_details = Order::where('seller_id', $get_order_data->seller_id)->where('id', $orderid)->first();
             } else {
                 $getseller_bank_details = null;
@@ -9512,13 +9546,13 @@ class HomeController extends Controller
             $url = $base_url . '/get_currency';
             $params = array();
 
-            $allpaymentMethod_list = payment_method_list::all();
+            $allpaymentMethod_list = PaymentMethodList::all();
             $country = Country::all();
 
             $bitcoin = Cryptocap::getSingleAsset('bitcoin');
             $ethereum = Cryptocap::getSingleAsset('ethereum');
 
-            $estimatedfee = Estimatedfee::first();
+            $estimatedfee = EstimatedFee::first();
             //dd($estimatedfee->fee_type);
 
             $allcurrency = collect($BmkApiController->verify_api($url, $params));
@@ -9539,10 +9573,10 @@ class HomeController extends Controller
 
             if (Auth::check()) {
 
-                $userPaymentMethod = PaymentMedhods::where('user_id', '=', Auth::user()->id)->get();
+                $userPaymentMethod = PaymentMethod::where('user_id', '=', Auth::user()->id)->get();
                 $userPaymentMethodcount = $userPaymentMethod->count();
-                $allpaymentMethod = Banks::all();
-                $allpaymentMethod_list = payment_method_list::all();
+                $allpaymentMethod = Bank::all();
+                $allpaymentMethod_list = PaymentMethodList::all();
             } else {
                 $allpaymentMethod = 0;
                 $allpaymentMethod_list = 0;
@@ -9569,8 +9603,8 @@ class HomeController extends Controller
     {
         if (Auth::check()) {
 
-            // $alladsData = Postads::where('userid', Auth::user()->id)->orderBy('status', 'desc')->paginate(15); 30052023
-            $alladsData = Postads::where('userid', Auth::user()->id)->orderBy('id', 'desc')->paginate(5);
+            // $alladsData = Postad::where('userid', Auth::user()->id)->orderBy('status', 'desc')->paginate(15); 30052023
+            $alladsData = Postad::where('userid', Auth::user()->id)->orderBy('id', 'desc')->paginate(5);
             $allads = [];
             $base_url = env('BMK_API_BASE_URL');
             $BmkApiController = new BmkApiController;
@@ -9597,7 +9631,7 @@ class HomeController extends Controller
 
                     //         $payment_method_type = [];
                     //         foreach ($paymentmethodid as $key => $value) {
-                    //           // $payment_method = PaymentMedhods::where('id', intval($value))->first();
+                    //           // $payment_method = PaymentMethod::where('id', intval($value))->first();
                     //          if ($payment_method) {
                     //             $payment_method_type[] = $payment_method->method_type;
                     //               }
@@ -9615,11 +9649,11 @@ class HomeController extends Controller
 
             if (Auth::check()) {
 
-                // $userPaymentMethod = PaymentMedhods::where('user_id', '=', Auth::user()->id)->get();
-                $userPaymentMethod = PaymentMedhods::where('user_id', '=', Auth::user()->id)->get();
+                // $userPaymentMethod = PaymentMethod::where('user_id', '=', Auth::user()->id)->get();
+                $userPaymentMethod = PaymentMethod::where('user_id', '=', Auth::user()->id)->get();
                 $userPaymentMethodcount = $userPaymentMethod->count();
-                $allpaymentMethod = Banks::all();
-                $allpaymentMethod_list = payment_method_list::all();
+                $allpaymentMethod = Bank::all();
+                $allpaymentMethod_list = PaymentMethodList::all();
             } else {
                 $allpaymentMethod = 0;
                 $allpaymentMethod_list = 0;
@@ -9690,7 +9724,7 @@ class HomeController extends Controller
             // end here we are recieving whole details of payment Method by id id and storing this into database by converting it in json formate.
 
 
-            $ads = new Postads;
+            $ads = new Postad;
             $ads->adsid = mt_rand(1000000000, 9999999999);
             $ads->userid = Auth::user()->id;
             $ads->ordertype = $request->ordertype;
@@ -9804,7 +9838,7 @@ class HomeController extends Controller
 
             ];
 
-            $adsupdated = Postads::where('id', $id)->update($data);
+            $adsupdated = Postad::where('id', $id)->update($data);
 
             if ($adsupdated) {
                 return response()->json(['success' => 'Succesfully Edited'], 200);
@@ -9817,7 +9851,7 @@ class HomeController extends Controller
     public function ChangePostAdsStatus(Request $request)
     {
         //dd($request->ads_id);
-        $ads = Postads::find($request->ads_id);
+        $ads = Postad::find($request->ads_id);
         $ads->status = $request->status;
         $ads->save();
 
@@ -9830,7 +9864,7 @@ class HomeController extends Controller
         $ads_ids = $request->ads_id;
         $status = $request->status;
         foreach ($ads_ids as $ads_id) {
-            $ads = Postads::find($ads_id);
+            $ads = Postad::find($ads_id);
             $ads->status = $status;
             $ads->save();
         }
@@ -9841,7 +9875,7 @@ class HomeController extends Controller
     public function adsPostdelete(Request $request)
     {
         $id = $request->adsid;
-        Postads::find($id)->delete();
+        Postad::find($id)->delete();
 
         return back();
     }
@@ -9867,7 +9901,7 @@ class HomeController extends Controller
     {
 
         //   $find_user_account_activity = user_account_activity::where('user_id',$userid)->whereDate('created_at', today())->count();
-        $find_user_account_activity = user_account_activity::where('user_id', $userid)
+        $find_user_account_activity = UserAccountActivity::where('user_id', $userid)
             ->whereDate('created_at', today())
             ->count();
 
@@ -9876,9 +9910,9 @@ class HomeController extends Controller
 
             if ($totalcancleorder_perday == 3) {
                 // updating cancelation
-                $update_user_account_activity = user_account_activity::where('order_id', $orderid)->where('user_id', $userid)->update(['buying_status' => 0]);
+                $update_user_account_activity = UserAccountActivity::where('order_id', $orderid)->where('user_id', $userid)->update(['buying_status' => 0]);
 
-                $count_user_account_activity = user_account_activity::where('order_id', $orderid)->where('buying_status', 0)->count();
+                $count_user_account_activity = UserAccountActivity::where('order_id', $orderid)->where('buying_status', 0)->count();
 
                 if ($count_user_account_activity > 0) {
                     $result = 1; // '1 means record found and updated successfully'
@@ -9897,7 +9931,7 @@ class HomeController extends Controller
     public function checkSusspensionStatus($userid)
     {
 
-        $checkSusspensionStatus = user_account_activity::where('user_id', $userid)->where('buying_status', 0)->whereDate('updated_at', today())->count();
+        $checkSusspensionStatus = UserAccountActivity::where('user_id', $userid)->where('buying_status', 0)->whereDate('updated_at', today())->count();
 
         if ($checkSusspensionStatus > 0) {
             $value = 1;
@@ -9910,7 +9944,7 @@ class HomeController extends Controller
     public function failed_digilocker_details(Request $request)
     {
 
-        $details = failed_verification_history::where('user_id', $request->userID)->get();
+        $details = FailedVerificationHistory::where('user_id', $request->userID)->get();
         return response()->json(['failedDetail' => $details]);
     }
 
@@ -9932,7 +9966,7 @@ class HomeController extends Controller
 
 
         if (Auth::check()) {
-            $userPaymentMethod = PaymentMedhods::where('user_id', '=', Auth::user()->id)->where('deleted_at', null)->get();
+            $userPaymentMethod = PaymentMethod::where('user_id', '=', Auth::user()->id)->where('deleted_at', null)->get();
             $userPaymentMethodcount = $userPaymentMethod->count();
         } else {
             $userPaymentMethod = 0;
@@ -9940,36 +9974,36 @@ class HomeController extends Controller
         }
 
 
-        $get_BTC_orders = Postads::where('cryptoname', '=', 'BTC')->where('status', 1)->where('ordertype', 1)
+        $get_BTC_orders = Postad::where('cryptoname', '=', 'BTC')->where('status', 1)->where('ordertype', 1)
             ->orderBy('id', 'desc')
             ->paginate(10);
 
-        $get_ETH_orders = Postads::where('cryptoname', '=', 'ETH')->where('status', 1)->where('ordertype', 1)
+        $get_ETH_orders = Postad::where('cryptoname', '=', 'ETH')->where('status', 1)->where('ordertype', 1)
             ->orderBy('id', 'desc')
             ->paginate(10);
 
         if (Auth::check()) {
-            $get_BMK_orders = Postads::where('cryptoname', '=', 'BMK')->Where('userid', '!=', Auth::user()->id)->where('status', 1)->where('ordertype', 1)
+            $get_BMK_orders = Postad::where('cryptoname', '=', 'BMK')->Where('userid', '!=', Auth::user()->id)->where('status', 1)->where('ordertype', 1)
                 ->orderBy('id', 'desc')
                 ->paginate(10);
         } else {
-            $get_BMK_orders = Postads::where('cryptoname', '=', 'BMK')->where('status', 1)->where('ordertype', 1)
+            $get_BMK_orders = Postad::where('cryptoname', '=', 'BMK')->where('status', 1)->where('ordertype', 1)
                 ->orderBy('id', 'desc')
                 ->paginate(10);
         }
 
 
         if (Auth::check()) {
-            $ifpaymentMethod = PaymentMedhods::where('user_id', Auth::user()->id)->paginate(3);
+            $ifpaymentMethod = PaymentMethod::where('user_id', Auth::user()->id)->paginate(3);
         } else {
             $ifpaymentMethod = 0;
         }
 
-        $allpaymentMethod = Banks::all();
+        $allpaymentMethod = Bank::all();
 
         $paymentType = $request->paymentType;
-        $count_payment_type = Postads::where('cryptoname', '=', 'BMK')->where('status', 1)->where('ordertype', 1)->count();
-        $allpaymentMethod_list = payment_method_list::all();
+        $count_payment_type = Postad::where('cryptoname', '=', 'BMK')->where('status', 1)->where('ordertype', 1)->count();
+        $allpaymentMethod_list = PaymentMethodList::all();
 
         $base_url = env('BMK_API_BASE_URL');
         $BmkApiController = new \App\Http\Controllers\BmkApiController;
@@ -9989,13 +10023,13 @@ class HomeController extends Controller
         }
 
 
-        $all_sell_request = Postads::where('status', 1)->get();
+        $all_sell_request = Postad::where('status', 1)->get();
 
         $buyList_details =   $get_BMK_orders->map(function ($item) {
 
             $username = User::where('id', $item->userid)->first();
             $buylist_mapped_details['username'] = isset($username->nick_name) ? $username->nick_name  : $username->first_name;
-            $countbmk_orders = Postads::where('userid', $item->userid)->where('cryptoname', "$item->cryptoname")->get();
+            $countbmk_orders = Postad::where('userid', $item->userid)->where('cryptoname', "$item->cryptoname")->get();
             $user_last_activity = User::where('id', $item->userid)->first();
             $buylist_mapped_details['id'] = $item->id;
             $buylist_mapped_details['payment_method'] = $item->payment_method;
@@ -10019,7 +10053,7 @@ class HomeController extends Controller
 
 
 
-            $first_order = Postads::where('id', '=', $item->id)->first();
+            $first_order = Postad::where('id', '=', $item->id)->first();
             $getadsid = $first_order->adsid;
             $today = date('Y-m-d');
             $activeorders = Order::where('order_status', '=', 1)
@@ -10087,7 +10121,7 @@ class HomeController extends Controller
 
 
         if (Auth::check()) {
-            $userPaymentMethod = PaymentMedhods::where('user_id', '=', Auth::user()->id)->where('deleted_at', null)->get();
+            $userPaymentMethod = PaymentMethod::where('user_id', '=', Auth::user()->id)->where('deleted_at', null)->get();
             $userPaymentMethodcount = $userPaymentMethod->count();
         } else {
             $userPaymentMethod = 0;
@@ -10095,42 +10129,49 @@ class HomeController extends Controller
         }
 
 
-        $get_BTC_orders = Postads::where('cryptoname', '=', 'BTC')->where('status', 1)->where('ordertype', 1)
+        $get_BTC_orders = Postad::where('cryptoname', '=', 'BTC')->where('status', 1)->where('ordertype', 1)
             ->orderBy('id', 'desc')
             ->paginate(10);
 
-        $get_ETH_orders = Postads::where('cryptoname', '=', 'ETH')->where('status', 1)->where('ordertype', 1)
+        $get_ETH_orders = Postad::where('cryptoname', '=', 'ETH')->where('status', 1)->where('ordertype', 1)
             ->orderBy('id', 'desc')
             ->paginate(10);
 
         if (Auth::check()) {
-            $get_BMK_orders = Postads::where('cryptoname', '=', 'BMK')->Where('userid', '!=', Auth::user()->id)->where('status', 1)->where('ordertype', 1)
+            $get_BMK_orders = Postad::where('cryptoname', '=', 'BMK')->Where('userid', '!=', Auth::user()->id)->where('status', 1)->where('ordertype', 1)
                 ->orderBy('id', 'desc')
                 ->paginate(10);
         } else {
-            $get_BMK_orders = Postads::where('cryptoname', '=', 'BMK')->where('status', 1)->where('ordertype', 1)
+            $get_BMK_orders = Postad::where('cryptoname', '=', 'BMK')->where('status', 1)->where('ordertype', 1)
                 ->orderBy('id', 'desc')
                 ->paginate(10);
         }
 
 
         if (Auth::check()) {
-            $ifpaymentMethod = PaymentMedhods::where('user_id', Auth::user()->id)->paginate(3);
+            $ifpaymentMethod = PaymentMethod::where('user_id', Auth::user()->id)->paginate(3);
         } else {
             $ifpaymentMethod = 0;
         }
 
-        $allpaymentMethod = Banks::all();
+        $allpaymentMethod = Bank::all();
 
         $paymentType = $request->paymentType;
-        $count_payment_type = Postads::where('cryptoname', '=', 'BMK')->where('status', 1)->where('ordertype', 1)->count();
-        $allpaymentMethod_list = payment_method_list::all();
+        $count_payment_type = Postad::where('cryptoname', '=', 'BMK')->where('status', 1)->where('ordertype', 1)->count();
+        $allpaymentMethod_list = PaymentMethodList::all();
 
         $base_url = env('BMK_API_BASE_URL');
         $BmkApiController = new \App\Http\Controllers\BmkApiController;
         $url = $base_url . '/get_currency';
         $params = array();
-        $allcurrency = collect($BmkApiController->verify_api($url, $params));
+        $allcurrencyRaw = $BmkApiController->verify_api($url, $params);
+        if (!is_array($allcurrencyRaw)) {
+            $allcurrency = collect([]);
+        } else {
+            $allcurrency = collect($allcurrencyRaw)->map(function ($item) {
+                return is_array($item) ? (object)$item : $item;
+            });
+        }
 
 
         $currencyid = $request->CurrencyId;
@@ -10144,13 +10185,13 @@ class HomeController extends Controller
         }
 
 
-        $all_sell_request = Postads::where('status', 1)->get();
+        $all_sell_request = Postad::where('status', 1)->get();
 
-        $buyList_details =   $get_BMK_orders->map(function ($item) {
+        $buyList_details =   $get_BMK_orders->map(function ($item) use ($allcurrency) {
 
             $username = User::where('id', $item->userid)->first();
             $buylist_mapped_details['username'] = isset($username->nick_name) ? $username->nick_name  : $username->first_name;
-            $countbmk_orders = Postads::where('userid', $item->userid)->where('cryptoname', "$item->cryptoname")->get();
+            $countbmk_orders = Postad::where('userid', $item->userid)->where('cryptoname', "$item->cryptoname")->get();
             $user_last_activity = User::where('id', $item->userid)->first();
             $buylist_mapped_details['id'] = $item->id;
             $buylist_mapped_details['nick_name'] = $item->nick_name;
@@ -10160,14 +10201,9 @@ class HomeController extends Controller
             $buylist_mapped_details['onlneStatus'] = $user_last_activity->online_status;
             $buylist_mapped_details['created_at'] = $this->fetchDateFromSQL($item->created_at);
 
-            $base_url = env('BMK_API_BASE_URL');
-            $BmkApiController = new BmkApiController;
-            $url = $base_url . '/get_currency';
-            $params = array();
-            $allcurrency = collect($BmkApiController->verify_api($url, $params));
             $currencies = $allcurrency->where('id', $item->faithid)->first();
-            $currenciesname = $currencies->name;
-            $currencysymbol = $currencies->symbol;
+            $currenciesname = $currencies ? $currencies->name : '';
+            $currencysymbol = $currencies ? $currencies->symbol : '';
             $buylist_mapped_details['currenciesname'] = $currenciesname;
             $buylist_mapped_details['currencysymbol'] = $currencysymbol;
             $buylist_mapped_details['order_lower_limit'] = $item->order_lower_limit;
@@ -10176,7 +10212,7 @@ class HomeController extends Controller
 
 
 
-            $first_order = Postads::where('id', '=', $item->id)->first();
+            $first_order = Postad::where('id', '=', $item->id)->first();
             $getadsid = $first_order->adsid;
             $today = date('Y-m-d');
             $activeorders = Order::where('order_status', '=', 1)
@@ -10226,7 +10262,7 @@ class HomeController extends Controller
 
             $payment_method_type = array();
             foreach ($paymentmethodid as $key => $value) {
-                // $payment_method = App\Models\PaymentMedhods::where('id', $value)->first();
+                // $payment_method = App\Models\PaymentMethod::where('id', $value)->first();
                 // if ($payment_method) {
                 //       $payment_method_type[] = $payment_method;
                 //  }
@@ -10270,7 +10306,7 @@ class HomeController extends Controller
             //print_r($_SESSION);
 
             $get_order_data = Order::where('id', $orderid)->where('seller_id', Auth::user()->id)->first();
-            $ratedRecords = Tradingratings::where('order_id', $orderid)->where('seller_id', Auth::user()->id)->first();
+            $ratedRecords = TradingRating::where('order_id', $orderid)->where('seller_id', Auth::user()->id)->first();
             $config_data = config::all();
 
             //dd($get_order_data);
@@ -10315,15 +10351,15 @@ class HomeController extends Controller
             // $getbuyer_bank_details = json_decode($get_order_data->payment_account_details,true);
             // echo "<pre>"; print_r($getbuyer_bank_details); die;
 
-            //$getbuyer_bank_details = PaymentMedhods::where('user_id', $get_order_data->buyer_id)->where('deleted_at','=',NULL)->select('method_type')->get();
-            $getbuyer_bank_details = PaymentMedhods::where('user_id', $get_order_data->buyer_id)->where('deleted_at', '=', NULL)->get();
+            //$getbuyer_bank_details = PaymentMethod::where('user_id', $get_order_data->buyer_id)->where('deleted_at','=',NULL)->select('method_type')->get();
+            $getbuyer_bank_details = PaymentMethod::where('user_id', $get_order_data->buyer_id)->where('deleted_at', '=', NULL)->get();
             //echo "<pre>"; print_r($getbuyer_bank_details); die;
             // print_r($get_order_data->buyer_id);
             // $getseller_bank_details=[];
 
             //print_r($methodtype);
             if ($get_seller_details) {
-                //  $getseller_bank_details[] = PaymentMedhods::where('user_id', $get_seller_details->id)->where('deleted_at','=',NULL)->where('method_type',$methodtype)->get();
+                //  $getseller_bank_details[] = PaymentMethod::where('user_id', $get_seller_details->id)->where('deleted_at','=',NULL)->where('method_type',$methodtype)->get();
                 $getseller_bank_details = Order::where('buyer_id', $get_order_data->buyer_id)->where('id', $orderid)->latest()->first();
             } else {
                 $getseller_bank_details = null;
@@ -10370,7 +10406,7 @@ class HomeController extends Controller
                 ->first();
             if ($checkuserorder != '') {
                 $get_order_data = Order::where('id', $orderid)->where('seller_id', Auth::user()->id)->first();
-                $ratedRecords = Tradingratings::where('order_id', $orderid)->where('seller_id', Auth::user()->id)->first();
+                $ratedRecords = TradingRating::where('order_id', $orderid)->where('seller_id', Auth::user()->id)->first();
                 $config_data = config::all();
 
                 //dd($get_order_data);
@@ -10415,15 +10451,15 @@ class HomeController extends Controller
                 // $getbuyer_bank_details = json_decode($get_order_data->payment_account_details,true);
                 // echo "<pre>"; print_r($getbuyer_bank_details); die;
 
-                //$getbuyer_bank_details = PaymentMedhods::where('user_id', $get_order_data->buyer_id)->where('deleted_at','=',NULL)->select('method_type')->get();
-                $getbuyer_bank_details = PaymentMedhods::where('user_id', $get_order_data->buyer_id)->where('deleted_at', '=', NULL)->get();
+                //$getbuyer_bank_details = PaymentMethod::where('user_id', $get_order_data->buyer_id)->where('deleted_at','=',NULL)->select('method_type')->get();
+                $getbuyer_bank_details = PaymentMethod::where('user_id', $get_order_data->buyer_id)->where('deleted_at', '=', NULL)->get();
                 //echo "<pre>"; print_r($getbuyer_bank_details); die;
                 // print_r($get_order_data->buyer_id);
                 // $getseller_bank_details=[];
 
                 //print_r($methodtype);
                 if ($get_seller_details) {
-                    //  $getseller_bank_details[] = PaymentMedhods::where('user_id', $get_seller_details->id)->where('deleted_at','=',NULL)->where('method_type',$methodtype)->get();
+                    //  $getseller_bank_details[] = PaymentMethod::where('user_id', $get_seller_details->id)->where('deleted_at','=',NULL)->where('method_type',$methodtype)->get();
                     $getseller_bank_details = Order::where('buyer_id', $get_order_data->buyer_id)->where('id', $orderid)->first();
                 } else {
                     $getseller_bank_details = null;
@@ -10482,7 +10518,7 @@ class HomeController extends Controller
                     $get_order_data = Order::where('id', $lastSegment)->first();
 
                     $get_buyer_details = DB::table('users')->where('id', $get_order_data->buyer_id)->first();
-                    $ratedRecords = Tradingratings::where('order_id', $orderid)->where('buyer_id', Auth::user()->id)->first();
+                    $ratedRecords = TradingRating::where('order_id', $orderid)->where('buyer_id', Auth::user()->id)->first();
                     $getbuyer_bank_details = DB::table('payment_medhods')->where('user_id', $get_order_data->buyer_id)->select('method_type')->get();
 
                     if (!empty($get_buyer_details)) {
@@ -10539,7 +10575,7 @@ class HomeController extends Controller
                     $get_buyer_details = DB::table('users')
                         ->where('id', $buyer_id)
                         ->first();
-                    $ratedRecords = Tradingratings::where('order_id', $orderid)->where('buyer_id',  $buyer_id)->first();
+                    $ratedRecords = TradingRating::where('order_id', $orderid)->where('buyer_id',  $buyer_id)->first();
                     $getbuyer_bank_details = DB::table('payment_medhods')->where('user_id', $buyer_id)->select('method_type')->get();
 
                     if (!empty($get_buyer_details)) {
@@ -10640,7 +10676,7 @@ class HomeController extends Controller
 
             if ($ifOrderUpdated > 0) {
 
-                Postads::where('adsid', $get_order_data->adsid)->update(['status' => 2]);
+                Postad::where('adsid', $get_order_data->adsid)->update(['status' => 2]);
 
                 // escrow account insert or update
                 $countEscrowRecord = Escrow::where('orderId', $orderid)->count();
@@ -10734,7 +10770,7 @@ class HomeController extends Controller
 
 
             $adsID = $request->ads_id;
-            $Countryparty_Conditions = Postads::where('adsid', $adsID)->first();
+            $Countryparty_Conditions = Postad::where('adsid', $adsID)->first();
 
             $cc = json_decode($Countryparty_Conditions->countryparty_condition);
             //dd($cc->CompletedKYC);
@@ -10744,48 +10780,45 @@ class HomeController extends Controller
             $registerd_account_day = intval($cc->registerd_account_day);
 
             $authuser = User::where('id', Auth::user()->id)->first();
-            $auth_user_CompletedKYC = $authuser->government_id_verified; // Condition for normal users & add more conditions for entity
-            $auth_user_registerd_account_day = $authuser->created_at;
-            $auth_user_holding_coin = $available_coin;
-            $auth_user_registerd_account_no_of_day =  $auth_user_registerd_account_day->diffInDays(Carbon::now());
+            $auth_user_CompletedKYC_original = $authuser->government_id_verified; // Condition for normal users & add more conditions for entity
+            $auth_user_registerd_account_day_original = $authuser->created_at;
+            $auth_user_holding_coin_original = $available_coin;
+            $auth_user_registerd_account_no_of_day_original =  $auth_user_registerd_account_day_original->diffInDays(Carbon::now());
             //print_r($auth_user_registerd_account_no_of_day);
 
-            if (($cc->CompletedKYC == $auth_user_CompletedKYC)) {
-                $auth_user_CompletedKYC = 1;
-            } else {
-                $auth_user_CompletedKYC = 0;
-            }
+            $auth_user_CompletedKYC = ($cc->CompletedKYC == $auth_user_CompletedKYC_original) ? 1 : 0;
+            $auth_user_registerd_account_noof_day = ($registerd_account_day <= $auth_user_registerd_account_no_of_day_original) ? 1 : 0;
+            $auth_user_holdingcoin = ($holdingcoin <= intval($auth_user_holding_coin_original)) ? 1 : 0;
 
-            if ($registerd_account_day <= $auth_user_registerd_account_no_of_day) {
-
-                $auth_user_registerd_account_noof_day = 1;
-            } else {
-
-                $auth_user_registerd_account_noof_day = 0;
-            }
-
-            if (($holdingcoin <= intval($auth_user_holding_coin))) {
-
-                $auth_user_holdingcoin = 1;
-            } else {
-
-
-                $auth_user_holdingcoin = 0;
-            }
-
-            return response()->json(['auth_user_CompletedKYC' => $auth_user_CompletedKYC, 'auth_user_holdingcoin' => $auth_user_holdingcoin, 'auth_user_registerd_account_noof_day' => $auth_user_registerd_account_noof_day]);
+            return response()->json([
+                'auth_user_CompletedKYC' => $auth_user_CompletedKYC,
+                'auth_user_holdingcoin' => $auth_user_holdingcoin,
+                'auth_user_registerd_account_noof_day' => $auth_user_registerd_account_noof_day
+            ]);
         }
-        return response()->json(['auth_user_CompletedKYC' => $auth_user_CompletedKYC, 'auth_user_holding_coin' => $auth_user_holding_coin, 'auth_user_registerd_account_no_of_day' => $auth_user_registerd_account_no_of_day]);
+
+        // For non-AJAX requests, ensure these variables are defined if the above block is skipped
+        $authuser = User::where('id', Auth::user()->id)->first();
+        $auth_user_CompletedKYC_original = $authuser->government_id_verified;
+        $auth_user_registerd_account_day_original = $authuser->created_at;
+        $auth_user_holding_coin_original = $available_coin;
+        $auth_user_registerd_account_no_of_day_original =  $auth_user_registerd_account_day_original->diffInDays(Carbon::now());
+
+        return response()->json([
+            'auth_user_CompletedKYC' => $auth_user_CompletedKYC_original,
+            'auth_user_holding_coin' => $auth_user_holding_coin_original,
+            'auth_user_registerd_account_no_of_day' => $auth_user_registerd_account_no_of_day_original
+        ]);
     }
 
     public function getpaymentMethodById(Request $request)
     {
 
-        $paymentmethods = DB::table('payment_medhods')
-            ->where('payment_medhods.id', $request->paymentMethodId)
+        $paymentmethods = DB::table('payment_methods')
+            ->where('payment_methods.id', $request->paymentMethodId)
 
-            ->where('payment_medhods.user_id',  Auth::user()->id)
-            ->whereNull('payment_medhods.deleted_at')
+            ->where('payment_methods.user_id',  Auth::user()->id)
+            ->whereNull('payment_methods.deleted_at')
             ->first();
 
 
@@ -10795,9 +10828,9 @@ class HomeController extends Controller
     public function getPaymentDetailBymethodId(Request $request)
     {
 
-        $paymentmethods = DB::table('payment_medhods')
-            ->where('payment_medhods.id', $request->paymentMethodId)
-            ->whereNull('payment_medhods.deleted_at')
+        $paymentmethods = DB::table('payment_methods')
+            ->where('payment_methods.id', $request->paymentMethodId)
+            ->whereNull('payment_methods.deleted_at')
             ->first();
         return response()->json(['paymentmethods_details' => $paymentmethods]);
     }
@@ -10805,7 +10838,7 @@ class HomeController extends Controller
     public function getPostbyId(Request $request)
     {
 
-        $first_order = Postads::where('id', $request->postId)->where('status', 1)->first();
+        $first_order = Postad::where('id', $request->postId)->where('status', 1)->first();
         $get_bank_details = json_decode($first_order->countryparty_condition);
 
         $data = [];
@@ -10821,7 +10854,7 @@ class HomeController extends Controller
             //   print_r($value);
             $method_id =  json_decode($value)->id;
 
-            $payment_method = PaymentMedhods::where('id', $method_id)->first();
+            $payment_method = PaymentMethod::where('id', $method_id)->first();
             if ($payment_method) {
                 $payment_method_type[] = $payment_method;
                 $method_type = [];
@@ -10841,12 +10874,12 @@ class HomeController extends Controller
     }
 
     /* public function editAds(Request $request){
-        $response = Postads::where('id',$request->adsId)->where('userid',Auth::user()->id)->first();
+        $response = Postad::where('id',$request->adsId)->where('userid',Auth::user()->id)->first();
         $paymentmethodid=json_decode($response->payment_method);
 
             $payment_method_type = [];
             foreach ($paymentmethodid as $key => $value) {
-                $payment_method = PaymentMedhods::where('id', $value)->first();
+                $payment_method = PaymentMethod::where('id', $value)->first();
                 if ($payment_method) {
                     $payment_method_type[] = $payment_method;
                     if($payment_method_type != ''){
@@ -10864,7 +10897,7 @@ class HomeController extends Controller
 
     public function editAds(Request $request)
     {
-        $response = Postads::where('id', $request->adsId)
+        $response = Postad::where('id', $request->adsId)
             ->where('userid', Auth::user()->id)
             ->first();
 
@@ -10874,7 +10907,7 @@ class HomeController extends Controller
         $method_type = [];
 
         foreach ($paymentmethodid as $key => $value) {
-            $payment_method = PaymentMedhods::where('id', $value)->first();
+            $payment_method = PaymentMethod::where('id', $value)->first();
 
             if ($payment_method) {
                 $payment_method_type[] = $payment_method;
@@ -10895,7 +10928,7 @@ class HomeController extends Controller
     public function getpaymentMethodByUserId($user_id)
     {
         if (Auth::check()) {
-            $userPaymentMethod = PaymentMedhods::where('user_id', '=', $user_id)->where('deleted_at', null)->get();
+            $userPaymentMethod = PaymentMethod::where('user_id', '=', $user_id)->where('deleted_at', null)->get();
             $userPaymentMethodcount = $userPaymentMethod->count();
         } else {
             $userPaymentMethod = 0;
@@ -11093,7 +11126,7 @@ class HomeController extends Controller
 
     public function sellBmkPostById(Request $request)
     {
-        $first_order = Postads::where('id', $request->orderId)->first();
+        $first_order = Postad::where('id', $request->orderId)->first();
 
         $getadsid = $first_order->adsid;
         $today = date('Y-m-d');
@@ -11118,7 +11151,7 @@ class HomeController extends Controller
             ->whereDate('created_at', '=', $today)
             ->first();
 
-        $first_order_1 = Postads::where('id', $request->orderId)->where('status', 1)->first();
+        $first_order_1 = Postad::where('id', $request->orderId)->where('status', 1)->first();
         $get_bank_details = json_decode($first_order_1->countryparty_condition);
 
         $data = [];
@@ -11131,7 +11164,7 @@ class HomeController extends Controller
         $payment_method_type = [];
         foreach ($paymentmethodid as $key => $value) {
             $method_id =  json_decode($value)->id;
-            $payment_method = PaymentMedhods::where('id', $method_id)->first();
+            $payment_method = PaymentMethod::where('id', $method_id)->first();
             if ($payment_method) {
                 $payment_method_type[] = $payment_method;
                 $method_type = [];
@@ -11161,7 +11194,7 @@ class HomeController extends Controller
             $crypto_value_based_on_currency_type = $currencies_name->per_coin;
             $available_ballence_in_selected_currency = $available_coin * $crypto_value_based_on_currency_type;
             // $adsID = $request->ads_id;
-            $Countryparty_Conditions = Postads::where('adsid', $getadsid)->first();
+            $Countryparty_Conditions = Postad::where('adsid', $getadsid)->first();
             $cc = json_decode($Countryparty_Conditions->countryparty_condition);
 
             $authuser = User::where('id', Auth::user()->id)->first();

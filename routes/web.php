@@ -20,7 +20,7 @@ use App\Http\Controllers\Api\RegisterEntityTypeController;
 use App\Http\Controllers\Api\EntityController;
 use App\Http\Controllers\Api\UserController;
 use App\Http\Controllers\WealthmarkAdminController;
-use App\Http\Controllers\WealthmarkCron;
+use App\Http\Controllers\WealthmarkCronController;
 
 /*
 |--------------------------------------------------------------------------
@@ -508,7 +508,7 @@ Route::group(
         });
 
         // --- Other ---
-        Route::get('credit_amount_url', [WealthmarkCron::class, 'credit_amount_url']);
+        Route::get('credit-amount-url', [WealthmarkCronController::class, 'creditAmountUrl'])->name('credit-amount-url');
 
         // --- Simple Views/Closures ---
         Route::get('/about-us', function () {
